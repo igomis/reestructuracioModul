@@ -53,17 +53,17 @@ Convertir els materials actuals del mòdul DWES en un mapa operatiu que permeta 
 - **Transformació clau:** de bloc de contingut final a capítol d’integració real sobre backend existent.
 - **Evidències recomanades:** demo d’integració, registre de manteniment, defensa tècnica final.
 
-## Continguts que convé redistribuir
-- criteris de seguretat del Bloc 5 cap a Repte 3 (base) i Repte 5 (consolidació)
-- teoria comuna d’APIs (HTTP, estats, errors) concentrada a Repte 4 per evitar repetició
-- parts introductòries d’arquitectura del Bloc 1 reutilitzades com a reforç en refactorització de Repte 3
-- fragments de PHP bàsic reutilitzats com a suport puntual en debugging i manteniment
-
 ## Repeticions o solapaments detectats
 - solapament entre Blocs 3 i 4 en explicació de patrons MVC i capa de dades
 - repetició de contingut conceptual entre Blocs 6a i 6b (definició d’endpoint, verbs HTTP, estructures de resposta)
 - reiteració de contingut de sessions/autenticació entre Bloc 2 i Bloc 5 sense criteri de progressió
 - duplicació de documentació introductòria quan README i apunts teòrics expliquen el mateix sense connexió al producte
+
+## Continguts que convé redistribuir
+- criteris de seguretat del Bloc 5 cap a Repte 3 (base) i Repte 5 (consolidació)
+- teoria comuna d’APIs (HTTP, estats, errors) concentrada a Repte 4 per evitar repetició
+- parts introductòries d’arquitectura del Bloc 1 reutilitzades com a reforç en refactorització de Repte 3
+- fragments de PHP bàsic reutilitzats com a suport puntual en debugging i manteniment
 
 ## Prioritats de transformació de materials
 1. **Prioritat alta:** convertir Bloc 2 i Blocs 3-4 en itineraris pràctics continus (R2 i R3).
