@@ -24,10 +24,17 @@ Repositori de treball per al redisseny del mòdul **Desenvolupament d’Aplicaci
 - `docs/06_plantilles/` plantilles reutilitzables
 
 ## Estat actual
-Projecte en construcció. Primer objectiu: definir l’arquitectura curricular i les plantilles base.
+La **Fase 1 (arquitectura curricular)** està en marxa i fixa la base comuna entre programació, reptes, avaluació i materials.
 
-## Primeres passes
-1. Completar `docs/00_visio_general/mapa_ra_reptes.md`
-2. Redactar `docs/02_reptes/repte_01_kickoff_backend.md`
-3. Crear primera versió de la rúbrica base
-4. Mapar els materials actuals als reptes
+## Documents clau de la Fase 1
+- [Fase 1. Arquitectura curricular](docs/01_programacio_modul/fase_1_arquitectura_curricular.md)
+- [Seqüenciació general del curs](docs/01_programacio_modul/seqüenciacio_general.md)
+- [Criteris metodològics dels reptes](docs/01_programacio_modul/criteris_metodologics_reptes.md)
+- [Criteris de verificació de la IA](docs/01_programacio_modul/criteris_verificacio_ia.md)
+- [Mapa mòdul -> reptes](docs/00_visio_general/mapa_modul_reptes.md)
+- [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md)
+
+## Proper focus
+1. Tancar les fitxes completes dels 5 reptes amb els criteris de Fase 1.
+2. Concretar evidències i instruments d’avaluació per repte.
+3. Connectar cada repte amb els materials adaptats prioritaris.

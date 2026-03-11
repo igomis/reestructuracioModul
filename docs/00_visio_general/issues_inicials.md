@@ -1,32 +1,25 @@
 # Issues inicials
 
-## Epic: arquitectura curricular
-- Crear mapa RA -> reptes
-- Definir seqüència dels 5 reptes
-- Redactar criteris generals d’ús de la IA
+## Epic: Fase 1. Arquitectura curricular
 
-## Epic: reptes
-- Crear plantilla base de repte
-- Redactar fitxa del Repte 1
-- Redactar fitxa del Repte 2
-- Redactar fitxa del Repte 3
-- Redactar fitxa del Repte 4
-- Redactar fitxa del Repte 5
+- [ ] F1-01 Redactar `fase_1_arquitectura_curricular.md` amb objectius, decisions i resultats esperats.
+- [ ] F1-02 Completar `seqüenciacio_general.md` amb criteris, ordre i dependències entre reptes.
+- [ ] F1-03 Definir `criteris_metodologics_reptes.md` amb estructura comuna de treball.
+- [ ] F1-04 Definir `criteris_verificacio_ia.md` amb evidències i mecanismes de control.
+- [ ] F1-05 Completar `mapa_modul_reptes.md` amb finalitat, productes i connexió professional.
+- [ ] F1-06 Completar `mapa_ra_reptes.md` assegurant cobertura de RA1-RA9.
+- [ ] F1-07 Revisar coherència de `README.md` i `ROADMAP.md` amb l’estat real de la fase.
+- [ ] F1-08 Definir el producte evolutiu del curs perquè els 5 reptes acumulen valor.
+- [ ] F1-09 Acordar evidències mínimes comunes per repte (Git, proves, documentació, defensa).
+- [ ] F1-10 Preparar backlog de Fase 2 amb una issue per fitxa completa de cada repte.
 
-## Epic: avaluació
-- Crear plantilla base de rúbrica
-- Crear checklist de revisió de repositori
-- Crear AI log
-- Crear rúbrica de defensa tècnica
+## Epic: Reptes (fase següent)
+- [ ] R2-01 Fitxa completa del Repte 2 (sessions i autenticació).
+- [ ] R2-02 Fitxa completa del Repte 3 (MVC i persistència).
+- [ ] R2-03 Fitxa completa del Repte 4 (API i consum).
+- [ ] R2-04 Fitxa completa del Repte 5 (integració híbrida i manteniment).
 
-## Epic: materials
-- Mapar bloc 1 als reptes
-- Mapar bloc 2 als reptes
-- Fusionar pedagògicament blocs 3 i 4
-- Redistribuir bloc 5
-- Delimitar el paper de 6a i 6b
-
-## Epic: projectes tècnics
-- Definir projecte backend base
-- Definir integració n8n
-- Definir integració IA
+## Epic: Avaluació i evidències
+- [ ] A1-01 Alinear rúbrica base amb els RA principals de cada repte.
+- [ ] A1-02 Definir plantilla d’evidències mínimes per defensa tècnica.
+- [ ] A1-03 Connectar AI log amb la rúbrica i el checklist de repositori.

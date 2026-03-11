@@ -7,12 +7,32 @@ Resultats:
 - plantilles mínimes
 - roadmap inicial
 
-## Fase 1. Reestructuració curricular
-Resultats:
-- mapa RA -> reptes
-- seqüència general del curs
-- document marc d’ús de la IA
-- esquema inicial de la nova programació
+## Fase 1. Arquitectura curricular del mòdul DWES (en marxa)
+### Objectius
+- definir l’arquitectura curricular en 5 reptes seqüenciats
+- garantir cobertura completa dels RA del mòdul
+- establir criteris metodològics comuns de treball per reptes
+- fixar criteris verificables d’ús de la IA
+- explicitar l’entorn professional mínim (Git, debugging, testing, documentació, APIs)
+
+### Entregables
+- `docs/01_programacio_modul/fase_1_arquitectura_curricular.md`
+- `docs/01_programacio_modul/seqüenciacio_general.md`
+- `docs/01_programacio_modul/criteris_metodologics_reptes.md`
+- `docs/01_programacio_modul/criteris_verificacio_ia.md`
+- `docs/00_visio_general/mapa_modul_reptes.md` completat
+- `docs/00_visio_general/mapa_ra_reptes.md` completat
+- `docs/00_visio_general/issues_inicials.md` ampliat
+
+### Definition of done
+- els 5 reptes tenen finalitat i producte coherent dins d’un mateix fil de curs
+- cada RA del currículum apareix com a mínim en un repte principal i un instrument d’avaluació associat
+- el paper de la IA queda definit com a habitual però verificable
+- queda documentat l’entorn professional transversal a tot el mòdul
+- README i roadmap reflecteixen formalment l’estat de la Fase 1
+
+### Connexió amb la Fase 2
+La Fase 2 parteix directament d’esta arquitectura per redactar les fitxes completes de cada repte (context, activitats, evidències, rúbrica i materials associats).
 
 ## Fase 2. Disseny dels reptes
 Resultats:
