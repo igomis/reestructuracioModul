@@ -12,6 +12,10 @@
 - [ ] F1-08 Definir el producte evolutiu del curs perquè els 5 reptes acumulen valor.
 - [ ] F1-09 Acordar evidències mínimes comunes per repte (Git, proves, documentació, defensa).
 - [ ] F1-10 Preparar backlog de Fase 2 amb una issue per fitxa completa de cada repte.
+- [ ] F1-11 Validar el mapa RA -> reptes amb el departament i ajustar descripcions de pes principal/transversal.
+- [ ] F1-12 Derivar criteris d’avaluació per RA principal a partir del mapa curricular completat.
+- [ ] F1-13 Tancar la traçabilitat RA -> materials amb enllaços explícits entre mapa RA i mapa de materials.
+- [ ] F1-14 Definir plantilla mínima d’evidències per repte (proves, repo, documentació i defensa).
 
 ## Epic: Reptes (fase següent)
 - [ ] R2-01 Fitxa completa del Repte 2 (sessions i autenticació).

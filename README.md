@@ -25,6 +25,7 @@ Repositori de treball per al redisseny del mòdul **Desenvolupament d’Aplicaci
 
 ## Estat actual
 La **Fase 1 (arquitectura curricular)** està en marxa i fixa la base comuna entre programació, reptes, avaluació i materials.
+El document [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md) està en versió curricular completa i usable com a base de disseny.
 
 ## Documents clau de la Fase 1
 - [Fase 1. Arquitectura curricular](docs/01_programacio_modul/fase_1_arquitectura_curricular.md)
