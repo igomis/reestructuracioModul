@@ -3,6 +3,13 @@
 ## Finalitat del document
 Definir una guia operativa del producte tècnic evolutiu del mòdul DWES que servisca de base comuna per als reptes del curs i per als projectes tècnics futurs, sense tancar encara l’arquitectura d’un domini concret.
 
+## Per què cal un producte base comú
+- evita que cada repte es convertisca en un exercici aïllat sense continuïtat tècnica
+- facilita traçabilitat d’evidències i comparabilitat d’avaluació entre equips i itineraris
+- permet connectar materials, enunciats i criteris de qualitat sobre un mateix producte viu
+- prepara una transició coherent cap als Reptes 3, 4 i 5, on augmenta la complexitat arquitectònica, API i integració
+- reduïx dispersió docent i ajuda a focalitzar decisions tècniques realment rellevants
+
 ## Principis de disseny del projecte base
 - un únic producte backend evolutiu al llarg dels Reptes 1-5
 - enfocament professional realista: traçabilitat, proves, documentació i manteniment
@@ -88,3 +95,4 @@ Este document es considera completat quan:
 - assegura compatibilitat amb PHP+Laravel, Node.js+Express/Nest i Python+FastAPI
 - fixa el paper de la IA com a suport verificable
 - deixa registrada la línia futura de tokenització com a evolució posterior
+- queda preparat per servir de base als Reptes 3-5 i als futurs materials/enunciats
