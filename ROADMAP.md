@@ -41,6 +41,8 @@ Resultats:
 - evidències d’aprenentatge
 - integració de materials actuals
 
+Nota de desplegament: els itineraris tecnològics guiats s’aplicaran sobretot en els Reptes 3, 4 i 5, mantenint nucli comú en reptes, RA, evidències i avaluació.
+
 ## Fase 3. Sistema d’avaluació
 Resultats:
 - rúbrica base
