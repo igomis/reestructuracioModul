@@ -1,98 +1,102 @@
 # Projecte backend base del curs
 
 ## Finalitat del document
-Definir una guia operativa del producte tècnic evolutiu del mòdul DWES que servisca de base comuna per als reptes del curs i per als projectes tècnics futurs, sense tancar encara l’arquitectura d’un domini concret.
+Definir el marc operatiu del projecte backend base del curs perquè funcione com a producte tècnic evolutiu, útil per a la planificació docent i per a la generació d’evidències reals d’aprenentatge.
 
-## Per què cal un producte base comú
-- evita que cada repte es convertisca en un exercici aïllat sense continuïtat tècnica
-- facilita traçabilitat d’evidències i comparabilitat d’avaluació entre equips i itineraris
-- permet connectar materials, enunciats i criteris de qualitat sobre un mateix producte viu
-- prepara una transició coherent cap als Reptes 3, 4 i 5, on augmenta la complexitat arquitectònica, API i integració
-- reduïx dispersió docent i ajuda a focalitzar decisions tècniques realment rellevants
+## Funció del document dins del projecte docent
+Este document fixa una base comuna abans de tancar nous enunciats i materials.
+La seua funció és:
+- establir què s’entén per projecte backend base en el mòdul
+- assegurar coherència entre reptes, avaluació i materials
+- facilitar que els Reptes 3, 4 i 5 es redacten sobre un producte comú i no sobre activitats aïllades
+- permetre comparabilitat de resultats entre itineraris tecnològics diferents
 
 ## Principis de disseny del projecte base
-- un únic producte backend evolutiu al llarg dels Reptes 1-5
-- enfocament professional realista: traçabilitat, proves, documentació i manteniment
-- comparabilitat docent: mateixos criteris d’avaluació, independentment de la stack
-- creixement incremental: cada repte amplia el producte anterior
-- neutralitat de domini: el valor didàctic depén dels requisits tècnics, no del sector escollit
+- producte evolutiu únic durant el curs, amb creixement incremental per reptes
+- orientació professional: qualitat de codi, proves, documentació i manteniment
+- neutralitat de domini: importa la cobertura tècnica, no el sector triat
+- verificabilitat: cada avanç ha de tindre evidència executable al repositori
+- independència d’stack: mateixos objectius docents amb tecnologies diferents
 
-## Criteris que ha de complir qualsevol domini de projecte
-Qualsevol domini triat ha de permetre, com a mínim:
-- backend real amb casos d’ús de negoci no trivials
-- persistència de dades i evolució de model
-- API documentada i consumible
-- autenticació i control bàsic d’accés
-- proves tècniques (funcionals i/o integració) amb evidència executada
-- documentació operativa del projecte (README, decisions tècniques i API docs)
+## Requisits mínims comuns
+Qualsevol domini triat per al projecte base ha de permetre, de manera obligatòria:
+- backend real amb casos d’ús no trivials
+- persistència de dades i evolució del model
+- API publicada i consumible
+- autenticació i control d’accés bàsic
+- proves automatitzades (unitàries, integració o equivalents)
+- documentació tècnica operativa (README, decisions i contractes API)
 - integracions amb serveis externs o fluxos híbrids
-- manteniment evolutiu (correccions, millores, regressió i traçabilitat)
+- manteniment evolutiu (correccions, millores, regressions i traçabilitat)
 
-Si un domini no permet cobrir estos punts amb càrrega docent raonable, no és apte com a projecte base.
+Si un domini no permet cobrir estes huit dimensions, no és apte com a projecte base.
 
 ## Dominis de projecte proposats
 1. **Gestor d’incidències / tickets**
-Objectiu docent: modelar cicle de vida d’incidències, priorització, assignació i seguiment.
-Punts forts: facilita autenticació per rols, API de consulta/actualització i manteniment amb historial de canvis.
+Permet modelar estats, prioritats, assignacions i historial. És un domini equilibrat per treballar autenticació, API, persistència i manteniment amb incidències reals.
 
 2. **Sistema de reserves / cites**
-Objectiu docent: gestionar disponibilitat, calendari, conflictes i confirmacions.
-Punts forts: força validacions de negoci, control d’estat i integracions de notificació.
+Permet tractar disponibilitat, conflictes i validacions de negoci. És adequat per a API, persistència temporal, integracions de notificació i proves funcionals.
 
 3. **Gestor intern de recursos / inventari**
-Objectiu docent: controlar altes/baixes, moviments, estat i disponibilitat de recursos.
-Punts forts: bona base per persistència, API de consulta operativa i auditories de manteniment.
+Permet controlar altes, baixes, moviments i disponibilitat. És útil per a traçabilitat, manteniment i integració amb processos interns.
 
-## Components comuns mínims del producte
-- model d’usuaris amb autenticació i rols mínims
-- entitats de domini i regles de negoci principals
-- capa de persistència amb accés segur a dades
-- API per a operacions clau del sistema
-- bateria mínima de proves i registre de validació
-- documentació tècnica executable i coherent amb el codi
-- mecanisme d’integració externa (API externa, webhook o automatització)
-- pauta de manteniment: incidències, correccions i evidència de millores
+Els tres dominis són vàlids sempre que cobrisquen els requisits mínims comuns i es puguen mantenir amb càrrega docent realista.
+
+## Components comuns del producte
+Sense definir encara una arquitectura tancada, el projecte base ha d’incorporar:
+- model d’usuaris i mecanisme d’autenticació
+- model de domini i regles de negoci principals
+- capa de persistència i gestió de dades
+- API per a les operacions clau del sistema
+- conjunt mínim de proves automatitzades
+- documentació tècnica de posada en marxa i ús
+- punt d’integració externa (API externa, webhook o automatització)
+- criteri de manteniment i registre d’evolució
 
 ## Relació amb els reptes del curs
-| Repte | Aportació del projecte base |
+| Repte | Connexió amb el projecte backend base |
 |---|---|
-| Repte 1. Kickoff tècnic | Definir repositori, entorn, convencions i ADR del producte backend comú. |
-| Repte 2. Sessions i autenticació | Implementar usuaris/sessions sobre el domini seleccionat amb evidència funcional. |
-| Repte 3. MVC i persistència | Reestructurar el producte a arquitectura mantenible i consolidar model de dades. |
-| Repte 4. API i consum | Exposar funcionalitats del domini via API i validar consum amb contractes clars. |
-| Repte 5. Integració híbrida i manteniment | Connectar serveis externs/automatització i demostrar manteniment evolutiu del producte. |
+| Repte 1. Kickoff tècnic | Definició del context, normes de treball, repositori i decisions inicials del producte. |
+| Repte 2. Sessions i autenticació | Primera implementació funcional de control d’accés sobre el domini triat. |
+| Repte 3. MVC i persistència | Consolidació de l’estructura mantenible i del model de dades persistent. |
+| Repte 4. API i consum | Publicació d’API del producte i validació del consum amb contractes clars. |
+| Repte 5. Integració híbrida i manteniment | Integració externa (incloent opcions com n8n) i demostració de manteniment evolutiu. |
+
+Este encaix converteix el projecte base en referència directa per als enunciats i materials dels Reptes 3-5.
 
 ## Compatibilitat amb els itineraris tecnològics
-El projecte base s’ha de poder desplegar en qualsevol itinerari autoritzat:
+El projecte backend base ha de ser compatible amb:
 - PHP + Laravel
 - Node.js + Express o Nest
 - Python + FastAPI
 
-La compatibilitat implica equivalència d’objectius, evidències i criteris d’avaluació, no uniformitat d’implementació interna.
+La compatibilitat exigida és de resultats i evidències, no d’implementació interna idèntica.
 
 ## Paper de la IA
-La IA és una eina habitual de suport per explorar arquitectura, accelerar esquelets, depurar errors i millorar documentació.
+La IA s’assumeix com a eina habitual de suport (ideació tècnica, prototipat, depuració i documentació), però mai com a substitut de validació.
 
-Condició obligatòria:
-- tota aportació assistida s’ha de validar amb proves/execució real
-- l’alumnat ha de poder justificar i defensar les decisions tècniques
+Condicions docents mínimes:
+- tota aportació assistida per IA s’ha de verificar amb execució real, proves i revisió de codi
+- l’equip ha de poder explicar i defensar les decisions tècniques adoptades
 
-## Línia futura de projectes relacionats amb tokenització
-Es deixa oberta una línia futura per incorporar mecanismes de tokenització en context backend (p. ex. tokens d’accés, invitació o traçabilitat), sempre amb enfocament docent i verificable.
+## Línia futura relacionada amb tokenització
+Es deixa oberta una línia futura per estudiar mecanismes de tokenització en context backend (per exemple, tokens d’accés, invitació o traçabilitat), com a extensió del producte base.
 
-Esta línia no desplega encara un projecte complet ni tanca decisions d’arquitectura.
+Esta línia queda intencionadament oberta: no es defineix ara un projecte complet ni una arquitectura específica de tokenització.
 
 ## Decisió provisional recomanada
-Per iniciar la consolidació del model, es recomana prioritzar com a domini pilot el **gestor d’incidències / tickets**, perquè facilita cobrir de manera equilibrada autenticació, persistència, API, integracions i manteniment.
+Es recomana començar amb el domini **gestor d’incidències / tickets** com a opció provisional prioritària, perquè facilita cobrir de manera equilibrada autenticació, persistència, API, integracions i manteniment.
 
-La decisió és provisional: es manté oberta la possibilitat d’adoptar reserves/cites o inventari si el centre o l’equip docent ho considera més adequat, sempre complint els criteris comuns d’este document.
+La decisió no és tancada. Es poden adoptar **sistema de reserves / cites** o **gestor intern de recursos / inventari** si mantenen els mateixos requisits mínims comuns i la mateixa traçabilitat docent.
 
 ## Definition of done del document
 Este document es considera completat quan:
-- defineix un marc operatiu del projecte backend base sense tancar encara un projecte únic
-- explicita criteris mínims de domini compatibles amb Reptes 1-5
-- incorpora almenys tres dominis viables i comparables en clau docent
-- assegura compatibilitat amb PHP+Laravel, Node.js+Express/Nest i Python+FastAPI
-- fixa el paper de la IA com a suport verificable
-- deixa registrada la línia futura de tokenització com a evolució posterior
-- queda preparat per servir de base als Reptes 3-5 i als futurs materials/enunciats
+- defineix un marc operatiu clar del projecte backend base del curs
+- concreta els requisits mínims comuns que qualsevol domini ha de cobrir
+- proposa com a mínim tres dominis viables i comparables
+- connecta explícitament el projecte base amb els Reptes 1-5
+- confirma compatibilitat amb Laravel, Express/Nest i FastAPI
+- fixa el paper de la IA com a eina habitual però verificable
+- deixa oberta la línia futura de tokenització sense desplegar encara el projecte complet
+- queda preparat com a base real per als Reptes 3-5 i per als futurs materials/enunciats
