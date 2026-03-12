@@ -47,6 +47,7 @@ Este repte s’alinea directament amb el document [Projecte backend base del cur
 - autenticació i control d’accés
 - persistència inicial i validació de dades
 - proves i documentació verificables
+- reutilització de la base tècnica establida al Repte 1 (repositori, convencions i traçabilitat)
 
 A més, deixa preparada la continuïtat cap al [Repte 3. Migració a MVC i persistència segura](repte_03_mvc_i_persistencia.md), on esta funcionalitat es reestructurarà amb criteris de mantenibilitat.
 
@@ -75,6 +76,7 @@ A més, deixa preparada la continuïtat cap al [Repte 3. Migració a MVC i persi
 - actualitzar README amb instruccions d’ús i validació del mòdul
 
 ## Materials i apunts associats
+- [Repte 1. Kickoff tècnic d’un servei web backend](repte_01_kickoff_backend.md): base tècnica i artefactes que es reutilitzen en este repte.
 - [Projecte backend base del curs](../05_projectes_tecnics/projecte_base_backend.md): marc de requisits comuns del producte evolutiu.
 - [Mapa de materials actuals -> nova estructura](../04_materials/mapa_materials_actuals.md): connexió del Bloc 2 amb RA2-RA4 i reforços posteriors.
 - [Repte 3. Migració a MVC i persistència segura](repte_03_mvc_i_persistencia.md): continuïtat directa del codi funcional cap a arquitectura mantenible.
