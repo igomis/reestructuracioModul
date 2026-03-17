@@ -10,6 +10,7 @@ La necessitat actual no és obrir més fronts, sinó assegurar que allò que ja 
 - `MG-02` queda consolidat com a base comuna del mòdul amb guies de Git, README/ADR, testing/debugging i ús verificable de la IA.
 - `MG-03` queda consolidat com a paquet nuclear del Repte 2 amb materials sobre flux d'usuari, sessions, validació i errors de servidor.
 - `MG-04` queda consolidat com a paquet nuclear del Repte 3 amb materials sobre arquitectura per capes o equivalent, persistència i qualitat tècnica.
+- `MI-01` queda consolidat com a primer patró d'itinerari reusable a `docs/04_materials/itineraris/laravel/`.
 
 ## Paquets en producció
 - `MG-05` ja té publicats els materials del Repte 4 a `docs/04_materials/repte_04/`, però encara ha de passar per la mateixa ronda de consolidació pública i homogeneïtzació de lectura aplicada als paquets anteriors.
@@ -21,19 +22,19 @@ La necessitat actual no és obrir més fronts, sinó assegurar que allò que ja 
 - deixar preparat el repositori per obrir materials específics d'itinerari sense reescriure la base comuna
 
 ## Materials per itinerari pendents
-- `MG-07` Laravel per a `R3-R5`
-- `MG-07` Express o Nest per a `R3-R5`
-- `MG-07` FastAPI per a `R3-R5`
+- `MI-02` Express o Nest per a `R3-R5`
+- `MI-03` FastAPI per a `R3-R5`
 
 Criteri d'obertura:
 - s'obrin de manera progressiva i un itinerari cada vegada
-- `MI-01` s'usa com a primer patró reusable per validar el pas a materials per stack
-- `MI-02` i `MI-03` s'han d'obrir només quan el patró de `Laravel` quede prou clar i reutilitzable
+- `MI-01` queda com a primer patró reusable i base de comparació formal
+- `MI-02` aplica ara el mateix esquema sobre ecosistema `Node.js` per validar la translació del model a `Express/Nest`
+- `MI-03` s'ha d'obrir només quan els patrons de `Laravel` i `Express/Nest` siguen prou clars i reutilitzables
 - han de nàixer com a adaptació coherent dels materials existents, no com a línia paral·lela desconnectada
 
 Nota d'itineraris:
-- `MI-01` en producció: `docs/04_materials/itineraris/laravel/`
-- `MI-02` previst: `docs/04_materials/itineraris/express_nest/`
+- `MI-01` consolidat
+- `MI-02` en producció: `docs/04_materials/itineraris/express_nest/`
 - `MI-03` previst: `docs/04_materials/itineraris/fastapi/`
 
 ## Revisió global pendent
