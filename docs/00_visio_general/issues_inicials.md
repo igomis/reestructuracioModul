@@ -26,9 +26,15 @@ La necessitat actual no és obrir més fronts, sinó assegurar que allò que ja 
 - `MG-07` FastAPI per a `R3-R5`
 
 Criteri d'obertura:
-- no s'han de produir encara com a paquets nous
-- s'han d'obrir només quan la base comuna i els paquets `R2-R5` tinguen estructura pública prou estable
+- s'obrin de manera progressiva i un itinerari cada vegada
+- `MI-01` s'usa com a primer patró reusable per validar el pas a materials per stack
+- `MI-02` i `MI-03` s'han d'obrir només quan el patró de `Laravel` quede prou clar i reutilitzable
 - han de nàixer com a adaptació coherent dels materials existents, no com a línia paral·lela desconnectada
+
+Nota d'itineraris:
+- `MI-01` en producció: `docs/04_materials/itineraris/laravel/`
+- `MI-02` previst: `docs/04_materials/itineraris/express_nest/`
+- `MI-03` previst: `docs/04_materials/itineraris/fastapi/`
 
 ## Revisió global pendent
 - revisar que `MG-02` a `MG-06` compartixen una estructura mínima recognoscible i reutilitzable
