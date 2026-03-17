@@ -11,10 +11,12 @@ La necessitat actual no és obrir més fronts, sinó assegurar que allò que ja 
 - `MG-03` queda consolidat com a paquet nuclear del Repte 2 amb materials sobre flux d'usuari, sessions, validació i errors de servidor.
 - `MG-04` queda consolidat com a paquet nuclear del Repte 3 amb materials sobre arquitectura per capes o equivalent, persistència i qualitat tècnica.
 - `MI-01` queda consolidat com a primer patró d'itinerari reusable a `docs/04_materials/itineraris/laravel/`.
+- `MI-02` queda consolidat com a segon patró d'itinerari reusable a `docs/04_materials/itineraris/express_nest/`.
 
 ## Paquets en producció
 - `MG-05` ja té publicats els materials del Repte 4 a `docs/04_materials/repte_04/`, però encara ha de passar per la mateixa ronda de consolidació pública i homogeneïtzació de lectura aplicada als paquets anteriors.
 - `MG-06` ja té publicats els materials del Repte 5 a `docs/04_materials/repte_05/`, però encara forma part del bloc en producció perquè ha d'alinear-se del tot amb la seqüència `R3 -> R4 -> R5`.
+- `MI-03` obri el tercer itinerari tecnològic a `docs/04_materials/itineraris/fastapi/` i completa la primera trilogia de stacks autoritzats del mòdul.
 
 ## Paquets pendents
 - tancar la ronda de consolidació de `MG-02` a `MG-06` abans d'obrir paquets nous
@@ -22,20 +24,19 @@ La necessitat actual no és obrir més fronts, sinó assegurar que allò que ja 
 - deixar preparat el repositori per obrir materials específics d'itinerari sense reescriure la base comuna
 
 ## Materials per itinerari pendents
-- `MI-02` Express o Nest per a `R3-R5`
-- `MI-03` FastAPI per a `R3-R5`
+- no queden nous itineraris per obrir; queda pendent consolidar transversalment `MI-01`, `MI-02` i `MI-03`
 
 Criteri d'obertura:
 - s'obrin de manera progressiva i un itinerari cada vegada
 - `MI-01` queda com a primer patró reusable i base de comparació formal
-- `MI-02` aplica ara el mateix esquema sobre ecosistema `Node.js` per validar la translació del model a `Express/Nest`
-- `MI-03` s'ha d'obrir només quan els patrons de `Laravel` i `Express/Nest` siguen prou clars i reutilitzables
+- `MI-02` confirma la translació del model a ecosistema `Node.js`
+- `MI-03` completa ara la translació del model a ecosistema Python amb `FastAPI`
 - han de nàixer com a adaptació coherent dels materials existents, no com a línia paral·lela desconnectada
 
 Nota d'itineraris:
 - `MI-01` consolidat
-- `MI-02` en producció: `docs/04_materials/itineraris/express_nest/`
-- `MI-03` previst: `docs/04_materials/itineraris/fastapi/`
+- `MI-02` consolidat
+- `MI-03` en producció: `docs/04_materials/itineraris/fastapi/`
 
 ## Revisió global pendent
 - revisar que `MG-02` a `MG-06` compartixen una estructura mínima recognoscible i reutilitzable
