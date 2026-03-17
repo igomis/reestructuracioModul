@@ -1,5 +1,7 @@
 # Guia de Git i flux de treball
 
+Esta guia no parteix d'una alfabetització inicial en Git o GitHub. S'assumix que l'alumnat ja coneix els conceptes bàsics i que el document servix per normalitzar la forma de treballar, repassar criteris clau i usar el repositori com a evidència professional del procés.
+
 ## Finalitat
 Establir un flux mínim de treball amb Git que siga reutilitzable en tots els reptes del mòdul i que deixe evidències autèntiques del procés real de desenvolupament.
 

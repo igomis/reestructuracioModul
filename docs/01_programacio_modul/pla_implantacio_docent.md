@@ -9,6 +9,7 @@ Este document no redefinix el currículum ni substituïx les fitxes de repte. La
 - treballar per fases que acumulen producte, no per temes desconnectats
 - mantindre el projecte base del curs com a fil conductor de totes les decisions d'aula
 - activar materials comuns abans d'exigir producte específic de repte o d'itinerari
+- no plantejar GitHub com una alfabetització des de zero, sinó com una posada a punt metodològica i professional
 - introduir els itineraris com a variació guiada, no com a fragmentació del grup
 - prioritzar evidències autèntiques: repositori, proves, documentació, AI log i defensa tècnica
 - usar la IA com a suport verificable, mai com a substitut de comprensió, validació o autoria
@@ -27,6 +28,7 @@ Este document no redefinix el currículum ni substituïx les fitxes de repte. La
 ## Activació de materials per fases
 ### Fase 0. Arrancada i marc comú
 - s'activa la base comuna del mòdul: Git, `README/ADR`, testing/debugging i ús verificable de la IA
+- no es fa una introducció des de zero a GitHub; es fa una posada a punt metodològica amb repàs de traçabilitat, commits, `README`, `ADR` i AI log
 - s'introduïx el sistema d'evidències com a criteri transversal
 - es presenta el projecte base com a marc professional del curs
 
