@@ -13,6 +13,7 @@ Estat real de la fase actual:
 Nota de fase:
 - amb `MG-02`, el projecte entra en producció efectiva dels materials comuns mínims que han de servir de base reutilitzable abans d'obrir materials específics per repte o per itinerari
 - en la fase actual, `MG-02` passa de producció inicial a consolidació perquè estes guies ja han de poder funcionar com a materials reals i no com a esquelets mínims
+- amb `MG-03`, el projecte obri el primer paquet específic de repte i trasllada la producció de materials al flux funcional de sessions, autenticació i validació del Repte 2
 
 ## Issues inicials que convé tancar
 Les issues inicials de bootstrap han de quedar fora del backlog actiu perquè ja responen a treball resolt o superat:
@@ -36,7 +37,7 @@ El backlog recomanat per a la fase actual ha d'incorporar les issues següents:
 | **PB-01 · Verificar i consolidar l’enunciat base del projecte del curs** | alta | revisar que l'enunciat base queda complet, visible i alineat amb el producte del curs | `docs/05_projectes_tecnics/enunciat_projecte_base.md` |
 | **MG-01 · Planificar materials nous prioritaris per repte** | alta | mantindre una planificació executable dels materials nous prioritaris | `docs/04_materials/pla_materials_prioritaris.md` |
 | **MG-02 · Crear materials comuns mínims del mòdul** | alta | produir materials comuns sobre Git, README/ADR, testing/debugging i IA verificable | `docs/04_materials/` |
-| **MG-03 · Crear materials nuclears del Repte 2** | alta | produir materials de sessions, autenticació, validació i proves bàsiques | `docs/04_materials/materials_repte_02/` |
+| **MG-03 · Crear materials nuclears del Repte 2** | alta | produir materials de sessions, autenticació, validació i proves bàsiques | `docs/04_materials/repte_02/` |
 | **MG-04 · Crear materials nuclears del Repte 3** | alta | produir materials de MVC o equivalent, persistència segura i qualitat mínima | `docs/04_materials/materials_repte_03/` |
 | **MG-05 · Crear materials d’API i proves** | mitjana-alta | produir materials de contracte API, documentació, consum i col·leccions de prova | `docs/04_materials/materials_repte_04/` |
 | **MG-06 · Crear materials d’integració híbrida i n8n** | mitjana | produir materials per al tancament del producte amb integració externa, automatització i manteniment | `docs/04_materials/materials_repte_05/` |
