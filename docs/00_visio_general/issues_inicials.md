@@ -1,6 +1,6 @@
 # Estat de producció actual
 
-El repositori ja no està en fase de bootstrap. La base curricular, el projecte base, els materials comuns, els materials per repte i els tres itineraris tecnològics ja existixen. La necessitat actual és consolidar el conjunt perquè siga llegible, comparable i usable en implantació docent real.
+El repositori ja no està en fase de bootstrap ni només en fase de producció documental. La base curricular, el projecte base, els materials comuns, els materials per repte i els tres itineraris tecnològics ja existixen, i ara el projecte entra en fase d'implantació docent planificada.
 
 ## Paquets consolidats
 - `MG-01` queda consolidat com a marc de priorització i seqüència de producció a `docs/04_materials/pla_materials_prioritaris.md`.
@@ -12,6 +12,7 @@ El repositori ja no està en fase de bootstrap. La base curricular, el projecte 
 ## Paquets en producció
 - `MG-05` continua com a paquet en producció perquè els materials del Repte 4 encara han de passar una ronda equivalent de consolidació pública i revisió de coherència.
 - `MG-06` continua com a paquet en producció perquè els materials del Repte 5 encara s'han d'acabar d'alinear amb la seqüència `R3 -> R4 -> R5` i amb el tancament del producte del curs.
+- `ID-01` en producció: pla d'implantació docent a `docs/01_programacio_modul/pla_implantacio_docent.md`.
 
 ## Itineraris consolidats / en revisió
 - `MI-01` `Laravel` queda consolidat com a primer patró reusable de stack.
@@ -26,4 +27,4 @@ Criteri comú dels itineraris:
 ## Següent focus recomanat
 - tancar la ronda de consolidació de `MG-05` i `MG-06`
 - homogeneïtzar definitivament els tres itineraris perquè funcionen com a patró docent comparable
-- preparar la fase següent de materials avançats i d'implantació docent sense obrir encara nous paquets
+- següent focus: calendarització d'aula i desplegament real
