@@ -1,89 +1,63 @@
 # Realineació del backlog d'issues
 
 ## Situació actual
-- El backlog inicial de bootstrap ja ha quedat superat i les issues `#1` a `#6` s'han tancat perquè no representaven el focus real de la fase actual.
-- Els documents base que originaven aquelles issues ja funcionen com a base usable del projecte:
-  - `docs/03_avaluacio/rubrica_base_reptes.md`
-  - `docs/02_reptes/repte_01_kickoff_backend.md`
-  - `docs/04_materials/mapa_materials_actuals.md`
-  - `docs/05_projectes_tecnics/projecte_base_backend.md`
-- Les fitxes dels reptes 2, 4 i 5 ja tenen una base docent desenvolupada i el Repte 3 és ara la fitxa pendent més clara de consolidació.
-- El següent focus útil del projecte és doble:
-  - consolidar definitivament les fitxes dels reptes que ja tenen base
-  - redactar l'enunciat base del projecte i planificar materials nous per repte
+El repositori ha avançat més en documents i definició operativa que en la gestió pública d'issues. La fase de bootstrap ja està resolta, però el backlog visible encara arrossega una lògica inicial que no reflectix bé el moment actual del projecte.
 
-## Issues tancades en la realineació
+Estat real de la fase actual:
+- el README continua marcant com a focus tancar reptes, concretar evidències i connectar materials
+- el projecte base ja té document backend i enunciat base redactat
+- el pla de materials prioritaris ja està definit i permet passar de mapa general a planificació executiva
+- les issues de reptes `R3-01`, `R4-01` i `R5-01` continuen sent útils com a fils de consolidació docent
+- el backlog actiu ha de desplaçar-se ara cap a una fase de producció de materials, no cap a tasques de bootstrap
 
-### #1 A1-01 · Completar la rúbrica base de reptes
-- **Estat:** tancada.
-- **Motiu:** la rúbrica base ja està redactada i usable com a marc comú per als reptes del mòdul.
+## Issues inicials que convé tancar
+Les issues inicials de bootstrap han de quedar fora del backlog actiu perquè ja responen a treball resolt o superat:
 
-### #2 R1-01 · Completar la fitxa docent del Repte 1
-- **Estat:** tancada.
-- **Motiu:** la fitxa del Repte 1 ja està completada i és reutilitzable com a model per a la resta de reptes.
+- `#1 A1-01 · Completar la rúbrica base de reptes`
+- `#2 R1-01 · Completar la fitxa docent del Repte 1`
+- `#3 M1-01 · Completar el mapa de materials actuals`
+- `#4 P1-01 · Consolidar el document de projecte backend base`
+- `#5 G1-01 · Crear issues reals a GitHub a partir del backlog`
 
-### #3 M1-01 · Completar el mapa de materials actuals
-- **Estat:** tancada.
-- **Motiu:** el mapa de materials ja està consolidat com a document operatiu i connecta blocs, reptes, RA i prioritats de transformació.
-
-### #4 P1-01 · Consolidar el document de projecte backend base
-- **Estat:** tancada.
-- **Motiu:** el document de projecte backend base ja és prou madur per actuar com a referència del producte evolutiu del curs.
-
-### #5 G1-01 · Crear issues reals a GitHub a partir del backlog
-- **Estat:** tancada.
-- **Motiu:** l'objectiu inicial ja havia quedat superat; la necessitat actual era realinear el backlog, no crear-lo des de zero.
-
-### #6 R2-01 · Revisar i consolidar la fitxa docent del Repte 2
-- **Estat:** tancada.
-- **Motiu:** el Repte 2 ja està desenvolupat i no és el següent pas coherent de la fase actual.
+Criteri de tancament:
+- són tasques ja executades o absorbides per documents consolidats del repositori
+- mantenir-les com a referència oberta distorsiona la lectura del backlog real
+- el focus ja no és arrancar el projecte, sinó produir materials útils per als reptes i per al projecte base
 
 ## Issues noves recomanades
+El backlog recomanat per a la fase actual ha d'incorporar les issues següents:
 
-### R3-01 · Revisar i consolidar la fitxa docent del Repte 3
-- **Prioritat:** alta
-- **Objectiu:** portar el Repte 3 al mateix nivell de concreció docent que la resta de fitxes completes del projecte i estabilitzar la seua connexió amb el Repte 4.
-- **Fitxers afectats:** `docs/02_reptes/repte_03_mvc_i_persistencia.md`
-- **Definition of done:** fitxa revisada i consolidada, alineada amb RA5-RA6, qualitat tècnica, persistència i continuïtat cap al Repte 4.
-- **Dependències:** `docs/03_avaluacio/rubrica_base_reptes.md`, `docs/05_projectes_tecnics/projecte_base_backend.md`.
+| Codi | Prioritat | Objectiu principal | Referència de treball |
+|---|---|---|---|
+| **PB-01 · Verificar i consolidar l’enunciat base del projecte del curs** | alta | revisar que l'enunciat base queda complet, visible i alineat amb el producte del curs | `docs/05_projectes_tecnics/enunciat_projecte_base.md` |
+| **MG-01 · Planificar materials nous prioritaris per repte** | alta | mantindre una planificació executable dels materials nous prioritaris | `docs/04_materials/pla_materials_prioritaris.md` |
+| **MG-02 · Crear materials comuns mínims del mòdul** | alta | produir materials comuns sobre Git, README/ADR, testing/debugging i IA verificable | `docs/04_materials/` |
+| **MG-03 · Crear materials nuclears del Repte 2** | alta | produir materials de sessions, autenticació, validació i proves bàsiques | `docs/04_materials/materials_repte_02/` |
+| **MG-04 · Crear materials nuclears del Repte 3** | alta | produir materials de MVC o equivalent, persistència segura i qualitat mínima | `docs/04_materials/materials_repte_03/` |
+| **MG-05 · Crear materials d’API i proves** | mitjana-alta | produir materials de contracte API, documentació, consum i col·leccions de prova | `docs/04_materials/materials_repte_04/` |
+| **MG-06 · Crear materials d’integració híbrida i n8n** | mitjana | produir materials per al tancament del producte amb integració externa, automatització i manteniment | `docs/04_materials/materials_repte_05/` |
+| **MG-07 · Planificar materials específics per Laravel / Express-Nest / FastAPI** | mitjana | ordenar l'adaptació dels materials de R3-R5 per itineraris tecnològics guiats | `docs/01_programacio_modul/model_itineraris_tecnologics.md` |
 
-### R4-01 · Revisar i consolidar la fitxa docent del Repte 4
-- **Prioritat:** mitjana
-- **Objectiu:** validar que la fitxa del Repte 4 queda integrada dins de la seqüència global i en coherència amb el Repte 5 i amb els materials d'API.
-- **Fitxers afectats:** `docs/02_reptes/repte_04_api_i_consum.md`
-- **Definition of done:** fitxa consolidada, amb contracte docent clar d'API, consum, proves, instruments i relació amb el producte base.
-- **Dependències:** `R3-01`, `docs/04_materials/mapa_materials_actuals.md`.
-
-### R5-01 · Revisar i consolidar la fitxa docent del Repte 5
-- **Prioritat:** mitjana
-- **Objectiu:** validar i ajustar la fitxa del Repte 5 com a tancament coherent del producte evolutiu del curs.
-- **Fitxers afectats:** `docs/02_reptes/repte_05_integracio_hibrida_n8n.md`
-- **Definition of done:** fitxa completada i alineada amb RA9, integració híbrida, manteniment i materials de bloc 7.
-- **Dependències:** `R4-01`, `docs/05_projectes_tecnics/integracio_n8n.md`.
-
-### PB-01 · Redactar l’enunciat base del projecte del curs
-- **Prioritat:** alta
-- **Objectiu:** transformar el projecte backend base en un enunciat docent usable com a peça transversal del curs.
-- **Fitxers afectats:** document nou o derivat dins de `docs/05_projectes_tecnics/`
-- **Definition of done:** enunciat base redactat amb context, requisits mínims, dominis possibles, criteris d'evidència i connexió amb els reptes 2-5.
-- **Dependències:** `docs/05_projectes_tecnics/projecte_base_backend.md`, `R3-01`, `R4-01`, `R5-01`.
-
-### MG-01 · Planificar materials nous prioritaris per repte
-- **Prioritat:** alta
-- **Objectiu:** concretar el següent paquet de materials nous o adaptats que el projecte necessita per passar de mapa general a planificació executable.
-- **Fitxers afectats:** principalment `docs/04_materials/` i documents de suport relacionats
-- **Definition of done:** llistat prioritzat de materials per repte, criteri de transformació i seqüència de treball per fases.
-- **Dependències:** `docs/04_materials/mapa_materials_actuals.md`, `PB-01`, estat consolidat de `R3-01`, `R4-01` i `R5-01`.
+Lectura recomanada del nou backlog:
+- `PB-01` i `MG-01` actuen com a peces de consolidació i control de coherència
+- `MG-02` és la base comuna que ha de precedir la producció específica
+- `MG-03` i `MG-04` obrin la producció tècnica principal perquè connecten directament amb el producte del curs
+- `MG-05` i `MG-06` despleguen la capa d'API, proves i integració híbrida
+- `MG-07` ordena l'entrada dels itineraris específics quan la base comuna ja és prou estable
 
 ## Ordre recomanat de treball
-1. Consolidar `R3-01`, perquè el Repte 3 continua sent la peça de transició arquitectònica central que convé estabilitzar.
-2. Revisar `R4-01` i `R5-01` per deixar coherent la seqüència final dels reptes 3-5.
-3. Redactar `PB-01` per disposar d'un enunciat base del projecte del curs coherent amb els reptes ja estabilitzats.
-4. Executar `MG-01` per passar del mapa de materials a una planificació operativa de desenvolupament de materials nous.
+1. Consolidar `PB-01` perquè l'enunciat base del projecte ha de quedar plenament verificat i sense dubtes de sincronització.
+2. Revalidar `MG-01` com a document de planificació i usar-lo com a marc de producció real.
+3. Executar `MG-02` per disposar dels materials comuns mínims del mòdul.
+4. Executar `MG-03` i `MG-04` com a nucli inicial de producció de materials per reptes.
+5. Obrir `MG-07` després de `MG-04` per planificar amb criteri els materials per itinerari.
+6. Executar `MG-05` quan la base de R3 ja estiga estabilitzada.
+7. Executar `MG-06` com a tancament de la primera onada de producció de materials.
 
-## Definition of done de la realineació
+## Definition of done
 Esta realineació es considera completada quan:
-- el document deixa constància que el backlog inicial ha quedat superat
-- les issues de bootstrap i `R2-01` ja no apareixen com a focus de treball actual
-- el backlog actiu queda orientat a `R3-01`, `R4-01`, `R5-01`, `PB-01` i `MG-01`
-- l'ordre recomanat de treball reflectix el focus real del repositori: consolidar reptes, redactar l'enunciat base i planificar materials nous
+- el document deixa constància que el backlog inicial de bootstrap ja no és el focus actiu
+- les issues `#1` a `#5` queden clarament identificades com a tasques que s'han de mantindre tancades
+- el backlog recomanat queda orientat a `PB-01`, `MG-01` i a la nova sèrie `MG-02` a `MG-07`
+- l'ordre de treball reflectix la fase actual del projecte: consolidació mínima i producció real de materials
+- el document pot usar-se com a guia directa per revisar i crear issues a GitHub sense haver de reinterpretar el context
