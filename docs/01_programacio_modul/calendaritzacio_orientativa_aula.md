@@ -5,6 +5,8 @@ Baixar el pla d'implantació docent del mòdul a una seqüència temporal execut
 
 Esta calendarització no pretén fixar un únic calendari tancat per a tots els contextos. La seua funció és oferir una base reusable perquè el curs es puga desplegar amb ritme coherent, mantenint el treball per reptes, el projecte base com a fil conductor i les evidències autèntiques com a centre de seguiment.
 
+Esta peça s'ha de llegir conjuntament amb `docs/03_avaluacio/matriu_evidencies_i_instruments_per_fase.md`, que concreta quines evidències s'esperen en cada fase i amb quins instruments s'han de revisar.
+
 ## Criteris d'ús de la calendarització
 - està pensada com a seqüència orientativa d'un bloc lectiu d'unes `18` setmanes, ampliable o comprimible segons hores reals del centre
 - cada fase s'ha d'entendre com a tram de producte i d'evidència, no només com a bloc temàtic
@@ -16,7 +18,7 @@ Esta calendarització no pretén fixar un únic calendari tancat per a tots els 
 ## Taula global de fases
 | Fase | Setmanes orientatives | Repte o focus principal | Materials activats | Evidències principals | Instrument principal | Punt crític de seguiment |
 |---|---|---|---|---|---|---|
-| **Fase 0. Arrancada i marc comú** | `1-2` | marc de treball, projecte base i criteris comuns | materials comuns de mòdul, sistema d'evidències, enunciat base del projecte | repositori creat, primer `README`, organització mínima, traça inicial | `checklist_revisio_repo.md` | comprovar que el grup entén Git, evidències i AI log abans d'entrar al producte |
+| **Fase 0. Arrancada i marc comú** | `1-2` | marc de treball, projecte base i criteris comuns | materials comuns de mòdul, sistema d'evidències, enunciat base del projecte | repositori creat, primer `README`, organització mínima, traça inicial | `checklist_revisio_repo.md` | comprovar que el grup usa Git/GitHub com a repàs metodològic i traçabilitat professional, no com a iniciació bàsica |
 | **Fase 1. Kickoff tècnic** | `3-4` | Repte 1 i definició operativa del producte | fitxa del Repte 1, materials comuns, projecte base, model d'itineraris com a marc | entorn funcional, ADR inicial, decisió de domini, primers commits útils | `rubrica_base_reptes.md` | evitar que el kickoff quede en infraestructura buida sense decisió tècnica ni producte recognoscible |
 | **Fase 2. Base funcional del producte** | `5-8` | Repte 2: usuaris, sessions, autenticació i validacions | materials del Repte 2, materials comuns, suport inicial dels itineraris | registre/login/logout, accés protegit, errors mínims, proves bàsiques, `README` actualitzat | `rubrica_base_reptes.md` | controlar que el flux funcional siga real i no només una demo puntual |
 | **Fase 3. Arquitectura i persistència** | `9-12` | Repte 3: capes, persistència i qualitat tècnica | materials del Repte 3, materials comuns, itineraris `Laravel`, `Express/Nest`, `FastAPI` com a suport principal | model de dades, persistència funcional, refactorització per capes o equivalent, regressió mínima | `rubrica_base_reptes.md` | no passar a API sense base persistent i mantenible suficient |
@@ -29,7 +31,7 @@ Setmanes orientatives: `1-2`
 
 Focus:
 - presentar el projecte base del curs i els dominis admesos
-- activar la base comuna de Git, `README/ADR`, testing/debugging i ús verificable de la IA
+- activar la base comuna de Git, `README/ADR`, testing/debugging i ús verificable de la IA com a repàs metodològic, no com a alfabetització des de zero
 - fixar criteris de repositori, evidències i defensa
 
 Resultat esperat del bloc:
