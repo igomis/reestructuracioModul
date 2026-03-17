@@ -16,8 +16,8 @@ Nota de fase:
 - amb `MG-03`, el projecte obri el primer paquet específic de repte i trasllada la producció de materials al flux funcional de sessions, autenticació i validació del Repte 2
 - amb `MG-04`, el projecte entra en el paquet de materials d'arquitectura, persistència i qualitat tècnica del Repte 3, que ha de preparar directament la transició cap a API
 - `MG-04` queda consolidat
-- `MG-05` entra en producció a `docs/04_materials/repte_04/`
-- `MG-06` queda previst a `docs/04_materials/repte_05/`
+- `MG-05` queda consolidat
+- `MG-06` entra en producció a `docs/04_materials/repte_05/`
 
 ## Issues inicials que convé tancar
 Les issues inicials de bootstrap han de quedar fora del backlog actiu perquè ja responen a treball resolt o superat:
