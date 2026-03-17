@@ -27,10 +27,11 @@ Repositori de treball per al redisseny del mòdul **Desenvolupament d’Aplicaci
 La base curricular del projecte ja està definida i el repositori ha passat a una fase de **consolidació de producció de materials**.
 
 Estat real de la fase actual:
-- els paquets `MG-02` a `MG-06` ja tenen peces publicades i reutilitzables
-- cal consolidar-les perquè tinguen densitat, estructura i transicions homogènies en la versió pública
+- els materials comuns i els materials per repte `MG-02` a `MG-06` ja tenen peces publicades i reutilitzables
+- els tres itineraris tecnològics (`Laravel`, `Express/Nest`, `FastAPI`) ja existixen com a primer paquet comparable
+- ara toca homogeneïtzar profunditat, estructura i exigència perquè el conjunt siga usable en implantació docent
 - el projecte base i el pla de materials ja permeten treballar sobre una seqüència real de producte del curs
-- el següent bloc natural serà l’obertura dels materials per itinerari, però només després d’una revisió global de coherència
+- el següent bloc natural ja no és obrir paquets nous, sinó preparar materials avançats i una fase d'implantació docent més directa
 
 ## Documents clau de la fase actual
 - [Pla de materials prioritaris del mòdul](docs/04_materials/pla_materials_prioritaris.md)
@@ -41,6 +42,6 @@ Estat real de la fase actual:
 - [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md)
 
 ## Focus actual
-1. Consolidar els materials `MG-02` a `MG-06` perquè funcionen com a paquet públic breu però realment usable.
-2. Fer una revisió global de coherència entre `README`, estat de producció, paquets de materials i transicions entre reptes.
-3. Preparar l’entrada dels materials per itinerari (`Laravel`, `Express o Nest`, `FastAPI`) sense obrir encara nous fronts de producció.
+1. Consolidar els materials comuns i els materials per repte perquè funcionen com a base pública breu però realment usable.
+2. Homogeneïtzar els itineraris `Laravel`, `Express/Nest` i `FastAPI` en estructura, profunditat i nivell d’exigència.
+3. Preparar la fase següent de materials avançats i d’implantació docent sense obrir encara nous paquets.

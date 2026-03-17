@@ -38,7 +38,7 @@ Estructura orientativa:
 - `database/migrations/`
 - `tests/Feature/` i, quan tinga sentit, `tests/Unit/`
 
-### Fitxers i peces clau que cal entendre
+### Peces clau que cal entendre
 L'equip hauria de saber per a què servixen, com a mínim:
 - `routes/web.php` i `routes/api.php`: punt d'entrada del contracte d'exposició
 - `app/Http/Controllers/`: coordinació de peticions i resposta
@@ -52,6 +52,19 @@ Criteri docent:
 - no cal dominar totes les capes avançades de `Laravel`
 - sí que cal entendre el recorregut mínim des de petició fins a persistència i resposta
 - qualsevol peça generada automàticament ha de ser explicable i revisable
+
+### Criteri propi de l'itinerari Laravel
+Convé aprofitar les convencions fortes de `Laravel` quan realment ajuden al projecte:
+- `Controller` com a punt d'entrada recognoscible
+- `Model` i `Eloquent` com a capa persistent del domini
+- `Form Request` quan aporte claredat en validació
+- `migrations` i relacions per controlar evolució de l'esquema
+- `middleware` per aplicar autenticació i control d'accés sense barrejar-ho tot al controlador
+
+Criteri comú:
+- no s'ha d'acceptar scaffolding només perquè existeix
+- cal entendre quines parts són infraestructura del framework i quines parts són decisions pròpies del projecte
+- la base ha de quedar preparada per continuar cap a persistència, API i integració sense reescriptura crítica
 
 ### Evidències mínimes
 S'espera trobar evidències com:
@@ -74,5 +87,6 @@ S'espera trobar evidències com:
 - el projecte `Laravel` arranca i es pot reproduir amb instruccions clares
 - l'estructura mínima del projecte està adaptada al domini del curs
 - l'equip entén rutes, controladors, models, migracions i configuració bàsica
+- l'ús de convencions pròpies de `Laravel` està justificat i és defensable
 - hi ha evidències reals d'arrancada i de primera verificació
 - la base queda preparada per connectar-se amb autenticació, persistència i API en els reptes següents

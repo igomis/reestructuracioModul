@@ -4,11 +4,11 @@
 Esta checklist servix per revisar si l'itinerari `FastAPI` ja disposa d'una base prou sòlida per aplicar-se al projecte del curs i adaptar-se després als Reptes 2, 3, 4 i 5 sense improvisació estructural.
 
 ## Contingut operatiu
-La revisió final de l'itinerari no s'ha de limitar al fet que l'aplicació arranque. També ha de comprovar autenticació, persistència, validació, proves, documentació i capacitat real de continuar el projecte base sobre ecosistema Python.
+La revisió final de l'itinerari no s'ha de limitar al fet que l'aplicació arranque. També ha de comprovar autenticació, persistència, validació, proves, documentació, `AI log` i capacitat real de continuar el projecte base sobre ecosistema Python.
 
 Preparació per als Reptes 2-5:
 - el tancament d'esta primera guia d'itinerari ha de deixar clar com es cobriran autenticació, persistència, API i integració híbrida dins de `FastAPI`
-- també ha de deixar identificades les peces pròpies de l'ecosistema Python que funcionaran com a patró reusable dins del mòdul
+- també ha de deixar identificades les peces pròpies de l'ecosistema Python que funcionaran com a patró reusable i comparable amb els altres itineraris
 
 ## Errors habituals o riscos
 - confondre "servidor arranca" amb "itinerari preparat"
@@ -28,8 +28,8 @@ Preparació per als Reptes 2-5:
 - [ ] l'equip pot explicar on es comprova autenticació i accés
 
 ### Persistència coherent
-- [ ] hi ha models mínims del domini alineats amb el projecte base
-- [ ] la persistència principal està definida i s'ha verificat
+- [ ] hi ha model persistent mínim alineat amb el projecte base
+- [ ] l'evolució d'esquema o persistència principal està definida i verificada
 - [ ] les relacions bàsiques tenen sentit funcional i es poden defensar
 
 ### Validacions mínimes

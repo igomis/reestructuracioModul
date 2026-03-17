@@ -62,8 +62,8 @@ Criteri docent:
 - sí que cal entendre què rep la petició, on es valida, on es resol la lògica i on es persistix
 - qualsevol peça generada amb CLI o IA ha de ser explicable i revisable
 
-### Diferència bàsica entre via Express i via Nest
-La diferència pràctica mínima és esta:
+### Criteri propi de l'itinerari Express/Nest
+La diferència pràctica mínima entre les dos vies és esta:
 - `Express` dona més llibertat estructural i exigix que l'equip impose per si mateix separació de capes, convencions i disciplina arquitectònica
 - `Nest` oferix una estructura més guiada amb `module`, `controller`, `service`, `guard`, `pipe` i `dto`, i facilita més la lectura uniforme del projecte
 

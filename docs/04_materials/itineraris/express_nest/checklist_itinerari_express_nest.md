@@ -4,15 +4,15 @@
 Esta checklist servix per revisar si l'itinerari `Express/Nest` ja disposa d'una base prou sòlida per aplicar-se al projecte del curs i adaptar-se després als Reptes 2, 3, 4 i 5 sense improvisació arquitectònica.
 
 ## Contingut operatiu
-La revisió final de l'itinerari no s'ha de limitar al fet que el servidor arranque. També ha de comprovar autenticació, persistència, validació, proves, documentació i capacitat real de continuar el projecte base amb una estructura defensable en ecosistema `Node.js`.
+La revisió final de l'itinerari no s'ha de limitar al fet que el servidor arranque. També ha de comprovar autenticació, persistència, validació, proves, documentació, `AI log` i capacitat real de continuar el projecte base amb una estructura defensable en ecosistema `Node.js`.
 
 Preparació per als Reptes 2-5:
 - el tancament d'esta primera guia d'itinerari ha de deixar clar com es cobriran autenticació, persistència, API i integració híbrida dins de la via `Express` o `Nest`
-- també ha de deixar identificades les peces pròpies de l'ecosistema Node que funcionaran com a patró reusable cap a `FastAPI`
+- també ha de deixar identificades les peces pròpies de l'ecosistema Node que funcionaran com a patró reusable i comparable amb els altres itineraris
 
 ## Errors habituals o riscos
 - confondre "servidor arranca" amb "itinerari preparat"
-- no justificar per què s'ha triat `Express` o `Nest`
+- no justificar amb criteri per què s'ha triat `Express` o `Nest`
 - mantindre punts crítics de negoci o persistència massa acoblats
 - dependre de middleware, generadors o IA sense validar el comportament real
 
@@ -28,8 +28,8 @@ Preparació per als Reptes 2-5:
 - [ ] l'equip pot explicar on es comprova autenticació i accés
 
 ### Persistència coherent
-- [ ] hi ha models, esquemes o entitats mínimes alineades amb el projecte base
-- [ ] la persistència principal està definida i s'ha verificat
+- [ ] hi ha model persistent mínim alineat amb el projecte base
+- [ ] l'evolució d'esquema o persistència principal està definida i verificada
 - [ ] les relacions bàsiques tenen sentit funcional i es poden defensar
 
 ### Validacions mínimes

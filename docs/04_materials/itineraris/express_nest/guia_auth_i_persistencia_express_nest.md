@@ -44,7 +44,7 @@ Formes vàlides de resoldre-ho:
 - `DTO` i `ValidationPipe` en `Nest` quan l'equip puga defensar el flux
 - validació complementària en servei o cas d'ús quan depenga d'estat persistent
 
-### Diferències pràctiques entre Express i Nest en esta part
+### Criteri propi de l'itinerari Express/Nest
 En `Express` és habitual trobar:
 - rutes o routers que deleguen a controladors
 - middleware per autenticació i control d'accés
@@ -84,6 +84,6 @@ S'espera trobar evidències com:
 ## Checklist final
 - l'autenticació és funcional i el control d'accés està aplicat amb criteri
 - el domini disposa d'un model mínim coherent en la via `Express` o `Nest`
-- la persistència és recognoscible i usable en els fluxos prioritaris
+- la persistència o evolució d'esquema és recognoscible i usable en els fluxos prioritaris
 - hi ha validacions mínimes alineades amb el comportament real del projecte
 - la base resultant és prou estable per adaptar-se als Reptes 2 i 3 i preparar el salt cap a API

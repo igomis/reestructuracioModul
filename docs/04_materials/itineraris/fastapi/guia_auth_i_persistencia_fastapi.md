@@ -44,7 +44,7 @@ Formes vàlides de resoldre-ho:
 - validació complementària en servei o operació quan depenga d'estat persistent
 - tractament d'errors coherent quan la validació falla, quan falla la regla de domini o quan falla l'accés a dades
 
-### Relació entre models, esquemes i operacions
+### Criteri propi de l'itinerari FastAPI
 En `FastAPI` convé deixar clar:
 - `schemas`: definixen contractes d'entrada i eixida
 - `models`: representen l'estat persistent del domini
@@ -77,7 +77,7 @@ S'espera trobar evidències com:
 ## Checklist final
 - l'autenticació és funcional i el control d'accés està aplicat amb criteri
 - el domini disposa d'un model mínim coherent en la via `FastAPI`
-- la persistència és recognoscible i usable en els fluxos prioritaris
+- la persistència o evolució d'esquema és recognoscible i usable en els fluxos prioritaris
 - hi ha validacions mínimes alineades amb el comportament real del projecte
 - la relació entre models, esquemes i operacions és clara i defensable
 - la base resultant és prou estable per adaptar-se als Reptes 2 i 3 i preparar el salt cap a API

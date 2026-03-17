@@ -32,19 +32,6 @@ Criteri docent:
 - convé aprofitar `Eloquent` com a capa de model, però evitant confiar cegament en convencions no enteses
 - les regles del domini han de ser visibles en codi, validació o casos d'ús recognoscibles
 
-### Migracions i relacions mínimes
-Com a mínim, el projecte hauria de tindre:
-- migració d'usuaris o equivalent
-- migració de l'entitat principal del domini
-- claus o referències bàsiques quan el cas d'ús les necessite
-- relacions mínimes definides al model quan realment s'usen
-- criteri clar sobre què passa amb dades inexistents, associacions invàlides o estats incoherents
-
-Punts de control útils:
-- si es crea un recurs del domini, a quin usuari o actor queda associat
-- si es recupera un recurs inexistent, quina resposta funcional dona el sistema
-- si falla la persistència, on es detecta i com es deixa rastre
-
 ### Validacions mínimes
 S'hauria de validar, com a mínim:
 - camps obligatoris del registre, login o cas d'ús principal
@@ -56,6 +43,19 @@ Formes vàlides de resoldre-ho:
 - `Form Request` quan ajude a desacoblar validació
 - validació directa en controlador quan el cas siga molt reduït i es puga defensar
 - regles complementàries al model o al cas d'ús quan la validació depenga d'estat persistent
+
+### Criteri propi de l'itinerari Laravel
+Com a mínim, la via `Laravel` hauria de deixar clar:
+- migració d'usuaris o equivalent
+- migració de l'entitat principal del domini
+- claus o referències bàsiques quan el cas d'ús les necessite
+- relacions mínimes definides al model quan realment s'usen
+- ús defensable de `Eloquent`, `Form Request` o `middleware` quan aporten claredat real
+
+Punts de control útils:
+- si es crea un recurs del domini, a quin usuari o actor queda associat
+- si es recupera un recurs inexistent, quina resposta funcional dona el sistema
+- si falla la persistència, on es detecta i com es deixa rastre
 
 ### Evidències mínimes
 S'espera trobar evidències com:
@@ -78,6 +78,6 @@ S'espera trobar evidències com:
 ## Checklist final
 - l'autenticació és funcional i el control d'accés està aplicat amb criteri
 - el domini disposa d'un model mínim coherent amb `Laravel`
-- les migracions i relacions bàsiques estan definides i provades
+- les migracions o l'evolució d'esquema i les relacions bàsiques estan definides i provades
 - hi ha validacions mínimes recognoscibles i alineades amb el comportament real
 - la base resultant és prou estable per adaptar-se als Reptes 2 i 3 i preparar el salt cap a API

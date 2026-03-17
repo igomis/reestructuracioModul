@@ -56,6 +56,19 @@ Criteri docent:
 - sí que cal entendre el recorregut mínim entre petició, validació, negoci, persistència i resposta
 - qualsevol peça generada per tutorial, CLI o IA ha de ser explicable i revisable
 
+### Criteri propi de l'itinerari FastAPI
+Convé mantindre clara la separació pròpia de l'ecosistema Python:
+- `routers` com a contracte HTTP
+- `schemas` com a contracte d'entrada i eixida
+- `models` com a representació persistent del domini
+- `services` o operacions equivalents com a nucli de negoci
+- dependències i configuració d'accés a dades sense dissoldre la lògica en el `router`
+
+Criteri comú:
+- no s'ha de convertir `FastAPI` en una col·lecció d'endpoints sense arquitectura
+- cal entendre què és validació, què és persistència i què és operació de negoci
+- la base ha de quedar preparada per continuar cap a auth, API i integració sense reescriptura crítica
+
 ### Evidències mínimes
 S'espera trobar evidències com:
 - projecte `FastAPI` que arranca amb instruccions reproduïbles
@@ -77,5 +90,6 @@ S'espera trobar evidències com:
 - el projecte `FastAPI` arranca i es pot reproduir amb instruccions clares
 - l'equip entén el recorregut mínim entre `router`, esquema, negoci i persistència
 - l'estructura mínima està adaptada al domini del curs
+- l'ús de convencions pròpies de `FastAPI` està justificat i és defensable
 - hi ha evidències reals d'arrancada i primera verificació
 - la base queda preparada per connectar-se amb autenticació, persistència, API i integració en els reptes següents
