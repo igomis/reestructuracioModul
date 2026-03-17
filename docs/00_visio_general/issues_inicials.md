@@ -10,6 +10,9 @@ Estat real de la fase actual:
 - les issues de reptes `R3-01`, `R4-01` i `R5-01` continuen sent útils com a fils de consolidació docent
 - el backlog actiu ha de desplaçar-se ara cap a una fase de producció de materials, no cap a tasques de bootstrap
 
+Nota de fase:
+- amb `MG-02`, el projecte entra en producció efectiva dels materials comuns mínims que han de servir de base reutilitzable abans d'obrir materials específics per repte o per itinerari
+
 ## Issues inicials que convé tancar
 Les issues inicials de bootstrap han de quedar fora del backlog actiu perquè ja responen a treball resolt o superat:
 
