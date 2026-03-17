@@ -5,7 +5,9 @@ Convertir el Repte 2 en un flux funcional clar i verificable d'accés d'usuari, 
 
 Esta guia s'ha d'usar per ordenar la seqüència mínima de registre, autenticació, estat de sessió i accés protegit. El valor no està en afegir opcions, sinó en aconseguir que el flux base siga coherent, defensable i reutilitzable en el pas posterior al Repte 3.
 
-## Flux base
+## Contingut operatiu
+
+### Flux base
 El flux mínim del Repte 2 ha de cobrir estes quatre situacions:
 
 1. **Registre o alta d'usuari**
@@ -25,7 +27,7 @@ Flux mínim recomanat de treball:
 - implementar logout i comprovació posterior
 - provar accés autoritzat i accés denegat
 
-## Punts de control del servidor
+### Punts de control del servidor
 El servidor ha de controlar com a mínim:
 - recepció i validació de camps obligatoris
 - tractament consistent de credencials incorrectes
@@ -41,7 +43,7 @@ Punts de revisió útils:
 - què passa si fa logout i intenta tornar a accedir al recurs protegit
 - què passa si intenta accedir directament al recurs sense autenticar-se
 
-## Evidències esperades
+### Evidències esperades
 Per considerar el flux ben resolt, s'espera trobar:
 - issue o microtasques que identifiquen registre, login, logout i accés protegit
 - seqüència de commits que mostre construcció real del flux
@@ -50,7 +52,13 @@ Per considerar el flux ben resolt, s'espera trobar:
 - documentació tècnica actualitzada del mòdul o del `README`
 - AI log si la IA s'ha utilitzat per generar esquelets, resoldre errors o proposar validacions
 
-## Errors habituals
+### Transició al Repte 3
+El tancament del Repte 2 hauria de deixar identificat:
+- quina part del flux està massa acoblada i haurà de passar a arquitectura per capes o equivalent
+- quines validacions i errors convé centralitzar o encapsular millor
+- quina operació protegida del domini serà el primer cas d'ús a reorganitzar al Repte 3
+
+## Errors habituals o riscos
 - implementar només login i oblidar registre, logout o accés protegit
 - validar només al client o de manera superficial i no al servidor
 - confondre "usuari autenticat" amb "usuari autoritzat" sense deixar-ho clar

@@ -5,7 +5,7 @@ Fer que cada projecte o repte deixe documentació tècnica útil per a onboardin
 
 En el mòdul, un `README` i un `ADR` no són complements decoratius. Formen part de les evidències autèntiques del treball: permeten entendre què s'ha construït, com s'executa, quines decisions s'han pres i com es podria continuar o mantindre el projecte.
 
-## Contingut mínim operatiu
+## Contingut operatiu
 El `README` ha de permetre que una altra persona entenga i pose en marxa el treball sense dependre d'explicacions informals.
 
 Contingut mínim d'un `README` tècnic:
@@ -40,15 +40,6 @@ Criteri d'ús:
 - sí que fa falta quan una decisió canvia l'arquitectura, la manera de provar, la manera d'integrar o la manera de mantindre el producte
 - si una decisió és prou important per afectar defensa tècnica o mantenibilitat, convé deixar-la fora del cap de l'equip i portar-la a document
 
-## Checklist o punts clau
-- el `README` permet arrancar el treball i comprovar-ne l'estat real
-- la documentació descriu el comportament actual i no una versió idealitzada
-- les decisions importants no queden només en commits o converses
-- els `ADR` documenten decisions significatives, no detalls trivials
-- la documentació ajuda a defensar el treball en un entorn professional realista
-- qualsevol membre de l'equip podria reprendre el treball amb la informació escrita
-- els canvis importants en execució o arquitectura queden actualitzats a la documentació
-
 ## Errors habituals o riscos
 - convertir el `README` en text promocional en lloc de guia operativa
 - deixar instruccions incompletes o desactualitzades
@@ -56,3 +47,12 @@ Criteri d'ús:
 - crear `ADR` massa genèrics, massa tard o per decisions irrellevants
 - omplir el `README` amb teoria general del tema en lloc d'informació útil del projecte concret
 - descriure una arquitectura o unes proves que no corresponen amb l'estat real del repositori
+
+## Checklist final
+- el `README` permet arrancar el treball i comprovar-ne l'estat real
+- la documentació descriu el comportament actual i no una versió idealitzada
+- les decisions importants no queden només en commits o converses
+- els `ADR` documenten decisions significatives, no detalls trivials
+- la documentació ajuda a defensar el treball en un entorn professional realista
+- qualsevol membre de l'equip podria reprendre el treball amb la informació escrita
+- els canvis importants en execució o arquitectura queden actualitzats a la documentació

@@ -5,7 +5,7 @@ Establir un flux mínim de treball amb Git que siga reutilitzable en tots els re
 
 Esta guia no planteja Git com una formalitat administrativa, sinó com una peça central de treball professional: ha de permetre seguir l'evolució del producte, entendre decisions, revisar incidències i comprovar que el que es defensa en un repte realment s'ha construït al repositori.
 
-## Contingut mínim operatiu
+## Contingut operatiu
 - treballar cada repte o microtasca amb una referència clara a issue, objectiu o tasca de treball
 - dividir el treball en canvis curts i verificables, no en una única pujada final
 - fer commits coherents: un objectiu clar, un canvi clar i un estat revisable
@@ -33,15 +33,6 @@ Criteri pràctic de missatges:
 - evitar missatges genèrics com `canvis`, `proves`, `última versió`
 - si el canvi respon a una incidència o una part concreta del repte, deixar-ho recognoscible al missatge
 
-## Checklist o punts clau
-- hi ha una relació clara entre el que es treballa i una issue, repte o microtasca
-- els commits mostren evolució real i no una pujada única al final
-- els missatges de commit expliquen el canvi amb criteri professional
-- el codi o document pujat correspon a un estat revisable
-- el repositori permet reconstruir què s'ha fet i en quin ordre
-- el `push` no es fa només per còpia de seguretat, sinó per deixar evidència visible i contrastable
-- les correccions importants també deixen rastre i no desapareixen dins d'un commit massa gran
-
 ## Errors habituals o riscos
 - fer un únic commit gran al final i perdre la traçabilitat del treball
 - treballar directament sense cap relació amb issue, repte o objectiu concret
@@ -49,3 +40,12 @@ Criteri pràctic de missatges:
 - usar Git només com a còpia de seguretat i no com a registre professional d'evolució
 - reescriure o compactar tant l'historial que ja no es puga entendre com s'ha arribat al resultat final
 - presentar un repositori aparentment net però sense evidència real de proves, correccions o iteracions
+
+## Checklist final
+- hi ha una relació clara entre el que es treballa i una issue, repte o microtasca
+- els commits mostren evolució real i no una pujada única al final
+- els missatges de commit expliquen el canvi amb criteri professional
+- el codi o document pujat correspon a un estat revisable
+- el repositori permet reconstruir què s'ha fet i en quin ordre
+- el `push` no es fa només per còpia de seguretat, sinó per deixar evidència visible i contrastable
+- les correccions importants també deixen rastre i no desapareixen dins d'un commit massa gran

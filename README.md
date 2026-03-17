@@ -24,19 +24,23 @@ Repositori de treball per al redisseny del mòdul **Desenvolupament d’Aplicaci
 - `docs/06_plantilles/` plantilles reutilitzables
 
 ## Estat actual
-La **Fase 1 (arquitectura curricular)** està en marxa i fixa la base comuna entre programació, reptes, avaluació i materials.
-El document [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md) està en versió curricular completa i usable com a base de disseny.
-S’incorpora el model d’itineraris tecnològics guiats com a marc general reutilitzable ([model d’itineraris](docs/01_programacio_modul/model_itineraris_tecnologics.md)).
+La base curricular del projecte ja està definida i el repositori ha passat a una fase de **consolidació de producció de materials**.
 
-## Documents clau de la Fase 1
-- [Fase 1. Arquitectura curricular](docs/01_programacio_modul/fase_1_arquitectura_curricular.md)
-- [Seqüenciació general del curs](docs/01_programacio_modul/seqüenciacio_general.md)
-- [Criteris metodològics dels reptes](docs/01_programacio_modul/criteris_metodologics_reptes.md)
-- [Criteris de verificació de la IA](docs/01_programacio_modul/criteris_verificacio_ia.md)
+Estat real de la fase actual:
+- els paquets `MG-02` a `MG-06` ja tenen peces publicades i reutilitzables
+- cal consolidar-les perquè tinguen densitat, estructura i transicions homogènies en la versió pública
+- el projecte base i el pla de materials ja permeten treballar sobre una seqüència real de producte del curs
+- el següent bloc natural serà l’obertura dels materials per itinerari, però només després d’una revisió global de coherència
+
+## Documents clau de la fase actual
+- [Pla de materials prioritaris del mòdul](docs/04_materials/pla_materials_prioritaris.md)
+- [Estat de producció dels materials](docs/00_visio_general/issues_inicials.md)
+- [Enunciat base del projecte del curs](docs/05_projectes_tecnics/enunciat_projecte_base.md)
+- [Model d’itineraris tecnològics](docs/01_programacio_modul/model_itineraris_tecnologics.md)
 - [Mapa mòdul -> reptes](docs/00_visio_general/mapa_modul_reptes.md)
 - [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md)
 
-## Proper focus
-1. Tancar les fitxes completes dels 5 reptes amb els criteris de Fase 1.
-2. Concretar evidències i instruments d’avaluació per repte.
-3. Connectar cada repte amb els materials adaptats prioritaris.
+## Focus actual
+1. Consolidar els materials `MG-02` a `MG-06` perquè funcionen com a paquet públic breu però realment usable.
+2. Fer una revisió global de coherència entre `README`, estat de producció, paquets de materials i transicions entre reptes.
+3. Preparar l’entrada dels materials per itinerari (`Laravel`, `Express o Nest`, `FastAPI`) sense obrir encara nous fronts de producció.

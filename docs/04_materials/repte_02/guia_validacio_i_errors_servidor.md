@@ -5,7 +5,9 @@ Assegurar que el Repte 2 no es resol només amb un flux aparentment funcional, s
 
 Esta guia s'ha d'usar per decidir què es valida al backend, com es responen els errors i quines comprovacions mínimes s'han de deixar registrades com a evidència autèntica del repte.
 
-## Què validar al servidor
+## Contingut operatiu
+
+### Què validar al servidor
 Com a mínim, el servidor ha de validar:
 - presència dels camps obligatoris del registre o del login
 - format bàsic dels camps que tinguen restriccions clares
@@ -19,7 +21,7 @@ Criteri pràctic:
 - els errors han de ser interpretables per l'equip i per qui revise el repte
 - les comprovacions mínimes han de respondre a casos reals del flux, no a llistes teòriques desconnectades
 
-## Tractament mínim d'errors
+### Tractament mínim d'errors
 El tractament d'errors del Repte 2 ha d'incloure:
 - missatges o respostes coherents per camps obligatoris absents o invàlids
 - resposta clara per credencials incorrectes
@@ -32,7 +34,7 @@ Mínim exigible:
 - mantindre un format de resposta o de feedback recognoscible
 - registrar o poder reproduir què ha passat quan apareix una incidència
 
-## Casos correctes i casos límit
+### Casos correctes i casos límit
 Casos correctes mínims:
 - registre vàlid
 - login vàlid
@@ -46,7 +48,7 @@ Casos límit mínims:
 - accés a recurs protegit sense sessió
 - intent de reutilitzar un estat que ja no hauria de ser vàlid després del logout
 
-## Evidències
+### Evidències esperades
 S'espera trobar evidències com:
 - matriu curta o llistat de validacions mínimes aplicades
 - registre de casos correctes i casos límit executats
@@ -55,7 +57,13 @@ S'espera trobar evidències com:
 - proves automatitzades, peticions registrades o verificacions equivalents segons l'stack
 - AI log si la IA ha ajudat a definir regles, missatges o proves
 
-## Errors habituals
+### Transició al Repte 3
+El Repte 2 hauria d'acabar amb estes pistes clares per al pas següent:
+- quines validacions s'han de moure des del flux superficial cap al model o al cas d'ús
+- quins errors convé tractar de manera més centralitzada i coherent
+- quins casos límit afectaran directament l'arquitectura i la persistència del Repte 3
+
+## Errors habituals o riscos
 - confiar en validació del client i no repetir-la al servidor
 - usar missatges genèrics que no permeten entendre què falla
 - mesclar en la mateixa resposta errors de camps, credencials i permisos

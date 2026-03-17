@@ -5,7 +5,7 @@ Convertir proves, depuració i registre d'incidències en una pràctica habitual
 
 Esta guia no demana sofisticació excessiva. El seu objectiu és que cada repte deixe una prova clara que l'equip sap comprovar el que construïx, reproduir errors i justificar correccions sense dependre només d'una demo o d'una explicació oral.
 
-## Contingut mínim operatiu
+## Contingut operatiu
 Cada repte ha de definir almenys un conjunt reduït de verificacions sobre els fluxos crítics del producte. No es demana cobertura massiva, sinó proves útils i reproduïbles.
 
 Base mínima de treball:
@@ -38,15 +38,6 @@ Criteri docent:
 - el debugging ha de mostrar procés, no només resultat final
 - una incidència ben registrada té valor docent i professional, encara que la correcció siga menuda
 
-## Checklist o punts clau
-- hi ha almenys una verificació clara dels fluxos més importants
-- els casos d'error tenen el mateix pes que els casos feliços
-- les incidències rellevants deixen rastre al repositori o a la documentació tècnica
-- una correcció va seguida d'una comprovació posterior
-- el resultat final es pot revisar i reproduir
-- el material de prova està alineat amb el repte i amb el producte real, no amb exemples desconnectats
-- el registre de debugging permet entendre què fallava i com s'ha validat la correcció
-
 ## Errors habituals o riscos
 - provar només a ull i no deixar cap evidència del que s'ha validat
 - corregir errors sense haver-los reproduït abans
@@ -54,3 +45,12 @@ Criteri docent:
 - no revisar regressions després d'una correcció
 - acumular proves irrellevants i no comprovar precisament els punts crítics del repte
 - usar la IA per generar proves aparentment correctes sense contrastar que corresponen al comportament real del projecte
+
+## Checklist final
+- hi ha almenys una verificació clara dels fluxos més importants
+- els casos d'error tenen el mateix pes que els casos feliços
+- les incidències rellevants deixen rastre al repositori o a la documentació tècnica
+- una correcció va seguida d'una comprovació posterior
+- el resultat final es pot revisar i reproduir
+- el material de prova està alineat amb el repte i amb el producte real, no amb exemples desconnectats
+- el registre de debugging permet entendre què fallava i com s'ha validat la correcció

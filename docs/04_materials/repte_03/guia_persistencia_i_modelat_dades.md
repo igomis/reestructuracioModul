@@ -5,7 +5,9 @@ Consolidar al Repte 3 un model de dades prou estable perquè el producte deixe d
 
 Esta guia servix per decidir què s'ha de modelar, com es manté consistència bàsica i com s'han de relacionar validacions, errors i operacions de dades dins del domini triat.
 
-## Model de dades mínim del domini
+## Contingut operatiu
+
+### Model de dades mínim del domini
 El domini triat ha de quedar representat, com a mínim, amb:
 - una entitat d'usuari o equivalent vinculada a autenticació
 - una entitat principal del domini: incidència, reserva, cita, recurs o inventari
@@ -18,7 +20,7 @@ Criteri mínim de modelat:
 - no s'han d'afegir dades ornamentals sense impacte funcional
 - la persistència ha de permetre recuperar, actualitzar o protegir els casos d'ús prioritaris
 
-## Persistència segura i consistència bàsica
+### Persistència segura i consistència bàsica
 La persistència del Repte 3 ha de garantir:
 - operacions de lectura i escriptura coherents amb el domini
 - tractament controlat de dades inexistents, invàlides o fora d'estat
@@ -32,7 +34,7 @@ Punts mínims de control:
 - què passa si es reutilitzen dades amb un estat ja no vàlid
 - què passa si la persistència falla o retorna una situació inesperada
 
-## Validacions lligades al model
+### Validacions lligades al model
 Les validacions del Repte 3 ja no han de quedar només com a comprovacions superficials del flux. Han d'estar lligades al model i a les seues regles:
 - camps obligatoris
 - formats o restriccions bàsiques del domini
@@ -44,15 +46,7 @@ Criteri pràctic:
 - si una regla de negoci depén de dades persistides, s'ha de validar prop del model o del cas d'ús que la governa
 - el tractament d'errors ha de reflectir si falla el format, la regla del model o l'accés a dades
 
-## Riscos habituals
-- modelar dades copiant l'estructura temporal del Repte 2 sense revisar si té sentit persistent
-- barrejar consultes, regles de negoci i respostes finals en el mateix mètode
-- afegir persistència però sense revisar coherència ni integritat bàsica
-- definir validacions en documentació però no aplicar-les en el flux real
-- assumir que l'ORM o la llibreria resol automàticament consistència i seguretat
-- no deixar clar quines parts del model hauran d'obrir-se després com a API al Repte 4
-
-## Evidències esperades
+### Evidències esperades
 S'espera trobar evidències com:
 - model o esquema de dades recognoscible i alineat amb el domini
 - operacions de persistència aplicades als casos d'ús prioritaris
@@ -60,6 +54,20 @@ S'espera trobar evidències com:
 - commits que mostren ajustos de model, accés a dades i regles de consistència
 - documentació tècnica actualitzada sobre model, persistència i limitacions
 - AI log si la IA ha ajudat a definir model, consultes, validacions o proves
+
+### Transició al Repte 4
+El Repte 3 hauria d'acabar deixant clar:
+- quins recursos del model tenen sentit com a endpoints principals
+- quines validacions i errors s'hauran de reflectir després en el contracte API
+- quines operacions de persistència ja són prou estables per exposar-se sense reestructuració crítica
+
+## Errors habituals o riscos
+- modelar dades copiant l'estructura temporal del Repte 2 sense revisar si té sentit persistent
+- barrejar consultes, regles de negoci i respostes finals en el mateix mètode
+- afegir persistència però sense revisar coherència ni integritat bàsica
+- definir validacions en documentació però no aplicar-les en el flux real
+- assumir que l'ORM o la llibreria resol automàticament consistència i seguretat
+- no deixar clar quines parts del model hauran d'obrir-se després com a API al Repte 4
 
 ## Checklist final
 - existix un model de dades mínim i recognoscible del domini
