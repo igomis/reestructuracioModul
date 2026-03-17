@@ -12,6 +12,7 @@ Estat real de la fase actual:
 
 Nota de fase:
 - amb `MG-02`, el projecte entra en producció efectiva dels materials comuns mínims que han de servir de base reutilitzable abans d'obrir materials específics per repte o per itinerari
+- en la fase actual, `MG-02` passa de producció inicial a consolidació perquè estes guies ja han de poder funcionar com a materials reals i no com a esquelets mínims
 
 ## Issues inicials que convé tancar
 Les issues inicials de bootstrap han de quedar fora del backlog actiu perquè ja responen a treball resolt o superat:
