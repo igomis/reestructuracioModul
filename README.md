@@ -29,12 +29,13 @@ La base curricular del projecte ja està definida i el repositori entra en fase 
 Estat real de la fase actual:
 - els materials comuns i els materials per repte `MG-02` a `MG-06` ja tenen peces publicades i reutilitzables
 - els tres itineraris tecnològics (`Laravel`, `Express/Nest`, `FastAPI`) ja existixen com a primer paquet comparable
-- el nou eix és connectar reptes, materials, itineraris, evidències i instruments en una seqüència d'aula executable
+- el nou eix és connectar reptes, materials, itineraris, evidències i instruments en una seqüència d'aula executable i agrupable per avaluacions
 - el projecte base i el pla de materials ja permeten treballar sobre una seqüència real de producte del curs
-- el següent focus útil és calendaritzar aula i desplegar el model en context docent real
+- el focus immediat és convertir la implantació planificada en calendarització per avaluacions i preparar-ne el desplegament real d'aula
 
 ## Documents clau de la fase actual
 - [Pla d'implantació docent del mòdul](docs/01_programacio_modul/pla_implantacio_docent.md)
+- [Calendarització per avaluacions del mòdul](docs/01_programacio_modul/calendaritzacio_per_avaluacions.md)
 - [Pla de materials prioritaris del mòdul](docs/04_materials/pla_materials_prioritaris.md)
 - [Estat de producció dels materials](docs/00_visio_general/issues_inicials.md)
 - [Enunciat base del projecte del curs](docs/05_projectes_tecnics/enunciat_projecte_base.md)
@@ -43,6 +44,6 @@ Estat real de la fase actual:
 - [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md)
 
 ## Focus actual
-1. Consolidar l’ús docent dels materials comuns i dels materials per repte dins d’una seqüència de curs executable.
+1. Consolidar la implantació docent planificada en una calendarització per avaluacions usable en programació d’aula real.
 2. Mantindre els itineraris `Laravel`, `Express/Nest` i `FastAPI` com a variacions homologades dins d’un mateix marc docent.
-3. Preparar la calendarització d’aula i el desplegament real de la implantació docent.
+3. Preparar el desplegament real d’aula i la seqüenciació docent executable del curs.
