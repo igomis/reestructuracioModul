@@ -14,7 +14,7 @@ La planificació es calibra sobre un escenari orientatiu d'unes `20` setmanes am
 - l'escenari de referència és `Avaluació 1 = 10 setmanes / 60 hores aproximades` i `Avaluació 2 = 10 setmanes / 60 hores aproximades`
 - cada avaluació s'ha d'entendre com un tram de producte i d'evidència, no només com un tall administratiu
 - la calendarització per avaluacions ha de llegir-se junt amb el pla d'implantació docent i la calendarització orientativa per no perdre la lògica interna de fases `0-5`
-- Git i GitHub es treballen com a repàs metodològic i criteri de traçabilitat professional, no com a iniciació des de zero
+- Git/GitHub es treballa com a repàs metodològic i criteri de traçabilitat professional, no com a iniciació des de zero
 - els itineraris tecnològics no alteren la seqüència d'exigència; només concreten la implementació del mateix producte base
 - el pas d'una avaluació a la següent ha d'estar sostingut per evidències mínimes verificables i no només pel calendari
 - API, integració i defensa final han de quedar absorbides en la segona avaluació lectiva ordinària i no desplaçar-se a una tercera avaluació residual
@@ -159,4 +159,4 @@ Este document es considera completat quan:
 - connecta explícitament amb el pla d'implantació docent, la calendarització orientativa d'aula i la matriu d'evidències i instruments
 - manté Git/GitHub com a repàs metodològic i criteri de traçabilitat, no com a iniciació bàsica
 - deixa explícit que el projecte base del mòdul s'ha de completar dins de les dues primeres avaluacions
-- és reusable en context real de programació docent sense obrir noves estructures innecessàries
+- és reutilitzable en context real de programació docent sense obrir noves estructures innecessàries

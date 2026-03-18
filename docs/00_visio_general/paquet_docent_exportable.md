@@ -56,14 +56,14 @@ Estes peces poden canviar sense trencar el nucli del model:
 ## Què necessita un docent per implantar-lo
 - entendre que el model està calibrat sobre `20` setmanes, `6` hores setmanals i unes `120` hores lectives aproximades
 - assumir que el projecte s'ha de completar dins de les dues primeres avaluacions
-- compartir des de l'inici el criteri que Git/GitHub és metodologia de treball i traçabilitat, no alfabetització inicial
+- compartir des de l'inici el criteri que Git/GitHub és metodologia de treball i traçabilitat, no iniciació bàsica
 - tindre visible el projecte base, els reptes, els materials i els instruments de seguiment abans de començar
 - decidir com s'organitzaran equips, checkpoints i revisió d'evidències
 - triar si es treballarà amb un únic itinerari o amb diversos itineraris tecnològics simultanis
 - estar disposat a fer seguiment real del repositori, documentació, proves i ús verificable de la IA
 
 ## Què es pot exportar a altres mòduls
-El que és més reusable no és el contingut tècnic concret de DWES, sinó el patró docent:
+El que és més reutilitzable no és el contingut tècnic concret de DWES, sinó el patró docent:
 - seqüència de treball per reptes amb producte base comú
 - model d'evidències autèntiques i seguiment per checkpoints
 - separació entre materials comuns, materials per repte i variants tecnològiques

@@ -10,7 +10,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - el marc temporal de referència queda fixat en unes `20` setmanes aproximades amb `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - el model docent assumit és clar: el projecte s'ha de desenvolupar i tancar dins de les dues primeres avaluacions lectives
 - la tercera avaluació no es considera període central de desenvolupament, sinó espai residual o de connexió amb empresa o `FCT`
-- Git i GitHub es mantenen com a metodologia de treball i criteri de traçabilitat, no com a bloc d'iniciació bàsica
+- Git/GitHub es manté com a metodologia de treball i criteri de traçabilitat, no com a bloc d'iniciació bàsica
 
 ## Paquets consolidats
 - `PB-01` queda consolidat amb l'enunciat base del projecte del curs ja usable i visible.
@@ -25,14 +25,15 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `ID-05` consolidat amb la programació d'aula operativa en dues avaluacions.
 - `ID-07` consolidat amb la versió executable del curs en dues avaluacions.
 - `ID-08` consolidat amb els instruments finals de seguiment docent.
+- `ID-09` consolidat amb el paquet docent exportable del mòdul.
 
 ## Paquets en producció o consolidació final
 - `MG-05` continua obert perquè els materials del Repte 4 encara han de passar una ronda final de consolidació pública i revisió de coherència.
 - `MG-06` continua obert perquè els materials del Repte 5 encara s'han d'acabar d'alinear amb la seqüència `R3 -> R4 -> R5` i amb el tancament del producte del curs.
 - `ID-06` en revisió: ajust temporal a `20` setmanes / `120` hores aproximades a `docs/01_programacio_modul/seqüenciacio_sessions_2_avaluacions.md`.
-- `ID-09` en producció: paquet docent exportable a `docs/00_visio_general/paquet_docent_exportable.md`.
+- `ID-10` en producció: revisió editorial i de presentació final a `docs/00_visio_general/revisio_editorial_final.md`.
 
-## Documents d'implantació docent ja disponibles
+## Documents clau de desplegament ja disponibles
 - `pla_implantacio_docent.md`: marc global de fases, criteris, evidències i riscos d'implantació
 - `calendaritzacio_orientativa_aula.md`: seqüència temporal general del curs per fases
 - `calendaritzacio_per_avaluacions.md`: reagrupació del model per avaluacions lectives reals
@@ -40,10 +41,11 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `seqüenciacio_sessions_2_avaluacions.md`: detall fi de sessions, checkpoints i seguiment
 - `curs_executable_dwes_2_avaluacions.md`: versió unificada i reutilitzable del curs per a desplegament docent real
 - `paquet_docent_exportable.md`: lectura unificada del que forma el paquet docent complet i del que es pot transferir a altres contextos
+- `revisio_editorial_final.md`: registre de normalització terminològica, coherència editorial i preparació final del paquet
 
 ## Itineraris consolidats / en revisió
-- `MI-01` `Laravel` queda consolidat com a primer patró reusable de stack.
-- `MI-02` `Express/Nest` queda consolidat com a segon patró reusable de stack.
+- `MI-01` `Laravel` queda consolidat com a primer patró reutilitzable de stack.
+- `MI-02` `Express/Nest` queda consolidat com a segon patró reutilitzable de stack.
 - `MI-03` `FastAPI` queda en revisió transversal junt amb `MI-01` i `MI-02` per assegurar comparabilitat pública.
 
 Criteri comú dels itineraris:
@@ -54,9 +56,9 @@ Criteri comú dels itineraris:
 ## Lectura operativa de la fase actual
 - el repositori ja no està definint el model del curs; està preparant el seu desplegament real
 - el nucli del treball docent ja està documentat i visible: què es fa, quan es fa, amb quins materials i amb quins instruments es revisa
-- el buit principal ja no és metodològic, sinó de transferència i reutilització: convertir tot el treball fet en un paquet docent realment exportable
+- el buit principal ja no és metodològic, sinó editorial i de presentació: deixar el paquet docent preparat per a ús compartible o lliurable
 
 ## Següent focus recomanat
 - tancar la ronda final de consolidació de `MG-05` i `MG-06`
 - mantindre els tres itineraris com a patró docent comparable en desplegament real
-- tancar `ID-09` i preparar la plantilla reusable per a altres mòduls
+- tancar `ID-10` i preparar una versió compartible o lliurable del paquet docent

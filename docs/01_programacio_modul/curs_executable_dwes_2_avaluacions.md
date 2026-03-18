@@ -10,7 +10,7 @@ Este document no substituïx [pla_implantacio_docent.md](pla_implantacio_docent.
 - el desenvolupament principal del projecte s'ha de completar dins de les dues primeres avaluacions
 - la tercera avaluació no és període central de desenvolupament, sinó espai residual o de connexió amb empresa o `FCT`
 - el model de treball és per reptes i amb projecte base compartit
-- l'alumnat ja té base prèvia de treball amb GitHub; per tant, Git i GitHub es tracten com a repàs metodològic, traçabilitat i criteri professional, no com a iniciació des de zero
+- l'alumnat ja té base prèvia de treball amb GitHub; per tant, Git/GitHub es tracta com a repàs metodològic, traçabilitat i criteri professional, no com a iniciació des de zero
 - els dominis admesos continuen sent gestor d'incidències o tickets, sistema de reserves o cites i gestor intern de recursos o inventari
 - els itineraris `Laravel`, `Express/Nest` i `FastAPI` són variacions tecnològiques del mateix producte docent, no cursos paral·lels
 - la IA es tracta com a eina guiada i verificable; si s'usa en parts nuclears, cal deixar evidència i validació humana explícites
@@ -46,7 +46,7 @@ Objectiu:
 Accions mínimes:
 - presentar el projecte base, els dominis i la seqüència per reptes
 - posar en marxa el repositori i revisar criteris de `README`, commits, `ADR`, proves i ús de la IA
-- comprovar que Git i GitHub es reorienten a metodologia de treball professional
+- comprovar que Git/GitHub es reorienta a metodologia de treball professional
 
 Resultat mínim exigible:
 - repositori usable

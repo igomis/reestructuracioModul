@@ -10,7 +10,7 @@ La seqüència es calibra sobre un escenari d'unes `20` setmanes, `6` hores setm
 ## Criteris d'ús
 - està pensat per a contextos on el projecte del mòdul s'ha de completar dins de les dues primeres avaluacions lectives
 - la unitat real és la sessió o bloc curt de treball; no equival `1:1` a una hora lectiva, sinó a un macrotram que es pot correspondre amb una classe o amb una agrupació de sessions segons la càrrega horària del centre
-- Git i GitHub es tracten com a repàs metodològic, traçabilitat i criteri professional, no com a alfabetització inicial
+- Git/GitHub es tracta com a repàs metodològic, traçabilitat i criteri professional, no com a alfabetització inicial
 - els itineraris `Laravel`, `Express/Nest` i `FastAPI` s'integren dins de la mateixa seqüència, sense generar calendaris paral·lels
 - cada sessió ha de deixar una evidència observable o preparar explícitament el checkpoint següent
 - si una sessió crítica no deixa el mínim esperat, s'ha de reabsorbir temps dins de la mateixa avaluació i no desplaçar el nucli del projecte a la tercera
