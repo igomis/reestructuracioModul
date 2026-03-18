@@ -35,7 +35,7 @@ Lectura ràpida de la fase actual:
 - el model assumix que el desenvolupament principal del projecte es resol i es defensa dins de les dues primeres avaluacions; la tercera queda com a espai residual o de connexió amb empresa o `FCT`
 - la implantació docent es calibra sobre un escenari orientatiu d'unes `20` setmanes i `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - Git/GitHub es tracta com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
-- el paquet docent exportable ja està definit i la fase actual passa a revisió editorial final i preparació compartible
+- el paquet docent exportable ja està consolidat i la fase actual passa a resum executiu, versió compartible i preparació de lliurable
 
 ## Documents clau de la fase actual
 - [Pla d'implantació docent del mòdul](docs/01_programacio_modul/pla_implantacio_docent.md)
@@ -45,6 +45,7 @@ Lectura ràpida de la fase actual:
 - [Curs executable DWES en 2 avaluacions](docs/01_programacio_modul/curs_executable_dwes_2_avaluacions.md)
 - [Instruments de seguiment docent](docs/03_avaluacio/instruments_seguiment_docent.md)
 - [Paquet docent exportable del mòdul](docs/00_visio_general/paquet_docent_exportable.md)
+- [Resum executiu del paquet docent](docs/00_visio_general/resum_executiu_paquet_docent.md)
 - [Revisió editorial final del paquet docent](docs/00_visio_general/revisio_editorial_final.md)
 - [Pla de materials prioritaris del mòdul](docs/04_materials/pla_materials_prioritaris.md)
 - [Estat de producció actual del projecte](docs/00_visio_general/issues_inicials.md)
@@ -54,6 +55,6 @@ Lectura ràpida de la fase actual:
 - [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md)
 
 ## Focus actual
-1. Consolidar editorialment el paquet docent ja creat perquè la lectura pública siga coherent, navegable i compartible.
-2. Tancar la revisió final de presentació del model: reptes, materials, itineraris, seguiment docent i paquet exportable.
-3. Preparar la versió següent del repositori com a paquet docent compartible o lliurable.
+1. Consolidar el paquet docent exportable ja creat amb una peça curta i compartible de lectura immediata.
+2. Preparar una versió de circulació o lliurament del model que siga usable sense seguir tot l'historial del repositori.
+3. Tancar esta fase del projecte amb el paquet docent preparat per a ús compartible o lliurable.
