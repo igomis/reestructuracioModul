@@ -12,6 +12,11 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - la tercera avaluació no es considera període central de desenvolupament, sinó espai residual o de connexió amb empresa o `FCT`
 - Git/GitHub es manté com a metodologia de treball i criteri de traçabilitat, no com a bloc d'iniciació bàsica
 
+## Fase actual
+- paquet docent en versió `1` funcional
+- fase principal del paquet docent tancada a nivell de model, materials, implantació i seguiment
+- línia següent: manteniment, difusió o adaptació
+
 ## Paquets consolidats
 - `PB-01` queda consolidat amb l'enunciat base del projecte del curs ja usable i visible.
 - `MG-01` queda consolidat com a marc de priorització i seqüència de producció a `docs/04_materials/pla_materials_prioritaris.md`.
@@ -28,12 +33,13 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `ID-09` consolidat amb el paquet docent exportable del mòdul.
 - `ID-10` consolidat amb la revisió editorial i de presentació final del paquet docent.
 - `ID-11` consolidat amb el resum executiu i la versió compartible inicial del paquet docent.
+- `ID-12` consolidat amb la presentació breu del model DWES per reptes amb IA.
 
 ## Paquets en producció o consolidació final
 - `MG-05` continua obert perquè els materials del Repte 4 encara han de passar una ronda final de consolidació pública i revisió de coherència.
 - `MG-06` continua obert perquè els materials del Repte 5 encara s'han d'acabar d'alinear amb la seqüència `R3 -> R4 -> R5` i amb el tancament del producte del curs.
 - `ID-06` en revisió: ajust temporal a `20` setmanes / `120` hores aproximades a `docs/01_programacio_modul/seqüenciacio_sessions_2_avaluacions.md`.
-- `ID-12` en producció: presentació breu del model a `docs/00_visio_general/presentacio_model_dwes_reptes_ia.md`.
+- `ID-13` en producció: tancament formal de la fase principal a `docs/00_visio_general/tancament_fase_1_paquet_docent.md`.
 
 ## Documents clau de desplegament ja disponibles
 - `pla_implantacio_docent.md`: marc global de fases, criteris, evidències i riscos d'implantació
@@ -46,6 +52,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `resum_executiu_paquet_docent.md`: entrada curta i compartible al model per a professorat que no ha seguit tot el procés
 - `presentacio_model_dwes_reptes_ia.md`: peça textual breu per explicar el model a professorat o equips externs
 - `revisio_editorial_final.md`: registre de normalització terminològica, coherència editorial i preparació final del paquet
+- `tancament_fase_1_paquet_docent.md`: acte formal de tancament de la fase principal i pas a versió `1` funcional
 
 ## Itineraris consolidats / en revisió
 - `MI-01` `Laravel` queda consolidat com a primer patró reutilitzable de stack.
@@ -60,9 +67,9 @@ Criteri comú dels itineraris:
 ## Lectura operativa de la fase actual
 - el repositori ja no està definint el model del curs; està preparant el seu desplegament real
 - el nucli del treball docent ja està documentat i visible: què es fa, quan es fa, amb quins materials i amb quins instruments es revisa
-- el buit principal ja no és metodològic, sinó de difusió i presentació: deixar el paquet docent llest per explicar-se i compartir-se amb claredat
+- el nucli del model queda ja tancat i el treball següent passa a manteniment, difusió, adaptació o preparació de lliurable extern
 
 ## Següent focus recomanat
-- tancar la ronda final de consolidació de `MG-05` i `MG-06`
-- mantindre els tres itineraris com a patró docent comparable en desplegament real
-- tancar `ID-12` i preparar el tancament de fase o una versió lliurable externa del paquet docent
+- manteniment del paquet docent en versió `1` funcional
+- difusió o compartició del model en altres contextos
+- adaptació o versió lliurable externa del paquet docent

@@ -35,7 +35,7 @@ Lectura ràpida de la fase actual:
 - el model assumix que el desenvolupament principal del projecte es resol i es defensa dins de les dues primeres avaluacions; la tercera queda com a espai residual o de connexió amb empresa o `FCT`
 - la implantació docent es calibra sobre un escenari orientatiu d'unes `20` setmanes i `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - Git/GitHub es tracta com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
-- el paquet docent exportable ja està consolidat i la fase actual passa a peça breu de presentació, versió compartible i preparació de lliurable
+- el paquet docent ja queda consolidat com a versió `1` funcional i la fase principal passa a tancament formal, compartició i adaptació
 
 ## Documents clau de la fase actual
 - [Pla d'implantació docent del mòdul](docs/01_programacio_modul/pla_implantacio_docent.md)
@@ -48,6 +48,7 @@ Lectura ràpida de la fase actual:
 - [Resum executiu del paquet docent](docs/00_visio_general/resum_executiu_paquet_docent.md)
 - [Presentació breu del model DWES](docs/00_visio_general/presentacio_model_dwes_reptes_ia.md)
 - [Revisió editorial final del paquet docent](docs/00_visio_general/revisio_editorial_final.md)
+- [Tancament de la fase principal del paquet docent](docs/00_visio_general/tancament_fase_1_paquet_docent.md)
 - [Pla de materials prioritaris del mòdul](docs/04_materials/pla_materials_prioritaris.md)
 - [Estat de producció actual del projecte](docs/00_visio_general/issues_inicials.md)
 - [Enunciat base del projecte del curs](docs/05_projectes_tecnics/enunciat_projecte_base.md)
@@ -56,6 +57,6 @@ Lectura ràpida de la fase actual:
 - [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md)
 
 ## Focus actual
-1. Consolidar el paquet docent exportable amb una peça breu de presentació i difusió del model.
-2. Preparar una versió de circulació o lliurament que siga usable sense seguir tot l'historial del repositori.
-3. Tancar o compartir esta fase del projecte amb el paquet docent ja preparat per a ús extern.
+1. Donar per consolidat el paquet docent en una versió `1` funcional i amb la fase principal formalment tancada.
+2. Orientar el treball següent a manteniment, compartició o adaptació del model.
+3. Preparar, si cal, una versió externa o lliurable del paquet docent.
