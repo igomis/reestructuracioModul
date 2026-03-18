@@ -31,13 +31,14 @@ Estat real de la fase actual:
 - els tres itineraris tecnològics (`Laravel`, `Express/Nest`, `FastAPI`) ja existixen com a primer paquet comparable
 - el nou eix és connectar reptes, materials, itineraris, evidències i instruments en una seqüència d'aula executable i agrupable per avaluacions
 - el projecte base i el pla de materials ja permeten treballar sobre una seqüència real de producte del curs
-- el focus immediat és convertir la implantació planificada en programació d'aula operativa i preparar-ne el desplegament real del mòdul
+- el focus immediat és convertir la implantació planificada en seqüenciació fina de sessions i preparar-ne el desplegament real de curs
 - esta implantació està pensada per a contextos on el desenvolupament principal del projecte queda resolt dins de les dues primeres avaluacions lectives
 
 ## Documents clau de la fase actual
 - [Pla d'implantació docent del mòdul](docs/01_programacio_modul/pla_implantacio_docent.md)
 - [Calendarització per avaluacions del mòdul](docs/01_programacio_modul/calendaritzacio_per_avaluacions.md)
 - [Programació d'aula operativa en 2 avaluacions](docs/01_programacio_modul/programacio_aula_operativa_2_avaluacions.md)
+- [Seqüenciació de sessions en 2 avaluacions](docs/01_programacio_modul/seqüenciacio_sessions_2_avaluacions.md)
 - [Pla de materials prioritaris del mòdul](docs/04_materials/pla_materials_prioritaris.md)
 - [Estat de producció dels materials](docs/00_visio_general/issues_inicials.md)
 - [Enunciat base del projecte del curs](docs/05_projectes_tecnics/enunciat_projecte_base.md)
@@ -46,6 +47,6 @@ Estat real de la fase actual:
 - [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md)
 
 ## Focus actual
-1. Consolidar la implantació docent en 2 avaluacions lectives mitjançant una programació d’aula operativa.
+1. Consolidar la implantació docent en 2 avaluacions lectives mitjançant una seqüenciació fina de sessions.
 2. Mantindre els itineraris `Laravel`, `Express/Nest` i `FastAPI` com a variacions homologades dins d’un mateix marc docent.
-3. Preparar el desplegament real del mòdul i una versió encara més executable de seqüenciació docent.
+3. Preparar el desplegament real de curs i una versió encara més executable dels instruments finals de seguiment.

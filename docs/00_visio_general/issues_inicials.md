@@ -11,12 +11,13 @@ El repositori ja no està en fase de bootstrap ni només en fase de producció d
 - `ID-02` consolidat amb la calendarització orientativa d'aula.
 - `ID-03` consolidat amb la matriu d'evidències i instruments per fase.
 - `ID-04` consolidat amb l'adaptació de la planificació a dues avaluacions lectives reals.
+- `ID-05` consolidat amb la programació d'aula operativa en dues avaluacions.
 
 ## Paquets en producció
 - `MG-05` continua com a paquet en producció perquè els materials del Repte 4 encara han de passar una ronda equivalent de consolidació pública i revisió de coherència.
 - `MG-06` continua com a paquet en producció perquè els materials del Repte 5 encara s'han d'acabar d'alinear amb la seqüència `R3 -> R4 -> R5` i amb el tancament del producte del curs.
 - `ID-01` en producció: pla d'implantació docent a `docs/01_programacio_modul/pla_implantacio_docent.md`.
-- `ID-05` en producció: programació d'aula operativa en 2 avaluacions a `docs/01_programacio_modul/programacio_aula_operativa_2_avaluacions.md`.
+- `ID-06` en producció: seqüenciació de sessions en 2 avaluacions a `docs/01_programacio_modul/seqüenciacio_sessions_2_avaluacions.md`.
 
 ## Itineraris consolidats / en revisió
 - `MI-01` `Laravel` queda consolidat com a primer patró reusable de stack.
@@ -31,4 +32,4 @@ Criteri comú dels itineraris:
 ## Següent focus recomanat
 - tancar la ronda de consolidació de `MG-05` i `MG-06`
 - homogeneïtzar definitivament els tres itineraris perquè funcionen com a patró docent comparable
-- següent focus: seqüenciació de sessions o versió executable de curs
+- següent focus: versió executable de curs o instruments finals de seguiment
