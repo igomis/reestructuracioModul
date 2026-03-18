@@ -24,12 +24,13 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `ID-04` consolidat amb l'adaptació de la planificació a dues avaluacions lectives reals.
 - `ID-05` consolidat amb la programació d'aula operativa en dues avaluacions.
 - `ID-07` consolidat amb la versió executable del curs en dues avaluacions.
+- `ID-08` consolidat amb els instruments finals de seguiment docent.
 
 ## Paquets en producció o consolidació final
 - `MG-05` continua obert perquè els materials del Repte 4 encara han de passar una ronda final de consolidació pública i revisió de coherència.
 - `MG-06` continua obert perquè els materials del Repte 5 encara s'han d'acabar d'alinear amb la seqüència `R3 -> R4 -> R5` i amb el tancament del producte del curs.
 - `ID-06` en revisió: ajust temporal a `20` setmanes / `120` hores aproximades a `docs/01_programacio_modul/seqüenciacio_sessions_2_avaluacions.md`.
-- `ID-08` en producció: instruments finals de seguiment docent a `docs/03_avaluacio/instruments_seguiment_docent.md`.
+- `ID-09` en producció: paquet docent exportable a `docs/00_visio_general/paquet_docent_exportable.md`.
 
 ## Documents d'implantació docent ja disponibles
 - `pla_implantacio_docent.md`: marc global de fases, criteris, evidències i riscos d'implantació
@@ -38,6 +39,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `programacio_aula_operativa_2_avaluacions.md`: trasllat del model a blocs d'aula amb activitat docent recognoscible
 - `seqüenciacio_sessions_2_avaluacions.md`: detall fi de sessions, checkpoints i seguiment
 - `curs_executable_dwes_2_avaluacions.md`: versió unificada i reutilitzable del curs per a desplegament docent real
+- `paquet_docent_exportable.md`: lectura unificada del que forma el paquet docent complet i del que es pot transferir a altres contextos
 
 ## Itineraris consolidats / en revisió
 - `MI-01` `Laravel` queda consolidat com a primer patró reusable de stack.
@@ -52,9 +54,9 @@ Criteri comú dels itineraris:
 ## Lectura operativa de la fase actual
 - el repositori ja no està definint el model del curs; està preparant el seu desplegament real
 - el nucli del treball docent ja està documentat i visible: què es fa, quan es fa, amb quins materials i amb quins instruments es revisa
-- el buit principal ja no és metodològic, sinó d'execució: consolidar els últims materials oberts i tancar el paquet final d'instruments de seguiment docent
+- el buit principal ja no és metodològic, sinó de transferència i reutilització: convertir tot el treball fet en un paquet docent realment exportable
 
 ## Següent focus recomanat
 - tancar la ronda final de consolidació de `MG-05` i `MG-06`
 - mantindre els tres itineraris com a patró docent comparable en desplegament real
-- tancar `ID-08` i preparar la següent capa reusable: plantilla docent exportable o paquet docent compartible entre centres
+- tancar `ID-09` i preparar la plantilla reusable per a altres mòduls
