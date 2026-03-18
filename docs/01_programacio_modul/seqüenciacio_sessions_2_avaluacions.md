@@ -20,6 +20,13 @@ Este document es llig conjuntament amb [pla_implantacio_docent.md](pla_implantac
 | **Avaluació 2** | `Sessions 9-16` | tancament de `Fase 3`, `Fase 4`, `Fase 5` i defensa final | producte persistent, publicat com a API, integrat i defensable |
 | **Avaluació 3** | període residual | sense desenvolupament central del projecte | seguiment puntual, connexió amb empresa o `FCT`, ajustos menors si cal |
 
+## Lectura ràpida de la seqüència
+- `Sessions 1-4`: marc comú, criteri metodològic i kickoff tècnic del producte
+- `Sessions 5-8`: resolució del nucli funcional de `R2` i entrada efectiva a `R3`
+- `Sessions 9-10`: tancament de persistència i mantenibilitat
+- `Sessions 11-13`: publicació, documentació i prova de l'`API`
+- `Sessions 14-16`: integració híbrida, tancament i defensa final
+
 ## Seqüenciació detallada per sessions o blocs curts
 ### Avaluació 1
 | Sessió | Objectiu | Activitats | Materials activats | Evidències esperades | Instrument de seguiment | Punt crític |
@@ -54,6 +61,11 @@ Este document es llig conjuntament amb [pla_implantacio_docent.md](pla_implantac
 | **CP4** | després de la sessió 10 | `R3` consolidat amb persistència i mantenibilitat mínimes |
 | **CP5** | després de la sessió 13 | API documentada i provada |
 | **CP6** | després de la sessió 16 | producte final integrat, documentat i defensable |
+
+Lectura dels checkpoints:
+- `CP1` i `CP2` controlen el pas del marc metodològic a producte real
+- `CP3` i `CP4` controlen que la base funcional i l'arquitectura no siguen només provisionals
+- `CP5` i `CP6` controlen que `API`, integració i defensa final no queden obertes o ornamentals
 
 ## Evidències acumulatives
 - **tram inicial**: repositori, primer `README`, ADR o registre equivalent, criteri de Git/GitHub i `AI log`

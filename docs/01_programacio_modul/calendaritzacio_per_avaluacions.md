@@ -16,6 +16,11 @@ En este model, el projecte base del mòdul s'ha de desenvolupar i tancar dins de
 - el pas d'una avaluació a la següent ha d'estar sostingut per evidències mínimes verificables i no només pel calendari
 - API, integració i defensa final han de quedar absorbides en la segona avaluació lectiva ordinària i no desplaçar-se a una tercera avaluació residual
 
+## Lectura del model en 2 avaluacions
+- **Avaluació 1**: posa en marxa el marc comú, deixa el producte funcional i obri arquitectura i persistència
+- **Avaluació 2**: tanca arquitectura i persistència, resol `API`, integració i defensa final
+- **Avaluació 3**: no funciona com a tercer tram de desenvolupament del projecte, sinó com a marge residual o de connexió amb empresa o `FCT`
+
 ## Distribució per avaluacions
 | Avaluació | Setmanes orientatives | Fases connectades | Reptes o focus | Materials activats | Evidències clau | Instrument principal | Producte o lliurament parcial |
 |---|---|---|---|---|---|---|---|
@@ -123,6 +128,13 @@ Lectura conjunta amb els altres documents:
 | **Avaluació 1** | `rubrica_base_reptes.md` | `checklist_revisio_repo.md`, checklist del Repte 2, `plantilla_ai_log.md` | existix base funcional real, repositori usable i entrada efectiva a arquitectura i persistència |
 | **Avaluació 2** | `rubrica_defensa_tecnica.md` | checklist del Repte 3, checklist del Repte 4, checklist del Repte 5, `rubrica_base_reptes.md`, `plantilla_ai_log.md` | el producte final queda persistent, usable, integrable, documentat i defensable dins del període lectiu ordinari |
 | **Avaluació 3** | instrument contextual del centre | seguiment tutorial o connexió amb empresa/FCT | no es reserva esta avaluació per al desenvolupament nuclear del projecte |
+
+## Checkpoints de pas entre avaluacions
+| Checkpoint | Moment | Decisió docent associada |
+|---|---|---|
+| **CP-A1** | tancament de l'Avaluació 1 | no passar a l'Avaluació 2 sense `R2` complet i entrada real a `R3` |
+| **CP-A2** | tram central de l'Avaluació 2 | no obrir integració ni defensa si `R3` i `R4` no deixen persistència i API prou estables |
+| **CP-A3** | tancament de l'Avaluació 2 | el producte ha de quedar completat, defensable i documentat abans del pas a la tercera avaluació |
 
 Lectura operativa:
 - les avaluacions no substituïxen les fases; les reagrupen per fer-les gestionables en programació d'aula
