@@ -9,8 +9,10 @@ Esta peça s'ha de llegir conjuntament amb `docs/03_avaluacio/matriu_evidencies_
 
 En contextos on la 3a avaluació queda absorbida per empresa o `FCT`, esta seqüència s'ha d'interpretar com a recorregut lectiu principal concentrat en les dues primeres avaluacions. Això implica que `Fase 4`, `Fase 5` i defensa final no s'han de deixar per a un tercer període residual.
 
+La hipòtesi de treball usada en esta planificació és un curs d'unes `20` setmanes aproximades amb `6` hores setmanals, és a dir, unes `120` hores lectives concentrades principalment en les dues primeres avaluacions.
+
 ## Criteris d'ús de la calendarització
-- està pensada com a seqüència orientativa d'un bloc lectiu d'unes `18` setmanes, ampliable o comprimible segons hores reals del centre
+- està pensada com a seqüència orientativa d'un bloc lectiu d'unes `20` setmanes amb unes `6` hores setmanals, ampliable o comprimible segons hores reals del centre
 - cada fase s'ha d'entendre com a tram de producte i d'evidència, no només com a bloc temàtic
 - els materials comuns s'activen des del començament i continuen vigents durant tot el curs
 - els materials per repte s'incorporen quan el producte necessita eixa capa tècnica, no abans
@@ -24,8 +26,8 @@ En contextos on la 3a avaluació queda absorbida per empresa o `FCT`, esta seqü
 | **Fase 1. Kickoff tècnic** | `3-4` | Repte 1 i definició operativa del producte | fitxa del Repte 1, materials comuns, projecte base, model d'itineraris com a marc | entorn funcional, ADR inicial, decisió de domini, primers commits útils | `rubrica_base_reptes.md` | evitar que el kickoff quede en infraestructura buida sense decisió tècnica ni producte recognoscible |
 | **Fase 2. Base funcional del producte** | `5-8` | Repte 2: usuaris, sessions, autenticació i validacions | materials del Repte 2, materials comuns, suport inicial dels itineraris | registre/login/logout, accés protegit, errors mínims, proves bàsiques, `README` actualitzat | `rubrica_base_reptes.md` | controlar que el flux funcional siga real i no només una demo puntual |
 | **Fase 3. Arquitectura i persistència** | `9-12` | Repte 3: capes, persistència i qualitat tècnica | materials del Repte 3, materials comuns, itineraris `Laravel`, `Express/Nest`, `FastAPI` com a suport principal | model de dades, persistència funcional, refactorització per capes o equivalent, regressió mínima | `rubrica_base_reptes.md` | no passar a API sense base persistent i mantenible suficient |
-| **Fase 4. Publicació i consum d'API** | `13-15` | Repte 4: contracte API, documentació i consum | materials del Repte 4, materials comuns, itineraris reutilitzats en context d'API | endpoints clau, documentació d'API, col·lecció de proves, consum verificat | `rubrica_base_reptes.md` | assegurar coherència entre contracte, proves, errors i documentació real |
-| **Fase 5. Integració híbrida i tancament** | `16-18` | Repte 5: integració externa, automatització i defensa final | materials del Repte 5, materials comuns, reutilització final dels itineraris | flux híbrid complet, prova de punta a punta, documentació final, defensa tècnica | `rubrica_defensa_tecnica.md` | evitar tancaments ornamentals sense valor funcional ni capacitat real de defensa |
+| **Fase 4. Publicació i consum d'API** | `13-16` | Repte 4: contracte API, documentació i consum | materials del Repte 4, materials comuns, itineraris reutilitzats en context d'API | endpoints clau, documentació d'API, col·lecció de proves, consum verificat | `rubrica_base_reptes.md` | assegurar coherència entre contracte, proves, errors i documentació real |
+| **Fase 5. Integració híbrida i tancament** | `17-20` | Repte 5: integració externa, automatització i defensa final | materials del Repte 5, materials comuns, reutilització final dels itineraris | flux híbrid complet, prova de punta a punta, documentació final, defensa tècnica | `rubrica_defensa_tecnica.md` | evitar tancaments ornamentals sense valor funcional ni capacitat real de defensa |
 
 ## Desenvolupament per blocs temporals
 ### Fase 0. Arrancada i marc comú
@@ -77,7 +79,7 @@ Resultat esperat del bloc:
 - l'equip ja pot explicar l'arquitectura i el model de dades com a base del Repte 4
 
 ### Fase 4. Publicació i consum d'API
-Setmanes orientatives: `13-15`
+Setmanes orientatives: `13-16`
 
 Focus:
 - exposar funcionalitats com a API amb contracte clar
@@ -89,7 +91,7 @@ Resultat esperat del bloc:
 - el producte queda preparat per integrar-se amb fluxos externs
 
 ### Fase 5. Integració híbrida i tancament
-Setmanes orientatives: `16-18`
+Setmanes orientatives: `17-20`
 
 Focus:
 - connectar el producte amb una automatització, servei extern o flux híbrid
@@ -107,8 +109,8 @@ Resultat esperat del bloc:
 | **Setmanes 1-4** | projecte base del curs, enunciat base, sistema d'evidències, fitxa del Repte 1 |
 | **Setmanes 5-8** | materials del Repte 2 i entrada controlada dels itineraris per bootstrap i auth |
 | **Setmanes 9-12** | materials del Repte 3 i activació principal dels itineraris `Laravel`, `Express/Nest` i `FastAPI` |
-| **Setmanes 13-15** | materials del Repte 4, reutilització dels itineraris per contracte API, proves i documentació |
-| **Setmanes 16-18** | materials del Repte 5, reutilització final dels itineraris per integració i tancament |
+| **Setmanes 13-16** | materials del Repte 4, reutilització dels itineraris per contracte API, proves i documentació |
+| **Setmanes 17-20** | materials del Repte 5, reutilització final dels itineraris per integració i tancament |
 
 Lectura operativa:
 - els materials comuns no desapareixen després de Fase 0; es reusen en totes les fases
@@ -122,18 +124,18 @@ Lectura operativa:
 | **Setmanes 3-4** | entorn funcional, domini triat, ADR inicial, primers artefactes tècnics estables |
 | **Setmanes 5-8** | autenticació funcional, estat o sessió equivalent, validacions mínimes, primers casos de prova |
 | **Setmanes 9-12** | arquitectura per capes o equivalent, persistència coherent, model de dades, proves de regressió |
-| **Setmanes 13-15** | contracte API, documentació d'endpoints, col·lecció de proves, consum verificat |
-| **Setmanes 16-18** | flux híbrid complet, prova de punta a punta, documentació final, defensa tècnica i AI log tancat si aplica |
+| **Setmanes 13-16** | contracte API, documentació d'endpoints, col·lecció de proves, consum verificat |
+| **Setmanes 17-20** | flux híbrid complet, prova de punta a punta, documentació final, defensa tècnica i AI log tancat si aplica |
 
 ## Punts crítics de seguiment docent
 - revisar a les setmanes `2-3` si el grup realment ha assumit Git, evidències i ús verificable de la IA
 - revisar a les setmanes `7-8` si el Repte 2 deixa una base funcional real i no només una demostració puntual
 - revisar a les setmanes `10-12` si la persistència i l'arquitectura estan prou madures per obrir API
-- revisar a les setmanes `14-15` si la documentació i les proves d'API reflectixen l'estat real del codi
-- revisar a les setmanes `17-18` si la integració final té valor funcional real i si la defensa és coherent amb el repositori
+- revisar a les setmanes `15-16` si la documentació i les proves d'API reflectixen l'estat real del codi
+- revisar a les setmanes `19-20` si la integració final té valor funcional real i si la defensa és coherent amb el repositori
 
 ## Marges d'adaptació
-- si el centre treballa amb menys hores setmanals, la calendarització es pot estendre a `20-22` setmanes mantenint la mateixa lògica de fases
+- si el centre treballa amb menys hores setmanals, la calendarització es pot estendre a `22-24` setmanes mantenint la mateixa lògica de fases
 - si el centre treballa amb més intensitat horària, Fase 0 i Fase 1 poden compactar-se, però no s'haurien de fusionar si això elimina control sobre repositori i criteris comuns
 - si un grup mostra bloqueig tècnic en Fase 2, convé reforçar materials comuns i itinerari abans de passar a persistència
 - si la base de Fase 3 és feble, s'hauria de retardar Fase 4 abans que publicar una API sense model ni arquitectura sostenibles

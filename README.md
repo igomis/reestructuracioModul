@@ -32,6 +32,7 @@ Lectura ràpida de la fase actual:
 - els tres itineraris tecnològics (`Laravel`, `Express/Nest`, `FastAPI`) ja existixen com a paquet comparable dins d'un mateix marc docent
 - la implantació docent ja està baixada a diversos nivells: pla general, calendarització orientativa, calendarització per avaluacions, programació d'aula operativa i seqüenciació fina de sessions
 - el model assumix que el desenvolupament principal del projecte es resol i es defensa dins de les dues primeres avaluacions; la tercera queda com a espai residual o de connexió amb empresa o `FCT`
+- la implantació docent es calibra sobre un escenari orientatiu d'unes `20` setmanes i `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - Git i GitHub es tracten com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
 - la fase següent ja no és definir el model, sinó preparar-ne el desplegament real de curs i tancar els instruments finals de seguiment
 
@@ -50,4 +51,4 @@ Lectura ràpida de la fase actual:
 ## Focus actual
 1. Consolidar la visibilitat i la coherència dels documents d’implantació docent ja creats per a un model de 2 avaluacions lectives.
 2. Preparar el desplegament real de curs sobre la base ja definida de calendarització, programació d’aula i seqüenciació de sessions.
-3. Tancar la següent capa d’execució: versió executable de curs i instruments finals de seguiment.
+3. Tancar la següent capa d’execució: versió executable de curs amb càrrega temporal realista i instruments finals de seguiment.

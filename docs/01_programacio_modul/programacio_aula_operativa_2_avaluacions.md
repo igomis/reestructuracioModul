@@ -5,8 +5,11 @@ Convertir la planificació del mòdul en una programació d'aula usable en conte
 
 Este document no substituïx [pla_implantacio_docent.md](pla_implantacio_docent.md), [calendaritzacio_orientativa_aula.md](calendaritzacio_orientativa_aula.md), [calendaritzacio_per_avaluacions.md](calendaritzacio_per_avaluacions.md) ni [matriu_evidencies_i_instruments_per_fase.md](../03_avaluacio/matriu_evidencies_i_instruments_per_fase.md). La seua funció és baixar eixa arquitectura docent a una seqüència d'aula operativa per a un curs on el projecte base del mòdul es desenvolupa i es tanca dins de les dues primeres avaluacions lectives.
 
+Esta implantació s'ha calibrat sobre un escenari orientatiu d'unes `20` setmanes amb `6` hores setmanals, és a dir, unes `120` hores lectives aproximades concentrades en les dues primeres avaluacions.
+
 ## Criteris generals d'ús
 - està pensat per a contextos on la 3a avaluació no és el període central de desenvolupament del projecte perquè l'alumnat està en empresa o `FCT`
+- la referència temporal de treball és `Avaluació 1 = 10 setmanes / 60 hores aproximades` i `Avaluació 2 = 10 setmanes / 60 hores aproximades`
 - Git i GitHub es tracten com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació bàsica
 - cada bloc d'aula ha de produir evidències observables de producte i de procés
 - els materials comuns continuen actius durant tot el recorregut, encara que s'activen amb més intensitat al començament
@@ -277,6 +280,7 @@ Lectura docent:
 - si hi ha molta heterogeneïtat tècnica, els itineraris s'han d'usar com a suport diferenciat sense fragmentar la seqüència comuna
 - si el centre treballa per unitats més curtes, cada bloc pot dividir-se en sessions menors mantenint la mateixa lògica de producte
 - si l'ús de la IA augmenta, cal intensificar la revisió d'`AI log`, proves i preguntes de contrast, no relaxar-les
+- si la càrrega real del centre s'allunya de les `120` hores aproximades, s'ha de reajustar la densitat dels blocs sense moure el tancament del projecte fora de la segona avaluació
 
 ## Paper de la tercera avaluació
 La tercera avaluació no s'ha de plantejar com a espai central de desenvolupament del projecte del mòdul. En este model:

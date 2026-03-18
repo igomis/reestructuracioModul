@@ -7,8 +7,11 @@ Este document no substituïx [pla_implantacio_docent.md](pla_implantacio_docent.
 
 En este model, el projecte base del mòdul s'ha de desenvolupar i tancar dins de les dues primeres avaluacions. La tercera no es planteja com a tram central de desenvolupament, sinó com a espai residual, de connexió amb empresa o `FCT`, o de tancament puntual si el context del centre ho requerix.
 
+La planificació es calibra sobre un escenari orientatiu d'unes `20` setmanes amb `6` hores setmanals, és a dir, unes `120` hores lectives aproximades concentrades en les dues primeres avaluacions.
+
 ## Criteris d'ús
 - està pensat com a model orientatiu per a un curs on el desenvolupament lectiu principal del projecte es resol dins de les dues primeres avaluacions
+- l'escenari de referència és `Avaluació 1 = 10 setmanes / 60 hores aproximades` i `Avaluació 2 = 10 setmanes / 60 hores aproximades`
 - cada avaluació s'ha d'entendre com un tram de producte i d'evidència, no només com un tall administratiu
 - la calendarització per avaluacions ha de llegir-se junt amb el pla d'implantació docent i la calendarització orientativa per no perdre la lògica interna de fases `0-5`
 - Git i GitHub es treballen com a repàs metodològic i criteri de traçabilitat professional, no com a iniciació des de zero
@@ -24,13 +27,13 @@ En este model, el projecte base del mòdul s'ha de desenvolupar i tancar dins de
 ## Distribució per avaluacions
 | Avaluació | Setmanes orientatives | Fases connectades | Reptes o focus | Materials activats | Evidències clau | Instrument principal | Producte o lliurament parcial |
 |---|---|---|---|---|---|---|---|
-| **Avaluació 1** | `setmanes lectives 1-9` | Fase 0, Fase 1, Fase 2 i inici de Fase 3 | marc comú, kickoff tècnic, base funcional i primera consolidació d'arquitectura | materials comuns, sistema d'evidències, projecte base, enunciat base, materials del Repte 2 i activació inicial del Repte 3, entrada controlada d'itineraris | repositori usable, `README` inicial, ADR inicial, autenticació funcional, validacions mínimes, primers passos de persistència | `rubrica_base_reptes.md` | base funcional real del producte i arquitectura inicial prou sòlida per completar persistència en la 2a avaluació |
-| **Avaluació 2** | `setmanes lectives 10-18` | tancament de Fase 3, Fase 4, Fase 5 i defensa final | persistència consolidada, API, integració híbrida i tancament del producte | materials del Repte 3, materials del Repte 4, materials del Repte 5, materials comuns, itineraris `Laravel`, `Express/Nest` i `FastAPI` com a suport principal | model de dades complet, API documentada, proves, flux híbrid, documentació final, defensa tècnica i AI log si aplica | `rubrica_defensa_tecnica.md` | producte final del curs complet, publicat, integrat i defensable dins de la segona avaluació |
+| **Avaluació 1** | `setmanes lectives 1-10 (~60h)` | Fase 0, Fase 1, Fase 2 i inici de Fase 3 | marc comú, kickoff tècnic, base funcional i primera consolidació d'arquitectura | materials comuns, sistema d'evidències, projecte base, enunciat base, materials del Repte 2 i activació inicial del Repte 3, entrada controlada d'itineraris | repositori usable, `README` inicial, ADR inicial, autenticació funcional, validacions mínimes, primers passos de persistència | `rubrica_base_reptes.md` | base funcional real del producte i arquitectura inicial prou sòlida per completar persistència en la 2a avaluació |
+| **Avaluació 2** | `setmanes lectives 11-20 (~60h)` | tancament de Fase 3, Fase 4, Fase 5 i defensa final | persistència consolidada, API, integració híbrida i tancament del producte | materials del Repte 3, materials del Repte 4, materials del Repte 5, materials comuns, itineraris `Laravel`, `Express/Nest` i `FastAPI` com a suport principal | model de dades complet, API documentada, proves, flux híbrid, documentació final, defensa tècnica i AI log si aplica | `rubrica_defensa_tecnica.md` | producte final del curs complet, publicat, integrat i defensable dins de la segona avaluació |
 | **Avaluació 3** | `període residual o de connexió amb empresa/FCT` | sense desenvolupament central del projecte | connexió amb context professional, seguiment puntual o tancament administratiu | reutilització puntual de documentació i evidències ja generades, si cal | seguiment residual, connexió amb empresa, ajustos menors o tancament puntual | instrument contextual del centre | no s'ha de situar ací el desenvolupament principal del projecte del mòdul |
 
 ## Desenvolupament per avaluacions
 ### Avaluació 1
-Setmanes orientatives: `setmanes lectives 1-9`
+Setmanes orientatives: `setmanes lectives 1-10` amb unes `60` hores aproximades
 
 Focus:
 - activar el marc comú de treball, evidències i ús verificable de la IA
@@ -60,7 +63,7 @@ Producte o lliurament parcial:
 - base funcional real del producte, amb el nucli de `R2` complet i l'entrada a `R3` ja oberta abans del canvi d'avaluació
 
 ### Avaluació 2
-Setmanes orientatives: `setmanes lectives 10-18`
+Setmanes orientatives: `setmanes lectives 11-20` amb unes `60` hores aproximades
 
 Focus:
 - tancar el Repte 3 perquè la base persistent i mantenible quede resolta
@@ -146,6 +149,7 @@ Lectura operativa:
 - si el grup necessita més temps de consolidació tècnica, convé reforçar o compactar l'Avaluació 2 abans que desplaçar API o integració a una tercera avaluació residual
 - si el centre treballa per blocs més curts, el document pot usar-se com a calendarització per períodes d'avaluació parcial mantenint el mateix ordre de producte
 - els itineraris no han de generar calendaritzacions separades; la seqüència temporal ha de continuar sent comuna
+- si el centre partix d'una càrrega diferent de les `120` hores aproximades, cal recalcular la densitat de cada avaluació sense alterar el model `A1 -> A2 -> tancament abans de FCT`
 
 ## Definition of done del document
 Este document es considera completat quan:

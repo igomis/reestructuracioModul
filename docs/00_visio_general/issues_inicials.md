@@ -7,6 +7,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - els materials comuns del mòdul i els paquets nuclears dels Reptes `2`, `3`, `4` i `5` ja estan publicats com a base usable
 - els itineraris `Laravel`, `Express/Nest` i `FastAPI` ja existixen com a variacions homologables del mateix producte
 - la implantació docent ja està descrita en clau de fases, avaluacions, blocs d'aula i sessions
+- el marc temporal de referència queda fixat en unes `20` setmanes aproximades amb `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - el model docent assumit és clar: el projecte s'ha de desenvolupar i tancar dins de les dues primeres avaluacions lectives
 - la tercera avaluació no es considera període central de desenvolupament, sinó espai residual o de connexió amb empresa o `FCT`
 - Git i GitHub es mantenen com a metodologia de treball i criteri de traçabilitat, no com a bloc d'iniciació bàsica
@@ -26,7 +27,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 ## Paquets en producció o consolidació final
 - `MG-05` continua obert perquè els materials del Repte 4 encara han de passar una ronda final de consolidació pública i revisió de coherència.
 - `MG-06` continua obert perquè els materials del Repte 5 encara s'han d'acabar d'alinear amb la seqüència `R3 -> R4 -> R5` i amb el tancament del producte del curs.
-- `ID-06` en producció: seqüenciació de sessions en 2 avaluacions a `docs/01_programacio_modul/seqüenciacio_sessions_2_avaluacions.md`.
+- `ID-06` en revisió: ajust temporal a `20` setmanes / `120` hores aproximades a `docs/01_programacio_modul/seqüenciacio_sessions_2_avaluacions.md`.
 
 ## Documents d'implantació docent ja disponibles
 - `pla_implantacio_docent.md`: marc global de fases, criteris, evidències i riscos d'implantació
@@ -53,4 +54,4 @@ Criteri comú dels itineraris:
 ## Següent focus recomanat
 - tancar la ronda final de consolidació de `MG-05` i `MG-06`
 - mantindre els tres itineraris com a patró docent comparable en desplegament real
-- preparar la següent capa d'execució: versió executable de curs o instruments finals de seguiment
+- preparar la següent capa d'execució: versió executable de curs amb càrrega temporal realista

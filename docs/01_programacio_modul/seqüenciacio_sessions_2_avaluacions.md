@@ -5,27 +5,29 @@ Baixar la programació d'aula operativa del mòdul a una seqüència fina de ses
 
 Este document es llig conjuntament amb [pla_implantacio_docent.md](pla_implantacio_docent.md), [calendaritzacio_orientativa_aula.md](calendaritzacio_orientativa_aula.md), [calendaritzacio_per_avaluacions.md](calendaritzacio_per_avaluacions.md), [programacio_aula_operativa_2_avaluacions.md](programacio_aula_operativa_2_avaluacions.md) i [matriu_evidencies_i_instruments_per_fase.md](../03_avaluacio/matriu_evidencies_i_instruments_per_fase.md). La diferència és de gra: aquells documents fixen el marc, esta peça proposa el ritme concret de desplegament del curs.
 
+La seqüència es calibra sobre un escenari d'unes `20` setmanes, `6` hores setmanals i unes `120` hores lectives aproximades distribuïdes en les dues primeres avaluacions.
+
 ## Criteris d'ús
 - està pensat per a contextos on el projecte del mòdul s'ha de completar dins de les dues primeres avaluacions lectives
-- la unitat real és la sessió o bloc curt de treball; es pot correspondre amb una classe o amb una agrupació de sessions segons la càrrega horària del centre
+- la unitat real és la sessió o bloc curt de treball; no equival `1:1` a una hora lectiva, sinó a un macrotram que es pot correspondre amb una classe o amb una agrupació de sessions segons la càrrega horària del centre
 - Git i GitHub es tracten com a repàs metodològic, traçabilitat i criteri professional, no com a alfabetització inicial
 - els itineraris `Laravel`, `Express/Nest` i `FastAPI` s'integren dins de la mateixa seqüència, sense generar calendaris paral·lels
 - cada sessió ha de deixar una evidència observable o preparar explícitament el checkpoint següent
 - si una sessió crítica no deixa el mínim esperat, s'ha de reabsorbir temps dins de la mateixa avaluació i no desplaçar el nucli del projecte a la tercera
 
 ## Estructura general
-| Tronc temporal | Sessions orientatives | Fases i reptes | Producte acumulat |
-|---|---|---|---|
-| **Avaluació 1** | `Sessions 1-8` | `Fase 0`, `Fase 1`, `Fase 2` i inici de `Fase 3` | base funcional real del producte i entrada efectiva a arquitectura i persistència |
-| **Avaluació 2** | `Sessions 9-16` | tancament de `Fase 3`, `Fase 4`, `Fase 5` i defensa final | producte persistent, publicat com a API, integrat i defensable |
-| **Avaluació 3** | període residual | sense desenvolupament central del projecte | seguiment puntual, connexió amb empresa o `FCT`, ajustos menors si cal |
+| Tronc temporal | Sessions orientatives | Equivalència orientativa | Fases i reptes | Producte acumulat |
+|---|---|---|---|---|
+| **Avaluació 1** | `Sessions 1-8` | `setmanes 1-10 / ~60h` | `Fase 0`, `Fase 1`, `Fase 2` i inici de `Fase 3` | base funcional real del producte i entrada efectiva a arquitectura i persistència |
+| **Avaluació 2** | `Sessions 9-16` | `setmanes 11-20 / ~60h` | tancament de `Fase 3`, `Fase 4`, `Fase 5` i defensa final | producte persistent, publicat com a API, integrat i defensable |
+| **Avaluació 3** | període residual | fora de les `120h` nuclears del projecte | sense desenvolupament central del projecte | seguiment puntual, connexió amb empresa o `FCT`, ajustos menors si cal |
 
 ## Lectura ràpida de la seqüència
-- `Sessions 1-4`: marc comú, criteri metodològic i kickoff tècnic del producte
-- `Sessions 5-8`: resolució del nucli funcional de `R2` i entrada efectiva a `R3`
-- `Sessions 9-10`: tancament de persistència i mantenibilitat
-- `Sessions 11-13`: publicació, documentació i prova de l'`API`
-- `Sessions 14-16`: integració híbrida, tancament i defensa final
+- `Sessions 1-4`: `setmanes 1-5 (~30h)` per al marc comú, el criteri metodològic i el kickoff tècnic del producte
+- `Sessions 5-8`: `setmanes 6-10 (~30h)` per a la resolució del nucli funcional de `R2` i l'entrada efectiva a `R3`
+- `Sessions 9-10`: `setmanes 11-13 (~18h)` per al tancament de persistència i mantenibilitat
+- `Sessions 11-13`: `setmanes 14-17 (~24h)` per a la publicació, documentació i prova de l'`API`
+- `Sessions 14-16`: `setmanes 18-20 (~18h)` per a la integració híbrida, el tancament i la defensa final
 
 ## Seqüenciació detallada per sessions o blocs curts
 ### Avaluació 1
@@ -92,6 +94,7 @@ Lectura acumulativa:
 - si un grup mostra bloqueig en `Sessions 5-7`, convé absorbir temps de la sessió 8 abans que empényer el problema a la segona avaluació
 - si la base persistent encara no és suficient en `Sessions 9-10`, s'ha de retardar `R4`
 - la seqüència és comuna per a tots els itineraris; l'adaptació és tècnica, no curricular
+- si el centre treballa amb una càrrega diferent de les `120` hores aproximades, cal reinterpretar les sessions com a macrotrams i no com a comptatge fix d'hores
 
 ## Paper de la tercera avaluació
 La tercera avaluació no s'ha de reservar per al desenvolupament nuclear del projecte del mòdul. En este model:

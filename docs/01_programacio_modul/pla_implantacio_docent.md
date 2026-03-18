@@ -5,6 +5,8 @@ Convertir la reestructuració del mòdul en una seqüència d'aula executable, c
 
 Este document no redefinix el currículum ni substituïx les fitxes de repte. La seua funció és baixar a nivell d'implantació: indicar en quin moment s'activa cada bloc, quines evidències s'esperen, quin instrument principal s'utilitza i quins punts crítics s'han de controlar perquè el curs avance com a producte evolutiu i no com a suma de peces aïllades.
 
+La implantació prevista es calibra sobre un escenari orientatiu d'unes `20` setmanes amb `6` hores setmanals, és a dir, unes `120` hores lectives aproximades concentrades principalment en les dues primeres avaluacions.
+
 ## Principis d'implantació
 - treballar per fases que acumulen producte, no per temes desconnectats
 - mantindre el projecte base del curs com a fil conductor de totes les decisions d'aula
