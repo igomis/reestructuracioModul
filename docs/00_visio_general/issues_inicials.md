@@ -15,7 +15,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 ## Fase actual
 - paquet docent en versió `1` funcional
 - fase principal del paquet docent tancada a nivell de model, materials, implantació i seguiment
-- nova fase oberta: revisió d'avaluació, programació d'aula per repte i preparació d'apunts reals
+- nova fase oberta: producció d'apunts reals a partir del sistema docent ja consolidat
 
 ## Paquets consolidats
 - `PB-01` queda consolidat amb l'enunciat base del projecte del curs ja usable i visible.
@@ -35,13 +35,14 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `ID-11` consolidat amb el resum executiu i la versió compartible inicial del paquet docent.
 - `ID-12` consolidat amb la presentació breu del model DWES per reptes amb IA.
 - `ID-13` consolidat amb el tancament formal de la fase principal del paquet docent.
+- `AV-01` consolidat amb la revisió de la rúbrica general.
+- `PA-01` consolidat amb la programació d'aula per repte.
 
 ## Paquets en producció o consolidació final
 - `MG-05` continua obert perquè els materials del Repte 4 encara han de passar una ronda final de consolidació pública i revisió de coherència.
 - `MG-06` continua obert perquè els materials del Repte 5 encara s'han d'acabar d'alinear amb la seqüència `R3 -> R4 -> R5` i amb el tancament del producte del curs.
 - `ID-06` en revisió: ajust temporal a `20` setmanes / `120` hores aproximades a `docs/01_programacio_modul/seqüenciacio_sessions_2_avaluacions.md`.
-- `AV-01` en producció: revisió de la rúbrica general a `docs/03_avaluacio/rubrica_base_reptes.md`.
-- `PA-01` en producció: programació d'aula per repte a `docs/01_programacio_modul/programacio_aula_per_repte.md`.
+- `MA-01` en producció: apunts reals del Repte 2 a `docs/04_materials/apunts_reals/repte_02_sessions_i_autenticacio.md`.
 
 ## Documents clau de desplegament ja disponibles
 - `pla_implantacio_docent.md`: marc global de fases, criteris, evidències i riscos d'implantació
@@ -57,6 +58,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `tancament_fase_1_paquet_docent.md`: acte formal de tancament de la fase principal i pas a versió `1` funcional
 - `programacio_aula_per_repte.md`: lectura docent específica de què convé activar, modelar i revisar en cada repte
 - `criteris_ponderacio_reptes_amb_ia.md`: model base de ponderació per avaluar reptes en context de treball amb IA
+- `repte_02_sessions_i_autenticacio.md`: primer apunt real de repte, orientat a ús docent i treball autònom
 
 ## Itineraris consolidats / en revisió
 - `MI-01` `Laravel` queda consolidat com a primer patró reutilitzable de stack.
@@ -71,9 +73,9 @@ Criteri comú dels itineraris:
 ## Lectura operativa de la fase actual
 - el repositori ja no està definint el model del curs; està preparant el seu desplegament real
 - el nucli del treball docent ja està documentat i visible: què es fa, quan es fa, amb quins materials i amb quins instruments es revisa
-- el nucli del model queda ja tancat i el treball següent baixa a ús docent real: revisar com s'avalua, com s'ensenya cada repte i com es preparen apunts reals
+- el nucli del model queda ja tancat i el treball actual entra en producció de materials directament usables en aula
 
 ## Següent focus recomanat
-- revisió final del sistema d'avaluació per repte
-- programació d'aula específica dels reptes
-- preparació de la fase següent: apunts reals dels reptes
+- producció dels apunts reals del Repte 3
+- continuïtat de la sèrie d'apunts reals dels reptes
+- mantenir alineació entre apunts, programació i sistema d'avaluació
