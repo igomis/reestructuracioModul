@@ -31,6 +31,7 @@ Lectura ràpida de la fase actual:
 - els materials nuclears dels Reptes `2`, `3`, `4` i `5` ja estan publicats, encara que `MG-05` i `MG-06` continuen oberts a una ronda final de consolidació
 - els tres itineraris tecnològics (`Laravel`, `Express/Nest`, `FastAPI`) ja existixen com a paquet comparable dins d'un mateix marc docent
 - la implantació docent ja està baixada a diversos nivells: pla general, calendarització orientativa, calendarització per avaluacions, programació d'aula operativa i seqüenciació fina de sessions
+- el repositori entra ara en la capa de curs executable: una peça única perquè el professorat puga aplicar el model sense reconstruir la seqüència des de zero
 - el model assumix que el desenvolupament principal del projecte es resol i es defensa dins de les dues primeres avaluacions; la tercera queda com a espai residual o de connexió amb empresa o `FCT`
 - la implantació docent es calibra sobre un escenari orientatiu d'unes `20` setmanes i `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - Git i GitHub es tracten com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
@@ -41,6 +42,7 @@ Lectura ràpida de la fase actual:
 - [Calendarització per avaluacions del mòdul](docs/01_programacio_modul/calendaritzacio_per_avaluacions.md)
 - [Programació d'aula operativa en 2 avaluacions](docs/01_programacio_modul/programacio_aula_operativa_2_avaluacions.md)
 - [Seqüenciació de sessions en 2 avaluacions](docs/01_programacio_modul/seqüenciacio_sessions_2_avaluacions.md)
+- [Curs executable DWES en 2 avaluacions](docs/01_programacio_modul/curs_executable_dwes_2_avaluacions.md)
 - [Pla de materials prioritaris del mòdul](docs/04_materials/pla_materials_prioritaris.md)
 - [Estat de producció dels materials](docs/00_visio_general/issues_inicials.md)
 - [Enunciat base del projecte del curs](docs/05_projectes_tecnics/enunciat_projecte_base.md)
@@ -49,6 +51,6 @@ Lectura ràpida de la fase actual:
 - [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md)
 
 ## Focus actual
-1. Consolidar la visibilitat i la coherència dels documents d’implantació docent ja creats per a un model de 2 avaluacions lectives.
-2. Preparar el desplegament real de curs sobre la base ja definida de calendarització, programació d’aula i seqüenciació de sessions.
-3. Tancar la següent capa d’execució: versió executable de curs amb càrrega temporal realista i instruments finals de seguiment.
+1. Obrir la capa d'execució docent reutilitzable: curs executable en `2` avaluacions sobre el marc ja definit de calendarització, programació i seqüenciació.
+2. Preparar el desplegament real de curs a partir d'una peça única que connecte reptes, materials, itineraris, evidències i instruments.
+3. Tancar la capa següent d'implantació: instruments finals de seguiment i ajustos per a ús real de centre.

@@ -28,6 +28,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `MG-05` continua obert perquè els materials del Repte 4 encara han de passar una ronda final de consolidació pública i revisió de coherència.
 - `MG-06` continua obert perquè els materials del Repte 5 encara s'han d'acabar d'alinear amb la seqüència `R3 -> R4 -> R5` i amb el tancament del producte del curs.
 - `ID-06` en revisió: ajust temporal a `20` setmanes / `120` hores aproximades a `docs/01_programacio_modul/seqüenciacio_sessions_2_avaluacions.md`.
+- `ID-07` en producció: versió executable del curs a `docs/01_programacio_modul/curs_executable_dwes_2_avaluacions.md`.
 
 ## Documents d'implantació docent ja disponibles
 - `pla_implantacio_docent.md`: marc global de fases, criteris, evidències i riscos d'implantació
@@ -35,6 +36,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `calendaritzacio_per_avaluacions.md`: reagrupació del model per avaluacions lectives reals
 - `programacio_aula_operativa_2_avaluacions.md`: trasllat del model a blocs d'aula amb activitat docent recognoscible
 - `seqüenciacio_sessions_2_avaluacions.md`: detall fi de sessions, checkpoints i seguiment
+- `curs_executable_dwes_2_avaluacions.md`: versió unificada i reutilitzable del curs per a desplegament docent real
 
 ## Itineraris consolidats / en revisió
 - `MI-01` `Laravel` queda consolidat com a primer patró reusable de stack.
@@ -49,9 +51,9 @@ Criteri comú dels itineraris:
 ## Lectura operativa de la fase actual
 - el repositori ja no està definint el model del curs; està preparant el seu desplegament real
 - el nucli del treball docent ja està documentat i visible: què es fa, quan es fa, amb quins materials i amb quins instruments es revisa
-- el buit principal ja no és metodològic, sinó d'execució: consolidar els últims materials oberts i tancar la capa final d'instruments o versió executable de curs
+- el buit principal ja no és metodològic, sinó d'execució: consolidar els últims materials oberts i tancar una peça única de curs executable per a professorat
 
 ## Següent focus recomanat
 - tancar la ronda final de consolidació de `MG-05` i `MG-06`
 - mantindre els tres itineraris com a patró docent comparable en desplegament real
-- preparar la següent capa d'execució: versió executable de curs amb càrrega temporal realista
+- tancar `ID-07` i usar-lo com a base per als instruments finals de seguiment i per al desplegament real de curs
