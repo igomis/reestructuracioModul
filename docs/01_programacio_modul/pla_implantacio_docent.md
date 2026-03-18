@@ -84,6 +84,7 @@ Este document no redefinix el currículum ni substituïx les fitxes de repte. La
 - no deixar els materials comuns només al principi; han de continuar actius durant tot el curs
 - no convertir la IA en drecera invisible; ha de quedar sempre vinculada a execució, contrast i defensa
 - controlar bé la transició entre Fase 2 i Fase 3, perquè és on es juga la qualitat del producte i la compatibilitat entre itineraris
+- no deixar `Fase 4`, `Fase 5` i defensa final per a una tercera avaluació no lectiva ordinària; API, integració i tancament han de quedar resolts dins de les dues primeres avaluacions del curs
 
 ## Riscos previsibles i mesures de control
 | Risc previsible | Impacte | Mesura de control |

@@ -32,6 +32,7 @@ Estat real de la fase actual:
 - el nou eix és connectar reptes, materials, itineraris, evidències i instruments en una seqüència d'aula executable i agrupable per avaluacions
 - el projecte base i el pla de materials ja permeten treballar sobre una seqüència real de producte del curs
 - el focus immediat és convertir la implantació planificada en calendarització per avaluacions i preparar-ne el desplegament real d'aula
+- esta implantació està pensada per a contextos on el desenvolupament principal del projecte queda resolt dins de les dues primeres avaluacions lectives
 
 ## Documents clau de la fase actual
 - [Pla d'implantació docent del mòdul](docs/01_programacio_modul/pla_implantacio_docent.md)

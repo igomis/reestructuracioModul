@@ -7,6 +7,8 @@ Esta calendarització no pretén fixar un únic calendari tancat per a tots els 
 
 Esta peça s'ha de llegir conjuntament amb `docs/03_avaluacio/matriu_evidencies_i_instruments_per_fase.md`, que concreta quines evidències s'esperen en cada fase i amb quins instruments s'han de revisar.
 
+En contextos on la 3a avaluació queda absorbida per empresa o `FCT`, esta seqüència s'ha d'interpretar com a recorregut lectiu principal concentrat en les dues primeres avaluacions. Això implica que `Fase 4`, `Fase 5` i defensa final no s'han de deixar per a un tercer període residual.
+
 ## Criteris d'ús de la calendarització
 - està pensada com a seqüència orientativa d'un bloc lectiu d'unes `18` setmanes, ampliable o comprimible segons hores reals del centre
 - cada fase s'ha d'entendre com a tram de producte i d'evidència, no només com a bloc temàtic
