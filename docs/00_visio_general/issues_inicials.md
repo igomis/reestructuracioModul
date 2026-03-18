@@ -27,12 +27,13 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `ID-08` consolidat amb els instruments finals de seguiment docent.
 - `ID-09` consolidat amb el paquet docent exportable del mòdul.
 - `ID-10` consolidat amb la revisió editorial i de presentació final del paquet docent.
+- `ID-11` consolidat amb el resum executiu i la versió compartible inicial del paquet docent.
 
 ## Paquets en producció o consolidació final
 - `MG-05` continua obert perquè els materials del Repte 4 encara han de passar una ronda final de consolidació pública i revisió de coherència.
 - `MG-06` continua obert perquè els materials del Repte 5 encara s'han d'acabar d'alinear amb la seqüència `R3 -> R4 -> R5` i amb el tancament del producte del curs.
 - `ID-06` en revisió: ajust temporal a `20` setmanes / `120` hores aproximades a `docs/01_programacio_modul/seqüenciacio_sessions_2_avaluacions.md`.
-- `ID-11` en producció: resum executiu i versió compartible del paquet docent a `docs/00_visio_general/resum_executiu_paquet_docent.md`.
+- `ID-12` en producció: presentació breu del model a `docs/00_visio_general/presentacio_model_dwes_reptes_ia.md`.
 
 ## Documents clau de desplegament ja disponibles
 - `pla_implantacio_docent.md`: marc global de fases, criteris, evidències i riscos d'implantació
@@ -43,6 +44,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `curs_executable_dwes_2_avaluacions.md`: versió unificada i reutilitzable del curs per a desplegament docent real
 - `paquet_docent_exportable.md`: lectura unificada del que forma el paquet docent complet i del que es pot transferir a altres contextos
 - `resum_executiu_paquet_docent.md`: entrada curta i compartible al model per a professorat que no ha seguit tot el procés
+- `presentacio_model_dwes_reptes_ia.md`: peça textual breu per explicar el model a professorat o equips externs
 - `revisio_editorial_final.md`: registre de normalització terminològica, coherència editorial i preparació final del paquet
 
 ## Itineraris consolidats / en revisió
@@ -58,9 +60,9 @@ Criteri comú dels itineraris:
 ## Lectura operativa de la fase actual
 - el repositori ja no està definint el model del curs; està preparant el seu desplegament real
 - el nucli del treball docent ja està documentat i visible: què es fa, quan es fa, amb quins materials i amb quins instruments es revisa
-- el buit principal ja no és metodològic, sinó de síntesi i presentació: deixar el paquet docent llest per a ús compartible o lliurable
+- el buit principal ja no és metodològic, sinó de difusió i presentació: deixar el paquet docent llest per explicar-se i compartir-se amb claredat
 
 ## Següent focus recomanat
 - tancar la ronda final de consolidació de `MG-05` i `MG-06`
 - mantindre els tres itineraris com a patró docent comparable en desplegament real
-- tancar `ID-11` i preparar la versió final compartible o lliurable del paquet docent
+- tancar `ID-12` i preparar el tancament de fase o una versió lliurable externa del paquet docent
