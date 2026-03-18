@@ -43,6 +43,7 @@ Lectura ràpida de la fase actual:
 - [Programació d'aula operativa en 2 avaluacions](docs/01_programacio_modul/programacio_aula_operativa_2_avaluacions.md)
 - [Seqüenciació de sessions en 2 avaluacions](docs/01_programacio_modul/seqüenciacio_sessions_2_avaluacions.md)
 - [Curs executable DWES en 2 avaluacions](docs/01_programacio_modul/curs_executable_dwes_2_avaluacions.md)
+- [Instruments de seguiment docent](docs/03_avaluacio/instruments_seguiment_docent.md)
 - [Pla de materials prioritaris del mòdul](docs/04_materials/pla_materials_prioritaris.md)
 - [Estat de producció dels materials](docs/00_visio_general/issues_inicials.md)
 - [Enunciat base del projecte del curs](docs/05_projectes_tecnics/enunciat_projecte_base.md)
@@ -53,4 +54,4 @@ Lectura ràpida de la fase actual:
 ## Focus actual
 1. Obrir la capa d'execució docent reutilitzable: curs executable en `2` avaluacions sobre el marc ja definit de calendarització, programació i seqüenciació.
 2. Preparar el desplegament real de curs a partir d'una peça única que connecte reptes, materials, itineraris, evidències i instruments.
-3. Tancar la capa següent d'implantació: instruments finals de seguiment i ajustos per a ús real de centre.
+3. Desenvolupar els instruments finals de seguiment docent perquè el model siga executable també en control periòdic, checkpoints i revisió d'equips.
