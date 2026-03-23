@@ -16,6 +16,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - paquet docent en versió `1` funcional
 - fase principal del paquet docent tancada a nivell de model, materials, implantació i seguiment
 - nova fase oberta: producció d'apunts reals a partir del sistema docent ja consolidat
+- `MA-01` queda consolidat amb el primer apunt real del Repte 2 ja publicat
+- `MA-02` entra en producció amb els apunts reals del Repte 3
 
 ## Paquets consolidats
 - `PB-01` queda consolidat amb l'enunciat base del projecte del curs ja usable i visible.
@@ -42,7 +44,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `MG-05` continua obert perquè els materials del Repte 4 encara han de passar una ronda final de consolidació pública i revisió de coherència.
 - `MG-06` continua obert perquè els materials del Repte 5 encara s'han d'acabar d'alinear amb la seqüència `R3 -> R4 -> R5` i amb el tancament del producte del curs.
 - `ID-06` en revisió: ajust temporal a `20` setmanes / `120` hores aproximades a `docs/01_programacio_modul/seqüenciacio_sessions_2_avaluacions.md`.
-- `MA-01` en producció: apunts reals del Repte 2 a `docs/04_materials/apunts_reals/repte_02_sessions_i_autenticacio.md`.
+- `MA-01` consolidat: apunts reals del Repte 2 publicats a `docs/04_materials/apunts_reals/repte_02_sessions_i_autenticacio.md`.
+- `MA-02` en producció: apunts reals del Repte 3 a `docs/04_materials/apunts_reals/repte_03_mvc_i_persistencia.md`.
 
 ## Documents clau de desplegament ja disponibles
 - `pla_implantacio_docent.md`: marc global de fases, criteris, evidències i riscos d'implantació
@@ -59,6 +62,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `programacio_aula_per_repte.md`: lectura docent específica de què convé activar, modelar i revisar en cada repte
 - `criteris_ponderacio_reptes_amb_ia.md`: model base de ponderació per avaluar reptes en context de treball amb IA
 - `repte_02_sessions_i_autenticacio.md`: primer apunt real de repte, orientat a ús docent i treball autònom
+- `repte_03_mvc_i_persistencia.md`: segon apunt real de repte, orientat a arquitectura, persistència i verificació tècnica
 
 ## Itineraris consolidats / en revisió
 - `MI-01` `Laravel` queda consolidat com a primer patró reutilitzable de stack.
@@ -74,8 +78,9 @@ Criteri comú dels itineraris:
 - el repositori ja no està definint el model del curs; està preparant el seu desplegament real
 - el nucli del treball docent ja està documentat i visible: què es fa, quan es fa, amb quins materials i amb quins instruments es revisa
 - el nucli del model queda ja tancat i el treball actual entra en producció de materials directament usables en aula
+- la fase d'apunts reals ja no és només una intenció: el Repte 2 queda publicat i el Repte 3 passa a la següent peça operativa
 
 ## Següent focus recomanat
-- producció dels apunts reals del Repte 3
+- producció dels apunts reals del Repte 4
 - continuïtat de la sèrie d'apunts reals dels reptes
 - mantenir alineació entre apunts, programació i sistema d'avaluació

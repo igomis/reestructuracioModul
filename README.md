@@ -35,7 +35,7 @@ Lectura ràpida de la fase actual:
 - el model assumix que el desenvolupament principal del projecte es resol i es defensa dins de les dues primeres avaluacions; la tercera queda com a espai residual o de connexió amb empresa o `FCT`
 - la implantació docent es calibra sobre un escenari orientatiu d'unes `20` setmanes i `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - Git/GitHub es tracta com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
-- amb el paquet docent en versió `1` funcional, la revisió del sistema d'avaluació queda consolidada, la programació d'aula per repte ja està creada i s'obri la fase d'apunts reals
+- amb el paquet docent en versió `1` funcional, la revisió del sistema d'avaluació queda consolidada, la programació d'aula per repte ja està creada, els apunts reals del Repte 2 ja estan publicats i el Repte 3 entra en producció
 
 ## Documents clau de la fase actual
 - [Pla d'implantació docent del mòdul](docs/01_programacio_modul/pla_implantacio_docent.md)
@@ -47,6 +47,7 @@ Lectura ràpida de la fase actual:
 - [Instruments de seguiment docent](docs/03_avaluacio/instruments_seguiment_docent.md)
 - [Criteris de ponderació dels reptes amb IA](docs/03_avaluacio/criteris_ponderacio_reptes_amb_ia.md)
 - [Apunts reals del Repte 2](docs/04_materials/apunts_reals/repte_02_sessions_i_autenticacio.md)
+- [Apunts reals del Repte 3](docs/04_materials/apunts_reals/repte_03_mvc_i_persistencia.md)
 - [Paquet docent exportable del mòdul](docs/00_visio_general/paquet_docent_exportable.md)
 - [Resum executiu del paquet docent](docs/00_visio_general/resum_executiu_paquet_docent.md)
 - [Presentació breu del model DWES](docs/00_visio_general/presentacio_model_dwes_reptes_ia.md)
@@ -61,5 +62,5 @@ Lectura ràpida de la fase actual:
 
 ## Focus actual
 1. Donar per consolidada la revisió del sistema d'avaluació per a un context de treball normalitzat amb IA.
-2. Donar per creada la programació d'aula per repte com a capa docent operativa.
-3. Obrir la fase d'apunts reals dels reptes començant pel Repte 2.
+2. Donar per consolidada la programació d'aula per repte com a capa docent operativa.
+3. Mantindre oberta la fase d'apunts reals dels reptes, amb el Repte 2 ja publicat i el Repte 3 en producció.
