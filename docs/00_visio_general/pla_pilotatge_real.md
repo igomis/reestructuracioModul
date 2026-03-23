@@ -3,6 +3,8 @@
 ## Finalitat del document
 Preparar el pas del paquet docent des d'un model ja documentat i executable a una validació real amb alumnat, de manera que el pilotatge servisca per confirmar què funciona, què cal retocar i quines peces del sistema aguanten bé un ús docent ordinari.
 
+Este document funciona com a peça marc del pilotatge. La seua traducció operativa queda desplegada a [pla_execucio_pilotatge_real.md](pla_execucio_pilotatge_real.md), on es concreta com s'inicia, quins checkpoints reals s'activen i com s'usen els instruments de feedback i incidències.
+
 ## Què s'entén per pilotatge real
 En este context, pilotatge real vol dir aplicar el model del mòdul en un grup real d'alumnat, amb calendari lectiu, lliurables, seguiment i revisió efectiva per part del professorat.
 

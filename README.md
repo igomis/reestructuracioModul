@@ -35,7 +35,7 @@ Lectura ràpida de la fase actual:
 - el model assumix que el desenvolupament principal del projecte es resol i es defensa dins de les dues primeres avaluacions; la tercera queda com a espai residual o de connexió amb empresa o `FCT`
 - la implantació docent es calibra sobre un escenari orientatiu d'unes `20` setmanes i `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - Git/GitHub es tracta com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
-- amb el paquet docent en versió `1` funcional, el reforç del nivell professional dels reptes ja queda consolidat, la fase d'apunts reals queda consolidada i el repositori entra en preparació de pilotatge real del model
+- amb el paquet docent en versió `1` funcional, el reforç del nivell professional dels reptes ja queda consolidat, el pilotatge real queda preparat i el repositori entra en validació planificada amb alumnat
 
 ## Documents clau de la fase actual
 - [Pla d'implantació docent del mòdul](docs/01_programacio_modul/pla_implantacio_docent.md)
@@ -53,6 +53,7 @@ Lectura ràpida de la fase actual:
 - [Apunts reals del Repte 5](docs/04_materials/apunts_reals/repte_05_integracio_hibrida_n8n.md)
 - [Revisió transversal dels apunts reals](docs/04_materials/apunts_reals/revisio_transversal_apunts_reals.md)
 - [Pla de pilotatge real del mòdul](docs/00_visio_general/pla_pilotatge_real.md)
+- [Pla d'execució del pilotatge real](docs/00_visio_general/pla_execucio_pilotatge_real.md)
 - [Plantilla de recollida de feedback de pilotatge](docs/03_avaluacio/plantilla_recollida_feedback_pilotatge.md)
 - [Registre d'incidents i ajustos del pilotatge](docs/03_avaluacio/registre_incidents_i_ajustos_pilotatge.md)
 - [Paquet docent exportable del mòdul](docs/00_visio_general/paquet_docent_exportable.md)
@@ -68,6 +69,6 @@ Lectura ràpida de la fase actual:
 - [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md)
 
 ## Focus actual
-1. Donar per consolidada la fase d'apunts reals com a base docent usable.
-2. Preparar el pilotatge real del model amb alumnat i instruments de seguiment específics.
-3. Obrir la línia següent de recollida de feedback i millora iterativa del paquet docent.
+1. Donar per preparat el pilotatge real del model amb alumnat.
+2. Iniciar la validació planificada del paquet docent amb checkpoints, feedback i registre d'incidències.
+3. Obrir la línia següent de recollida de feedback i ajustos del paquet per iteració.

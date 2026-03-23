@@ -22,8 +22,9 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `MA-04` queda consolidat amb els apunts reals del Repte 5 ja publicats
 - `MA-05` queda consolidat amb la revisió transversal de la sèrie d'apunts reals
 - `MA-06` consolidat: tancament operatiu de la fase d'apunts reals
-- `PR-01` en producció: pla de pilotatge real
-- `PR-02` en producció: plantilles de recollida de feedback i incidències
+- `PR-01` consolidat: pla de pilotatge real
+- `PR-02` consolidat: plantilles de recollida de feedback i incidències
+- `PR-03` en producció: execució del pilotatge real
 - `RC-11` consolidat: reforç del nivell professional dels reptes i del seu llindar de no trivialitat
 
 ## Paquets consolidats
@@ -57,8 +58,9 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `MA-04` consolidat: apunts reals del Repte 5 publicats a `docs/04_materials/apunts_reals/repte_05_integracio_hibrida_n8n.md`.
 - `MA-05` consolidat: revisió transversal dels apunts reals a `docs/04_materials/apunts_reals/revisio_transversal_apunts_reals.md`.
 - `MA-06` consolidat: tancament operatiu de la fase d'apunts reals a `docs/04_materials/apunts_reals/tancament_fase_apunts_reals.md`.
-- `PR-01` en producció: pla de pilotatge real a `docs/00_visio_general/pla_pilotatge_real.md`.
-- `PR-02` en producció: plantilles de feedback i incidències a `docs/03_avaluacio/plantilla_recollida_feedback_pilotatge.md` i `docs/03_avaluacio/registre_incidents_i_ajustos_pilotatge.md`.
+- `PR-01` consolidat: pla de pilotatge real a `docs/00_visio_general/pla_pilotatge_real.md`.
+- `PR-02` consolidat: plantilles de feedback i incidències a `docs/03_avaluacio/plantilla_recollida_feedback_pilotatge.md` i `docs/03_avaluacio/registre_incidents_i_ajustos_pilotatge.md`.
+- `PR-03` en producció: execució del pilotatge real a `docs/00_visio_general/pla_execucio_pilotatge_real.md`.
 - `RC-11` consolidat: revisió del nivell professional dels Reptes `1-5`, del projecte base i de la rúbrica per evitar lectures trivials del model.
 
 ## Documents clau de desplegament ja disponibles
@@ -82,6 +84,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `repte_05_integracio_hibrida_n8n.md`: quart apunt real de repte, orientat a integració útil, automatització i tancament defensable del producte
 - `revisio_transversal_apunts_reals.md`: registre de consolidació comuna, progressió didàctica i coherència editorial de la sèrie d'apunts reals
 - `pla_pilotatge_real.md`: marc del pilotatge real, hipòtesi de treball, evidències i punts de decisió
+- `pla_execucio_pilotatge_real.md`: peça operativa del pilotatge, amb escenari, checkpoints, ús dels instruments i criteri de canvi
 - `plantilla_recollida_feedback_pilotatge.md`: instrument reusable per recollir feedback d'alumnat i observacions docents
 - `registre_incidents_i_ajustos_pilotatge.md`: registre viu d'incidències, impacte i ajustos durant el pilotatge
 
@@ -99,10 +102,10 @@ Criteri comú dels itineraris:
 - el repositori ja no està definint el model del curs; està preparant el seu desplegament real
 - el nucli del treball docent ja està documentat i visible: què es fa, quan es fa, amb quins materials i amb quins instruments es revisa
 - el nucli del model queda ja tancat i la fase d'apunts reals es dona per consolidada com a capa de materials directament usables en aula
-- el treball actual passa a preparar la validació real del paquet docent amb alumnat, feedback i registre d'incidències
+- el treball actual passa de preparar el pilotatge a executar-lo de manera planificada amb alumnat, feedback i registre d'incidències
 - el reforç de densitat funcional dels reptes queda consolidat i passa a funcionar com a criteri estable de lectura del sistema
 
 ## Següent focus recomanat
-- pilotatge amb alumnat i millora iterativa del paquet docent
-- recollida de feedback sobre materials, càrrega temporal, evidències i instruments
+- recollida de feedback i millora iterativa del paquet docent
+- revisió d'incidències, càrrega temporal i ajustos de primera iteració
 - mantindre alineació entre apunts, programació, avaluació i decisions de millora
