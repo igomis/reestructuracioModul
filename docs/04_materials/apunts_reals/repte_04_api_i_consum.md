@@ -28,6 +28,7 @@ Este repte no consistix a "fer endpoints" ni a "fer un CRUD perquè sí". El que
 - la definició d'un endpoint amb entrada, resposta correcta i error controlat
 - una prova mínima d'un endpoint prioritari des d'una col·lecció, script o client simple
 - un exemple curt de documentació coherent amb el comportament real de l'endpoint
+- una defensa curta de per què el contracte publicat respon a una funcionalitat real i no a un `CRUD` ornamental
 - una anotació breu al `README` o a l'`AI log` explicant una decisió de contracte o de prova
 
 ## Què treballa l'alumnat amb autonomia

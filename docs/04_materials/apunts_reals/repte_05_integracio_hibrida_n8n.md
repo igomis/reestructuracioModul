@@ -15,6 +15,7 @@ Este repte no consistix a "usar `n8n`" ni a "fer una automatització perquè sí
 - el repte no consistix a construir un workflow vistós, sinó a completar un procés real del producte
 - `n8n` o una eina equivalent només tenen sentit si aporten claredat, valor funcional i mantenibilitat
 - una integració només compta si es pot provar tant en camí correcte com en camí de fallada
+- el valor docent està en el procés resolt, no en l'eina triada
 - la IA pot ajudar a mapar payloads, passos o errors, però s'ha de poder explicar què s'ha acceptat i com s'ha verificat després
 
 ## Què ha d'explicar el professorat

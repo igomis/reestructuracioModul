@@ -38,6 +38,7 @@ Este repte no consistix a "fer MVC" ni a "guardar dades". El que s'espera és pr
 - passar d'estat temporal o acoblat a persistència funcional real
 - reorganitzar el codi en capes o patró equivalent segons l'itinerari
 - provar els casos crítics i actualitzar documentació i traçabilitat
+- defensar per què la nova estructura millora un flux real del producte i no només la seua aparença
 
 ## Exemple mínim orientatiu
 Exemple orientatiu de recorregut mínim:
