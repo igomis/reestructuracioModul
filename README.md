@@ -35,13 +35,14 @@ Lectura ràpida de la fase actual:
 - el model assumix que el desenvolupament principal del projecte es resol i es defensa dins de les dues primeres avaluacions; la tercera queda com a espai residual o de connexió amb empresa o `FCT`
 - la implantació docent es calibra sobre un escenari orientatiu d'unes `20` setmanes i `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - Git/GitHub es tracta com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
-- amb el paquet docent en versió `1` funcional, el reforç del nivell professional dels reptes ja queda consolidat, el pilotatge real queda preparat i el repositori entra en validació planificada amb alumnat
+- amb el paquet docent en versió `1` funcional, el reforç del nivell professional dels reptes ja queda consolidat, el pilotatge real queda preparat i el repositori entra en una fase de seqüència docent fina per a ús setmanal real
 
 ## Documents clau de la fase actual
 - [Pla d'implantació docent del mòdul](docs/01_programacio_modul/pla_implantacio_docent.md)
 - [Calendarització per avaluacions del mòdul](docs/01_programacio_modul/calendaritzacio_per_avaluacions.md)
 - [Programació d'aula operativa en 2 avaluacions](docs/01_programacio_modul/programacio_aula_operativa_2_avaluacions.md)
 - [Seqüenciació de sessions en 2 avaluacions](docs/01_programacio_modul/seqüenciacio_sessions_2_avaluacions.md)
+- [Guia sessió a sessió del curs en 20 setmanes](docs/01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md)
 - [Curs executable DWES en 2 avaluacions](docs/01_programacio_modul/curs_executable_dwes_2_avaluacions.md)
 - [Programació d'aula per repte](docs/01_programacio_modul/programacio_aula_per_repte.md)
 - [Instruments de seguiment docent](docs/03_avaluacio/instruments_seguiment_docent.md)
@@ -70,5 +71,5 @@ Lectura ràpida de la fase actual:
 
 ## Focus actual
 1. Donar per preparat el pilotatge real del model amb alumnat.
-2. Iniciar la validació planificada del paquet docent amb checkpoints, feedback i registre d'incidències.
-3. Obrir la línia següent de recollida de feedback i ajustos del paquet per iteració.
+2. Deixar en preparació una seqüència docent sessió a sessió per a ús setmanal real.
+3. Obrir suport i ampliació per a ritmes diferents dins del mateix recorregut del curs.

@@ -24,7 +24,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `MA-06` consolidat: tancament operatiu de la fase d'apunts reals
 - `PR-01` consolidat: pla de pilotatge real
 - `PR-02` consolidat: plantilles de recollida de feedback i incidències
-- `PR-03` en producció: execució del pilotatge real
+- `PR-03` consolidat: execució del pilotatge real
+- `PD-01` en producció: guia sessió a sessió de `20` setmanes
 - `RC-11` consolidat: reforç del nivell professional dels reptes i del seu llindar de no trivialitat
 
 ## Paquets consolidats
@@ -60,7 +61,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `MA-06` consolidat: tancament operatiu de la fase d'apunts reals a `docs/04_materials/apunts_reals/tancament_fase_apunts_reals.md`.
 - `PR-01` consolidat: pla de pilotatge real a `docs/00_visio_general/pla_pilotatge_real.md`.
 - `PR-02` consolidat: plantilles de feedback i incidències a `docs/03_avaluacio/plantilla_recollida_feedback_pilotatge.md` i `docs/03_avaluacio/registre_incidents_i_ajustos_pilotatge.md`.
-- `PR-03` en producció: execució del pilotatge real a `docs/00_visio_general/pla_execucio_pilotatge_real.md`.
+- `PR-03` consolidat: execució del pilotatge real a `docs/00_visio_general/pla_execucio_pilotatge_real.md`.
+- `PD-01` en producció: guia sessió a sessió de `20` setmanes a `docs/01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md`.
 - `RC-11` consolidat: revisió del nivell professional dels Reptes `1-5`, del projecte base i de la rúbrica per evitar lectures trivials del model.
 
 ## Documents clau de desplegament ja disponibles
@@ -69,6 +71,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `calendaritzacio_per_avaluacions.md`: reagrupació del model per avaluacions lectives reals
 - `programacio_aula_operativa_2_avaluacions.md`: trasllat del model a blocs d'aula amb activitat docent recognoscible
 - `seqüenciacio_sessions_2_avaluacions.md`: detall fi de sessions, checkpoints i seguiment
+- `guia_sessio_a_sessio_20_setmanes.md`: traducció setmanal del curs amb paper docent, autonomia, suport i ampliació per ritmes diferents
 - `curs_executable_dwes_2_avaluacions.md`: versió unificada i reutilitzable del curs per a desplegament docent real
 - `paquet_docent_exportable.md`: lectura unificada del que forma el paquet docent complet i del que es pot transferir a altres contextos
 - `resum_executiu_paquet_docent.md`: entrada curta i compartible al model per a professorat que no ha seguit tot el procés
@@ -102,10 +105,10 @@ Criteri comú dels itineraris:
 - el repositori ja no està definint el model del curs; està preparant el seu desplegament real
 - el nucli del treball docent ja està documentat i visible: què es fa, quan es fa, amb quins materials i amb quins instruments es revisa
 - el nucli del model queda ja tancat i la fase d'apunts reals es dona per consolidada com a capa de materials directament usables en aula
-- el treball actual passa de preparar el pilotatge a executar-lo de manera planificada amb alumnat, feedback i registre d'incidències
+- el treball actual entra en una capa encara més operativa: seqüència setmanal real per a professorat, amb suport i ampliació segons ritme
 - el reforç de densitat funcional dels reptes queda consolidat i passa a funcionar com a criteri estable de lectura del sistema
 
 ## Següent focus recomanat
+- instruments de suport i ampliació segons ritme
 - recollida de feedback i millora iterativa del paquet docent
-- revisió d'incidències, càrrega temporal i ajustos de primera iteració
 - mantindre alineació entre apunts, programació, avaluació i decisions de millora
