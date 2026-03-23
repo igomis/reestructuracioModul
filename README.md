@@ -35,7 +35,7 @@ Lectura ràpida de la fase actual:
 - el model assumix que el desenvolupament principal del projecte es resol i es defensa dins de les dues primeres avaluacions; la tercera queda com a espai residual o de connexió amb empresa o `FCT`
 - la implantació docent es calibra sobre un escenari orientatiu d'unes `20` setmanes i `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - Git/GitHub es tracta com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
-- amb el paquet docent en versió `1` funcional, el reforç del nivell professional dels reptes ja queda consolidat, la sèrie d'apunts reals `R2-R5` queda completa i entra en revisió transversal per a ús i compartició
+- amb el paquet docent en versió `1` funcional, el reforç del nivell professional dels reptes ja queda consolidat, la fase d'apunts reals queda tancada operativament i el paquet docent queda preparat per a ús i compartició
 
 ## Documents clau de la fase actual
 - [Pla d'implantació docent del mòdul](docs/01_programacio_modul/pla_implantacio_docent.md)
@@ -51,6 +51,7 @@ Lectura ràpida de la fase actual:
 - [Apunts reals del Repte 4](docs/04_materials/apunts_reals/repte_04_api_i_consum.md)
 - [Apunts reals del Repte 5](docs/04_materials/apunts_reals/repte_05_integracio_hibrida_n8n.md)
 - [Revisió transversal dels apunts reals](docs/04_materials/apunts_reals/revisio_transversal_apunts_reals.md)
+- [Tancament operatiu de la fase d'apunts reals](docs/04_materials/apunts_reals/tancament_fase_apunts_reals.md)
 - [Paquet docent exportable del mòdul](docs/00_visio_general/paquet_docent_exportable.md)
 - [Resum executiu del paquet docent](docs/00_visio_general/resum_executiu_paquet_docent.md)
 - [Presentació breu del model DWES](docs/00_visio_general/presentacio_model_dwes_reptes_ia.md)
@@ -64,6 +65,6 @@ Lectura ràpida de la fase actual:
 - [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md)
 
 ## Focus actual
-1. Consolidar transversalment la sèrie d'apunts reals `R2-R5` com a paquet docent coherent.
-2. Preparar el paquet docent per a ús i compartició amb una sèrie d'apunts reals homogènia.
-3. Mantindre alineació entre apunts, programació d'aula, rúbrica i llindar professional dels reptes.
+1. Donar per consolidada la fase d'apunts reals com a paquet docent usable.
+2. Preparar el paquet docent per a ús i compartició sense reobrir noves peces de contingut.
+3. Obrir la línia següent cap a pilotatge, manteniment o versió compartible externa.

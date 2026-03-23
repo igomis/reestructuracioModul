@@ -20,7 +20,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `MA-02` queda consolidat amb els apunts reals del Repte 3 ja rematats
 - `MA-03` queda consolidat amb els apunts reals del Repte 4 ja publicats
 - `MA-04` queda consolidat amb els apunts reals del Repte 5 ja publicats
-- `MA-05` entra en producció amb la revisió transversal dels apunts reals
+- `MA-05` queda consolidat amb la revisió transversal dels apunts reals ja completada
+- `MA-06` entra en producció: tancament operatiu de la fase d'apunts reals
 - `RC-11` consolidat: reforç del nivell professional dels reptes i del seu llindar de no trivialitat
 
 ## Paquets consolidats
@@ -52,7 +53,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `MA-02` consolidat: apunts reals del Repte 3 publicats a `docs/04_materials/apunts_reals/repte_03_mvc_i_persistencia.md`.
 - `MA-03` consolidat: apunts reals del Repte 4 publicats a `docs/04_materials/apunts_reals/repte_04_api_i_consum.md`.
 - `MA-04` consolidat: apunts reals del Repte 5 publicats a `docs/04_materials/apunts_reals/repte_05_integracio_hibrida_n8n.md`.
-- `MA-05` en producció: revisió transversal dels apunts reals a `docs/04_materials/apunts_reals/revisio_transversal_apunts_reals.md`.
+- `MA-05` consolidat: revisió transversal dels apunts reals a `docs/04_materials/apunts_reals/revisio_transversal_apunts_reals.md`.
+- `MA-06` en producció: tancament operatiu de la fase d'apunts reals a `docs/04_materials/apunts_reals/tancament_fase_apunts_reals.md`.
 - `RC-11` consolidat: revisió del nivell professional dels Reptes `1-5`, del projecte base i de la rúbrica per evitar lectures trivials del model.
 
 ## Documents clau de desplegament ja disponibles
@@ -74,6 +76,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `repte_04_api_i_consum.md`: tercer apunt real de repte, orientat a publicar i consumir com a API una part usable del producte
 - `repte_05_integracio_hibrida_n8n.md`: quart apunt real de repte, orientat a integració útil, automatització i tancament defensable del producte
 - `revisio_transversal_apunts_reals.md`: registre de consolidació comuna, progressió didàctica i coherència editorial de la sèrie `R2-R5`
+- `tancament_fase_apunts_reals.md`: document de tancament operatiu de la sèrie d'apunts reals com a paquet usable
 
 ## Itineraris consolidats / en revisió
 - `MI-01` `Laravel` queda consolidat com a primer patró reutilitzable de stack.
@@ -89,10 +92,10 @@ Criteri comú dels itineraris:
 - el repositori ja no està definint el model del curs; està preparant el seu desplegament real
 - el nucli del treball docent ja està documentat i visible: què es fa, quan es fa, amb quins materials i amb quins instruments es revisa
 - el nucli del model queda ja tancat i el treball actual entra en producció de materials directament usables en aula
-- la fase d'apunts reals ja no és només una intenció: els Reptes 2, 3, 4 i 5 queden publicats i entren en revisió transversal
+- la fase d'apunts reals ja no és només una intenció: els Reptes 2, 3, 4 i 5 queden publicats, revisats i preparats per a tancament operatiu
 - el reforç de densitat funcional dels reptes queda consolidat i passa a funcionar com a criteri estable de lectura del sistema
 
 ## Següent focus recomanat
-- versió compartible o tancament operatiu de la fase
-- consolidació final de la continuïtat entre els apunts dels Reptes 2-5
+- pilotatge, manteniment o versió compartible externa
+- tancament operatiu definitiu de la fase si no cal obrir noves peces
 - mantindre alineació entre apunts, programació i sistema d'avaluació

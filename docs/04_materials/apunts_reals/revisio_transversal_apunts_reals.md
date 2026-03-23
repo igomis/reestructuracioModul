@@ -70,3 +70,6 @@ Esta revisió transversal es considera completada quan:
 - la progressió didàctica `R2 -> R5` és clara i usable
 - la terminologia crítica queda prou unificada
 - la sèrie es pot llegir com un conjunt coherent dins del paquet docent del mòdul
+
+## Nota final
+La revisió transversal queda completada amb este document. A partir d'ací, la sèrie d'apunts reals es considera preparada per al seu tancament operatiu dins del paquet docent.
