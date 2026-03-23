@@ -5,6 +5,8 @@ Tancar el producte backend del curs demostrant que ja no és només un servei fu
 
 Este repte culmina la seqüència iniciada al Repte 1 i reutilitza directament l'API publicada en el [Repte 4. Publicació i consum d'API](repte_04_api_i_consum.md) per integrar-la amb serveis externs, fluxos híbrids i automatitzacions. Quan siga pertinent, la integració es pot materialitzar amb `n8n` o amb una eina equivalent, sempre que el valor tècnic i docent siga verificable.
 
+No és un repte de tècnica aïllada. Connectar `n8n`, un webhook o un servei extern només té valor si resol un procés recognoscible del producte, aporta un flux de negoci complet i es pot provar, mantindre i defensar tècnicament.
+
 ## Relació amb resultats d'aprenentatge
 - **RA9 (principal):** integrar serveis externs i automatitzacions en una solució backend híbrida orientada a un cas d'ús real.
 - **RA7 (reforç):** reutilitzar l'API pròpia com a contracte estable dins d'un escenari d'integració.
@@ -24,6 +26,7 @@ Després del Repte 4, l'equip ja disposa d'un servei documentat i consumible. El
 - gestionar intercanvi de dades i possibles errors d'integració
 - mantindre traçabilitat del flux i capacitat de revisió
 - prendre decisions de manteniment amb criteri, no només fer una demo puntual
+- tancar una funcionalitat real del producte amb valor visible de punta a punta, no només exhibir una automatització decorativa
 
 ## Problema o encàrrec inicial
 **Encàrrec:** "Integreu el backend del curs en un flux híbrid realista que combine l'API pròpia amb una automatització o servei extern, documenteu el procés i entregueu evidències que la solució es pot provar, mantindre i defensar tècnicament."
@@ -35,10 +38,11 @@ Restriccions del repte:
 - cal demostrar què passa quan el flux funciona i què passa quan falla
 - l'equip ha de documentar decisions de manteniment, incidències i punts de risc
 - la IA es pot usar com a suport, però qualsevol proposta s'ha de validar amb execució real i revisió tècnica
+- un workflow visualment cridaner però sense recorregut complet de dades ni cas d'ús clar no es considera suficient
 
 ## Producte final
 El lliurable mínim del Repte 5 ha d'incloure:
-- un flux híbrid funcional que reuse l'API del producte backend
+- un flux híbrid funcional que reuse l'API del producte backend sobre un cas d'ús real i no trivial
 - integració amb `n8n` o equivalent quan siga pertinent, o amb un servei extern justificat
 - automatització o orquestració d'un cas de negoci recognoscible
 - tractament bàsic d'errors, reintents o control de fallada segons el cas triat
@@ -112,7 +116,7 @@ Evidències mínimes i autèntiques del repte:
 - issue principal amb microtasques i estat de resolució
 - seqüència de commits que mostre la construcció i l'ajust del flux híbrid
 - workflow exportat o artefacte equivalent de l'automatització
-- evidència d'integració entre API pròpia i servei extern o eina d'orquestració
+- evidència d'integració entre API pròpia i servei extern o eina d'orquestració sobre un cas d'ús complet
 - proves registrades de casos correctes i de fallada
 - documentació tècnica del flux, dels punts crítics i del manteniment aplicat
 - registre d'incidències, debugging i correccions
@@ -160,3 +164,4 @@ El Repte 5 es considera completat quan:
 - el repositori aporta evidències autèntiques de treball: issues, commits, artefactes d'integració, proves i documentació
 - l'ús de IA, si n'hi ha, queda registrat i validat
 - el resultat final encaixa amb el [Projecte backend base del curs](../05_projectes_tecnics/projecte_base_backend.md) i tanca el producte evolutiu del mòdul amb criteri professional de manteniment i integració
+- una integració només decorativa, sense valor funcional clar ni defensa del flux complet, no es considera suficient

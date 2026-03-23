@@ -13,6 +13,7 @@ La seua funció és:
 
 ## Principis de disseny del projecte base
 - producte evolutiu únic durant el curs, amb creixement incremental per reptes
+- no trivialitat funcional: cada repte ha d’aportar una funcionalitat professional mínima del producte, no una tècnica aïllada
 - orientació professional: qualitat de codi, proves, documentació i manteniment
 - neutralitat de domini: importa la cobertura tècnica, no el sector triat
 - verificabilitat: cada avanç ha de tindre evidència executable al repositori
@@ -31,6 +32,10 @@ Qualsevol domini triat per al projecte base ha de permetre, de manera obligatòr
 
 Si un domini no permet cobrir estes huit dimensions, no és apte com a projecte base.
 
+Criteri transversal obligatori:
+- cap repte es considera resolt si només aporta una tècnica solta, una demo ornamental o un esquelet sense valor funcional
+- cada fase del curs ha de professionalitzar una part recognoscible del mateix producte
+
 ## Dominis de projecte proposats
 1. **Gestor d’incidències / tickets**
 Permet modelar estats, prioritats, assignacions i historial. És un domini equilibrat per treballar autenticació, API, persistència i manteniment amb incidències reals.
@@ -45,7 +50,9 @@ Els tres dominis són vàlids sempre que cobrisquen els requisits mínims comuns
 
 ## Components comuns del producte
 Sense definir encara una arquitectura tancada, el projecte base ha d’incorporar:
+- primera peça funcional d’entrada al producte (landing page o equivalent, captura de dades i primera traçabilitat)
 - model d’usuaris i mecanisme d’autenticació
+- primera funcionalitat de negoci autenticada amb rols o restriccions
 - model de domini i regles de negoci principals
 - capa de persistència i gestió de dades
 - API per a les operacions clau del sistema
@@ -57,11 +64,11 @@ Sense definir encara una arquitectura tancada, el projecte base ha d’incorpora
 ## Relació amb els reptes del curs
 | Repte | Connexió amb el projecte backend base |
 |---|---|
-| Repte 1. Kickoff tècnic | Definició del context, normes de treball, repositori i decisions inicials del producte. |
-| Repte 2. Sessions i autenticació | Primera implementació funcional de control d’accés sobre el domini triat. |
-| Repte 3. MVC i persistència | Consolidació de l’estructura mantenible i del model de dades persistent. |
-| Repte 4. API i consum | Publicació d’API del producte i validació del consum amb contractes clars. |
-| Repte 5. Integració híbrida i manteniment | Integració externa (incloent opcions com n8n) i demostració de manteniment evolutiu. |
+| Repte 1. Kickoff funcional | Arrancada funcional del producte: repositori, decisió tècnica i primera peça real d’entrada amb captura de dades. |
+| Repte 2. Sessions, autenticació i primera funcionalitat de negoci | Primera funcionalitat de negoci autenticada, amb control d’accés i restriccions recognoscibles del domini. |
+| Repte 3. MVC i persistència | Professionalització d’eixa funcionalitat amb arquitectura mantenible, persistència i proves mínimes. |
+| Repte 4. API i consum | Publicació i consum d’API sobre casos d’ús reals del producte, no sobre rutes aïllades. |
+| Repte 5. Integració híbrida i manteniment | Integració externa del mateix producte i demostració de manteniment evolutiu amb un flux complet. |
 
 Este encaix converteix el projecte base en referència directa per als enunciats i materials dels Reptes 3-5.
 
@@ -96,6 +103,7 @@ Este document es considera completat quan:
 - concreta els requisits mínims comuns que qualsevol domini ha de cobrir
 - proposa com a mínim tres dominis viables i comparables
 - connecta explícitament el projecte base amb els Reptes 1-5
+- deixa clar que cada repte ha d’aportar una funcionalitat professional mínima i no una tècnica aïllada
 - confirma compatibilitat amb Laravel, Express/Nest i FastAPI
 - fixa el paper de la IA com a eina habitual però verificable
 - deixa oberta la línia futura de tokenització sense desplegar encara el projecte complet

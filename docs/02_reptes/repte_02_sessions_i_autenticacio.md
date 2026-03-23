@@ -1,7 +1,9 @@
-# Repte 2. Mòdul de gestió d'usuaris i sessions
+# Repte 2. Sessions, autenticació i primera funcionalitat de negoci
 
 ## Finalitat
-Construir la primera funcionalitat de negoci real del producte backend del curs: identificar usuaris, validar entrades, iniciar i tancar sessió i protegir operacions del domini triat amb un comportament coherent.
+Construir la primera funcionalitat de negoci real i autenticada del producte backend del curs: identificar usuaris, validar entrades, iniciar i tancar sessió i protegir operacions del domini triat amb un comportament coherent.
+
+El registre, el login i el logout són només la infraestructura mínima del repte. El Repte 2 no es considera complet si l’alumnat només resol autenticació aïllada: ha d’existir almenys un flux de domini amb valor real, sotmés a rols, restriccions o regles d’accés.
 
 Este repte transforma la base tècnica del Repte 1 en un mòdul usable, verificable i connectat amb necessitats professionals reals. Al mateix temps, deixa preparada una base funcional de sessions, autenticació i validació que el [Repte 3. Migració a MVC i persistència segura](repte_03_mvc_i_persistencia.md) haurà de reorganitzar i consolidar arquitectònicament.
 
@@ -12,6 +14,7 @@ Este repte transforma la base tècnica del Repte 1 en un mòdul usable, verifica
 
 Contribució curricular esperada:
 - posar en marxa un flux complet de registre, login, logout i comprovació de sessió
+- demostrar una primera funcionalitat de negoci autenticada amb restriccions d’accés o de rol
 - demostrar validació del costat servidor i tractament consistent d'errors habituals i casos límit
 - convertir els continguts del Bloc 2 en una seqüència de producte real, tal com marca el [Mapa de materials actuals -> transformació operativa](../04_materials/mapa_materials_actuals.md)
 - preparar el codi i les decisions perquè el Repte 3 puga refactoritzar esta funcionalitat a MVC o arquitectura equivalent
@@ -24,9 +27,10 @@ En un context de producte real, este repte és crític perquè:
 - obliga a definir regles de validació i respostes d'error comprensibles
 - genera evidències observables del comportament real del backend
 - deixa clar quin codi funciona i quin s'haurà de reestructurar més avant
+- força a demostrar que el sistema ja resol una operació real del domini i no només un mòdul d'accés aïllat
 
 ## Problema o encàrrec inicial
-**Encàrrec:** "Partint del producte backend base del curs, implementeu el primer mòdul funcional d'accés d'usuaris. El client intern necessita un flux mínim de registre i autenticació, operacions protegides i evidències verificables que el comportament és correcte."
+**Encàrrec:** "Partint del producte backend base del curs, implementeu la primera funcionalitat de negoci autenticada del producte. El client intern necessita un flux mínim de registre i autenticació, però també una operació real del domini sotmesa a control d'accés, restriccions o rols, amb evidències verificables que el comportament és correcte."
 
 Restriccions del repte:
 - s'ha de treballar sobre el projecte base iniciat en el Repte 1, no sobre un exercici desconnectat
@@ -34,6 +38,8 @@ Restriccions del repte:
 - la validació s'ha de fer al servidor i ha de produir errors interpretables
 - qualsevol decisió provisional de codi o estructura ha de quedar prou clara per poder-se refactoritzar al Repte 3
 - la IA es pot usar com a suport, però mai com a substitut de comprensió, execució i verificació
+- un formulari de login, registre i logout sense funcionalitat de domini no es considera suficient
+- el repte ha d'incloure una operació real, per exemple inventari amb rols, incidències amb rols o reserves amb restriccions
 
 ## Producte final
 El lliurable mínim del Repte 2 ha d'incloure:
@@ -41,10 +47,16 @@ El lliurable mínim del Repte 2 ha d'incloure:
 - registre o alta d'usuari amb validacions bàsiques i missatges d'error coherents
 - login i logout operatius
 - comprovació d'usuari autenticat o de sessió activa
-- almenys una operació o recurs protegit per control d'accés
+- almenys una funcionalitat de domini no trivial protegida per control d'accés
+- una regla de rol o restricció de negoci aplicada sobre eixa funcionalitat
 - tractament consistent d'errors de validació, credencials incorrectes i accés no autoritzat
 - proves mínimes o verificacions registrades de casos positius i negatius
 - documentació tècnica actualitzada per a ús de l'equip
+
+Exemples orientatius de mínim funcional acceptable:
+- inventari amb rols: només cert perfil pot donar d'alta o modificar recursos
+- incidències amb rols: un usuari crea incidències i un altre les gestiona o canvia d'estat
+- reserves amb restriccions: només es pot reservar si hi ha disponibilitat o segons franges vàlides
 
 ## Compatibilitat amb el producte base
 Este repte s'executa sobre el marc definit en [Projecte backend base del curs](../05_projectes_tecnics/projecte_base_backend.md). Això implica que:
@@ -53,28 +65,33 @@ Este repte s'executa sobre el marc definit en [Projecte backend base del curs](.
 - és compatible amb qualsevol domini proposat en el projecte base (gestor d'incidències, sistema de reserves o gestor intern de recursos), perquè tots necessiten control d'identitat i accés
 - reutilitza els artefactes del Repte 1: repositori, convencions, README, traçabilitat i criteri de treball professional
 - deixa identificats els punts que el [Repte 3. Migració a MVC i persistència segura](repte_03_mvc_i_persistencia.md) haurà de consolidar: separació de responsabilitats, persistència més robusta, validacions encapsulades i arquitectura mantenible
+- no es considera vàlid un mòdul d'autenticació desacoblat d'un primer cas d'ús de negoci recognoscible
 
 ## Seqüència de treball
 1. **Aterrar el cas d'ús dins del producte**
-   Definir com encaixa l'accés d'usuaris en el domini triat i quines operacions han d'estar protegides.
+   Definir com encaixa l'accés d'usuaris en el domini triat i quina primera funcionalitat real quedarà protegida.
 2. **Dissenyar el flux d'accés**
-   Concretar registre, login, logout, persistència bàsica de l'usuari, comprovació de sessió i regles de navegació o resposta.
-3. **Definir validacions i errors**
+   Concretar registre, login, logout, persistència bàsica de l'usuari, comprovació de sessió i matriu bàsica de rols o restriccions.
+3. **Definir la funcionalitat de negoci autenticada**
+   Fixar l'operació real del domini, les condicions d'accés i els casos correctes i incorrectes que l'afecten.
+4. **Definir validacions i errors**
    Establir camps obligatoris, restriccions mínimes, casos d'error i format esperat de resposta o feedback.
-4. **Implementar el mòdul funcional**
+5. **Implementar el mòdul funcional**
    Construir la lògica de sessions i autenticació i connectar-la amb una primera necessitat real del producte.
-5. **Verificar comportament i casos límit**
-   Comprovar tant camins correctes com errors de credencials, accessos sense permís i dades invàlides.
-6. **Documentar i preparar la transició**
+6. **Verificar comportament i casos límit**
+   Comprovar tant camins correctes com errors de credencials, accessos sense permís, rols incorrectes i dades invàlides.
+7. **Documentar i preparar la transició**
    Registrar decisions, incidències, proves i punts de deute tècnic que passaran a refactorització en el Repte 3.
 
 ## Activitats o microtasques
 - crear la issue principal del Repte 2 i descompondre-la en microtasques funcionals
 - concretar l'escenari d'usuari que dona sentit al mòdul d'accés dins del producte base
+- definir quin primer cas d'ús de negoci queda condicionat per autenticació, rol o restricció
 - definir camps mínims d'usuari i matriu de validacions del costat servidor
 - implementar registre o alta d'usuari
 - implementar login, logout i comprovació d'usuari autenticat
-- protegir almenys una ruta, acció o operació del domini triat
+- protegir almenys una ruta, acció o operació del domini triat amb valor real
+- aplicar almenys una restricció de rol, permís o regla de negoci sobre eixa operació
 - definir respostes d'error consistents per validació, autenticació i autorització bàsica
 - provar casos positius, casos negatius i casos límit
 - actualitzar README o documentació operativa amb instruccions de prova del mòdul
@@ -84,7 +101,7 @@ Este repte s'executa sobre el marc definit en [Projecte backend base del curs](.
 - [Projecte backend base del curs](../05_projectes_tecnics/projecte_base_backend.md): fixa el marc del producte evolutiu i identifica l'autenticació i el control d'accés com a component comú obligatori.
 - [Mapa de materials actuals -> transformació operativa](../04_materials/mapa_materials_actuals.md): situa el **Bloc 2. PHP** com a nucli del repte i el **Bloc 5. Seguretat i reactivitat** com a reforç de qualitat, debugging i control.
 - [Repte 3. Migració a MVC i persistència segura](repte_03_mvc_i_persistencia.md): reutilitza el codi funcional generat ací per separar responsabilitats, consolidar persistència i ampliar qualitat tècnica.
-- [Repte 1. Kickoff tècnic d'un servei web backend](repte_01_kickoff_backend.md): aporta la base de repositori, documentació i traçabilitat sobre la qual s'executa este repte.
+- [Repte 1. Kickoff funcional d'un servei web backend](repte_01_kickoff_backend.md): aporta la base de repositori, documentació i traçabilitat sobre la qual s'executa este repte.
 - [Seqüenciació general](../01_programacio_modul/seqüenciacio_general.md): recorda que el Repte 2 hereta el Repte 1 i prepara explícitament el Repte 3 dins del producte únic del curs.
 
 ## Paper de la IA
@@ -104,7 +121,8 @@ Condicions d'ús:
 Evidències mínimes i autèntiques del repte:
 - issue principal amb microtasques i estat de resolució
 - seqüència de commits que mostre evolució real del mòdul d'usuaris i sessions
-- demostració funcional de registre, login, logout i accés a una operació protegida
+- demostració funcional de registre, login, logout i accés a una funcionalitat real protegida
+- evidència d'una regla de rol o restricció de negoci aplicada sobre el flux principal
 - evidència de validacions d'entrada i d'errors controlats
 - proves mínimes executades o registre de verificació funcional de casos clau
 - documentació tècnica actualitzada del mòdul
@@ -127,6 +145,7 @@ Evidències mínimes i autèntiques del repte:
 ## Mesures de verificació
 - execució en directe de casos positius i negatius: registre correcte, registre invàlid, login correcte, login incorrecte, accés autoritzat i accés denegat
 - comprovació de l'estat de sessió abans i després del logout
+- demostració del flux funcional complet del domini: autenticació, operació real, restricció o rol i error quan no es complix la condició
 - revisió de coherència entre validacions definides, dades acceptades i errors retornats
 - contrast entre AI log, commits i resultat funcional observat
 - preguntes tècniques breus per comprovar autoria, comprensió i capacitat de mantindre el codi
@@ -144,8 +163,10 @@ Marc mínim de treball del repte:
 ## Definition of done del repte
 El Repte 2 es considera completat quan:
 - existix un flux funcional complet d'usuari amb registre o alta, login, logout i comprovació de sessió
-- almenys una operació del producte queda protegida per autenticació
+- almenys una operació del producte queda protegida per autenticació i forma part d'un cas d'ús real del domini
+- existix com a mínim una regla de rol, permís o restricció de negoci aplicada i verificable
 - la validació d'entrades i el tractament d'errors són coherents, visibles i verificables
 - el repositori aporta evidències autèntiques de treball: issues, commits, proves i documentació
 - l'ús de IA, si n'hi ha, queda registrat i validat
 - el mòdul resultant encaixa amb el [Projecte backend base del curs](../05_projectes_tecnics/projecte_base_backend.md) i deixa preparada la migració del [Repte 3. Migració a MVC i persistència segura](repte_03_mvc_i_persistencia.md) sense haver de reconstruir la funcionalitat des de zero
+- un mòdul limitat a login, registre o logout sense una funcionalitat de negoci autenticada no es considera suficient

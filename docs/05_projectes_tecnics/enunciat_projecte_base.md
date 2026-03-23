@@ -22,6 +22,11 @@ Cada equip ha de seleccionar un domini admés i construir sobre ell un backend f
 
 L'objectiu no és fer el producte més gran possible, sinó arribar a una base sòlida i verificable amb valor tècnic clar.
 
+Criteri transversal d'exigència:
+- cap repte del projecte es pot donar per resolt amb una tècnica aïllada
+- cada tram ha d'aportar una funcionalitat professional mínima, recognoscible i defensable del mateix producte
+- no es validarà un recorregut basat en esquelets, logins aïllats, APIs decoratives o integracions sense valor funcional
+
 ## Dominis admesos
 Els únics dominis admesos per al projecte base són:
 
@@ -38,6 +43,7 @@ Qualsevol d'estos dominis és vàlid si permet cobrir els objectius tècnics mí
 El projecte base ha de cobrir, com a mínim, els objectius següents:
 
 - disposar d'un backend real amb casos d'ús no trivials del domini triat
+- fer créixer un mateix producte amb increments funcionals no trivials a cada repte
 - tindre estructura mantenible en MVC o arquitectura equivalent, segons l'itinerari triat
 - incorporar model de dades persistent amb evolució controlada i operacions segures
 - implementar autenticació i control d'accés bàsic sobre usuaris i funcionalitats clau
@@ -63,11 +69,11 @@ El projecte base és la peça transversal que dona continuïtat al treball per r
 
 | Repte | Aportació al projecte base |
 |---|---|
-| Repte 1. Kickoff tècnic | prepara el repositori, l'entorn de treball, la primera estructura i les decisions inicials del producte |
-| Repte 2. Sessions i autenticació | incorpora identitat, control d'accés i primera capa funcional d'usuaris |
-| Repte 3. Migració a MVC i persistència segura | consolida arquitectura mantenible, persistència i qualitat tècnica mínima |
-| Repte 4. Publicació i consum d'API | exposa els casos d'ús principals mitjançant una API documentada i consumible |
-| Repte 5. Integració híbrida, automatització i manteniment | connecta el producte amb serveis externs o automatitzacions i demostra manteniment real |
+| Repte 1. Kickoff funcional | prepara el repositori, l'entorn de treball, la primera estructura i una primera peça funcional real del producte |
+| Repte 2. Sessions, autenticació i primera funcionalitat de negoci | incorpora identitat, control d'accés i una primera funcionalitat de negoci autenticada |
+| Repte 3. Migració a MVC i persistència segura | consolida arquitectura mantenible, persistència i qualitat tècnica sobre eixa funcionalitat real |
+| Repte 4. Publicació i consum d'API | exposa casos d'ús principals del producte mitjançant una API documentada i consumible |
+| Repte 5. Integració híbrida, automatització i manteniment | connecta el producte amb serveis externs o automatitzacions i demostra manteniment real sobre un flux complet |
 
 Per tant, el projecte no s'entrega com una peça separada dels reptes. Cada repte ha d'aportar una part verificable del producte final.
 
@@ -107,12 +113,13 @@ El projecte base es considerarà vàlid si complix tots els criteris següents:
 - el backend funciona sobre un entorn reproduïble i amb documentació útil
 - hi ha autenticació, persistència, API i proves mínimes verificables
 - la solució mostra una evolució real lligada als reptes del curs
+- cada repte aporta una funcionalitat professional mínima i no només una tècnica aïllada
 - existixen evidències autèntiques de treball i no només una entrega final compactada
 - la documentació i els contractes API reflectixen l'estat real del codi
 - l'ús de IA, si existix, és traçable, defensable i contrastat
 - el conjunt és compatible amb un entorn professional realista de manteniment
 
-No es validarà com a projecte base una solució que només tinga aparença funcional però no aporte traçabilitat, proves o capacitat real de defensa tècnica.
+No es validarà com a projecte base una solució que només tinga aparença funcional però no aporte traçabilitat, proves o capacitat real de defensa tècnica. Tampoc es validarà un projecte que reduïsca els reptes a peces trivials o decoratives sense densitat funcional suficient.
 
 ## Variant futura o extensió opcional
 Com a línia futura, el projecte pot obrir una extensió relacionada amb tokenització, sempre com a evolució opcional i no com a requisit del projecte base.
@@ -125,6 +132,7 @@ Este document es considera completat quan:
 - explicita la finalitat del projecte i el seu context professional
 - fixa de manera inequívoca els dominis admesos
 - concreta objectius tècnics mínims compatibles amb el projecte backend base del curs
+- deixa clar el criteri transversal de no trivialitat funcional dels reptes
 - manté compatibilitat amb Laravel, Express o Nest i FastAPI
 - connecta el projecte amb el treball per reptes i amb les evidències autèntiques del repositori
 - establix lliurables obligatoris, paper de la IA i criteris de validació

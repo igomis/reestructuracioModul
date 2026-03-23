@@ -5,6 +5,8 @@ Convertir el backend ja funcional i estructurat dels reptes anteriors en un serv
 
 Este repte és el pas de "backend usable per l'equip" a "backend integrable per tercers". A partir de la base construïda en el [Repte 3. Migració a MVC i persistència segura](repte_03_mvc_i_persistencia.md), l'alumnat ha de publicar una primera API clara, verificable i preparada per a la integració híbrida del [Repte 5. Integració híbrida, automatització i manteniment](repte_05_integracio_hibrida_n8n.md).
 
+No és un repte de tècnica aïllada. Obrir rutes, generar `Swagger` o retornar JSON no és suficient si l'API no exposa casos d'ús reals del producte amb contracte clar, consum verificat i defensa tècnica del flux complet.
+
 ## Relació amb resultats d'aprenentatge
 - **RA7 (principal):** dissenyar, publicar i consumir APIs documentades sobre un producte backend real.
 - **RA6 (reforç):** mantindre coherència entre endpoints, model de dades, persistència i accés segur a la informació.
@@ -24,6 +26,7 @@ En un entorn real, publicar API implica molt més que obrir rutes:
 - cal documentar com s'autentica, què retorna i com gestiona errors
 - cal comprovar que un consumidor extern pot usar l'API sense dependre del coneixement intern del codi
 - cal deixar una base fiable per a futures integracions, automatitzacions i manteniment
+- cal assegurar que allò que es publica correspon a funcionalitat real del producte i no a endpoints ornamentals o de demostració
 
 ## Problema o encàrrec inicial
 **Encàrrec:** "Publiqueu una primera versió usable de l'API del producte backend del curs, documenteu-ne els endpoints prioritaris, verifiqueu-ne el consum i entregueu evidències que el contracte és clar, funcional i mantingut amb criteri tècnic."
@@ -35,15 +38,16 @@ Restriccions del repte:
 - les respostes, errors i codis d'estat han de ser coherents i justificables
 - el consum s'ha de demostrar amb execució real i no només amb captures o descripcions
 - la IA es pot usar com a suport, però tota proposta ha d'estar validada amb proves i revisió tècnica
+- obrir rutes sense valor funcional o documentar una API que no representa un cas d'ús real no es considera suficient
 
 ## Producte final
 El lliurable mínim del Repte 4 ha d'incloure:
-- una API funcional que expose operacions clau del producte backend
+- una API funcional que expose operacions clau i no trivials del producte backend
 - definició clara d'endpoints, mètodes, paràmetres, autenticació i estructures de resposta
 - tractament coherent d'errors, validacions i codis d'estat
 - documentació tècnica d'API usable per tercers
 - col·lecció de proves d'endpoint o equivalent
-- una evidència real de consum de l'API des d'un client, script o servei auxiliar
+- una evidència real de consum de l'API des d'un client, script o servei auxiliar sobre un flux funcional complet
 - proves mínimes o verificacions registrades dels fluxos principals i dels casos d'error
 - documentació actualitzada de posada en marxa, prova i consum
 
@@ -69,7 +73,7 @@ A més:
 4. **Aplicar validació, errors i control d'accés**
    Gestionar dades invàlides, credencials, permisos i casos excepcionals amb comportament previsible.
 5. **Documentar i provar el consum**
-   Preparar documentació d'API, col·leccions de prova i una evidència real de consum.
+   Preparar documentació d'API, col·leccions de prova i una evidència real de consum sobre un cas d'ús funcional complet.
 6. **Verificar i preparar la transició**
    Comprovar que la documentació reflectix la realitat i deixar l'API preparada per a integració al Repte 5.
 
@@ -82,7 +86,7 @@ A més:
 - protegir endpoints que requerisquen autenticació o control d'accés
 - preparar documentació d'API en format usable per l'equip
 - construir una col·lecció de proves amb eines d'API o equivalent
-- demostrar el consum real amb un client, script o servei extern controlat
+- demostrar el consum real amb un client, script o servei extern controlat sobre una funcionalitat real del producte
 - revisar discrepàncies entre documentació, resposta real i necessitats del futur Repte 5
 
 ## Materials i apunts associats
@@ -110,7 +114,7 @@ Condicions d'ús:
 Evidències mínimes i autèntiques del repte:
 - issue principal amb microtasques i estat de resolució
 - seqüència de commits que mostre l'evolució de la publicació i el consum d'API
-- endpoints operatius sobre el producte real del curs
+- endpoints operatius sobre el producte real del curs i associats a casos d'ús recognoscibles
 - documentació tècnica d'API alineada amb el comportament real
 - col·lecció de proves API, client de consum o evidència equivalent d'ús extern
 - proves o verificacions registrades de casos positius, errors i validacions
@@ -133,7 +137,7 @@ Evidències mínimes i autèntiques del repte:
 - confondre una demo de prova puntual amb una verificació real del contracte publicat
 
 ## Mesures de verificació
-- execució en directe d'endpoints prioritaris amb casos correctes i incorrectes
+- execució en directe d'endpoints prioritaris amb casos correctes i incorrectes sobre un flux real del producte
 - contrast entre documentació d'API i resposta real del backend
 - comprovació de validació d'entrada, errors i codis d'estat en diversos escenaris
 - prova real del consumidor contra l'API publicada o l'entorn de treball definit
@@ -152,10 +156,11 @@ Marc mínim de treball del repte:
 
 ## Definition of done del repte
 El Repte 4 es considera completat quan:
-- existixen endpoints prioritaris publicats sobre el producte real del curs
+- existixen endpoints prioritaris publicats sobre el producte real del curs i lligats a casos d'ús no trivials
 - la documentació d'API descriu correctament peticions, respostes, errors i condicions d'ús
 - hi ha validació d'entrada, tractament coherent d'errors i codis d'estat justificables
 - el consum de l'API queda demostrat amb una evidència real i reproduïble
 - el repositori aporta evidències autèntiques de treball: issues, commits, proves i documentació
 - l'ús de IA, si n'hi ha, queda registrat i validat
 - l'API resultant encaixa amb el [Projecte backend base del curs](../05_projectes_tecnics/projecte_base_backend.md) i deixa preparada la base tècnica per al [Repte 5. Integració híbrida, automatització i manteniment](repte_05_integracio_hibrida_n8n.md)
+- una API formada per rutes soltes, documentació ornamental o consum fictici no es considera suficient

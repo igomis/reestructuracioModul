@@ -10,9 +10,24 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - cada repte combina explicació docent, modelatge en directe i treball autònom de l'alumnat
 - el pas d'un repte al següent depén d'un checkpoint docent amb evidències mínimes
 
-## Repte 1. Kickoff tècnic del backend
+## Repte 1. Kickoff funcional del backend
 ### Finalitat docent
-- obrir el projecte del curs amb un domini clar, un stack viable i un esquelet tècnic executable
+- obrir el projecte del curs amb un domini clar, un stack viable i una primera peça funcional real del producte
+
+### Què no és suficient
+- triar tecnologia o framework sense demostrar un primer flux executable
+- deixar només un esquelet tècnic o una ruta de prova sense valor funcional
+- usar el repositori com a contenidor final sense traçabilitat de decisions i proves
+
+### Quin és el mínim funcional no trivial
+- repositori inicial usable i decisió tecnològica justificada
+- landing page o equivalent funcional d'entrada al producte
+- formulari mínim per arreplegar una primera dada del domini
+- validació bàsica al servidor i primer registre o persistència mínima de la informació
+
+### Què diferencia una resolució superficial d'una professional
+- superficial: stack triat, projecte arranca, però encara no hi ha producte recognoscible
+- professional: la base tècnica ja produïx una primera interacció funcional, verificable i documentada
 
 ### Què sap ja l'alumnat
 - té base prèvia de treball amb Git/GitHub
@@ -62,9 +77,24 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 ### Checkpoint docent
 - el grup només pot donar el repte per superat si té entorn executable, primer `README`, decisió tècnica i traçabilitat mínima del procés
 
-## Repte 2. Base funcional amb autenticació o estat equivalent
+## Repte 2. Sessions, autenticació i primera funcionalitat de negoci
 ### Finalitat docent
-- construir la primera funcionalitat real del producte i demostrar que el backend ja resol un flux usable
+- construir la primera funcionalitat real del producte i demostrar que el backend ja resol un flux usable, autenticat i amb restriccions de negoci
+
+### Què no és suficient
+- implementar només registre, login o logout sense un cas d'ús del domini
+- protegir una ruta decorativa o sense valor funcional real
+- mostrar auth aparent sense proves d'accés, restriccions i errors
+
+### Quin és el mínim funcional no trivial
+- flux complet de registre o alta, login, logout i control d'accés
+- almenys una funcionalitat de negoci autenticada del domini
+- una regla de rol, permís o restricció recognoscible sobre eixa funcionalitat
+- validacions i errors mínims verificats sobre el flux complet
+
+### Què diferencia una resolució superficial d'una professional
+- superficial: la sessió funciona, però el producte encara no resol res rellevant
+- professional: l'autenticació sosté una operació de negoci real, defensable i comprovada
 
 ### Què sap ja l'alumnat
 - ja té domini, stack i repositori activat
@@ -115,7 +145,22 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 ## Repte 3. Arquitectura i persistència
 ### Finalitat docent
-- passar d'un backend funcional a un backend mantenible, amb capes o equivalents i persistència coherent
+- passar d'un backend funcional a un backend mantenible, amb capes o equivalents i persistència coherent sobre una funcionalitat real ja existent
+
+### Què no és suficient
+- reorganitzar carpetes o fitxers sense millorar un cas d'ús real
+- afegir persistència només aparent o només pensada per a la demo
+- passar a MVC o equivalent sense proves de regressió ni defensa de decisions
+
+### Quin és el mínim funcional no trivial
+- almenys un cas d'ús del domini migrat a una estructura més mantenible
+- persistència real de l'entitat principal o equivalent
+- validacions lligades al model i no només al punt d'entrada
+- comprovació que el flux funcional anterior continua viu després de la refactorització
+
+### Què diferencia una resolució superficial d'una professional
+- superficial: hi ha capes noves i base de dades, però el flux continua fràgil o opac
+- professional: l'arquitectura és explicable, la persistència és coherent i el cas d'ús es pot verificar de punta a punta
 
 ### Què sap ja l'alumnat
 - ja ha resolt un primer flux funcional del producte
@@ -166,7 +211,22 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 ## Repte 4. Publicació i consum d'API
 ### Finalitat docent
-- convertir el backend en un servei publicable, documentat i verificable
+- convertir el backend en un servei publicable, documentat i verificable a partir de funcionalitats reals del producte
+
+### Què no és suficient
+- obrir rutes o retornar JSON sense contracte ni valor funcional clar
+- documentar una `API` que no coincidix amb el comportament real
+- demostrar només el productor o només el consumidor, però no el flux complet
+
+### Quin és el mínim funcional no trivial
+- endpoints principals lligats a casos d'ús reals del domini
+- contracte d'`API` amb errors, codis d'estat i validacions coherents
+- consum verificat des d'un client, col·lecció de proves o servei auxiliar
+- documentació operativa alineada amb el comportament real
+
+### Què diferencia una resolució superficial d'una professional
+- superficial: hi ha rutes i captures, però no un contracte usable per tercers
+- professional: la `API` exposa valor real del producte, es pot consumir i es pot defensar tècnicament
 
 ### Què sap ja l'alumnat
 - ja treballa amb persistència i arquitectura mínimes
@@ -217,7 +277,22 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 ## Repte 5. Integració híbrida, automatització i tancament
 ### Finalitat docent
-- completar el producte del curs amb una integració externa o automatització funcional i preparar la defensa final
+- completar el producte del curs amb una integració externa o automatització funcional, no trivial, i preparar la defensa final
+
+### Què no és suficient
+- muntar un workflow o una integració ornamental sense valor funcional clar
+- demostrar només un efecte visual de l'automatització sense recorregut complet de dades
+- arribar a defensa final sense proves de punta a punta ni control bàsic d'errors
+
+### Quin és el mínim funcional no trivial
+- un flux híbrid que reuse l'`API` del producte sobre un cas d'ús real
+- prova de punta a punta del recorregut complet
+- documentació de punts d'entrada, eixida, errors i decisions de manteniment
+- defensa tècnica del valor i dels límits de la integració
+
+### Què diferencia una resolució superficial d'una professional
+- superficial: hi ha una automatització aparent, però no queda clar per a què servix ni com es manté
+- professional: la integració tanca un procés de negoci recognoscible, es pot provar, revisar i defensar
 
 ### Què sap ja l'alumnat
 - ja disposa d'un backend persistent i d'una `API` usable
