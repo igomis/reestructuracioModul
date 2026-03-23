@@ -35,7 +35,7 @@ Lectura ràpida de la fase actual:
 - el model assumix que el desenvolupament principal del projecte es resol i es defensa dins de les dues primeres avaluacions; la tercera queda com a espai residual o de connexió amb empresa o `FCT`
 - la implantació docent es calibra sobre un escenari orientatiu d'unes `20` setmanes i `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - Git/GitHub es tracta com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
-- amb el paquet docent en versió `1` funcional, el reforç del nivell professional dels reptes ja queda consolidat, els materials d'acompanyament d'aula ja estan creats i el repositori entra en producció del paquet de materials de sessió per repte
+- amb el paquet docent en versió `1` funcional, els materials d'aula per repte ja estan creats, el repositori entra en preparació del kit inicial de pilotatge i el focus passa a validar el model amb alumnat real
 
 ## Documents clau de la fase actual
 - [Pla d'implantació docent del mòdul](docs/01_programacio_modul/pla_implantacio_docent.md)
@@ -63,6 +63,7 @@ Lectura ràpida de la fase actual:
 - [Materials de sessió del Repte 3](docs/04_materials/materials_aula/repte_03_materials_sessio.md)
 - [Materials de sessió del Repte 4](docs/04_materials/materials_aula/repte_04_materials_sessio.md)
 - [Materials de sessió del Repte 5](docs/04_materials/materials_aula/repte_05_materials_sessio.md)
+- [Kit de pilotatge de les setmanes 1-4](docs/01_programacio_modul/kit_pilotatge_setmanes_01_04.md)
 - [Pla de pilotatge real del mòdul](docs/00_visio_general/pla_pilotatge_real.md)
 - [Pla d'execució del pilotatge real](docs/00_visio_general/pla_execucio_pilotatge_real.md)
 - [Plantilla de recollida de feedback de pilotatge](docs/03_avaluacio/plantilla_recollida_feedback_pilotatge.md)
@@ -80,6 +81,6 @@ Lectura ràpida de la fase actual:
 - [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md)
 
 ## Focus actual
-1. Donar per preparat el pilotatge real del model amb alumnat.
-2. Donar per creats els materials d'acompanyament d'aula base.
-3. Produir el paquet de materials de sessió contextualitzats per als Reptes `1-5`.
+1. Donar per creats els materials d'aula contextualitzats per repte.
+2. Preparar el kit inicial de pilotatge del curs per a les setmanes `1-4`.
+3. Iniciar la validació real amb alumnat i la recollida de feedback sobre càrrega, ritme i evidències.
