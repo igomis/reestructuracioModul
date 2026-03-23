@@ -17,6 +17,7 @@ La guia està calibrada sobre l'escenari següent:
 - cada setmana equival a un bloc docent d'unes `6` hores; el centre pot repartir-lo en dues o tres sessions sense alterar el sentit del bloc
 - Git/GitHub es treballa com a repàs metodològic i criteri de traçabilitat, no com a iniciació des de zero
 - cada bloc combina explicació docent, modelatge en directe, treball guiat i autonomia supervisada
+- poden existir moments de treball cooperatiu o sincronitzat, però l'evidència acreditativa, la verificació i l'avaluació s'han de recollir amb criteri individual
 - si una evidència mínima no apareix, no s'ha d'obrir el bloc següent com si el pas estiguera assolit
 - el criteri principal no és “arribar a tot”, sinó mantindre la progressió real del producte i la seua defensa tècnica dins de les dues primeres avaluacions
 
@@ -47,6 +48,7 @@ Patró recomanat dins de cada bloc setmanal de `6` hores:
 Regla pràctica:
 - les setmanes de canvi de repte necessiten més classe guiada
 - les setmanes de consolidació, proves o documentació necessiten més autonomia supervisada
+- el treball compartit pot existir, però cada alumne ha de mantindre rastre propi, evidència pròpia i capacitat de defensa individual
 
 ## Seqüència setmanal o per blocs
 ### Avaluació 1

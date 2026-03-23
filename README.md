@@ -35,6 +35,7 @@ Lectura ràpida de la fase actual:
 - el model assumix que el desenvolupament principal del projecte es resol i es defensa dins de les dues primeres avaluacions; la tercera queda com a espai residual o de connexió amb empresa o `FCT`
 - la implantació docent es calibra sobre un escenari orientatiu d'unes `20` setmanes i `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - Git/GitHub es tracta com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
+- el model admet moments de col·laboració limitada o de producte parcialment compartit, però el seguiment, la verificació, la defensa i l'acreditació es resolen individualment
 - amb el paquet docent en versió `1` funcional, els materials d'aula per repte ja estan creats, els kits de pilotatge inicial comencen a cobrir la seqüència real del curs i el focus passa a validar el model amb alumnat i atenció a ritmes diferents
 
 ## Documents clau de la fase actual
@@ -83,5 +84,5 @@ Lectura ràpida de la fase actual:
 
 ## Focus actual
 1. Construir els kits de pilotatge inicial perquè la seqüència docent fina siga plenament operativa.
-2. Validar el model amb alumnat real, amb atenció explícita a ritmes diferents, càrrega i evidències.
-3. Estendre la capa pilotable més enllà del primer mes sense perdre coherència entre reptes, materials i checkpoints.
+2. Validar el model amb alumnat real, amb atenció explícita a ritmes diferents, càrrega, evidències i acreditació individual verificable.
+3. Estendre la capa pilotable més enllà del primer mes sense perdre coherència entre reptes, materials, checkpoints i criteri individual d'avaluació.
