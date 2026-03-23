@@ -35,7 +35,7 @@ Lectura ràpida de la fase actual:
 - el model assumix que el desenvolupament principal del projecte es resol i es defensa dins de les dues primeres avaluacions; la tercera queda com a espai residual o de connexió amb empresa o `FCT`
 - la implantació docent es calibra sobre un escenari orientatiu d'unes `20` setmanes i `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - Git/GitHub es tracta com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
-- amb el paquet docent en versió `1` funcional, el reforç del nivell professional dels reptes ja queda consolidat, la fase d'apunts reals continua oberta, el Repte 2 ja està publicat i el Repte 3 continua en producció
+- amb el paquet docent en versió `1` funcional, el reforç del nivell professional dels reptes ja queda consolidat, la fase d'apunts reals continua oberta, el Repte 3 queda rematat i el Repte 4 entra en producció
 
 ## Documents clau de la fase actual
 - [Pla d'implantació docent del mòdul](docs/01_programacio_modul/pla_implantacio_docent.md)
@@ -48,6 +48,7 @@ Lectura ràpida de la fase actual:
 - [Criteris de ponderació dels reptes amb IA](docs/03_avaluacio/criteris_ponderacio_reptes_amb_ia.md)
 - [Apunts reals del Repte 2](docs/04_materials/apunts_reals/repte_02_sessions_i_autenticacio.md)
 - [Apunts reals del Repte 3](docs/04_materials/apunts_reals/repte_03_mvc_i_persistencia.md)
+- [Apunts reals del Repte 4](docs/04_materials/apunts_reals/repte_04_api_i_consum.md)
 - [Paquet docent exportable del mòdul](docs/00_visio_general/paquet_docent_exportable.md)
 - [Resum executiu del paquet docent](docs/00_visio_general/resum_executiu_paquet_docent.md)
 - [Presentació breu del model DWES](docs/00_visio_general/presentacio_model_dwes_reptes_ia.md)
@@ -61,6 +62,6 @@ Lectura ràpida de la fase actual:
 - [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md)
 
 ## Focus actual
-1. Donar per consolidat el reforç del nivell professional i no trivial dels reptes.
-2. Mantindre oberta la fase d'apunts reals com a capa docent directament usable en aula.
-3. Continuar la sèrie amb el Repte 3 en producció i preparar el pas posterior als apunts reals del Repte 4.
+1. Mantindre oberta la fase d'apunts reals com a capa docent directament usable en aula.
+2. Donar per rematat el Repte 3 com a apunt real ja alineat amb el llindar professional reforçat.
+3. Continuar la sèrie amb el Repte 4 en producció i preparar el pas posterior als apunts reals del Repte 5.
