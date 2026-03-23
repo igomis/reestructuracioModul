@@ -18,7 +18,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - nova fase oberta: producció d'apunts reals a partir del sistema docent ja consolidat
 - `MA-01` queda consolidat amb el primer apunt real del Repte 2 ja publicat
 - `MA-02` queda consolidat amb els apunts reals del Repte 3 ja rematats
-- `MA-03` entra en producció amb els apunts reals del Repte 4
+- `MA-03` queda consolidat amb els apunts reals del Repte 4 ja publicats
+- `MA-04` entra en producció amb els apunts reals del Repte 5
 - `RC-11` consolidat: reforç del nivell professional dels reptes i del seu llindar de no trivialitat
 
 ## Paquets consolidats
@@ -48,7 +49,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `ID-06` en revisió: ajust temporal a `20` setmanes / `120` hores aproximades a `docs/01_programacio_modul/seqüenciacio_sessions_2_avaluacions.md`.
 - `MA-01` consolidat: apunts reals del Repte 2 publicats a `docs/04_materials/apunts_reals/repte_02_sessions_i_autenticacio.md`.
 - `MA-02` consolidat: apunts reals del Repte 3 publicats a `docs/04_materials/apunts_reals/repte_03_mvc_i_persistencia.md`.
-- `MA-03` en producció: apunts reals del Repte 4 a `docs/04_materials/apunts_reals/repte_04_api_i_consum.md`.
+- `MA-03` consolidat: apunts reals del Repte 4 publicats a `docs/04_materials/apunts_reals/repte_04_api_i_consum.md`.
+- `MA-04` en producció: apunts reals del Repte 5 a `docs/04_materials/apunts_reals/repte_05_integracio_hibrida_n8n.md`.
 - `RC-11` consolidat: revisió del nivell professional dels Reptes `1-5`, del projecte base i de la rúbrica per evitar lectures trivials del model.
 
 ## Documents clau de desplegament ja disponibles
@@ -68,6 +70,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `repte_02_sessions_i_autenticacio.md`: primer apunt real de repte, orientat a ús docent i treball autònom
 - `repte_03_mvc_i_persistencia.md`: segon apunt real de repte, orientat a arquitectura, persistència i verificació tècnica
 - `repte_04_api_i_consum.md`: tercer apunt real de repte, orientat a publicar i consumir com a API una part usable del producte
+- `repte_05_integracio_hibrida_n8n.md`: quart apunt real de repte, orientat a integració útil, automatització i tancament defensable del producte
 
 ## Itineraris consolidats / en revisió
 - `MI-01` `Laravel` queda consolidat com a primer patró reutilitzable de stack.
@@ -83,10 +86,10 @@ Criteri comú dels itineraris:
 - el repositori ja no està definint el model del curs; està preparant el seu desplegament real
 - el nucli del treball docent ja està documentat i visible: què es fa, quan es fa, amb quins materials i amb quins instruments es revisa
 - el nucli del model queda ja tancat i el treball actual entra en producció de materials directament usables en aula
-- la fase d'apunts reals ja no és només una intenció: els Reptes 2 i 3 queden publicats i el Repte 4 passa a la següent peça operativa
+- la fase d'apunts reals ja no és només una intenció: els Reptes 2, 3 i 4 queden publicats i el Repte 5 passa a la següent peça operativa
 - el reforç de densitat funcional dels reptes queda consolidat i passa a funcionar com a criteri estable de lectura del sistema
 
 ## Següent focus recomanat
-- apunts reals del Repte 5
-- continuïtat de la sèrie d'apunts reals dels reptes
+- revisió transversal de la sèrie d'apunts reals
+- consolidació de la continuïtat entre els apunts dels Reptes 2-5
 - mantindre alineació entre apunts, programació i sistema d'avaluació
