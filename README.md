@@ -35,8 +35,7 @@ Lectura ràpida de la fase actual:
 - el model assumix que el desenvolupament principal del projecte es resol i es defensa dins de les dues primeres avaluacions; la tercera queda com a espai residual o de connexió amb empresa o `FCT`
 - la implantació docent es calibra sobre un escenari orientatiu d'unes `20` setmanes i `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - Git/GitHub es tracta com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
-- amb el paquet docent en versió `1` funcional, la revisió del sistema d'avaluació queda consolidada, la programació d'aula per repte ja està creada, els apunts reals del Repte 2 ja estan publicats i el Repte 3 entra en producció
-- el focus actual reforça que cada repte ha d'aportar una funcionalitat professional mínima del producte i no una tècnica aïllada o decorativa
+- amb el paquet docent en versió `1` funcional, el reforç del nivell professional dels reptes ja queda consolidat, la fase d'apunts reals continua oberta, el Repte 2 ja està publicat i el Repte 3 continua en producció
 
 ## Documents clau de la fase actual
 - [Pla d'implantació docent del mòdul](docs/01_programacio_modul/pla_implantacio_docent.md)
@@ -62,6 +61,6 @@ Lectura ràpida de la fase actual:
 - [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md)
 
 ## Focus actual
-1. Revisar el nivell professional dels reptes perquè no es puguen resoldre amb tècniques aïllades o implementacions massa simples.
-2. Reforçar el caràcter no trivial de les funcionalitats mínimes exigides en cada repte i en la seua avaluació.
-3. Enfortir la connexió entre cada repte i el producte real del curs, mantenint oberta la fase d'apunts reals amb el Repte 3 com a següent focus.
+1. Donar per consolidat el reforç del nivell professional i no trivial dels reptes.
+2. Mantindre oberta la fase d'apunts reals com a capa docent directament usable en aula.
+3. Continuar la sèrie amb el Repte 3 en producció i preparar el pas posterior als apunts reals del Repte 4.

@@ -3,6 +3,8 @@
 ## Finalitat del document
 Convertir el Repte 3 en un apunt de treball real, curt i executable, pensat perquè professorat i alumnat tinguen clara la seqüència mínima per transformar el backend funcional del Repte 2 en una base mantenible: arquitectura per capes o equivalent, persistència real del domini, validacions coherents i primer nivell de qualitat tècnica defensable.
 
+Este repte no consistix a "fer MVC" ni a "guardar dades". El que s'espera és professionalitzar una funcionalitat real del producte perquè siga mantingible, persistent i defensable sense quedar reduïda a una reorganització cosmètica o a una persistència només aparent.
+
 ## Què sap ja l'alumnat
 - ja té un flux funcional mínim del producte amb autenticació i operació protegida
 - ja coneix el domini triat i els primers casos d'ús que tenen valor real
@@ -11,6 +13,7 @@ Convertir el Repte 3 en un apunt de treball real, curt i executable, pensat perq
 
 ## Què s'ha de recordar breument
 - el repte no consistix a "ordenar carpetes", sinó a deixar una base que es puga mantindre i ampliar
+- el repte tampoc no consistix només a "fer MVC" ni a "guardar dades", sinó a consolidar un cas d'ús real del producte
 - una arquitectura només compta si separa responsabilitats reals i ajuda a entendre on passa cada cosa
 - la persistència ha de substituir l'estat provisional o massa acoblat, no duplicar-lo
 - la IA pot ajudar a refactoritzar o modelar, però s'ha de poder justificar per què s'ha acceptat una estructura i no una altra
@@ -26,6 +29,7 @@ Convertir el Repte 3 en un apunt de treball real, curt i executable, pensat perq
 - la incorporació d'una entitat persistent del domini amb operacions bàsiques de creació i consulta
 - una validació lligada al model i no només a l'entrada superficial del formulari o la petició
 - una comprovació breu que el flux funcional del Repte 2 continua funcionant després del canvi
+- una defensa curta de per què el canvi millora una funcionalitat real i no només l'aparença del projecte
 - una anotació curta al `README` o a l'`AI log` explicant una decisió d'arquitectura o persistència
 
 ## Què treballa l'alumnat amb autonomia
@@ -47,9 +51,11 @@ Exemple orientatiu de recorregut mínim:
 Criteri docent:
 - l'exemple no s'ha de copiar literalment
 - servix per entendre el mínim que s'ha de poder demostrar en qualsevol domini o stack
+- el punt no és crear una entitat qualsevol, sinó demostrar que un flux funcional real queda més sòlid, persistent i mantenible
 
 ## Errors habituals
 - confondre refactorització amb canvi cosmètic de carpetes o noms de fitxer
+- convertir el repte en una pràctica de "fer MVC" sense demostrar millora sobre una funcionalitat real
 - mantindre lògica de negoci, validació i persistència barrejades al mateix punt d'entrada
 - afegir base de dades o ORM, però continuar depenent d'estat temporal o de dades inconsistents
 - modelar dades sense pensar quines operacions reals s'han de fer després
@@ -60,6 +66,7 @@ Criteri docent:
 Per donar el repte per verificat, cal poder demostrar com a mínim:
 - existix una arquitectura recognoscible per capes o equivalent
 - existix una entitat principal amb persistència funcional real
+- existix almenys un cas d'ús real del producte que ha quedat professionalitzat de punta a punta
 - es poden crear i recuperar dades del domini amb coherència bàsica
 - el sistema rebutja dades inexistents, incompletes o incoherents en els casos mínims rellevants
 - el flux funcional principal del Repte 2 continua actiu després de la refactorització
@@ -74,6 +81,7 @@ Formats de verificació acceptables:
 ## Evidències que s'han d'entregar
 - repositori amb traçabilitat recognoscible del pas de flux funcional a estructura mantenible
 - `README` actualitzat amb com provar la persistència i quins components estructuren el projecte
+- evidència d'un cas d'ús real que ara és més mantenible, persistent i explicable
 - evidència de creació i recuperació de dades del domini amb persistència real
 - prova o registre de validacions, errors i regressions mínimes
 - justificació tècnica breu de l'arquitectura o patró equivalent adoptat
@@ -82,6 +90,7 @@ Formats de verificació acceptables:
 ## Checklist final del repte
 - [ ] existix una separació recognoscible entre entrada, lògica i persistència, o equivalent segons l'itinerari
 - [ ] existix almenys una entitat principal del domini amb persistència funcional real
+- [ ] existix almenys un cas d'ús real del producte professionalitzat i verificat de punta a punta
 - [ ] les validacions mínimes estan lligades al model i no només a l'entrada superficial
 - [ ] el sistema gestiona com a mínim dades inexistents, incompletes o incoherents
 - [ ] el flux principal del Repte 2 continua funcionant després de la reorganització
