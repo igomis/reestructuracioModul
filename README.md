@@ -35,7 +35,7 @@ Lectura ràpida de la fase actual:
 - el model assumix que el desenvolupament principal del projecte es resol i es defensa dins de les dues primeres avaluacions; la tercera queda com a espai residual o de connexió amb empresa o `FCT`
 - la implantació docent es calibra sobre un escenari orientatiu d'unes `20` setmanes i `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - Git/GitHub es tracta com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
-- amb el paquet docent en versió `1` funcional, els materials d'aula per repte ja estan creats, el repositori entra en preparació del kit inicial de pilotatge i el focus passa a validar el model amb alumnat real
+- amb el paquet docent en versió `1` funcional, els materials d'aula per repte ja estan creats, els kits de pilotatge inicial comencen a cobrir la seqüència real del curs i el focus passa a validar el model amb alumnat i atenció a ritmes diferents
 
 ## Documents clau de la fase actual
 - [Pla d'implantació docent del mòdul](docs/01_programacio_modul/pla_implantacio_docent.md)
@@ -64,6 +64,7 @@ Lectura ràpida de la fase actual:
 - [Materials de sessió del Repte 4](docs/04_materials/materials_aula/repte_04_materials_sessio.md)
 - [Materials de sessió del Repte 5](docs/04_materials/materials_aula/repte_05_materials_sessio.md)
 - [Kit de pilotatge de les setmanes 1-4](docs/01_programacio_modul/kit_pilotatge_setmanes_01_04.md)
+- [Kit de pilotatge de les setmanes 5-8](docs/01_programacio_modul/kit_pilotatge_setmanes_05_08.md)
 - [Pla de pilotatge real del mòdul](docs/00_visio_general/pla_pilotatge_real.md)
 - [Pla d'execució del pilotatge real](docs/00_visio_general/pla_execucio_pilotatge_real.md)
 - [Plantilla de recollida de feedback de pilotatge](docs/03_avaluacio/plantilla_recollida_feedback_pilotatge.md)
@@ -81,6 +82,6 @@ Lectura ràpida de la fase actual:
 - [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md)
 
 ## Focus actual
-1. Donar per creats els materials d'aula contextualitzats per repte.
-2. Preparar el kit inicial de pilotatge del curs per a les setmanes `1-4`.
-3. Iniciar la validació real amb alumnat i la recollida de feedback sobre càrrega, ritme i evidències.
+1. Construir els kits de pilotatge inicial perquè la seqüència docent fina siga plenament operativa.
+2. Validar el model amb alumnat real, amb atenció explícita a ritmes diferents, càrrega i evidències.
+3. Estendre la capa pilotable més enllà del primer mes sense perdre coherència entre reptes, materials i checkpoints.

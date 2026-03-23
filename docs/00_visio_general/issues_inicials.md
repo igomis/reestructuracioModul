@@ -29,7 +29,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PD-02` consolidat: annex de suport i ampliació segons ritmes
 - `PD-03` consolidat: materials d'acompanyament d'aula
 - `PD-04` consolidat: materials de sessió per repte
-- `PD-05` en producció: kit de pilotatge setmanes `1-4`
+- `PD-05` consolidat: kit de pilotatge setmanes `1-4`
+- `PD-06` en producció: kit de pilotatge setmanes `5-8`
 - `RC-11` consolidat: reforç del nivell professional dels reptes i del seu llindar de no trivialitat
 
 ## Paquets consolidats
@@ -70,7 +71,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PD-02` consolidat: annex de suport i ampliació segons ritmes a `docs/01_programacio_modul/annex_suport_i_ampliacio_ritmes.md`.
 - `PD-03` consolidat: materials d'acompanyament d'aula a `docs/04_materials/materials_aula/`.
 - `PD-04` consolidat: materials de sessió contextualitzats per als Reptes `1-5` a `docs/04_materials/materials_aula/repte_01_materials_sessio.md`, `repte_02_materials_sessio.md`, `repte_03_materials_sessio.md`, `repte_04_materials_sessio.md` i `repte_05_materials_sessio.md`.
-- `PD-05` en producció: kit operatiu de pilotatge inicial a `docs/01_programacio_modul/kit_pilotatge_setmanes_01_04.md`.
+- `PD-05` consolidat: kit operatiu de pilotatge inicial a `docs/01_programacio_modul/kit_pilotatge_setmanes_01_04.md`.
+- `PD-06` en producció: kit operatiu del segon tram inicial a `docs/01_programacio_modul/kit_pilotatge_setmanes_05_08.md`.
 - `RC-11` consolidat: revisió del nivell professional dels Reptes `1-5`, del projecte base i de la rúbrica per evitar lectures trivials del model.
 
 ## Documents clau de desplegament ja disponibles
@@ -84,6 +86,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `materials_aula/`: paquet curt de briefings, checkpoints, feedback ràpid i fulls de treball per a ús docent real dins de classe
 - `repte_01_materials_sessio.md` a `repte_05_materials_sessio.md`: paquet contextualitzat per repte amb briefings, checkpoints, feedback, fulls de treball, suport i ampliació
 - `kit_pilotatge_setmanes_01_04.md`: paquet operatiu per a l'arrancada real del curs amb objectius, materials, checkpoints i registre de pilotatge del primer mes
+- `kit_pilotatge_setmanes_05_08.md`: continuació operativa del pilotatge inicial, centrada en el desplegament de `R2` i la preparació d'entrada a `R3`
 - `curs_executable_dwes_2_avaluacions.md`: versió unificada i reutilitzable del curs per a desplegament docent real
 - `paquet_docent_exportable.md`: lectura unificada del que forma el paquet docent complet i del que es pot transferir a altres contextos
 - `resum_executiu_paquet_docent.md`: entrada curta i compartible al model per a professorat que no ha seguit tot el procés
@@ -117,10 +120,10 @@ Criteri comú dels itineraris:
 - el repositori ja no està definint el model del curs; està preparant el seu desplegament real
 - el nucli del treball docent ja està documentat i visible: què es fa, quan es fa, amb quins materials i amb quins instruments es revisa
 - el nucli del model queda ja tancat i la fase d'apunts reals es dona per consolidada com a capa de materials directament usables en aula
-- el treball actual baixa al primer mes real de curs: un kit de pilotatge que connecta seqüència, ritmes, materials d'aula i registre de feedback
+- el treball actual estira la capa pilotable més enllà del primer mes: kits operatius que connecten seqüència, ritmes, materials d'aula i registre de feedback
 - el reforç de densitat funcional dels reptes queda consolidat i passa a funcionar com a criteri estable de lectura del sistema
 
 ## Següent focus recomanat
-- ús real del kit i recollida de feedback
+- completar la seqüència pilotable fins a la setmana `12` o fins al tancament del primer bloc d'avaluació
 - recollida de feedback i millora iterativa del paquet docent
 - mantindre alineació entre apunts, programació, avaluació i decisions de millora
