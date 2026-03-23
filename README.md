@@ -35,7 +35,7 @@ Lectura ràpida de la fase actual:
 - el model assumix que el desenvolupament principal del projecte es resol i es defensa dins de les dues primeres avaluacions; la tercera queda com a espai residual o de connexió amb empresa o `FCT`
 - la implantació docent es calibra sobre un escenari orientatiu d'unes `20` setmanes i `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - Git/GitHub es tracta com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
-- amb el paquet docent en versió `1` funcional, el reforç del nivell professional dels reptes ja queda consolidat, la seqüència docent fina queda en marxa i el repositori obri una peça específica de suport i ampliació segons ritmes
+- amb el paquet docent en versió `1` funcional, el reforç del nivell professional dels reptes ja queda consolidat, la seqüència docent fina ja està creada, l'annex de ritmes queda consolidat i el repositori entra en producció de materials d'acompanyament d'aula
 
 ## Documents clau de la fase actual
 - [Pla d'implantació docent del mòdul](docs/01_programacio_modul/pla_implantacio_docent.md)
@@ -54,6 +54,10 @@ Lectura ràpida de la fase actual:
 - [Apunts reals del Repte 4](docs/04_materials/apunts_reals/repte_04_api_i_consum.md)
 - [Apunts reals del Repte 5](docs/04_materials/apunts_reals/repte_05_integracio_hibrida_n8n.md)
 - [Revisió transversal dels apunts reals](docs/04_materials/apunts_reals/revisio_transversal_apunts_reals.md)
+- [Mini briefings setmanals](docs/04_materials/materials_aula/mini_briefings_setmanals.md)
+- [Checkpoints curts d'aula](docs/04_materials/materials_aula/checkpoints_curts_aula.md)
+- [Plantilles de feedback ràpid](docs/04_materials/materials_aula/plantilles_feedback_rapid.md)
+- [Fulls de treball base](docs/04_materials/materials_aula/fulls_treball_base.md)
 - [Pla de pilotatge real del mòdul](docs/00_visio_general/pla_pilotatge_real.md)
 - [Pla d'execució del pilotatge real](docs/00_visio_general/pla_execucio_pilotatge_real.md)
 - [Plantilla de recollida de feedback de pilotatge](docs/03_avaluacio/plantilla_recollida_feedback_pilotatge.md)
@@ -72,5 +76,5 @@ Lectura ràpida de la fase actual:
 
 ## Focus actual
 1. Donar per preparat el pilotatge real del model amb alumnat.
-2. Mantindre en marxa la seqüència docent fina per a ús setmanal real.
-3. Produir un annex específic de suport i ampliació segons ritmes d'aprenentatge.
+2. Donar per creada la seqüència docent fina i per consolidat l'annex de ritmes.
+3. Produir materials d'acompanyament d'aula per a ús docent real durant les sessions.
