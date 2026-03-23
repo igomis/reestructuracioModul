@@ -27,7 +27,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PR-03` consolidat: execució del pilotatge real
 - `PD-01` consolidat: guia sessió a sessió de `20` setmanes
 - `PD-02` consolidat: annex de suport i ampliació segons ritmes
-- `PD-03` en producció: materials d'acompanyament d'aula
+- `PD-03` consolidat: materials d'acompanyament d'aula
+- `PD-04` en producció: materials de sessió per repte
 - `RC-11` consolidat: reforç del nivell professional dels reptes i del seu llindar de no trivialitat
 
 ## Paquets consolidats
@@ -66,7 +67,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PR-03` consolidat: execució del pilotatge real a `docs/00_visio_general/pla_execucio_pilotatge_real.md`.
 - `PD-01` consolidat: guia sessió a sessió de `20` setmanes a `docs/01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md`.
 - `PD-02` consolidat: annex de suport i ampliació segons ritmes a `docs/01_programacio_modul/annex_suport_i_ampliacio_ritmes.md`.
-- `PD-03` en producció: materials d'acompanyament d'aula a `docs/04_materials/materials_aula/`.
+- `PD-03` consolidat: materials d'acompanyament d'aula a `docs/04_materials/materials_aula/`.
+- `PD-04` en producció: materials de sessió contextualitzats per als Reptes `1-5` a `docs/04_materials/materials_aula/repte_01_materials_sessio.md`, `repte_02_materials_sessio.md`, `repte_03_materials_sessio.md`, `repte_04_materials_sessio.md` i `repte_05_materials_sessio.md`.
 - `RC-11` consolidat: revisió del nivell professional dels Reptes `1-5`, del projecte base i de la rúbrica per evitar lectures trivials del model.
 
 ## Documents clau de desplegament ja disponibles
@@ -78,6 +80,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `guia_sessio_a_sessio_20_setmanes.md`: traducció setmanal del curs amb paper docent, autonomia, suport i ampliació per ritmes diferents
 - `annex_suport_i_ampliacio_ritmes.md`: criteri reusable de suport, reconducció i ampliació segons ritmes d'aprenentatge
 - `materials_aula/`: paquet curt de briefings, checkpoints, feedback ràpid i fulls de treball per a ús docent real dins de classe
+- `repte_01_materials_sessio.md` a `repte_05_materials_sessio.md`: paquet contextualitzat per repte amb briefings, checkpoints, feedback, fulls de treball, suport i ampliació
 - `curs_executable_dwes_2_avaluacions.md`: versió unificada i reutilitzable del curs per a desplegament docent real
 - `paquet_docent_exportable.md`: lectura unificada del que forma el paquet docent complet i del que es pot transferir a altres contextos
 - `resum_executiu_paquet_docent.md`: entrada curta i compartible al model per a professorat que no ha seguit tot el procés
@@ -111,7 +114,7 @@ Criteri comú dels itineraris:
 - el repositori ja no està definint el model del curs; està preparant el seu desplegament real
 - el nucli del treball docent ja està documentat i visible: què es fa, quan es fa, amb quins materials i amb quins instruments es revisa
 - el nucli del model queda ja tancat i la fase d'apunts reals es dona per consolidada com a capa de materials directament usables en aula
-- el treball actual entra en una capa d'acompanyament d'aula: obertura de sessió, checkpoints curts, feedback ràpid i treball autònom estructurat
+- el treball actual entra en una capa contextualitzada per repte: materials de sessió ja preparats per a obrir, seguir i tancar cada tram del curs
 - el reforç de densitat funcional dels reptes queda consolidat i passa a funcionar com a criteri estable de lectura del sistema
 
 ## Següent focus recomanat

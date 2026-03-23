@@ -35,7 +35,7 @@ Lectura ràpida de la fase actual:
 - el model assumix que el desenvolupament principal del projecte es resol i es defensa dins de les dues primeres avaluacions; la tercera queda com a espai residual o de connexió amb empresa o `FCT`
 - la implantació docent es calibra sobre un escenari orientatiu d'unes `20` setmanes i `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - Git/GitHub es tracta com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
-- amb el paquet docent en versió `1` funcional, el reforç del nivell professional dels reptes ja queda consolidat, la seqüència docent fina ja està creada, l'annex de ritmes queda consolidat i el repositori entra en producció de materials d'acompanyament d'aula
+- amb el paquet docent en versió `1` funcional, el reforç del nivell professional dels reptes ja queda consolidat, els materials d'acompanyament d'aula ja estan creats i el repositori entra en producció del paquet de materials de sessió per repte
 
 ## Documents clau de la fase actual
 - [Pla d'implantació docent del mòdul](docs/01_programacio_modul/pla_implantacio_docent.md)
@@ -58,6 +58,11 @@ Lectura ràpida de la fase actual:
 - [Checkpoints curts d'aula](docs/04_materials/materials_aula/checkpoints_curts_aula.md)
 - [Plantilles de feedback ràpid](docs/04_materials/materials_aula/plantilles_feedback_rapid.md)
 - [Fulls de treball base](docs/04_materials/materials_aula/fulls_treball_base.md)
+- [Materials de sessió del Repte 1](docs/04_materials/materials_aula/repte_01_materials_sessio.md)
+- [Materials de sessió del Repte 2](docs/04_materials/materials_aula/repte_02_materials_sessio.md)
+- [Materials de sessió del Repte 3](docs/04_materials/materials_aula/repte_03_materials_sessio.md)
+- [Materials de sessió del Repte 4](docs/04_materials/materials_aula/repte_04_materials_sessio.md)
+- [Materials de sessió del Repte 5](docs/04_materials/materials_aula/repte_05_materials_sessio.md)
 - [Pla de pilotatge real del mòdul](docs/00_visio_general/pla_pilotatge_real.md)
 - [Pla d'execució del pilotatge real](docs/00_visio_general/pla_execucio_pilotatge_real.md)
 - [Plantilla de recollida de feedback de pilotatge](docs/03_avaluacio/plantilla_recollida_feedback_pilotatge.md)
@@ -76,5 +81,5 @@ Lectura ràpida de la fase actual:
 
 ## Focus actual
 1. Donar per preparat el pilotatge real del model amb alumnat.
-2. Donar per creada la seqüència docent fina i per consolidat l'annex de ritmes.
-3. Produir materials d'acompanyament d'aula per a ús docent real durant les sessions.
+2. Donar per creats els materials d'acompanyament d'aula base.
+3. Produir el paquet de materials de sessió contextualitzats per als Reptes `1-5`.
