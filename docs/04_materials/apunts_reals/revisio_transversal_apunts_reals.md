@@ -72,4 +72,4 @@ Esta revisió transversal es considera completada quan:
 - la sèrie es pot llegir com un conjunt coherent dins del paquet docent del mòdul
 
 ## Nota final
-La revisió transversal queda completada amb este document. A partir d'ací, la sèrie d'apunts reals es considera preparada per al seu tancament operatiu dins del paquet docent.
+La revisió transversal recollida ací deixa consolidada la lectura comuna de `R2-R5`, però el tancament definitiu de la sèrie queda pendent fins incorporar i rellegir també l'apunt real del Repte 1 com a obertura completa del bloc `R1-R5`.
