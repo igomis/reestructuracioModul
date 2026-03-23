@@ -15,12 +15,15 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 ## Fase actual
 - paquet docent en versió `1` funcional
 - fase principal del paquet docent tancada a nivell de model, materials, implantació i seguiment
-- nova fase oberta: producció d'apunts reals a partir del sistema docent ja consolidat
+- fase d'apunts reals consolidada com a capa de materials d'ús directe
 - `MA-01` queda consolidat amb el primer apunt real del Repte 2 ja publicat
 - `MA-02` queda consolidat amb els apunts reals del Repte 3 ja rematats
 - `MA-03` queda consolidat amb els apunts reals del Repte 4 ja publicats
 - `MA-04` queda consolidat amb els apunts reals del Repte 5 ja publicats
-- `MA-05` entra en producció: completar i consolidar la sèrie d'apunts reals `R1-R5`
+- `MA-05` queda consolidat amb la revisió transversal de la sèrie d'apunts reals
+- `MA-06` consolidat: tancament operatiu de la fase d'apunts reals
+- `PR-01` en producció: pla de pilotatge real
+- `PR-02` en producció: plantilles de recollida de feedback i incidències
 - `RC-11` consolidat: reforç del nivell professional dels reptes i del seu llindar de no trivialitat
 
 ## Paquets consolidats
@@ -52,7 +55,10 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `MA-02` consolidat: apunts reals del Repte 3 publicats a `docs/04_materials/apunts_reals/repte_03_mvc_i_persistencia.md`.
 - `MA-03` consolidat: apunts reals del Repte 4 publicats a `docs/04_materials/apunts_reals/repte_04_api_i_consum.md`.
 - `MA-04` consolidat: apunts reals del Repte 5 publicats a `docs/04_materials/apunts_reals/repte_05_integracio_hibrida_n8n.md`.
-- `MA-05` en producció: completar i consolidar la sèrie d'apunts reals `R1-R5`, amb incorporació de `docs/04_materials/apunts_reals/repte_01_kickoff_backend.md` i revisió pendent de tancament a `docs/04_materials/apunts_reals/revisio_transversal_apunts_reals.md`.
+- `MA-05` consolidat: revisió transversal dels apunts reals a `docs/04_materials/apunts_reals/revisio_transversal_apunts_reals.md`.
+- `MA-06` consolidat: tancament operatiu de la fase d'apunts reals a `docs/04_materials/apunts_reals/tancament_fase_apunts_reals.md`.
+- `PR-01` en producció: pla de pilotatge real a `docs/00_visio_general/pla_pilotatge_real.md`.
+- `PR-02` en producció: plantilles de feedback i incidències a `docs/03_avaluacio/plantilla_recollida_feedback_pilotatge.md` i `docs/03_avaluacio/registre_incidents_i_ajustos_pilotatge.md`.
 - `RC-11` consolidat: revisió del nivell professional dels Reptes `1-5`, del projecte base i de la rúbrica per evitar lectures trivials del model.
 
 ## Documents clau de desplegament ja disponibles
@@ -74,7 +80,10 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `repte_03_mvc_i_persistencia.md`: segon apunt real de repte, orientat a arquitectura, persistència i verificació tècnica
 - `repte_04_api_i_consum.md`: tercer apunt real de repte, orientat a publicar i consumir com a API una part usable del producte
 - `repte_05_integracio_hibrida_n8n.md`: quart apunt real de repte, orientat a integració útil, automatització i tancament defensable del producte
-- `revisio_transversal_apunts_reals.md`: registre de consolidació comuna, progressió didàctica i coherència editorial de la sèrie d'apunts reals, encara pendent de tancament definitiu després d'incorporar `R1`
+- `revisio_transversal_apunts_reals.md`: registre de consolidació comuna, progressió didàctica i coherència editorial de la sèrie d'apunts reals
+- `pla_pilotatge_real.md`: marc del pilotatge real, hipòtesi de treball, evidències i punts de decisió
+- `plantilla_recollida_feedback_pilotatge.md`: instrument reusable per recollir feedback d'alumnat i observacions docents
+- `registre_incidents_i_ajustos_pilotatge.md`: registre viu d'incidències, impacte i ajustos durant el pilotatge
 
 ## Itineraris consolidats / en revisió
 - `MI-01` `Laravel` queda consolidat com a primer patró reutilitzable de stack.
@@ -89,11 +98,11 @@ Criteri comú dels itineraris:
 ## Lectura operativa de la fase actual
 - el repositori ja no està definint el model del curs; està preparant el seu desplegament real
 - el nucli del treball docent ja està documentat i visible: què es fa, quan es fa, amb quins materials i amb quins instruments es revisa
-- el nucli del model queda ja tancat i el treball actual entra en producció de materials directament usables en aula
-- la fase d'apunts reals ja no és només una intenció: els Reptes 2, 3, 4 i 5 queden publicats i ara cal completar la sèrie amb `R1` abans del tancament operatiu
+- el nucli del model queda ja tancat i la fase d'apunts reals es dona per consolidada com a capa de materials directament usables en aula
+- el treball actual passa a preparar la validació real del paquet docent amb alumnat, feedback i registre d'incidències
 - el reforç de densitat funcional dels reptes queda consolidat i passa a funcionar com a criteri estable de lectura del sistema
 
 ## Següent focus recomanat
-- tancament operatiu de la fase d'apunts reals després de consolidar la sèrie `R1-R5`
-- revisió final de continuïtat entre `R1` i la progressió `R2-R5`
-- mantindre alineació entre apunts, programació i sistema d'avaluació
+- pilotatge amb alumnat i millora iterativa del paquet docent
+- recollida de feedback sobre materials, càrrega temporal, evidències i instruments
+- mantindre alineació entre apunts, programació, avaluació i decisions de millora

@@ -35,7 +35,7 @@ Lectura ràpida de la fase actual:
 - el model assumix que el desenvolupament principal del projecte es resol i es defensa dins de les dues primeres avaluacions; la tercera queda com a espai residual o de connexió amb empresa o `FCT`
 - la implantació docent es calibra sobre un escenari orientatiu d'unes `20` setmanes i `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - Git/GitHub es tracta com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
-- amb el paquet docent en versió `1` funcional, el reforç del nivell professional dels reptes ja queda consolidat, però la sèrie d'apunts reals encara s'ha de completar amb `R1` abans del seu tancament operatiu definitiu
+- amb el paquet docent en versió `1` funcional, el reforç del nivell professional dels reptes ja queda consolidat, la fase d'apunts reals queda consolidada i el repositori entra en preparació de pilotatge real del model
 
 ## Documents clau de la fase actual
 - [Pla d'implantació docent del mòdul](docs/01_programacio_modul/pla_implantacio_docent.md)
@@ -52,6 +52,9 @@ Lectura ràpida de la fase actual:
 - [Apunts reals del Repte 4](docs/04_materials/apunts_reals/repte_04_api_i_consum.md)
 - [Apunts reals del Repte 5](docs/04_materials/apunts_reals/repte_05_integracio_hibrida_n8n.md)
 - [Revisió transversal dels apunts reals](docs/04_materials/apunts_reals/revisio_transversal_apunts_reals.md)
+- [Pla de pilotatge real del mòdul](docs/00_visio_general/pla_pilotatge_real.md)
+- [Plantilla de recollida de feedback de pilotatge](docs/03_avaluacio/plantilla_recollida_feedback_pilotatge.md)
+- [Registre d'incidents i ajustos del pilotatge](docs/03_avaluacio/registre_incidents_i_ajustos_pilotatge.md)
 - [Paquet docent exportable del mòdul](docs/00_visio_general/paquet_docent_exportable.md)
 - [Resum executiu del paquet docent](docs/00_visio_general/resum_executiu_paquet_docent.md)
 - [Presentació breu del model DWES](docs/00_visio_general/presentacio_model_dwes_reptes_ia.md)
@@ -65,6 +68,6 @@ Lectura ràpida de la fase actual:
 - [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md)
 
 ## Focus actual
-1. Completar la sèrie d'apunts reals amb el Repte 1.
-2. Consolidar la sèrie completa `R1-R5` com a bloc homogeni de materials reals.
-3. Preparar el tancament operatiu del bloc de materials reals abans de passar a ús i compartició.
+1. Donar per consolidada la fase d'apunts reals com a base docent usable.
+2. Preparar el pilotatge real del model amb alumnat i instruments de seguiment específics.
+3. Obrir la línia següent de recollida de feedback i millora iterativa del paquet docent.
