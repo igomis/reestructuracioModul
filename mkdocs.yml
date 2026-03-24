@@ -26,6 +26,21 @@ nav:
       - Com es valora: alumnat/com_es_valora.md
       - Com fer servir la IA: alumnat/com_fer_servir_la_ia.md
       - Projectes base: alumnat/projectes_base.md
+      - Consulta tècnica:
+          - Inici consulta tècnica: alumnat/consulta_tecnica/index.md
+          - Consulta comuna del curs:
+              - Formularis i validació: alumnat/consulta_tecnica/formularis_i_validacio.md
+              - Cookies, sessions i estat: alumnat/consulta_tecnica/cookies_sessions_i_estat.md
+              - Autenticació i autorització: alumnat/consulta_tecnica/autenticacio_i_autoritzacio.md
+              - Tokens útils en backend: alumnat/consulta_tecnica/tokens_utils_en_backend.md
+              - APIs i contracte: alumnat/consulta_tecnica/apis_i_contracte.md
+              - Persistència i modelat: alumnat/consulta_tecnica/persistencia_i_modelat.md
+              - Proves i debugging: alumnat/consulta_tecnica/proves_i_debugging.md
+          - Consulta ràpida per itinerari:
+              - Laravel: alumnat/consulta_tecnica/laravel_consulta_rapida.md
+              - Express/Nest: alumnat/consulta_tecnica/express_nest_consulta_rapida.md
+              - FastAPI: alumnat/consulta_tecnica/fastapi_consulta_rapida.md
+              - n8n: alumnat/consulta_tecnica/n8n_consulta_rapida.md
       - Reptes:
           - Index: alumnat/reptes/index.md
           - Repte 1: alumnat/reptes/repte_01.md
