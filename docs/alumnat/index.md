@@ -9,6 +9,12 @@ Esta secció és la porta d'entrada curta del curs per a alumnat. No substituïx
 - [Com fer servir la IA](com_fer_servir_la_ia.md)
 - [Projectes base](projectes_base.md)
 
+Si és la primera vegada que entres, l'ordre recomanat és:
+1. entendre [com funciona el curs](com_funciona_el_curs.md)
+2. mirar [com es valora](com_es_valora.md)
+3. revisar [els projectes base](projectes_base.md)
+4. entrar a [la seqüència de reptes](reptes/index.md)
+
 ## Reptes del curs
 - [Vista general dels reptes](reptes/index.md)
 - [Repte 1. Kickoff funcional](reptes/repte_01.md)
@@ -16,6 +22,13 @@ Esta secció és la porta d'entrada curta del curs per a alumnat. No substituïx
 - [Repte 3. MVC i persistència](reptes/repte_03.md)
 - [Repte 4. API i consum](reptes/repte_04.md)
 - [Repte 5. Integració híbrida i tancament](reptes/repte_05.md)
+
+## Quins blocs cal consultar
+- si necessites entendre el curs en conjunt: [Com funciona el curs](com_funciona_el_curs.md)
+- si tens dubtes sobre nota, evidències o defensa: [Com es valora](com_es_valora.md)
+- si vas a usar IA: [Com fer servir la IA](com_fer_servir_la_ia.md)
+- si encara no tens clar el producte: [Projectes base](projectes_base.md)
+- si estàs treballant un repte concret: [Reptes del curs](reptes/index.md)
 
 ## Idees clau
 - el curs es construeix sobre un únic producte que creix de `R1` a `R5`

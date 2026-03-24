@@ -21,7 +21,7 @@ markdown_extensions:
 nav:
   - Inici: index.md
   - Alumnat:
-      - Portada: alumnat/index.md
+      - Inici alumnat: alumnat/index.md
       - Com funciona el curs: alumnat/com_funciona_el_curs.md
       - Com es valora: alumnat/com_es_valora.md
       - Com fer servir la IA: alumnat/com_fer_servir_la_ia.md

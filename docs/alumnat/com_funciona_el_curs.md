@@ -44,6 +44,20 @@ No és suficient:
 - deixar funcionalitat sense proves ni comprovació real
 - entregar codi que no pots defensar
 
+## Què vol dir mínim funcional no trivial
+Vol dir que cada repte ha de deixar una part del producte que tinga valor real i es puga provar.
+
+No vol dir:
+- una tècnica solta sense cas d'ús
+- una pantalla o ruta ornamental
+- un esquelet que “ja completarem després”
+
+Sí vol dir:
+- una acció recognoscible del producte
+- una validació o regla mínima de negoci
+- una comprovació real que funciona
+- una base que permeta obrir el repte següent sense reconstruir-ho tot
+
 ## Què has d'anar deixant durant el curs
 - repositori usable des del principi
 - evidències mínimes de cada repte

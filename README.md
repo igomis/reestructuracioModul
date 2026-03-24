@@ -64,4 +64,4 @@ Lectura ràpida de la fase actual:
 ## Focus actual
 1. Mantindre la `v1` prepilotatge preparada com a base estable i reusable del paquet docent.
 2. Tindre en producció els tres projectes base concretats del mòdul com a encàrrecs ja usables, comparables i defensables.
-3. Consolidar el portal d'alumnat i les micro-presentacions docents, i decidir només després si convé convertir-les en format compartible.
+3. Consolidar la navegació alumne/professor i preparar materials de classe compartibles sense reobrir l'arquitectura principal del paquet.
