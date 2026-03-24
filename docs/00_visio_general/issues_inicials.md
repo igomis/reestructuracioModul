@@ -32,7 +32,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PP-03` consolidat: ajustos finals abans d'inici de curs
 - `PJ-01` consolidat: projectes base concretats
 - `AL-01` consolidat: apunts online per a alumnat
-- `AL-02` en producció: consulta tècnica per a alumnat
+- `AL-02` consolidat: consulta tècnica per a alumnat
+- `MAT-01` en producció: materials de classe compartibles
 - `WEB-02` consolidat: navegació alumne/professor
 - `PRS-01` en producció: micro-presentacions docents
 - `PD-01` consolidat: guia sessió a sessió de `20` setmanes
@@ -70,6 +71,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PA-01` consolidat amb la programació d'aula per repte.
 - `PJ-01` consolidat amb la concreció dels tres projectes base del mòdul.
 - `AL-01` consolidat amb el portal d'apunts online per a alumnat publicat dins de la navegació web.
+- `AL-02` consolidat amb la capa de consulta tècnica per a alumnat integrada dins del portal web.
 - `WEB-02` consolidat amb la separació web per perfils d'alumnat i professorat.
 
 ## Paquets en producció o consolidació final
@@ -90,7 +92,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PP-02` en producció: preparació docent directa per al curs que ve a `docs/01_programacio_modul/preparacio_docent_directa_curs_que_ve.md`.
 - `PP-03` consolidat: ajustos finals abans d'inici de curs a `docs/01_programacio_modul/ajustos_finals_abans_inici_curs.md`.
 - `AL-01` consolidat: apunts online per a alumnat a `docs/alumnat/index.md`.
-- `AL-02` en producció: consulta tècnica per a alumnat a `docs/alumnat/consulta_tecnica/index.md`.
+- `AL-02` consolidat: consulta tècnica per a alumnat a `docs/alumnat/consulta_tecnica/index.md`.
+- `MAT-01` en producció: materials de classe compartibles a `docs/08_materials_compartibles/index.md`.
 - `WEB-02` consolidat: navegació alumne/professor a `docs/professorat/index.md`, `docs/alumnat/index.md` i `mkdocs.yml`.
 - `PRS-01` en producció: micro-presentacions docents a `docs/07_presentacions/`.
 - `PD-01` consolidat: guia sessió a sessió de `20` setmanes a `docs/01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md`.
@@ -165,14 +168,15 @@ Criteri comú dels itineraris:
 - els ajustos finals abans de l'inici de curs i la concreció dels projectes base queden consolidats com a capa estable del paquet
 - el portal d'alumnat queda ja consolidat com a capa curta de consulta web derivada de la documentació existent
 - la navegació diferenciada per alumnat i professorat queda ja consolidada com a estructura estable de consulta web
-- el portal d'alumnat obri ara una capa nova de consulta tècnica curta, orientada a dubtes reals de formularis, auth, persistència, `API`, proves i itineraris
+- la consulta tècnica d'alumnat queda ja consolidada com a segona capa de suport ràpid sobre el portal web
+- el repositori obri ara una primera sèrie de materials de classe compartibles, breus i donables, per a l'arrancada del curs i els primers checkpoints
 - la sèrie curta de micro-presentacions continua disponible com a suport docent breu dins de la mateixa web
-- el treball actual passa a materials de classe compartibles, no a reobrir la seqüència ni la nova arquitectura
+- el treball actual passa a ampliar els materials compartibles cap a `R3-R5`, no a reobrir la seqüència ni la nova arquitectura
 - la lectura de treball compartit queda subordinada a un criteri estable d'acreditació individual: cada alumne ha de poder traçar, explicar, verificar i defensar la seua part
 - el reforç de densitat funcional dels reptes queda consolidat i passa a funcionar com a criteri estable de lectura del sistema
 
 ## Següent focus recomanat
-- següent focus: materials de classe compartibles
+- següent focus: ampliació dels materials compartibles a `R3-R5`
 - revisar si els accessos d'alumnat, professorat i les peces docents breus es lliguen bé dins de la mateixa web sense duplicació innecessària
 - mantindre alineació entre apunts, programació, avaluació, projecte base i decisions de millora
 - avançar en peces noves sense reobrir la `v1` estable ni la seqüència principal del curs
