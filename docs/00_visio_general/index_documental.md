@@ -3,6 +3,8 @@
 ## Finalitat
 Este document organitza l'acces al repositori per camins d'us i no com a llista plana. La idea no es repetir tot el contingut, sino donar una porta d'entrada curta segons la necessitat real de qui consulta el projecte.
 
+En la versio web amb MkDocs, esta pagina funciona tambe com a portada principal de la documentacio.
+
 ## Si vull entendre el projecte en 10 minuts
 - [Presentacio breu del model DWES](presentacio_model_dwes_reptes_ia.md): versio curta del model per reptes amb IA.
 - [Resum executiu del paquet docent](resum_executiu_paquet_docent.md): vista general del paquet ja consolidat.

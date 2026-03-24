@@ -19,9 +19,8 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - Inici: 00_visio_general/index_documental.md
+  - Index documental: 00_visio_general/index_documental.md
   - Visio general:
-      - Index documental: 00_visio_general/index_documental.md
       - Presentacio breu: 00_visio_general/presentacio_model_dwes_reptes_ia.md
       - Resum executiu: 00_visio_general/resum_executiu_paquet_docent.md
       - Paquet docent exportable: 00_visio_general/paquet_docent_exportable.md
@@ -44,13 +43,6 @@ nav:
       - Revisio transversal del bloc 1-20: 01_programacio_modul/revisio_transversal_bloc_pilotable_20_setmanes.md
       - Preparacio docent directa: 01_programacio_modul/preparacio_docent_directa_curs_que_ve.md
       - Ajustos finals abans d'inici de curs: 01_programacio_modul/ajustos_finals_abans_inici_curs.md
-  - Avaluacio:
-      - Index: 03_avaluacio/index.md
-      - Sistema d'evidencies: 03_avaluacio/sistema_evidencies.md
-      - Rubrica base: 03_avaluacio/rubrica_base_reptes.md
-      - Rubrica defensa tecnica: 03_avaluacio/rubrica_defensa_tecnica.md
-      - Instruments de seguiment: 03_avaluacio/instruments_seguiment_docent.md
-      - Criteris de ponderacio amb IA: 03_avaluacio/criteris_ponderacio_reptes_amb_ia.md
   - Materials:
       - Index: 04_materials/index.md
       - Pla de materials prioritaris: 04_materials/pla_materials_prioritaris.md
@@ -66,18 +58,24 @@ nav:
           - Repte 3: 04_materials/apunts_reals/repte_03_mvc_i_persistencia.md
           - Repte 4: 04_materials/apunts_reals/repte_04_api_i_consum.md
           - Repte 5: 04_materials/apunts_reals/repte_05_integracio_hibrida_n8n.md
-  - Reptes:
-      - Repte 1: 02_reptes/repte_01_kickoff_backend.md
-      - Repte 2: 02_reptes/repte_02_sessions_i_autenticacio.md
-      - Repte 3: 02_reptes/repte_03_mvc_i_persistencia.md
-      - Repte 4: 02_reptes/repte_04_api_i_consum.md
-      - Repte 5: 02_reptes/repte_05_integracio_hibrida_n8n.md
-  - Projecte base:
+  - Avaluacio:
+      - Index: 03_avaluacio/index.md
+      - Sistema d'evidencies: 03_avaluacio/sistema_evidencies.md
+      - Rubrica base: 03_avaluacio/rubrica_base_reptes.md
+      - Rubrica defensa tecnica: 03_avaluacio/rubrica_defensa_tecnica.md
+      - Instruments de seguiment: 03_avaluacio/instruments_seguiment_docent.md
+      - Criteris de ponderacio amb IA: 03_avaluacio/criteris_ponderacio_reptes_amb_ia.md
+  - Projecte i reptes:
       - Enunciat base: 05_projectes_tecnics/enunciat_projecte_base.md
       - Projecte base backend: 05_projectes_tecnics/projecte_base_backend.md
       - Integracio API: 05_projectes_tecnics/integracio_api.md
       - Integracio IA: 05_projectes_tecnics/integracio_ia.md
       - Integracio n8n: 05_projectes_tecnics/integracio_n8n.md
+      - Repte 1: 02_reptes/repte_01_kickoff_backend.md
+      - Repte 2: 02_reptes/repte_02_sessions_i_autenticacio.md
+      - Repte 3: 02_reptes/repte_03_mvc_i_persistencia.md
+      - Repte 4: 02_reptes/repte_04_api_i_consum.md
+      - Repte 5: 02_reptes/repte_05_integracio_hibrida_n8n.md
   - Pilotatge i seguiment:
       - Pla de pilotatge real: 00_visio_general/pla_pilotatge_real.md
       - Pla d'execucio del pilotatge: 00_visio_general/pla_execucio_pilotatge_real.md
