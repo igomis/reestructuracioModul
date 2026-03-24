@@ -22,6 +22,8 @@ Cada equip ha de seleccionar un domini admés i construir sobre ell un backend f
 
 L'objectiu no és fer el producte més gran possible, sinó arribar a una base sòlida i verificable amb valor tècnic clar.
 
+Com a concretització operativa dels dominis admesos, este enunciat es desplega ara en [projectes_base_concretats.md](projectes_base_concretats.md), que fixa tres projectes base ja usables i més tancats per a treball docent, comparabilitat entre itineraris i defensa individual.
+
 Criteri transversal d'exigència:
 - cap repte del projecte es pot donar per resolt amb una tècnica aïllada
 - cada tram ha d'aportar una funcionalitat professional mínima, recognoscible i defensable del mateix producte
@@ -38,6 +40,13 @@ Els únics dominis admesos per al projecte base són:
    Permet treballar amb altes, baixes, moviments, disponibilitat, responsables i traçabilitat d'actius.
 
 Qualsevol d'estos dominis és vàlid si permet cobrir els objectius tècnics mínims del projecte i sostindre la seqüència de reptes del curs.
+
+La seua concreció operativa recomanada queda fixada així:
+- gestor intern de recursos o inventari -> **gestor d'inventari amb rols i token d'operació**
+- sistema de reserves o cites -> **sistema de reserves amb tokens de confirmació o cancel·lació**
+- gestor d'incidències o tickets -> **gestor d'incidències amb invitació o seguiment extern tokenitzat**
+
+El detall funcional, els actors obligatoris, els casos d'ús i els criteris d'assignació docent es troben en [projectes_base_concretats.md](projectes_base_concretats.md).
 
 ## Objectius tècnics mínims
 El projecte base ha de cobrir, com a mínim, els objectius següents:
@@ -125,6 +134,8 @@ No es validarà com a projecte base una solució que només tinga aparença func
 Com a línia futura, el projecte pot obrir una extensió relacionada amb tokenització, sempre com a evolució opcional i no com a requisit del projecte base.
 
 Esta extensió pot orientar-se, per exemple, a tokens d'accés, invitació, confirmació, recuperació o traçabilitat, sempre que responga a una necessitat real del domini triat. La seua incorporació queda fora dels mínims obligatoris i només s'hauria d'abordar quan la base principal ja estiga consolidada.
+
+En la concretització operativa actual, la tokenització es manté dins d'este mateix sentit funcional útil del backend. No s'entén com a línia `web3` ni com a especialització aliena al curs, sinó com a mecanisme de confirmació, operació, invitació o seguiment quan el domini realment ho demana.
 
 ## Definition of done del document
 Este document es considera completat quan:

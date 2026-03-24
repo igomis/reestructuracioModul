@@ -29,7 +29,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PR-04` consolidat: seguiment de l'execució real del pilotatge
 - `PP-01` consolidat: versió prepilotatge v1
 - `PP-02` en producció: preparació docent directa per al curs que ve
-- `PP-03` en producció: ajustos finals abans d'inici de curs
+- `PP-03` consolidat: ajustos finals abans d'inici de curs
+- `PJ-01` en producció: projectes base concretats
 - `PD-01` consolidat: guia sessió a sessió de `20` setmanes
 - `PD-02` consolidat: annex de suport i ampliació segons ritmes
 - `PD-03` consolidat: materials d'acompanyament d'aula
@@ -80,7 +81,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PR-04` consolidat: seguiment de l'execució real del pilotatge a `docs/00_visio_general/seguiment_execucio_pilotatge.md`.
 - `PP-01` consolidat: versió prepilotatge v1 a `docs/00_visio_general/versio_prepilotatge_v1.md`.
 - `PP-02` en producció: preparació docent directa per al curs que ve a `docs/01_programacio_modul/preparacio_docent_directa_curs_que_ve.md`.
-- `PP-03` en producció: ajustos finals abans d'inici de curs a `docs/01_programacio_modul/ajustos_finals_abans_inici_curs.md`.
+- `PP-03` consolidat: ajustos finals abans d'inici de curs a `docs/01_programacio_modul/ajustos_finals_abans_inici_curs.md`.
+- `PJ-01` en producció: projectes base concretats a `docs/05_projectes_tecnics/projectes_base_concretats.md`.
 - `PD-01` consolidat: guia sessió a sessió de `20` setmanes a `docs/01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md`.
 - `PD-02` consolidat: annex de suport i ampliació segons ritmes a `docs/01_programacio_modul/annex_suport_i_ampliacio_ritmes.md`.
 - `PD-03` consolidat: materials d'acompanyament d'aula a `docs/04_materials/materials_aula/`.
@@ -150,12 +152,13 @@ Criteri comú dels itineraris:
 - el nucli del model queda ja tancat i la fase d'apunts reals es dona per consolidada com a capa de materials directament usables en aula
 - el bloc pilotable complet de `20` setmanes queda ja revisat com a seqüència coherent i usable de punta a punta
 - la `v1` prepilotatge queda ja congelada com a base estable i el backlog de millora queda separat del nucli del sistema
-- el treball actual queda centrat en ajustos finals abans de l'inici de curs i en preparació docent directa, no en nous blocs de seqüència ni en nova arquitectura
+- els ajustos finals abans de l'inici de curs queden consolidats i el projecte base baixa ara a tres encàrrecs concrets, més tancats i més defensables
+- el treball actual queda centrat en mantindre eixa base estable i preparar el següent tram de materials públics, no en reobrir la seqüència ni la nova arquitectura
 - la lectura de treball compartit queda subordinada a un criteri estable d'acreditació individual: cada alumne ha de poder traçar, explicar, verificar i defensar la seua part
 - el reforç de densitat funcional dels reptes queda consolidat i passa a funcionar com a criteri estable de lectura del sistema
 
 ## Següent focus recomanat
-- inici real de curs i seguiment del pilotatge
-- tancament operatiu dels ajustos finals del primer tram, dels modelatges i dels materials d'entrega immediata
-- revisió del backlog de millora sense reobrir la `v1` estable
-- mantindre alineació entre apunts, programació, avaluació i decisions de millora
+- següent focus: apunts online per a alumnat i presentacions docents
+- convertir els projectes base concretats en suport docent visible per a alumnat sense perdre comparabilitat entre itineraris
+- mantindre alineació entre apunts, programació, avaluació, projecte base i decisions de millora
+- avançar en peces noves sense reobrir la `v1` estable ni la seqüència principal del curs

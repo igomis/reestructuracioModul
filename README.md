@@ -34,7 +34,7 @@ Repositori de treball per al redisseny del mòdul **Desenvolupament d’Aplicaci
 La base curricular del projecte ja està definida i el repositori entra en fase de **implantació docent en 2 avaluacions lectives reals**.
 
 Lectura ràpida de la fase actual:
-- el projecte base del curs, els reptes i els materials comuns ja existixen i funcionen com a base pública usable del mòdul
+- el projecte base del curs, l'enunciat base i la seua concretització en tres projectes base ja existixen i funcionen com a base pública usable del mòdul
 - els materials nuclears dels Reptes `2`, `3`, `4` i `5` ja estan publicats, encara que `MG-05` i `MG-06` continuen oberts a una ronda final de consolidació
 - els tres itineraris tecnològics (`Laravel`, `Express/Nest`, `FastAPI`) ja existixen com a paquet comparable dins d'un mateix marc docent
 - la implantació docent ja està baixada a diversos nivells: pla general, calendarització orientativa, calendarització per avaluacions, programació d'aula operativa i seqüenciació fina de sessions
@@ -44,7 +44,7 @@ Lectura ràpida de la fase actual:
 - Git/GitHub es tracta com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
 - el model admet moments de col·laboració limitada o de producte parcialment compartit, però el seguiment, la verificació, la defensa i l'acreditació es resolen individualment
 - la seqüència docent completa del curs ja queda pilotable de punta a punta en un bloc coherent de `20` setmanes
-- la `v1` prepilotatge continua congelada com a base estable i el focus immediat passa a ajustos finals abans de l'inici de curs
+- la `v1` prepilotatge queda preparada com a base estable i els projectes base concretats passen a producció com a encàrrec docent més tancat i més defensable
 
 ## Documents clau de la fase actual
 - [Index documental del projecte](docs/00_visio_general/index_documental.md)
@@ -55,9 +55,10 @@ Lectura ràpida de la fase actual:
 - [Guia sessió a sessió del curs en 20 setmanes](docs/01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md)
 - [Revisió transversal del bloc pilotable de 20 setmanes](docs/01_programacio_modul/revisio_transversal_bloc_pilotable_20_setmanes.md)
 - [Ajustos finals abans de l'inici de curs](docs/01_programacio_modul/ajustos_finals_abans_inici_curs.md)
+- [Projectes base concretats del mòdul](docs/05_projectes_tecnics/projectes_base_concretats.md)
 - [Estat de producció actual del projecte](docs/00_visio_general/issues_inicials.md)
 
 ## Focus actual
-1. Mantindre el curs completament pilotable en `20` setmanes com a bloc coherent i estable.
-2. Donar per completada la revisió transversal del bloc pilotable i usar-la com a marc públic del paquet docent.
-3. Tindre en producció només els ajustos finals abans de l'inici de curs, sense reobrir l'arquitectura del paquet.
+1. Mantindre la `v1` prepilotatge preparada com a base estable i reusable del paquet docent.
+2. Tindre en producció els tres projectes base concretats del mòdul com a encàrrecs ja usables, comparables i defensables.
+3. Preparar el pas a apunts online per a alumnat i presentacions docents sense reobrir l'arquitectura principal del paquet.
