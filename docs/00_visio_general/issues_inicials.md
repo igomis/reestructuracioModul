@@ -26,7 +26,9 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PR-01` consolidat: pla de pilotatge real
 - `PR-02` consolidat: plantilles de recollida de feedback i incidències
 - `PR-03` consolidat: execució del pilotatge real
-- `PR-04` en producció: seguiment de l'execució real del pilotatge
+- `PR-04` consolidat: seguiment de l'execució real del pilotatge
+- `PP-01` en producció: versió prepilotatge v1
+- `PP-02` previst: backlog de millores abans del curs que ve
 - `PD-01` consolidat: guia sessió a sessió de `20` setmanes
 - `PD-02` consolidat: annex de suport i ampliació segons ritmes
 - `PD-03` consolidat: materials d'acompanyament d'aula
@@ -73,7 +75,9 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PR-01` consolidat: pla de pilotatge real a `docs/00_visio_general/pla_pilotatge_real.md`.
 - `PR-02` consolidat: plantilles de feedback i incidències a `docs/03_avaluacio/plantilla_recollida_feedback_pilotatge.md` i `docs/03_avaluacio/registre_incidents_i_ajustos_pilotatge.md`.
 - `PR-03` consolidat: execució del pilotatge real a `docs/00_visio_general/pla_execucio_pilotatge_real.md`.
-- `PR-04` en producció: seguiment de l'execució real del pilotatge a `docs/00_visio_general/seguiment_execucio_pilotatge.md`.
+- `PR-04` consolidat: seguiment de l'execució real del pilotatge a `docs/00_visio_general/seguiment_execucio_pilotatge.md`.
+- `PP-01` en producció: versió prepilotatge v1 a `docs/00_visio_general/versio_prepilotatge_v1.md`.
+- `PP-02` previst: backlog de millores abans del curs que ve a `docs/00_visio_general/backlog_millores_prepilotatge.md`.
 - `PD-01` consolidat: guia sessió a sessió de `20` setmanes a `docs/01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md`.
 - `PD-02` consolidat: annex de suport i ampliació segons ritmes a `docs/01_programacio_modul/annex_suport_i_ampliacio_ritmes.md`.
 - `PD-03` consolidat: materials d'acompanyament d'aula a `docs/04_materials/materials_aula/`.
@@ -102,6 +106,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `kit_pilotatge_setmanes_13_16.md`: inici operatiu de la segona avaluació pilotable, amb consolidació final de `R3`, obertura de `R4` i preparació de `R5`
 - `kit_pilotatge_setmanes_17_20.md`: tancament operatiu de la seqüència pilotable, amb `R5`, defensa final individual i clausura del pilotatge
 - `seguiment_execucio_pilotatge.md`: registre viu de l'execució real del pilotatge, dels checkpoints completats i dels ajustos que se'n deriven
+- `versio_prepilotatge_v1.md`: congelació de la base usable del paquet docent abans del pilotatge real
+- `backlog_millores_prepilotatge.md`: separació explícita de millores pendents, dubtes i decisions ajornades
 - `curs_executable_dwes_2_avaluacions.md`: versió unificada i reutilitzable del curs per a desplegament docent real
 - `paquet_docent_exportable.md`: lectura unificada del que forma el paquet docent complet i del que es pot transferir a altres contextos
 - `resum_executiu_paquet_docent.md`: entrada curta i compartible al model per a professorat que no ha seguit tot el procés
@@ -135,12 +141,12 @@ Criteri comú dels itineraris:
 - el repositori ja no està definint el model del curs; està preparant el seu desplegament real
 - el nucli del treball docent ja està documentat i visible: què es fa, quan es fa, amb quins materials i amb quins instruments es revisa
 - el nucli del model queda ja tancat i la fase d'apunts reals es dona per consolidada com a capa de materials directament usables en aula
-- el treball actual deixa el curs complet pilotable de punta a punta i obri la fase de seguiment de l'execució real del pilotatge
+- el treball actual deixa el paquet docent en condicions de congelar una `v1` prepilotatge estable i separa ja la base usable del backlog de millora
 - la lectura de treball compartit queda subordinada a un criteri estable d'acreditació individual: cada alumne ha de poder traçar, explicar, verificar i defensar la seua part
 - el reforç de densitat funcional dels reptes queda consolidat i passa a funcionar com a criteri estable de lectura del sistema
 
 ## Següent focus recomanat
-- millora iterativa del paquet després del pilotatge
-- ús real en aula amb seguiment individual verificable
+- millora iterativa del paquet abans del curs que ve
+- preparació de la `v1` prepilotatge i del backlog associat
 - aplicació d'ajustos immediats i priorització de millores per a una `v2`
 - mantindre alineació entre apunts, programació, avaluació i decisions de millora
