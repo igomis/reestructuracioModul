@@ -36,7 +36,8 @@ Lectura ràpida de la fase actual:
 - la implantació docent es calibra sobre un escenari orientatiu d'unes `20` setmanes i `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - Git/GitHub es tracta com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
 - el model admet moments de col·laboració limitada o de producte parcialment compartit, però el seguiment, la verificació, la defensa i l'acreditació es resolen individualment
-- amb el paquet docent en versió `1` funcional, els kits de pilotatge inicial ja comencen a cobrir fins al tancament de la primera avaluació i el focus passa a validar el model amb alumnat real, atenció a ritmes i acreditació individual verificable
+- amb el paquet docent en versió `1` funcional, la primera avaluació pilotable queda pràcticament completa i s'obri la construcció operativa de la segona avaluació
+- el focus immediat passa a validar el model amb alumnat real, atendre ritmes diferents i sostindre una acreditació individual verificable també quan hi haja context de producte compartit
 
 ## Documents clau de la fase actual
 - [Pla d'implantació docent del mòdul](docs/01_programacio_modul/pla_implantacio_docent.md)
@@ -67,6 +68,7 @@ Lectura ràpida de la fase actual:
 - [Kit de pilotatge de les setmanes 1-4](docs/01_programacio_modul/kit_pilotatge_setmanes_01_04.md)
 - [Kit de pilotatge de les setmanes 5-8](docs/01_programacio_modul/kit_pilotatge_setmanes_05_08.md)
 - [Kit de pilotatge de les setmanes 9-12](docs/01_programacio_modul/kit_pilotatge_setmanes_09_12.md)
+- [Kit de pilotatge de les setmanes 13-16](docs/01_programacio_modul/kit_pilotatge_setmanes_13_16.md)
 - [Pla de pilotatge real del mòdul](docs/00_visio_general/pla_pilotatge_real.md)
 - [Pla d'execució del pilotatge real](docs/00_visio_general/pla_execucio_pilotatge_real.md)
 - [Plantilla de recollida de feedback de pilotatge](docs/03_avaluacio/plantilla_recollida_feedback_pilotatge.md)
@@ -84,6 +86,6 @@ Lectura ràpida de la fase actual:
 - [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md)
 
 ## Focus actual
-1. Construir els kits de pilotatge inicial perquè la primera avaluació quede quasi completament pilotable.
-2. Validar el model amb alumnat real, amb atenció explícita a ritmes diferents, càrrega, evidències i acreditació individual verificable.
-3. Estendre la capa pilotable cap a la segona avaluació sense perdre coherència entre reptes, materials, checkpoints i criteri individual d'avaluació.
+1. Tindre la primera avaluació pilotable pràcticament completa com a bloc docent usable.
+2. Construir la segona avaluació pilotable amb consolidació de `R3`, obertura de `R4` i preparació de `R5`.
+3. Validar el model amb alumnat real, amb atenció explícita a ritmes diferents, càrrega, evidències i acreditació individual verificable.
