@@ -33,6 +33,14 @@ nav:
           - Repte 3: alumnat/reptes/repte_03.md
           - Repte 4: alumnat/reptes/repte_04.md
           - Repte 5: alumnat/reptes/repte_05.md
+  - Presentacions:
+      - Visio del curs: 07_presentacions/presentacio_00_visio_curs.md
+      - Repte 1: 07_presentacions/presentacio_01_repte_1.md
+      - Repte 2: 07_presentacions/presentacio_02_repte_2.md
+      - Repte 3: 07_presentacions/presentacio_03_repte_3.md
+      - Repte 4: 07_presentacions/presentacio_04_repte_4.md
+      - Repte 5: 07_presentacions/presentacio_05_repte_5.md
+      - Avaluacio i defensa: 07_presentacions/presentacio_06_avaluacio_i_defensa.md
   - Index documental: 00_visio_general/index_documental.md
   - Visio general:
       - Presentacio breu: 00_visio_general/presentacio_model_dwes_reptes_ia.md

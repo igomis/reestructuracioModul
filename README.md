@@ -22,10 +22,12 @@ Repositori de treball per al redisseny del mòdul **Desenvolupament d’Aplicaci
 - `docs/04_materials/` mapa i adaptació d’apunts
 - `docs/05_projectes_tecnics/` backend, IA, n8n, integracions
 - `docs/06_plantilles/` plantilles reutilitzables
+- `docs/07_presentacions/` micro-presentacions docents de curs, reptes i avaluació
 
 ## Navegació documental
 - Índex central: [Index documental del projecte](docs/00_visio_general/index_documental.md)
 - Accés d'alumnat: [portal d'apunts online](docs/alumnat/index.md)
+- Accés docent breu: [micro-presentacions del curs](docs/07_presentacions/presentacio_00_visio_curs.md)
 - Índexs per blocs: [Programació del mòdul](docs/01_programacio_modul/index.md), [Avaluació](docs/03_avaluacio/index.md) i [Materials](docs/04_materials/index.md)
 - Consulta web: la documentació queda preparada amb [mkdocs.yml](mkdocs.yml) i el workflow [docs.yml](.github/workflows/docs.yml) per publicar-se a GitHub Pages
 - Primer desplegament: cal activar una vegada `Settings > Pages > Build and deployment > Source: GitHub Actions` al repositori `igomis/reestructuracioModul`
@@ -62,4 +64,4 @@ Lectura ràpida de la fase actual:
 ## Focus actual
 1. Mantindre la `v1` prepilotatge preparada com a base estable i reusable del paquet docent.
 2. Tindre en producció els tres projectes base concretats del mòdul com a encàrrecs ja usables, comparables i defensables.
-3. Consolidar el nou accés d'alumnat i preparar presentacions docents breus sense reobrir l'arquitectura principal del paquet.
+3. Consolidar el portal d'alumnat i les micro-presentacions docents, i decidir només després si convé convertir-les en format compartible.
