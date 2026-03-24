@@ -32,8 +32,8 @@ Repositori de treball per al redisseny del mòdul **Desenvolupament d’Aplicaci
 - Índex central: [Index documental del projecte](docs/00_visio_general/index_documental.md)
 - Accés d'alumnat: [portal d'apunts online](docs/alumnat/index.md)
 - Consulta tècnica d'alumnat: [guia breu per dubtes reals del curs](docs/alumnat/consulta_tecnica/index.md)
-- Materials de classe compartibles: [peces curtes per a aula](docs/08_materials_compartibles/index.md), ara ja ampliades a `R1-R5`, checkpoints i tancament breu de defensa
 - Paquets d'ús directe: [agrupacions per moment del curs](docs/09_paquets_ús_directe/index.md) per saber què obrir, què donar i què usar en checkpoint o defensa
+- Materials de classe compartibles: [peces curtes per a aula](docs/08_materials_compartibles/index.md), ara ja ampliades a `R1-R5`, checkpoints i tancament breu de defensa
 - Accés de professorat: [portal docent de navegació ràpida](docs/professorat/index.md)
 - Accés docent breu: [micro-presentacions del curs](docs/07_presentacions/presentacio_00_visio_curs.md)
 - Índexs per blocs: [Programació del mòdul](docs/01_programacio_modul/index.md), [Avaluació](docs/03_avaluacio/index.md) i [Materials](docs/04_materials/index.md)
@@ -56,6 +56,7 @@ Lectura ràpida de la fase actual:
 - el model admet moments de col·laboració limitada o de producte parcialment compartit, però el seguiment, la verificació, la defensa i l'acreditació es resolen individualment
 - la seqüència docent completa del curs ja queda pilotable de punta a punta en un bloc coherent de `20` setmanes
 - la `v1` prepilotatge queda preparada com a base estable i els projectes base concretats passen a producció com a encàrrec docent més tancat i més defensable
+- la capa web per a alumnat i professorat, els materials compartibles i els paquets d'ús directe ja queden publicats com a accessos curts per a ús real
 
 ## Documents clau de la fase actual
 - [Index documental del projecte](docs/00_visio_general/index_documental.md)
@@ -73,4 +74,4 @@ Lectura ràpida de la fase actual:
 1. Mantindre la `v1` prepilotatge preparada com a base estable i reusable del paquet docent.
 2. Tindre en producció els tres projectes base concretats del mòdul com a encàrrecs ja usables, comparables i defensables.
 3. Mantindre visible i usable el doble accés web per a alumnat i professorat sense duplicar la documentació llarga.
-4. Preparar materials de classe compartibles sense reobrir l'arquitectura principal del paquet.
+4. Mantindre el paquet llest per a inici de curs amb ajustos només menors, sense reobrir l'arquitectura principal.

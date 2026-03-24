@@ -17,6 +17,7 @@ El punt de partida ja és clar:
 - criteri d'acreditació individual en context de producte compartit o treball coordinat
 - checkpoint de pas de `R1` a `R2`, per evitar arrencar auth sobre una base falsa
 - accessibilitat real dels materials que s'han d'entregar de manera immediata a l'alumnat
+- coherència pràctica entre portals web, materials compartibles i paquets d'ús directe del primer tram
 
 ## Ajustos menors que sí convé fer abans de setembre
 - revisar enllaços, referències creuades i navegació entre documents clau del primer tram
@@ -36,6 +37,7 @@ El punt de partida ja és clar:
 - enunciat base del projecte i projecte base del curs
 - guies comunes de Git/GitHub, `README`, `ADR` o equivalent i ús verificable de la IA
 - materials de sessió de `R1` i paquet d'arrancada del primer tram
+- portals web d'alumnat i professorat, materials compartibles i paquets d'ús directe del tram inicial
 - mini briefings, checkpoints curts, plantilles de feedback ràpid i fulls de treball base
 - sistema d'evidències, rúbrica base i criteri de defensa individual
 - materials de referència docent per als primers modelatges curts
@@ -53,6 +55,7 @@ El punt de partida ja és clar:
 - revisió transversal del bloc `1-20` assumida com a marc estable
 - paquet d'arrancada de `R1` preparat i accessible
 - materials d'entrega immediata verificats
+- paquets d'ús directe del primer tram revisats i coherents amb els materials compartibles
 - demos curtes de referència triades i assajades
 - criteri d'itineraris i de dominis ja tancat
 - pauta de `README`, traçabilitat, proves i AI log fixada

@@ -40,6 +40,7 @@ Es consideren prou madures per entrar en prepilotatge:
 Lectura pràctica:
 - el paquet ja es pot revisar, preparar i activar com a sistema complet
 - el que queda pendent és afinament i priorització, no construcció del nucli docent
+- les capes web d'alumnat i professorat, els materials compartibles i els paquets d'ús directe no redefinixen la `v1`: la fan més consultable i més fàcil d'usar
 
 ## Què queda fora d'esta versió
 Queda fora de la `v1` prepilotatge:

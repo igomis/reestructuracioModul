@@ -55,14 +55,12 @@ nav:
       - Com avaluar i fer seguiment: professorat/com_avaluar_i_fer_seguiment.md
       - Com gestionar ritmes i suport: professorat/com_gestionar_ritmes_i_suport.md
       - Com pilotar i ajustar: professorat/com_pilotar_i_ajustar.md
-  - Presentacions:
-      - Visio del curs: 07_presentacions/presentacio_00_visio_curs.md
-      - Repte 1: 07_presentacions/presentacio_01_repte_1.md
-      - Repte 2: 07_presentacions/presentacio_02_repte_2.md
-      - Repte 3: 07_presentacions/presentacio_03_repte_3.md
-      - Repte 4: 07_presentacions/presentacio_04_repte_4.md
-      - Repte 5: 07_presentacions/presentacio_05_repte_5.md
-      - Avaluacio i defensa: 07_presentacions/presentacio_06_avaluacio_i_defensa.md
+  - Paquets d'ús directe:
+      - Inici: 09_paquets_ús_directe/index.md
+      - Paquet d'inici de curs: 09_paquets_ús_directe/paquet_inici_curs.md
+      - Paquet de pas a R2: 09_paquets_ús_directe/paquet_pas_a_r2.md
+      - Paquet de pas a R3-R4: 09_paquets_ús_directe/paquet_pas_a_r3_r4.md
+      - Paquet de tancament i defensa: 09_paquets_ús_directe/paquet_tancament_i_defensa.md
   - Materials compartibles:
       - Inici: 08_materials_compartibles/index.md
       - Briefing inicial del curs: 08_materials_compartibles/briefing_inicial_curs.md
@@ -77,12 +75,14 @@ nav:
       - Guio de defensa individual breu: 08_materials_compartibles/guio_defensa_individual_breu.md
       - Guio de tancament del producte i defensa final: 08_materials_compartibles/guio_tancament_producte_i_defensa_final.md
       - Guio d'ús de la IA per a l'alumnat: 08_materials_compartibles/guio_ús_ia_per_a_lalumnat.md
-  - Paquets d'ús directe:
-      - Inici: 09_paquets_ús_directe/index.md
-      - Paquet d'inici de curs: 09_paquets_ús_directe/paquet_inici_curs.md
-      - Paquet de pas a R2: 09_paquets_ús_directe/paquet_pas_a_r2.md
-      - Paquet de pas a R3-R4: 09_paquets_ús_directe/paquet_pas_a_r3_r4.md
-      - Paquet de tancament i defensa: 09_paquets_ús_directe/paquet_tancament_i_defensa.md
+  - Presentacions:
+      - Visio del curs: 07_presentacions/presentacio_00_visio_curs.md
+      - Repte 1: 07_presentacions/presentacio_01_repte_1.md
+      - Repte 2: 07_presentacions/presentacio_02_repte_2.md
+      - Repte 3: 07_presentacions/presentacio_03_repte_3.md
+      - Repte 4: 07_presentacions/presentacio_04_repte_4.md
+      - Repte 5: 07_presentacions/presentacio_05_repte_5.md
+      - Avaluacio i defensa: 07_presentacions/presentacio_06_avaluacio_i_defensa.md
   - Index documental: 00_visio_general/index_documental.md
   - Visio general:
       - Presentacio breu: 00_visio_general/presentacio_model_dwes_reptes_ia.md
