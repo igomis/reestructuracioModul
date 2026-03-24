@@ -38,6 +38,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PD-07` consolidat: kit de pilotatge setmanes `9-12`
 - `PD-08` consolidat: kit de pilotatge setmanes `13-16`
 - `PD-09` consolidat: kit de pilotatge setmanes `17-20`
+- `PD-10` en producció: revisió transversal del bloc pilotable `1-20`
 - `AV-02` en producció: alineació del seguiment i l'avaluació amb criteri individual
 - `RC-11` consolidat: reforç del nivell professional dels reptes i del seu llindar de no trivialitat
 
@@ -87,6 +88,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PD-07` consolidat: kit operatiu del tram `9-12` a `docs/01_programacio_modul/kit_pilotatge_setmanes_09_12.md`.
 - `PD-08` consolidat: kit operatiu del tram `13-16` a `docs/01_programacio_modul/kit_pilotatge_setmanes_13_16.md`.
 - `PD-09` consolidat: kit operatiu del tram `17-20` a `docs/01_programacio_modul/kit_pilotatge_setmanes_17_20.md`.
+- `PD-10` en producció: revisió transversal del bloc pilotable `1-20` a `docs/01_programacio_modul/revisio_transversal_bloc_pilotable_20_setmanes.md`.
 - `AV-02` en producció: revisió de plantilles i instruments per alinear seguiment, verificació, defensa i ús verificable de la IA amb criteri individual.
 - `RC-11` consolidat: revisió del nivell professional dels Reptes `1-5`, del projecte base i de la rúbrica per evitar lectures trivials del model.
 
@@ -105,6 +107,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `kit_pilotatge_setmanes_09_12.md`: tancament operatiu del primer bloc pilotable, amb entrada a `R3`, persistència inicial i checkpoint final de la primera avaluació
 - `kit_pilotatge_setmanes_13_16.md`: inici operatiu de la segona avaluació pilotable, amb consolidació final de `R3`, obertura de `R4` i preparació de `R5`
 - `kit_pilotatge_setmanes_17_20.md`: tancament operatiu de la seqüència pilotable, amb `R5`, defensa final individual i clausura del pilotatge
+- `revisio_transversal_bloc_pilotable_20_setmanes.md`: verificació comuna de coherència del bloc pilotable complet i de les transicions `R1 -> R5`
 - `seguiment_execucio_pilotatge.md`: registre viu de l'execució real del pilotatge, dels checkpoints completats i dels ajustos que se'n deriven
 - `versio_prepilotatge_v1.md`: congelació de la base usable del paquet docent abans del pilotatge real
 - `backlog_millores_prepilotatge.md`: separació explícita de millores pendents, dubtes i decisions ajornades
@@ -142,13 +145,14 @@ Criteri comú dels itineraris:
 - el repositori ja no està definint el model del curs; està preparant el seu desplegament real
 - el nucli del treball docent ja està documentat i visible: què es fa, quan es fa, amb quins materials i amb quins instruments es revisa
 - el nucli del model queda ja tancat i la fase d'apunts reals es dona per consolidada com a capa de materials directament usables en aula
+- el bloc pilotable complet de `20` setmanes queda ja revisat com a seqüència coherent i usable de punta a punta
 - la `v1` prepilotatge queda ja congelada com a base estable i el backlog de millora queda separat del nucli del sistema
-- el treball actual baixa ara al nivell de preparació docent directa per a l'inici de curs, amb guions, demos i materials no improvisats
+- el treball actual queda centrat en ajustos finals abans de l'inici de curs i en preparació docent directa, no en nous blocs de seqüència
 - la lectura de treball compartit queda subordinada a un criteri estable d'acreditació individual: cada alumne ha de poder traçar, explicar, verificar i defensar la seua part
 - el reforç de densitat funcional dels reptes queda consolidat i passa a funcionar com a criteri estable de lectura del sistema
 
 ## Següent focus recomanat
-- ajustos finals abans de l'inici de curs
+- ajustos finals abans d'inici de curs
 - preparació docent directa del primer tram, dels modelatges i dels materials d'entrega immediata
 - revisió del backlog de millora sense reobrir la `v1` estable
 - mantindre alineació entre apunts, programació, avaluació i decisions de millora

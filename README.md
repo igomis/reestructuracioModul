@@ -36,8 +36,8 @@ Lectura ràpida de la fase actual:
 - la implantació docent es calibra sobre un escenari orientatiu d'unes `20` setmanes i `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - Git/GitHub es tracta com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
 - el model admet moments de col·laboració limitada o de producte parcialment compartit, però el seguiment, la verificació, la defensa i l'acreditació es resolen individualment
-- la `v1` prepilotatge ja queda congelada com a base estable i usable del paquet docent
-- el focus immediat passa a la preparació docent directa del curs que ve, amb demos, modelatges i materials llestos, i amb el backlog de millora separat de la base estable
+- la seqüència docent completa del curs ja queda pilotable de punta a punta en un bloc coherent de `20` setmanes
+- la `v1` prepilotatge continua congelada com a base estable i el focus immediat passa a ajustos finals abans de l'inici de curs
 
 ## Documents clau de la fase actual
 - [Pla d'implantació docent del mòdul](docs/01_programacio_modul/pla_implantacio_docent.md)
@@ -70,6 +70,7 @@ Lectura ràpida de la fase actual:
 - [Kit de pilotatge de les setmanes 9-12](docs/01_programacio_modul/kit_pilotatge_setmanes_09_12.md)
 - [Kit de pilotatge de les setmanes 13-16](docs/01_programacio_modul/kit_pilotatge_setmanes_13_16.md)
 - [Kit de pilotatge de les setmanes 17-20](docs/01_programacio_modul/kit_pilotatge_setmanes_17_20.md)
+- [Revisió transversal del bloc pilotable de 20 setmanes](docs/01_programacio_modul/revisio_transversal_bloc_pilotable_20_setmanes.md)
 - [Pla de pilotatge real del mòdul](docs/00_visio_general/pla_pilotatge_real.md)
 - [Pla d'execució del pilotatge real](docs/00_visio_general/pla_execucio_pilotatge_real.md)
 - [Seguiment de l'execució real del pilotatge](docs/00_visio_general/seguiment_execucio_pilotatge.md)
@@ -91,6 +92,6 @@ Lectura ràpida de la fase actual:
 - [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md)
 
 ## Focus actual
-1. Mantindre congelada la `v1` prepilotatge com a base estable i usable del paquet docent.
-2. Preparar de manera directa l'ús docent real del paquet per al curs que ve, amb guions, demos i materials llestos abans de setembre.
-3. Mantindre el backlog de millora separat de la base estable i usar-lo només per a ajustos finals abans de l'inici de curs.
+1. Mantindre el curs completament pilotable en `20` setmanes com a bloc coherent i estable.
+2. Tancar ajustos finals abans de l'inici de curs, sense reobrir l'arquitectura del paquet.
+3. Mantindre separats la `v1` estable, la preparació docent directa i el backlog de millora.
