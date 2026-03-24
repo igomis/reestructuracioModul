@@ -31,7 +31,7 @@ Repositori de treball per al redisseny del mòdul **Desenvolupament d’Aplicaci
 - Índex central: [Index documental del projecte](docs/00_visio_general/index_documental.md)
 - Accés d'alumnat: [portal d'apunts online](docs/alumnat/index.md)
 - Consulta tècnica d'alumnat: [guia breu per dubtes reals del curs](docs/alumnat/consulta_tecnica/index.md)
-- Materials de classe compartibles: [peces curtes per a aula](docs/08_materials_compartibles/index.md)
+- Materials de classe compartibles: [peces curtes per a aula](docs/08_materials_compartibles/index.md), ara ja ampliades a `R1-R5`, checkpoints i tancament breu de defensa
 - Accés de professorat: [portal docent de navegació ràpida](docs/professorat/index.md)
 - Accés docent breu: [micro-presentacions del curs](docs/07_presentacions/presentacio_00_visio_curs.md)
 - Índexs per blocs: [Programació del mòdul](docs/01_programacio_modul/index.md), [Avaluació](docs/03_avaluacio/index.md) i [Materials](docs/04_materials/index.md)
