@@ -19,7 +19,7 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - Inici: index.md
+  - Portada: index.md
   - Alumnat:
       - Inici alumnat: alumnat/index.md
       - Com funciona el curs: alumnat/com_funciona_el_curs.md
@@ -33,6 +33,13 @@ nav:
           - Repte 3: alumnat/reptes/repte_03.md
           - Repte 4: alumnat/reptes/repte_04.md
           - Repte 5: alumnat/reptes/repte_05.md
+  - Professorat:
+      - Inici professorat: professorat/index.md
+      - Com preparar el curs: professorat/com_preparar_el_curs.md
+      - Com conduir els reptes: professorat/com_conduir_els_reptes.md
+      - Com avaluar i fer seguiment: professorat/com_avaluar_i_fer_seguiment.md
+      - Com gestionar ritmes i suport: professorat/com_gestionar_ritmes_i_suport.md
+      - Com pilotar i ajustar: professorat/com_pilotar_i_ajustar.md
   - Presentacions:
       - Visio del curs: 07_presentacions/presentacio_00_visio_curs.md
       - Repte 1: 07_presentacions/presentacio_01_repte_1.md

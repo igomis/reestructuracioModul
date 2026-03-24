@@ -16,6 +16,8 @@ Repositori de treball per al redisseny del mòdul **Desenvolupament d’Aplicaci
 
 ## Estructura
 - `docs/00_visio_general/` visió global del mòdul
+- `docs/alumnat/` accés web sintètic per a alumnat
+- `docs/professorat/` accés web sintètic per a professorat
 - `docs/01_programacio_modul/` nova programació
 - `docs/02_reptes/` fitxes dels reptes
 - `docs/03_avaluacio/` rúbriques, checklists i evidències
@@ -27,6 +29,7 @@ Repositori de treball per al redisseny del mòdul **Desenvolupament d’Aplicaci
 ## Navegació documental
 - Índex central: [Index documental del projecte](docs/00_visio_general/index_documental.md)
 - Accés d'alumnat: [portal d'apunts online](docs/alumnat/index.md)
+- Accés de professorat: [portal docent de navegació ràpida](docs/professorat/index.md)
 - Accés docent breu: [micro-presentacions del curs](docs/07_presentacions/presentacio_00_visio_curs.md)
 - Índexs per blocs: [Programació del mòdul](docs/01_programacio_modul/index.md), [Avaluació](docs/03_avaluacio/index.md) i [Materials](docs/04_materials/index.md)
 - Consulta web: la documentació queda preparada amb [mkdocs.yml](mkdocs.yml) i el workflow [docs.yml](.github/workflows/docs.yml) per publicar-se a GitHub Pages
@@ -64,4 +67,5 @@ Lectura ràpida de la fase actual:
 ## Focus actual
 1. Mantindre la `v1` prepilotatge preparada com a base estable i reusable del paquet docent.
 2. Tindre en producció els tres projectes base concretats del mòdul com a encàrrecs ja usables, comparables i defensables.
-3. Consolidar la navegació alumne/professor i preparar materials de classe compartibles sense reobrir l'arquitectura principal del paquet.
+3. Mantindre visible i usable el doble accés web per a alumnat i professorat sense duplicar la documentació llarga.
+4. Preparar materials de classe compartibles sense reobrir l'arquitectura principal del paquet.

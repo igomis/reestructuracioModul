@@ -31,7 +31,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PP-02` en producció: preparació docent directa per al curs que ve
 - `PP-03` consolidat: ajustos finals abans d'inici de curs
 - `PJ-01` consolidat: projectes base concretats
-- `AL-01` en producció: apunts online per a alumnat
+- `AL-01` consolidat: apunts online per a alumnat
+- `WEB-02` en producció: navegació alumne/professor
 - `PRS-01` en producció: micro-presentacions docents
 - `PD-01` consolidat: guia sessió a sessió de `20` setmanes
 - `PD-02` consolidat: annex de suport i ampliació segons ritmes
@@ -67,6 +68,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `AV-01` consolidat amb la revisió de la rúbrica general.
 - `PA-01` consolidat amb la programació d'aula per repte.
 - `PJ-01` consolidat amb la concreció dels tres projectes base del mòdul.
+- `AL-01` consolidat amb el portal d'apunts online per a alumnat publicat dins de la navegació web.
 
 ## Paquets en producció o consolidació final
 - `MG-05` continua obert perquè els materials del Repte 4 encara han de passar una ronda final de consolidació pública i revisió de coherència.
@@ -85,7 +87,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PP-01` consolidat: versió prepilotatge v1 a `docs/00_visio_general/versio_prepilotatge_v1.md`.
 - `PP-02` en producció: preparació docent directa per al curs que ve a `docs/01_programacio_modul/preparacio_docent_directa_curs_que_ve.md`.
 - `PP-03` consolidat: ajustos finals abans d'inici de curs a `docs/01_programacio_modul/ajustos_finals_abans_inici_curs.md`.
-- `AL-01` en producció: apunts online per a alumnat a `docs/alumnat/index.md`.
+- `AL-01` consolidat: apunts online per a alumnat a `docs/alumnat/index.md`.
+- `WEB-02` en producció: navegació alumne/professor a `docs/professorat/index.md`, `docs/alumnat/index.md` i `mkdocs.yml`.
 - `PRS-01` en producció: micro-presentacions docents a `docs/07_presentacions/`.
 - `PD-01` consolidat: guia sessió a sessió de `20` setmanes a `docs/01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md`.
 - `PD-02` consolidat: annex de suport i ampliació segons ritmes a `docs/01_programacio_modul/annex_suport_i_ampliacio_ritmes.md`.
@@ -157,14 +160,15 @@ Criteri comú dels itineraris:
 - el bloc pilotable complet de `20` setmanes queda ja revisat com a seqüència coherent i usable de punta a punta
 - la `v1` prepilotatge queda ja congelada com a base estable i el backlog de millora queda separat del nucli del sistema
 - els ajustos finals abans de l'inici de curs i la concreció dels projectes base queden consolidats com a capa estable del paquet
-- el repositori obri ara una porta d'entrada d'apunts online pensada específicament per a alumnat, derivada de la documentació ja existent i orientada a consulta web
-- el portal d'alumnat queda prou madur per passar a capa consolidada i s'obri ara una sèrie curta de micro-presentacions per explicar curs, reptes i avaluació en aula
-- el treball actual queda centrat en consolidar la navegació alumne/professor i preparar materials de classe compartibles, no en reobrir la seqüència ni la nova arquitectura
+- el portal d'alumnat queda ja consolidat com a capa curta de consulta web derivada de la documentació existent
+- el repositori obri ara una segona porta d'entrada específica per a professorat i posa en producció una navegació diferenciada per perfil
+- la sèrie curta de micro-presentacions continua disponible com a suport docent breu dins de la mateixa web
+- el treball actual passa a materials de classe compartibles, no a reobrir la seqüència ni la nova arquitectura
 - la lectura de treball compartit queda subordinada a un criteri estable d'acreditació individual: cada alumne ha de poder traçar, explicar, verificar i defensar la seua part
 - el reforç de densitat funcional dels reptes queda consolidat i passa a funcionar com a criteri estable de lectura del sistema
 
 ## Següent focus recomanat
-- següent focus: consolidar la navegació alumne/professor i preparar materials de classe compartibles
-- revisar si el portal d'alumnat i les peces docents breus es lliguen bé dins de la mateixa web sense duplicació innecessària
+- següent focus: materials de classe compartibles
+- revisar si els accessos d'alumnat, professorat i les peces docents breus es lliguen bé dins de la mateixa web sense duplicació innecessària
 - mantindre alineació entre apunts, programació, avaluació, projecte base i decisions de millora
 - avançar en peces noves sense reobrir la `v1` estable ni la seqüència principal del curs

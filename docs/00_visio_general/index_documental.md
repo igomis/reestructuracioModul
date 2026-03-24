@@ -5,6 +5,14 @@ Este document organitza l'acces al repositori per camins d'us i no com a llista 
 
 En la versio web amb MkDocs, esta pagina funciona tambe com a portada principal de la documentacio.
 
+## Dos camins principals de consulta
+- [Alumnat](../alumnat/index.md): entrada curta per entendre com funciona el curs, com es valora, com usar la IA i com llegir `R1-R5`.
+- [Professorat](../professorat/index.md): entrada curta per preparar el curs, conduir els reptes, avaluar, fer seguiment i ajustar el pilotatge.
+
+Criteri d'us:
+- si busques orientacio de treball i consulta rapida, entra per perfil
+- si busques detall complet del paquet docent, entra pels blocs documentals
+
 ## Si vull entendre el projecte en 10 minuts
 - [Presentacio breu del model DWES](presentacio_model_dwes_reptes_ia.md): versio curta del model per reptes amb IA.
 - [Resum executiu del paquet docent](resum_executiu_paquet_docent.md): vista general del paquet ja consolidat.
@@ -48,7 +56,9 @@ En la versio web amb MkDocs, esta pagina funciona tambe com a portada principal 
 - [Model d'itineraris tecnologiques](../01_programacio_modul/model_itineraris_tecnologics.md): criteri per comparar stacks sense canviar el model.
 - [Criteris de ponderacio dels reptes amb IA](../03_avaluacio/criteris_ponderacio_reptes_amb_ia.md): base d'avaluacio adaptable.
 
-## Acces per blocs
+## Acces per perfils i blocs
+- [Alumnat](../alumnat/index.md)
+- [Professorat](../professorat/index.md)
 - [Visio general](../00_visio_general/index_documental.md)
 - [Programacio del modul](../01_programacio_modul/index.md)
 - [Avaluacio](../03_avaluacio/index.md)
