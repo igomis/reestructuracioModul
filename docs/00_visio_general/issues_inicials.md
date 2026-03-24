@@ -33,7 +33,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PD-05` consolidat: kit de pilotatge setmanes `1-4`
 - `PD-06` consolidat: kit de pilotatge setmanes `5-8`
 - `PD-07` consolidat: kit de pilotatge setmanes `9-12`
-- `PD-08` en producció: kit de pilotatge setmanes `13-16`
+- `PD-08` consolidat: kit de pilotatge setmanes `13-16`
+- `PD-09` en producció: kit de pilotatge setmanes `17-20`
 - `AV-02` en producció: alineació del seguiment i l'avaluació amb criteri individual
 - `RC-11` consolidat: reforç del nivell professional dels reptes i del seu llindar de no trivialitat
 
@@ -78,7 +79,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PD-05` consolidat: kit operatiu de pilotatge inicial a `docs/01_programacio_modul/kit_pilotatge_setmanes_01_04.md`.
 - `PD-06` consolidat: kit operatiu del segon tram inicial a `docs/01_programacio_modul/kit_pilotatge_setmanes_05_08.md`.
 - `PD-07` consolidat: kit operatiu del tram `9-12` a `docs/01_programacio_modul/kit_pilotatge_setmanes_09_12.md`.
-- `PD-08` en producció: kit operatiu del tram `13-16` a `docs/01_programacio_modul/kit_pilotatge_setmanes_13_16.md`.
+- `PD-08` consolidat: kit operatiu del tram `13-16` a `docs/01_programacio_modul/kit_pilotatge_setmanes_13_16.md`.
+- `PD-09` en producció: kit operatiu del tram `17-20` a `docs/01_programacio_modul/kit_pilotatge_setmanes_17_20.md`.
 - `AV-02` en producció: revisió de plantilles i instruments per alinear seguiment, verificació, defensa i ús verificable de la IA amb criteri individual.
 - `RC-11` consolidat: revisió del nivell professional dels Reptes `1-5`, del projecte base i de la rúbrica per evitar lectures trivials del model.
 
@@ -96,6 +98,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `kit_pilotatge_setmanes_05_08.md`: continuació operativa del pilotatge inicial, centrada en el desplegament de `R2` i la preparació d'entrada a `R3`
 - `kit_pilotatge_setmanes_09_12.md`: tancament operatiu del primer bloc pilotable, amb entrada a `R3`, persistència inicial i checkpoint final de la primera avaluació
 - `kit_pilotatge_setmanes_13_16.md`: inici operatiu de la segona avaluació pilotable, amb consolidació final de `R3`, obertura de `R4` i preparació de `R5`
+- `kit_pilotatge_setmanes_17_20.md`: tancament operatiu de la seqüència pilotable, amb `R5`, defensa final individual i clausura del pilotatge
 - `curs_executable_dwes_2_avaluacions.md`: versió unificada i reutilitzable del curs per a desplegament docent real
 - `paquet_docent_exportable.md`: lectura unificada del que forma el paquet docent complet i del que es pot transferir a altres contextos
 - `resum_executiu_paquet_docent.md`: entrada curta i compartible al model per a professorat que no ha seguit tot el procés
@@ -129,12 +132,12 @@ Criteri comú dels itineraris:
 - el repositori ja no està definint el model del curs; està preparant el seu desplegament real
 - el nucli del treball docent ja està documentat i visible: què es fa, quan es fa, amb quins materials i amb quins instruments es revisa
 - el nucli del model queda ja tancat i la fase d'apunts reals es dona per consolidada com a capa de materials directament usables en aula
-- el treball actual deixa la primera avaluació pràcticament completa com a bloc pilotable i obri la construcció operativa de la segona avaluació
+- el treball actual deixa el curs quasi totalment pilotable com a seqüència completa de dues avaluacions i entra en tancament setmanal de la capa operativa
 - la lectura de treball compartit queda subordinada a un criteri estable d'acreditació individual: cada alumne ha de poder traçar, explicar, verificar i defensar la seua part
 - el reforç de densitat funcional dels reptes queda consolidat i passa a funcionar com a criteri estable de lectura del sistema
 
 ## Següent focus recomanat
+- execució real del pilotatge complet i recollida de feedback
 - ús real en aula amb seguiment individual verificable
-- completar la seqüència pilotable fins a la setmana `20`
-- recollida de feedback i millora iterativa del paquet docent
+- aplicació d'ajustos immediats i priorització de millores per a una `v2`
 - mantindre alineació entre apunts, programació, avaluació i decisions de millora

@@ -36,8 +36,8 @@ Lectura ràpida de la fase actual:
 - la implantació docent es calibra sobre un escenari orientatiu d'unes `20` setmanes i `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - Git/GitHub es tracta com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
 - el model admet moments de col·laboració limitada o de producte parcialment compartit, però el seguiment, la verificació, la defensa i l'acreditació es resolen individualment
-- amb el paquet docent en versió `1` funcional, la primera avaluació pilotable queda pràcticament completa i s'obri la construcció operativa de la segona avaluació
-- el focus immediat passa a validar el model amb alumnat real, atendre ritmes diferents i sostindre una acreditació individual verificable també quan hi haja context de producte compartit
+- amb el paquet docent en versió `1` funcional, el curs complet queda quasi totalment pilotable com a seqüència usable dins de les dues primeres avaluacions
+- el tancament de la seqüència setmanal fins a la setmana `20` entra en producció i el focus següent passa a l'execució real del pilotatge complet amb alumnat, ritmes i acreditació individual verificable
 
 ## Documents clau de la fase actual
 - [Pla d'implantació docent del mòdul](docs/01_programacio_modul/pla_implantacio_docent.md)
@@ -69,6 +69,7 @@ Lectura ràpida de la fase actual:
 - [Kit de pilotatge de les setmanes 5-8](docs/01_programacio_modul/kit_pilotatge_setmanes_05_08.md)
 - [Kit de pilotatge de les setmanes 9-12](docs/01_programacio_modul/kit_pilotatge_setmanes_09_12.md)
 - [Kit de pilotatge de les setmanes 13-16](docs/01_programacio_modul/kit_pilotatge_setmanes_13_16.md)
+- [Kit de pilotatge de les setmanes 17-20](docs/01_programacio_modul/kit_pilotatge_setmanes_17_20.md)
 - [Pla de pilotatge real del mòdul](docs/00_visio_general/pla_pilotatge_real.md)
 - [Pla d'execució del pilotatge real](docs/00_visio_general/pla_execucio_pilotatge_real.md)
 - [Plantilla de recollida de feedback de pilotatge](docs/03_avaluacio/plantilla_recollida_feedback_pilotatge.md)
@@ -86,6 +87,6 @@ Lectura ràpida de la fase actual:
 - [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md)
 
 ## Focus actual
-1. Tindre la primera avaluació pilotable pràcticament completa com a bloc docent usable.
-2. Construir la segona avaluació pilotable amb consolidació de `R3`, obertura de `R4` i preparació de `R5`.
-3. Validar el model amb alumnat real, amb atenció explícita a ritmes diferents, càrrega, evidències i acreditació individual verificable.
+1. Deixar el curs complet quasi totalment pilotable com a seqüència usable de dues avaluacions.
+2. Tancar en producció la seqüència setmanal fins a la setmana `20`, amb `R5`, defensa final i clausura del pilotatge.
+3. Executar el pilotatge complet en aula real, amb recollida de feedback, atenció a ritmes i acreditació individual verificable.
