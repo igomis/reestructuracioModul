@@ -1,0 +1,84 @@
+site_name: Reestructuracio del modul DWES
+site_description: Documentacio del redisseny del modul DWES per reptes, evidencies autentiques i IA verificable.
+site_url: https://igomis.github.io/reestructuracioModul/
+repo_url: https://github.com/igomis/reestructuracioModul
+repo_name: igomis/reestructuracioModul
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
+
+theme:
+  name: readthedocs
+
+plugins:
+  - search
+
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Inici: 00_visio_general/index_documental.md
+  - Visio general:
+      - Index documental: 00_visio_general/index_documental.md
+      - Presentacio breu: 00_visio_general/presentacio_model_dwes_reptes_ia.md
+      - Resum executiu: 00_visio_general/resum_executiu_paquet_docent.md
+      - Paquet docent exportable: 00_visio_general/paquet_docent_exportable.md
+      - Versio prepilotatge v1: 00_visio_general/versio_prepilotatge_v1.md
+      - Backlog de millores: 00_visio_general/backlog_millores_prepilotatge.md
+      - Estat de produccio: 00_visio_general/issues_inicials.md
+  - Programacio del modul:
+      - Index: 01_programacio_modul/index.md
+      - Pla d'implantacio docent: 01_programacio_modul/pla_implantacio_docent.md
+      - Calendaritzacio per avaluacions: 01_programacio_modul/calendaritzacio_per_avaluacions.md
+      - Curs executable: 01_programacio_modul/curs_executable_dwes_2_avaluacions.md
+      - Guia 20 setmanes: 01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md
+      - Annex de ritmes: 01_programacio_modul/annex_suport_i_ampliacio_ritmes.md
+      - Kits de pilotatge:
+          - Setmanes 1-4: 01_programacio_modul/kit_pilotatge_setmanes_01_04.md
+          - Setmanes 5-8: 01_programacio_modul/kit_pilotatge_setmanes_05_08.md
+          - Setmanes 9-12: 01_programacio_modul/kit_pilotatge_setmanes_09_12.md
+          - Setmanes 13-16: 01_programacio_modul/kit_pilotatge_setmanes_13_16.md
+          - Setmanes 17-20: 01_programacio_modul/kit_pilotatge_setmanes_17_20.md
+      - Revisio transversal del bloc 1-20: 01_programacio_modul/revisio_transversal_bloc_pilotable_20_setmanes.md
+      - Preparacio docent directa: 01_programacio_modul/preparacio_docent_directa_curs_que_ve.md
+      - Ajustos finals abans d'inici de curs: 01_programacio_modul/ajustos_finals_abans_inici_curs.md
+  - Avaluacio:
+      - Index: 03_avaluacio/index.md
+      - Sistema d'evidencies: 03_avaluacio/sistema_evidencies.md
+      - Rubrica base: 03_avaluacio/rubrica_base_reptes.md
+      - Rubrica defensa tecnica: 03_avaluacio/rubrica_defensa_tecnica.md
+      - Instruments de seguiment: 03_avaluacio/instruments_seguiment_docent.md
+      - Criteris de ponderacio amb IA: 03_avaluacio/criteris_ponderacio_reptes_amb_ia.md
+  - Materials:
+      - Index: 04_materials/index.md
+      - Pla de materials prioritaris: 04_materials/pla_materials_prioritaris.md
+      - Mapa de materials: 04_materials/mapa_materials_actuals.md
+      - Materials d'aula:
+          - Mini briefings: 04_materials/materials_aula/mini_briefings_setmanals.md
+          - Checkpoints curts: 04_materials/materials_aula/checkpoints_curts_aula.md
+          - Fulls de treball base: 04_materials/materials_aula/fulls_treball_base.md
+      - Apunts reals:
+          - Revisio transversal: 04_materials/apunts_reals/revisio_transversal_apunts_reals.md
+          - Repte 1: 04_materials/apunts_reals/repte_01_kickoff_backend.md
+          - Repte 2: 04_materials/apunts_reals/repte_02_sessions_i_autenticacio.md
+          - Repte 3: 04_materials/apunts_reals/repte_03_mvc_i_persistencia.md
+          - Repte 4: 04_materials/apunts_reals/repte_04_api_i_consum.md
+          - Repte 5: 04_materials/apunts_reals/repte_05_integracio_hibrida_n8n.md
+  - Reptes:
+      - Repte 1: 02_reptes/repte_01_kickoff_backend.md
+      - Repte 2: 02_reptes/repte_02_sessions_i_autenticacio.md
+      - Repte 3: 02_reptes/repte_03_mvc_i_persistencia.md
+      - Repte 4: 02_reptes/repte_04_api_i_consum.md
+      - Repte 5: 02_reptes/repte_05_integracio_hibrida_n8n.md
+  - Projecte base:
+      - Enunciat base: 05_projectes_tecnics/enunciat_projecte_base.md
+      - Projecte base backend: 05_projectes_tecnics/projecte_base_backend.md
+      - Integracio API: 05_projectes_tecnics/integracio_api.md
+      - Integracio IA: 05_projectes_tecnics/integracio_ia.md
+      - Integracio n8n: 05_projectes_tecnics/integracio_n8n.md
+  - Pilotatge i seguiment:
+      - Pla de pilotatge real: 00_visio_general/pla_pilotatge_real.md
+      - Pla d'execucio del pilotatge: 00_visio_general/pla_execucio_pilotatge_real.md
+      - Seguiment de l'execucio: 00_visio_general/seguiment_execucio_pilotatge.md

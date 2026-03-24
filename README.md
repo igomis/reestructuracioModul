@@ -23,6 +23,12 @@ Repositori de treball per al redisseny del mòdul **Desenvolupament d’Aplicaci
 - `docs/05_projectes_tecnics/` backend, IA, n8n, integracions
 - `docs/06_plantilles/` plantilles reutilitzables
 
+## Navegació documental
+- Índex central: [Index documental del projecte](docs/00_visio_general/index_documental.md)
+- Índexs per blocs: [Programació del mòdul](docs/01_programacio_modul/index.md), [Avaluació](docs/03_avaluacio/index.md) i [Materials](docs/04_materials/index.md)
+- Consulta web: la documentació queda preparada amb [mkdocs.yml](mkdocs.yml) i el workflow [docs.yml](.github/workflows/docs.yml) per publicar-se a GitHub Pages
+- Previsualització local: quan `mkdocs` estiga instal·lat, es pot llançar amb `mkdocs serve`
+
 ## Estat actual
 La base curricular del projecte ja està definida i el repositori entra en fase de **implantació docent en 2 avaluacions lectives reals**.
 
