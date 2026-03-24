@@ -29,6 +29,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PR-04` consolidat: seguiment de l'execució real del pilotatge
 - `PP-01` consolidat: versió prepilotatge v1
 - `PP-02` en producció: preparació docent directa per al curs que ve
+- `PP-03` en producció: ajustos finals abans d'inici de curs
 - `PD-01` consolidat: guia sessió a sessió de `20` setmanes
 - `PD-02` consolidat: annex de suport i ampliació segons ritmes
 - `PD-03` consolidat: materials d'acompanyament d'aula
@@ -38,7 +39,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PD-07` consolidat: kit de pilotatge setmanes `9-12`
 - `PD-08` consolidat: kit de pilotatge setmanes `13-16`
 - `PD-09` consolidat: kit de pilotatge setmanes `17-20`
-- `PD-10` en producció: revisió transversal del bloc pilotable `1-20`
+- `PD-10` consolidat: revisió transversal del bloc pilotable `1-20`
 - `AV-02` en producció: alineació del seguiment i l'avaluació amb criteri individual
 - `RC-11` consolidat: reforç del nivell professional dels reptes i del seu llindar de no trivialitat
 
@@ -79,6 +80,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PR-04` consolidat: seguiment de l'execució real del pilotatge a `docs/00_visio_general/seguiment_execucio_pilotatge.md`.
 - `PP-01` consolidat: versió prepilotatge v1 a `docs/00_visio_general/versio_prepilotatge_v1.md`.
 - `PP-02` en producció: preparació docent directa per al curs que ve a `docs/01_programacio_modul/preparacio_docent_directa_curs_que_ve.md`.
+- `PP-03` en producció: ajustos finals abans d'inici de curs a `docs/01_programacio_modul/ajustos_finals_abans_inici_curs.md`.
 - `PD-01` consolidat: guia sessió a sessió de `20` setmanes a `docs/01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md`.
 - `PD-02` consolidat: annex de suport i ampliació segons ritmes a `docs/01_programacio_modul/annex_suport_i_ampliacio_ritmes.md`.
 - `PD-03` consolidat: materials d'acompanyament d'aula a `docs/04_materials/materials_aula/`.
@@ -88,7 +90,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PD-07` consolidat: kit operatiu del tram `9-12` a `docs/01_programacio_modul/kit_pilotatge_setmanes_09_12.md`.
 - `PD-08` consolidat: kit operatiu del tram `13-16` a `docs/01_programacio_modul/kit_pilotatge_setmanes_13_16.md`.
 - `PD-09` consolidat: kit operatiu del tram `17-20` a `docs/01_programacio_modul/kit_pilotatge_setmanes_17_20.md`.
-- `PD-10` en producció: revisió transversal del bloc pilotable `1-20` a `docs/01_programacio_modul/revisio_transversal_bloc_pilotable_20_setmanes.md`.
+- `PD-10` consolidat: revisió transversal del bloc pilotable `1-20` a `docs/01_programacio_modul/revisio_transversal_bloc_pilotable_20_setmanes.md`.
 - `AV-02` en producció: revisió de plantilles i instruments per alinear seguiment, verificació, defensa i ús verificable de la IA amb criteri individual.
 - `RC-11` consolidat: revisió del nivell professional dels Reptes `1-5`, del projecte base i de la rúbrica per evitar lectures trivials del model.
 
@@ -108,6 +110,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `kit_pilotatge_setmanes_13_16.md`: inici operatiu de la segona avaluació pilotable, amb consolidació final de `R3`, obertura de `R4` i preparació de `R5`
 - `kit_pilotatge_setmanes_17_20.md`: tancament operatiu de la seqüència pilotable, amb `R5`, defensa final individual i clausura del pilotatge
 - `revisio_transversal_bloc_pilotable_20_setmanes.md`: verificació comuna de coherència del bloc pilotable complet i de les transicions `R1 -> R5`
+- `ajustos_finals_abans_inici_curs.md`: llista curta d'ajustos imprescindibles abans de setembre i separació explícita respecte del backlog
 - `seguiment_execucio_pilotatge.md`: registre viu de l'execució real del pilotatge, dels checkpoints completats i dels ajustos que se'n deriven
 - `versio_prepilotatge_v1.md`: congelació de la base usable del paquet docent abans del pilotatge real
 - `backlog_millores_prepilotatge.md`: separació explícita de millores pendents, dubtes i decisions ajornades
@@ -147,12 +150,12 @@ Criteri comú dels itineraris:
 - el nucli del model queda ja tancat i la fase d'apunts reals es dona per consolidada com a capa de materials directament usables en aula
 - el bloc pilotable complet de `20` setmanes queda ja revisat com a seqüència coherent i usable de punta a punta
 - la `v1` prepilotatge queda ja congelada com a base estable i el backlog de millora queda separat del nucli del sistema
-- el treball actual queda centrat en ajustos finals abans de l'inici de curs i en preparació docent directa, no en nous blocs de seqüència
+- el treball actual queda centrat en ajustos finals abans de l'inici de curs i en preparació docent directa, no en nous blocs de seqüència ni en nova arquitectura
 - la lectura de treball compartit queda subordinada a un criteri estable d'acreditació individual: cada alumne ha de poder traçar, explicar, verificar i defensar la seua part
 - el reforç de densitat funcional dels reptes queda consolidat i passa a funcionar com a criteri estable de lectura del sistema
 
 ## Següent focus recomanat
-- ajustos finals abans d'inici de curs
-- preparació docent directa del primer tram, dels modelatges i dels materials d'entrega immediata
+- inici real de curs i seguiment del pilotatge
+- tancament operatiu dels ajustos finals del primer tram, dels modelatges i dels materials d'entrega immediata
 - revisió del backlog de millora sense reobrir la `v1` estable
 - mantindre alineació entre apunts, programació, avaluació i decisions de millora

@@ -71,6 +71,7 @@ Lectura ràpida de la fase actual:
 - [Kit de pilotatge de les setmanes 13-16](docs/01_programacio_modul/kit_pilotatge_setmanes_13_16.md)
 - [Kit de pilotatge de les setmanes 17-20](docs/01_programacio_modul/kit_pilotatge_setmanes_17_20.md)
 - [Revisió transversal del bloc pilotable de 20 setmanes](docs/01_programacio_modul/revisio_transversal_bloc_pilotable_20_setmanes.md)
+- [Ajustos finals abans de l'inici de curs](docs/01_programacio_modul/ajustos_finals_abans_inici_curs.md)
 - [Pla de pilotatge real del mòdul](docs/00_visio_general/pla_pilotatge_real.md)
 - [Pla d'execució del pilotatge real](docs/00_visio_general/pla_execucio_pilotatge_real.md)
 - [Seguiment de l'execució real del pilotatge](docs/00_visio_general/seguiment_execucio_pilotatge.md)
@@ -93,5 +94,5 @@ Lectura ràpida de la fase actual:
 
 ## Focus actual
 1. Mantindre el curs completament pilotable en `20` setmanes com a bloc coherent i estable.
-2. Tancar ajustos finals abans de l'inici de curs, sense reobrir l'arquitectura del paquet.
-3. Mantindre separats la `v1` estable, la preparació docent directa i el backlog de millora.
+2. Donar per completada la revisió transversal del bloc pilotable i usar-la com a marc públic del paquet docent.
+3. Tindre en producció només els ajustos finals abans de l'inici de curs, sense reobrir l'arquitectura del paquet.
