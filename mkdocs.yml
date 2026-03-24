@@ -20,6 +20,19 @@ markdown_extensions:
 
 nav:
   - Inici: index.md
+  - Alumnat:
+      - Portada: alumnat/index.md
+      - Com funciona el curs: alumnat/com_funciona_el_curs.md
+      - Com es valora: alumnat/com_es_valora.md
+      - Com fer servir la IA: alumnat/com_fer_servir_la_ia.md
+      - Projectes base: alumnat/projectes_base.md
+      - Reptes:
+          - Index: alumnat/reptes/index.md
+          - Repte 1: alumnat/reptes/repte_01.md
+          - Repte 2: alumnat/reptes/repte_02.md
+          - Repte 3: alumnat/reptes/repte_03.md
+          - Repte 4: alumnat/reptes/repte_04.md
+          - Repte 5: alumnat/reptes/repte_05.md
   - Index documental: 00_visio_general/index_documental.md
   - Visio general:
       - Presentacio breu: 00_visio_general/presentacio_model_dwes_reptes_ia.md

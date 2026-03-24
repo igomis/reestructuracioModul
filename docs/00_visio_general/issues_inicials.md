@@ -30,7 +30,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PP-01` consolidat: versió prepilotatge v1
 - `PP-02` en producció: preparació docent directa per al curs que ve
 - `PP-03` consolidat: ajustos finals abans d'inici de curs
-- `PJ-01` en producció: projectes base concretats
+- `PJ-01` consolidat: projectes base concretats
+- `AL-01` en producció: apunts online per a alumnat
 - `PD-01` consolidat: guia sessió a sessió de `20` setmanes
 - `PD-02` consolidat: annex de suport i ampliació segons ritmes
 - `PD-03` consolidat: materials d'acompanyament d'aula
@@ -64,6 +65,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `ID-13` consolidat amb el tancament formal de la fase principal del paquet docent.
 - `AV-01` consolidat amb la revisió de la rúbrica general.
 - `PA-01` consolidat amb la programació d'aula per repte.
+- `PJ-01` consolidat amb la concreció dels tres projectes base del mòdul.
 
 ## Paquets en producció o consolidació final
 - `MG-05` continua obert perquè els materials del Repte 4 encara han de passar una ronda final de consolidació pública i revisió de coherència.
@@ -82,7 +84,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PP-01` consolidat: versió prepilotatge v1 a `docs/00_visio_general/versio_prepilotatge_v1.md`.
 - `PP-02` en producció: preparació docent directa per al curs que ve a `docs/01_programacio_modul/preparacio_docent_directa_curs_que_ve.md`.
 - `PP-03` consolidat: ajustos finals abans d'inici de curs a `docs/01_programacio_modul/ajustos_finals_abans_inici_curs.md`.
-- `PJ-01` en producció: projectes base concretats a `docs/05_projectes_tecnics/projectes_base_concretats.md`.
+- `AL-01` en producció: apunts online per a alumnat a `docs/alumnat/index.md`.
 - `PD-01` consolidat: guia sessió a sessió de `20` setmanes a `docs/01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md`.
 - `PD-02` consolidat: annex de suport i ampliació segons ritmes a `docs/01_programacio_modul/annex_suport_i_ampliacio_ritmes.md`.
 - `PD-03` consolidat: materials d'acompanyament d'aula a `docs/04_materials/materials_aula/`.
@@ -152,13 +154,14 @@ Criteri comú dels itineraris:
 - el nucli del model queda ja tancat i la fase d'apunts reals es dona per consolidada com a capa de materials directament usables en aula
 - el bloc pilotable complet de `20` setmanes queda ja revisat com a seqüència coherent i usable de punta a punta
 - la `v1` prepilotatge queda ja congelada com a base estable i el backlog de millora queda separat del nucli del sistema
-- els ajustos finals abans de l'inici de curs queden consolidats i el projecte base baixa ara a tres encàrrecs concrets, més tancats i més defensables
-- el treball actual queda centrat en mantindre eixa base estable i preparar el següent tram de materials públics, no en reobrir la seqüència ni la nova arquitectura
+- els ajustos finals abans de l'inici de curs i la concreció dels projectes base queden consolidats com a capa estable del paquet
+- el repositori obri ara una porta d'entrada d'apunts online pensada específicament per a alumnat, derivada de la documentació ja existent i orientada a consulta web
+- el treball actual queda centrat en mantindre eixa base estable i preparar peces de presentació i suport curt, no en reobrir la seqüència ni la nova arquitectura
 - la lectura de treball compartit queda subordinada a un criteri estable d'acreditació individual: cada alumne ha de poder traçar, explicar, verificar i defensar la seua part
 - el reforç de densitat funcional dels reptes queda consolidat i passa a funcionar com a criteri estable de lectura del sistema
 
 ## Següent focus recomanat
-- següent focus: apunts online per a alumnat i presentacions docents
-- convertir els projectes base concretats en suport docent visible per a alumnat sense perdre comparabilitat entre itineraris
+- següent focus: presentacions docents breus
+- consolidar l'ús del portal d'alumnat com a porta d'entrada simple al curs sense duplicar la documentació docent
 - mantindre alineació entre apunts, programació, avaluació, projecte base i decisions de millora
 - avançar en peces noves sense reobrir la `v1` estable ni la seqüència principal del curs
