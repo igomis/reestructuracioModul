@@ -34,7 +34,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `AL-01` consolidat: apunts online per a alumnat
 - `AL-02` consolidat: consulta tècnica per a alumnat
 - `MAT-01` consolidat: primers materials de classe compartibles
-- `MAT-02` en producció: materials compartibles `R3-R5`
+- `MAT-02` consolidat: materials compartibles `R3-R5`
+- `MAT-03` en producció: paquets d'ús directe
 - `WEB-02` consolidat: navegació alumne/professor
 - `PRS-01` en producció: micro-presentacions docents
 - `PD-01` consolidat: guia sessió a sessió de `20` setmanes
@@ -74,6 +75,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `AL-01` consolidat amb el portal d'apunts online per a alumnat publicat dins de la navegació web.
 - `AL-02` consolidat amb la capa de consulta tècnica per a alumnat integrada dins del portal web.
 - `MAT-01` consolidat amb la primera sèrie de materials de classe compartibles per a l'arrancada i els primers reptes.
+- `MAT-02` consolidat amb l'ampliació dels materials compartibles cap a `R3-R5`, checkpoints finals i tancament breu.
 - `WEB-02` consolidat amb la separació web per perfils d'alumnat i professorat.
 
 ## Paquets en producció o consolidació final
@@ -96,7 +98,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `AL-01` consolidat: apunts online per a alumnat a `docs/alumnat/index.md`.
 - `AL-02` consolidat: consulta tècnica per a alumnat a `docs/alumnat/consulta_tecnica/index.md`.
 - `MAT-01` consolidat: materials de classe compartibles inicials a `docs/08_materials_compartibles/index.md`.
-- `MAT-02` en producció: materials compartibles `R3-R5`, checkpoints finals i tancament breu a `docs/08_materials_compartibles/index.md`.
+- `MAT-02` consolidat: materials compartibles `R3-R5`, checkpoints finals i tancament breu a `docs/08_materials_compartibles/index.md`.
+- `MAT-03` en producció: paquets d'ús directe a `docs/09_paquets_ús_directe/index.md`.
 - `WEB-02` consolidat: navegació alumne/professor a `docs/professorat/index.md`, `docs/alumnat/index.md` i `mkdocs.yml`.
 - `PRS-01` en producció: micro-presentacions docents a `docs/07_presentacions/`.
 - `PD-01` consolidat: guia sessió a sessió de `20` setmanes a `docs/01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md`.
@@ -173,14 +176,15 @@ Criteri comú dels itineraris:
 - la navegació diferenciada per alumnat i professorat queda ja consolidada com a estructura estable de consulta web
 - la consulta tècnica d'alumnat queda ja consolidada com a segona capa de suport ràpid sobre el portal web
 - la primera sèrie de materials compartibles queda ja consolidada per a l'arrancada del curs i els primers checkpoints
-- el repositori amplia ara eixa capa compartible cap als Reptes `3`, `4` i `5`, amb checkpoints finals i un guió curt de tancament i defensa
+- l'ampliació dels materials compartibles cap als Reptes `3`, `4` i `5` queda ja consolidada com a capa curta completa per a tot el producte
+- el repositori obri ara una capa de paquets d'ús directe que agrupa, per moment del curs, què ha d'obrir el professorat i què es pot donar a l'alumnat
 - la sèrie curta de micro-presentacions continua disponible com a suport docent breu dins de la mateixa web
-- el treball actual passa a conversió o empaquetat de materials per a ús directe, no a reobrir la seqüència ni la nova arquitectura
+- el treball actual passa a revisió final de preparació per a inici de curs, no a reobrir la seqüència ni la nova arquitectura
 - la lectura de treball compartit queda subordinada a un criteri estable d'acreditació individual: cada alumne ha de poder traçar, explicar, verificar i defensar la seua part
 - el reforç de densitat funcional dels reptes queda consolidat i passa a funcionar com a criteri estable de lectura del sistema
 
 ## Següent focus recomanat
-- següent focus: conversió o empaquetat de materials per a ús directe
+- següent focus: revisió final de preparació per a inici de curs
 - revisar si els accessos d'alumnat, professorat i les peces docents breus es lliguen bé dins de la mateixa web sense duplicació innecessària
 - mantindre alineació entre apunts, programació, avaluació, projecte base i decisions de millora
 - avançar en peces noves sense reobrir la `v1` estable ni la seqüència principal del curs

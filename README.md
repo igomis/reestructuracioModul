@@ -26,12 +26,14 @@ Repositori de treball per al redisseny del mòdul **Desenvolupament d’Aplicaci
 - `docs/06_plantilles/` plantilles reutilitzables
 - `docs/07_presentacions/` micro-presentacions docents de curs, reptes i avaluació
 - `docs/08_materials_compartibles/` peces breus i donables per a ús real en aula
+- `docs/09_paquets_ús_directe/` agrupació dels materials més útils segons el moment del curs
 
 ## Navegació documental
 - Índex central: [Index documental del projecte](docs/00_visio_general/index_documental.md)
 - Accés d'alumnat: [portal d'apunts online](docs/alumnat/index.md)
 - Consulta tècnica d'alumnat: [guia breu per dubtes reals del curs](docs/alumnat/consulta_tecnica/index.md)
 - Materials de classe compartibles: [peces curtes per a aula](docs/08_materials_compartibles/index.md), ara ja ampliades a `R1-R5`, checkpoints i tancament breu de defensa
+- Paquets d'ús directe: [agrupacions per moment del curs](docs/09_paquets_ús_directe/index.md) per saber què obrir, què donar i què usar en checkpoint o defensa
 - Accés de professorat: [portal docent de navegació ràpida](docs/professorat/index.md)
 - Accés docent breu: [micro-presentacions del curs](docs/07_presentacions/presentacio_00_visio_curs.md)
 - Índexs per blocs: [Programació del mòdul](docs/01_programacio_modul/index.md), [Avaluació](docs/03_avaluacio/index.md) i [Materials](docs/04_materials/index.md)
