@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://igomis.github.io/reestructuracioModul/04_materials/repte_05/guia_n8n_i_automatitzacio/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Guia de n8n i automatització - Reestructuracio del modul DWES</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Guia de n8n i automatitzaci\u00f3";
+        var mkdocs_page_input_path = "04_materials/repte_05/guia_n8n_i_automatitzacio.md";
+        var mkdocs_page_url = "/reestructuracioModul/04_materials/repte_05/guia_n8n_i_automatitzacio/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Reestructuracio del modul DWES
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../00_visio_general/index_documental/">Index documental</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Visio general</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../00_visio_general/presentacio_model_dwes_reptes_ia/">Presentacio breu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../00_visio_general/resum_executiu_paquet_docent/">Resum executiu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../00_visio_general/paquet_docent_exportable/">Paquet docent exportable</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../00_visio_general/versio_prepilotatge_v1/">Versio prepilotatge v1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../00_visio_general/backlog_millores_prepilotatge/">Backlog de millores</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../00_visio_general/issues_inicials/">Estat de produccio</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Programacio del modul</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../01_programacio_modul/">Index</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../01_programacio_modul/pla_implantacio_docent/">Pla d'implantacio docent</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../01_programacio_modul/calendaritzacio_per_avaluacions/">Calendaritzacio per avaluacions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../01_programacio_modul/curs_executable_dwes_2_avaluacions/">Curs executable</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../01_programacio_modul/guia_sessio_a_sessio_20_setmanes/">Guia 20 setmanes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../01_programacio_modul/annex_suport_i_ampliacio_ritmes/">Annex de ritmes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kits de pilotatge</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../01_programacio_modul/kit_pilotatge_setmanes_01_04/">Setmanes 1-4</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../01_programacio_modul/kit_pilotatge_setmanes_05_08/">Setmanes 5-8</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../01_programacio_modul/kit_pilotatge_setmanes_09_12/">Setmanes 9-12</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../01_programacio_modul/kit_pilotatge_setmanes_13_16/">Setmanes 13-16</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../01_programacio_modul/kit_pilotatge_setmanes_17_20/">Setmanes 17-20</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../01_programacio_modul/revisio_transversal_bloc_pilotable_20_setmanes/">Revisio transversal del bloc 1-20</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../01_programacio_modul/preparacio_docent_directa_curs_que_ve/">Preparacio docent directa</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../01_programacio_modul/ajustos_finals_abans_inici_curs/">Ajustos finals abans d'inici de curs</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Materials</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../">Index</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../pla_materials_prioritaris/">Pla de materials prioritaris</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../mapa_materials_actuals/">Mapa de materials</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Materials d'aula</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../materials_aula/mini_briefings_setmanals/">Mini briefings</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../materials_aula/checkpoints_curts_aula/">Checkpoints curts</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../materials_aula/fulls_treball_base/">Fulls de treball base</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Apunts reals</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../apunts_reals/revisio_transversal_apunts_reals/">Revisio transversal</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../apunts_reals/repte_01_kickoff_backend/">Repte 1</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../apunts_reals/repte_02_sessions_i_autenticacio/">Repte 2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../apunts_reals/repte_03_mvc_i_persistencia/">Repte 3</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../apunts_reals/repte_04_api_i_consum/">Repte 4</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../apunts_reals/repte_05_integracio_hibrida_n8n/">Repte 5</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Avaluacio</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../03_avaluacio/">Index</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../03_avaluacio/sistema_evidencies/">Sistema d'evidencies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../03_avaluacio/rubrica_base_reptes/">Rubrica base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../03_avaluacio/rubrica_defensa_tecnica/">Rubrica defensa tecnica</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../03_avaluacio/instruments_seguiment_docent/">Instruments de seguiment</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../03_avaluacio/criteris_ponderacio_reptes_amb_ia/">Criteris de ponderacio amb IA</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Projecte i reptes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../05_projectes_tecnics/enunciat_projecte_base/">Enunciat base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../05_projectes_tecnics/projecte_base_backend/">Projecte base backend</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../05_projectes_tecnics/integracio_api/">Integracio API</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../05_projectes_tecnics/integracio_ia/">Integracio IA</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../05_projectes_tecnics/integracio_n8n/">Integracio n8n</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../02_reptes/repte_01_kickoff_backend/">Repte 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../02_reptes/repte_02_sessions_i_autenticacio/">Repte 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../02_reptes/repte_03_mvc_i_persistencia/">Repte 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../02_reptes/repte_04_api_i_consum/">Repte 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../02_reptes/repte_05_integracio_hibrida_n8n/">Repte 5</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Pilotatge i seguiment</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../00_visio_general/pla_pilotatge_real/">Pla de pilotatge real</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../00_visio_general/pla_execucio_pilotatge_real/">Pla d'execucio del pilotatge</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../00_visio_general/seguiment_execucio_pilotatge/">Seguiment de l'execucio</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Reestructuracio del modul DWES</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Guia de n8n i automatització</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/igomis/reestructuracioModul/edit/master/docs/04_materials/repte_05/guia_n8n_i_automatitzacio.md">Edit on igomis/reestructuracioModul</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="guia-de-n8n-i-automatitzacio">Guia de n8n i automatització<a class="headerlink" href="#guia-de-n8n-i-automatitzacio" title="Permanent link">&para;</a></h1>
+<h2 id="finalitat">Finalitat<a class="headerlink" href="#finalitat" title="Permanent link">&para;</a></h2>
+<p>Donar una base mínima perquè <code>n8n</code>, o una eina equivalent, s'use al Repte 5 com a infraestructura d'orquestració amb criteri tècnic, i no només com a suport visual per a una demo.</p>
+<p>Esta guia servix per decidir quan compensa usar <code>n8n</code>, com ha de ser un workflow mínim usable i quines evidències s'han de deixar perquè el procés siga verificable i mantingut.</p>
+<h2 id="quan-usar-n8n-dins-del-projecte">Quan usar n8n dins del projecte<a class="headerlink" href="#quan-usar-n8n-dins-del-projecte" title="Permanent link">&para;</a></h2>
+<p>Convé usar <code>n8n</code> quan:
+- hi ha un flux amb diversos passos o sistemes implicats
+- cal consumir l'API pròpia i reenviar dades a un altre servei
+- el procés guanya claredat si es representa com a workflow
+- l'orquestració aporta més valor que un simple script puntual</p>
+<p>No cal forçar <code>n8n</code> si:
+- el cas d'ús és més simple i un script o integració directa és suficient
+- el workflow no aporta res més que aparença visual
+- l'equip no pot explicar què fa cada node ni què passa quan el flux falla</p>
+<h2 id="estructura-minima-dun-workflow-usable">Estructura mínima d'un workflow usable<a class="headerlink" href="#estructura-minima-dun-workflow-usable" title="Permanent link">&para;</a></h2>
+<p>Un workflow usable del Repte 5 hauria de tindre:
+- un desencadenant recognoscible: webhook, crida manual, polling o esdeveniment equivalent
+- una crida a l'API pròpia del curs o recepció de dades des d'ella
+- una transformació o validació mínima si cal
+- una eixida clara: servei extern, notificació, registre o acció final
+- almenys un punt de control d'error o de diagnòstic</p>
+<p>El workflow ha de permetre respondre:
+- què inicia el procés
+- quines dades es mouen entre passos
+- quina part depén de l'API del curs
+- què es considera èxit
+- què es considera fallada</p>
+<h2 id="nodes-o-passos-habituals">Nodes o passos habituals<a class="headerlink" href="#nodes-o-passos-habituals" title="Permanent link">&para;</a></h2>
+<p>Segons el cas triat, és habitual trobar:
+- node de trigger o webhook
+- node HTTP Request per consumir o cridar l'API pròpia
+- node de transformació o mapping de dades
+- node de validació o decisió condicional
+- node de crida a servei extern
+- node de registre, notificació o eixida final</p>
+<p>Criteri pràctic:
+- cada node ha de tindre una funció clara
+- si dos passos poden simplificar-se sense perdre claredat, convé fer-ho
+- si un node és crític per al flux, ha d'estar explicat en documentació o defensa</p>
+<h2 id="validacio-del-flux-i-tracabilitat">Validació del flux i traçabilitat<a class="headerlink" href="#validacio-del-flux-i-tracabilitat" title="Permanent link">&para;</a></h2>
+<p>La validació mínima d'un workflow ha d'incloure:
+- execució correcta de punta a punta
+- comprovació del payload d'entrada i del resultat final
+- almenys una fallada reproduïda: API, servei extern, dades incorrectes o pas intermedi
+- registre o evidència de com s'ha detectat i corregit la incidència</p>
+<p>Traçabilitat mínima recomanada:
+- export del workflow o artefacte equivalent
+- descripció del flux i dels nodes principals
+- captura o registre d'execució quan aporte context
+- correspondència clara entre workflow, API i cas d'ús del domini</p>
+<h2 id="riscos-habituals-dautomatitzacio">Riscos habituals d'automatització<a class="headerlink" href="#riscos-habituals-dautomatitzacio" title="Permanent link">&para;</a></h2>
+<ul>
+<li>crear workflows massa visuals però poc comprensibles</li>
+<li>dependre de credencials, webhooks o configuracions no documentades</li>
+<li>no controlar respostes inesperades o errors intermedis</li>
+<li>duplicar lògica de negoci dins del workflow en lloc de deixar-la al backend</li>
+<li>no poder reproduir el flux fora de la demo puntual</li>
+<li>acceptar configuracions suggerides per IA sense contrastar l'execució real</li>
+</ul>
+<h2 id="evidencies-esperades">Evidències esperades<a class="headerlink" href="#evidencies-esperades" title="Permanent link">&para;</a></h2>
+<p>S'espera trobar evidències com:
+- workflow exportat o descrit de manera reproduïble
+- integració real amb l'API del curs
+- prova d'execució correcta i d'error rellevant
+- documentació dels nodes o passos crítics
+- registre de manteniment o troubleshooting
+- AI log si la IA ha ajudat a dissenyar nodes, transformacions o estratègies d'error</p>
+<h2 id="checklist-final">Checklist final<a class="headerlink" href="#checklist-final" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>n8n</code> o l'eina equivalent s'ha triat perquè aporta valor al cas d'ús</li>
+<li>el workflow té un trigger recognoscible, consum d'API i eixida clara</li>
+<li>hi ha almenys una validació de flux correcte i una de fallada</li>
+<li>el workflow deixa rastre suficient per ser revisat i reproduït</li>
+<li>l'automatització és comprensible, documentada i defensable</li>
+<li>el resultat reforça el tancament professional del Repte 5 i no una demo ornamental</li>
+</ul>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/igomis/reestructuracioModul" class="fa fa-code-fork" style="color: #fcfcfc"> igomis/reestructuracioModul</a>
+        </span>
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

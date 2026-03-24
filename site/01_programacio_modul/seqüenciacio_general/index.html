@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://igomis.github.io/reestructuracioModul/01_programacio_modul/seq%C3%BCenciacio_general/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Seqüenciació general - Reestructuracio del modul DWES</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Seq\u00fcenciaci\u00f3 general";
+        var mkdocs_page_input_path = "01_programacio_modul/seq\u00fcenciacio_general.md";
+        var mkdocs_page_url = "/reestructuracioModul/01_programacio_modul/seq%C3%BCenciacio_general/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Reestructuracio del modul DWES
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../00_visio_general/index_documental/">Index documental</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Visio general</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_visio_general/presentacio_model_dwes_reptes_ia/">Presentacio breu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_visio_general/resum_executiu_paquet_docent/">Resum executiu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_visio_general/paquet_docent_exportable/">Paquet docent exportable</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_visio_general/versio_prepilotatge_v1/">Versio prepilotatge v1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_visio_general/backlog_millores_prepilotatge/">Backlog de millores</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_visio_general/issues_inicials/">Estat de produccio</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Programacio del modul</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../">Index</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pla_implantacio_docent/">Pla d'implantacio docent</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../calendaritzacio_per_avaluacions/">Calendaritzacio per avaluacions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../curs_executable_dwes_2_avaluacions/">Curs executable</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../guia_sessio_a_sessio_20_setmanes/">Guia 20 setmanes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../annex_suport_i_ampliacio_ritmes/">Annex de ritmes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kits de pilotatge</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../kit_pilotatge_setmanes_01_04/">Setmanes 1-4</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../kit_pilotatge_setmanes_05_08/">Setmanes 5-8</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../kit_pilotatge_setmanes_09_12/">Setmanes 9-12</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../kit_pilotatge_setmanes_13_16/">Setmanes 13-16</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../kit_pilotatge_setmanes_17_20/">Setmanes 17-20</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../revisio_transversal_bloc_pilotable_20_setmanes/">Revisio transversal del bloc 1-20</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../preparacio_docent_directa_curs_que_ve/">Preparacio docent directa</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ajustos_finals_abans_inici_curs/">Ajustos finals abans d'inici de curs</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Materials</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../04_materials/">Index</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../04_materials/pla_materials_prioritaris/">Pla de materials prioritaris</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../04_materials/mapa_materials_actuals/">Mapa de materials</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Materials d'aula</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../04_materials/materials_aula/mini_briefings_setmanals/">Mini briefings</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../04_materials/materials_aula/checkpoints_curts_aula/">Checkpoints curts</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../04_materials/materials_aula/fulls_treball_base/">Fulls de treball base</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Apunts reals</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../04_materials/apunts_reals/revisio_transversal_apunts_reals/">Revisio transversal</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../04_materials/apunts_reals/repte_01_kickoff_backend/">Repte 1</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../04_materials/apunts_reals/repte_02_sessions_i_autenticacio/">Repte 2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../04_materials/apunts_reals/repte_03_mvc_i_persistencia/">Repte 3</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../04_materials/apunts_reals/repte_04_api_i_consum/">Repte 4</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../04_materials/apunts_reals/repte_05_integracio_hibrida_n8n/">Repte 5</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Avaluacio</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../03_avaluacio/">Index</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../03_avaluacio/sistema_evidencies/">Sistema d'evidencies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../03_avaluacio/rubrica_base_reptes/">Rubrica base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../03_avaluacio/rubrica_defensa_tecnica/">Rubrica defensa tecnica</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../03_avaluacio/instruments_seguiment_docent/">Instruments de seguiment</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../03_avaluacio/criteris_ponderacio_reptes_amb_ia/">Criteris de ponderacio amb IA</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Projecte i reptes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../05_projectes_tecnics/enunciat_projecte_base/">Enunciat base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../05_projectes_tecnics/projecte_base_backend/">Projecte base backend</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../05_projectes_tecnics/integracio_api/">Integracio API</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../05_projectes_tecnics/integracio_ia/">Integracio IA</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../05_projectes_tecnics/integracio_n8n/">Integracio n8n</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../02_reptes/repte_01_kickoff_backend/">Repte 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../02_reptes/repte_02_sessions_i_autenticacio/">Repte 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../02_reptes/repte_03_mvc_i_persistencia/">Repte 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../02_reptes/repte_04_api_i_consum/">Repte 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../02_reptes/repte_05_integracio_hibrida_n8n/">Repte 5</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Pilotatge i seguiment</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_visio_general/pla_pilotatge_real/">Pla de pilotatge real</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_visio_general/pla_execucio_pilotatge_real/">Pla d'execucio del pilotatge</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_visio_general/seguiment_execucio_pilotatge/">Seguiment de l'execucio</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Reestructuracio del modul DWES</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Seqüenciació general</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/igomis/reestructuracioModul/edit/master/docs/01_programacio_modul/seqüenciacio_general.md">Edit on igomis/reestructuracioModul</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="sequenciacio-general">Seqüenciació general<a class="headerlink" href="#sequenciacio-general" title="Permanent link">&para;</a></h1>
+<h2 id="criteris-de-sequenciacio">Criteris de seqüenciació<a class="headerlink" href="#criteris-de-sequenciacio" title="Permanent link">&para;</a></h2>
+<ul>
+<li>progressió de menor a major complexitat tècnica</li>
+<li>cada repte hereta artefactes del repte anterior</li>
+<li>prioritat a funcionalitat executable abans d’optimització</li>
+<li>integració gradual de qualitat, seguretat, APIs i automatització</li>
+<li>connexió explícita entre RA, evidències i instrument d’avaluació</li>
+</ul>
+<h2 id="ordre-dels-5-reptes">Ordre dels 5 reptes<a class="headerlink" href="#ordre-dels-5-reptes" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Kickoff tècnic d’un servei web backend</li>
+<li>Mòdul de gestió d’usuaris i sessions</li>
+<li>Migració a MVC i persistència segura</li>
+<li>Publicació i consum d’API</li>
+<li>Integració híbrida, automatització i manteniment</li>
+</ol>
+<h2 id="finalitat-ra-principals-i-producte-de-cada-repte">Finalitat, RA principals i producte de cada repte<a class="headerlink" href="#finalitat-ra-principals-i-producte-de-cada-repte" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Repte</th>
+<th>Finalitat</th>
+<th>RA principals</th>
+<th>Producte del repte</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Definir i deixar operativa la base tècnica del curs.</td>
+<td>RA1, inici de RA5</td>
+<td>Repositori inicial, entorn funcional, README tècnic i ADR.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Construir funcionalitat de negoci amb sessions i autenticació.</td>
+<td>RA2, RA3, RA4</td>
+<td>Mòdul d’usuaris/sessions validat amb proves bàsiques.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Reestructurar a MVC i consolidar persistència i qualitat.</td>
+<td>RA5, RA6, RA8</td>
+<td>Backend modular amb accés segur a dades i testing de regressió.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Publicar serveis i consumir APIs amb contractes clars.</td>
+<td>RA7, reforç RA6</td>
+<td>API documentada i client de consum integrat.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Integrar automatització i serveis externs per tancar el producte.</td>
+<td>RA9, reforç RA7 i RA8</td>
+<td>Solució híbrida amb n8n/serveis externs i pla de manteniment.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dependencies-entre-reptes">Dependències entre reptes<a class="headerlink" href="#dependencies-entre-reptes" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Repte 2 depén del repositori, convencions i entorn establits al Repte 1.</li>
+<li>Repte 3 reutilitza el codi funcional del Repte 2 per refactoritzar-lo a MVC.</li>
+<li>Repte 4 exposa i consumeix funcionalitats que provenen del model de dades del Repte 3.</li>
+<li>Repte 5 integra l’API i el backend madur dels Reptes 3 i 4 per automatitzar fluxos.</li>
+</ul>
+<h2 id="idea-de-producte-evolutiu-del-curs">Idea de producte evolutiu del curs<a class="headerlink" href="#idea-de-producte-evolutiu-del-curs" title="Permanent link">&para;</a></h2>
+<p>Tot el curs gira al voltant d’un <strong>servei backend únic</strong> que evoluciona de prototip tècnic a producte integrable:
+- naix com a esquelet de projecte (Repte 1)
+- guanya funcionalitat d’usuari (Repte 2)
+- es fa mantenible i robust (Repte 3)
+- s’obri a integracions via API (Repte 4)
+- es connecta amb automatitzacions i serveis externs (Repte 5)</p>
+<h2 id="resultats-esperats-al-final-de-cada-repte">Resultats esperats al final de cada repte<a class="headerlink" href="#resultats-esperats-al-final-de-cada-repte" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Repte 1: equip amb entorn estable i criteri d’arquitectura justificat.</li>
+<li>Repte 2: funcionalitat backend d’accés d’usuaris operativa i defensable.</li>
+<li>Repte 3: arquitectura MVC amb persistència segura i qualitat observable.</li>
+<li>Repte 4: API usable i documentada, amb consum verificat.</li>
+<li>Repte 5: integració híbrida funcional, mantenible i presentada tècnicament.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/igomis/reestructuracioModul" class="fa fa-code-fork" style="color: #fcfcfc"> igomis/reestructuracioModul</a>
+        </span>
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://igomis.github.io/reestructuracioModul/02_reptes/repte_01_kickoff_backend/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Repte 1 - Reestructuracio del modul DWES</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Repte 1";
+        var mkdocs_page_input_path = "02_reptes/repte_01_kickoff_backend.md";
+        var mkdocs_page_url = "/reestructuracioModul/02_reptes/repte_01_kickoff_backend/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Reestructuracio del modul DWES
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../00_visio_general/index_documental/">Index documental</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Visio general</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_visio_general/presentacio_model_dwes_reptes_ia/">Presentacio breu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_visio_general/resum_executiu_paquet_docent/">Resum executiu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_visio_general/paquet_docent_exportable/">Paquet docent exportable</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_visio_general/versio_prepilotatge_v1/">Versio prepilotatge v1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_visio_general/backlog_millores_prepilotatge/">Backlog de millores</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_visio_general/issues_inicials/">Estat de produccio</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Programacio del modul</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_programacio_modul/">Index</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_programacio_modul/pla_implantacio_docent/">Pla d'implantacio docent</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_programacio_modul/calendaritzacio_per_avaluacions/">Calendaritzacio per avaluacions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_programacio_modul/curs_executable_dwes_2_avaluacions/">Curs executable</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_programacio_modul/guia_sessio_a_sessio_20_setmanes/">Guia 20 setmanes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_programacio_modul/annex_suport_i_ampliacio_ritmes/">Annex de ritmes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kits de pilotatge</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../01_programacio_modul/kit_pilotatge_setmanes_01_04/">Setmanes 1-4</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../01_programacio_modul/kit_pilotatge_setmanes_05_08/">Setmanes 5-8</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../01_programacio_modul/kit_pilotatge_setmanes_09_12/">Setmanes 9-12</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../01_programacio_modul/kit_pilotatge_setmanes_13_16/">Setmanes 13-16</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../01_programacio_modul/kit_pilotatge_setmanes_17_20/">Setmanes 17-20</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_programacio_modul/revisio_transversal_bloc_pilotable_20_setmanes/">Revisio transversal del bloc 1-20</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_programacio_modul/preparacio_docent_directa_curs_que_ve/">Preparacio docent directa</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../01_programacio_modul/ajustos_finals_abans_inici_curs/">Ajustos finals abans d'inici de curs</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Materials</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../04_materials/">Index</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../04_materials/pla_materials_prioritaris/">Pla de materials prioritaris</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../04_materials/mapa_materials_actuals/">Mapa de materials</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Materials d'aula</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../04_materials/materials_aula/mini_briefings_setmanals/">Mini briefings</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../04_materials/materials_aula/checkpoints_curts_aula/">Checkpoints curts</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../04_materials/materials_aula/fulls_treball_base/">Fulls de treball base</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Apunts reals</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../04_materials/apunts_reals/revisio_transversal_apunts_reals/">Revisio transversal</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../04_materials/apunts_reals/repte_01_kickoff_backend/">Repte 1</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../04_materials/apunts_reals/repte_02_sessions_i_autenticacio/">Repte 2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../04_materials/apunts_reals/repte_03_mvc_i_persistencia/">Repte 3</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../04_materials/apunts_reals/repte_04_api_i_consum/">Repte 4</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../04_materials/apunts_reals/repte_05_integracio_hibrida_n8n/">Repte 5</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Avaluacio</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../03_avaluacio/">Index</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../03_avaluacio/sistema_evidencies/">Sistema d'evidencies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../03_avaluacio/rubrica_base_reptes/">Rubrica base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../03_avaluacio/rubrica_defensa_tecnica/">Rubrica defensa tecnica</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../03_avaluacio/instruments_seguiment_docent/">Instruments de seguiment</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../03_avaluacio/criteris_ponderacio_reptes_amb_ia/">Criteris de ponderacio amb IA</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Projecte i reptes</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../05_projectes_tecnics/enunciat_projecte_base/">Enunciat base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../05_projectes_tecnics/projecte_base_backend/">Projecte base backend</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../05_projectes_tecnics/integracio_api/">Integracio API</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../05_projectes_tecnics/integracio_ia/">Integracio IA</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../05_projectes_tecnics/integracio_n8n/">Integracio n8n</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Repte 1</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#finalitat">Finalitat</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#relacio-amb-resultats-daprenentatge">Relació amb resultats d’aprenentatge</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#context-professional">Context professional</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problema-o-encarrec-inicial">Problema o encàrrec inicial</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#producte-final">Producte final</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sequencia-de-treball">Seqüència de treball</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#activitats-o-microtasques">Activitats o microtasques</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#materials-i-apunts-associats">Materials i apunts associats</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#paper-de-la-ia">Paper de la IA</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#evidencies-daprenentatge">Evidències d’aprenentatge</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#instruments-davaluacio">Instruments d’avaluació</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#riscos-dus-inadequat-de-la-ia">Riscos d’ús inadequat de la IA</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mesures-de-verificacio">Mesures de verificació</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#entorn-professional">Entorn professional</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#definition-of-done-del-repte">Definition of done del repte</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../repte_02_sessions_i_autenticacio/">Repte 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../repte_03_mvc_i_persistencia/">Repte 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../repte_04_api_i_consum/">Repte 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../repte_05_integracio_hibrida_n8n/">Repte 5</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Pilotatge i seguiment</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_visio_general/pla_pilotatge_real/">Pla de pilotatge real</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_visio_general/pla_execucio_pilotatge_real/">Pla d'execucio del pilotatge</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_visio_general/seguiment_execucio_pilotatge/">Seguiment de l'execucio</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Reestructuracio del modul DWES</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Projecte i reptes</li>
+      <li class="breadcrumb-item active">Repte 1</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/igomis/reestructuracioModul/edit/master/docs/02_reptes/repte_01_kickoff_backend.md">Edit on igomis/reestructuracioModul</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="repte-1-kickoff-funcional-dun-servei-web-backend">Repte 1. Kickoff funcional d’un servei web backend<a class="headerlink" href="#repte-1-kickoff-funcional-dun-servei-web-backend" title="Permanent link">&para;</a></h1>
+<h2 id="finalitat">Finalitat<a class="headerlink" href="#finalitat" title="Permanent link">&para;</a></h2>
+<p>Iniciar un servei web backend en condicions professionals reals i deixar una base tècnica robusta per al conjunt del curs. Este repte fixa la manera de treballar de l’equip (organització, traçabilitat, documentació i validació) i obliga a entregar ja una primera peça funcional real del producte.</p>
+<p>El Repte 1 no es considera superat només per triar tecnologia, instal·lar un framework o deixar un esquelet executable. Ha d’existir una primera entrada funcional del producte, per exemple una landing page o equivalent, un formulari útil per arreplegar dades, una validació mínima al servidor i un primer registre o persistència bàsica de la informació.</p>
+<h2 id="relacio-amb-resultats-daprenentatge">Relació amb resultats d’aprenentatge<a class="headerlink" href="#relacio-amb-resultats-daprenentatge" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>RA1 (principal):</strong> selecció d’arquitectura, configuració d’entorn i justificació de decisions tècniques inicials.</li>
+<li><strong>RA5 (inici):</strong> primera estructuració del projecte amb criteris de mantenibilitat (organització de carpetes, convencions de codi i pauta de creixement).</li>
+</ul>
+<p>Contribució esperada del repte:
+- l’alumnat demostra que pot arrencar un projecte backend des de zero amb criteri professional
+- la base creada és reutilitzable i escalable per als reptes 2-5</p>
+<h2 id="context-professional">Context professional<a class="headerlink" href="#context-professional" title="Permanent link">&para;</a></h2>
+<p>Un equip backend rep l’encàrrec de posar en marxa un nou servei. No es demana encara el producte complet, però sí una base fiable que ja permeta ensenyar una primera interacció real amb el sistema i deixar rastre tècnic verificable del seu comportament.</p>
+<p>El client intern vol garanties mínimes abans de continuar:
+- que el projecte arranca en local de manera reproductible
+- que la decisió arquitectònica està argumentada
+- que el repositori i la documentació permeten treball en equip
+- que ja existix una primera peça funcional del producte i no només un esquelet tècnic buit</p>
+<h2 id="problema-o-encarrec-inicial">Problema o encàrrec inicial<a class="headerlink" href="#problema-o-encarrec-inicial" title="Permanent link">&para;</a></h2>
+<p><strong>Encàrrec:</strong> “Deixeu operativa la primera versió funcional del servei backend i entregueu evidències que permeten començar el desenvolupament del producte real en el repte següent.”</p>
+<p>Restriccions de l’encàrrec:
+- no prioritzar quantitat de codi sobre qualitat de base
+- documentar decisions des del primer dia
+- establir un flux Git/GitHub clar (issues, commits, branques)
+- incorporar IA com a suport, però sempre amb verificació tècnica
+- triar tecnologia o muntar un esquelet de framework no és suficient
+- ha d’existir una primera funcionalitat d’entrada al producte: landing page o equivalent, formulari i registre mínim de dades</p>
+<h2 id="producte-final">Producte final<a class="headerlink" href="#producte-final" title="Permanent link">&para;</a></h2>
+<p>El lliurable del repte ha d’incloure, com a mínim:
+- repositori inicial funcional amb estructura coherent
+- decisió tecnològica justificada i alineada amb el domini triat
+- landing page inicial o equivalent d’entrada al producte servida pel backend
+- formulari funcional per arreplegar una primera dada útil del domini
+- validació mínima al servidor sobre eixe formulari o petició inicial
+- registre o persistència mínima de la informació arreplegada, encara que siga bàsica
+- README tècnic de posada en marxa (instal·lació, execució i comprovació)
+- ADR curt amb la decisió d’arquitectura principal i alternatives descartades
+- primera validació tècnica executada i registrada
+- historial de treball traçable (issues i commits significatius)</p>
+<h2 id="sequencia-de-treball">Seqüència de treball<a class="headerlink" href="#sequencia-de-treball" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Anàlisi inicial del context</strong></li>
+<li>entendre requisits mínims, restriccions i objectiu del kickoff.</li>
+<li><strong>Decisió tècnica inicial</strong></li>
+<li>comparar 2-3 alternatives d’stack o enfocament i triar-ne una.</li>
+<li><strong>Definició del primer cas d’ús mínim</strong></li>
+<li>concretar quina primera interacció real del producte es demostrarà en este repte.</li>
+<li><strong>Arrencada del projecte</strong></li>
+<li>inicialitzar repositori, estructura base i configuració d’entorn.</li>
+<li><strong>Definició de normes de treball</strong></li>
+<li>establir convencions de branques, missatges de commit i ús d’issues.</li>
+<li><strong>Primera funcionalitat real</strong></li>
+<li>implementar landing page o equivalent, formulari funcional, validació i registre mínim de dades.</li>
+<li><strong>Validació tècnica mínima</strong></li>
+<li>executar el servei, provar el flux inicial i comprovar resposta esperada.</li>
+<li><strong>Documentació i tancament</strong></li>
+<li>completar README, ADR i síntesi de decisions per a transició a Repte 2.</li>
+</ol>
+<h2 id="activitats-o-microtasques">Activitats o microtasques<a class="headerlink" href="#activitats-o-microtasques" title="Permanent link">&para;</a></h2>
+<ul>
+<li>crear una issue mare de kickoff i descompondre-la en microtasques</li>
+<li>definir quin és el primer flux mínim del producte que s’executarà en este repte</li>
+<li>preparar <code>README</code> amb prerequisits, passos d’arrancada i troubleshooting bàsic</li>
+<li>definir estructura de carpetes i convencions de nom</li>
+<li>redactar ADR (context, decisió, alternatives, conseqüències)</li>
+<li>construir una landing page o equivalent d’entrada al producte</li>
+<li>implementar un formulari funcional per arreplegar una primera dada del domini</li>
+<li>validar al servidor la informació rebuda i registrar-la o persistir-la de forma mínima</li>
+<li>fer primera execució verificable del servei (amb captures/logs o registre d’eixida)</li>
+<li>documentar incidències inicials i com s’han resolt</li>
+<li>preparar mini defensa tècnica final (5-7 minuts)</li>
+</ul>
+<h2 id="materials-i-apunts-associats">Materials i apunts associats<a class="headerlink" href="#materials-i-apunts-associats" title="Permanent link">&para;</a></h2>
+<ul>
+<li>bloc 1 d’arquitectures web (criteris de tria i justificació)</li>
+<li>introducció a entorn de treball backend (configuració i eines)</li>
+<li>guia Git/GitHub del curs (issues, branques, commits, revisió)</li>
+<li>orientacions de documentació tècnica (README i ADR)</li>
+</ul>
+<h2 id="paper-de-la-ia">Paper de la IA<a class="headerlink" href="#paper-de-la-ia" title="Permanent link">&para;</a></h2>
+<p>La IA s’empra com a eina de suport per:
+- explorar alternatives d’arquitectura i trade-offs
+- proposar esquelets inicials de projecte
+- revisar claredat i completesa del README
+- suggerir llistes de comprovació de validació tècnica</p>
+<p>Criteri d’ús:
+- la IA orienta, però no decideix
+- tota proposta s’ha d’adaptar al context del repte
+- qualsevol contribució de la IA s’ha de poder explicar i verificar</p>
+<h2 id="evidencies-daprenentatge">Evidències d’aprenentatge<a class="headerlink" href="#evidencies-daprenentatge" title="Permanent link">&para;</a></h2>
+<p>Evidències mínimes obligatòries:
+- issue de kickoff amb microtasques i estat de resolució
+- seqüència de commits amb missatges que reflectisquen decisions i evolució
+- README tècnic executable per tercers
+- ADR de decisió arquitectònica
+- evidència funcional d’una landing page o equivalent i del primer formulari executable
+- registre o persistència mínima de la informació enviada en eixe primer flux
+- registre de validació tècnica inicial
+- AI log quan hi haja ús de IA</p>
+<h2 id="instruments-davaluacio">Instruments d’avaluació<a class="headerlink" href="#instruments-davaluacio" title="Permanent link">&para;</a></h2>
+<ul>
+<li>rúbrica base de reptes adaptada al Repte 1</li>
+<li>checklist de revisió de repositori (traçabilitat i qualitat mínima)</li>
+<li>revisió tècnica de README i ADR</li>
+<li>defensa tècnica breu centrada en decisions, verificació i continuïtat</li>
+</ul>
+<h2 id="riscos-dus-inadequat-de-la-ia">Riscos d’ús inadequat de la IA<a class="headerlink" href="#riscos-dus-inadequat-de-la-ia" title="Permanent link">&para;</a></h2>
+<ul>
+<li>copiar configuracions sense comprendre impacte tècnic</li>
+<li>acceptar documentació generada sense comprovar executable real</li>
+<li>generar una arquitectura incoherent amb el context del mòdul</li>
+<li>no poder justificar per què s’ha triat una alternativa concreta</li>
+</ul>
+<h2 id="mesures-de-verificacio">Mesures de verificació<a class="headerlink" href="#mesures-de-verificacio" title="Permanent link">&para;</a></h2>
+<ul>
+<li>prova en directe d’arrancada del projecte seguint únicament el README</li>
+<li>prova en directe del primer flux funcional: accés a la landing page o equivalent, enviament de formulari, validació i registre de la dada</li>
+<li>preguntes tècniques sobre alternatives descartades a l’ADR</li>
+<li>contrast entre AI log, commits i resultat efectiu del repositori</li>
+<li>microcanvis en viu per comprovar autoria i domini tècnic</li>
+<li>revisió de coherència entre estructura, documentació i validació reportada</li>
+</ul>
+<h2 id="entorn-professional">Entorn professional<a class="headerlink" href="#entorn-professional" title="Permanent link">&para;</a></h2>
+<p>Marc mínim de treball professional del repte:
+- Git/GitHub com a entorn central de col·laboració
+- gestió del treball amb issues i tancament traçable de tasques
+- branques de treball i integració controlada
+- debugging inicial de configuració/arrancada
+- documentació tècnica orientada a onboarding de l’equip</p>
+<h2 id="definition-of-done-del-repte">Definition of done del repte<a class="headerlink" href="#definition-of-done-del-repte" title="Permanent link">&para;</a></h2>
+<p>El Repte 1 queda completat quan es compleixen <strong>totes</strong> les condicions següents:
+- el servei arranca en local seguint el README, sense passos ocults
+- existeix una primera peça funcional del producte, no només un esquelet tècnic
+- hi ha una landing page o equivalent d’entrada, un formulari funcional i una validació mínima al servidor
+- la informació del primer flux queda registrada o persistida de manera bàsica i verificable
+- existeix ADR amb decisió arquitectònica clara i alternatives justificades
+- el repositori mostra traçabilitat real (issues + commits coherents)
+- s’ha registrat una validació tècnica mínima amb resultat verificable
+- l’alumnat pot defensar oralment què ha fet, per què i com prepara el pas al Repte 2
+- triar tecnologia o muntar un esquelet buit no es considera suficient per donar el repte per superat</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../05_projectes_tecnics/integracio_n8n/" class="btn btn-neutral float-left" title="Integracio n8n"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../repte_02_sessions_i_autenticacio/" class="btn btn-neutral float-right" title="Repte 2">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/igomis/reestructuracioModul" class="fa fa-code-fork" style="color: #fcfcfc"> igomis/reestructuracioModul</a>
+        </span>
+    
+    
+      <span><a href="../../05_projectes_tecnics/integracio_n8n/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../repte_02_sessions_i_autenticacio/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

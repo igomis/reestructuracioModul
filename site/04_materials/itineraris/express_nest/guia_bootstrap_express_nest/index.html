@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://igomis.github.io/reestructuracioModul/04_materials/itineraris/express_nest/guia_bootstrap_express_nest/" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+    <title>Guia de bootstrap Express/Nest - Reestructuracio del modul DWES</title>
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Guia de bootstrap Express/Nest";
+        var mkdocs_page_input_path = "04_materials/itineraris/express_nest/guia_bootstrap_express_nest.md";
+        var mkdocs_page_url = "/reestructuracioModul/04_materials/itineraris/express_nest/guia_bootstrap_express_nest/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../.." class="icon icon-home"> Reestructuracio del modul DWES
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../../00_visio_general/index_documental/">Index documental</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Visio general</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../00_visio_general/presentacio_model_dwes_reptes_ia/">Presentacio breu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../00_visio_general/resum_executiu_paquet_docent/">Resum executiu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../00_visio_general/paquet_docent_exportable/">Paquet docent exportable</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../00_visio_general/versio_prepilotatge_v1/">Versio prepilotatge v1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../00_visio_general/backlog_millores_prepilotatge/">Backlog de millores</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../00_visio_general/issues_inicials/">Estat de produccio</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Programacio del modul</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../01_programacio_modul/">Index</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../01_programacio_modul/pla_implantacio_docent/">Pla d'implantacio docent</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../01_programacio_modul/calendaritzacio_per_avaluacions/">Calendaritzacio per avaluacions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../01_programacio_modul/curs_executable_dwes_2_avaluacions/">Curs executable</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../01_programacio_modul/guia_sessio_a_sessio_20_setmanes/">Guia 20 setmanes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../01_programacio_modul/annex_suport_i_ampliacio_ritmes/">Annex de ritmes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kits de pilotatge</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../01_programacio_modul/kit_pilotatge_setmanes_01_04/">Setmanes 1-4</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../01_programacio_modul/kit_pilotatge_setmanes_05_08/">Setmanes 5-8</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../01_programacio_modul/kit_pilotatge_setmanes_09_12/">Setmanes 9-12</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../01_programacio_modul/kit_pilotatge_setmanes_13_16/">Setmanes 13-16</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../01_programacio_modul/kit_pilotatge_setmanes_17_20/">Setmanes 17-20</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../01_programacio_modul/revisio_transversal_bloc_pilotable_20_setmanes/">Revisio transversal del bloc 1-20</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../01_programacio_modul/preparacio_docent_directa_curs_que_ve/">Preparacio docent directa</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../01_programacio_modul/ajustos_finals_abans_inici_curs/">Ajustos finals abans d'inici de curs</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Materials</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../">Index</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../pla_materials_prioritaris/">Pla de materials prioritaris</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../mapa_materials_actuals/">Mapa de materials</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Materials d'aula</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../materials_aula/mini_briefings_setmanals/">Mini briefings</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../materials_aula/checkpoints_curts_aula/">Checkpoints curts</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../materials_aula/fulls_treball_base/">Fulls de treball base</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Apunts reals</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../apunts_reals/revisio_transversal_apunts_reals/">Revisio transversal</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../apunts_reals/repte_01_kickoff_backend/">Repte 1</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../apunts_reals/repte_02_sessions_i_autenticacio/">Repte 2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../apunts_reals/repte_03_mvc_i_persistencia/">Repte 3</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../apunts_reals/repte_04_api_i_consum/">Repte 4</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../apunts_reals/repte_05_integracio_hibrida_n8n/">Repte 5</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Avaluacio</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../03_avaluacio/">Index</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../03_avaluacio/sistema_evidencies/">Sistema d'evidencies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../03_avaluacio/rubrica_base_reptes/">Rubrica base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../03_avaluacio/rubrica_defensa_tecnica/">Rubrica defensa tecnica</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../03_avaluacio/instruments_seguiment_docent/">Instruments de seguiment</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../03_avaluacio/criteris_ponderacio_reptes_amb_ia/">Criteris de ponderacio amb IA</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Projecte i reptes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../05_projectes_tecnics/enunciat_projecte_base/">Enunciat base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../05_projectes_tecnics/projecte_base_backend/">Projecte base backend</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../05_projectes_tecnics/integracio_api/">Integracio API</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../05_projectes_tecnics/integracio_ia/">Integracio IA</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../05_projectes_tecnics/integracio_n8n/">Integracio n8n</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../02_reptes/repte_01_kickoff_backend/">Repte 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../02_reptes/repte_02_sessions_i_autenticacio/">Repte 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../02_reptes/repte_03_mvc_i_persistencia/">Repte 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../02_reptes/repte_04_api_i_consum/">Repte 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../02_reptes/repte_05_integracio_hibrida_n8n/">Repte 5</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Pilotatge i seguiment</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../00_visio_general/pla_pilotatge_real/">Pla de pilotatge real</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../00_visio_general/pla_execucio_pilotatge_real/">Pla d'execucio del pilotatge</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../00_visio_general/seguiment_execucio_pilotatge/">Seguiment de l'execucio</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">Reestructuracio del modul DWES</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Guia de bootstrap Express/Nest</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/igomis/reestructuracioModul/edit/master/docs/04_materials/itineraris/express_nest/guia_bootstrap_express_nest.md">Edit on igomis/reestructuracioModul</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="guia-de-bootstrap-expressnest">Guia de bootstrap Express/Nest<a class="headerlink" href="#guia-de-bootstrap-expressnest" title="Permanent link">&para;</a></h1>
+<h2 id="finalitat">Finalitat<a class="headerlink" href="#finalitat" title="Permanent link">&para;</a></h2>
+<p>Oferir una base operativa perquè l'itinerari <code>Node.js</code> puga arrancar amb criteri tècnic, ja siga per via <code>Express</code> o per via <code>Nest</code>, sense separar l'entrada al stack dels objectius reals dels Reptes 2-5 i del projecte base del curs.</p>
+<p>Esta guia no és un resum general del framework. El seu objectiu és deixar una arrancada prou clara perquè l'equip puga construir un backend mantenible, autenticable, persistent i preparat per publicar API i integrar-se després amb fluxos híbrids.</p>
+<h2 id="contingut-operatiu">Contingut operatiu<a class="headerlink" href="#contingut-operatiu" title="Permanent link">&para;</a></h2>
+<h3 id="quan-te-sentit-usar-express-o-nest-dins-del-projecte">Quan té sentit usar Express o Nest dins del projecte<a class="headerlink" href="#quan-te-sentit-usar-express-o-nest-dins-del-projecte" title="Permanent link">&para;</a></h3>
+<p>Convé usar <code>Express</code> o <code>Nest</code> quan:
+- l'equip treballa en l'itinerari <code>Node.js + Express o Nest</code> autoritzat pel model d'itineraris
+- es vol una via de backend JavaScript o TypeScript compatible amb el projecte base del curs
+- el domini triat necessita una evolució clara des de autenticació i persistència fins a API i integració
+- l'equip pot explicar amb criteri si li convé més una via lleugera (<code>Express</code>) o una via més estructurada (<code>Nest</code>)</p>
+<p>No té sentit usar-lo si:
+- el projecte depén només de plantilles, generadors o snippets no entesos
+- l'equip no sap seguir el recorregut mínim entre entrada HTTP, lògica, persistència i resposta
+- la decisió entre <code>Express</code> i <code>Nest</code> es pren només per inèrcia o per suggeriment de IA sense contrast tècnic</p>
+<h3 id="estructura-minima-del-projecte">Estructura mínima del projecte<a class="headerlink" href="#estructura-minima-del-projecte" title="Permanent link">&para;</a></h3>
+<p>Per al curs, un projecte usable per esta via hauria de tindre com a mínim:
+- arrencada funcional del servidor
+- configuració clara d'entorn i dependències
+- capa d'entrada recognoscible: rutes, controladors o mòduls HTTP
+- separació mínima entre exposició, lògica de negoci i persistència
+- model o esquema mínim del domini
+- validació mínima de dades d'entrada
+- proves o verificacions equivalents sobre fluxos crítics</p>
+<p>Estructura orientativa en <code>Express</code>:
+- <code>src/app</code> o <code>src/server</code>
+- <code>src/routes/</code>
+- <code>src/controllers/</code>
+- <code>src/services/</code>
+- <code>src/repositories/</code> o <code>src/data/</code>
+- <code>src/models/</code> o <code>src/schemas/</code>
+- <code>tests/</code></p>
+<p>Estructura orientativa en <code>Nest</code>:
+- <code>src/main.ts</code>
+- <code>src/app.module.ts</code>
+- <code>src/&lt;domini&gt;/&lt;domini&gt;.module.ts</code>
+- <code>src/&lt;domini&gt;/&lt;domini&gt;.controller.ts</code>
+- <code>src/&lt;domini&gt;/&lt;domini&gt;.service.ts</code>
+- <code>src/&lt;domini&gt;/dto/</code>
+- <code>src/&lt;domini&gt;/entities/</code> o adaptació equivalent
+- <code>test/</code></p>
+<h3 id="peces-clau-que-cal-entendre">Peces clau que cal entendre<a class="headerlink" href="#peces-clau-que-cal-entendre" title="Permanent link">&para;</a></h3>
+<p>L'equip hauria d'entendre, com a mínim:
+- punt d'arrancada del servidor: <code>server.ts</code>, <code>app.ts</code> o <code>main.ts</code>
+- capa d'exposició: rutes en <code>Express</code> o <code>controllers</code> en <code>Nest</code>
+- capa de negoci: <code>services</code> o casos d'ús equivalents
+- capa de persistència: repositoris, models o accés a dades
+- configuració d'entorn: variables, connexió a base de dades i ports
+- capa de proves o verificacions mínimes</p>
+<p>Criteri docent:
+- no cal desplegar tota la infraestructura possible del stack
+- sí que cal entendre què rep la petició, on es valida, on es resol la lògica i on es persistix
+- qualsevol peça generada amb CLI o IA ha de ser explicable i revisable</p>
+<h3 id="criteri-propi-de-litinerari-expressnest">Criteri propi de l'itinerari Express/Nest<a class="headerlink" href="#criteri-propi-de-litinerari-expressnest" title="Permanent link">&para;</a></h3>
+<p>La diferència pràctica mínima entre les dos vies és esta:
+- <code>Express</code> dona més llibertat estructural i exigix que l'equip impose per si mateix separació de capes, convencions i disciplina arquitectònica
+- <code>Nest</code> oferix una estructura més guiada amb <code>module</code>, <code>controller</code>, <code>service</code>, <code>guard</code>, <code>pipe</code> i <code>dto</code>, i facilita més la lectura uniforme del projecte</p>
+<p>Criteri de tria:
+- <code>Express</code> és vàlid si l'equip pot mantindre una arquitectura clara i no deriva en fitxers monolítics
+- <code>Nest</code> és vàlid si l'equip entén la maquinària mínima del framework i no el convertix en una capa opaca
+- en els dos casos, la comparabilitat docent es mesura per evidències, qualitat i defensa tècnica, no per quantitat de fitxers</p>
+<h3 id="evidencies-minimes">Evidències mínimes<a class="headerlink" href="#evidencies-minimes" title="Permanent link">&para;</a></h3>
+<p>S'espera trobar evidències com:
+- projecte <code>Node.js</code> que arranca amb instruccions reproduïbles
+- <code>README</code> actualitzat amb instal·lació, scripts i execució mínima
+- estructura recognoscible d'entrada, negoci i dades
+- primera verificació funcional del flux inicial
+- commits que mostren una arrancada real i no una pujada compactada final
+- AI log si la IA ha ajudat a triar estructura, configuració o comandaments</p>
+<h2 id="errors-habituals-darrancada">Errors habituals d'arrancada<a class="headerlink" href="#errors-habituals-darrancada" title="Permanent link">&para;</a></h2>
+<ul>
+<li>crear un projecte <code>Express</code> massa lliure i acabar sense arquitectura recognoscible</li>
+<li>generar un projecte <code>Nest</code> i no entendre què fan <code>module</code>, <code>controller</code> o <code>service</code></li>
+<li>barrejar configuració, rutes, lògica i persistència en el mateix punt d'entrada</li>
+<li>no distingir entre codi d'infraestructura del framework i codi propi del domini</li>
+<li>no deixar clar quin camí del projecte serà API, quin serà autenticació i quin serà persistència</li>
+<li>adoptar una estructura suggerida per IA sense provar que realment encaixa amb el projecte del curs</li>
+</ul>
+<h2 id="checklist-final">Checklist final<a class="headerlink" href="#checklist-final" title="Permanent link">&para;</a></h2>
+<ul>
+<li>el projecte <code>Express</code> o <code>Nest</code> arranca i es pot reproduir amb instruccions clares</li>
+<li>l'equip entén el recorregut mínim entre entrada HTTP, negoci i persistència</li>
+<li>la via triada (<code>Express</code> o <code>Nest</code>) està justificada amb criteri tècnic</li>
+<li>hi ha evidències reals d'arrancada i primera verificació</li>
+<li>la base queda preparada per connectar-se amb autenticació, persistència, API i integració en els reptes següents</li>
+</ul>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/igomis/reestructuracioModul" class="fa fa-code-fork" style="color: #fcfcfc"> igomis/reestructuracioModul</a>
+        </span>
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../../..";</script>
+    <script src="../../../../js/theme_extra.js"></script>
+    <script src="../../../../js/theme.js"></script>
+      <script src="../../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
