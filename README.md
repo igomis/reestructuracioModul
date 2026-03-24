@@ -36,8 +36,8 @@ Lectura ràpida de la fase actual:
 - la implantació docent es calibra sobre un escenari orientatiu d'unes `20` setmanes i `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - Git/GitHub es tracta com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació des de zero
 - el model admet moments de col·laboració limitada o de producte parcialment compartit, però el seguiment, la verificació, la defensa i l'acreditació es resolen individualment
-- amb el paquet docent en versió `1` funcional, el sistema queda preparat com a base completa de prepilotatge i es pot congelar com a `v1` estable
-- el pilotatge real queda ajornat fins al curs següent i el focus immediat passa a separar allò que ja és usable del que queda com a millora pendent abans d'eixe desplegament
+- la `v1` prepilotatge ja queda congelada com a base estable i usable del paquet docent
+- el focus immediat passa a la preparació docent directa del curs que ve, amb demos, modelatges i materials llestos, i amb el backlog de millora separat de la base estable
 
 ## Documents clau de la fase actual
 - [Pla d'implantació docent del mòdul](docs/01_programacio_modul/pla_implantacio_docent.md)
@@ -75,6 +75,7 @@ Lectura ràpida de la fase actual:
 - [Seguiment de l'execució real del pilotatge](docs/00_visio_general/seguiment_execucio_pilotatge.md)
 - [Versió prepilotatge v1](docs/00_visio_general/versio_prepilotatge_v1.md)
 - [Backlog de millores prepilotatge](docs/00_visio_general/backlog_millores_prepilotatge.md)
+- [Preparació docent directa per al curs que ve](docs/01_programacio_modul/preparacio_docent_directa_curs_que_ve.md)
 - [Plantilla de recollida de feedback de pilotatge](docs/03_avaluacio/plantilla_recollida_feedback_pilotatge.md)
 - [Registre d'incidents i ajustos del pilotatge](docs/03_avaluacio/registre_incidents_i_ajustos_pilotatge.md)
 - [Paquet docent exportable del mòdul](docs/00_visio_general/paquet_docent_exportable.md)
@@ -90,6 +91,6 @@ Lectura ràpida de la fase actual:
 - [Mapa RA -> reptes](docs/00_visio_general/mapa_ra_reptes.md)
 
 ## Focus actual
-1. Tindre el paquet docent completament preparat per a prepilotatge com a sistema usable i coherent.
-2. Congelar una `v1` estable que separe la base madura del paquet de les millores pendents.
-3. Preparar i prioritzar millores abans del curs següent sense reobrir la construcció del nucli del sistema.
+1. Mantindre congelada la `v1` prepilotatge com a base estable i usable del paquet docent.
+2. Preparar de manera directa l'ús docent real del paquet per al curs que ve, amb guions, demos i materials llestos abans de setembre.
+3. Mantindre el backlog de millora separat de la base estable i usar-lo només per a ajustos finals abans de l'inici de curs.
