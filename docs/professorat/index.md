@@ -17,6 +17,8 @@ Si has d'obrir el curs o reprendre'l ràpidament, l'ordre recomanat és este:
 Si ja tens el curs en marxa, entra directament en:
 - [Com gestionar ritmes i suport](com_gestionar_ritmes_i_suport.md)
 - [Com pilotar i ajustar](com_pilotar_i_ajustar.md)
+- [Materials de classe compartibles](../08_materials_compartibles/index.md)
+- [Paquets d'ús directe](../09_paquets_ús_directe/index.md)
 
 ## Documents essencials segons el moment del curs
 ### Abans d'iniciar
@@ -50,6 +52,11 @@ Si ja tens el curs en marxa, entra directament en:
 - [Pla de pilotatge real](../00_visio_general/pla_pilotatge_real.md)
 - [Pla d'execució del pilotatge](../00_visio_general/pla_execucio_pilotatge_real.md)
 - [Seguiment de l'execució del pilotatge](../00_visio_general/seguiment_execucio_pilotatge.md)
+
+### Per a ús immediat en aula
+- [Materials de classe compartibles](../08_materials_compartibles/index.md)
+- [Paquets d'ús directe](../09_paquets_ús_directe/index.md)
+- [Micro-presentacions docents](../07_presentacions/presentacio_00_visio_curs.md)
 
 ## Quan et cal el detall complet
 Si necessites la capa llarga del repositori, entra en:

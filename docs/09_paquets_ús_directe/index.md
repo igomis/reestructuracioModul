@@ -27,4 +27,5 @@ Este espai agrupa els materials més útils segons el moment del curs perquè el
 ## Criteri d'ús
 - el bloc [Materials compartibles](../08_materials_compartibles/index.md) continua sent la base de peces curtes
 - estos paquets són una capa superior d'ordenació per moment docent
+- si necessites orientació general de rol i recorregut, entra pel [portal de professorat](../professorat/index.md)
 - si necessites aprofundir, cada paquet et deriva a apunts reals, materials de sessió i portals d'ús

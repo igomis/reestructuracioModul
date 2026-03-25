@@ -8,12 +8,15 @@ Esta secció és la porta d'entrada curta del curs per a alumnat. No substituïx
 - [Com es valora](com_es_valora.md)
 - [Com fer servir la IA](com_fer_servir_la_ia.md)
 - [Projectes base](projectes_base.md)
+- [Consulta tècnica](consulta_tecnica/index.md)
 
 Si és la primera vegada que entres, l'ordre recomanat és:
 1. entendre [com funciona el curs](com_funciona_el_curs.md)
 2. mirar [com es valora](com_es_valora.md)
 3. revisar [els projectes base](projectes_base.md)
 4. entrar a [la seqüència de reptes](reptes/index.md)
+
+Si el dubte que tens és tècnic i no de funcionament general del curs, entra directament a la [consulta tècnica](consulta_tecnica/index.md).
 
 ## Reptes del curs
 - [Vista general dels reptes](reptes/index.md)
@@ -29,6 +32,7 @@ Si és la primera vegada que entres, l'ordre recomanat és:
 - si vas a usar IA: [Com fer servir la IA](com_fer_servir_la_ia.md)
 - si encara no tens clar el producte: [Projectes base](projectes_base.md)
 - si estàs treballant un repte concret: [Reptes del curs](reptes/index.md)
+- si el bloqueig és tècnic i puntual: [Consulta tècnica](consulta_tecnica/index.md)
 
 ## Idees clau
 - el curs es construeix sobre un únic producte que creix de `R1` a `R5`

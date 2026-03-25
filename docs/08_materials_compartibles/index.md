@@ -27,6 +27,7 @@ Ací trobaràs materials pensats per a:
 ## Criteri d'ús
 - si necessites context complet, ves al [portal d'alumnat](../alumnat/index.md)
 - si necessites resoldre un dubte tècnic concret, ves a la [consulta tècnica](../alumnat/consulta_tecnica/index.md)
+- si vols estes peces ja agrupades per moment docent, ves als [paquets d'ús directe](../09_paquets_ús_directe/index.md)
 - si necessites una peça curta per entregar o projectar en aula, usa este bloc
 
 ## Idees clau

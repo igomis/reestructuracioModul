@@ -13,6 +13,13 @@ Criteri d'us:
 - si busques orientacio de treball i consulta rapida, entra per perfil
 - si busques detall complet del paquet docent, entra pels blocs documentals
 
+## Si vull una entrada rapida d'us real
+- [Portal d'alumnat](../alumnat/index.md): recorregut curt per entendre el curs, la nota, l'us de la IA, els projectes base, els reptes i la consulta tecnica.
+- [Portal de professorat](../professorat/index.md): recorregut curt per preparar el curs, conduir-lo, avaluar, gestionar ritmes i ajustar-lo.
+- [Materials de classe compartibles](../08_materials_compartibles/index.md): peces breus per donar, projectar o usar en checkpoint.
+- [Paquets d'us directe](../09_paquets_ús_directe/index.md): agrupacio de peces i documents per tram del curs amb pocs clics.
+- [Presentacions](../07_presentacions/presentacio_00_visio_curs.md): suport docent breu per obrir curs, reptes i defensa.
+
 ## Si vull entendre el projecte en 10 minuts
 - [Presentacio breu del model DWES](presentacio_model_dwes_reptes_ia.md): versio curta del model per reptes amb IA.
 - [Resum executiu del paquet docent](resum_executiu_paquet_docent.md): vista general del paquet ja consolidat.

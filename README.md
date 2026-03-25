@@ -30,6 +30,7 @@ Repositori de treball per al redisseny del mòdul **Desenvolupament d’Aplicaci
 
 ## Navegació documental
 - Índex central: [Index documental del projecte](docs/00_visio_general/index_documental.md)
+- Recorreguts principals de consulta: alumnat per entendre i executar el curs; professorat per preparar-lo i conduir-lo; materials compartibles i paquets d'ús directe per a ús immediat en aula
 - Accés d'alumnat: [portal d'apunts online](docs/alumnat/index.md)
 - Consulta tècnica d'alumnat: [guia breu per dubtes reals del curs](docs/alumnat/consulta_tecnica/index.md), ara ampliada amb més fitxes i enllaços oficials o molt fiables
 - Paquets d'ús directe: [agrupacions per moment del curs](docs/09_paquets_ús_directe/index.md) per saber què obrir, què donar i què usar en checkpoint o defensa
@@ -57,6 +58,7 @@ Lectura ràpida de la fase actual:
 - la seqüència docent completa del curs ja queda pilotable de punta a punta en un bloc coherent de `20` setmanes
 - la `v1` prepilotatge queda preparada com a base estable i els projectes base concretats passen a producció com a encàrrec docent més tancat i més defensable
 - la capa web per a alumnat i professorat, els materials compartibles i els paquets d'ús directe ja queden publicats com a accessos curts per a ús real
+- la web ja queda usable com a entorn final de consulta per perfil i per moment d'ús, sense necessitat d'obrir noves capes de documentació
 
 ## Documents clau de la fase actual
 - [Index documental del projecte](docs/00_visio_general/index_documental.md)

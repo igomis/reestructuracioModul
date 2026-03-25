@@ -39,4 +39,5 @@ Esta secció és una capa breu de consulta per resoldre dubtes reals del curs. N
 - comença pel dubte tècnic concret, no pel framework sencer
 - usa cada fitxa per desbloquejar una decisió del teu projecte, no per copiar receptes
 - quan arribes a `On ampliar`, salta a la documentació oficial o al material llarg del curs segons el problema
+- si el dubte no és tècnic sinó de recorregut, nota o funcionament del curs, torna al [portal d'alumnat](../index.md)
 - si una solució ve de IA, contrasta-la sempre amb el comportament real del teu repo

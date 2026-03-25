@@ -39,6 +39,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `MAT-03` consolidat: paquets d'ús directe
 - `RF-01` consolidat: revisió final abans de l'inici de curs
 - `WEB-02` consolidat: navegació alumne/professor
+- `WEB-03` consolidat: revisió final de la web com a entorn de consulta usable
 - `PRS-01` en producció: micro-presentacions docents
 - `PD-01` consolidat: guia sessió a sessió de `20` setmanes
 - `PD-02` consolidat: annex de suport i ampliació segons ritmes
@@ -80,6 +81,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `MAT-02` consolidat amb l'ampliació dels materials compartibles cap a `R3-R5`, checkpoints finals i tancament breu.
 - `MAT-03` consolidat amb els paquets d'ús directe agrupats per moment del curs.
 - `WEB-02` consolidat amb la separació web per perfils d'alumnat i professorat.
+- `WEB-03` consolidat amb la revisió final dels recorreguts web d'alumnat i professorat, consulta tècnica, materials compartibles i paquets d'ús directe.
 - `RF-01` consolidat amb la passada final de coherència abans de l'inici de curs.
 
 ## Paquets en producció o consolidació final
@@ -183,6 +185,7 @@ Criteri comú dels itineraris:
 - la primera sèrie de materials compartibles queda ja consolidada per a l'arrancada del curs i els primers checkpoints
 - l'ampliació dels materials compartibles cap als Reptes `3`, `4` i `5` queda ja consolidada com a capa curta completa per a tot el producte
 - els paquets d'ús directe queden ja consolidats com a capa d'ordenació ràpida per moment del curs
+- la web queda ja usable com a entorn final de consulta per perfil i per moment d'ús, sense necessitat de noves capes documentals
 - la sèrie curta de micro-presentacions continua disponible com a suport docent breu dins de la mateixa web
 - la revisió final abans de l'inici de curs queda tancada amb ajustos menors de relat, navegació i coherència entre capes
 - el projecte queda llest per començar el curs sense necessitat de canvis substancials d'estructura

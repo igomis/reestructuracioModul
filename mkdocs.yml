@@ -20,6 +20,7 @@ markdown_extensions:
 
 nav:
   - Portada: index.md
+  - Index documental: 00_visio_general/index_documental.md
   - Alumnat:
       - Inici alumnat: alumnat/index.md
       - Com funciona el curs: alumnat/com_funciona_el_curs.md
@@ -92,7 +93,6 @@ nav:
       - Repte 4: 07_presentacions/presentacio_04_repte_4.md
       - Repte 5: 07_presentacions/presentacio_05_repte_5.md
       - Avaluacio i defensa: 07_presentacions/presentacio_06_avaluacio_i_defensa.md
-  - Index documental: 00_visio_general/index_documental.md
   - Visio general:
       - Presentacio breu: 00_visio_general/presentacio_model_dwes_reptes_ia.md
       - Resum executiu: 00_visio_general/resum_executiu_paquet_docent.md
