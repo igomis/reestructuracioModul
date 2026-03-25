@@ -67,6 +67,7 @@ Lectura ràpida de la fase actual:
 - [Index del bloc de materials](docs/04_materials/index.md)
 - [Curs executable DWES en 2 avaluacions](docs/01_programacio_modul/curs_executable_dwes_2_avaluacions.md)
 - [Guia sessió a sessió del curs en 20 setmanes](docs/01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md)
+- [Guió docent complet de la setmana 1](docs/01_programacio_modul/setmana_01_guio_docent.md)
 - [Revisió transversal del bloc pilotable de 20 setmanes](docs/01_programacio_modul/revisio_transversal_bloc_pilotable_20_setmanes.md)
 - [Ajustos finals abans de l'inici de curs](docs/01_programacio_modul/ajustos_finals_abans_inici_curs.md)
 - [Projectes base concretats del mòdul](docs/05_projectes_tecnics/projectes_base_concretats.md)
