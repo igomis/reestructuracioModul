@@ -4,8 +4,9 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 
 ## Actualització operativa immediata
 - `RF-01` consolidat.
-- `AUL-01` en producció: guió docent complet de setmana 1 a `docs/01_programacio_modul/setmana_01_guio_docent.md`.
-- següent focus: concretar setmana 2 amb el mateix nivell.
+- `AUL-01` consolidat: guió docent complet de setmana 1 a `docs/01_programacio_modul/setmana_01_guio_docent.md`.
+- `AUL-02` en producció: guió docent complet de setmana 2 a `docs/01_programacio_modul/setmana_02_guio_docent.md`.
+- següent focus: concretar setmana 3 amb el mateix nivell.
 
 ## Situació actual
 - la base curricular, el projecte base del curs i els documents centrals de planificació ja existixen i són visibles a `master`
@@ -56,7 +57,8 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PD-08` consolidat: kit de pilotatge setmanes `13-16`
 - `PD-09` consolidat: kit de pilotatge setmanes `17-20`
 - `PD-10` consolidat: revisió transversal del bloc pilotable `1-20`
-- `AUL-01` en producció: guió docent complet de setmana 1
+- `AUL-01` consolidat: guió docent complet de setmana 1
+- `AUL-02` en producció: guió docent complet de setmana 2
 - `AV-02` en producció: alineació del seguiment i l'avaluació amb criteri individual
 - `RC-11` consolidat: reforç del nivell professional dels reptes i del seu llindar de no trivialitat
 
@@ -150,6 +152,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `backlog_millores_prepilotatge.md`: separació explícita de millores pendents, dubtes i decisions ajornades
 - `preparacio_docent_directa_curs_que_ve.md`: peça operativa per deixar preparats guions, demos i materials abans de l'inici de curs
 - `setmana_01_guio_docent.md`: guió operatiu complet per obrir el curs sense reduir la setmana 1 a stack, instal·lació i repositori
+- `setmana_02_guio_docent.md`: guió operatiu complet per consolidar el primer flux real del backend abans d'entrar en frameworks pesats
 - `curs_executable_dwes_2_avaluacions.md`: versió unificada i reutilitzable del curs per a desplegament docent real
 - `paquet_docent_exportable.md`: lectura unificada del que forma el paquet docent complet i del que es pot transferir a altres contextos
 - `resum_executiu_paquet_docent.md`: entrada curta i compartible al model per a professorat que no ha seguit tot el procés
@@ -201,7 +204,7 @@ Criteri comú dels itineraris:
 
 ## Següent focus recomanat
 - següent focus: arrencada real del curs i observació inicial d'incidències, ritmes i punts de suport
-- següent focus: concretar setmana 2 amb el mateix nivell
+- següent focus: concretar setmana 3 amb el mateix nivell
 - següent focus: materials de classe compartibles ja empaquetats
 - revisar si els accessos d'alumnat, professorat i les peces docents breus es lliguen bé dins de la mateixa web sense duplicació innecessària
 - mantindre alineació entre apunts, programació, avaluació, projecte base i decisions de millora
