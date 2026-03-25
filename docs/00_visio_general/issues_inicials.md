@@ -33,6 +33,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `PJ-01` consolidat: projectes base concretats
 - `AL-01` consolidat: apunts online per a alumnat
 - `AL-02` consolidat: consulta tècnica per a alumnat
+- `AL-03` en producció: ampliació de la consulta tècnica amb enllaços
 - `MAT-01` consolidat: primers materials de classe compartibles
 - `MAT-02` consolidat: materials compartibles `R3-R5`
 - `MAT-03` consolidat: paquets d'ús directe
@@ -190,6 +191,7 @@ Criteri comú dels itineraris:
 
 ## Següent focus recomanat
 - següent focus: arrencada real del curs i observació inicial d'incidències, ritmes i punts de suport
+- següent focus: materials de classe compartibles ja empaquetats
 - revisar si els accessos d'alumnat, professorat i les peces docents breus es lliguen bé dins de la mateixa web sense duplicació innecessària
 - mantindre alineació entre apunts, programació, avaluació, projecte base i decisions de millora
 - avançar en peces noves sense reobrir la `v1` estable ni la seqüència principal del curs

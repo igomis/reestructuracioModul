@@ -14,17 +14,19 @@
 - en `Nest`, `module`, `controller`, `service`, `guard` i `dto` no poden ser màgia negra
 - has de saber on entra la petició, on es valida, on es resol la lògica i on es persistix
 - no és bona idea deixar tota la lògica en `app.ts`, en una ruta o en un sol controlador
-- la configuració d'entorn i les proves mínimes formen part del projecte, no del “després”
+- la configuració d'entorn i les proves mínimes formen part del projecte
 
 ## Errors habituals
 - projectes `Express` sense arquitectura recognoscible
-- projectes `Nest` generats amb CLI però no compresos
+- projectes `Nest` generats amb `CLI` però no compresos
 - barrejar rutes, lògica i dades al mateix lloc
 - triar `Express` o `Nest` només per moda o per suggeriment d'IA
 - no deixar clar quin flux es validarà, quin persistirà i quin es publicarà com a `API`
 
-## On consultar-ho bé
-- [Guia de bootstrap Express/Nest](../../04_materials/itineraris/express_nest/guia_bootstrap_express_nest.md)
-- [Guia d'auth i persistència Express/Nest](../../04_materials/itineraris/express_nest/guia_auth_i_persistencia_express_nest.md)
-- [Checklist de l'itinerari Express/Nest](../../04_materials/itineraris/express_nest/checklist_itinerari_express_nest.md)
-- [Repte 4 per a alumnat](../reptes/repte_04.md)
+## On ampliar
+- Material del curs: [Guia de bootstrap Express/Nest](../../04_materials/itineraris/express_nest/guia_bootstrap_express_nest.md)
+- Material del curs: [Guia d'auth i persistència Express/Nest](../../04_materials/itineraris/express_nest/guia_auth_i_persistencia_express_nest.md)
+- Express Docs: [Routing](https://expressjs.com/en/guide/routing.html)
+- Express Docs: [Using middleware](https://expressjs.com/en/guide/using-middleware.html)
+- NestJS Docs: [Controllers](https://docs.nestjs.com/controllers)
+- NestJS Docs: [Authentication](https://docs.nestjs.com/security/authentication)

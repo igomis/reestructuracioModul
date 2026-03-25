@@ -31,7 +31,7 @@ Repositori de treball per al redisseny del mòdul **Desenvolupament d’Aplicaci
 ## Navegació documental
 - Índex central: [Index documental del projecte](docs/00_visio_general/index_documental.md)
 - Accés d'alumnat: [portal d'apunts online](docs/alumnat/index.md)
-- Consulta tècnica d'alumnat: [guia breu per dubtes reals del curs](docs/alumnat/consulta_tecnica/index.md)
+- Consulta tècnica d'alumnat: [guia breu per dubtes reals del curs](docs/alumnat/consulta_tecnica/index.md), ara ampliada amb més fitxes i enllaços oficials o molt fiables
 - Paquets d'ús directe: [agrupacions per moment del curs](docs/09_paquets_ús_directe/index.md) per saber què obrir, què donar i què usar en checkpoint o defensa
 - Materials de classe compartibles: [peces curtes per a aula](docs/08_materials_compartibles/index.md), ara ja ampliades a `R1-R5`, checkpoints i tancament breu de defensa
 - Accés de professorat: [portal docent de navegació ràpida](docs/professorat/index.md)

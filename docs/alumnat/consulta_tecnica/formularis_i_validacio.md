@@ -1,35 +1,32 @@
 # Formularis i validació
 
 ## Què és
-És la capa que convertix una entrada del producte en una dada usable de veritat. Al curs no compta només tindre una pantalla o un camp: compta que el servidor reba la informació, la valide i la tracte amb criteri mínim.
+És la capa que convertix una entrada del producte en una dada usable de veritat. En el curs no compta només tindre una pantalla o un `JSON`: compta que el servidor reba la informació, la valide i la tracte amb criteri mínim.
 
 ## Quan la necessites en el curs
 - en `R1`, per obrir la primera entrada funcional del producte
-- en `R2`, per alta, login i primera operació de negoci protegida
+- en `R2`, per alta, `login` i primera operació protegida
 - en `R3`, per lligar validació amb model i persistència
 - en `R4`, quan una entrada passa a formar part del contracte d'`API`
 
 ## Què has de saber sí o sí
 - la validació important és la del servidor, encara que també valides al client
-- un formulari del curs ha d'estar lligat a un cas d'ús real del projecte, no a una pantalla ornamental
 - no és el mateix validar camps obligatoris que validar una regla de negoci
 - has de poder mostrar almenys un cas correcte i un cas incorrecte
-- les respostes d'error han de ser comprensibles per provar i depurar
-
-Exemples alineats amb els projectes base:
-- inventari: no permetre una eixida si falta l'identificador del recurs o la quantitat és incoherent
-- reserves: no acceptar una reserva si falta la franja o hi ha conflicte temporal bàsic
-- incidències: no acceptar una alta si no hi ha descripció mínima o context suficient
+- l'error ha de tornar de manera clara perquè el pugues provar i depurar
+- la validació ha d'estar connectada amb un cas d'ús real del projecte
 
 ## Errors habituals
-- validar només al client i confiar que el backend “ja ho arreglarà”
+- validar només al client i confiar que el backend ja ho arreglarà
 - resoldre només el cas feliç
-- crear diversos formularis buits en lloc d'un flux útil
-- donar per bona una entrada perquè “guarda dades” però sense missatge clar en error
-- copiar validacions suggerides per IA sense provar quins casos fallen de veritat
+- fer diversos formularis buits en lloc d'un flux útil
+- acceptar dades incoherents perquè la base de dades les guarda igual
+- copiar validacions suggerides per IA sense provar casos límit
 
-## On consultar-ho bé
-- [Repte 1. Kickoff funcional](../../02_reptes/repte_01_kickoff_backend.md)
-- [Repte 2. Sessions, autenticació i primera funcionalitat](../../02_reptes/repte_02_sessions_i_autenticacio.md)
-- [Apunts reals del Repte 2](../../04_materials/apunts_reals/repte_02_sessions_i_autenticacio.md)
-- [Guia de validació i errors de servidor](../../04_materials/repte_02/guia_validacio_i_errors_servidor.md)
+## On ampliar
+- Material del curs: [Repte 1. Kickoff funcional](../../02_reptes/repte_01_kickoff_backend.md)
+- Material del curs: [Guia de validació i errors de servidor](../../04_materials/repte_02/guia_validacio_i_errors_servidor.md)
+- MDN: [Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation)
+- Laravel Docs: [Validation](https://laravel.com/docs/13.x/validation)
+- FastAPI Docs: [Request Body](https://fastapi.tiangolo.com/tutorial/body/)
+- NestJS Docs: [Validation](https://docs.nestjs.com/techniques/validation)

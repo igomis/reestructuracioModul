@@ -30,13 +30,22 @@ nav:
           - Inici consulta tècnica: alumnat/consulta_tecnica/index.md
           - Consulta comuna del curs:
               - Formularis i validació: alumnat/consulta_tecnica/formularis_i_validacio.md
+              - Errors HTTP i codis de resposta: alumnat/consulta_tecnica/errors_http_i_codis_resposta.md
               - Cookies, sessions i estat: alumnat/consulta_tecnica/cookies_sessions_i_estat.md
               - Autenticació i autorització: alumnat/consulta_tecnica/autenticacio_i_autoritzacio.md
+              - Seguretat bàsica de backend: alumnat/consulta_tecnica/seguretat_basica_backend.md
+              - Password hashing i credencials: alumnat/consulta_tecnica/password_hashing_i_credentials.md
               - Tokens útils en backend: alumnat/consulta_tecnica/tokens_utils_en_backend.md
+              - JWT i tokens d'API: alumnat/consulta_tecnica/jwt_i_tokens_api.md
               - APIs i contracte: alumnat/consulta_tecnica/apis_i_contracte.md
               - Persistència i modelat: alumnat/consulta_tecnica/persistencia_i_modelat.md
+              - Migracions i canvis de dades: alumnat/consulta_tecnica/migracions_i_canvis_dades.md
+              - ORM i consulta de dades: alumnat/consulta_tecnica/orm_i_consulta_dades.md
               - Proves i debugging: alumnat/consulta_tecnica/proves_i_debugging.md
+              - Webhooks i integracions: alumnat/consulta_tecnica/webhooks_i_integracions.md
           - Consulta ràpida per itinerari:
+              - PHP: alumnat/consulta_tecnica/php_consulta_rapida.md
+              - Sessions i auth en PHP: alumnat/consulta_tecnica/sessions_i_auth_php.md
               - Laravel: alumnat/consulta_tecnica/laravel_consulta_rapida.md
               - Express/Nest: alumnat/consulta_tecnica/express_nest_consulta_rapida.md
               - FastAPI: alumnat/consulta_tecnica/fastapi_consulta_rapida.md
