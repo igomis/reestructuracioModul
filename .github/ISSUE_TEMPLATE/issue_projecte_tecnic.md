@@ -11,10 +11,12 @@ assignees: ""
 ## Context tècnic
 
 ## Tasques
+
 - [ ] ...
 
 ## Resultat esperat
 
 ## Criteris de tancament
+
 - [ ] document tècnic creat
 - [ ] encaix curricular revisat

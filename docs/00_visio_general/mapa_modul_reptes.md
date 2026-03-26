@@ -11,6 +11,7 @@
 | 5 | Integració híbrida, automatització i manteniment | Integrar automatitzacions i serveis externs en un backend sostenible. | Solució híbrida amb integració n8n/serveis externs, monitoratge bàsic i pla de manteniment. | Bloc 7 (webs híbrides) + part aplicada del bloc 5. | Integració amb APIs externes, observabilitat, manteniment i defensa tècnica de decisions. |
 
 ## Eixos transversals
+
 - Git i treball amb repositori
 - debugging i testing
 - documentació tècnica

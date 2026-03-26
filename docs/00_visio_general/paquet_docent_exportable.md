@@ -1,11 +1,13 @@
 # Paquet docent exportable del mòdul
 
 ## Finalitat del document
+
 Definir què constitueix el paquet docent complet del mòdul una vegada tancada la fase de reestructuració, materials, itineraris, implantació i seguiment, de manera que el treball realitzat es puga reutilitzar com a conjunt coherent i no només com a suma de documents independents.
 
 Este document no torna a descriure el curs peça per peça, sinó que fixa quins blocs formen el paquet docent, quins són imprescindibles, quins són adaptables i com hauria de llegir-los o activar-los un docent que vulga implantar el model.
 
 ## Què forma part del paquet docent del mòdul
+
 | Bloc del paquet | Peces principals | Funció dins del model |
 |---|---|---|
 | **Visió general** | `mapa_modul_reptes.md`, `mapa_ra_reptes.md`, `issues_inicials.md` | donar lectura global del model, del seu encaix i de l'estat real de producció |
@@ -19,7 +21,9 @@ Este document no torna a descriure el curs peça per peça, sinó que fixa quins
 | **Plantilles reutilitzables** | `docs/06_plantilles/` | facilitar adaptació, replicació i creació de noves peces a partir d'un patró comú |
 
 ## Quines peces són imprescindibles
+
 Sense estes peces el model no és realment implantable:
+
 - [enunciat_projecte_base.md](../05_projectes_tecnics/enunciat_projecte_base.md) com a encàrrec base del producte
 - fitxes de reptes com a seqüència obligatòria del curs
 - materials comuns del mòdul
@@ -32,11 +36,14 @@ Sense estes peces el model no és realment implantable:
 - [instruments_seguiment_docent.md](../03_avaluacio/instruments_seguiment_docent.md)
 
 Lectura pràctica:
+
 - si falta projecte base, seqüència per reptes, curs executable o sistema de seguiment, el paquet queda incomplet
 - la resta de peces milloren robustesa, adaptació i transferibilitat
 
 ## Quines peces són adaptables
+
 Estes peces poden canviar sense trencar el nucli del model:
+
 - domini concret del producte, sempre que es mantinguen els dominis admesos o una lògica equivalent
 - itinerari tecnològic concret, sempre que es mantinguen exigències homologables
 - detall de calendarització fina segons la càrrega real del centre
@@ -45,6 +52,7 @@ Estes peces poden canviar sense trencar el nucli del model:
 - distribució en dues avaluacions o equivalent, sempre que el desenvolupament principal continue tancant-se abans de la fase no lectiva o de pràctiques externes
 
 ## Ordre recomanat de lectura o ús per al professorat
+
 1. Llegir [paquet_docent_exportable.md](paquet_docent_exportable.md) per entendre què s'està adoptant.
 2. Llegir [enunciat_projecte_base.md](../05_projectes_tecnics/enunciat_projecte_base.md) per fixar l'encàrrec del producte.
 3. Llegir [pla_implantacio_docent.md](../01_programacio_modul/pla_implantacio_docent.md) i [calendaritzacio_per_avaluacions.md](../01_programacio_modul/calendaritzacio_per_avaluacions.md) per entendre l'estructura temporal.
@@ -54,6 +62,7 @@ Estes peces poden canviar sense trencar el nucli del model:
 7. Seleccionar o permetre itineraris `Laravel`, `Express/Nest` o `FastAPI` sense alterar el nivell d'exigència.
 
 ## Què necessita un docent per implantar-lo
+
 - entendre que el model està calibrat sobre `20` setmanes, `6` hores setmanals i unes `120` hores lectives aproximades
 - assumir que el projecte s'ha de completar dins de les dues primeres avaluacions
 - compartir des de l'inici el criteri que Git/GitHub és metodologia de treball i traçabilitat, no iniciació bàsica
@@ -63,7 +72,9 @@ Estes peces poden canviar sense trencar el nucli del model:
 - estar disposat a fer seguiment real del repositori, documentació, proves i ús verificable de la IA
 
 ## Què es pot exportar a altres mòduls
+
 El que és més reutilitzable no és el contingut tècnic concret de DWES, sinó el patró docent:
+
 - seqüència de treball per reptes amb producte base comú
 - model d'evidències autèntiques i seguiment per checkpoints
 - separació entre materials comuns, materials per repte i variants tecnològiques
@@ -73,6 +84,7 @@ El que és més reutilitzable no és el contingut tècnic concret de DWES, sinó
 - paquet d'instruments finals de seguiment docent
 
 ## Limitacions i punts a contextualitzar
+
 - este paquet està pensat per a un context on la 3a avaluació no és central perquè l'alumnat està en empresa o `FCT`
 - el model assumix base prèvia en Git/GitHub; si el grup no la té, caldria obrir una capa d'alfabetització que ací no està contemplada
 - els itineraris actuals responen a `Laravel`, `Express/Nest` i `FastAPI`; altres stacks requeririen una adaptació explícita
@@ -80,7 +92,9 @@ El que és més reutilitzable no és el contingut tècnic concret de DWES, sinó
 - el paquet és exportable, però no automàticament transplantable: cada centre ha de contextualitzar horari, resultats d'aprenentatge, autonomia de l'alumnat i marge real de seguiment
 
 ## Definition of done del paquet
+
 El paquet docent es considera completat quan:
+
 - es pot descriure com un conjunt coherent i no com una suma d'arxius independents
 - deixa clar què és imprescindible i què és adaptable
 - ofereix un ordre de lectura o adopció usable per al professorat

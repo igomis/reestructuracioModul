@@ -1,12 +1,15 @@
 # Kit de pilotatge de les setmanes 1-4
 
 ## Finalitat del document
+
 Convertir l'arrancada del curs en una peça operativa directament usable per al pilotatge real, de manera que el professorat puga conduir les primeres quatre setmanes sense reconstruir la seqüència a partir de documents separats.
 
 Este kit concentra, per al primer tram del curs, què cal explicar, què convé modelar, què ha de fer l'alumnat, quines evidències s'han de recollir i què s'ha de registrar per validar el model amb alumnat real.
 
 ## Hipòtesi de treball
+
 El kit s'ha calibrat sobre l'escenari docent que ja assumix el paquet:
+
 - `20` setmanes aproximades
 - `6` hores setmanals
 - `120` hores lectives aproximades
@@ -14,6 +17,7 @@ El kit s'ha calibrat sobre l'escenari docent que ja assumix el paquet:
 - tercera avaluació fora del desenvolupament nuclear del projecte, com a espai residual o de connexió amb empresa o `FCT`
 
 ## Criteris d'ús
+
 - cada setmana equival a un bloc d'unes `6` hores; el centre pot repartir-lo en dues o tres sessions si manté el mateix objectiu
 - Git/GitHub es tracta com a repàs metodològic, traçabilitat i criteri de treball, no com a iniciació bàsica
 - el kit activa materials ja existents; no substituïx ni la guia sessió a sessió ni els materials de repte, sinó que els empaqueta per a l'arrancada real
@@ -21,12 +25,14 @@ El kit s'ha calibrat sobre l'escenari docent que ja assumix el paquet:
 - el criteri docent clau és assegurar que `R1` queda com a primera funcionalitat real del producte i no com a kickoff abstracte
 
 ## Estructura del tram inicial
+
 - `Setmana 1`: marc comú, producte, repositori i traçabilitat
 - `Setmana 2`: domini, itinerari i decisió tècnica justificada
 - `Setmana 3`: primera peça funcional real del producte
 - `Setmana 4`: validació, primer registre de dades i tancament usable de `R1`
 
 ## Peces que s'activen en este tram
+
 - [guia_sessio_a_sessio_20_setmanes.md](guia_sessio_a_sessio_20_setmanes.md)
 - [annex_suport_i_ampliacio_ritmes.md](annex_suport_i_ampliacio_ritmes.md)
 - [pla_execucio_pilotatge_real.md](../00_visio_general/pla_execucio_pilotatge_real.md)
@@ -39,7 +45,9 @@ El kit s'ha calibrat sobre l'escenari docent que ja assumix el paquet:
 - [registre_incidents_i_ajustos_pilotatge.md](../03_avaluacio/registre_incidents_i_ajustos_pilotatge.md)
 
 ## Planificació operativa per setmanes
+
 ### Setmana 1
+
 - Objectiu docent: obrir el curs amb criteri comú de producte, evidències i traçabilitat
 - Focus o repte: marc del curs i entrada a `R1`
 - Què explica el professorat: model per reptes, projecte base, dominis admesos, criteri de no trivialitat, ús verificable de la IA i paper de Git/GitHub com a metodologia de treball
@@ -53,6 +61,7 @@ El kit s'ha calibrat sobre l'escenari docent que ja assumix el paquet:
 - Què s'ha de registrar al pilotatge: dubtes recurrents sobre el model del curs, comprensió real d'evidències, bloquejos inicials amb `README` o traçabilitat i adequació del temps de la setmana
 
 ### Setmana 2
+
 - Objectiu docent: convertir el kickoff en una decisió tècnica i funcional recognoscible
 - Focus o repte: `R1` com a decisió de domini, itinerari i flux d'entrada
 - Què explica el professorat: què no és suficient en `R1`, com acotar un primer flux funcional i com triar itinerari sense convertir el repte en debat de frameworks
@@ -66,6 +75,7 @@ El kit s'ha calibrat sobre l'escenari docent que ja assumix el paquet:
 - Què s'ha de registrar al pilotatge: quins punts generen més dispersió en la tria de domini o itinerari, quines instruccions del `R1` demanen més aclariment i quins equips confonen producte amb infraestructura
 
 ### Setmana 3
+
 - Objectiu docent: obrir una primera interacció real i visible del producte
 - Focus o repte: `R1` com a primera peça funcional no trivial
 - Què explica el professorat: com passar de decisió tècnica a interacció real, què compta com a landing page o equivalent útil i quin és el mínim funcional no trivial del repte
@@ -79,6 +89,7 @@ El kit s'ha calibrat sobre l'escenari docent que ja assumix el paquet:
 - Què s'ha de registrar al pilotatge: dificultats reals per passar d'estructura a funcionalitat, patrons de bloqueig per itinerari i si el modelatge docent és suficient per desencallar el tram
 
 ### Setmana 4
+
 - Objectiu docent: tancar `R1` amb validació, primer registre de dades i preparació neta de `R2`
 - Focus o repte: final usable de `R1`
 - Què explica el professorat: diferència entre cas feliç i verificació real, necessitat de deixar rastre de prova i per què `R1` no està tancat fins que hi ha dada validada i registrada
@@ -92,21 +103,27 @@ El kit s'ha calibrat sobre l'escenari docent que ja assumix el paquet:
 - Què s'ha de registrar al pilotatge: si el temps de `R1` és suficient, quines evidències costen més de fer emergir, si els checkpoints són prou clars i quins ajustos immediats convé aplicar abans d'entrar en `R2`
 
 ## Registre mínim de pilotatge per al tram inicial
+
 Per a les setmanes `1-4`, convé deixar com a mínim:
+
 - una nota setmanal breu per equip amb estat del producte, bloqueig principal i decisió docent
 - una síntesi curta de si l'evidència mínima ha aparegut o no
 - almenys una entrada de feedback al tancament de `R1`
 - una entrada al registre d'incidents si es repetixen patrons de bloqueig en domini, traçabilitat, funcionalitat real o càrrega temporal
 
 ## Criteri de pas a la setmana 5
+
 Només convé entrar en `R2` si:
+
 - el producte ja té una primera interacció real i visible
 - la dada d'entrada es valida i es registra o persistix mínimament
 - l'equip pot defensar què fa ja el producte i quin serà el flux que es protegirà a `R2`
 - el `README` i la traçabilitat permeten entendre on està el projecte real
 
 ## Definition of done del document
+
 Este kit es considera completat quan:
+
 - concreta l'arrancada real del curs en les setmanes `1-4`
 - indica per a cada setmana objectiu, paper docent, treball de l'alumnat, materials activats, evidència mínima, checkpoint, suport, ampliació i registre de pilotatge
 - connecta de manera explícita la seqüència setmanal amb `R1` i amb l'entrada posterior a `R2`

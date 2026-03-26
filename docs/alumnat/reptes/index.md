@@ -1,9 +1,11 @@
 # Reptes del curs
 
 ## Vista general
+
 Els reptes no són entregues independents. Cada repte aprofita l'anterior i prepara el següent.
 
 ## Seqüència
+
 | Repte | Què construïx |
 |---|---|
 | `R1` | una primera entrada funcional real al producte |
@@ -13,11 +15,13 @@ Els reptes no són entregues independents. Cada repte aprofita l'anterior i prep
 | `R5` | integració híbrida, manteniment i tancament defensable |
 
 ## Idea clau
+
 - si un repte queda superficial, el següent es complica molt
 - no val avançar de fase sense una base prou verificable
 - cada repte ha de deixar evidència mínima al repositori
 
 ## Accés ràpid
+
 - [Repte 1](repte_01.md)
 - [Repte 2](repte_02.md)
 - [Repte 3](repte_03.md)

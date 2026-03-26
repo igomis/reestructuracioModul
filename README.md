@@ -1,6 +1,7 @@
 # Reestructuració del mòdul DWES
 
 Repositori de treball per al redisseny del mòdul **Desenvolupament d’Aplicacions Web en Entorn Servidor** en clau de:
+
 - aprenentatge per reptes
 - integració guiada de IA
 - entorn professional realista
@@ -8,6 +9,7 @@ Repositori de treball per al redisseny del mòdul **Desenvolupament d’Aplicaci
 - avaluació basada en evidències autèntiques
 
 ## Objectius del repositori
+
 1. Reestructurar la programació del mòdul.
 2. Dissenyar els reptes del curs.
 3. Adaptar els materials actuals.
@@ -15,6 +17,7 @@ Repositori de treball per al redisseny del mòdul **Desenvolupament d’Aplicaci
 5. Definir projectes tècnics reals: backend, APIs, IA, n8n.
 
 ## Estructura
+
 - `docs/00_visio_general/` visió global del mòdul
 - `docs/alumnat/` accés web sintètic per a alumnat
 - `docs/professorat/` accés web sintètic per a professorat
@@ -29,6 +32,7 @@ Repositori de treball per al redisseny del mòdul **Desenvolupament d’Aplicaci
 - `docs/09_paquets_ús_directe/` agrupació dels materials més útils segons el moment del curs
 
 ## Navegació documental
+
 - Índex central: [Index documental del projecte](docs/00_visio_general/index_documental.md)
 - Recorreguts principals de consulta: alumnat per entendre i executar el curs; professorat per preparar-lo i conduir-lo; materials compartibles i paquets d'ús directe per a ús immediat en aula
 - Accés d'alumnat: [portal d'apunts online](docs/alumnat/index.md)
@@ -43,9 +47,11 @@ Repositori de treball per al redisseny del mòdul **Desenvolupament d’Aplicaci
 - Previsualització local: quan `mkdocs` estiga instal·lat, es pot llançar amb `mkdocs serve`
 
 ## Estat actual
+
 La base curricular del projecte ja està definida i el repositori entra en fase de **implantació docent en 2 avaluacions lectives reals**.
 
 Lectura ràpida de la fase actual:
+
 - el projecte base del curs, l'enunciat base i la seua concretització en tres projectes base ja existixen i funcionen com a base pública usable del mòdul
 - els materials nuclears dels Reptes `2`, `3`, `4` i `5` ja estan publicats, encara que `MG-05` i `MG-06` continuen oberts a una ronda final de consolidació
 - els tres itineraris tecnològics (`Laravel`, `Express/Nest`, `FastAPI`) ja existixen com a paquet comparable dins d'un mateix marc docent
@@ -61,6 +67,7 @@ Lectura ràpida de la fase actual:
 - la web ja queda usable com a entorn final de consulta per perfil i per moment d'ús, sense necessitat d'obrir noves capes de documentació
 
 ## Documents clau de la fase actual
+
 - [Index documental del projecte](docs/00_visio_general/index_documental.md)
 - [Index de programació del mòdul](docs/01_programacio_modul/index.md)
 - [Index del bloc d’avaluació](docs/03_avaluacio/index.md)
@@ -75,6 +82,7 @@ Lectura ràpida de la fase actual:
 - [Estat de producció actual del projecte](docs/00_visio_general/issues_inicials.md)
 
 ## Focus actual
+
 1. Mantindre la `v1` prepilotatge preparada com a base estable i reusable del paquet docent.
 2. Tindre en producció els tres projectes base concretats del mòdul com a encàrrecs ja usables, comparables i defensables.
 3. Mantindre visible i usable el doble accés web per a alumnat i professorat sense duplicar la documentació llarga.

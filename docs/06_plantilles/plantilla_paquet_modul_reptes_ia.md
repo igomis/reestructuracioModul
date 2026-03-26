@@ -1,6 +1,7 @@
 # Plantilla de paquet de mòdul per reptes i IA
 
 ## Dades bàsiques del mòdul
+
 - Mòdul:
 - Família professional:
 - Cicle:
@@ -10,11 +11,13 @@
 - Context de pràctiques externes o `FCT`:
 
 ## Finalitat del paquet docent
+
 - Propòsit general del redisseny:
 - Problema docent que resol:
 - Tipus de producte o projecte base del curs:
 
 ## Estructura per reptes
+
 | Repte | Finalitat | Producte parcial | Evidència clau | Material associat |
 |---|---|---|---|---|
 | **Repte 1** | | | | |
@@ -24,6 +27,7 @@
 | **Repte 5** | | | | |
 
 ## Seqüència d'implantació
+
 - Fase 0. Arrancada i marc comú:
 - Fase 1. Kickoff tècnic:
 - Fase 2. Base funcional del producte:
@@ -32,6 +36,7 @@
 - Fase 5. Integració, tancament i defensa:
 
 ## Evidències i instruments
+
 | Moment o fase | Evidències principals | Instrument principal | Instrument de suport |
 |---|---|---|---|
 | **Inici** | | | |
@@ -41,6 +46,7 @@
 | **Tancament i defensa** | | | |
 
 ## Materials comuns
+
 - Guia de metodologia de treball:
 - Guia de documentació:
 - Guia de proves o debugging:
@@ -48,6 +54,7 @@
 - Altres materials comuns:
 
 ## Materials per repte
+
 - Materials del Repte 1:
 - Materials del Repte 2:
 - Materials del Repte 3:
@@ -55,12 +62,14 @@
 - Materials del Repte 5:
 
 ## Itineraris o variants tecnològiques
+
 - Itinerari o variant 1:
 - Itinerari o variant 2:
 - Itinerari o variant 3:
 - Criteri perquè totes les variants mantinguen el mateix nivell d'exigència:
 
 ## Instruments de seguiment
+
 - Revisió inicial de base o repositori:
 - Registre periòdic per equip:
 - Acta de checkpoint:
@@ -69,6 +78,7 @@
 - Registre d'ús de la IA:
 
 ## Calendarització en 2 avaluacions o equivalent
+
 | Tram | Setmanes o període | Focus principal | Resultat mínim exigible |
 |---|---|---|---|
 | **Avaluació o tram 1** | | | |
@@ -76,6 +86,7 @@
 | **Tram no lectiu o residual** | | | |
 
 ## Punts crítics d'adaptació
+
 - Càrrega horària real del centre:
 - Nivell de base prèvia de l'alumnat:
 - Necessitat d'alfabetització prèvia en eines:
@@ -85,6 +96,7 @@
 - Riscos previsibles i mesures de control:
 
 ## Checklist mínim del paquet
+
 - el mòdul té projecte base o encàrrec clar
 - la seqüència per reptes està definida
 - hi ha materials comuns i materials per repte

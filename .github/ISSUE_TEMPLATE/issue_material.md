@@ -15,6 +15,7 @@ assignees: ""
 ## Resultat esperat
 
 ## Criteris de tancament
+
 - [ ] material adaptat o creat
 - [ ] associació al repte definida
 - [ ] paper de la IA aclarit si aplica

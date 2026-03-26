@@ -1,6 +1,7 @@
 # Com funciona el curs
 
 ## El model del curs
+
 Este mòdul es treballa per reptes. Això vol dir que no faràs peces inconnexes, sinó un mateix producte backend que va creixent al llarg del curs.
 
 La seqüència és:
@@ -12,6 +13,7 @@ La seqüència és:
 - `R5`: integració híbrida, tancament i defensa
 
 ## El producte base
+
 Des del principi has de treballar sobre un projecte base recognoscible. No és una pràctica solta ni una demo per a cada tema.
 
 El producte base:
@@ -24,6 +26,7 @@ El producte base:
 Pots consultar els tres projectes admesos en [Projectes base](projectes_base.md).
 
 ## Dues avaluacions lectives
+
 El desenvolupament principal del projecte es resol dins de les dues primeres avaluacions.
 
 Lectura pràctica:
@@ -50,6 +53,7 @@ No és suficient:
 - entregar codi que no pots defensar
 
 ## Què vol dir mínim funcional no trivial
+
 Vol dir que cada repte ha de deixar una part del producte que tinga valor real i es puga provar.
 
 No vol dir:
@@ -74,4 +78,5 @@ Sí vol dir:
 - `AI log` o registre equivalent si uses IA en parts rellevants
 
 ## Si vols el document llarg
+
 La versió docent completa està en [Curs executable DWES en 2 avaluacions](../01_programacio_modul/curs_executable_dwes_2_avaluacions.md).

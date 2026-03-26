@@ -1,9 +1,11 @@
 # Fase 1. Arquitectura curricular del mòdul DWES
 
 ## Finalitat de la fase
+
 Establir l’arquitectura curricular del mòdul DWES en una seqüència de 5 reptes connectats, mantenint la cobertura completa del currículum i incorporant ús habitual però verificable de la IA en un context professional backend.
 
 ## Objectius específics
+
 - definir un fil conductor únic per a tot el curs basat en un producte backend evolutiu
 - distribuir els RA del mòdul en reptes principals i espais de reforç
 - concretar criteris metodològics comuns per a tots els reptes
@@ -11,6 +13,7 @@ Establir l’arquitectura curricular del mòdul DWES en una seqüència de 5 rep
 - assegurar la coherència entre programació, reptes, avaluació i materials
 
 ## Decisions estructurals adoptades
+
 - s’organitza el curs en 5 reptes consecutius amb dependències explícites
 - cada repte té finalitat, producte i evidències observables
 - els RA1-RA9 es mantenen íntegrament, sense eliminacions
@@ -28,6 +31,7 @@ Establir l’arquitectura curricular del mòdul DWES en una seqüència de 5 rep
 | 5 | Integració híbrida, automatització i manteniment | Consolidar integracions externes i sostenibilitat del producte. | RA9, reforç de RA7 i RA8 | Integració híbrida (n8n/serveis externs) + pla de manteniment. |
 
 ## Correspondència general amb resultats d’aprenentatge
+
 - RA1: punt d’entrada al Repte 1.
 - RA2-RA4: nucli funcional del Repte 2.
 - RA5-RA6: consolidació arquitectònica al Repte 3.
@@ -36,14 +40,18 @@ Establir l’arquitectura curricular del mòdul DWES en una seqüència de 5 rep
 - RA9: integració híbrida i automatització al Repte 5.
 
 ## Paper transversal de la IA
+
 La IA s’utilitza durant tot el curs per accelerar tasques de comparativa tècnica, generació de base de codi, debugging, tests i documentació. L’ús sempre queda condicionat a:
+
 - registre mínim d’interaccions (AI log)
 - justificació de decisions adoptades
 - validació tècnica amb proves i execució real
 - defensa individual del que s’ha implementat
 
 ## Entorn professional com a eix transversal
+
 L’activitat de tots els reptes es dissenya en clau d’entorn backend real:
+
 - repositori Git amb commits significatius, branques i revisió
 - ús sistemàtic de debugging i proves
 - documentació tècnica operativa (README, API docs, decisions)
@@ -51,6 +59,7 @@ L’activitat de tots els reptes es dissenya en clau d’entorn backend real:
 - gestió d’incidències i millores mitjançant issues
 
 ## Resultats esperats de la fase
+
 - arquitectura curricular consensuada i documentada
 - seqüenciació general de 5 reptes amb dependències clares
 - mapa complet RA -> reptes -> evidències -> instruments
@@ -58,7 +67,9 @@ L’activitat de tots els reptes es dissenya en clau d’entorn backend real:
 - backlog inicial d’issues menudes per executar la Fase 2
 
 ## Dependències cap a la fase 2
+
 La Fase 2 depén d’esta arquitectura per completar la fitxa de cada repte amb:
+
 - context professional i enunciat operatiu
 - activitats guiades i activitats de consolidació
 - evidències obligatòries i rúbrica específica

@@ -1,15 +1,18 @@
 # Fulls de treball base
 
 ## Finalitat del document
+
 Proporcionar una plantilla reusable per a estructurar treball d'aula o treball autònom curt dins del curs, de manera que cada equip tinga clar què ha de fer, quina evidència ha de generar, com validar-la i què fer si es bloqueja o si acaba abans.
 
 ## Quan convé usar esta peça
+
 - en tallers curts d'una o dues hores
 - com a full base de treball autònom dins d'un bloc setmanal
 - per reconduir equips que necessiten una pauta més acotada
 - per donar ampliació controlada a equips avançats
 
 ## Plantilla reusable
+
 - Objectiu:
 - Tasca:
 - Evidència a generar:
@@ -18,6 +21,7 @@ Proporcionar una plantilla reusable per a estructurar treball d'aula o treball a
 - Ampliació si acabes prompte:
 
 ## Plantilla desenvolupada
+
 ```md
 Objectiu
 - Al final d'este bloc has de deixar resolt:
@@ -45,6 +49,7 @@ Ampliació si acabes prompte
 ```
 
 ## Exemple base per a `R2`
+
 - Objectiu: deixar una operació de negoci protegida
 - Tasca: connectar auth amb una acció real del domini
 - Evidència a generar: operació protegida + error controlat + nota al `README`
@@ -53,6 +58,7 @@ Ampliació si acabes prompte
 - Ampliació si acabes prompte: afegeix una regla simple de rol o permís
 
 ## Exemple base per a `R4`
+
 - Objectiu: publicar i consumir una part usable del producte com a `API`
 - Tasca: definir endpoint, resposta, error i prova de consum
 - Evidència a generar: petició reproduïble, documentació breu i resultat coherent

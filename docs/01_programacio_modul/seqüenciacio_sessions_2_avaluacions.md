@@ -1,6 +1,7 @@
 # Seqüenciació de sessions en 2 avaluacions
 
 ## Finalitat del document
+
 Baixar la programació d'aula operativa del mòdul a una seqüència fina de sessions o blocs curts, de manera que el professorat dispose d'una guia executable per distribuir activitats, materials, evidències i seguiment al llarg de les dues primeres avaluacions lectives.
 
 Este document es llig conjuntament amb [pla_implantacio_docent.md](pla_implantacio_docent.md), [calendaritzacio_orientativa_aula.md](calendaritzacio_orientativa_aula.md), [calendaritzacio_per_avaluacions.md](calendaritzacio_per_avaluacions.md), [programacio_aula_operativa_2_avaluacions.md](programacio_aula_operativa_2_avaluacions.md) i [matriu_evidencies_i_instruments_per_fase.md](../03_avaluacio/matriu_evidencies_i_instruments_per_fase.md). La diferència és de gra: aquells documents fixen el marc, esta peça proposa el ritme concret de desplegament del curs.
@@ -8,6 +9,7 @@ Este document es llig conjuntament amb [pla_implantacio_docent.md](pla_implantac
 La seqüència es calibra sobre un escenari d'unes `20` setmanes, `6` hores setmanals i unes `120` hores lectives aproximades distribuïdes en les dues primeres avaluacions.
 
 ## Criteris d'ús
+
 - està pensat per a contextos on el projecte del mòdul s'ha de completar dins de les dues primeres avaluacions lectives
 - la unitat real és la sessió o bloc curt de treball; no equival `1:1` a una hora lectiva, sinó a un macrotram que es pot correspondre amb una classe o amb una agrupació de sessions segons la càrrega horària del centre
 - Git/GitHub es tracta com a repàs metodològic, traçabilitat i criteri professional, no com a alfabetització inicial
@@ -16,6 +18,7 @@ La seqüència es calibra sobre un escenari d'unes `20` setmanes, `6` hores setm
 - si una sessió crítica no deixa el mínim esperat, s'ha de reabsorbir temps dins de la mateixa avaluació i no desplaçar el nucli del projecte a la tercera
 
 ## Estructura general
+
 | Tronc temporal | Sessions orientatives | Equivalència orientativa | Fases i reptes | Producte acumulat |
 |---|---|---|---|---|
 | **Avaluació 1** | `Sessions 1-8` | `setmanes 1-10 / ~60h` | `Fase 0`, `Fase 1`, `Fase 2` i inici de `Fase 3` | base funcional real del producte i entrada efectiva a arquitectura i persistència |
@@ -23,6 +26,7 @@ La seqüència es calibra sobre un escenari d'unes `20` setmanes, `6` hores setm
 | **Avaluació 3** | període residual | fora de les `120h` nuclears del projecte | sense desenvolupament central del projecte | seguiment puntual, connexió amb empresa o `FCT`, ajustos menors si cal |
 
 ## Lectura ràpida de la seqüència
+
 - `Sessions 1-4`: `setmanes 1-5 (~30h)` per al marc comú, el criteri metodològic i el kickoff tècnic del producte
 - `Sessions 5-8`: `setmanes 6-10 (~30h)` per a la resolució del nucli funcional de `R2` i l'entrada efectiva a `R3`
 - `Sessions 9-10`: `setmanes 11-13 (~18h)` per al tancament de persistència i mantenibilitat
@@ -30,7 +34,9 @@ La seqüència es calibra sobre un escenari d'unes `20` setmanes, `6` hores setm
 - `Sessions 14-16`: `setmanes 18-20 (~18h)` per a la integració híbrida, el tancament i la defensa final
 
 ## Seqüenciació detallada per sessions o blocs curts
+
 ### Avaluació 1
+
 | Sessió | Objectiu | Activitats | Materials activats | Evidències esperades | Instrument de seguiment | Punt crític |
 |---|---|---|---|---|---|---|
 | **Sessió 1** | obrir el marc comú del curs | presentar el projecte base, dominis admesos, criteris de treball per reptes i sistema d'evidències | materials comuns, projecte base, sistema d'evidències | repositori creat, estructura mínima, criteris compartits | `checklist_revisio_repo.md` | evitar un inici només expositiu sense activació real del repositori |
@@ -43,6 +49,7 @@ La seqüència es calibra sobre un escenari d'unes `20` setmanes, `6` hores setm
 | **Sessió 8** | obrir `R3` abans del canvi d'avaluació | començar model de dades, capes o equivalent i persistència inicial | materials del Repte 3, itinerari triat, materials comuns | primer model de dades, refactorització inicial, persistència en construcció | `rubrica_base_reptes.md` | no deixar la primera avaluació tancada sobre estat efímer sense entrada real a arquitectura |
 
 ### Avaluació 2
+
 | Sessió | Objectiu | Activitats | Materials activats | Evidències esperades | Instrument de seguiment | Punt crític |
 |---|---|---|---|---|---|---|
 | **Sessió 9** | consolidar persistència del domini | completar entitats, relacions i persistència funcional | materials del Repte 3, itineraris com a suport principal | model de dades coherent i persistència operativa | checklist del Repte 3 | evitar models inconsistents o persistència parcial només per a demo |
@@ -55,6 +62,7 @@ La seqüència es calibra sobre un escenari d'unes `20` setmanes, `6` hores setm
 | **Sessió 16** | tancar i defensar el producte | revisar repositori, documentació, `AI log`, narrativa tècnica i defensa final | `rubrica_defensa_tecnica.md`, materials comuns, sistema d'evidències | producte final complet, defensa tècnica coherent, repositori tancat | `rubrica_defensa_tecnica.md` | evitar defenses desconnectades del repositori, de les proves o del procés real |
 
 ## Checkpoints de seguiment
+
 | Checkpoint | Moment recomanat | Verificació mínima |
 |---|---|---|
 | **CP1** | després de la sessió 2 | repositori usable, `README` inicial i criteri de traçabilitat assumit |
@@ -65,11 +73,13 @@ La seqüència es calibra sobre un escenari d'unes `20` setmanes, `6` hores setm
 | **CP6** | després de la sessió 16 | producte final integrat, documentat i defensable |
 
 Lectura dels checkpoints:
+
 - `CP1` i `CP2` controlen el pas del marc metodològic a producte real
 - `CP3` i `CP4` controlen que la base funcional i l'arquitectura no siguen només provisionals
 - `CP5` i `CP6` controlen que `API`, integració i defensa final no queden obertes o ornamentals
 
 ## Evidències acumulatives
+
 - **tram inicial**: repositori, primer `README`, ADR o registre equivalent, criteri de Git/GitHub i `AI log`
 - **tram funcional**: flux d'autenticació, validacions, errors mínims i proves bàsiques
 - **tram arquitectònic**: model de dades, persistència, capes o equivalent i regressió mínima
@@ -77,10 +87,12 @@ Lectura dels checkpoints:
 - **tram final**: integració híbrida, documentació final, autoria verificable i defensa tècnica
 
 Lectura acumulativa:
+
 - cada tram se sosté sobre l'anterior
 - si falla una evidència nuclear, no s'hauria de donar per tancat el checkpoint següent
 
 ## Intervencions docents clau
+
 - tallar desviacions primerenques si el grup usa el repositori sense criteri de traçabilitat
 - intervenir abans d'obrir `R3` si `R2` encara és només una demo puntual
 - frenar el pas a API quan persistència i arquitectura no siguen prou estables
@@ -89,6 +101,7 @@ Lectura acumulativa:
 - reforçar defensa, documentació i proves abans de la sessió final, no només al tancament
 
 ## Marges d'adaptació
+
 - si el centre té més càrrega horària, cada sessió es pot desplegar en dos moments mantenint els mateixos checkpoints
 - si el centre té menys hores, convé compactar sessions contigües dins del mateix tram, però no fusionar checkpoints crítics
 - si un grup mostra bloqueig en `Sessions 5-7`, convé absorbir temps de la sessió 8 abans que empényer el problema a la segona avaluació
@@ -97,13 +110,17 @@ Lectura acumulativa:
 - si el centre treballa amb una càrrega diferent de les `120` hores aproximades, cal reinterpretar les sessions com a macrotrams i no com a comptatge fix d'hores
 
 ## Paper de la tercera avaluació
+
 La tercera avaluació no s'ha de reservar per al desenvolupament nuclear del projecte del mòdul. En este model:
+
 - el producte base ha d'haver quedat completat al final de la sessió `16`
 - la tercera avaluació només pot assumir seguiment residual, connexió amb empresa o `FCT`, transferència d'aprenentatge o ajustos puntuals si el centre els necessita
 - no s'han de traslladar a este període ni `R4`, ni `R5`, ni la defensa final
 
 ## Definition of done del document
+
 Este document es considera completat quan:
+
 - convertix la programació d'aula operativa en una seqüència fina de sessions o blocs curts
 - manté el desenvolupament i tancament del projecte dins de les dues primeres avaluacions lectives
 - indica per a cada sessió objectiu, activitats, materials activats, evidències esperades, instrument de seguiment i punt crític

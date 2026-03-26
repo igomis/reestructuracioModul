@@ -1,6 +1,7 @@
 # Kit de pilotatge de les setmanes 13-16
 
 ## Finalitat del document
+
 Iniciar la construcció operativa de la segona avaluació amb un paquet usable per al tram `13-16`, de manera que el professorat puga consolidar el tancament real de `R3`, obrir `R4` amb criteri professional i arribar a un checkpoint fort d'`API` abans de preparar l'entrada a `R5`.
 
 Este kit prolonga la capa operativa iniciada en els trams `1-4`, `5-8` i `9-12`. La seua funció és traduir les setmanes `13-16` a una pauta de pilotatge real: què convé explicar, què s'ha de modelar, què ha de produir l'alumnat, què s'ha de verificar per alumne i què convé registrar per decidir si la segona avaluació s'està tornant realment pilotable.
@@ -8,7 +9,9 @@ Este kit prolonga la capa operativa iniciada en els trams `1-4`, `5-8` i `9-12`.
 El tram assumix que el bloc `9-12` ha deixat `R3` obert i prou encaminat, però no necessàriament blindat; per això la setmana `13` funciona com a consolidació pont abans d'obrir `R4` de manera explícita i verificable.
 
 ## Hipòtesi de treball
+
 El kit manté el mateix escenari docent de referència:
+
 - `20` setmanes aproximades
 - `6` hores setmanals
 - `120` hores lectives aproximades
@@ -16,6 +19,7 @@ El kit manté el mateix escenari docent de referència:
 - tercera avaluació fora del desenvolupament nuclear del projecte, com a espai residual o de connexió amb empresa o `FCT`
 
 ## Criteris d'ús
+
 - cada setmana equival a un bloc d'unes `6` hores, repartible en dues o tres sessions si es manté el mateix objectiu
 - Git/GitHub es tracta com a traçabilitat i repàs metodològic, no com a alfabetització inicial
 - pot haver-hi context de producte compartit o moments de treball coordinat, però l'evidència, la verificació, la defensa i la decisió docent s'han de resoldre individualment
@@ -24,12 +28,14 @@ El kit manté el mateix escenari docent de referència:
 - si en una setmana no apareix l'evidència mínima, cal prioritzar reconducció abans d'avançar cap a consum extern o preparació d'integració
 
 ## Estructura del tram 13-16
+
 - `Setmana 13`: consolidació final de `R3` i entrada explícita a `R4`
 - `Setmana 14`: contracte d'`API` i definició de casos d'ús publicables
 - `Setmana 15`: implementació, proves i consum real de l'`API`
 - `Setmana 16`: checkpoint fort de `R4` i preparació de `R5`
 
 ## Peces que s'activen en este tram
+
 - [kit_pilotatge_setmanes_09_12.md](kit_pilotatge_setmanes_09_12.md)
 - [guia_sessio_a_sessio_20_setmanes.md](guia_sessio_a_sessio_20_setmanes.md)
 - [annex_suport_i_ampliacio_ritmes.md](annex_suport_i_ampliacio_ritmes.md)
@@ -49,7 +55,9 @@ El kit manté el mateix escenari docent de referència:
 - [registre_incidents_i_ajustos_pilotatge.md](../03_avaluacio/registre_incidents_i_ajustos_pilotatge.md)
 
 ## Planificació operativa per setmanes
+
 ### Setmana 13
+
 - Objectiu docent: consolidar la base persistent i mantenible de `R3` i obrir `R4` només sobre una funcionalitat real del producte
 - Focus o repte: consolidació final de `R3` i entrada explícita a `R4`
 - Què explica el professorat: què ha de quedar tancat de `R3` abans de publicar una `API`, per què no convé exposar com a servei una base encara fràgil i com seleccionar un cas d'ús publicable amb sentit dins del producte
@@ -63,6 +71,7 @@ El kit manté el mateix escenari docent de referència:
 - Què s'ha de registrar al pilotatge: si la consolidació real de `R3` arriba amb la càrrega prevista, quins bloquejos continuen apareixent abans d'obrir `R4` i si la transició a `API` es comprén com a continuïtat del producte o com a canvi artificial de repte
 
 ### Setmana 14
+
 - Objectiu docent: convertir el flux triat en un contracte d'`API` clar, usable i publicable, connectat amb casos d'ús reals del producte
 - Focus o repte: contracte d'`API` i casos d'ús publicables
 - Què explica el professorat: com passar d'un flux intern del backend a una interfície usable per tercers, quina relació hi ha entre recurs, endpoint, entrada, eixida, codi d'estat i error, i per què el contracte s'ha de poder llegir com a part del producte i no com a llista arbitrària de rutes
@@ -76,6 +85,7 @@ El kit manté el mateix escenari docent de referència:
 - Què s'ha de registrar al pilotatge: si el grup entén bé què fa publicable un cas d'ús, quina part del contracte resulta més costosa de modelar i si els materials actuals eviten l'obertura d'`API` superficials
 
 ### Setmana 15
+
 - Objectiu docent: portar el contracte a una `API` funcional, provada, documentada i consumible de manera reproduïble
 - Focus o repte: implementació, proves, documentació i consum real de l'`API`
 - Què explica el professorat: per què implementar no és suficient si no hi ha prova i consum real, com alinear contracte, codis d'estat, validacions i documentació, i quin tipus de consum mínim ja prepara amb sentit l'entrada a `R5`
@@ -89,6 +99,7 @@ El kit manté el mateix escenari docent de referència:
 - Què s'ha de registrar al pilotatge: quins punts fallen més entre contracte, implementació i documentació, si la càrrega de prova i consum és assumible i quins patrons d'ús de la IA necessiten més verificació docent
 
 ### Setmana 16
+
 - Objectiu docent: tancar `R4` amb un checkpoint fort d'`API` usable i deixar preparada la decisió d'integració de `R5`
 - Focus o repte: checkpoint fort de `R4` i preparació de `R5`
 - Què explica el professorat: què compta com a `R4` realment tancat, quina diferència hi ha entre una `API` que respon i una `API` publicable per a integració, i com seleccionar una necessitat de `R5` sense obrir una integració ornamental
@@ -102,21 +113,27 @@ El kit manté el mateix escenari docent de referència:
 - Què s'ha de registrar al pilotatge: si `CP-P4` és assumible dins del temps real, quins equips arriben a `R4` només de manera aparent, quina qualitat té la documentació per a tercers i si la preparació de `R5` queda prou clara per obrir la integració sense improvisació
 
 ## Registre mínim de pilotatge per al tram 13-16
+
 Per a les setmanes `13-16`, convé deixar com a mínim:
+
 - una nota setmanal per alumne amb estat real de `R3`/`R4`, bloqueig principal i decisió docent següent
 - una síntesi de si `R3` arriba prou consolidat per obrir `R4` i de si `R4` es tanca com a `API` realment usable
 - almenys una entrada de feedback al tancament fort d'`R4`
 - una entrada al registre d'incidents si apareixen patrons recurrents en contracte d'`API`, proves, documentació, consum, autoria o acreditació individual
 
 ## Criteri de pas a la setmana 17
+
 Només convé entrar al bloc següent si:
+
 - hi ha una funcionalitat del producte publicada com a `API` amb contracte recognoscible i sentit real dins del domini
 - existixen proves reproduïbles, documentació alineada amb el comportament real i consum mínim verificat
 - cada alumne pot explicar i defensar la seua part del flux publicat, encara que hi haja hagut context de producte compartit o moments de treball coordinat
 - el `README`, la traçabilitat i les evidències permeten identificar quin endpoint o recurs serà la base útil per a `R5`
 
 ## Definition of done del document
+
 Este kit es considera completat quan:
+
 - concreta les setmanes `13-16` com a quart tram operatiu del curs
 - indica per a cada setmana objectiu, paper docent, treball de l'alumnat, materials activats, evidència mínima, checkpoint, suport, ampliació i registre de pilotatge
 - connecta la consolidació final de `R3`, l'entrada explícita a `R4`, el contracte d'`API`, les proves, la documentació, el consum real i la preparació de `R5`

@@ -1,12 +1,15 @@
 # Kit de pilotatge de les setmanes 9-12
 
 ## Finalitat del document
+
 Completar un primer bloc pilotable del curs fins al tancament de la primera avaluació, de manera que el professorat puga conduir l'entrada real a `R3`, els primers canvis d'arquitectura i persistència i el checkpoint de tancament sense haver de reconstruir este tram a partir de documents separats.
 
 Este kit prolonga la capa operativa iniciada en els trams `1-4` i `5-8`. La seua funció és traduir les setmanes `9-12` a una pauta de pilotatge real: què convé explicar, què s'ha de modelar, què ha de produir l'alumnat, què s'ha de verificar per alumne i què convé registrar per decidir si la primera avaluació queda realment tancada.
 
 ## Hipòtesi de treball
+
 El kit manté el mateix escenari docent de referència:
+
 - `20` setmanes aproximades
 - `6` hores setmanals
 - `120` hores lectives aproximades
@@ -14,6 +17,7 @@ El kit manté el mateix escenari docent de referència:
 - tercera avaluació fora del desenvolupament nuclear del projecte, com a espai residual o de connexió amb empresa o `FCT`
 
 ## Criteris d'ús
+
 - cada setmana equival a un bloc d'unes `6` hores, repartible en dues o tres sessions si es manté el mateix objectiu
 - Git/GitHub es tracta com a traçabilitat i repàs metodològic, no com a alfabetització inicial
 - pot haver-hi context de producte compartit o moments de treball coordinat, però l'evidència, la verificació, la defensa i la decisió docent s'han de resoldre individualment
@@ -21,12 +25,14 @@ El kit manté el mateix escenari docent de referència:
 - si en una setmana no apareix l'evidència mínima, cal prioritzar reconducció abans d'obrir noves capes de persistència o arquitectura
 
 ## Estructura del tram 9-12
+
 - `Setmana 9`: tancament fort del mínim funcional no trivial de `R2` i entrada explícita a `R3`
 - `Setmana 10`: separació de responsabilitats i primers canvis d'arquitectura sobre un flux real
 - `Setmana 11`: persistència coherent i validació lligada al domini
 - `Setmana 12`: checkpoint de tancament de la primera avaluació i decisió de pas
 
 ## Peces que s'activen en este tram
+
 - [kit_pilotatge_setmanes_01_04.md](kit_pilotatge_setmanes_01_04.md)
 - [kit_pilotatge_setmanes_05_08.md](kit_pilotatge_setmanes_05_08.md)
 - [guia_sessio_a_sessio_20_setmanes.md](guia_sessio_a_sessio_20_setmanes.md)
@@ -42,7 +48,9 @@ El kit manté el mateix escenari docent de referència:
 - [registre_incidents_i_ajustos_pilotatge.md](../03_avaluacio/registre_incidents_i_ajustos_pilotatge.md)
 
 ## Planificació operativa per setmanes
+
 ### Setmana 9
+
 - Objectiu docent: tancar amb força el mínim funcional no trivial de `R2` i obrir `R3` sobre una base funcional real
 - Focus o repte: tancament fort de `R2` i entrada explícita a `R3`
 - Què explica el professorat: què ha de quedar clarament assolit a `R2`, per què no n'hi ha prou amb auth aparent i com seleccionar la funcionalitat del producte que val la pena professionalitzar a `R3`
@@ -56,6 +64,7 @@ El kit manté el mateix escenari docent de referència:
 - Què s'ha de registrar al pilotatge: si el tancament real de `R2` arriba dins del temps previst, quins alumnes encara es queden en una lectura superficial del repte i quins patrons de bloqueig es repetixen
 
 ### Setmana 10
+
 - Objectiu docent: obrir `R3` amb separació de responsabilitats recognoscible i canvi d'arquitectura amb sentit
 - Focus o repte: primers canvis d'arquitectura i refactorització útil
 - Què explica el professorat: què vol dir separar responsabilitats en cada itinerari, per què el repte no és “fer MVC” i com evitar refactoritzacions cosmètiques
@@ -69,6 +78,7 @@ El kit manté el mateix escenari docent de referència:
 - Què s'ha de registrar al pilotatge: si el grup entén `R3` com a professionalització del producte o torna a una lectura purament tècnica, i quin itinerari necessita més modelatge docent
 
 ### Setmana 11
+
 - Objectiu docent: fer persistent el flux principal de manera coherent amb el domini i amb validació lligada al model
 - Focus o repte: persistència coherent i validació lligada al domini
 - Què explica el professorat: com passar d'una operació refactoritzada a una operació persistent, quina relació hi ha entre model, validació i cas d'ús, i per què “guardar dades” no és suficient
@@ -82,6 +92,7 @@ El kit manté el mateix escenari docent de referència:
 - Què s'ha de registrar al pilotatge: si la persistència entra amb càrrega raonable, quins errors apareixen per itinerari i si la validació lligada al domini resulta prou comprensible per a l'alumnat
 
 ### Setmana 12
+
 - Objectiu docent: tancar la primera avaluació amb un checkpoint fort de `R3` inicial i decisió de pas
 - Focus o repte: checkpoint de tancament de la 1a avaluació
 - Què explica el professorat: què compta com a tancament suficient del primer bloc, quins mínims s'han d'haver assolit per entrar amb sentit a la segona avaluació i com es diferencia un producte viu d'un producte aparent
@@ -95,21 +106,27 @@ El kit manté el mateix escenari docent de referència:
 - Què s'ha de registrar al pilotatge: balanç de càrrega de la 1a avaluació, punts d'estrangulament, ajustos immediats per a la segona avaluació i si el bloc inicial del curs ha sigut realment pilotable de punta a punta
 
 ## Registre mínim de pilotatge per al tram 9-12
+
 Per a les setmanes `9-12`, convé deixar com a mínim:
+
 - una nota setmanal per alumne amb estat real, bloqueig principal i decisió docent següent
 - una síntesi de si `R2` queda realment tancat i de si `R3` s'obri sobre base prou estable
 - almenys una entrada de feedback al tancament de la primera avaluació
 - una entrada al registre d'incidents si apareixen patrons recurrents en arquitectura, persistència, validació lligada al domini o càrrega temporal
 
 ## Criteri de pas a la setmana 13
+
 Només convé entrar al bloc següent si:
+
 - el mínim funcional no trivial de `R2` ha quedat clarament superat
 - hi ha una funcionalitat persistent recognoscible o una base molt clara per tancar-la immediatament en l'inici de la 2a avaluació
 - cada alumne pot explicar i defensar la seua part del flux refactoritzat o persistent
 - el `README`, la traçabilitat i les evidències permeten entendre el punt real del producte al final de la primera avaluació
 
 ## Definition of done del document
+
 Este kit es considera completat quan:
+
 - concreta les setmanes `9-12` com a tercer tram operatiu del curs
 - indica per a cada setmana objectiu, paper docent, treball de l'alumnat, materials activats, evidència mínima, checkpoint, suport, ampliació i registre de pilotatge
 - connecta el tancament fort de `R2`, l'entrada explícita a `R3`, la persistència inicial i el checkpoint final de la primera avaluació

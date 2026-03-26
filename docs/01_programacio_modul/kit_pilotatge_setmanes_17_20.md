@@ -1,6 +1,7 @@
 # Kit de pilotatge de les setmanes 17-20
 
 ## Finalitat del document
+
 Completar la seqüència pilotable de les dues primeres avaluacions amb un paquet usable per al tram `17-20`, de manera que el professorat puga obrir `R5` de manera explícita, conduir la integració híbrida o automatització útil, verificar el flux complet, tancar la defensa final individual i deixar també tancat el pilotatge del producte.
 
 Este kit prolonga la capa operativa iniciada en els trams `1-4`, `5-8`, `9-12` i `13-16`. La seua funció és traduir les setmanes `17-20` a una pauta de pilotatge real: què convé explicar, què s'ha de modelar, què ha de produir l'alumnat, què s'ha de verificar per alumne i què convé registrar per decidir si el curs queda realment pilotable de punta a punta dins de les dues avaluacions.
@@ -8,7 +9,9 @@ Este kit prolonga la capa operativa iniciada en els trams `1-4`, `5-8`, `9-12` i
 El tram assumix que el bloc `13-16` ha deixat `R4` prou tancat i ha identificat una necessitat real d'integració, però no dona per feta encara la solidesa del flux final; per això la setmana `17` funciona com a entrada explícita a `R5` i com a confirmació que la integració triada té valor real abans de convertir-la en tancament del curs.
 
 ## Hipòtesi de treball
+
 El kit manté el mateix escenari docent de referència:
+
 - `20` setmanes aproximades
 - `6` hores setmanals
 - `120` hores lectives aproximades
@@ -16,6 +19,7 @@ El kit manté el mateix escenari docent de referència:
 - tercera avaluació fora del desenvolupament nuclear del projecte, com a espai residual o de connexió amb empresa o `FCT`
 
 ## Criteris d'ús
+
 - cada setmana equival a un bloc d'unes `6` hores, repartible en dues o tres sessions si es manté el mateix objectiu
 - Git/GitHub es tracta com a traçabilitat i repàs metodològic, no com a alfabetització inicial
 - pot haver-hi context de producte compartit o moments de treball coordinat, però l'evidència, la verificació, la defensa i la decisió docent s'han de resoldre individualment
@@ -24,12 +28,14 @@ El kit manté el mateix escenari docent de referència:
 - si en una setmana no apareix l'evidència mínima, cal prioritzar reconducció abans d'avançar cap a defensa final o tancament del pilotatge
 
 ## Estructura del tram 17-20
+
 - `Setmana 17`: entrada explícita a `R5` i definició final de la necessitat real d'integració
 - `Setmana 18`: implementació del flux híbrid o automatització útil
 - `Setmana 19`: proves, documentació del flux complet i preparació forta de defensa individual
 - `Setmana 20`: defensa final individual i tancament del producte i del pilotatge
 
 ## Peces que s'activen en este tram
+
 - [kit_pilotatge_setmanes_13_16.md](kit_pilotatge_setmanes_13_16.md)
 - [guia_sessio_a_sessio_20_setmanes.md](guia_sessio_a_sessio_20_setmanes.md)
 - [annex_suport_i_ampliacio_ritmes.md](annex_suport_i_ampliacio_ritmes.md)
@@ -51,7 +57,9 @@ El kit manté el mateix escenari docent de referència:
 - [registre_incidents_i_ajustos_pilotatge.md](../03_avaluacio/registre_incidents_i_ajustos_pilotatge.md)
 
 ## Planificació operativa per setmanes
+
 ### Setmana 17
+
 - Objectiu docent: obrir `R5` de manera explícita i validar que la integració triada respon a una necessitat real del producte
 - Focus o repte: entrada explícita a `R5` i definició final de la necessitat real d'integració
 - Què explica el professorat: què compta com a integració amb valor real, per què no n'hi ha prou amb un workflow visible i com reconnectar `R5` amb el contracte d'`API`, el domini i el tancament professional del producte
@@ -65,6 +73,7 @@ El kit manté el mateix escenari docent de referència:
 - Què s'ha de registrar al pilotatge: si el grup entén `R5` com a tancament del producte i no com a ferramenta, quines necessitats reals d'integració apareixen i quin nivell de modelatge docent necessita la definició del flux
 
 ### Setmana 18
+
 - Objectiu docent: convertir la decisió d'integració en un flux híbrid o automatització útil ja executable
 - Focus o repte: implementació del flux híbrid o automatització útil
 - Què explica el professorat: com mantindre la lògica de negoci al backend i usar el workflow només com a orquestració, quins punts crítics s'han de controlar en el camí correcte i en el camí de fallada, i com evitar que la implementació perda traçabilitat
@@ -78,6 +87,7 @@ El kit manté el mateix escenari docent de referència:
 - Què s'ha de registrar al pilotatge: si la implementació real de `R5` entra amb la càrrega prevista, quins bloquejos apareixen en consum d'`API`, credencials, workflow o manteniment i quines simplificacions resulten més útils
 
 ### Setmana 19
+
 - Objectiu docent: provar el flux complet, tancar documentació operativa i preparar una defensa final individual amb base tècnica real
 - Focus o repte: proves i documentació del flux complet, i preparació forta de defensa individual
 - Què explica el professorat: per què el repte no queda tancat fins que hi ha prova de punta a punta, documentació usable i capacitat d'explicar tant el cas correcte com la fallada rellevant, i com s'ha de llegir la defensa final des de la rúbrica i el sistema d'evidències
@@ -91,6 +101,7 @@ El kit manté el mateix escenari docent de referència:
 - Què s'ha de registrar al pilotatge: si `CP-P5` arriba amb consistència real, quines parts de la defensa continuen sent febles, quins patrons d'ús de IA o manca de traçabilitat reapareixen i si les evidències demanades són assumibles
 
 ### Setmana 20
+
 - Objectiu docent: resoldre la defensa final individual i tancar formalment el producte i el pilotatge complet del curs
 - Focus o repte: defensa final individual i tancament del producte i del pilotatge
 - Què explica el professorat: criteri final de revisió, com es resol la defensa individual encara que hi haja producte compartit, què es considera tancament suficient del curs i com es recull feedback útil per a la iteració següent del paquet docent
@@ -104,21 +115,27 @@ El kit manté el mateix escenari docent de referència:
 - Què s'ha de registrar al pilotatge: balanç global del curs, càrrega real del tram final, qualitat de la defensa individual, patrons de bloqueig, feedback recurrent de l'alumnat i criteri de viabilitat per a ús estable o iteració següent
 
 ## Registre mínim de pilotatge per al tram 17-20
+
 Per a les setmanes `17-20`, convé deixar com a mínim:
+
 - una nota setmanal per alumne amb estat real de `R5`, bloqueig principal i decisió docent següent
 - una síntesi de si el flux híbrid es convertix realment en tancament del producte o es queda en automatització superficial
 - almenys una entrada de feedback al tancament de `R5` i una altra al tancament global del pilotatge
 - una entrada al registre d'incidents si apareixen patrons recurrents en integració, proves de punta a punta, defensa individual, autoria o ús verificable de la IA
 
 ## Criteri de tancament del curs pilotable
+
 Només convé donar per tancada la seqüència pilotable si:
+
 - existix una integració o flux híbrid lligat a una necessitat real del producte i sostingut sobre l'`API` publicada
 - hi ha prova reproduïble del camí correcte i d'almenys una fallada rellevant, amb documentació operativa alineada amb l'estat real
 - cada alumne pot explicar, verificar i defensar individualment la seua part del producte, encara que hi haja hagut context de producte compartit o treball coordinat
 - el repositori, el `README`, l'AI log i les evidències finals permeten revisar el curs complet com a seqüència tancada dins de les dues primeres avaluacions
 
 ## Definition of done del document
+
 Este kit es considera completat quan:
+
 - concreta les setmanes `17-20` com a quint i últim tram operatiu del curs
 - indica per a cada setmana objectiu, paper docent, treball de l'alumnat, materials activats, evidència mínima, checkpoint, suport, ampliació i registre de pilotatge
 - connecta l'entrada explícita a `R5`, la necessitat real d'integració, la implementació del flux híbrid, les proves, la documentació, la defensa final individual i el tancament del pilotatge

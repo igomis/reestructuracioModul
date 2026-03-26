@@ -1,6 +1,7 @@
 # Rúbrica de defensa tècnica
 
 ## Aspectes
+
 - explicació del codi
 - justificació de decisions
 - capacitat de modificació

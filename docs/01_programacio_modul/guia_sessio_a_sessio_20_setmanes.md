@@ -1,12 +1,15 @@
 # Guia sessió a sessió del curs en 20 setmanes
 
 ## Finalitat del document
+
 Convertir la implantació del mòdul en una guia docent setmanal usable, pensada perquè el professorat puga saber què convé explicar, què modelar, què deixar a autonomia i com adaptar el ritme segons el progrés real de l'alumnat.
 
 Esta peça complementa [programacio_aula_per_repte.md](programacio_aula_per_repte.md), [seqüenciacio_sessions_2_avaluacions.md](seqüenciacio_sessions_2_avaluacions.md) i [pla_execucio_pilotatge_real.md](../00_visio_general/pla_execucio_pilotatge_real.md). Aquells documents fixen la lògica global i els checkpoints; esta guia baixa el model a una lectura setmanal o de bloc docent real.
 
 ## Hipòtesi de treball
+
 La guia està calibrada sobre l'escenari següent:
+
 - `20` setmanes aproximades
 - `6` hores setmanals
 - `120` hores lectives aproximades
@@ -14,6 +17,7 @@ La guia està calibrada sobre l'escenari següent:
 - tercera avaluació fora del desenvolupament nuclear del projecte, com a espai residual o de connexió amb empresa o `FCT`
 
 ## Criteris d'ús
+
 - cada setmana equival a un bloc docent d'unes `6` hores; el centre pot repartir-lo en dues o tres sessions sense alterar el sentit del bloc
 - Git/GitHub es treballa com a repàs metodològic i criteri de traçabilitat, no com a iniciació des de zero
 - cada bloc combina explicació docent, modelatge en directe, treball guiat i autonomia supervisada
@@ -22,11 +26,13 @@ La guia està calibrada sobre l'escenari següent:
 - el criteri principal no és “arribar a tot”, sinó mantindre la progressió real del producte i la seua defensa tècnica dins de les dues primeres avaluacions
 
 ## Estructura general del curs
+
 - `Avaluació 1` (`setmanes 1-10 / ~60h`): marc comú, `R1`, `R2` i entrada real a `R3`
 - `Avaluació 2` (`setmanes 11-20 / ~60h`): tancament de `R3`, `R4`, `R5` i defensa final
 - `Avaluació 3`: sense desenvolupament central del projecte; només seguiment residual, connexió amb empresa o `FCT`
 
 ## Estratègia general de suport a alumnat endarrerit
+
 - reduir abast al mínim funcional no trivial del bloc actual
 - reusar materials del repte i apunts reals com a pauta d'execució, no com a lectura opcional
 - revisar primer `README`, traçabilitat i estat real del producte abans d'afegir noves funcions
@@ -34,25 +40,32 @@ La guia està calibrada sobre l'escenari següent:
 - prioritzar un sol flux funcional complet per damunt de diverses peces a mig fer
 
 ## Estratègia general d'ampliació per alumnat avançat
+
 - aprofundir sense trencar la seqüència comuna del curs
 - afegir proves, millor tractament d'errors, regles de negoci addicionals o documentació més sòlida
 - explorar una variant més completa del mateix domini sense canviar el repte central
 - documentar millor decisions, consum d'`API` o integració, en lloc d'obrir línies noves fora del producte
 
 ## Moments de classe guiada i moments d'autonomia
+
 Patró recomanat dins de cada bloc setmanal de `6` hores:
+
 - `1-2h` de marc i explicació docent
 - `1-2h` de modelatge en directe o taller guiat
 - `2-3h` de treball autònom o per equips amb seguiment curt del professorat
 
 Regla pràctica:
+
 - les setmanes de canvi de repte necessiten més classe guiada
 - les setmanes de consolidació, proves o documentació necessiten més autonomia supervisada
 - el treball compartit pot existir, però cada alumne ha de mantindre rastre propi, evidència pròpia i capacitat de defensa individual
 
 ## Seqüència setmanal o per blocs
+
 ### Avaluació 1
+
 #### Setmana 1
+
 - Focus o repte: marc comú del curs i arranque del producte
 - Què fa el professorat: presenta el model per reptes, el projecte base, els dominis admesos i el criteri d'evidències; revisa Git/GitHub com a metodologia i traçabilitat
 - Què fa l'alumnat: crea repositori, obri la base de treball, fixa equip i primeres convencions
@@ -63,6 +76,7 @@ Regla pràctica:
 - Pla per a alumnat avançat: justificar dues alternatives de domini o stack abans de decidir
 
 #### Setmana 2
+
 - Focus o repte: domini, stack i decisió tècnica inicial
 - Què fa el professorat: modela una decisió tècnica breu, exemplifica un `ADR` curt i acota què no és suficient en `R1`
 - Què fa l'alumnat: tria domini, itinerari i primer cas d'ús mínim del producte
@@ -73,6 +87,7 @@ Regla pràctica:
 - Pla per a alumnat avançat: explorar riscos i trade-offs de la decisió tècnica
 
 #### Setmana 3
+
 - Focus o repte: `R1` com a primera peça funcional real
 - Què fa el professorat: modela una landing page o equivalent i un formulari mínim amb validació bàsica
 - Què fa l'alumnat: implementa la primera entrada funcional del producte
@@ -83,6 +98,7 @@ Regla pràctica:
 - Pla per a alumnat avançat: afegir validació més robusta o millor feedback d'errors
 
 #### Setmana 4
+
 - Focus o repte: validació de servidor i primer registre de dades
 - Què fa el professorat: modela resposta correcta i incorrecta, i exemplifica com deixar rastre al `README`
 - Què fa l'alumnat: completa validació mínima al servidor i registra o persistix la primera dada útil del domini
@@ -93,6 +109,7 @@ Regla pràctica:
 - Pla per a alumnat avançat: reforçar persistència bàsica o documentació tècnica del bloc
 
 #### Setmana 5
+
 - Focus o repte: arranque de `R2`, autenticació com a infraestructura
 - Què fa el professorat: explica diferència entre auth, autorització i flux funcional del domini; modela alta o login mínim
 - Què fa l'alumnat: prepara usuaris, estat equivalent i punt d'entrada al primer flux autenticat
@@ -103,6 +120,7 @@ Regla pràctica:
 - Pla per a alumnat avançat: definir també una primera restricció de rol o regla de negoci
 
 #### Setmana 6
+
 - Focus o repte: funcionalitat de negoci autenticada
 - Què fa el professorat: modela una operació protegida amb valor real del domini i una restricció recognoscible
 - Què fa l'alumnat: implementa el primer flux funcional autenticat del producte
@@ -113,6 +131,7 @@ Regla pràctica:
 - Pla per a alumnat avançat: incorporar segona regla de negoci o millor control d'accés
 
 #### Setmana 7
+
 - Focus o repte: validacions, errors i proves mínimes de `R2`
 - Què fa el professorat: modela tractament d'errors i una prova mínima del flux complet
 - Què fa l'alumnat: reforça validacions, prova casos correctes i casos límit, actualitza `README`
@@ -123,6 +142,7 @@ Regla pràctica:
 - Pla per a alumnat avançat: afegir proves més sistemàtiques o millor missatge d'error
 
 #### Setmana 8
+
 - Focus o repte: tancament de `R2` i entrada a `R3`
 - Què fa el professorat: explica què s'ha de refactoritzar primer i per què `R3` no és “fer MVC”
 - Què fa l'alumnat: identifica punt de refactorització, entitats i model mínim del domini
@@ -133,6 +153,7 @@ Regla pràctica:
 - Pla per a alumnat avançat: preparar relació addicional o separació més clara de capes
 
 #### Setmana 9
+
 - Focus o repte: arquitectura i persistència inicials
 - Què fa el professorat: modela una refactorització curta a capes o equivalent i la primera entitat persistent
 - Què fa l'alumnat: inicia el pas a arquitectura mantenible i persistència real
@@ -143,6 +164,7 @@ Regla pràctica:
 - Pla per a alumnat avançat: afegir relació simple o capa de servei més robusta
 
 #### Setmana 10
+
 - Focus o repte: tancament de la primera avaluació amb `R3` obert
 - Què fa el professorat: revisa estat del producte, persistència mínima i riscos per a l'avaluació 2
 - Què fa l'alumnat: tanca el primer tram de `R3`, documenta estat i prepara el pas a la segona avaluació
@@ -153,7 +175,9 @@ Regla pràctica:
 - Pla per a alumnat avançat: afinar model de dades o començar proves de regressió més clares
 
 ### Avaluació 2
+
 #### Setmana 11
+
 - Focus o repte: consolidació de persistència i regressió
 - Què fa el professorat: modela comprovació de regressió sobre el flux ja refactoritzat
 - Què fa l'alumnat: completa persistència i valida que el flux principal continua viu
@@ -164,6 +188,7 @@ Regla pràctica:
 - Pla per a alumnat avançat: reforçar proves o segona lectura d'arquitectura
 
 #### Setmana 12
+
 - Focus o repte: tancament formal de `R3`
 - Què fa el professorat: revisa decisions d'arquitectura i model de dades; acota què farà de nucli d'`API`
 - Què fa l'alumnat: tanca capes o equivalent, `README` tècnic i proves mínimes
@@ -174,6 +199,7 @@ Regla pràctica:
 - Pla per a alumnat avançat: preparar ja contracte preliminar d'`API`
 
 #### Setmana 13
+
 - Focus o repte: disseny del contracte d'`API`
 - Què fa el professorat: modela recursos, endpoints, codis d'estat i errors coherents
 - Què fa l'alumnat: decideix quina part rellevant del producte exposarà com a `API`
@@ -184,6 +210,7 @@ Regla pràctica:
 - Pla per a alumnat avançat: millorar model de resposta i errors o documentar més completament
 
 #### Setmana 14
+
 - Focus o repte: implementació dels endpoints principals
 - Què fa el professorat: modela un endpoint complet amb entrada, eixida i error controlat
 - Què fa l'alumnat: desenvolupa els endpoints nuclears del producte
@@ -194,6 +221,7 @@ Regla pràctica:
 - Pla per a alumnat avançat: afegir autenticació o permisos més clars a l'`API`
 
 #### Setmana 15
+
 - Focus o repte: documentació i consum de l'`API`
 - Què fa el professorat: modela col·lecció mínima de proves o client de consum i una documentació curta però usable
 - Què fa l'alumnat: documenta, prova i consuma la seua `API`
@@ -204,6 +232,7 @@ Regla pràctica:
 - Pla per a alumnat avançat: millorar col·lecció de proves o qualitat del consumidor
 
 #### Setmana 16
+
 - Focus o repte: entrada a `R5`, decisió d'integració
 - Què fa el professorat: explica què és una integració amb valor real i modela un flux híbrid mínim
 - Què fa l'alumnat: tria integració externa o workflow `n8n` amb sentit per al producte
@@ -214,6 +243,7 @@ Regla pràctica:
 - Pla per a alumnat avançat: tractar també errors de flux i traçabilitat més fina
 
 #### Setmana 17
+
 - Focus o repte: implementació del flux híbrid
 - Què fa el professorat: modela un workflow bàsic i recorda criteri d'incident i mantenibilitat
 - Què fa l'alumnat: implementa el flux híbrid, automatització o integració triada
@@ -224,6 +254,7 @@ Regla pràctica:
 - Pla per a alumnat avançat: afegir control d'errors o pas addicional justificat
 
 #### Setmana 18
+
 - Focus o repte: proves, incidències i tancament de `R5`
 - Què fa el professorat: guia revisió de punta a punta, demana registre d'errors i ajusta tancament
 - Què fa l'alumnat: prova el flux complet, documenta errors i tanca documentació final
@@ -234,6 +265,7 @@ Regla pràctica:
 - Pla per a alumnat avançat: reforçar proves, observabilitat o defensa tècnica
 
 #### Setmana 19
+
 - Focus o repte: preparació de defensa final
 - Què fa el professorat: modela defensa curta, recorregut del repositori i ús verificable de la IA
 - Què fa l'alumnat: prepara narrativa tècnica, revisa `README`, `AI log` i evidències finals
@@ -244,6 +276,7 @@ Regla pràctica:
 - Pla per a alumnat avançat: millorar narrativa de trade-offs i justificació de decisions
 
 #### Setmana 20
+
 - Focus o repte: tancament del producte i del curs
 - Què fa el professorat: fa la revisió final, activa recollida de feedback i tanca pilotatge docent del grup
 - Què fa l'alumnat: presenta, defensa, entrega evidències finals i aporta feedback del curs
@@ -254,7 +287,9 @@ Regla pràctica:
 - Pla per a alumnat avançat: proposta de millora o `v2` ben acotada, sense confondre-la amb el lliurable nuclear
 
 ## Definition of done del document
+
 Este document es considera completat quan:
+
 - tradueix la seqüència del curs a `20` blocs setmanals o equivalents
 - manté el desenvolupament principal del projecte dins de les dues primeres avaluacions
 - indica per a cada bloc focus, paper del professorat, paper de l'alumnat, materials, evidència mínima, checkpoint i plans de suport i ampliació

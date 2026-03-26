@@ -1,16 +1,19 @@
 # Pla de materials prioritaris del mòdul
 
 ## Finalitat del document
+
 Convertir el mapa general de materials del mòdul en un pla de producció real, prioritzat i executable, orientat a crear les peces noves o adaptades que fan falta per donar suport directe als reptes del curs i al projecte base.
 
 Este document no redefineix el currículum ni substituïx el mapa de transformació. La seua funció és baixar un nivell més: decidir què s'ha de produir primer, en quin format, per a quin ús docent i amb quina relació amb els reptes, els itineraris tecnològics i les evidències autèntiques del repositori.
 
 Punt de partida actual:
+
 - el repositori ja disposa de mapa de materials, fitxes de reptes avançades i enunciat base del projecte
 - els directoris de `docs/04_materials/` per repte existixen, però encara no hi ha un paquet operatiu de materials nous produït
 - el focus real del repositori continua sent connectar reptes, projecte base i materials adaptats prioritaris
 
 ## Criteris de priorització
+
 Els materials nous s'han de prioritzar segons estos criteris:
 
 - **impacte immediat sobre els reptes actius**: primer allò que desbloqueja o millora directament els Reptes 2, 3, 4 i 5
@@ -23,35 +26,43 @@ Els materials nous s'han de prioritzar segons estos criteris:
 - **cost docent assumible**: primer materials que poden produir-se i revisar sense duplicar tota la programació
 
 ## Tipologies de materials a produir
+
 El pla distingix tres famílies principals de materials:
 
 ### Materials comuns de mòdul
+
 Són peces reutilitzables per a tot el curs, independentment del repte o de l'itinerari tecnològic. Han de fixar criteris compartits de treball, qualitat, documentació i verificació.
 
 Materials comuns mínims:
+
 - guia de Git i flux de treball professional mínim
 - plantilla i guia d'ús de README tècnic i ADR
 - guia de testing, debugging i registre d'incidències
 - guia d'ús verificable de la IA amb AI log mínim
 
 ### Materials per repte
+
 Són peces orientades a resoldre el nucli tècnic d'un repte concret. Han d'ajudar a passar de l'enunciat a l'execució del producte i a la generació d'evidències del repte.
 
 Materials nuclears prioritaris:
+
 - materials del Repte 2 sobre sessions, autenticació i validació
 - materials del Repte 3 sobre MVC o equivalent, persistència segura i proves
 - materials del Repte 4 sobre contracte API, documentació i consum
 - materials del Repte 5 sobre integració híbrida, n8n o equivalent i manteniment
 
 ### Materials per itinerari
+
 Són peces específiques per stack que no canvien el repte, però sí la manera d'implementar-lo. Han de partir d'una base comuna i oferir traduccions operatives per a cada itinerari autoritzat.
 
 Itineraris a cobrir:
+
 - Laravel
 - Express o Nest
 - FastAPI
 
 ## Materials prioritaris per ordre de producció
+
 L'ordre recomanat de producció dels materials prioritaris és el següent:
 
 | Ordre | Material prioritari | Tipus | Valor principal |
@@ -69,6 +80,7 @@ L'ordre recomanat de producció dels materials prioritaris és el següent:
 | 11 | Pack d'itinerari FastAPI per a R3-R5 | per itinerari | facilita implementació guiada en Python |
 
 ## Proposta inicial de paquets de materials
+
 Es proposen els paquets següents com a primera planificació operativa:
 
 | Paquet | Abast | Peces incloses | Resultat esperat |
@@ -83,6 +95,7 @@ Es proposen els paquets següents com a primera planificació operativa:
 | **P7. Itinerari FastAPI** | materials per itinerari | estructura bàsica, models i validació, persistència, API i testing en Python | oferir via específica homologable per a FastAPI |
 
 ## Formats recomanats
+
 Per evitar materials enciclopèdics i afavorir ús directe en els reptes, es recomanen estos formats:
 
 - guies operatives curtes en `Markdown`
@@ -97,6 +110,7 @@ Per evitar materials enciclopèdics i afavorir ús directe en els reptes, es rec
 El format s'ha de decidir per valor docent i reutilització, no per aparença. Si una peça no ajuda a executar, provar, documentar o defensar el treball, no és prioritària.
 
 ## Distribució entre materials comuns i materials específics
+
 La producció inicial s'hauria d'organitzar així:
 
 | Família de materials | Pes recomanat inicial | Funció |
@@ -106,11 +120,13 @@ La producció inicial s'hauria d'organitzar així:
 | **Materials per itinerari** | 25% | traduir els reptes a Laravel, Express o Nest i FastAPI sense trencar l'equivalència |
 
 Criteri de distribució:
+
 - els materials comuns s'han de produir primer perquè afecten tot el mòdul
 - els materials per repte són el nucli de la producció i concentren la major part del valor docent
 - els materials per itinerari s'han de construir sobre bases comunes ja estabilitzades, especialment a partir de R3-R5
 
 ## Relació amb els reptes i el projecte base
+
 El pla de materials ha de donar servei directe al producte evolutiu del curs:
 
 | Àmbit | Connexió amb reptes | Connexió amb projecte base |
@@ -126,27 +142,37 @@ El pla de materials ha de donar servei directe al producte evolutiu del curs:
 | Materials d'itinerari | apliquen sobretot en R3-R5 | garantixen compatibilitat amb Laravel, Express o Nest i FastAPI |
 
 ## Ordre recomanat de producció real
+
 La seqüència recomanada de producció no és només temàtica, sinó també dependent del valor que aporta cada peça:
 
 1. **Produir la base comuna de mòdul**
    Git, README/ADR, testing/debugging i IA verificable han d'estar disponibles abans de desplegar paquets més específics.
+
 2. **Produir el paquet nuclear del Repte 2**
    És el primer material de producte funcional i ajuda a connectar la base comuna amb la primera evidència real.
+
 3. **Produir el paquet nuclear del Repte 3**
    És la peça arquitectònica central del curs i el punt on comencen a necessitar-se més fortament els itineraris.
+
 4. **Produir en paral·lel els primers materials d'itinerari per al Repte 3**
    Convindrà obrir primer les guies específiques de Laravel, Express o Nest i FastAPI per MVC o equivalent, persistència i testing.
+
 5. **Produir el paquet nuclear del Repte 4**
    Amb la base arquitectònica consolidada, ja té sentit publicar material específic de contracte API i consum.
+
 6. **Estendre els materials d'itinerari cap al Repte 4**
    Cada stack necessitarà exemples homologables de publicació, autenticació d'API, documentació i proves.
+
 7. **Produir el paquet nuclear del Repte 5**
    Només quan l'API i el manteniment bàsic estiguen madurs té sentit abordar integració híbrida i automatització.
+
 8. **Estendre els materials d'itinerari cap al Repte 5**
    Les adaptacions de stack per integració, serveis externs i testing final s'han de fer ja sobre una base comuna estabilitzada.
 
 ## Definition of done del document
+
 Este document es considera completat quan:
+
 - definix un pla de producció de materials i no només un mapa general
 - explicita criteris de priorització coherents amb el focus actual del repositori
 - distingix clarament materials comuns de mòdul, materials per repte i materials per itinerari

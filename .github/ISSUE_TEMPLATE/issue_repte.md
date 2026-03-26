@@ -11,11 +11,13 @@ assignees: ""
 ## Context
 
 ## Tasques
+
 - [ ] ...
 
 ## Resultat esperat
 
 ## Criteris de tancament
+
 - [ ] document creat o revisat
 - [ ] coherència curricular comprovada
 - [ ] evidències i avaluació definides

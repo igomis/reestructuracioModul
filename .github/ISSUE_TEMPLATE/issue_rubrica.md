@@ -11,10 +11,12 @@ assignees: ""
 ## Instrument afectat
 
 ## Tasques
+
 - [ ] ...
 
 ## Resultat esperat
 
 ## Criteris de tancament
+
 - [ ] instrument redactat
 - [ ] relació amb evidències definida

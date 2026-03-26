@@ -5,6 +5,7 @@
 ## 1. Finalitat
 
 ## 2. Relació amb resultats d’aprenentatge
+
 - RA:
 - criteris relacionats:
 

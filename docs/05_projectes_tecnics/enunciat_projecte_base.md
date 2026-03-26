@@ -1,14 +1,17 @@
 # Enunciat base del projecte del curs
 
 ## Finalitat del projecte
+
 Desenvolupar durant el curs un producte backend realista, evolutiu i defensable que servisca com a fil conductor dels reptes del mòdul i permeta generar evidències autèntiques d'aprenentatge.
 
 El projecte no s'entén com una pràctica aïllada ni com una demo puntual. Ha de funcionar com un encàrrec professional progressiu: comença amb una base operativa, creix per reptes i acaba amb una solució capaç de persistir dades, publicar API, integrar-se amb serveis externs i deixar rastre verificable del treball realitzat.
 
 ## Context professional
+
 L'equip rep l'encàrrec de construir el backend base d'un producte intern o de servei que una organització podria posar en producció després d'una fase inicial de validació.
 
 El client o l'àrea promotora no demana una maqueta acadèmica, sinó una base tècnica que permeta:
+
 - treballar amb usuaris autenticats i casos d'ús recognoscibles
 - persistir dades de manera segura i coherent
 - exposar funcionalitat mitjançant una API consumible
@@ -18,6 +21,7 @@ El client o l'àrea promotora no demana una maqueta acadèmica, sinó una base t
 L'entorn de treball s'ha d'aproximar a un context professional realista: repositori amb historial coherent, issues o tasques, documentació tècnica útil, decisions justificades i evidències que es puguen revisar.
 
 ## Encàrrec base
+
 Cada equip ha de seleccionar un domini admés i construir sobre ell un backend funcional que evolucione al llarg del curs. El resultat ha de ser prou concret per poder-se executar, provar i revisar, però també prou extensible per incorporar els reptes del mòdul sense haver de reiniciar el projecte.
 
 L'objectiu no és fer el producte més gran possible, sinó arribar a una base sòlida i verificable amb valor tècnic clar.
@@ -25,23 +29,28 @@ L'objectiu no és fer el producte més gran possible, sinó arribar a una base s
 Com a concretització operativa dels dominis admesos, este enunciat es desplega ara en [projectes_base_concretats.md](projectes_base_concretats.md), que fixa tres projectes base ja usables i més tancats per a treball docent, comparabilitat entre itineraris i defensa individual.
 
 Criteri transversal d'exigència:
+
 - cap repte del projecte es pot donar per resolt amb una tècnica aïllada
 - cada tram ha d'aportar una funcionalitat professional mínima, recognoscible i defensable del mateix producte
 - no es validarà un recorregut basat en esquelets, logins aïllats, APIs decoratives o integracions sense valor funcional
 
 ## Dominis admesos
+
 Els únics dominis admesos per al projecte base són:
 
 1. **Gestor d'incidències o tickets**
    Permet treballar amb creació, assignació, prioritat, estat, historial i seguiment d'incidències.
+
 2. **Sistema de reserves o cites**
    Permet treballar amb disponibilitat, franges horàries, confirmacions, conflictes i validacions de negoci.
+
 3. **Gestor intern de recursos o inventari**
    Permet treballar amb altes, baixes, moviments, disponibilitat, responsables i traçabilitat d'actius.
 
 Qualsevol d'estos dominis és vàlid si permet cobrir els objectius tècnics mínims del projecte i sostindre la seqüència de reptes del curs.
 
 La seua concreció operativa recomanada queda fixada així:
+
 - gestor intern de recursos o inventari -> **gestor d'inventari amb rols i token d'operació**
 - sistema de reserves o cites -> **sistema de reserves amb tokens de confirmació o cancel·lació**
 - gestor d'incidències o tickets -> **gestor d'incidències amb invitació o seguiment extern tokenitzat**
@@ -49,6 +58,7 @@ La seua concreció operativa recomanada queda fixada així:
 El detall funcional, els actors obligatoris, els casos d'ús i els criteris d'assignació docent es troben en [projectes_base_concretats.md](projectes_base_concretats.md).
 
 ## Objectius tècnics mínims
+
 El projecte base ha de cobrir, com a mínim, els objectius següents:
 
 - disposar d'un backend real amb casos d'ús no trivials del domini triat
@@ -66,7 +76,9 @@ El projecte base ha de cobrir, com a mínim, els objectius següents:
 Si el domini triat no permet arribar de manera creïble a estos objectius, no és apte com a projecte base del curs.
 
 ## Compatibilitat amb itineraris tecnològics
+
 L'enunciat és compatible amb els itineraris següents:
+
 - **PHP + Laravel**
 - **Node.js + Express o Nest**
 - **Python + FastAPI**
@@ -74,6 +86,7 @@ L'enunciat és compatible amb els itineraris següents:
 La compatibilitat s'avalua per objectius, evidències i qualitat de la solució, no per identitat d'implementació interna. Cada itinerari pot resoldre l'encàrrec amb patrons i eines pròpies, sempre que mantinga un nivell equivalent de verificació i mantenibilitat.
 
 ## Relació amb els reptes del curs
+
 El projecte base és la peça transversal que dona continuïtat al treball per reptes:
 
 | Repte | Aportació al projecte base |
@@ -87,6 +100,7 @@ El projecte base és la peça transversal que dona continuïtat al treball per r
 Per tant, el projecte no s'entrega com una peça separada dels reptes. Cada repte ha d'aportar una part verificable del producte final.
 
 ## Lliurables obligatoris
+
 El projecte base s'ha de poder defensar amb els lliurables mínims següents:
 
 - repositori del projecte amb historial coherent de desenvolupament
@@ -101,13 +115,16 @@ El projecte base s'ha de poder defensar amb els lliurables mínims següents:
 - registre d'ús de IA o AI log quan s'haja utilitzat assistència
 
 ## Paper de la IA
+
 La IA es considera una eina de suport vàlida dins del projecte per:
+
 - explorar alternatives de disseny
 - proposar estructures inicials o microtasques
 - generar esquelets de proves o documentació
 - ajudar en debugging, refactorització o revisió de contractes
 
 L'ús de IA només és acceptable si complix estes condicions:
+
 - l'equip entén i pot explicar el resultat final
 - tota proposta assistida per IA es verifica amb execució real, proves i revisió tècnica
 - queda rastre de què s'ha acceptat, què s'ha descartat i com s'ha comprovat
@@ -116,6 +133,7 @@ L'ús de IA només és acceptable si complix estes condicions:
 La regla del repositori es manté: IA com a eina guiada i verificable, mai com a justificació d'evidència no contrastada.
 
 ## Criteris de validació
+
 El projecte base es considerarà vàlid si complix tots els criteris següents:
 
 - el domini triat és un dels dominis admesos i està prou concretat
@@ -131,6 +149,7 @@ El projecte base es considerarà vàlid si complix tots els criteris següents:
 No es validarà com a projecte base una solució que només tinga aparença funcional però no aporte traçabilitat, proves o capacitat real de defensa tècnica. Tampoc es validarà un projecte que reduïsca els reptes a peces trivials o decoratives sense densitat funcional suficient.
 
 ## Variant futura o extensió opcional
+
 Com a línia futura, el projecte pot obrir una extensió relacionada amb tokenització, sempre com a evolució opcional i no com a requisit del projecte base.
 
 Esta extensió pot orientar-se, per exemple, a tokens d'accés, invitació, confirmació, recuperació o traçabilitat, sempre que responga a una necessitat real del domini triat. La seua incorporació queda fora dels mínims obligatoris i només s'hauria d'abordar quan la base principal ja estiga consolidada.
@@ -138,7 +157,9 @@ Esta extensió pot orientar-se, per exemple, a tokens d'accés, invitació, conf
 En la concretització operativa actual, la tokenització es manté dins d'este mateix sentit funcional útil del backend. No s'entén com a línia `web3` ni com a especialització aliena al curs, sinó com a mecanisme de confirmació, operació, invitació o seguiment quan el domini realment ho demana.
 
 ## Definition of done del document
+
 Este document es considera completat quan:
+
 - definix un enunciat base usable i no un placeholder
 - explicita la finalitat del projecte i el seu context professional
 - fixa de manera inequívoca els dominis admesos

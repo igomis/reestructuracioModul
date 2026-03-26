@@ -1,9 +1,11 @@
 # Guió docent complet de la setmana 1
 
 ## Finalitat de la setmana
+
 Esta setmana ha de situar el curs, fer comprensible què significa programar en entorn servidor i deixar el producte realment arrancat. No es tracta només de triar stack i instal·lar dependències, però tampoc d'exigir ja el tractament complet d'un flux funcional de formulari en servidor.
 
 El tancament correcte de la setmana 1 és este:
+
 - el curs queda explicat en clau de treball per reptes i producte únic
 - l'alumnat entén la lògica bàsica client/servidor i petició/resposta
 - el projecte base i l'itinerari tecnològic queden triats i justificats
@@ -12,11 +14,13 @@ El tancament correcte de la setmana 1 és este:
 - la traçabilitat inicial i l'ús acceptable de la IA queden activats en clau individual
 
 ## Límit didàctic de la setmana
+
 La pantalla inicial pot incloure un formulari o un altre element d'entrada del domini, però el seu tractament complet en servidor no és encara exigible en setmana 1. El que sí és exigible és que la peça estiga integrada en el producte, siga visible, arranque des del backend i tinga sentit dins del cas d'ús triat.
 
 La recepció completa de la dada, la validació en servidor, el cas incorrecte i la persistència poden quedar per a les setmanes següents dins de `R1`.
 
 ## Què ha d'explicar el professorat
+
 - què és el curs i com es treballa per reptes: un únic producte backend que creix de `R1` a `R5`, no una col·lecció de pràctiques aïllades
 - que l'avaluació és individual encara que puguen existir moments de treball coordinat o contextos puntuals de producte compartit
 - què és programar en entorn servidor: codi que viu al backend, rep peticions, aplica lògica i retorna una resposta útil
@@ -31,6 +35,7 @@ La recepció completa de la dada, la validació en servidor, el cas incorrecte i
 - que Git/GitHub es reprén com a metodologia de treball i autoria, no com a iniciació des de zero
 
 ## Conceptes mínims que l'alumnat ha d'entendre
+
 - el curs es resol construint un únic producte backend per reptes
 - la setmana 1 no tanca encara tot `R1`, però sí l'arrancada real del producte
 - programar en entorn servidor no és només fer una pantalla: és fer que el backend servisca una resposta útil
@@ -41,6 +46,7 @@ La recepció completa de la dada, la validació en servidor, el cas incorrecte i
 - la IA només és acceptable si el seu ús queda guiat, verificable i defensable
 
 ## Què modela el professorat en directe
+
 - lectura curta del briefing del curs i del criteri de no trivialitat del producte
 - tria d'un projecte base i d'un itinerari tecnològic amb justificació breu i explícita
 - preparació d'entorn i arrencada local del projecte de referència
@@ -52,6 +58,7 @@ La recepció completa de la dada, la validació en servidor, el cas incorrecte i
 - primera traçabilitat individual modelada: nota breu de decisió, commit o registre equivalent i anotació d'ús d'IA si s'ha utilitzat
 
 ## Què fa l'alumnat
+
 - tria el projecte base del curs sobre el qual treballarà
 - tria l'itinerari tecnològic amb què arrancarà el backend
 - deixa una justificació curta de les dos decisions
@@ -64,6 +71,7 @@ La recepció completa de la dada, la validació en servidor, el cas incorrecte i
 - deixa la primera traçabilitat individual: decisió registrada, primer rastre de treball i ús verificable de la IA si l'ha emprada
 
 ## Evidència mínima de la setmana 1
+
 - projecte base triat i justificat
 - itinerari tecnològic triat i justificat
 - entorn preparat i projecte arrancant localment
@@ -74,10 +82,12 @@ La recepció completa de la dada, la validació en servidor, el cas incorrecte i
 - primera traçabilitat individual visible
 
 Criteri important:
+
 - si hi ha formulari, no cal exigir encara recepció completa, validació completa en servidor ni persistència
 - sí cal exigir que la peça siga funcional, visible i coherent amb el producte que s'està començant
 
 ## Què no és suficient
+
 - només triar stack
 - només instal·lar dependències
 - només crear repositori
@@ -87,6 +97,7 @@ Criteri important:
 - un `README` buit o una decisió tècnica sense justificació mínima
 
 ## Errors habituals a anticipar
+
 - convertir la setmana en un debat massa llarg de frameworks i retardar l'arrancada real
 - confondre l'esquelet del framework amb un producte ja iniciat
 - no explicar bé la diferència client/servidor i deixar la pantalla inicial com a maqueta estàtica
@@ -97,7 +108,9 @@ Criteri important:
 - dedicar temps a reexplicar Git/GitHub des de zero en lloc d'exigir-ne un ús operatiu
 
 ## Checkpoint de final de setmana
+
 Al tancament de la setmana 1, cada alumne ha de poder mostrar i explicar:
+
 - quin projecte base ha triat i per què
 - quin itinerari tecnològic ha triat i per què
 - què vol dir, en el seu cas, programar en entorn servidor
@@ -109,6 +122,7 @@ Al tancament de la setmana 1, cada alumne ha de poder mostrar i explicar:
 - quin és el següent pas funcional que quedarà per a setmana 2
 
 ## Materials que s'activen
+
 - [guia_sessio_a_sessio_20_setmanes.md](guia_sessio_a_sessio_20_setmanes.md)
 - [kit_pilotatge_setmanes_01_04.md](kit_pilotatge_setmanes_01_04.md)
 - [preparacio_docent_directa_curs_que_ve.md](preparacio_docent_directa_curs_que_ve.md)
@@ -118,7 +132,9 @@ Al tancament de la setmana 1, cada alumne ha de poder mostrar i explicar:
 - [projectes_base_concretats.md](../05_projectes_tecnics/projectes_base_concretats.md)
 
 ## Definition of done del document
+
 Este document es considera completat quan:
+
 - baixa la setmana 1 a un nivell operatiu prou concret per conduir l'inici del curs sense improvisació
 - deixa clar què s'ha d'explicar, què s'ha de modelar i què ha de fer l'alumnat
 - explicita el tall entre arrencada funcional del producte i tractament complet del formulari en servidor

@@ -1,9 +1,11 @@
 # Mapa curricular RA -> reptes del mòdul DWES
 
 ## Finalitat del document
+
 Este document relaciona els resultats d’aprenentatge (RA) del mòdul DWES amb la nova estructura per reptes per garantir una planificació docent coherent, avaluable i executable en context professional.
 
 ## Criteris de construcció del mapa
+
 - tots els RA del currículum apareixen com a mínim amb un espai de treball principal
 - la distribució segueix la seqüència real del curs per reptes (R1 -> R5)
 - cada RA es vincula a evidències autèntiques i instruments d’avaluació verificables
@@ -25,6 +27,7 @@ Este document relaciona els resultats d’aprenentatge (RA) del mòdul DWES amb 
 | RA9 | Integra serveis externs i automatitzacions en solucions híbrides. | Repte 5 (principal), Repte 4 (previ) | Principal en R5; transversal en R4 | Integració externa operativa, flux automatitzat, pla de manteniment | Rúbrica de repte final, demo tècnica, defensa individual | Bloc 7 (webs híbrides) + suport de blocs 6a/6b |
 
 ## RA principals per repte
+
 - Repte 1: RA1, inici de RA5.
 - Repte 2: RA2, RA3 i RA4.
 - Repte 3: RA5, RA6 i part de RA8.
@@ -32,16 +35,20 @@ Este document relaciona els resultats d’aprenentatge (RA) del mòdul DWES amb 
 - Repte 5: RA8 i RA9, amb consolidació de RA5-RA7.
 
 ## RA transversals
+
 Els RA5, RA6, RA7 i RA8 es treballen en més d’un repte perquè afecten decisions d’arquitectura, qualitat del codi, persistència, APIs i manteniment global del producte. Esta transversalitat reforça la progressió professional del curs.
 
 ## Integració de la IA dins del mapa d’evidències i verificació
+
 La IA s’integra com a eina habitual de suport (comparativa de solucions, generació inicial de codi, debugging i documentació), però sempre amb verificació explícita:
+
 - AI log mínim per repte quan hi ha ús de IA
 - validació amb proves i execució real
 - coherència entre commits, documentació i decisions tècniques
 - defensa tècnica individual per confirmar comprensió i autoria efectiva
 
 ## Garantia de cobertura curricular
+
 No es perd cap RA del currículum: els RA1-RA9 estan coberts en el conjunt dels 5 reptes, amb pes principal i espais transversals quan correspon.
 
 La reorganització plantejada és metodològica i no reductora: reordena el treball perquè siga més contextualitzat i professional sense eliminar objectius curriculars.
