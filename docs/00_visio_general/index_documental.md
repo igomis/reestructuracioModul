@@ -62,6 +62,7 @@ Criteri d'us:
 - [Programacio d'aula per repte](../01_programacio_modul/programacio_aula_per_repte.md): lectura docent reutilitzable per blocs.
 - [Model d'itineraris tecnologiques](../01_programacio_modul/model_itineraris_tecnologics.md): criteri per comparar stacks sense canviar el model.
 - [Criteris de ponderacio dels reptes amb IA](../03_avaluacio/criteris_ponderacio_reptes_amb_ia.md): base d'avaluacio adaptable.
+- [Plantilla de planificacio de repte amb microprojectes](../06_plantilles/plantilla_planificacio_repte_microprojectes.md): patro ampliat per dissenyar reptes amb `CA`, evidencies i verificacio del treball real.
 
 ## Acces per perfils i blocs
 - [Alumnat](../alumnat/index.md)

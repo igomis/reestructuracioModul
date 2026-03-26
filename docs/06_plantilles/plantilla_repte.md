@@ -1,5 +1,7 @@
 # Nom del repte
 
+> Si necessites una versió més completa amb microprojectes, `CA` explícits, evidències i verificació del treball amb IA, usa la [plantilla de planificació de repte amb microprojectes](plantilla_planificacio_repte_microprojectes.md).
+
 ## 1. Finalitat
 
 ## 2. Relació amb resultats d’aprenentatge
