@@ -1,198 +1,702 @@
-# Repte 4. Publicació i consum d'API
+# Repte 4. API i serveis reutilitzables sobre una funcionalitat real del projecte
 
-## Finalitat
+## 1. Visió general del repte
 
-Convertir el backend ja funcional i estructurat dels reptes anteriors en un servei publicable i consumible, amb endpoints documentats, validació d'entrades, tractament coherent d'errors i proves de consum reals.
+**Finalitat del repte**
 
-Este repte és el pas de "backend usable per l'equip" a "backend integrable per tercers". A partir de la base construïda en el [Repte 3. Migració a MVC i persistència segura](repte_03_mvc_i_persistencia.md), l'alumnat ha de publicar una primera API clara, verificable i preparada per a la integració híbrida del [Repte 5. Integració híbrida, automatització i manteniment](repte_05_integracio_hibrida_n8n.md).
+Convertir una funcionalitat ja estabilitzada del projecte en un servei web reusable, consumible i verificable.
 
-No és un repte de tècnica aïllada. Obrir rutes, generar `Swagger` o retornar JSON no és suficient si l'API no exposa casos d'ús reals del producte amb contracte clar, consum verificat i defensa tècnica del flux complet.
+Este repte no s’entén com una simple capa addicional d’endpoints ni com una extensió del treball de persistència. El seu sentit és exposar una part real del producte com a servei útil per a altres clients, components o sistemes, amb un contracte clar i una documentació usable.
 
-## Relació amb resultats d'aprenentatge
+**Producte principal del repte**
 
-- **RA7 (principal):** dissenyar, publicar i consumir APIs documentades sobre un producte backend real.
-- **RA6 (reforç):** mantindre coherència entre endpoints, model de dades, persistència i accés segur a la informació.
-- **RA8 (reforç):** aplicar validació, tractament d'errors, debugging, proves i criteris mínims de qualitat sobre l'API publicada.
+Una API funcional del projecte, amb:
 
-Contribució curricular esperada:
+- almenys un recurs o cas d’ús real exposat com a servei
+- contracte clar de peticions i respostes
+- endpoints coherents
+- autenticació o control d’accés adequat per al servei
+- consum verificat del servei
+- proves mínimes o verificacions registrades
+- documentació tècnica usable per tercers
 
-- exposar casos d'ús prioritaris del producte com a endpoints amb contracte clar
-- documentar l'API perquè puga ser utilitzada per altres membres de l'equip o per serveis externs
-- demostrar consum real de l'API amb col·lecció de proves, client o integració controlada
-- deixar la capa de servei preparada per al Repte 5, on l'API passarà a formar part d'un escenari d'integració híbrida
+**Context professional simul·lat o realista**
 
-## Context professional
+L’equip ja disposa d’una funcionalitat estructurada i persistent. Ara necessita obrir-la perquè puga ser reutilitzada per una interfície diferent, una integració externa, un client lleuger o un altre servei.
 
-Després del Repte 3, l'equip ja disposa d'un backend amb arquitectura més mantenible, persistència coherent i qualitat tècnica mínima. Però encara falta un pas clau perquè el producte tinga valor professional complet: definir una interfície externa estable i consumible.
+En context professional, este pas exigix definir bé el contracte del servei, el format de dades, les regles d’accés i la manera de provar-lo i documentar-lo.
 
-En un entorn real, publicar API implica molt més que obrir rutes:
+**Relació amb el projecte global del curs**
 
-- cal definir contractes de petició i resposta
-- cal documentar com s'autentica, què retorna i com gestiona errors
-- cal comprovar que un consumidor extern pot usar l'API sense dependre del coneixement intern del codi
-- cal deixar una base fiable per a futures integracions, automatitzacions i manteniment
-- cal assegurar que allò que es publica correspon a funcionalitat real del producte i no a endpoints ornamentals o de demostració
+Este repte reutilitza el cas d’ús professionalitzat en el Repte 3, però canvia clarament l’objecte principal d’avaluació.
 
-## Problema o encàrrec inicial
+En el Repte 3 es valorava sobretot la qualitat de l’arquitectura interna i la persistència suficient.
 
-**Encàrrec:** "Publiqueu una primera versió usable de l'API del producte backend del curs, documenteu-ne els endpoints prioritaris, verifiqueu-ne el consum i entregueu evidències que el contracte és clar, funcional i mantingut amb criteri tècnic."
+En el Repte 4 es valora principalment la capacitat d’exposar eixa funcionalitat com a servei web reusable, consumible i documentat.
 
-Restriccions del repte:
+---
 
-- l'API ha d'eixir del producte real del curs, no d'un mock desconnectat
-- no es tracta de publicar tots els casos d'ús, sinó un conjunt prioritari i ben resolt
-- la documentació ha de correspondre exactament amb el comportament real de l'endpoint
-- les respostes, errors i codis d'estat han de ser coherents i justificables
-- el consum s'ha de demostrar amb execució real i no només amb captures o descripcions
-- la IA es pot usar com a suport, però tota proposta ha d'estar validada amb proves i revisió tècnica
-- obrir rutes sense valor funcional o documentar una API que no representa un cas d'ús real no es considera suficient
+## 2. Relació amb resultats d’aprenentatge
 
-## Producte final
+**Resultat d’aprenentatge principal**
 
-El lliurable mínim del Repte 4 ha d'incloure:
+- **RA7**: desenvolupament de serveis web reutilitzables i accessibles mitjançant protocols web, verificant-ne el funcionament
 
-- una API funcional que expose operacions clau i no trivials del producte backend
-- definició clara d'endpoints, mètodes, paràmetres, autenticació i estructures de resposta
-- tractament coherent d'errors, validacions i codis d'estat
-- documentació tècnica d'API usable per tercers
-- col·lecció de proves d'endpoint o equivalent
-- una evidència real de consum de l'API des d'un client, script o servei auxiliar sobre un flux funcional complet
-- proves mínimes o verificacions registrades dels fluxos principals i dels casos d'error
-- documentació actualitzada de posada en marxa, prova i consum
+**Resultat d’aprenentatge de suport integrat**
 
-## Compatibilitat amb el producte base i itineraris
+- **RA6**: només en la part necessària per recuperar, publicar i documentar dades reals del sistema a través del servei
 
-Este repte s'alinea directament amb [Projecte backend base del curs](../05_projectes_tecnics/projecte_base_backend.md), perquè consolida dos components obligatoris del producte evolutiu:
+**Justificació curricular**
 
-- **API publicada i consumible**
-- **documentació tècnica operativa (README, decisions i contractes API)**
+Este repte permet passar d’un backend estructurat a un backend interoperable.
 
-A més:
+La funcionalitat ja no es mira només des del punt de vista del manteniment intern, sinó des del punt de vista de la seua exposició com a servei per a consum extern o intercomponent.
 
-- reutilitza la base arquitectònica i de persistència consolidada al Repte 3
-- transforma funcionalitats internes del producte en una interfície externa clara i versionable
-- deixa la infraestructura conceptual i tècnica preparada per al [Repte 5. Integració híbrida, automatització i manteniment](repte_05_integracio_hibrida_n8n.md), on l'API serà consumida en un flux més ampli
-- és compatible amb els itineraris **PHP + Laravel**, **Node.js + Express o Nest** i **Python + FastAPI**
-- manté equivalència docent entre stacks: canvia la implementació concreta, no els objectius ni les evidències exigides
+---
 
-## Seqüència de treball
+## 3. Canvi metodològic que introdueix la IA
 
-1. **Seleccionar casos d'ús publicables**
-   Decidir quines operacions del producte passen a API i quin valor tenen per a consum intern o extern.
+**Paper de la IA en este repte**
 
-2. **Definir el contracte d'API**
-   Concretar rutes, verbs HTTP, autenticació, camps d'entrada, estructura de resposta, errors i criteri de versionat si correspon.
+La IA es pot usar per a:
 
-3. **Implementar endpoints i serialització**
-   Publicar els endpoints prioritaris i assegurar coherència entre el model intern i la resposta exposada.
+- proposar contractes inicials d’API
+- generar esquelets d’endpoints
+- suggerir estructures de request i response
+- ajudar a interpretar errors d’integració
+- proposar proves de servei
+- ajudar a redactar documentació tècnica
+- suggerir exemples d’ús del servei
 
-4. **Aplicar validació, errors i control d'accés**
-   Gestionar dades invàlides, credencials, permisos i casos excepcionals amb comportament previsible.
+**Què no es delega**
 
-5. **Documentar i provar el consum**
-   Preparar documentació d'API, col·leccions de prova i una evidència real de consum sobre un cas d'ús funcional complet.
+L’alumnat ha de:
 
-6. **Verificar i preparar la transició**
-   Comprovar que la documentació reflectix la realitat i deixar l'API preparada per a integració al Repte 5.
+- decidir quina funcionalitat val la pena exposar
+- justificar els recursos i endpoints triats
+- verificar que el servei retorna dades reals i correctes
+- explicar l’autenticació aplicada al context d’API
+- demostrar que el servei es pot consumir realment
+- documentar allò que efectivament funciona
 
-## Activitats o microtasques
+**Risc principal d’ús inadequat de la IA**
 
-- crear la issue principal del Repte 4 i dividir-la en microtasques de publicació i consum
-- seleccionar endpoints prioritaris segons el domini del producte
-- definir el contracte mínim de petició/resposta per a cada endpoint
-- establir convencions de codis d'estat i errors d'API
-- implementar validació d'entrada i serialització de resposta
-- protegir endpoints que requerisquen autenticació o control d'accés
-- preparar documentació d'API en format usable per l'equip
-- construir una col·lecció de proves amb eines d'API o equivalent
-- demostrar el consum real amb un client, script o servei extern controlat sobre una funcionalitat real del producte
-- revisar discrepàncies entre documentació, resposta real i necessitats del futur Repte 5
+Construir una API aparentment completa però sense criteri de contracte, amb endpoints arbitraris, documentació decorativa o sense consum real verificat.
 
-## Materials i apunts associats
+**Mesures de control**
 
-- [Projecte backend base del curs](../05_projectes_tecnics/projecte_base_backend.md): fixa que el producte del curs ha de tindre API publicada i consumible, documentació tècnica operativa i capacitat d'integració.
-- [Mapa de materials actuals -> transformació operativa](../04_materials/mapa_materials_actuals.md): situa els **Blocs 6a i 6b. APIs** com a nucli del repte, amb reforç del **Bloc 5. Seguretat i reactivitat** i suport dels **Blocs 3 i 4** per coherència de model i persistència.
-- [Repte 3. Migració a MVC i persistència segura](repte_03_mvc_i_persistencia.md): aporta l'estructura mantenible i la persistència segura sobre les quals es publiquen els endpoints.
-- [Repte 5. Integració híbrida, automatització i manteniment](repte_05_integracio_hibrida_n8n.md): serà el següent pas, on l'API publicada ací s'integrarà amb serveis externs o automatitzacions.
-- [Seqüenciació general](../01_programacio_modul/seqüenciacio_general.md): reforça que el Repte 4 exposa i consumix funcionalitats procedents del model consolidat al Repte 3 i prepara el pas al Repte 5.
+- AI log quan corresponga
+- revisió de commits i issues
+- execució en directe d’endpoints
+- consum real obligatori del servei
+- casos positius i negatius
+- preguntes tècniques de contracte i interoperabilitat
+- contrast entre documentació, codi i resultat observat
 
-## Paper de la IA
+---
 
-La IA es pot usar com a assistent de treball per:
+## 4. Estructura del repte
 
-- proposar esborranys de contracte API o d'especificació OpenAPI
-- suggerir col·leccions de prova, casos límit i matrius d'errors
-- ajudar a detectar incoherències entre endpoint, documentació i consumidor
-- generar esquelets inicials de client de consum o scripts de prova
-- donar suport en debugging de respostes inesperades o desacoblaments entre productor i consumidor
+### 4.1 Nucli del repte
 
-Condicions d'ús:
+**Objectiu del nucli**
 
-- l'equip ha de comprendre i poder justificar el contracte final que publica
-- tota aportació de IA s'ha de validar amb execució real d'endpoints i consum
-- la documentació generada o revisada amb IA s'ha de contrastar amb el comportament real del backend
-- si hi ha ús de IA, ha d'existir traça verificable del procés i de la verificació posterior
+Publicar una primera API útil i defensable sobre un cas d’ús real del projecte, de manera que una altra peça de programari puga consumir-la en condicions mínimes de claredat, seguretat i verificació.
 
-## Evidències d'aprenentatge
+**Lliurable principal**
 
-Evidències mínimes i autèntiques del repte:
+Servei web funcional integrat en el projecte, amb:
 
-- issue principal amb microtasques i estat de resolució
-- seqüència de commits que mostre l'evolució de la publicació i el consum d'API
-- endpoints operatius sobre el producte real del curs i associats a casos d'ús recognoscibles
-- documentació tècnica d'API alineada amb el comportament real
-- col·lecció de proves API, client de consum o evidència equivalent d'ús extern
-- proves o verificacions registrades de casos positius, errors i validacions
-- documentació actualitzada de posada en marxa i ús de l'API
-- AI log o registre equivalent quan s'haja utilitzat IA
+- un contracte bàsic clar
+- un o més endpoints coherents
+- dades reals del sistema
+- autenticació o control d’accés
+- consum verificat
+- documentació usable
+- proves mínimes o verificacions registrades
 
-## Instruments d'avaluació
+**Criteris d’avaluació principals del nucli**
 
-- [Rúbrica base de reptes](../03_avaluacio/rubrica_base_reptes.md) adaptada al pes principal de RA7 i al reforç de RA6 i RA8
-- checklist específica de contracte API, documentació, codis d'estat i errors
-- revisió de col·leccions de prova, scripts de consum o evidències equivalents
-- revisió de validació d'entrada, control d'accés i coherència de resposta
-- demostració funcional del productor i del consumidor sobre el mateix contracte
-- defensa tècnica breu centrada en decisions de disseny, trade-offs i preparació per al Repte 5
+- CA de **RA7** vinculats a caracterització, desenvolupament, verificació, consum i documentació del servei web
+- CA de **RA6** vinculats a recuperació, publicació i verificació de dades reals dins del servei
 
-## Riscos d'ús inadequat de la IA
+**Evidències obligatòries del nucli**
 
-- acceptar contractes d'API suggerits per IA que no corresponen al domini ni al model real del producte
-- documentar endpoints inexistents o amb respostes diferents de les implementades
-- copiar codis d'estat o estructures d'error sense entendre quan aplicar-los
-- generar un client de consum aparentment funcional però no connectat amb l'API real
-- confondre una demo de prova puntual amb una verificació real del contracte publicat
+- repositori actualitzat
+- issue principal del repte i microtasques
+- seqüència de commits significativa
+- mapa d’endpoints
+- servei funcional
+- dades reals servides
+- autenticació o control d’accés en context d’API
+- consumidor mínim o prova equivalent
+- documentació tècnica
+- registre de proves
+- AI log quan hi haja ús d’IA
 
-## Mesures de verificació
+---
 
-- execució en directe d'endpoints prioritaris amb casos correctes i incorrectes sobre un flux real del producte
-- contrast entre documentació d'API i resposta real del backend
-- comprovació de validació d'entrada, errors i codis d'estat en diversos escenaris
-- prova real del consumidor contra l'API publicada o l'entorn de treball definit
-- revisió dirigida de commits i artefactes per comprovar evolució real del repte
-- contrast entre AI log, documentació, proves i resultat funcional
-- preguntes tècniques breus sobre decisions de contracte, serialització i consum
+## 5. Microprojectes i microtasques del repte
 
-## Entorn professional
+> **Norma del repte**
+>
+> - Els microprojectes cobrixen sobretot criteris procedimentals i d’interoperabilitat.
+> - Cap microprojecte apareix sense el camp **“CA coberts”**.
+> - No es considera suficient una col·lecció d’endpoints sense contracte clar, consum real i documentació usable.
+> - El repte ha d’exposar una funcionalitat real del projecte, no una API de joguet desconnectada del domini.
 
-Marc mínim de treball del repte:
+### Microprojecte MP1 — Disseny del contracte del servei
 
-- repositori Git/GitHub amb issues, commits i branques de treball coherents
-- entorn local o de prova reproduïble per publicar i consumir l'API
-- eina de prova d'API com Postman, Insomnia, curl o equivalent segons l'itinerari
-- documentació tècnica orientada a onboarding i ús per tercers
-- registre d'incidències de contracte, errors, validació i consum
-- dinàmica de treball per reptes amb evidències autèntiques i verificables
+**Tipus**
 
-## Definition of done del repte
+Microtasca d’investigació i decisió tècnica.
 
-El Repte 4 es considera completat quan:
+**Objectiu**
 
-- existixen endpoints prioritaris publicats sobre el producte real del curs i lligats a casos d'ús no trivials
-- la documentació d'API descriu correctament peticions, respostes, errors i condicions d'ús
-- hi ha validació d'entrada, tractament coherent d'errors i codis d'estat justificables
-- el consum de l'API queda demostrat amb una evidència real i reproduïble
-- el repositori aporta evidències autèntiques de treball: issues, commits, proves i documentació
-- l'ús de IA, si n'hi ha, queda registrat i validat
-- l'API resultant encaixa amb el [Projecte backend base del curs](../05_projectes_tecnics/projecte_base_backend.md) i deixa preparada la base tècnica per al [Repte 5. Integració híbrida, automatització i manteniment](repte_05_integracio_hibrida_n8n.md)
-- una API formada per rutes soltes, documentació ornamental o consum fictici no es considera suficient
+Decidir quina part del producte s’exposa com a servei i definir un contracte mínim clar per al seu ús.
+
+**Tasca**
+
+L’equip concreta:
+
+- quin recurs o cas d’ús s’exposarà
+- quins endpoints tenen sentit
+- quin format de dades s’usarà
+- quines peticions i respostes s’esperen
+- quins errors mínims s’han de contemplar
+- quin valor aporta exposar eixa funcionalitat com a servei
+
+**Relació amb el producte principal**
+
+Sense un contracte clar, l’API queda reduïda a una implementació tècnica sense sentit d’interoperabilitat.
+
+**CA coberts**
+
+- **RA7.a**
+- **RA7.b**
+- **RA7.c**
+- **RA7.d**
+
+**Descripció dels CA en llenguatge docent**
+
+- L’alumnat reconeix què és un servei web i per a què és útil.
+- L’alumnat identifica tecnologies, protocols o estils adequats.
+- L’alumnat justifica el recurs i el contracte del servei.
+- L’alumnat dissenya l’exposició del servei amb criteri funcional.
+
+**Paper de la IA**
+
+La IA pot suggerir estructures de contracte o d’endpoints, però l’alumnat ha de validar que encaixen amb el producte real.
+
+**Evidències obligatòries**
+
+- mapa inicial d’endpoints
+- taula de peticions i respostes
+- justificació del recurs o cas d’ús exposat
+- defensa oral breu
+
+**Instrument d’avaluació**
+
+Rúbrica de contracte de servei.
+
+**Indicadors d’assoliment**
+
+- contracte coherent amb el domini
+- endpoints amb sentit
+- definició clara de request, response i errors bàsics
+
+**Riscos habituals**
+
+- endpoints arbitraris
+- contracte poc clar
+- exposició d’un recurs sense valor real
+
+**Verificació del treball real**
+
+- pregunta oral sobre per què eixe recurs s’exposa i no un altre
+- contrast entre contracte definit i implementació posterior
+
+**Pes orientatiu dins del repte**
+
+15%
+
+---
+
+### Microprojecte MP2 — Implementació del primer endpoint funcional
+
+**Tipus**
+
+Microprojecte procedimental.
+
+**Objectiu**
+
+Publicar un primer endpoint real i verificable sobre el cas d’ús o recurs triat.
+
+**Tasca**
+
+L’equip implementa un primer endpoint que:
+
+- rep una petició coherent amb el contracte
+- recupera dades reals del sistema o executa una acció real
+- retorna una resposta estructurada
+- mostra un comportament observable i verificable
+
+**Relació amb el producte principal**
+
+Este microprojecte és el pas en què el producte deixa de ser només backend intern i passa a oferir funcionalitat reusable.
+
+**CA coberts**
+
+- **RA7.d**
+- **RA7.e**
+- **RA6.c**
+- **RA6.d**
+
+**Descripció dels CA en llenguatge docent**
+
+- L’alumnat implementa el servei segons el contracte triat.
+- L’alumnat publica dades reals o resultats reals del sistema.
+- L’alumnat integra el servei amb la funcionalitat ja construïda.
+
+**Paper de la IA**
+
+La IA pot ajudar amb esquelets de codi, però l’alumnat ha de provar que el servei funciona realment.
+
+**Evidències obligatòries**
+
+- endpoint funcional
+- resposta estructurada
+- evidència de dades reals
+- demo del cas correcte
+- commits associats
+
+**Instrument d’avaluació**
+
+Rúbrica d’endpoint funcional.
+
+**Indicadors d’assoliment**
+
+- el servei respon segons el contracte
+- les dades o accions són reals
+- la resposta és clara i verificable
+
+**Riscos habituals**
+
+- endpoint decoratiu
+- dades simulades sense necessitat
+- contracte implementat de manera inconsistent
+
+**Verificació del treball real**
+
+- execució en directe de l’endpoint
+- pregunta oral sobre l’origen de les dades servides
+
+**Pes orientatiu dins del repte**
+
+20%
+
+---
+
+### Microprojecte MP3 — Autenticació i control d’accés de l’API
+
+**Tipus**
+
+Microprojecte procedimental.
+
+**Objectiu**
+
+Protegir el servei perquè l’accés als endpoints estiga controlat segons el tipus de recurs o acció publicada.
+
+**Tasca**
+
+L’equip incorpora autenticació o control d’accés adequat al context de servei, per exemple:
+
+- token
+- capçalera d’autenticació
+- clau d’accés
+- altre mecanisme coherent amb l’stack i el nivell del curs
+
+També ha de demostrar:
+
+- cas autoritzat
+- cas denegat
+- comportament coherent davant absència o error d’autenticació
+
+**Relació amb el producte principal**
+
+Este microprojecte diferencia una API usable i mínimament professional d’un servei obert sense control.
+
+**CA coberts**
+
+- **RA7.e**
+- **RA7.f**
+
+**Descripció dels CA en llenguatge docent**
+
+- L’alumnat integra protecció d’accés en un servei web.
+- L’alumnat comprova el funcionament correcte i incorrecte del servei protegit.
+
+**Paper de la IA**
+
+La IA pot suggerir patrons d’autenticació, però l’alumnat ha de justificar el mecanisme triat i demostrar-lo.
+
+**Evidències obligatòries**
+
+- mecanisme d’autenticació o control d’accés
+- cas autoritzat
+- cas denegat
+- resposta coherent davant error
+- demo d’accés protegit
+
+**Instrument d’avaluació**
+
+Rúbrica de servei protegit.
+
+**Indicadors d’assoliment**
+
+- el control d’accés és real
+- la restricció és observable
+- el servei respon coherentment en cas positiu i negatiu
+
+**Riscos habituals**
+
+- protecció aparent
+- repetir acríticament el model d’autenticació del Repte 2
+- no adaptar el control al context d’API
+
+**Verificació del treball real**
+
+- execució en directe de peticions autoritzades i denegades
+- pregunta oral sobre en quin punt del flux es comprova l’accés
+
+**Pes orientatiu dins del repte**
+
+20%
+
+---
+
+### Microprojecte MP4 — Consum del servei
+
+**Tipus**
+
+Microprojecte procedimental.
+
+**Objectiu**
+
+Demostrar que el servei es pot reutilitzar realment des d’un client, una eina de proves o una altra peça del sistema.
+
+**Tasca**
+
+L’equip prepara un consumidor mínim del servei, que pot ser:
+
+- una col·lecció de proves amb una eina d’API
+- un client simple
+- una vista o component consumidor
+- un script de consum
+- una altra peça equivalent coherent amb el nivell del curs
+
+El consum ha de mostrar:
+
+- ús correcte del servei
+- lectura de la resposta
+- tractament mínim d’errors o resultats inesperats
+
+**Relació amb el producte principal**
+
+Sense consum verificat, l’API queda definida però no validada com a servei reutilitzable.
+
+**CA coberts**
+
+- **RA7.f**
+- **RA7.g**
+
+**Descripció dels CA en llenguatge docent**
+
+- L’alumnat prova el servei en condicions d’ús real.
+- L’alumnat consumix el servei des d’un client o eina adequada.
+- L’alumnat verifica que l’API és realment reutilitzable.
+
+**Paper de la IA**
+
+La IA pot suggerir exemples de consum, però l’alumnat ha de demostrar-ne el funcionament real.
+
+**Evidències obligatòries**
+
+- consumidor mínim o eina configurada
+- demo del consum correcte
+- cas d’error o consum invàlid
+- registre de prova del servei
+
+**Instrument d’avaluació**
+
+Checklist de consum del servei.
+
+**Indicadors d’assoliment**
+
+- el servei és consumible
+- la resposta és usable
+- el consumidor no és només ornamental
+
+**Riscos habituals**
+
+- provar només el servidor sense consumidor real
+- consum massa trivial
+- no tractar cap cas d’error
+
+**Verificació del treball real**
+
+- execució en directe del consumidor
+- pregunta oral sobre què necessita un tercer per usar l’API
+
+**Pes orientatiu dins del repte**
+
+20%
+
+---
+
+### Microprojecte MP5 — Documentació i prova del servei
+
+**Tipus**
+
+Microprojecte de tancament i verificació.
+
+**Objectiu**
+
+Deixar el servei documentat i verificable per una altra persona o equip.
+
+**Tasca**
+
+L’equip documenta:
+
+- endpoints disponibles
+- format de peticions i respostes
+- requisits d’autenticació
+- casos de prova mínims
+- errors principals
+- passos bàsics d’ús
+
+També registra incidències detectades i correccions aplicades.
+
+**Relació amb el producte principal**
+
+Este microprojecte consolida el valor professional del servei i el deixa preparat per a reutilització real.
+
+**CA coberts**
+
+- **RA7.f**
+- **RA7.h**
+- **RA6.g**
+
+**Descripció dels CA en llenguatge docent**
+
+- L’alumnat prova el servei de manera explícita.
+- L’alumnat documenta l’API de forma usable per tercers.
+- L’alumnat deixa traçabilitat del comportament real del servei.
+
+**Paper de la IA**
+
+La IA pot ajudar a polir la documentació, però esta ha de correspondre exactament al servei real.
+
+**Evidències obligatòries**
+
+- documentació d’endpoints
+- exemples de request i response
+- casos de prova mínims
+- incidències i correccions
+- defensa tècnica breu
+
+**Instrument d’avaluació**
+
+Rúbrica de documentació i verificació del servei.
+
+**Indicadors d’assoliment**
+
+- documentació coherent amb el servei
+- proves verificables
+- claredat d’ús per tercers
+
+**Riscos habituals**
+
+- documentació embellida
+- captures sense correspondència amb l’endpoint real
+- proves fictícies
+
+**Verificació del treball real**
+
+- contrast entre documentació, demo i codi
+- execució en directe d’un cas documentat
+- pregunta oral sobre com consumiria el servei un altre equip
+
+**Pes orientatiu dins del repte**
+
+25%
+
+---
+
+## 6. Taula resum de microprojectes i criteris d’avaluació
+
+| Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
+|---|---|---|---|---|---|---|
+| MP1 | Investigació / decisió tècnica | Contracte inicial del servei | RA7.a, RA7.b, RA7.c, RA7.d | mapa d’endpoints, taula request/response, defensa | rúbrica | 15% |
+| MP2 | Procedimental | Primer endpoint funcional | RA7.d, RA7.e, RA6.c, RA6.d | endpoint, resposta, demo, dades reals | rúbrica | 20% |
+| MP3 | Procedimental | Servei protegit | RA7.e, RA7.f | autenticació, cas autoritzat i denegat | rúbrica | 20% |
+| MP4 | Procedimental | Consum real del servei | RA7.f, RA7.g | consumidor, demo, prova d’error | checklist | 20% |
+| MP5 | Tancament / verificació | Documentació i prova del servei | RA7.f, RA7.h, RA6.g | documentació, proves, incidències, defensa | rúbrica | 25% |
+
+---
+
+## 7. Evidències globals del repte
+
+**Evidències mínimes comunes**
+
+- issue principal amb microtasques
+- seqüència de commits significativa
+- contracte bàsic del servei
+- almenys un endpoint funcional
+- ús de dades reals del sistema
+- autenticació o control d’accés del servei
+- consumidor mínim o prova equivalent
+- casos positius i negatius
+- documentació tècnica usable
+- registre de proves
+- AI log quan hi haja ús d’IA
+
+**Evidències opcionals d’ampliació**
+
+- més d’un endpoint
+- més d’un recurs exposat
+- consumidor més complet
+- proves automatitzades
+- control d’errors més ric
+- documentació més formalitzada
+- integració amb un servei extern
+
+---
+
+## 8. Instruments d’avaluació del repte
+
+### 8.1 Instruments principals
+
+- rúbrica base del repte
+- rúbrica específica de servei i interoperabilitat
+- checklist de consum del servei
+- revisió de repositori
+- defensa tècnica breu
+
+### 8.2 Instruments de verificació
+
+- execució en directe d’endpoints
+- prova de casos positius i negatius
+- consum real del servei
+- revisió de commits i issues
+- preguntes tècniques sobre contracte, autenticació i reutilització
+- contrast entre documentació, AI log i comportament observat
+
+---
+
+## 9. Riscos d’ús inadequat de la IA
+
+| Risc | Com es manifesta | Impacte | Mesura de control |
+|---|---|---|---|
+| API decorativa | endpoints sense valor real de domini | Alt | exigir servei sobre funcionalitat real |
+| Contracte pobre | request/response inconsistents | Alt | revisió del contracte i demo |
+| Documentació fictícia | no correspon al comportament real | Alt | execució real dels casos documentats |
+| Consum aparent | no hi ha consumidor o és ornamental | Alt | consumidor obligatori o prova equivalent |
+| Dependència excessiva de IA | l’alumne no pot justificar el servei | Alt | defensa tècnica i preguntes de transferència |
+
+---
+
+## 10. Mesures de control i verificació
+
+**Per comprovar aprenentatge real**
+
+- execució real del servei
+- consum real de l’API
+- demostració de cas autoritzat i denegat
+- revisió de commits i issues
+- contrast entre contracte, implementació i documentació
+- pregunta de transferència
+- canvi tècnic menut en directe
+- comprovació de dades reals servides
+
+**Per distingir nivells d’autonomia**
+
+- **treball autònom real**: l’alumne defineix, publica, prova, consumix i defensa el servei
+- **treball assistit per IA**: l’alumne usa suport, però valida i pren decisions
+- **treball excessivament delegat**: l’alumne no pot explicar el contracte, el consum ni l’autenticació del servei
+
+---
+
+## 11. Adaptació realista a l’aula
+
+**Duració orientativa**
+
+5 a 7 sessions, segons l’stack triat, el punt de partida del Repte 3 i el nivell del grup en prova de serveis.
+
+**Moment del curs**
+
+Després del Repte 3.
+
+**Prerequisits**
+
+- cas d’ús real ja estructurat
+- persistència suficient
+- repositori operatiu
+- treball mínim amb Git, issues i commits
+
+**Possibles variants tecnològiques**
+
+Es pot implementar amb l’stack triat pel projecte o departament, sempre que permeta:
+
+- exposar endpoints o servicis equivalents
+- servir dades reals
+- aplicar autenticació o control d’accés
+- consumir el servei des d’una eina o client
+- documentar i provar el servei
+
+**Part comuna del grup**
+
+- contracte bàsic del servei
+- primer endpoint funcional
+- protecció d’accés
+- consum mínim
+- documentació i prova
+
+**Ampliacions realistes**
+
+- diversos recursos
+- integració amb front o client separat
+- control d’errors més ric
+- proves automatitzades de servei
+- documentació més formal
+- integració externa
+
+**Recuperació o reforç per CA**
+
+- si fallen CA de **RA7**: redisseny del contracte, correcció d’endpoints, nou consum i nova documentació
+- si fallen CA de **RA6** de suport: correcció de recuperació o publicació de dades reals i nova verificació
+- si fallen proves o consum: nova execució guiada i defensa tècnica breu
+
+---
+
+## 12. Tancament del repte
+
+**Pregunta de síntesi per a l’alumnat**
+
+Quina part real del producte hem aconseguit exposar com a servei reusable, com sabem que es pot consumir i què la fa usable per tercers?
+
+**Criteri de superació del repte**
+
+El repte es considera superat quan:
+
+- existix almenys un servei funcional sobre una funcionalitat real del projecte
+- el contracte bàsic del servei és clar i defensable
+- el servei retorna dades reals o executa una acció real
+- hi ha autenticació o control d’accés coherent
+- el servei es pot consumir de manera verificable
+- la documentació reflectix el comportament real
+- l’alumnat pot explicar tècnicament per què esta API és usable i com es podria integrar
+
+**Observacions docents**
+
+Este repte s’ha de llegir principalment com a desplegament de **RA7** amb suport concret de **RA6**. No hauria de convertir-se en un nou repte general de persistència ni en una simple col·lecció d’endpoints CRUD sense contracte, consum i documentació.
