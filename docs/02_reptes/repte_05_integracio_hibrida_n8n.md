@@ -1,199 +1,676 @@
-# Repte 5. Integració híbrida, automatització i manteniment
+# Repte 5. Aplicació web híbrida i integració de serveis externs
 
-## Finalitat
+## 1. Visió general del repte
 
-Tancar el producte backend del curs demostrant que ja no és només un servei funcional, sinó una base integrable, automatitzable i mantenible en un entorn professional realista.
+**Finalitat del repte**
 
-Este repte culmina la seqüència iniciada al Repte 1 i reutilitza directament l'API publicada en el [Repte 4. Publicació i consum d'API](repte_04_api_i_consum.md) per integrar-la amb serveis externs, fluxos híbrids i automatitzacions. Quan siga pertinent, la integració es pot materialitzar amb `n8n` o amb una eina equivalent, sempre que el valor tècnic i docent siga verificable.
+Construir una funcionalitat híbrida del projecte que combine recursos propis amb serveis, dades o codi de tercers per generar valor nou i útil dins del producte.
 
-No és un repte de tècnica aïllada. Connectar `n8n`, un webhook o un servei extern només té valor si resol un procés recognoscible del producte, aporta un flux de negoci complet i es pot provar, mantindre i defensar tècnicament.
+Este repte no s’entén com una simple connexió a una API externa ni com una demostració superficial de consum de dades alienes. El seu sentit és integrar informació o serveis heterogenis de manera crítica, transformada i documentada, perquè el sistema faça alguna cosa nova que abans no podia fer.
 
-## Relació amb resultats d'aprenentatge
+**Producte principal del repte**
 
-- **RA9 (principal):** integrar serveis externs i automatitzacions en una solució backend híbrida orientada a un cas d'ús real.
-- **RA7 (reforç):** reutilitzar l'API pròpia com a contracte estable dins d'un escenari d'integració.
-- **RA8 (reforç):** aplicar qualitat, debugging, verificació, seguretat bàsica i criteri de manteniment sobre el flux integrat.
+Una funcionalitat híbrida integrada en el projecte, amb:
 
-Contribució curricular esperada:
+- consum real d’una o més fonts externes
+- tractament o transformació de la informació rebuda
+- combinació amb dades o serveis propis del projecte quan siga pertinent
+- generació d’una funcionalitat nova amb valor real
+- tractament mínim d’errors i incidències d’integració
+- proves mínimes o verificacions registrades
+- documentació tècnica de la integració
 
-- demostrar que l'API del producte es pot consumir dins d'un procés híbrid complet
-- connectar backend, servei extern i automatització amb un flux verificable de negoci
-- evidenciar manteniment real: incidències, traçabilitat, punts de fallada i correccions
-- tancar el producte evolutiu del curs amb una entrega professional defensable
+**Context professional simul·lat o realista**
 
-## Context professional
+L’equip ja disposa d’un backend funcional, estructurat i capaç d’exposar serveis propis.
 
-En un context real, un backend no acaba quan publica la seua API. El valor operatiu apareix quan eixa API s'integra amb altres serveis, processos interns, notificacions, automatitzacions o eines d'orquestració.
+Ara ha de demostrar una competència molt habitual en entorns professionals: reutilitzar serveis, fonts de dades o components externs per ampliar el valor del sistema sense reconstruir-ho tot des de zero.
 
-Després del Repte 4, l'equip ja disposa d'un servei documentat i consumible. El pas següent és demostrar que pot:
+**Relació amb el projecte global del curs**
 
-- connectar-se amb un sistema extern o una eina d'automatització
-- gestionar intercanvi de dades i possibles errors d'integració
-- mantindre traçabilitat del flux i capacitat de revisió
-- prendre decisions de manteniment amb criteri, no només fer una demo puntual
-- tancar una funcionalitat real del producte amb valor visible de punta a punta, no només exhibir una automatització decorativa
+Este repte reutilitza el sistema construït fins ara i l’obri a l’exterior.
 
-## Problema o encàrrec inicial
+En el Repte 4, el sistema aprenia a exposar serveis propis.
 
-**Encàrrec:** "Integreu el backend del curs en un flux híbrid realista que combine l'API pròpia amb una automatització o servei extern, documenteu el procés i entregueu evidències que la solució es pot provar, mantindre i defensar tècnicament."
+En el Repte 5, el sistema aprén a consumir, integrar, transformar i reaprofitar informació o serveis externs per generar una aplicació híbrida amb sentit.
 
-Restriccions del repte:
+---
 
-- la integració ha de nàixer de l'API publicada al Repte 4, no d'un prototip desconnectat
-- no es tracta de fer una automatització ornamental, sinó un flux amb valor funcional clar
-- la integració amb `n8n` és recomanable quan aporte valor docent i verificable, però es pot usar una alternativa equivalent si està justificada
-- cal demostrar què passa quan el flux funciona i què passa quan falla
-- l'equip ha de documentar decisions de manteniment, incidències i punts de risc
-- la IA es pot usar com a suport, però qualsevol proposta s'ha de validar amb execució real i revisió tècnica
-- un workflow visualment cridaner però sense recorregut complet de dades ni cas d'ús clar no es considera suficient
+## 2. Relació amb resultats d’aprenentatge
 
-## Producte final
+**Resultat d’aprenentatge principal**
 
-El lliurable mínim del Repte 5 ha d'incloure:
+- **RA9**: desenvolupament d’aplicacions web híbrides seleccionant i utilitzant tecnologies, frameworks servidor i repositoris heterogenis d’informació
 
-- un flux híbrid funcional que reuse l'API del producte backend sobre un cas d'ús real i no trivial
-- integració amb `n8n` o equivalent quan siga pertinent, o amb un servei extern justificat
-- automatització o orquestració d'un cas de negoci recognoscible
-- tractament bàsic d'errors, reintents o control de fallada segons el cas triat
-- evidència de consum real del backend dins del flux integrat
-- documentació tècnica del procés, del recorregut de dades i dels punts crítics
-- registre de proves, incidències i ajustos de manteniment
-- proposta mínima de continuïtat o millora del sistema integrat
+**Resultats d’aprenentatge de suport integrat**
 
-## Compatibilitat amb el producte base i itineraris
+- **RA7**: només com a base del servei propi ja construït, si el projecte el reutilitza en la integració
+- **RA6**: només quan calga guardar, transformar o reutilitzar dades procedents de fonts externes dins del sistema
 
-Este repte s'alinea amb [Projecte backend base del curs](../05_projectes_tecnics/projecte_base_backend.md), perquè completa dues dimensions obligatòries del producte evolutiu:
+**Justificació curricular**
 
-- **integracions amb serveis externs o fluxos híbrids**
-- **manteniment evolutiu (correccions, millores, regressions i traçabilitat)**
+Este repte permet passar d’un sistema que ja té lògica pròpia, persistència i serveis exposats a un sistema capaç d’interoperar amb recursos externs de forma crítica i útil.
 
-A més:
+La dificultat no està sols en connectar-se a una font externa, sinó en decidir què aporta realment, com es transforma i com s’integra dins del producte.
 
-- reutilitza l'API publicada i consumida al [Repte 4. Publicació i consum d'API](repte_04_api_i_consum.md)
-- posa a prova la robustesa real del backend més enllà del seu ús intern
-- és compatible amb els itineraris **PHP + Laravel**, **Node.js + Express o Nest** i **Python + FastAPI**
-- permet usar `n8n` o una eina equivalent d'orquestració, automatització o integració si s'ajusta millor al cas d'ús
-- manté el criteri del repositori: canvien les eines concretes, però no els objectius, les evidències ni la verificació exigida
+---
 
-## Seqüència de treball
+## 3. Canvi metodològic que introdueix la IA
 
-1. **Seleccionar el cas d'integració**
-   Definir quin procés de negoci del producte es vol automatitzar o connectar amb un servei extern.
+**Paper de la IA en este repte**
 
-2. **Dissenyar el flux híbrid**
-   Identificar productor, consumidor, automatització, dades d'entrada i eixides esperades.
+La IA es pot usar per a:
 
-3. **Preparar l'API i els punts de connexió**
-   Verificar quins endpoints del Repte 4 intervenen, quina autenticació requereixen i quins límits o errors poden aparéixer.
+- explorar possibles APIs, repositoris o serveis externs
+- comparar fonts de dades o contractes de serveis
+- generar esquelets inicials de connectors o adapters
+- proposar estratègies de mapping o transformació
+- detectar inconsistències entre formats
+- ajudar a redactar documentació tècnica
+- suggerir casos de prova sobre la integració
 
-4. **Implementar l'automatització o orquestració**
-   Construir el flux amb `n8n` o equivalent i connectar-lo amb el backend i, si escau, amb un servei extern.
+**Què no es delega**
 
-5. **Validar, depurar i mantindre**
-   Provar camins correctes, fallades, dades incorrectes i problemes de sincronització o format.
+L’alumnat ha de:
 
-6. **Documentar i defensar**
-   Registrar decisions, incidències, proves, limitacions i millores futures del sistema integrat.
+- seleccionar críticament la font externa
+- justificar per què aporta valor real al producte
+- entendre què rep i què transforma
+- explicar com es combina la informació externa amb el sistema propi
+- provar què passa quan la font externa falla o respon mal
+- documentar el flux real de dades i les limitacions de la integració
 
-## Activitats o microtasques
+**Risc principal d’ús inadequat de la IA**
 
-- crear la issue principal del Repte 5 i descompondre-la en microtasques d'integració i manteniment
-- seleccionar un cas d'ús de negoci que tinga sentit integrar o automatitzar
-- mapar dades d'entrada, transformacions i resultats esperats del flux
-- revisar quins endpoints del Repte 4 participen en la integració
-- definir com es gestionaran autenticació, secrets, errors i reintents
-- implementar el workflow en `n8n` o eina equivalent quan siga pertinent
-- connectar el flux amb un servei extern, webhook o procés automatitzat justificat
-- provar camins correctes, errors d'API, errors externs i casos de dades problemàtiques
-- documentar troubleshooting, incidències i decisions de manteniment
-- preparar una demostració tècnica centrada en valor real, no només en l'efecte visual del flux
+Fer una integració superficial, sense entendre el contracte extern ni la transformació aplicada, o limitar-se a mostrar dades externes sense valor afegit real.
 
-## Materials i apunts associats
+**Mesures de control**
 
-- [Projecte backend base del curs](../05_projectes_tecnics/projecte_base_backend.md): fixa que el producte ha de cobrir integracions externes o fluxos híbrids i mantindre traçabilitat de millores i correccions.
-- [Mapa de materials actuals -> transformació operativa](../04_materials/mapa_materials_actuals.md): situa el **Bloc 7. Webs híbrides** com a nucli del repte, amb suport dels **Blocs 6a i 6b. APIs** i del **Bloc 5. Seguretat i reactivitat**.
-- [Repte 4. Publicació i consum d'API](repte_04_api_i_consum.md): aporta el contracte API que ara s'integra dins d'un procés híbrid real.
-- [Integració de n8n](../05_projectes_tecnics/integracio_n8n.md): proposa la ubicació recomanada del cas d'ús i exemples de workflow verificable.
-- [Integració API](../05_projectes_tecnics/integracio_api.md): recorda el paper de l'exposició i el consum d'APIs dins del mòdul.
-- [Seqüenciació general](../01_programacio_modul/seqüenciacio_general.md): fixa el Repte 5 com a tancament del producte evolutiu amb automatització i serveis externs.
+- AI log quan corresponga
+- revisió de commits i issues
+- demo del flux complet
+- casos positius i d’error
+- preguntes tècniques sobre la font externa i el mapping
+- contrast entre documentació, codi i resultat observat
 
-## Paper de la IA
+---
 
-La IA es pot usar com a assistent de treball per:
+## 4. Estructura del repte
 
-- proposar escenaris d'integració plausibles i seqüències d'automatització
-- ajudar a mapar payloads, transformacions i punts de fallada
-- suggerir estratègies de reintents, validació i observabilitat bàsica
-- donar suport en debugging de desacoblaments entre API, workflow i servei extern
-- revisar documentació tècnica del flux i dels incidents detectats
+### 4.1 Nucli del repte
 
-Condicions d'ús:
+**Objectiu del nucli**
 
-- l'equip ha de comprendre i poder explicar el flux final de punta a punta
-- tota proposta de IA s'ha de validar amb execució real del backend i del procés integrat
-- qualsevol configuració suggerida per IA sobre `n8n` o eines equivalents s'ha de contrastar amb el comportament real del workflow
-- si hi ha ús de IA, ha d'existir traça verificable de què s'ha acceptat, què s'ha descartat i com s'ha comprovat
+Integrar una font externa real dins del projecte i transformar-la en una funcionalitat híbrida amb valor per al producte.
 
-## Evidències d'aprenentatge
+**Lliurable principal**
 
-Evidències mínimes i autèntiques del repte:
+Mòdul o funcionalitat híbrida integrada en el sistema, amb:
 
-- issue principal amb microtasques i estat de resolució
-- seqüència de commits que mostre la construcció i l'ajust del flux híbrid
-- workflow exportat o artefacte equivalent de l'automatització
-- evidència d'integració entre API pròpia i servei extern o eina d'orquestració sobre un cas d'ús complet
-- proves registrades de casos correctes i de fallada
-- documentació tècnica del flux, dels punts crítics i del manteniment aplicat
-- registre d'incidències, debugging i correccions
-- AI log o registre equivalent quan s'haja utilitzat IA
+- selecció justificada de la font externa
+- connector o mecanisme de consum funcional
+- transformació o adaptació de dades
+- integració amb una necessitat real del projecte
+- tractament mínim d’errors
+- proves mínimes o verificacions registrades
+- documentació tècnica de la integració
 
-## Instruments d'avaluació
+**Criteris d’avaluació principals del nucli**
 
-- [Rúbrica base de reptes](../03_avaluacio/rubrica_base_reptes.md) adaptada al pes principal de RA9 i al reforç de RA7 i RA8
-- checklist específica d'integració híbrida, automatització i manteniment
-- revisió del workflow, webhook o artefacte equivalent i de la seua connexió amb l'API del curs
-- revisió de proves de flux, errors i capacitat de recuperació o diagnòstic
-- demostració funcional del procés complet, des de l'entrada fins al resultat integrat
-- defensa tècnica breu centrada en decisions, riscos, mantenibilitat i valor real de la integració
+- CA de **RA9** vinculats a reutilització de codi i informació, integració de fonts externes, creació d’aplicacions híbrides, verificació i documentació
+- CA de suport de **RA6** només si la integració exigix guardar, transformar o reutilitzar dades dins del sistema
 
-## Riscos d'ús inadequat de la IA
+**Evidències obligatòries del nucli**
 
-- generar fluxos d'automatització que semblen plausibles però no corresponen al comportament real de l'API
-- copiar configuracions de `n8n` o d'altres eines sense entendre credencials, webhooks, transformacions o errors
-- simular integracions sense demostrar un recorregut complet de dades
-- presentar un workflow visualment atractiu però tècnicament fràgil o no mantingut
-- no saber justificar per què s'ha triat una eina o un servei extern concret
+- repositori actualitzat
+- issue principal del repte i microtasques
+- seqüència de commits significativa
+- comparativa o justificació de la font externa
+- connector funcional
+- dades o servei extern recuperat realment
+- transformació o integració observable
+- demo del cas d’ús híbrid
+- tractament mínim d’errors
+- documentació tècnica
+- AI log quan hi haja ús d’IA
 
-## Mesures de verificació
+---
 
-- execució en directe del flux híbrid complet amb dades reals o de prova controlada
-- comprovació de consum efectiu de l'API del Repte 4 dins de l'automatització
-- validació de camins correctes, errors d'API, errors externs i respostes inesperades
-- contrast entre workflow exportat, documentació i comportament real observat
-- revisió de commits i registre d'incidències per comprovar manteniment real
-- contrast entre AI log, configuració final i defensa tècnica
-- preguntes tècniques breus sobre payloads, punts de fallada, secrets i decisions d'orquestració
+## 5. Microprojectes i microtasques del repte
 
-## Entorn professional
+> **Norma del repte**
+>
+> - Els microprojectes cobrixen sobretot criteris procedimentals d’integració, transformació i reutilització.
+> - Cap microprojecte apareix sense el camp **“CA coberts”**.
+> - No es considera suficient una simple crida a un servei extern si no hi ha integració amb valor real dins del producte.
+> - El repte ha de generar una funcionalitat híbrida, no una demo ornamental de consum de dades.
 
-Marc mínim de treball del repte:
+### Microprojecte MP1 — Selecció de fonts externes i disseny de la integració
 
-- repositori Git/GitHub amb issues, commits i branques de treball coherents
-- entorn local o de prova reproduïble per executar backend, API i automatització
-- eina d'orquestració com `n8n` o equivalent quan el cas d'ús ho requerisca
-- documentació tècnica orientada a onboarding, manteniment i recuperació d'incidències
-- registre d'incidents, errors d'integració i correccions aplicades
-- dinàmica de treball per reptes amb evidències autèntiques, verificables i defensables
+**Tipus**
 
-## Definition of done del repte
+Microtasca d’investigació i decisió tècnica.
 
-El Repte 5 es considera completat quan:
+**Objectiu**
 
-- existix una integració híbrida funcional basada en l'API del producte del curs
-- el flux automatitzat aporta un cas d'ús recognoscible i justificable
-- la integració amb `n8n` o equivalent, quan s'usa, està documentada i verificada
-- hi ha evidència de proves sobre casos correctes i sobre fallades rellevants del procés
-- el repositori aporta evidències autèntiques de treball: issues, commits, artefactes d'integració, proves i documentació
-- l'ús de IA, si n'hi ha, queda registrat i validat
-- el resultat final encaixa amb el [Projecte backend base del curs](../05_projectes_tecnics/projecte_base_backend.md) i tanca el producte evolutiu del mòdul amb criteri professional de manteniment i integració
-- una integració només decorativa, sense valor funcional clar ni defensa del flux complet, no es considera suficient
+Seleccionar una o més fonts externes útils i justificar per què tenen sentit dins del producte del curs.
+
+**Tasca**
+
+L’equip analitza alternatives externes, per exemple:
+
+- serveis web públics o privats
+- repositoris heterogenis d’informació
+- llibreries o components de tercers
+- serveis de consulta, validació o enriquiment
+
+L’equip ha de concretar:
+
+- quina font o fonts utilitzarà
+- quin contracte extern aprofitarà
+- quin valor aportarà la integració
+- quin flux de dades seguirà la funcionalitat híbrida
+
+**Relació amb el producte principal**
+
+Sense una selecció crítica de la font externa, el repte corre el risc de convertir-se en una integració arbitrària i sense valor.
+
+**CA coberts**
+
+- **RA9.a**
+- **RA9.b**
+
+**Descripció dels CA en llenguatge docent**
+
+- L’alumnat reconeix els avantatges de reutilitzar codi i informació procedent d’altres serveis o repositoris.
+- L’alumnat identifica tecnologies, frameworks o fonts aplicables a una integració híbrida.
+
+**Paper de la IA**
+
+La IA pot ajudar a localitzar alternatives i resumir-ne característiques, però l’alumnat ha de justificar la decisió final.
+
+**Evidències obligatòries**
+
+- comparativa breu de fonts externes
+- decisió justificada
+- esquema del flux d’integració
+- defensa oral breu
+
+**Instrument d’avaluació**
+
+Rúbrica de selecció i disseny de la integració.
+
+**Indicadors d’assoliment**
+
+- la font externa està ben triada
+- la integració té valor clar per al producte
+- el flux previst és viable i comprensible
+
+**Riscos habituals**
+
+- font externa triada per moda o comoditat
+- manca de valor real per al producte
+- contracte extern mal entés
+
+**Verificació del treball real**
+
+- pregunta oral sobre per què s’ha triat esta font i no una altra
+- contrast entre disseny previst i implementació posterior
+
+**Pes orientatiu dins del repte**
+
+15%
+
+---
+
+### Microprojecte MP2 — Connexió amb la font externa i recuperació real d’informació
+
+**Tipus**
+
+Microprojecte procedimental.
+
+**Objectiu**
+
+Consumir realment una font externa i recuperar informació o funcionalitat útil.
+
+**Tasca**
+
+L’equip implementa un connector, client o mecanisme equivalent que permeta:
+
+- connectar-se a la font externa
+- recuperar informació o servei real
+- gestionar com a mínim un cas correcte
+- mostrar almenys un cas d’error o resposta no prevista
+
+**Relació amb el producte principal**
+
+Este microprojecte és el punt on la integració deixa de ser disseny i passa a ser consum real.
+
+**CA coberts**
+
+- **RA9.c**
+- **RA9.f**
+
+**Descripció dels CA en llenguatge docent**
+
+- L’alumnat crea una aplicació que recupera i processa informació d’una font existent.
+- L’alumnat utilitza informació o codi generats per tercers dins d’una peça funcional real.
+
+**Paper de la IA**
+
+La IA pot suggerir connectors inicials, però l’alumnat ha de demostrar que el consum és real i que entén el format de resposta.
+
+**Evidències obligatòries**
+
+- connector o client funcional
+- evidència de dades externes reals
+- demo del cas correcte
+- demo d’un cas d’error o incidència
+- commits associats
+
+**Instrument d’avaluació**
+
+Rúbrica de consum de font externa.
+
+**Indicadors d’assoliment**
+
+- la connexió funciona realment
+- la resposta externa és comprensible i usable
+- hi ha un mínim de control d’errors
+
+**Riscos habituals**
+
+- simulació de dades externes sense necessitat
+- connector que funciona només en un cas molt controlat
+- no entendre l’origen ni el format de la resposta
+
+**Verificació del treball real**
+
+- execució en directe del connector
+- pregunta oral sobre estructura i significat de la resposta externa
+
+**Pes orientatiu dins del repte**
+
+20%
+
+---
+
+### Microprojecte MP3 — Transformació, mapping i valor afegit
+
+**Tipus**
+
+Microprojecte procedimental.
+
+**Objectiu**
+
+Transformar la informació externa perquè genere valor real dins del producte.
+
+**Tasca**
+
+L’equip implementa una capa de transformació, mapping o tractament que permeta:
+
+- adaptar el format extern al model intern
+- combinar dades externes amb dades pròpies quan siga pertinent
+- filtrar, enriquir, agrupar o normalitzar informació
+- evitar que la integració es limite a mostrar dades crues sense tractament
+
+**Relació amb el producte principal**
+
+És el microprojecte que convertix la integració en aplicació híbrida real.
+
+**CA coberts**
+
+- **RA9.d**
+- **RA9.e**
+
+**Descripció dels CA en llenguatge docent**
+
+- L’alumnat crea repositoris o estructures específiques a partir d’informació heterogènia.
+- L’alumnat construeix una funcionalitat híbrida amb valor nou i no merament decoratiu.
+
+**Paper de la IA**
+
+La IA pot suggerir estratègies de mapping o transformació, però l’alumnat ha de justificar el model adoptat.
+
+**Evidències obligatòries**
+
+- transformació observable de dades
+- explicació del mapping
+- demo del valor afegit
+- justificació tècnica breu
+
+**Instrument d’avaluació**
+
+Rúbrica de transformació i integració híbrida.
+
+**Indicadors d’assoliment**
+
+- hi ha valor nou respecte a la font externa original
+- la transformació és coherent
+- la funcionalitat híbrida està clarament integrada al producte
+
+**Riscos habituals**
+
+- mostrar dades externes sense treball propi
+- mapping improvisat o poc explicable
+- integració ornamental
+
+**Verificació del treball real**
+
+- execució en directe del flux de transformació
+- pregunta oral sobre com passa una dada de la font externa al model intern
+
+**Pes orientatiu dins del repte**
+
+25%
+
+---
+
+### Microprojecte MP4 — Integració de la funcionalitat híbrida en el projecte
+
+**Tipus**
+
+Microprojecte procedimental.
+
+**Objectiu**
+
+Incorporar la nova funcionalitat híbrida al producte principal de manera usable i coherent.
+
+**Tasca**
+
+L’equip integra la funcionalitat híbrida dins del projecte de forma que es puga veure:
+
+- on s’activa o s’utilitza
+- quina necessitat del producte resol
+- com interactua amb funcionalitats ja existents
+- quin comportament oferix a l’usuari o al sistema
+
+**Relació amb el producte principal**
+
+Sense esta integració final, el repte podria quedar com una prova aïllada sense impacte real en el producte.
+
+**CA coberts**
+
+- **RA9.e**
+- **RA9.f**
+
+**Descripció dels CA en llenguatge docent**
+
+- L’alumnat integra la funcionalitat híbrida dins d’un sistema real.
+- L’alumnat reutilitza de manera coherent serveis o repositoris externs per resoldre una necessitat pròpia del projecte.
+
+**Paper de la IA**
+
+La IA pot ajudar a detectar punts d’integració, però l’alumnat ha de demostrar que la funcionalitat híbrida forma part real del producte.
+
+**Evidències obligatòries**
+
+- funcionalitat híbrida integrada
+- demo del cas d’ús complet
+- ús combinat de font externa i sistema propi
+- commits i issue relacionades
+
+**Instrument d’avaluació**
+
+Rúbrica de funcionalitat híbrida integrada.
+
+**Indicadors d’assoliment**
+
+- la funcionalitat no és una demo aïllada
+- la integració resol una necessitat real
+- el flux complet és comprensible i usable
+
+**Riscos habituals**
+
+- integració superficial
+- funcionalitat desconnectada del producte
+- reutilització poc justificada
+
+**Verificació del treball real**
+
+- execució en directe del cas d’ús complet
+- pregunta oral sobre què aporta la integració que abans el producte no podia fer
+
+**Pes orientatiu dins del repte**
+
+20%
+
+---
+
+### Microprojecte MP5 — Prova, depuració i documentació del flux híbrid
+
+**Tipus**
+
+Microprojecte de tancament i verificació.
+
+**Objectiu**
+
+Deixar clar que la integració és verificable, mantenible i comprensible per tercers.
+
+**Tasca**
+
+L’equip documenta i verifica:
+
+- la font externa usada
+- el contracte o tipus de resposta aprofitat
+- els punts de transformació
+- els casos de prova mínims
+- els errors o limitacions principals
+- les incidències detectades i correccions aplicades
+
+**Relació amb el producte principal**
+
+Este microprojecte consolida la integració i deixa rastre tècnic suficient perquè es puga mantindre o revisar.
+
+**CA coberts**
+
+- **RA9.g**
+- **RA9.h**
+
+**Descripció dels CA en llenguatge docent**
+
+- L’alumnat utilitza llibreries o entorns complementaris quan són útils per a treballar la integració.
+- L’alumnat prova, depura i documenta la funcionalitat híbrida amb criteri tècnic.
+
+**Paper de la IA**
+
+La IA pot ajudar a polir documentació o a generar casos de prova inicials, però l’alumnat ha de verificar que tot correspon al sistema real.
+
+**Evidències obligatòries**
+
+- registre de proves mínimes
+- casos positius i d’error
+- documentació tècnica de la integració
+- incidències i correccions
+- defensa tècnica breu
+
+**Instrument d’avaluació**
+
+Rúbrica de prova i documentació del flux híbrid.
+
+**Indicadors d’assoliment**
+
+- la integració està provada realment
+- la documentació és coherent amb el codi
+- es poden identificar límits i riscos de la font externa
+
+**Riscos habituals**
+
+- proves fictícies
+- documentació embellida
+- no saber explicar què falla o què depén del tercer servei
+
+**Verificació del treball real**
+
+- execució en directe d’un cas positiu i d’un cas d’error
+- contrast entre documentació, codi i resultat observat
+
+**Pes orientatiu dins del repte**
+
+20%
+
+---
+
+## 6. Taula resum de microprojectes i criteris d’avaluació
+
+| Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
+|---|---|---|---|---|---|---|
+| MP1 | Investigació / decisió tècnica | Selecció de fonts externes i disseny del flux | RA9.a, RA9.b | comparativa, esquema, defensa | rúbrica | 15% |
+| MP2 | Procedimental | Connector o consum real de font externa | RA9.c, RA9.f | connector, dades reals, demo, error | rúbrica | 20% |
+| MP3 | Procedimental | Transformació, mapping i valor afegit | RA9.d, RA9.e | transformació observable, mapping, demo | rúbrica | 25% |
+| MP4 | Procedimental | Funcionalitat híbrida integrada | RA9.e, RA9.f | demo completa, integració, commits | rúbrica | 20% |
+| MP5 | Tancament / verificació | Proves i documentació del flux híbrid | RA9.g, RA9.h | proves, errors, documentació, defensa | rúbrica | 20% |
+
+---
+
+## 7. Evidències globals del repte
+
+**Evidències mínimes comunes**
+
+- issue principal amb microtasques
+- seqüència de commits significativa
+- selecció justificada d’una font externa
+- consum real de la font externa
+- transformació o reutilització observable
+- funcionalitat híbrida integrada al projecte
+- cas positiu i cas d’error
+- proves mínimes registrades
+- documentació tècnica de la integració
+- AI log quan hi haja ús d’IA
+
+**Evidències opcionals d’ampliació**
+
+- integració de més d’una font externa
+- cachejat o gestió més avançada de la font externa
+- repositori derivat o estructura intermèdia pròpia
+- analítica o quadre de comandament simple
+- automatització periòdica
+- tractament d’errors més ric
+
+---
+
+## 8. Instruments d’avaluació del repte
+
+### 8.1 Instruments principals
+
+- rúbrica base del repte
+- rúbriques específiques d’integració i transformació
+- revisió de repositori
+- checklist de qualitat de la integració
+- defensa tècnica breu
+
+### 8.2 Instruments de verificació
+
+- execució en directe del flux híbrid
+- prova de cas positiu i d’error
+- revisió de commits i issues
+- preguntes tècniques sobre la font externa i el mapping
+- contrast entre documentació, AI log i resultat observat
+
+---
+
+## 9. Riscos d’ús inadequat de la IA
+
+| Risc | Com es manifesta | Impacte | Mesura de control |
+|---|---|---|---|
+| Integració superficial | es mostren dades externes sense valor nou | Alt | exigir transformació o reutilització amb sentit |
+| Contracte extern mal comprés | l’alumne no sap explicar la resposta rebuda | Alt | preguntes tècniques i demo |
+| Dependència excessiva del tercer servei | el flux es trenca i no se sap per què | Mitjà-alt | casos d’error obligatoris |
+| Documentació fictícia | no correspon al comportament real | Alt | execució dels casos documentats |
+| Dependència excessiva de IA | l’alumne no pot explicar la integració | Alt | defensa tècnica i preguntes de transferència |
+
+---
+
+## 10. Mesures de control i verificació
+
+**Per comprovar aprenentatge real**
+
+- execució real del connector
+- demostració de la transformació aplicada
+- execució del cas d’ús híbrid complet
+- prova d’almenys un error o incidència d’integració
+- revisió de commits i issues
+- pregunta de transferència
+- canvi tècnic menut en directe
+- contrast entre documentació i comportament observat
+
+**Per distingir nivells d’autonomia**
+
+- **treball autònom real**: l’alumne selecciona, integra, transforma, prova i defensa
+- **treball assistit per IA**: l’alumne usa suport, però valida i pren decisions
+- **treball excessivament delegat**: l’alumne no entén la font externa ni el mapping aplicat
+
+---
+
+## 11. Adaptació realista a l’aula
+
+**Duració orientativa**
+
+5 a 7 sessions, segons la complexitat de la font externa triada i el nivell del grup.
+
+**Moment del curs**
+
+Després del Repte 4.
+
+**Prerequisits**
+
+- projecte funcional i estructurat
+- servei propi o base de serveis ja disponible
+- treball mínim amb Git, issues i commits
+- criteri bàsic de prova i documentació
+
+**Possibles variants tecnològiques**
+
+Es pot implementar amb l’stack triat pel projecte o departament, sempre que permeta:
+
+- consum de fonts externes
+- transformació o mapping de dades
+- integració real amb el producte
+- prova i documentació del flux híbrid
+
+**Part comuna del grup**
+
+- una font externa real
+- un connector funcional
+- una transformació amb sentit
+- una funcionalitat híbrida integrada
+- prova i documentació
+
+**Ampliacions realistes**
+
+- diverses fonts externes
+- integració més rica
+- transformació més complexa
+- repositori derivat propi
+- automatització periòdica
+- analítica o quadre de comandament simple
+
+**Recuperació o reforç per CA**
+
+- si fallen CA de **RA9.a** o **RA9.b**: nova selecció i justificació de la font externa
+- si fallen CA de **RA9.c** o **RA9.f**: correcció del connector i nova demo del consum
+- si fallen CA de **RA9.d** o **RA9.e**: revisió del mapping i de la funcionalitat híbrida integrada
+- si fallen CA de **RA9.g** o **RA9.h**: nova prova guiada, documentació i defensa tècnica
+
+---
+
+## 12. Tancament del repte
+
+**Pregunta de síntesi per a l’alumnat**
+
+Quina funcionalitat nova hem creat gràcies a la integració amb una font externa i què la fa realment útil dins del producte?
+
+**Criteri de superació del repte**
+
+El repte es considera superat quan:
+
+- existix una integració externa real i justificable
+- la font externa es consumix realment
+- hi ha transformació, reutilització o valor afegit observables
+- la funcionalitat híbrida forma part del producte
+- es documenten i proven tant el cas positiu com almenys un cas d’error
+- l’alumnat pot explicar tècnicament què rep, què transforma i què aporta la integració
+
+**Observacions docents**
+
+Este repte s’ha de llegir principalment com a desplegament de **RA9**. No hauria de convertir-se ni en una repetició del Repte 4 ni en una simple demostració de consum d’APIs externes sense valor de producte.
