@@ -1,33 +1,34 @@
-# Repte 2. Sessions, autenticació i primera funcionalitat de negoci amb microprojectes i criteris d’avaluació explícits
+# Repte 2. Processament bàsic, estat, autenticació i primera funcionalitat protegida
 
 ## 1. Visió general del repte
 
 **Finalitat del repte**
 
-Construir la primera funcionalitat de negoci real del producte backend del curs a partir d’una progressió més ampla que la simple autenticació. Este repte obri `SA2` des de la recepció i el tractament bàsic de dades, passa per la lògica del flux i l’estat, i només després arriba a l’autenticació i a la protecció d’una operació real del domini.
+Construir la primera funcionalitat de negoci real del projecte a partir d’una progressió completa: recepció de dades, processament en servidor, ús de lògica bàsica, manteniment d’estat, autenticació i protecció d’una operació del domini.
+
+Este repte no s’entén com un bloc reduït a registre, login i logout. El seu sentit és més ampli: consolidar els fonaments tècnics bàsics del treball en entorn servidor i fer-los desembocar en una funcionalitat autenticada amb valor real dins del producte del curs.
 
 **Producte principal del repte**
 
-Una primera funcionalitat de domini real, treballada de manera progressiva, amb:
+Una primera funcionalitat de domini protegida, construïda sobre una seqüència progressiva que inclou:
 
-- formulari base útil per al producte
-- recuperació de dades enviades al servidor
-- processament bàsic de la petició
-- ús de decisions, arrays i funcions aplicades al flux
-- estat mantingut amb sessió, cookies o mecanisme equivalent
-- autenticació funcional
-- almenys una operació de negoci protegida
-- validació i tractament mínim d’errors
-- proves o verificacions registrades
+- formulari funcional o entrada equivalent de dades
+- recuperació i tractament de dades en servidor
+- ús de decisions, estructures de dades i funcions
+- gestió bàsica d’estat
+- mecanisme d’autenticació
+- operació de domini restringida
+- validació i tractament d’errors
+- proves mínimes o verificacions registrades
 - documentació tècnica actualitzada
 
-**Context professional simulat o realista**
+**Context professional simul·lat o realista**
 
-Després del kickoff, l’equip ja disposa d’un repositori funcional, però encara no ha convertit la base tècnica en un flux usable del producte. En un backend professional, abans d’escapar cap a arquitectura més complexa o cap a `API`, cal demostrar que el sistema rep dades, les processa amb criteri, manté estat quan cal, identifica l’usuari i protegix una operació real del domini.
+Després del kickoff inicial del projecte, l’equip necessita deixar arrere la simple posada en marxa del backend i començar a construir comportament real del sistema. Açò implica rebre dades, processar-les correctament, mantindre informació d’estat quan cal, gestionar usuaris i assegurar que una primera operació del domini només es pot executar en les condicions adequades.
 
 **Relació amb el projecte global del curs**
 
-Este repte reutilitza la base creada en el Repte 1 i prepara explícitament el pas al Repte 3. No és una activitat aïllada: és la primera seqüència funcional completa del producte, des del formulari i la petició fins a l’estat, l’autenticació i una operació protegida amb valor real.
+Este repte reutilitza la base tècnica creada en el Repte 1 i la transforma en una primera peça funcional realment usable. A més, prepara el pas al Repte 3, on la funcionalitat construïda ací s’haurà de reorganitzar, mantindre i professionalitzar millor.
 
 ---
 
@@ -35,186 +36,111 @@ Este repte reutilitza la base creada en el Repte 1 i prepara explícitament el p
 
 **Resultats d’aprenentatge principals**
 
-- **RA2**: tractament de peticions, dades d’entrada, validació, resposta i control bàsic d’errors del costat servidor
-- **RA3**: construcció de lògica de flux amb formularis, recuperació de dades, decisions, arrays i funcions aplicades al producte
-- **RA4**: gestió d’estat, sessió o equivalent, autenticació i funcionalitat protegida orientada a un cas d’ús real
+- **RA2**: desenvolupament de blocs bàsics de codi en entorn servidor, amb inclusió de codi, sintaxi, variables, operadors, directives i processament elemental
+- **RA3**: construcció de fluxos amb decisions, repeticions, arrays, funcions i interacció amb formularis
+- **RA4**: manteniment d’estat, autenticació d’usuaris, control d’accés i ús d’eines de prova i depuració
 
 **Justificació curricular**
 
-La `SA2` de la programació vigent treballa `RA2`, `RA3` i `RA4` com un bloc funcional continu. Per això, este repte no entra directament en login i control d’accés, sinó que els prepara amb una progressió curricular més coherent:
-
-- primer formulari i recuperació de dades
-- després processament bàsic i lògica del flux
-- després estat, sessió o cookies
-- i finalment autenticació i primera operació protegida
-
-Esta seqüència manté el sentit professional del repte actual: login i logout a soles no són suficients; han d’acabar donant suport a una funcionalitat de domini real i verificable.
+Este repte no ha de començar directament per l’autenticació com si fora un bloc aïllat. Perquè siga curricularment sòlid, ha de recórrer abans els elements bàsics de processament de dades en servidor i de programació necessaris per a entendre què es rep, què es valida, què es guarda temporalment, què es protegix i per què.
 
 ---
 
-## 3. Canvi metodològic que introduïx la IA
+## 3. Canvi metodològic que introdueix la IA
 
 **Paper de la IA en este repte**
 
 La IA es pot usar per a:
 
-- proposar estructures de formulari i recepció de dades
-- suggerir validacions bàsiques i missatges d’error
-- ajudar a ordenar decisions, arrays i funcions del flux
-- orientar en l’ús de sessió, cookies o mecanisme equivalent
-- plantejar casos de prova positius i negatius
-- ajudar a interpretar errors de depuració i a documentar incidències
+- generar esquelets inicials de formularis i processament
+- suggerir validacions
+- proposar exemples de decisions, arrays i funcions
+- ajudar a interpretar errors
+- generar casos de prova positius i negatius
+- ajudar a redactar documentació tècnica i registre d’incidències
 
 **Què no es delega**
 
 L’alumnat ha de:
 
-- entendre quines dades rep el servidor i com les tracta
-- explicar la lògica del flux abans d’arribar a autenticació
-- justificar com es manté l’estat i què es comprova en cada pas
-- demostrar que l’operació protegida és real i no decorativa
-- provar els casos correctes i incorrectes
-- identificar què haurà de reorganitzar-se en el Repte 3
+- entendre què fa cada part del flux
+- saber d’on ix cada dada i on es tracta
+- justificar la necessitat de cada decisió o funció
+- distingir entre estat, autenticació i autorització
+- provar i defensar el comportament real del sistema
 
 **Risc principal d’ús inadequat de la IA**
 
-Copiar formularis, fluxos de tractament o autenticació sense entendre què s’està rebent, què s’està validant, com es manté l’estat o per què una acció queda protegida.
+Construir un flux aparentment funcional però sense comprensió real del tractament de dades, de la lògica bàsica, del manteniment d’estat o de la restricció de l’operació protegida.
 
 **Mesures de control**
 
 - AI log quan corresponga
 - revisió de commits i issues
-- execució en directe de casos positius i negatius
-- preguntes tècniques breus sobre petició, lògica, estat i autenticació
-- modificació menuda en viu
+- execució en directe
+- casos positius i negatius obligatoris
+- preguntes de transferència
+- microcanvis en viu
 - contrast entre documentació, codi i comportament observat
 
 ---
 
-## 4. Nucli del repte
+## 4. Estructura del repte
+
+### 4.1 Nucli del repte
 
 **Objectiu del nucli**
 
-Deixar operativa una primera seqüència funcional completa del producte que recórrega formulari, tractament de dades, lògica, estat i autenticació, i que acabe en una operació real del domini protegida i verificable.
+Construir una primera funcionalitat de negoci real que recórrega de manera coherent el camí complet des de l’entrada de dades fins a una acció protegida per autenticació o restricció funcional.
 
 **Lliurable principal**
 
-Mòdul funcional integrat en el producte backend del curs que incloga:
+Mòdul funcional integrat en el projecte que incloga:
 
-- formulari base i recuperació de dades
-- processament bàsic de la petició
-- lògica del flux resolta amb decisions, arrays i funcions
-- estat o context mantingut entre peticions
-- login i logout o mecanisme equivalent coherent amb l’stack
-- una operació real del domini protegida
-- validació i errors mínims visibles
-- proves bàsiques o registre de verificació
+- formulari o entrada de dades equivalent
+- recuperació de dades en servidor
+- lògica bàsica amb decisions, arrays o funcions
+- estat o persistència temporal mínima quan siga necessari
+- alta o identificació d’usuari
+- autenticació
+- una operació de domini protegida
+- tractament d’errors
+- proves mínimes o verificacions registrades
 - documentació tècnica actualitzada
 
 **Criteris d’avaluació principals del nucli**
 
-- `RA2.c`, `RA2.d`, `RA2.e`, `RA2.f`, `RA2.g`, `RA2.h`
-- `RA3.a`, `RA3.b`, `RA3.c`, `RA3.d`, `RA3.e`, `RA3.f`, `RA3.g`
-- `RA4.a`, `RA4.b`, `RA4.c`, `RA4.d`, `RA4.e`, `RA4.f`
+- CA de **RA2** vinculats a inclusió de codi, sintaxi, variables, operadors, directives i àmbits
+- CA de **RA3** vinculats a decisions, bucles, arrays, funcions, formularis i recuperació de dades
+- CA de **RA4** vinculats a estat, mecanismes d’autenticació, control d’accés i prova/depuració
 
 **Evidències obligatòries del nucli**
 
 - repositori actualitzat
 - issue principal del repte i microtasques
 - seqüència de commits significativa
-- formulari base i recuperació de dades verificables
-- processament bàsic amb resposta del servidor
-- ús observable de lògica amb decisions, arrays i funcions
-- estat o sessió comprovable
-- demo funcional d’autenticació i cas d’ús protegit
-- casos positius i negatius verificats
-- documentació tècnica actualitzada
+- formulari funcional o equivalent
+- evidència de processament correcte i incorrecte
+- ús visible de lògica bàsica
+- evidència d’estat, sessió o cookies
+- flux d’autenticació funcional
+- operació de domini protegida
+- proves mínimes
+- documentació tècnica
 - AI log quan hi haja ús d’IA
 
 ---
 
 ## 5. Microprojectes i microtasques del repte
 
-**Norma del repte**
-
-- Els microprojectes cobrixen la progressió real de `SA2` i no només el tram final d’autenticació.
-- Cap microprojecte apareix sense el camp **CA coberts**.
-- El repte no es considera resolt si hi ha login o logout però no hi ha un cas d’ús real protegit.
-- El pas al Repte 3 només té sentit si el flux actual ja funciona de manera reproduïble i mínimament explicable.
+> **Norma del repte**
+>
+> - Els microprojectes cobrixen sobretot criteris procedimentals.
+> - Les microtasques d’investigació o decisió cobrixen sobretot criteris conceptuals o de modelització.
+> - Cap microprojecte apareix sense el camp **“CA coberts”**.
+> - El repte no es considera suficient si només hi ha login/logout sense un recorregut previ de processament i sense una operació real protegida.
 
 ### Microprojecte MP1 — Formulari base i recuperació de dades
-
-**Tipus**
-
-Microprojecte procedimental d’entrada al flux.
-
-**Objectiu**
-
-Obrir el repte des d’un formulari base útil per al producte i demostrar que el servidor rep i recupera les dades enviades de manera controlada.
-
-**Tasca**
-
-L’equip ha de:
-
-- definir un formulari base coherent amb el domini
-- enviar una primera dada útil al servidor
-- recuperar els valors rebuts
-- identificar camps, mètode i estructura mínima de la petició
-- mostrar una resposta inicial controlada a partir de les dades recuperades
-
-**Relació amb el producte principal**
-
-Este microprojecte impedix començar `SA2` directament en autenticació sense haver consolidat abans l’entrada bàsica de dades del producte.
-
-**CA coberts**
-
-- `RA3.e`
-- `RA3.f`
-- `RA3.g`
-
-**Descripció dels CA en llenguatge docent**
-
-- L’alumnat sap construir un formulari amb sentit dins del producte.
-- L’alumnat sap identificar què arriba al servidor i en quin format mínim.
-- L’alumnat recupera i usa les dades rebudes sense reduir el formulari a una peça decorativa.
-
-**Paper de la IA**
-
-La IA pot ajudar a proposar l’estructura del formulari o els camps mínims, però l’equip ha de validar que la recuperació de dades és real i explicable.
-
-**Evidències obligatòries**
-
-- formulari base operatiu
-- evidència de dades recuperades
-- captura o registre del primer enviament correcte
-- breu explicació del camp o dada triada
-
-**Instrument d’avaluació**
-
-Checklist de formulari i recuperació de dades.
-
-**Indicadors d’assoliment**
-
-- el formulari té sentit dins del domini
-- les dades arriben i es recuperen correctament
-- l’alumnat sap explicar què s’ha rebut i què no
-
-**Riscos habituals**
-
-- formulari dibuixat però no connectat al servidor
-- recuperació aparent sense entendre què arriba
-- camps sense relació amb el producte
-
-**Verificació del treball real**
-
-- enviament en directe del formulari base
-- pregunta tècnica sobre camps, mètode i dades recuperades
-
-**Pes orientatiu dins del repte**
-
-10%
-
-### Microprojecte MP2 — Processament bàsic de la petició i lògica del formulari
 
 **Tipus**
 
@@ -222,149 +148,230 @@ Microprojecte procedimental.
 
 **Objectiu**
 
-Processar la petició del formulari amb criteri de servidor, aplicar validacions bàsiques i produir respostes coherents en cas correcte i incorrecte.
+Construir un punt d’entrada de dades usable i demostrar que el sistema és capaç de recuperar la informació aportada per l’usuari.
 
 **Tasca**
 
-L’equip ha de:
+L’equip crea un formulari funcional, o una entrada equivalent coherent amb l’stack utilitzat, i implementa la recuperació de les dades enviades per l’usuari.
 
-- tractar la petició rebuda al servidor
-- comprovar camps obligatoris o restriccions bàsiques
-- generar resposta coherent en cas correcte
-- generar resposta d’error mínima en cas incorrecte
-- deixar clar quina part del flux és validació i quina és resposta
+S’ha de veure amb claredat:
+
+- quins camps es reben
+- com es recuperen
+- quin tractament inicial se’ls dona
+- quina resposta bàsica retorna el sistema
 
 **Relació amb el producte principal**
 
-Sense este pas, el repte quedaria en recepció aparent de dades però no en tractament real de peticions, que és el nucli d’entrada de `RA2`.
+És el primer pas del flux real de la funcionalitat. Sense esta capa, la resta del repte queda desconnectada de l’entrada d’informació.
 
 **CA coberts**
 
-- `RA2.c`
-- `RA2.d`
-- `RA2.e`
-- `RA2.f`
-- `RA2.g`
-- `RA2.h`
+- **RA3.e**
+- **RA3.f**
+- **RA3.g**
 
 **Descripció dels CA en llenguatge docent**
 
-- L’alumnat sap processar la petició en servidor.
-- L’alumnat valida dades bàsiques abans de donar-les per bones.
-- L’alumnat diferencia el cas correcte del cas incorrecte.
-- L’alumnat produïx respostes mínimament comprensibles i verificables.
+- L’alumnat usa formularis o mecanismes equivalents per interactuar amb l’usuari.
+- L’alumnat recupera correctament les dades introduïdes.
+- L’alumnat documenta el codi amb un mínim de claredat.
 
 **Paper de la IA**
 
-La IA pot suggerir validacions o esquelets de processament, però l’equip ha de comprovar què s’accepta, què es rebutja i què es retorna.
+La IA pot suggerir l’estructura inicial del formulari o exemples de tractament bàsic, però l’alumnat ha de comprovar que la recuperació de dades és real i que entén el flux.
 
 **Evidències obligatòries**
 
-- processament funcional de la petició
-- cas correcte i cas incorrecte
-- evidència de validació bàsica del costat servidor
-- missatges d’error mínims visibles
+- formulari funcional o entrada equivalent
+- recuperació correcta de dades
+- captura o demo del cas correcte
+- codi comentat mínimament
+- commits associats
+
+**Instrument d’avaluació**
+
+Checklist de formulari i recuperació de dades.
+
+**Indicadors d’assoliment**
+
+- les dades es reben realment
+- el codi és comprensible
+- hi ha correspondència entre camps, recuperació i resposta
+
+**Riscos habituals**
+
+- formulari només decoratiu
+- recuperació aparent però no verificable
+- comentaris inexistents o inútils
+
+**Verificació del treball real**
+
+- execució en directe del formulari
+- pregunta oral sobre d’on ix cada dada i com arriba al servidor
+
+**Pes orientatiu dins del repte**
+
+15%
+
+---
+
+### Microprojecte MP2 — Processament bàsic de la petició i lògica inicial del formulari
+
+**Tipus**
+
+Microprojecte procedimental.
+
+**Objectiu**
+
+Fer visible el treball elemental de programació en servidor que permet processar les dades rebudes i modificar el comportament del sistema.
+
+**Tasca**
+
+L’equip implementa tractament bàsic de la petició, incloent:
+
+- inclusió de codi en el llenguatge de marques o equivalent
+- ús correcte de sintaxi
+- sentències simples
+- directives o configuracions bàsiques
+- variables
+- operadors
+- àmbits de variables quan siga rellevant
+
+**Relació amb el producte principal**
+
+Este microprojecte dona la base de processament necessari perquè després el sistema puga prendre decisions, validar i actuar sobre l’estat de l’usuari.
+
+**CA coberts**
+
+- **RA2.c**
+- **RA2.d**
+- **RA2.e**
+- **RA2.f**
+- **RA2.g**
+- **RA2.h**
+
+**Descripció dels CA en llenguatge docent**
+
+- L’alumnat integra codi de servidor dins del context de l’aplicació.
+- L’alumnat usa sintaxi i sentències amb correcció.
+- L’alumnat treballa amb variables, operadors i directives de manera funcional.
+- L’alumnat sap explicar on és visible cada variable i per què.
+
+**Paper de la IA**
+
+La IA pot proposar fragments inicials, però l’alumnat ha de depurar-los, adaptar-los i explicar-los.
+
+**Evidències obligatòries**
+
+- codi executable de processament
+- evidència de variables i operadors en ús
+- comportament modificat per alguna directiva o configuració bàsica
+- demo de processament correcte
 - commits i issue relacionades
 
 **Instrument d’avaluació**
 
-Rúbrica de processament de petició + checklist de validació.
+Rúbrica breu de processament bàsic en servidor.
 
 **Indicadors d’assoliment**
 
-- la petició es tracta realment al servidor
-- hi ha validació mínima observable
-- la resposta canvia segons el cas
-- els errors no són merament ornamentals
+- el tractament és executable
+- el codi no és merament copiat
+- hi ha correspondència entre dades rebudes i resposta generada
 
 **Riscos habituals**
 
-- validar només el cas feliç
-- barrejar lògica i resposta sense criteri mínim
-- error genèric que no deixa clar què falla
+- fragments inconnexos
+- variables sense sentit funcional
+- tractament superficial només per complir
 
 **Verificació del treball real**
 
-- execució en directe d’un cas correcte
-- execució en directe d’un cas incorrecte
-- pregunta tècnica sobre què es comprova abans de continuar el flux
+- pregunta oral sobre variables i àmbits
+- canvi menut en viu sobre una operació o una directiva
 
 **Pes orientatiu dins del repte**
 
-20%
+15%
+
+---
 
 ### Microprojecte MP3 — Decisions, arrays i funcions aplicades al flux
 
 **Tipus**
 
-Microprojecte procedimental de consolidació lògica.
+Microprojecte procedimental.
 
 **Objectiu**
 
-Aplicar decisions, arrays i funcions al flux del repte perquè la resolució no quede reduïda a codi lineal, repetit o difícil d’explicar.
+Aplicar lògica bàsica de programació per controlar el comportament del sistema a partir de les dades rebudes.
 
 **Tasca**
 
-L’equip ha de:
+L’equip amplia el flux amb:
 
-- usar decisions per separar casos del flux
-- utilitzar arrays per agrupar dades, regles o missatges
-- encapsular parts repetides o significatives en funcions
-- fer que esta lògica done suport al formulari i al tractament bàsic de la petició
+- almenys una decisió significativa
+- ús d’una estructura iterativa quan siga pertinent
+- ús d’un array o estructura equivalent
+- una o més funcions per encapsular comportament
+
+No es tracta d’afegir estos elements de manera artificial, sinó d’utilitzar-los per donar forma al comportament del flux.
 
 **Relació amb el producte principal**
 
-Este microprojecte dona coherència interna al flux abans d’arribar a l’estat i a l’autenticació. Sense esta capa, el repte quedaria funcional però massa fràgil i poc explicable.
+Este microprojecte convertix el tractament bàsic en una lògica més rica i més pròxima a una funcionalitat real.
 
 **CA coberts**
 
-- `RA3.a`
-- `RA3.b`
-- `RA3.c`
-- `RA3.d`
+- **RA3.a**
+- **RA3.b**
+- **RA3.c**
+- **RA3.d**
 
 **Descripció dels CA en llenguatge docent**
 
-- L’alumnat usa decisions amb sentit dins del flux.
-- L’alumnat aprofita arrays per ordenar informació del procés.
-- L’alumnat crea funcions quan ajuden a fer el codi més clar i reutilitzable.
-- L’alumnat sap explicar per què la lògica no està tota repetida o dispersa.
+- L’alumnat sap decidir què fa el sistema segons la informació rebuda.
+- L’alumnat utilitza estructures bàsiques per organitzar el comportament.
+- L’alumnat encapsula operacions en funcions amb sentit.
 
 **Paper de la IA**
 
-La IA pot proposar refactors menuts o estructures de suport, però l’equip ha de justificar per què usa una funció, un array o una decisió en eixe punt concret.
+La IA pot suggerir exemples de decisions o funcions, però l’alumnat ha de justificar per què són necessàries dins del flux del repte.
 
 **Evidències obligatòries**
 
-- ús visible de decisions en el flux
-- ús visible d’arrays
-- almenys una funció rellevant per al cas d’ús
+- cas de decisió observable
+- array o estructura equivalent usada amb sentit
+- funció o funcions útils
+- demo del comportament resultant
 - explicació breu de la lògica aplicada
 
 **Instrument d’avaluació**
 
-Revisió de codi docent + rúbrica de lògica aplicada.
+Rúbrica de lògica bàsica aplicada.
 
 **Indicadors d’assoliment**
 
-- la lògica està organitzada amb criteri mínim
-- arrays i funcions tenen sentit funcional
-- l’alumnat pot explicar el recorregut del flux
+- les estructures usades tenen sentit
+- la funció no és ornamental
+- el comportament resultant és observable
 
 **Riscos habituals**
 
-- codi lineal i repetit
-- funcions afegides només per decoració
-- arrays sense paper real en la resolució
+- afegir arrays o funcions només per cobrir criteris
+- lògica confusa o no connectada al producte
 
 **Verificació del treball real**
 
-- explicació en directe del flux amb els seus punts de decisió
-- pregunta tècnica sobre què conté un array o què resol una funció concreta
+- pregunta oral sobre per què la decisió, l’array o la funció són necessaris
+- microcanvi en viu sobre una condició o una funció
 
 **Pes orientatiu dins del repte**
 
 15%
+
+---
 
 ### Microprojecte MP4 — Estat, sessió i/o cookies
 
@@ -374,68 +381,76 @@ Microprojecte procedimental.
 
 **Objectiu**
 
-Introduir i demostrar el manteniment mínim d’estat entre peticions abans d’arribar a autenticació completa.
+Fer visible que el sistema pot conservar informació rellevant entre interaccions i diferenciar el comportament segons l’estat de l’usuari o del client.
 
 **Tasca**
 
-L’equip ha de:
+L’equip implementa una evidència bàsica de manteniment d’estat, per exemple amb:
 
-- mantindre una dada o context mínim entre peticions
-- usar sessió, cookies o mecanisme equivalent segons l’stack
-- comprovar el comportament abans, durant i després del manteniment d’estat
-- deixar clar què guarda el sistema i amb quin propòsit
+- sessió
+- cookies
+- o mecanisme equivalent coherent amb l’stack
+
+S’ha de veure:
+
+- quina informació es conserva
+- per a què es conserva
+- quan es recupera
+- quan deixa de ser vàlida o es neteja
 
 **Relació amb el producte principal**
 
-Este microprojecte prepara l’entrada a autenticació des d’una base més curricular i comprensible. Primer es treballa l’estat; després s’usa eixe coneixement per protegir una operació real.
+Sense estat no hi ha base sòlida per entendre després l’autenticació ni per protegir una operació de domini.
 
 **CA coberts**
 
-- `RA4.a`
-- `RA4.b`
-- `RA4.c`
+- **RA4.a**
+- **RA4.b**
+- **RA4.c**
 
 **Descripció dels CA en llenguatge docent**
 
-- L’alumnat sap mantindre estat mínim entre peticions.
-- L’alumnat sap comprovar quan eixe estat existix o deixa d’existir.
-- L’alumnat distingix entre tindre dades puntuals i mantindre context funcional.
+- L’alumnat identifica els mecanismes disponibles per mantindre informació d’un client concret.
+- L’alumnat usa un mecanisme real d’estat.
+- L’alumnat sap guardar i recuperar informació del client quan toca.
 
 **Paper de la IA**
 
-La IA pot suggerir patrons de sessió o cookies, però l’equip ha de saber què es guarda i com es comprova en temps d’execució.
+La IA pot ajudar a recordar sintaxi o patrons, però l’alumnat ha d’explicar exactament què es guarda i amb quina finalitat.
 
 **Evidències obligatòries**
 
-- estat mínim funcional
-- comprovació de lectura de l’estat
-- comprovació de canvi o invalidació de l’estat
-- explicació breu del mecanisme triat
+- mecanisme d’estat implementat
+- demostració de recuperació de la informació
+- demostració de neteja o invalidació quan siga necessari
+- captura o demo del comportament
 
 **Instrument d’avaluació**
 
-Checklist de sessió o estat equivalent.
+Checklist de manteniment d’estat.
 
 **Indicadors d’assoliment**
 
-- l’estat és observable
-- hi ha comprovació abans i després del canvi
-- el mecanisme triat és explicable
+- hi ha informació realment mantinguda
+- el comportament canvia segons l’estat
+- l’equip sap explicar diferència entre sessió i altres mecanismes
 
 **Riscos habituals**
 
-- estat aparent però no verificable
-- guardar dades sense saber per a què servixen
-- confondre sessió, cookie i autenticació
+- confondre estat amb autenticació
+- guardar informació sense necessitat
+- no poder demostrar recuperació real
 
 **Verificació del treball real**
 
-- execució en directe de lectura i canvi d’estat
-- pregunta tècnica sobre què queda guardat i quan s’elimina
+- execució en directe del canvi d’estat
+- pregunta oral sobre què es guarda, on i per què
 
 **Pes orientatiu dins del repte**
 
 15%
+
+---
 
 ### Microprojecte MP5 — Autenticació i primera operació protegida
 
@@ -445,46 +460,49 @@ Microprojecte procedimental.
 
 **Objectiu**
 
-Convertir l’estat treballat en un flux d’autenticació funcional i usar-lo per protegir almenys una operació real del domini.
+Connectar el flux tècnic anterior amb una primera necessitat real del producte: una operació que només es pot executar si l’usuari compleix una condició d’accés.
 
 **Tasca**
 
-L’equip ha de:
+L’equip implementa:
 
-- implementar login i logout o mecanisme equivalent coherent amb l’stack
-- comprovar usuari autenticat
-- protegir almenys una operació de negoci del producte
-- demostrar un cas autoritzat i un cas denegat
-- evitar que el repte quede reduït a pantalla d’accés sense valor funcional
+- alta o identificació d’usuari
+- autenticació funcional
+- comprovació d’usuari autenticat
+- una operació real del domini protegida
+- una restricció observable de rol, permís o regla de negoci
+
+La funcionalitat protegida ha de tindre valor real dins del producte del curs.
 
 **Relació amb el producte principal**
 
-És el tram que manté la idea central del repte: login i logout a soles no són suficients; han de sostindre una operació de negoci real i protegida.
+Este és el centre visible del repte: demostrar que el backend ja no sols rep i processa dades, sinó que gestiona identitat i protegix accions amb sentit.
 
 **CA coberts**
 
-- `RA4.d`
-- `RA4.e`
+- **RA4.d**
+- **RA4.e**
 
 **Descripció dels CA en llenguatge docent**
 
-- L’alumnat sap usar l’autenticació per controlar una acció real del producte.
-- L’alumnat demostra què es permet i què es denega.
-- L’alumnat diferencia infraestructura d’accés i funcionalitat de negoci protegida.
+- L’alumnat identifica mecanismes d’autenticació.
+- L’alumnat implementa autenticació funcional.
+- L’alumnat restringix una acció del sistema de manera real i verificable.
 
 **Paper de la IA**
 
-La IA pot ajudar a plantejar el flux o els casos de prova, però l’equip ha de demostrar que la protecció és real i no només aparent.
+La IA pot suggerir esquelets o fluxos d’accés, però l’alumnat ha de validar-los i demostrar-los.
 
 **Evidències obligatòries**
 
+- registre o identificació funcional
 - login funcional
-- logout funcional
 - comprovació d’usuari autenticat
-- operació protegida real
+- operació protegida
 - cas autoritzat
 - cas denegat
-- evidència de restricció o control aplicat
+- evidència de la restricció aplicada
+- commits associats
 
 **Instrument d’avaluació**
 
@@ -492,26 +510,28 @@ Rúbrica de funcionalitat autenticada i protegida.
 
 **Indicadors d’assoliment**
 
-- l’autenticació funciona
-- l’operació protegida té valor real
-- el cas denegat és observable
-- el flux complet és defensable
+- el login no és decoratiu
+- hi ha una operació real protegida
+- la restricció és observable
+- el comportament és coherent en cas positiu i negatiu
 
 **Riscos habituals**
 
-- login funcional però sense operació protegida real
-- protecció decorativa
-- cas denegat no provat
+- autenticació superficial
+- funcionalitat de domini ornamental
+- restricció no demostrable
 
 **Verificació del treball real**
 
 - execució en directe del cas autoritzat
 - execució en directe del cas denegat
-- pregunta oral sobre què es comprova abans de permetre l’acció
+- pregunta oral sobre en quin punt es bloqueja l’acció
 
 **Pes orientatiu dins del repte**
 
 25%
+
+---
 
 ### Microprojecte MP6 — Prova, depuració, documentació i preparació del Repte 3
 
@@ -521,67 +541,66 @@ Microprojecte de tancament i verificació.
 
 **Objectiu**
 
-Consolidar el repte amb proves mínimes, depuració documentada i una lectura clara del que haurà de passar a reorganització arquitectònica en el Repte 3.
+Comprovar que el flux complet funciona, que els errors són observables i que l’equip sap explicar què caldrà reorganitzar o millorar en el repte següent.
 
 **Tasca**
 
-L’equip ha de:
+L’equip:
 
-- provar casos correctes i incorrectes
-- registrar errors o incidències trobades
-- documentar instruccions mínimes de prova
-- actualitzar `README` o documentació equivalent
-- identificar punts de deute tècnic que passaran al Repte 3
+- revisa casos positius i negatius
+- prova validacions i errors
+- documenta instruccions de prova
+- registra incidències detectades
+- actualitza la documentació tècnica
+- identifica punts de deute tècnic o necessitat de reorganització per al Repte 3
 
 **Relació amb el producte principal**
 
-Sense esta capa final, el repte pot funcionar en demo, però no queda prou verificat ni deixa clara la transició cap a una arquitectura més neta i mantenible.
+Sense esta capa, el repte podria funcionar aparentment, però no quedaria prou verificat ni orientat al pas següent.
 
 **CA coberts**
 
-- `RA4.f`
+- **RA4.f**
 
 **Descripció dels CA en llenguatge docent**
 
-- L’alumnat no només implementa: també prova, depura i documenta.
-- L’alumnat sap distingir entre funcionalitat resolta i arquitectura encara provisional.
-- L’alumnat deixa preparada la continuïtat cap al Repte 3.
+- L’alumnat usa eines, tècniques o entorns per provar i depurar.
+- L’alumnat comprova i documenta el comportament real del sistema.
 
 **Paper de la IA**
 
-La IA pot ajudar a generar casos de prova o a redactar text tècnic, però l’equip ha de verificar que la documentació i les proves coincidixen amb el comportament real.
+La IA pot ajudar a generar casos de prova o text documental, però l’alumnat ha de verificar que el que documenta és real.
 
 **Evidències obligatòries**
 
 - registre de proves mínimes
 - casos positius i negatius
-- incidències detectades i correccions
+- incidències detectades
 - documentació tècnica actualitzada
-- llista de punts a reorganitzar al Repte 3
+- llista de millores o refactoritzacions futures
 - defensa tècnica breu
 
 **Instrument d’avaluació**
 
-Checklist de verificació + defensa tècnica breu.
+Checklist de verificació + defensa tècnica.
 
 **Indicadors d’assoliment**
 
-- proves mínimes reals
-- errors documentats i tractats
-- coherència entre documentació i demo
-- transició al Repte 3 identificada amb claredat
+- les proves són reals
+- la documentació correspon al comportament observat
+- l’equip sap explicar què caldrà millorar en el Repte 3
 
 **Riscos habituals**
 
-- proves inventades
-- documentació embellida però no executable
-- no saber explicar què passarà a capes, servicis o persistència
+- proves fictícies
+- documentació embellida
+- no saber justificar el pas següent del projecte
 
 **Verificació del treball real**
 
 - execució dels casos documentats
 - contrast entre documentació, repositori i demo
-- pregunta oral sobre què s’haurà de reorganitzar en el Repte 3
+- pregunta oral sobre què caldria reorganitzar en el Repte 3
 
 **Pes orientatiu dins del repte**
 
@@ -593,12 +612,12 @@ Checklist de verificació + defensa tècnica breu.
 
 | Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
 |---|---|---|---|---|---|---|
-| MP1 | Procedimental | Formulari base i recuperació de dades | RA3.e, RA3.f, RA3.g | formulari, dades recuperades, primer enviament | Checklist | 10% |
-| MP2 | Procedimental | Processament bàsic de la petició i resposta | RA2.c, RA2.d, RA2.e, RA2.f, RA2.g, RA2.h | cas correcte, cas incorrecte, validació, errors | Rúbrica + checklist | 20% |
-| MP3 | Procedimental | Decisions, arrays i funcions aplicades al flux | RA3.a, RA3.b, RA3.c, RA3.d | lògica aplicada, arrays, funcions, explicació | Revisió + rúbrica | 15% |
-| MP4 | Procedimental | Estat, sessió i/o cookies | RA4.a, RA4.b, RA4.c | estat observable, lectura, canvi o invalidació | Checklist | 15% |
-| MP5 | Procedimental | Autenticació i primera operació protegida | RA4.d, RA4.e | login, logout, cas autoritzat, cas denegat | Rúbrica | 25% |
-| MP6 | Tancament / verificació | Proves, depuració, documentació i pas a R3 | RA4.f | registre de proves, incidències, documentació, defensa | Checklist + defensa | 15% |
+| MP1 | Procedimental | Formulari base i recuperació de dades | RA3.e, RA3.f, RA3.g | formulari, recuperació, demo, comentaris | checklist | 15% |
+| MP2 | Procedimental | Processament bàsic de la petició | RA2.c, RA2.d, RA2.e, RA2.f, RA2.g, RA2.h | codi executable, variables, directiva, demo | rúbrica breu | 15% |
+| MP3 | Procedimental | Decisions, arrays i funcions aplicades | RA3.a, RA3.b, RA3.c, RA3.d | lògica observable, funcions, demo | rúbrica | 15% |
+| MP4 | Procedimental | Estat, sessió i/o cookies | RA4.a, RA4.b, RA4.c | demo d’estat, recuperació i invalidació | checklist | 15% |
+| MP5 | Procedimental | Autenticació i operació protegida | RA4.d, RA4.e | login, operació protegida, cas autoritzat i denegat | rúbrica | 25% |
+| MP6 | Tancament / verificació | Proves, documentació i preparació del Repte 3 | RA4.f | proves, incidències, documentació, defensa | checklist + defensa | 15% |
 
 ---
 
@@ -608,25 +627,26 @@ Checklist de verificació + defensa tècnica breu.
 
 - issue principal amb microtasques
 - seqüència de commits significativa
-- formulari base operatiu
-- recuperació de dades en servidor
-- processament bàsic amb validació mínima
-- ús de decisions, arrays i funcions dins del flux
-- estat, sessió o mecanisme equivalent comprovable
-- login i logout o mecanisme equivalent funcional
-- almenys una operació real del domini protegida
-- casos positius i negatius registrats
+- formulari funcional o entrada equivalent
+- recuperació real de dades
+- processament bàsic en servidor
+- ús visible de lògica amb decisions, arrays o funcions
+- evidència d’estat, sessió o cookies
+- autenticació funcional
+- operació real protegida
+- cas positiu i cas negatiu
+- registre de proves mínimes
 - documentació tècnica actualitzada
 - AI log quan hi haja ús d’IA
 
 **Evidències opcionals d’ampliació**
 
-- més d’un formulari o cas d’ús coherent
 - més d’una operació protegida
-- casos de prova extra
-- millor tractament de missatges d’error
+- millora dels missatges d’error
+- rols addicionals
 - test automatitzat mínim
-- anàlisi més fina del deute tècnic
+- millor observabilitat del flux
+- preparació més detallada del Repte 3
 
 ---
 
@@ -634,35 +654,32 @@ Checklist de verificació + defensa tècnica breu.
 
 ### 8.1 Instruments principals
 
-- rúbrica base de reptes adaptada al pes de `RA2`, `RA3` i `RA4`
-- rúbrica específica de funcionalitat protegida
-- checklist de formulari, petició i validació
-- checklist d’estat, sessió o equivalent
+- rúbrica base del repte
+- rúbriques específiques de microprojecte
+- checklists de formulari, estat i verificació
 - revisió de repositori
 - defensa tècnica breu
 
 ### 8.2 Instruments de verificació
 
-- execució en directe del formulari i de la recuperació de dades
-- comprovació de casos correctes i incorrectes
-- revisió de lògica amb decisions, arrays i funcions
-- comprovació d’estat abans i després del canvi o logout
-- demostració del cas autoritzat i del cas denegat
-- contrast entre AI log, commits i resultat observat
+- execució en directe del flux
+- casos positius i negatius
+- revisió de commits i issues
 - preguntes tècniques breus
+- microcanvis en viu
+- contrast entre documentació, AI log i comportament observat
 
 ---
 
-## 9. Riscos del repte
+## 9. Riscos d’ús inadequat de la IA
 
 | Risc | Com es manifesta | Impacte | Mesura de control |
 |---|---|---|---|
-| Saltar massa prompte a autenticació | Hi ha login però no hi ha base funcional prèvia | Alt | Exigir MP1-MP4 abans de donar valor a MP5 |
-| Formulari ornamental | El formulari existix però no recupera ni tracta dades reals | Alt | Execució en directe i revisió del flux |
-| Validació aparent | Només funciona el cas feliç | Alt | Casos negatius obligatoris |
-| Confusió entre estat i autenticació | Es guarda context però no se sap què significa | Alt | Preguntes tècniques i comprovació abans/després |
-| Delegació excessiva en IA | Codi o flux no compresos | Alt | Defensa, canvi en viu i contrast amb AI log |
-| Funcionalitat protegida decorativa | Hi ha login/logout però no hi ha producte real protegit | Alt | Exigir cas d’ús funcional amb valor de domini |
+| Delegació excessiva | flux aparentment funcional però no comprés | Alt | defensa i preguntes tècniques |
+| Validació superficial | el cas feliç funciona però els errors no | Alt | casos negatius obligatoris |
+| Confusió conceptual | barreja entre estat, sessió, autenticació i autorització | Alt | execució guiada i preguntes de contrast |
+| Proves fictícies | documentació sense correspondència amb el sistema | Alt | execució real |
+| Funcionalitat ornamental | hi ha login però no hi ha valor real protegit | Alt | exigir operació de domini observable |
 
 ---
 
@@ -670,22 +687,22 @@ Checklist de verificació + defensa tècnica breu.
 
 **Per comprovar aprenentatge real**
 
-- execució real del formulari i de la recuperació de dades
-- comprovació del processament bàsic en servidor
-- explicació de la lògica amb decisions, arrays i funcions
-- demostració d’estat o sessió observable
-- execució real de login i logout o equivalent
-- demo de cas autoritzat i cas denegat
+- execució real del formulari i la recuperació de dades
+- demostració del processament en servidor
+- comprovació de la lògica bàsica aplicada
+- demostració d’estat, sessió o cookies
+- execució real de l’autenticació
+- demo de cas autoritzat i denegat
 - revisió de commits i issues
-- contrast entre validacions definides i errors retornats
+- contrast entre proves descrites i comportament real
 - pregunta de transferència
-- revisió dels punts que passen al Repte 3
+- canvi tècnic menut en directe
 
 **Per distingir nivells d’autonomia**
 
 - **treball autònom real**: l’alumne explica, adapta, prova i defensa
 - **treball assistit per IA**: l’alumne usa suport, però valida i pren decisions
-- **treball excessivament delegat**: l’alumne no comprén, no manté i no pot corregir
+- **treball excessivament delegat**: l’alumne no comprén, no transferix i no pot corregir
 
 ---
 
@@ -693,7 +710,7 @@ Checklist de verificació + defensa tècnica breu.
 
 **Duració orientativa**
 
-6 a 8 sessions, segons l’stack triat i el grau de maduresa del repositori heretat del Repte 1.
+6 a 8 sessions, segons el nivell del grup i l’stack utilitzat.
 
 **Moment del curs**
 
@@ -702,49 +719,47 @@ Després del Repte 1 i abans del Repte 3.
 **Prerequisits**
 
 - repositori funcional del Repte 1
-- `README` operatiu
-- primera base backend executable
-- criteri mínim de treball amb issues i commits
+- base backend executable
+- README operatiu
+- treball mínim amb Git, issues i commits
 
 **Possibles variants tecnològiques**
 
-Es pot implementar amb l’stack adoptat per al curs, sempre que permeta:
+Es pot implementar amb l’stack triat pel departament o pel projecte, sempre que permeta:
 
-- formularis o peticions equivalents
-- tractament de dades en servidor
-- validació bàsica
-- estat, sessió o mecanisme equivalent
-- autenticació i control d’accés
-- documentació i prova funcional
+- tractament d’entrada de dades
+- processament en servidor
+- ús de lògica bàsica
+- manteniment d’estat
+- autenticació
+- protecció d’operacions
+- documentació i verificació funcional
 
 **Part comuna del grup**
 
-- formulari base
-- processament bàsic de la petició
-- lògica amb decisions, arrays i funcions
-- estat o sessió comprovable
+- formulari o entrada equivalent
+- processament bàsic
+- lògica mínima aplicada
+- estat o sessió
 - autenticació funcional
-- almenys una operació protegida
+- una operació protegida
 - proves mínimes
 - documentació i defensa
 
 **Ampliacions realistes**
 
-- més d’un formulari útil
+- més d’una restricció
+- més d’un rol
 - més d’una operació protegida
-- millor tractament d’errors
-- casos límit addicionals
-- test automatitzat mínim
-- més preparació arquitectònica de cara al Repte 3
+- millor qualitat de validació
+- proves automatitzades
+- preparació més forta per al Repte 3
 
 **Recuperació o reforç per CA**
 
-- si fallen `RA3.e`, `RA3.f` o `RA3.g`: reconstrucció del formulari i de la recuperació de dades
-- si fallen `RA2.c` a `RA2.h`: reimplementació del tractament de petició, validació i resposta
-- si fallen `RA3.a` a `RA3.d`: reorganització del flux amb decisions, arrays i funcions
-- si fallen `RA4.a` a `RA4.c`: revisió d’estat, sessió o cookies
-- si fallen `RA4.d` o `RA4.e`: reconstrucció del flux autenticat i del cas protegit
-- si falla `RA4.f`: nova ronda de proves, documentació i defensa
+- si fallen CA de **RA2**: reconstrucció del processament bàsic i explicació d’àmbits, variables i operadors
+- si fallen CA de **RA3**: reconstrucció del formulari, recuperació de dades i lògica aplicada
+- si fallen CA de **RA4**: reimplementació o correcció d’estat, autenticació i protecció d’operacions
 
 ---
 
@@ -752,23 +767,21 @@ Es pot implementar amb l’stack adoptat per al curs, sempre que permeta:
 
 **Pregunta de síntesi per a l’alumnat**
 
-Quin recorregut funcional complet hem aconseguit construir des del formulari fins a l’operació protegida, què demostra que és real i verificable, i què haurà de reorganitzar-se en el Repte 3?
+Com hem passat d’un simple punt d’entrada de dades a una funcionalitat de producte real protegida, i què necessitarem reorganitzar en el Repte 3?
 
 **Criteri de superació del repte**
 
 El repte es considera superat quan:
 
-- existix un formulari base útil i les dades es recuperen realment en servidor
-- la petició es processa amb validació i resposta mínima coherent
-- el flux usa decisions, arrays i funcions amb sentit
-- existix estat, sessió o mecanisme equivalent observable
-- hi ha login i logout o equivalent funcional
-- almenys una operació del producte queda protegida i és real
-- existixen casos positius i negatius comprovables
-- el repositori aporta evidències autèntiques de treball
-- l’ús d’IA, si n’hi ha, queda registrat i validat
-- el resultat deixa preparada la transició al Repte 3 sense haver de reconstruir la funcionalitat des de zero
+- existix un flux complet i verificable des de l’entrada de dades fins a una operació protegida
+- el sistema recupera i processa informació en servidor
+- s’utilitza lògica bàsica amb sentit
+- hi ha evidència real de manteniment d’estat
+- l’autenticació és funcional
+- almenys una operació del domini queda protegida i es pot demostrar tant en cas autoritzat com en cas denegat
+- les proves mínimes i la documentació són coherents amb el comportament observat
+- l’alumnat pot defensar tècnicament allò construït
 
 **Observacions docents**
 
-Este repte s’ha de llegir com a desplegament complet de `SA2` dins del producte evolutiu. No anticipa `RA5` com a resultat principal. La reorganització arquitectònica profunda queda reservada per al Repte 3, però només té sentit si en este punt ja existix un flux funcional real que va més enllà de login i logout.
+Este repte s’ha de llegir com una progressió completa dins de SA2. Per tant, no s’hauria de reduir a un bloc d’autenticació. El seu valor està en connectar fonaments bàsics de programació en servidor amb una primera funcionalitat de producte realment protegida.
