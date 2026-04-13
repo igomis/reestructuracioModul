@@ -15,7 +15,8 @@ Esta implantació s'ha calibrat sobre un escenari orientatiu d'unes `20` setmane
 - Git i GitHub es tracten com a metodologia de treball, traçabilitat i repàs de criteris professionals, no com a iniciació bàsica
 - cada bloc d'aula ha de produir evidències observables de producte i de procés
 - els materials comuns continuen actius durant tot el recorregut, encara que s'activen amb més intensitat al començament
-- els itineraris `Laravel`, `Express/Nest` i `FastAPI` no definixen blocs diferents; s'utilitzen com a suport de stack dins de la mateixa seqüència docent
+- `R2` es resol sobre una base comuna en `PHP`
+- els itineraris `Laravel`, `Symfony` i `NestJS` no definixen blocs diferents; s'utilitzen com a suport de stack a partir de `R3`
 - el pas d'un bloc a un altre ha de dependre d'evidències mínimes verificables, no només del calendari
 - `API`, integració i defensa final han de quedar resoltes dins de la segona avaluació lectiva ordinària
 
@@ -24,10 +25,10 @@ Esta implantació s'ha calibrat sobre un escenari orientatiu d'unes `20` setmane
 | Bloc | Avaluació | Fase o repte associat | Propòsit operatiu | Producte parcial esperat |
 |---|---|---|---|---|
 | **Bloc 1** | Avaluació 1 | Fase 0 | posar en marxa el marc de treball, evidències i criteris comuns | repositori usable, primer `README`, criteri de traçabilitat assumit |
-| **Bloc 2** | Avaluació 1 | Fase 1 / Repte 1 | concretar domini, stack i primer esquelet defensable del producte | base tècnica executable i primera decisió tècnica documentada |
-| **Bloc 3** | Avaluació 1 | Fase 2 / Repte 2 | construir la base funcional del producte amb auth, sessions o estat equivalent | flux funcional mínim real i verificable |
+| **Bloc 2** | Avaluació 1 | Fase 1 / Repte 1 | concretar domini, base comuna en `PHP` i primer esquelet defensable del producte | base tècnica executable i primera decisió tècnica documentada |
+| **Bloc 3** | Avaluació 1 | Fase 2 / Repte 2 | construir la base funcional del producte amb auth, sessions o estat equivalent sobre base comuna en `PHP` | flux funcional mínim real i verificable |
 | **Bloc 4** | Avaluació 1 | inici de Fase 3 / Repte 3 | obrir arquitectura i persistència abans del canvi d'avaluació | primer model de dades i refactorització inicial explicable |
-| **Bloc 5** | Avaluació 2 | tancament de Fase 3 / Repte 3 | consolidar persistència, capes i mantenibilitat | backend persistent i mantenible |
+| **Bloc 5** | Avaluació 2 | tancament de Fase 3 / Repte 3 | consolidar persistència, capes i mantenibilitat amb entrada de framework | backend persistent i mantenible |
 | **Bloc 6** | Avaluació 2 | Fase 4 / Repte 4 | publicar i provar l'API del producte | API documentada i comprovada |
 | **Bloc 7** | Avaluació 2 | Fase 5 / Repte 5 i defensa final | integrar, tancar i defensar el producte del curs | producte final complet, integrat i defensable |
 
@@ -74,7 +75,7 @@ Punt crític de seguiment:
 
 Objectiu docent:
 
-- passar del marc comú a una base tècnica executable amb domini, stack i encàrrec clar
+- passar del marc comú a una base tècnica executable amb domini, base comuna en `PHP` i encàrrec clar
 
 Repte o fase associada:
 
@@ -91,12 +92,12 @@ Materials activats:
 - fitxa del Repte 1
 - enunciat base del projecte
 - materials comuns
-- model d'itineraris com a marc de stacks autoritzats
+- model metodològic del pas de la base comuna en `PHP` als itineraris posteriors
 
 Evidències esperades:
 
 - entorn funcional
-- decisió de domini i stack
+- decisió de domini i base comuna assumida
 - ADR inicial o registre equivalent
 - traça de primers artefactes tècnics estables
 
@@ -128,7 +129,7 @@ Materials activats:
 
 - materials del Repte 2
 - materials comuns
-- suport inicial de l'itinerari triat per a bootstrap i auth
+- suport inicial de la base comuna en `PHP` per a bootstrap i auth
 
 Evidències esperades:
 
@@ -202,7 +203,7 @@ Materials activats:
 
 - materials del Repte 3
 - materials comuns
-- itineraris `Laravel`, `Express/Nest` i `FastAPI` com a suport principal de stack
+- itineraris `Laravel`, `Symfony` i `NestJS` com a suport principal de stack
 
 Evidències esperades:
 
@@ -298,8 +299,8 @@ Punt crític de seguiment:
 | Bloc | Materials prioritaris |
 |---|---|
 | **Bloc 1** | materials comuns, sistema d'evidències, enunciat base del projecte |
-| **Bloc 2** | fitxa del Repte 1, materials comuns, model d'itineraris |
-| **Bloc 3** | materials del Repte 2, materials comuns, suport inicial d'itinerari |
+| **Bloc 2** | fitxa del Repte 1, materials comuns, base comuna del curs |
+| **Bloc 3** | materials del Repte 2, materials comuns, base comuna en `PHP` |
 | **Bloc 4** | materials del Repte 3, materials comuns, itinerari triat |
 | **Bloc 5** | materials del Repte 3, materials comuns, itineraris com a suport principal |
 | **Bloc 6** | materials del Repte 4, materials comuns, itineraris reutilitzats en context d'API |

@@ -4,12 +4,14 @@
 
 Baixar la `v1` prepilotatge ja congelada a un nivell de preparació docent directa perquè l'inici de curs no depenga d'improvisació. Este document no redefinix el model ni reobri l'arquitectura del paquet: concreta què ha d'estar realment preparat abans de setembre per poder activar el curs amb criteri estable.
 
-Assumix el marc ja fixat al repositori: treball per reptes, projecte base compartit, seqüència en `2` avaluacions, evidències autèntiques, IA com a eina guiada i verificable, i acreditació individual encara que puguen existir contextos puntuals de producte compartit o moments de treball coordinat.
+Assumix el marc ja fixat al repositori: treball per reptes, projecte base comú, seqüència en `2` avaluacions, `R2` com a base comuna en `PHP`, contrast de frameworks des de `R3`, evidències autèntiques, IA com a eina guiada i verificable, i acreditació individual encara que puguen existir contextos puntuals de contrast tècnic compartit o moments de treball coordinat.
 
 ## Què ha d'arribar preparat a l'inici de curs
 
 - criteri docent comú sobre el producte base, els reptes `R1-R5`, els checkpoints i la defensa individual
-- itinerari principal de referència o criteri clar per gestionar `Laravel`, `Express/Nest` i `FastAPI` sense dispersió inicial
+- base comuna en `PHP` preparada per a `R2`
+- criteri clar per gestionar `Laravel`, `Symfony` i `NestJS` des de `R3`
+- criteri explícit per obrir `FastAPI` només com a via avançada o excepcional
 - paquet d'arrancada del curs llest per a `CP-P0`: enunciat base, projecte base, materials de sessió inicials, guies comunes de Git/`README`/IA i full de treball base
 - lectura prèvia dels kits de pilotatge `1-20` i de la guia setmanal per saber què convé explicar, modelar i exigir en cada tram
 - sistema d'evidències, rúbriques i instruments de seguiment accessibles des del primer dia
@@ -72,9 +74,9 @@ Criteri pràctic:
 
 ## Decisions que no convé improvisar en setembre
 
-- quin itinerari funcionarà com a referència principal i amb quin criteri s'obrirà la resta
+- quin itinerari o combinació d'itineraris funcionarà com a referència principal des de `R3`
 - quins dominis o tipus de producte s'admetran i quins queden fora per evitar trivialitat o dispersió
-- com es gestionarà la combinació entre context de producte compartit i acreditació individual
+- com es gestionarà la combinació entre contrast tècnic compartit i acreditació individual
 - quins checkpoints són de pas real i quines evidències mínimes els activen
 - quina pauta mínima s'exigirà en `README`, traçabilitat, proves i AI log
 - com es reconduirà alumnat endarrerit sense crear recorreguts paral·lels desconnectats

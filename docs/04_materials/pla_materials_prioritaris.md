@@ -21,7 +21,7 @@ Els materials nous s'han de prioritzar segons estos criteris:
 - **valor d'entorn professional realista**: prioritat per a materials que generen artefactes com README, ADR, proves, col·leccions API, checklists o AI log
 - **capacitat de generar evidències autèntiques**: prioritat per a materials que deixen rastre verificable al repositori
 - **dependència del projecte base**: prioritat per a materials que ajuden a cobrir autenticació, persistència, API, integració i manteniment
-- **compatibilitat entre itineraris**: prioritat per a bases comunes que després es puguen adaptar a Laravel, Express o Nest i FastAPI
+- **compatibilitat entre itineraris**: prioritat per a bases comunes que després es puguen adaptar a Laravel, Symfony i NestJS
 - **ús verificable de la IA**: prioritat per a peces que marquen com usar IA amb rastre, validació i defensa tècnica
 - **cost docent assumible**: primer materials que poden produir-se i revisar sense duplicar tota la programació
 
@@ -58,7 +58,11 @@ Són peces específiques per stack que no canvien el repte, però sí la manera 
 Itineraris a cobrir:
 
 - Laravel
-- Express o Nest
+- Symfony
+- NestJS
+
+Opció avançada o excepcional:
+
 - FastAPI
 
 ## Materials prioritaris per ordre de producció
@@ -76,8 +80,9 @@ L'ordre recomanat de producció dels materials prioritaris és el següent:
 | 7 | Pack nuclear del Repte 4: contracte API, documentació i consum | per repte | obri el producte a integració i consum extern |
 | 8 | Pack nuclear del Repte 5: integració híbrida, n8n o equivalent i manteniment | per repte | tanca el producte evolutiu amb valor professional real |
 | 9 | Pack d'itinerari Laravel per a R3-R5 | per itinerari | facilita implementació guiada en PHP + Laravel |
-| 10 | Pack d'itinerari Express o Nest per a R3-R5 | per itinerari | facilita implementació guiada en Node.js |
-| 11 | Pack d'itinerari FastAPI per a R3-R5 | per itinerari | facilita implementació guiada en Python |
+| 10 | Pack d'itinerari Symfony per a R3-R5 | per itinerari | facilita implementació guiada en PHP + Symfony |
+| 11 | Pack d'itinerari NestJS per a R3-R5 | per itinerari | facilita implementació guiada en Node.js |
+| 12 | Pack d'itinerari FastAPI per a R3-R5 | opció avançada | facilita una via excepcional en Python quan hi haja marc docent |
 
 ## Proposta inicial de paquets de materials
 
@@ -90,9 +95,10 @@ Es proposen els paquets següents com a primera planificació operativa:
 | **P2. R3 Arquitectura i persistència** | materials per repte | guia de migració a MVC o equivalent, persistència segura, proves mínimes, troubleshooting | estabilitzar la base mantenible del producte |
 | **P3. R4 API i consum** | materials per repte | contracte API, documentació d'endpoints, col·lecció de proves, consum controlat | publicar i consumir una API coherent amb el model |
 | **P4. R5 Integració i manteniment** | materials per repte | flux híbrid, integració amb servei extern o automatització, incidències, manteniment | tancar el producte amb integració realista i traçabilitat de manteniment |
-| **P5. Itinerari Laravel** | materials per itinerari | arrencada guiada, patrons MVC de Laravel, persistència, API i testing de stack | oferir via específica homologable per a PHP + Laravel |
-| **P6. Itinerari Express o Nest** | materials per itinerari | estructura de projecte, capes, persistència, API i testing en Node.js | oferir via específica homologable per a Express o Nest |
-| **P7. Itinerari FastAPI** | materials per itinerari | estructura bàsica, models i validació, persistència, API i testing en Python | oferir via específica homologable per a FastAPI |
+| **P5. Itinerari Laravel** | materials per itinerari | arrencada guiada, patrons MVC, persistència, API i testing | oferir via específica homologable per a Laravel |
+| **P6. Itinerari Symfony** | materials per itinerari | estructura de projecte, controladors, persistència, seguretat i testing | oferir via específica homologable per a Symfony |
+| **P7. Itinerari NestJS** | materials per itinerari | estructura de projecte, capes, persistència, API i testing en Node.js | oferir via específica homologable per a NestJS |
+| **P8. Itinerari FastAPI** | opció avançada | estructura bàsica, models i validació, persistència, API i testing en Python | oferir via excepcional quan hi haja autonomia i suport real |
 
 ## Formats recomanats
 
@@ -117,7 +123,7 @@ La producció inicial s'hauria d'organitzar així:
 |---|---|---|
 | **Materials comuns de mòdul** | 35% | establir base compartida de treball, documentació, qualitat i IA verificable |
 | **Materials per repte** | 40% | resoldre el nucli docent i tècnic dels Reptes 2, 3, 4 i 5 |
-| **Materials per itinerari** | 25% | traduir els reptes a Laravel, Express o Nest i FastAPI sense trencar l'equivalència |
+| **Materials per itinerari** | 25% | traduir els reptes a Laravel, Symfony i NestJS sense trencar l'equivalència |
 
 Criteri de distribució:
 
@@ -139,7 +145,7 @@ El pla de materials ha de donar servei directe al producte evolutiu del curs:
 | Material nuclear de R3 | centra arquitectura, capes i persistència | cobrix estructura mantenible i model de dades persistent |
 | Material nuclear de R4 | centra publicació i consum d'API | cobrix API publicada, contractes i documentació |
 | Material nuclear de R5 | centra integració híbrida i manteniment | cobrix integració externa, automatització i traçabilitat |
-| Materials d'itinerari | apliquen sobretot en R3-R5 | garantixen compatibilitat amb Laravel, Express o Nest i FastAPI |
+| Materials d'itinerari | apliquen sobretot en R3-R5 | garantixen compatibilitat amb Laravel, Symfony i NestJS |
 
 ## Ordre recomanat de producció real
 
@@ -155,7 +161,7 @@ La seqüència recomanada de producció no és només temàtica, sinó també de
    És la peça arquitectònica central del curs i el punt on comencen a necessitar-se més fortament els itineraris.
 
 4. **Produir en paral·lel els primers materials d'itinerari per al Repte 3**
-   Convindrà obrir primer les guies específiques de Laravel, Express o Nest i FastAPI per MVC o equivalent, persistència i testing.
+   Convindrà obrir primer les guies específiques de Laravel, Symfony i NestJS per MVC o equivalent, persistència i testing.
 
 5. **Produir el paquet nuclear del Repte 4**
    Amb la base arquitectònica consolidada, ja té sentit publicar material específic de contracte API i consum.
@@ -178,6 +184,6 @@ Este document es considera completat quan:
 - distingix clarament materials comuns de mòdul, materials per repte i materials per itinerari
 - incorpora com a mínim Git, README/ADR, testing/debugging i ús verificable de la IA com a materials comuns
 - incorpora materials nuclears per als Reptes 2, 3, 4 i 5
-- incorpora materials específics per Laravel, Express o Nest i FastAPI
+- incorpora materials específics per Laravel, Symfony i NestJS, i deixa `FastAPI` com a via avançada
 - connecta els paquets de materials amb el projecte base i amb les evidències autèntiques del mòdul
 - proposa un ordre realista de producció per fases

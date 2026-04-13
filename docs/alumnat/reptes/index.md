@@ -9,8 +9,8 @@ Els reptes no són entregues independents. Cada repte aprofita l'anterior i prep
 | Repte | Què construïx |
 |---|---|
 | `R1` | una primera entrada funcional real al producte |
-| `R2` | autenticació i primera funcionalitat de negoci protegida |
-| `R3` | arquitectura mantenible i persistència segura |
+| `R2` | base comuna en `PHP` amb dades, lògica, estat, auth i primera funcionalitat protegida |
+| `R3` | entrada de framework, arquitectura mantenible i persistència segura |
 | `R4` | API publicada, documentada i consumida |
 | `R5` | integració híbrida, manteniment i tancament defensable |
 
@@ -19,6 +19,7 @@ Els reptes no són entregues independents. Cada repte aprofita l'anterior i prep
 - si un repte queda superficial, el següent es complica molt
 - no val avançar de fase sense una base prou verificable
 - cada repte ha de deixar evidència mínima al repositori
+- el contrast de frameworks no entra com a norma general en `R2`
 
 ## Accés ràpid
 

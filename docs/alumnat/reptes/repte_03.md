@@ -4,6 +4,8 @@
 
 És el pas de "funciona" a "es pot mantindre". Has d'ordenar el producte, separar responsabilitats i consolidar persistència sobre un cas d'ús real.
 
+Ací és on entra el contrast de frameworks del curs. El mateix projecte de `R2` continua ara amb `Laravel`, `Symfony` o `NestJS`.
+
 ## Què no és suficient
 
 - moure fitxers sense millorar el comportament real

@@ -18,7 +18,7 @@ El punt de partida ja és clar:
 - paquet d'arrancada de `setmanes 1-4`: enunciat base, projecte base, materials de sessió inicials, full de treball base i checkpoints curts
 - criteri real d'itinerari principal i de gestió de la resta d'itineraris sense dispersió inicial
 - pauta mínima d'ús de `README`, traçabilitat, proves i AI log des del primer dia
-- criteri d'acreditació individual en context de producte compartit o treball coordinat
+- criteri d'acreditació individual en context de cooperació tècnica coordinada
 - checkpoint de pas de `R1` a `R2`, per evitar arrencar auth sobre una base falsa
 - accessibilitat real dels materials que s'han d'entregar de manera immediata a l'alumnat
 - coherència pràctica entre portals web, materials compartibles i paquets d'ús directe del primer tram
@@ -54,7 +54,7 @@ El punt de partida ja és clar:
 - quin itinerari funcionarà com a referència principal a l'arrancada
 - quins dominis es consideraran admissibles i quins es descartaran per trivialitat o dispersió
 - quin és el mínim exigible per considerar `R1` prou tancat per passar a `R2`
-- com es llegirà l'autoria individual quan hi haja producte compartit
+- com es llegirà l'autoria individual quan hi haja un mateix encàrrec funcional o contrast tècnic compartit
 - quina pauta mínima de registre i verificació de l'ús de la IA s'exigirà des de la setmana `1`
 - quins punts del backlog sí convé absorbir abans de setembre i quins queden ajornats de manera explícita
 

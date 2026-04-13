@@ -32,7 +32,7 @@ La planificació es calibra sobre un escenari orientatiu d'unes `20` setmanes am
 | Avaluació | Setmanes orientatives | Fases connectades | Reptes o focus | Materials activats | Evidències clau | Instrument principal | Producte o lliurament parcial |
 |---|---|---|---|---|---|---|---|
 | **Avaluació 1** | `setmanes lectives 1-10 (~60h)` | Fase 0, Fase 1, Fase 2 i inici de Fase 3 | marc comú, kickoff tècnic, base funcional i primera consolidació d'arquitectura | materials comuns, sistema d'evidències, projecte base, enunciat base, materials del Repte 2 i activació inicial del Repte 3, entrada controlada d'itineraris | repositori usable, `README` inicial, ADR inicial, autenticació funcional, validacions mínimes, primers passos de persistència | `rubrica_base_reptes.md` | base funcional real del producte i arquitectura inicial prou sòlida per completar persistència en la 2a avaluació |
-| **Avaluació 2** | `setmanes lectives 11-20 (~60h)` | tancament de Fase 3, Fase 4, Fase 5 i defensa final | persistència consolidada, API, integració híbrida i tancament del producte | materials del Repte 3, materials del Repte 4, materials del Repte 5, materials comuns, itineraris `Laravel`, `Express/Nest` i `FastAPI` com a suport principal | model de dades complet, API documentada, proves, flux híbrid, documentació final, defensa tècnica i AI log si aplica | `rubrica_defensa_tecnica.md` | producte final del curs complet, publicat, integrat i defensable dins de la segona avaluació |
+| **Avaluació 2** | `setmanes lectives 11-20 (~60h)` | tancament de Fase 3, Fase 4, Fase 5 i defensa final | persistència consolidada, API, integració híbrida i tancament del producte | materials del Repte 3, materials del Repte 4, materials del Repte 5, materials comuns, itineraris `Laravel`, `Symfony` i `NestJS` com a suport principal | model de dades complet, API documentada, proves, flux híbrid, documentació final, defensa tècnica i AI log si aplica | `rubrica_defensa_tecnica.md` | producte final del curs complet, publicat, integrat i defensable dins de la segona avaluació |
 | **Avaluació 3** | `període residual o de connexió amb empresa/FCT` | sense desenvolupament central del projecte | connexió amb context professional, seguiment puntual o tancament administratiu | reutilització puntual de documentació i evidències ja generades, si cal | seguiment residual, connexió amb empresa, ajustos menors o tancament puntual | instrument contextual del centre | no s'ha de situar ací el desenvolupament principal del projecte del mòdul |
 
 ## Desenvolupament per avaluacions
@@ -44,7 +44,7 @@ Setmanes orientatives: `setmanes lectives 1-10` amb unes `60` hores aproximades
 Focus:
 
 - activar el marc comú de treball, evidències i ús verificable de la IA
-- arrancar el projecte base del curs amb domini, stack i primer criteri d'arquitectura
+- arrancar el projecte base del curs amb domini, base comuna en `PHP` i primer criteri d'arquitectura
 - completar el Repte 2 i obrir el Repte 3 amb una primera base de persistència i arquitectura
 
 Materials activats:
@@ -54,7 +54,7 @@ Materials activats:
 - sistema d'evidències i instruments inicials de revisió
 - materials del Repte 2
 - activació inicial dels materials del Repte 3
-- primer ús controlat de l'itinerari triat per a bootstrap, auth i estructura bàsica
+- base comuna en `PHP` per a `R2`
 
 Evidències clau:
 
@@ -82,13 +82,13 @@ Focus:
 - tancar el Repte 3 perquè la base persistent i mantenible quede resolta
 - completar el Repte 4 amb contracte API, documentació i consum verificable
 - completar el Repte 5 amb integració híbrida i defensa final del producte
-- usar l'itinerari tecnològic com a suport directe per persistència, API, integració i qualitat final
+- usar `Laravel`, `Symfony` o `NestJS` com a suport directe per persistència, API, integració i qualitat final
 
 Materials activats:
 
 - materials del Repte 3, del Repte 4 i del Repte 5
 - materials comuns com a suport transversal de proves, documentació i IA verificable
-- itineraris `Laravel`, `Express/Nest` i `FastAPI` com a suport principal de stack
+- itineraris `Laravel`, `Symfony` i `NestJS` com a suport principal de stack
 
 Evidències clau:
 
@@ -141,7 +141,7 @@ Producte o lliurament parcial:
 - els materials del Repte 2 es concentren en l'Avaluació 1
 - els materials del Repte 3 s'obrin en l'Avaluació 1 i es tanquen en l'Avaluació 2
 - els materials del Repte 4 i del Repte 5 s'han d'absorbir dins de l'Avaluació 2
-- els itineraris `Laravel`, `Express/Nest` i `FastAPI` apareixen de manera controlada en l'Avaluació 1 i passen a ser suport principal durant l'Avaluació 2
+- `R2` queda absorbit en la base comuna en `PHP` durant l'Avaluació 1 i els itineraris `Laravel`, `Symfony` i `NestJS` passen a ser suport principal durant l'Avaluació 2
 - la tercera avaluació no funciona com a nou bloc de materials del projecte, sinó com a marge residual de context o seguiment
 
 Lectura conjunta amb els altres documents:

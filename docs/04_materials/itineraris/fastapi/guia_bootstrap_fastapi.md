@@ -6,13 +6,15 @@ Oferir una base operativa perquè l'itinerari `FastAPI` es puga arrancar amb cri
 
 Esta guia no busca resumir tot `FastAPI`. El seu objectiu és deixar una base prou clara perquè l'equip puga construir un backend mantenible, autenticable, persistent i preparat per publicar API i arribar després a integració híbrida.
 
+En este repositori, `FastAPI` no és itinerari base general. S'ha de llegir com a via avançada o excepcional.
+
 ## Contingut operatiu
 
 ### Quan té sentit usar FastAPI dins del projecte
 
 Convé usar `FastAPI` quan:
 
-- l'equip treballa en l'itinerari `Python + FastAPI` autoritzat pel model d'itineraris
+- l'equip ha rebut autorització per treballar una via avançada
 - es vol una via de backend Python clara per a autenticació, persistència, API i proves
 - el domini triat necessita una separació recognoscible entre entrada HTTP, esquemes, lògica i dades
 - l'equip pot defensar l'ús de `FastAPI` com a stack real i no només com a generador ràpid d'endpoints
@@ -110,4 +112,4 @@ S'espera trobar evidències com:
 - l'estructura mínima està adaptada al domini del curs
 - l'ús de convencions pròpies de `FastAPI` està justificat i és defensable
 - hi ha evidències reals d'arrancada i primera verificació
-- la base queda preparada per connectar-se amb autenticació, persistència, API i integració en els reptes següents
+- la base queda preparada per connectar-se amb autenticació, persistència, API i integració en els reptes següents sense alterar el criteri d'autoria individual

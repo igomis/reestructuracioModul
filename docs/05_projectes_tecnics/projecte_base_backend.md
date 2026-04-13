@@ -14,6 +14,12 @@ La seua funció és:
 - facilitar que els Reptes 3, 4 i 5 es redacten sobre un producte comú i no sobre activitats aïllades
 - permetre comparabilitat de resultats entre itineraris tecnològics diferents
 
+Lectura metodològica vinculada:
+
+- `R2` consolida el producte sobre una base comuna en `PHP`
+- `R3-R5` obrin el contrast de frameworks sobre el mateix projecte
+- la cooperació pot existir, però la implementació acreditable continua sent individual
+
 ## Principis de disseny del projecte base
 
 - producte evolutiu únic durant el curs, amb creixement incremental per reptes
@@ -87,11 +93,13 @@ Este encaix converteix el projecte base en referència directa per als enunciats
 
 El projecte backend base ha de ser compatible amb:
 
-- PHP + Laravel
-- Node.js + Express o Nest
-- Python + FastAPI
+- Laravel
+- Symfony
+- NestJS
 
 La compatibilitat exigida és de resultats i evidències, no d’implementació interna idèntica.
+
+`FastAPI` només s'hauria d'obrir com a via avançada o excepcional.
 
 ## Paper de la IA
 
@@ -123,7 +131,7 @@ Este document es considera completat quan:
 - proposa com a mínim tres dominis viables i comparables
 - connecta explícitament el projecte base amb els Reptes 1-5
 - deixa clar que cada repte ha d’aportar una funcionalitat professional mínima i no una tècnica aïllada
-- confirma compatibilitat amb Laravel, Express/Nest i FastAPI
+- confirma compatibilitat amb `Laravel`, `Symfony` i `NestJS`
 - fixa el paper de la IA com a eina habitual però verificable
 - deixa oberta la línia futura de tokenització sense desplegar encara el projecte complet
 - queda preparat com a base real per als Reptes 3-5 i per als futurs materials/enunciats

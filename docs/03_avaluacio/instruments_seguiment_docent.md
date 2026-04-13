@@ -8,9 +8,10 @@ Este document es llig conjuntament amb [matriu_evidencies_i_instruments_per_fase
 
 Marc estable d'ús:
 
-- poden existir contextos de treball compartit, sincronitzat o parcialment comuns
+- poden existir parelles de contrast tècnic, trios avançats puntuals o checkpoints coordinats
 - però el seguiment, la verificació, la defensa i la decisió docent s'han de resoldre amb criteri individual
-- un producte comú no substituïx l'acreditació individual de funcionalitat, traçabilitat, autoria i ús verificable de la IA
+- un mateix projecte o un mateix encàrrec funcional no substituïx l'acreditació individual de funcionalitat, traçabilitat, autoria i ús verificable de la IA
+- la cooperació preferent es formula com a parelles de contrast tècnic
 
 ## Quan usar cada instrument
 
@@ -31,7 +32,7 @@ Marc estable d'ús:
 | **Fase 0. Arrancada i marc comú** | `checklist_revisio_repo.md` | `sistema_evidencies.md`, `plantilla_registre_seguiment_per_equip.md` | verificar base de treball, traçabilitat i repàs metodològic de Git/GitHub amb rastre individual |
 | **Fase 1. Kickoff tècnic** | `rubrica_base_reptes.md` | `checklist_revisio_repo.md`, `plantilla_acta_checkpoint.md` | comprovar domini, stack, entorn funcional i primera decisió tècnica amb verificació individual |
 | **Fase 2. Base funcional del producte** | `rubrica_base_reptes.md` | checklist del Repte 2, `plantilla_registre_seguiment_per_equip.md`, `plantilla_ai_log.md` | validar auth o estat equivalent, validacions, errors i proves bàsiques per alumne |
-| **Fase 3. Arquitectura i persistència** | `rubrica_base_reptes.md` | checklist del Repte 3, `plantilla_acta_checkpoint.md`, `plantilla_ai_log.md` | decidir si la base persistent i l'arquitectura permeten obrir `API`, amb defensa individual del flux |
+| **Fase 3. Arquitectura i persistència** | `rubrica_base_reptes.md` | checklist del Repte 3, `plantilla_acta_checkpoint.md`, `plantilla_ai_log.md` | decidir si la base persistent i l'arquitectura permeten obrir `API`, amb defensa individual del flux i contrast de framework si toca |
 | **Fase 4. Publicació i consum d'API** | `rubrica_base_reptes.md` | checklist del Repte 4, `plantilla_registre_seguiment_per_equip.md` | revisar contracte, endpoints, documentació i proves d'`API` amb acreditació individual |
 | **Fase 5. Integració híbrida i tancament** | `rubrica_defensa_tecnica.md` | checklist del Repte 5, `plantilla_acta_checkpoint.md`, `plantilla_ai_log.md` | tancar integració, documentació final, autoria i defensa individual |
 
@@ -40,8 +41,8 @@ Marc estable d'ús:
 | Repte | Focus de seguiment | Instruments mínims |
 |---|---|---|
 | **Repte 1** | domini, stack, entorn funcional i decisió tècnica inicial | `rubrica_base_reptes.md`, `checklist_revisio_repo.md`, `plantilla_registre_seguiment_per_equip.md` |
-| **Repte 2** | flux funcional, auth o estat equivalent, validacions i errors mínims | `rubrica_base_reptes.md`, checklist del Repte 2, `plantilla_registre_seguiment_per_equip.md` |
-| **Repte 3** | arquitectura per capes o equivalent, persistència i mantenibilitat | `rubrica_base_reptes.md`, checklist del Repte 3, `plantilla_acta_checkpoint.md` |
+| **Repte 2** | flux funcional, auth o estat equivalent, validacions i errors mínims sobre base comuna en `PHP` | `rubrica_base_reptes.md`, checklist del Repte 2, `plantilla_registre_seguiment_per_equip.md` |
+| **Repte 3** | arquitectura per capes o equivalent, persistència i mantenibilitat amb entrada de framework | `rubrica_base_reptes.md`, checklist del Repte 3, `plantilla_acta_checkpoint.md` |
 | **Repte 4** | contracte d'`API`, documentació, proves i coherència de respostes | `rubrica_base_reptes.md`, checklist del Repte 4, `plantilla_registre_seguiment_per_equip.md` |
 | **Repte 5** | integració híbrida, prova de punta a punta, tancament i defensa | `rubrica_defensa_tecnica.md`, checklist del Repte 5, `plantilla_acta_checkpoint.md` |
 
@@ -89,7 +90,7 @@ Lectura docent:
 | repositori sense valor metodològic | hi ha codi però poca traça, `README` pobre o commits irrellevants | fer revisió específica de repositori i registrar decisió de normalització |
 | demo sense producte real | el lliurable funciona només en presentació o sense proves mínimes | exigir reproducció, proves i registre de problemes abans de donar el repte per tancat |
 | ús opac de la IA | hi ha codi o decisions que l'alumne no sap explicar | revisar `AI log`, fer preguntes de contrast i deixar constància en el registre de seguiment |
-| diferències d'exigència entre itineraris | el stack triat rebaixa artificialment el nivell de control | aplicar el mateix instrument i la mateixa evidència mínima a `Laravel`, `Express/Nest` i `FastAPI` |
+| diferències d'exigència entre itineraris | el stack triat rebaixa artificialment el nivell de control | aplicar el mateix instrument i la mateixa evidència mínima a `Laravel`, `Symfony` i `NestJS`, i només obrir `FastAPI` si s'ha autoritzat com a via avançada |
 | acumulació de bloquejos | el mateix problema apareix en dos registres seguits | retallar abast, redefinir objectiu immediat i fixar checkpoint curt de recuperació |
 
 ## Definition of done del sistema de seguiment

@@ -10,8 +10,9 @@ Esta secció és una capa breu de consulta per resoldre dubtes reals del curs. N
 - si el problema és `login`, `logout`, permisos o estat, mira [Cookies, sessions i estat](cookies_sessions_i_estat.md), [Autenticació i autorització](autenticacio_i_autoritzacio.md), [Password hashing i credencials](password_hashing_i_credentials.md) i [JWT i tokens d'API](jwt_i_tokens_api.md)
 - si estàs en `R3` i el dubte és de base de dades, entra per [Persistència i modelat](persistencia_i_modelat.md), [Migracions i canvis de dades](migracions_i_canvis_dades.md) i [ORM i consulta de dades](orm_i_consulta_dades.md)
 - si estàs en `R4` o `R5`, revisa [APIs i contracte](apis_i_contracte.md), [Webhooks i integracions](webhooks_i_integracions.md), [Tokens útils en backend](tokens_utils_en_backend.md) i [n8n: consulta ràpida](n8n_consulta_rapida.md)
-- si vas amb `PHP` o `Laravel`, tens [PHP: consulta ràpida](php_consulta_rapida.md), [Sessions i auth en PHP](sessions_i_auth_php.md) i [Laravel: consulta ràpida](laravel_consulta_rapida.md)
-- si vas amb `Node` o `Python`, tens [Express/Nest: consulta ràpida](express_nest_consulta_rapida.md) i [FastAPI: consulta ràpida](fastapi_consulta_rapida.md)
+- si estàs en la base comuna de `R2`, tens [PHP: consulta ràpida](php_consulta_rapida.md) i [Sessions i auth en PHP](sessions_i_auth_php.md)
+- si vas amb `Laravel`, `Symfony` o `NestJS`, tens [Laravel: consulta ràpida](laravel_consulta_rapida.md), [Symfony: consulta ràpida](symfony_consulta_rapida.md) i [NestJS: consulta ràpida](express_nest_consulta_rapida.md)
+- si treballes una via avançada, tens [FastAPI: consulta ràpida](fastapi_consulta_rapida.md)
 
 ## Fitxes comunes del curs
 
@@ -35,7 +36,8 @@ Esta secció és una capa breu de consulta per resoldre dubtes reals del curs. N
 - [PHP: consulta ràpida](php_consulta_rapida.md)
 - [Sessions i auth en PHP](sessions_i_auth_php.md)
 - [Laravel: consulta ràpida](laravel_consulta_rapida.md)
-- [Express/Nest: consulta ràpida](express_nest_consulta_rapida.md)
+- [Symfony: consulta ràpida](symfony_consulta_rapida.md)
+- [NestJS: consulta ràpida](express_nest_consulta_rapida.md)
 - [FastAPI: consulta ràpida](fastapi_consulta_rapida.md)
 - [n8n: consulta ràpida](n8n_consulta_rapida.md)
 

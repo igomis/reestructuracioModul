@@ -24,7 +24,7 @@ Este document servix com a backlog curt i llegible: només ha d'arreplegar millo
 ## Dubtes oberts
 
 - si el primer pilotatge real convé fer-lo amb un únic itinerari principal o permetre més variació controlada
-- quin grau de producte compartit serà sostenible sense debilitar la verificació individual
+- quin grau de contrast tècnic compartit serà sostenible sense debilitar la verificació individual
 - quins punts del tram `R4 -> R5` exigiran més observació específica en context real
 - fins a quin punt caldrà simplificar o compactar trams si el centre no replica exactament l'escenari de `20` setmanes i `120` hores
 

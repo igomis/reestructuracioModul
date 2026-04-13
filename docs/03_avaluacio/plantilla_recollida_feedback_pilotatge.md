@@ -11,7 +11,7 @@ Utilitza esta plantilla per recollir feedback d'alumnat, observacions docents o 
 - Perfil de qui aporta el feedback: `alumnat / professorat / observació docent`
 - Avaluació:
 - Fase o repte associat:
-- Itinerari tecnològic, si aplica: `Laravel / Express-Nest / FastAPI`
+- Itinerari tecnològic, si aplica: `base comuna PHP / Laravel / Symfony / NestJS / FastAPI avançat`
 
 ## Lectura general del tram revisat
 

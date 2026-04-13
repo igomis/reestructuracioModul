@@ -4,7 +4,13 @@
 
 Durant el curs no faràs un projecte diferent en cada repte. Treballaràs sobre un únic producte backend que va creixent de `R1` a `R5`.
 
-Els tres projectes base admesos són compatibles amb `Laravel`, `Express/Nest` i `FastAPI`. L'avaluació continua sent individual i la tokenització, quan apareix, s'entén com a mecanisme funcional útil del backend, no com a tema `web3`.
+Els tres projectes base admesos es treballen així:
+
+- en `R2`, sobre una base comuna en `PHP`
+- des de `R3`, amb continuació possible en `Laravel`, `Symfony` o `NestJS`
+- excepcionalment, amb `FastAPI` si el professorat l'autoritza com a via avançada
+
+L'avaluació continua sent individual i la tokenització, quan apareix, s'entén com a mecanisme funcional útil del backend, no com a tema `web3`.
 
 ## 1. Gestor d'inventari amb rols i token d'operació
 
@@ -51,6 +57,16 @@ No és un CRUD de tickets. Ha d'haver-hi un flux real de seguiment i resolució.
 - evita el que et semble "més fàcil" si en realitat no et suggerix casos d'ús clars
 - pensa si el mateix projecte et permet auth, persistència, API i integració sense forçar-lo
 - pensa també en la defensa: has de poder explicar actors, regles i decisions
+
+## Com es treballa amb altres companys
+
+El model preferent és compartir projecte i encàrrec funcional, però mantindre:
+
+- repositori individual
+- evidències individuals
+- defensa individual
+
+La cooperació s'usa per comparar decisions, revisar solucions i contrastar frameworks, no per dissoldre l'autoria.
 
 ## Si vols el detall complet
 

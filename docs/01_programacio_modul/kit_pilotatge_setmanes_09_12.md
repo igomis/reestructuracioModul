@@ -20,7 +20,7 @@ El kit manté el mateix escenari docent de referència:
 
 - cada setmana equival a un bloc d'unes `6` hores, repartible en dues o tres sessions si es manté el mateix objectiu
 - Git/GitHub es tracta com a traçabilitat i repàs metodològic, no com a alfabetització inicial
-- pot haver-hi context de producte compartit o moments de treball coordinat, però l'evidència, la verificació, la defensa i la decisió docent s'han de resoldre individualment
+- poden existir parelles de contrast tècnic, trios avançats puntuals o checkpoints coordinats, però l'evidència, la verificació, la defensa i la decisió docent s'han de resoldre individualment
 - `R3` no es considera obert de manera seriosa si `R2` encara no té un mínim funcional no trivial clarament defensable
 - si en una setmana no apareix l'evidència mínima, cal prioritzar reconducció abans d'obrir noves capes de persistència o arquitectura
 
@@ -130,5 +130,5 @@ Este kit es considera completat quan:
 - concreta les setmanes `9-12` com a tercer tram operatiu del curs
 - indica per a cada setmana objectiu, paper docent, treball de l'alumnat, materials activats, evidència mínima, checkpoint, suport, ampliació i registre de pilotatge
 - connecta el tancament fort de `R2`, l'entrada explícita a `R3`, la persistència inicial i el checkpoint final de la primera avaluació
-- deixa clar que pot haver-hi context de treball compartit, però que l'evidència, la verificació i la defensa són individuals
+- deixa clar que pot haver-hi cooperació tècnica coordinada, però que l'evidència, la verificació i la defensa són individuals
 - deixa la primera avaluació quasi completament pilotable com a bloc docent real

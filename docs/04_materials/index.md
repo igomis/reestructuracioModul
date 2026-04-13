@@ -25,7 +25,14 @@ Este bloc reunix els materials reutilitzables del curs: materials comuns, materi
 
 - [Apunts reals](apunts_reals/repte_01_kickoff_backend.md) fins a [tancament de la serie](apunts_reals/tancament_fase_apunts_reals.md)
 - [Guies i checklists de `R2`](repte_02/checklist_repte_02.md), [`R3`](repte_03/checklist_repte_03.md), [`R4`](repte_04/checklist_repte_04.md) i [`R5`](repte_05/checklist_repte_05.md)
-- [Itinerari Laravel](itineraris/laravel/guia_bootstrap_laravel.md), [Express/Nest](itineraris/express_nest/guia_bootstrap_express_nest.md) i [FastAPI](itineraris/fastapi/guia_bootstrap_fastapi.md)
+- [Itinerari Laravel](itineraris/laravel/guia_bootstrap_laravel.md), [Symfony](itineraris/symfony/guia_bootstrap_symfony.md), [NestJS](itineraris/express_nest/guia_bootstrap_express_nest.md) i [FastAPI avançat](itineraris/fastapi/guia_bootstrap_fastapi.md)
+
+## Lectura metodològica dels materials
+
+- `R2` s'atén amb base comuna en `PHP`
+- els materials d'itinerari entren a partir de `R3`
+- `Laravel`, `Symfony` i `NestJS` són les vies base del contrast
+- `FastAPI` es manté només com a via avançada o excepcional
 
 ## Si nomes necessite materials per a classe
 

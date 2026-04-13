@@ -52,6 +52,10 @@ Este repte permet passar d’un backend estructurat a un backend interoperable.
 
 La funcionalitat ja no es mira només des del punt de vista del manteniment intern, sinó des del punt de vista de la seua exposició com a servei per a consum extern o intercomponent.
 
+En este punt del curs, el repte reutilitza la base arquitectònica i de persistència consolidada al Repte 3, transforma funcionalitats internes del producte en una interfície externa clara i versionable, i deixa preparada la infraestructura conceptual i tècnica per al Repte 5.
+
+És compatible amb `Laravel`, `Symfony` i `NestJS` i manté equivalència docent entre stacks: canvia la implementació concreta, no els objectius ni les evidències exigides. Quan es treballe `FastAPI`, s'ha d'entendre com a via avançada o excepcional, no com a itinerari base general.
+
 ---
 
 ## 3. Canvi metodològic que introdueix la IA

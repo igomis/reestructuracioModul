@@ -70,12 +70,12 @@ El kit manté la mateixa base temporal i docent del paquet:
 - Què explica el professorat: que el repte no és “fer login”, sinó protegir una operació real del domini amb una regla mínima de negoci
 - Què modela en directe: un flux autenticat complet amb operació central, accés autoritzat i primer cas d'accés restringit
 - Què fa l'alumnat: connecta auth o estat equivalent amb una operació rellevant del producte i implementa la primera restricció o control d'accés recognoscible
-- Materials concrets que s'activen: [repte_02_materials_sessio.md](../04_materials/materials_aula/repte_02_materials_sessio.md), [fulls_treball_base.md](../04_materials/materials_aula/fulls_treball_base.md), [plantilles_feedback_rapid.md](../04_materials/materials_aula/plantilles_feedback_rapid.md) i l'itinerari tecnològic corresponent
+- Materials concrets que s'activen: [repte_02_materials_sessio.md](../04_materials/materials_aula/repte_02_materials_sessio.md), [fulls_treball_base.md](../04_materials/materials_aula/fulls_treball_base.md), [plantilles_feedback_rapid.md](../04_materials/materials_aula/plantilles_feedback_rapid.md) i la base comuna en `PHP`
 - Evidència mínima a arreplegar: operació de negoci protegida, cas autoritzat reproduïble i primer cas denegat recognoscible
 - Checkpoint docent: comprovar que hi ha valor funcional del producte i no només formularis d'accés
 - Intervenció per alumnat endarrerit: reduir el repte a un sol actor i una sola operació protegida de punta a punta
 - Ampliació per alumnat avançat: afegir una segona restricció o un primer tractament més fi d'autorització sobre el mateix flux
-- Què s'ha de registrar al pilotatge: si el pas de infraestructura a funcionalitat real és assumible, quins bloquejos apareixen per domini o itinerari i quina part del modelatge docent desbloqueja més
+- Què s'ha de registrar al pilotatge: si el pas d'infraestructura a funcionalitat real és assumible, quins bloquejos apareixen per domini o per domini funcional i quina part del modelatge docent desbloqueja més
 
 ### Setmana 7
 

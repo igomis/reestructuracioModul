@@ -22,7 +22,7 @@ El kit manté el mateix escenari docent de referència:
 
 - cada setmana equival a un bloc d'unes `6` hores, repartible en dues o tres sessions si es manté el mateix objectiu
 - Git/GitHub es tracta com a traçabilitat i repàs metodològic, no com a alfabetització inicial
-- pot haver-hi context de producte compartit o moments de treball coordinat, però l'evidència, la verificació, la defensa i la decisió docent s'han de resoldre individualment
+- poden existir parelles de contrast tècnic, trios avançats puntuals o checkpoints coordinats, però l'evidència, la verificació, la defensa i la decisió docent s'han de resoldre individualment
 - `R4` no s'ha d'obrir com a simple publicació de rutes; només té sentit si `R3` ha deixat una funcionalitat persistent, explicable i prou estable
 - la IA es pot usar com a eina guiada per proposar contractes, col·leccions, proves o documentació, però qualsevol ús ha de quedar verificat, registrat i defensable
 - si en una setmana no apareix l'evidència mínima, cal prioritzar reconducció abans d'avançar cap a consum extern o preparació d'integració
@@ -93,7 +93,7 @@ El kit manté el mateix escenari docent de referència:
 - Què fa l'alumnat: implementa endpoints principals, ajusta validacions i respostes, prepara col·lecció de proves o equivalent, documenta com reproduir-les i demostra un consum real de la seua `API`
 - Materials concrets que s'activen: [repte_04_materials_sessio.md](../04_materials/materials_aula/repte_04_materials_sessio.md), [guia_proves_i_documentacio_api.md](../04_materials/repte_04/guia_proves_i_documentacio_api.md), [checklist_repte_04.md](../04_materials/repte_04/checklist_repte_04.md), guia de testing/debugging, [plantilles_feedback_rapid.md](../04_materials/materials_aula/plantilles_feedback_rapid.md) i [checkpoints_curts_aula.md](../04_materials/materials_aula/checkpoints_curts_aula.md)
 - Evidència mínima a arreplegar: endpoints nuclears funcionals, prova reproduïble amb cas correcte i cas d'error, documentació alineada amb el comportament real i una evidència mínima de consum
-- Checkpoint docent: validar que cada alumne pot mostrar l'`API` en funcionament, provar-la sense improvisació i explicar quina part del consum és realment seua encara que hi haja context de producte compartit
+- Checkpoint docent: validar que cada alumne pot mostrar l'`API` en funcionament, provar-la sense improvisació i explicar quina part del consum és realment seua encara que compartisca encàrrec funcional amb altres alumnes
 - Intervenció per alumnat endarrerit: tancar només un recurs nuclear, una prova clara i una documentació curta; ajornar qualsevol consumidor complex o endpoint lateral
 - Ampliació per alumnat avançat: reforçar col·lecció de proves, tractament d'errors, control d'accés o qualitat del consumidor sobre la mateixa `API`
 - Què s'ha de registrar al pilotatge: quins punts fallen més entre contracte, implementació i documentació, si la càrrega de prova i consum és assumible i quins patrons d'ús de la IA necessiten més verificació docent
@@ -127,7 +127,7 @@ Només convé entrar al bloc següent si:
 
 - hi ha una funcionalitat del producte publicada com a `API` amb contracte recognoscible i sentit real dins del domini
 - existixen proves reproduïbles, documentació alineada amb el comportament real i consum mínim verificat
-- cada alumne pot explicar i defensar la seua part del flux publicat, encara que hi haja hagut context de producte compartit o moments de treball coordinat
+- cada alumne pot explicar i defensar la seua part del flux publicat, encara que hi haja hagut cooperació tècnica coordinada o un mateix encàrrec funcional
 - el `README`, la traçabilitat i les evidències permeten identificar quin endpoint o recurs serà la base útil per a `R5`
 
 ## Definition of done del document
@@ -137,5 +137,5 @@ Este kit es considera completat quan:
 - concreta les setmanes `13-16` com a quart tram operatiu del curs
 - indica per a cada setmana objectiu, paper docent, treball de l'alumnat, materials activats, evidència mínima, checkpoint, suport, ampliació i registre de pilotatge
 - connecta la consolidació final de `R3`, l'entrada explícita a `R4`, el contracte d'`API`, les proves, la documentació, el consum real i la preparació de `R5`
-- deixa clar que pot haver-hi context de treball compartit, però que l'evidència, la verificació i la defensa són individuals
+- deixa clar que pot haver-hi cooperació tècnica coordinada, però que l'evidència, la verificació i la defensa són individuals
 - deixa la segona avaluació iniciada com a bloc pilotable real, no només descrita de manera abstracta

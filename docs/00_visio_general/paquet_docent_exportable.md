@@ -15,7 +15,7 @@ Este document no torna a descriure el curs peça per peça, sinó que fixa quins
 | **Reptes del curs** | fitxes de `docs/02_reptes/` | ordenar el desenvolupament del curs com a seqüència de reptes amb producte real |
 | **Materials comuns** | `docs/04_materials/materials_comuns/` | normalitzar metodologia, documentació, proves, debugging i ús verificable de la IA |
 | **Materials per repte** | `docs/04_materials/repte_02/`, `repte_03/`, `repte_04/`, `repte_05/` | donar suport tècnic operatiu als punts crítics de cada repte |
-| **Itineraris tecnològics** | `docs/04_materials/itineraris/laravel/`, `express_nest/`, `fastapi/` | permetre implementar el mateix model docent en stacks diferents sense canviar exigència |
+| **Itineraris tecnològics** | `docs/04_materials/itineraris/laravel/`, `symfony/`, `express_nest/` i `fastapi/` | permetre implementar el mateix model docent en stacks diferents sense canviar exigència |
 | **Implantació docent** | `pla_implantacio_docent.md`, `calendaritzacio_orientativa_aula.md`, `calendaritzacio_per_avaluacions.md`, `programacio_aula_operativa_2_avaluacions.md`, `seqüenciacio_sessions_2_avaluacions.md`, `curs_executable_dwes_2_avaluacions.md` | convertir el model en seqüència real de curs en dues avaluacions |
 | **Avaluació i seguiment** | `matriu_evidencies_i_instruments_per_fase.md`, `instruments_seguiment_docent.md`, rúbriques, checklists i plantilles | controlar evidències, checkpoints, progrés real i defensa tècnica |
 | **Plantilles reutilitzables** | `docs/06_plantilles/` | facilitar adaptació, replicació i creació de noves peces a partir d'un patró comú |
@@ -59,7 +59,7 @@ Estes peces poden canviar sense trencar el nucli del model:
 4. Passar a [curs_executable_dwes_2_avaluacions.md](../01_programacio_modul/curs_executable_dwes_2_avaluacions.md) com a peça principal d'ús docent real.
 5. Revisar [instruments_seguiment_docent.md](../03_avaluacio/instruments_seguiment_docent.md) i les plantilles de seguiment abans d'iniciar el curs.
 6. Activar materials comuns i després materials per repte segons la seqüència docent.
-7. Seleccionar o permetre itineraris `Laravel`, `Express/Nest` o `FastAPI` sense alterar el nivell d'exigència.
+7. Seleccionar o permetre `Laravel`, `Symfony` o `NestJS` sense alterar el nivell d'exigència, i obrir `FastAPI` només com a via avançada quan pertoque.
 
 ## Què necessita un docent per implantar-lo
 
@@ -68,7 +68,7 @@ Estes peces poden canviar sense trencar el nucli del model:
 - compartir des de l'inici el criteri que Git/GitHub és metodologia de treball i traçabilitat, no iniciació bàsica
 - tindre visible el projecte base, els reptes, els materials i els instruments de seguiment abans de començar
 - decidir com s'organitzaran equips, checkpoints i revisió d'evidències
-- triar si es treballarà amb un únic itinerari o amb diversos itineraris tecnològics simultanis
+- triar si es treballarà amb un únic framework de referència o amb diverses vies de contrast tecnològic a partir de `R3`
 - estar disposat a fer seguiment real del repositori, documentació, proves i ús verificable de la IA
 
 ## Què es pot exportar a altres mòduls
@@ -87,7 +87,7 @@ El que és més reutilitzable no és el contingut tècnic concret de DWES, sinó
 
 - este paquet està pensat per a un context on la 3a avaluació no és central perquè l'alumnat està en empresa o `FCT`
 - el model assumix base prèvia en Git/GitHub; si el grup no la té, caldria obrir una capa d'alfabetització que ací no està contemplada
-- els itineraris actuals responen a `Laravel`, `Express/Nest` i `FastAPI`; altres stacks requeririen una adaptació explícita
+- els itineraris actuals responen a `Laravel`, `Symfony` i `NestJS`; `FastAPI` queda com a via avançada o excepcional i altres stacks requeririen una adaptació explícita
 - el calendari està calibrat a `120` hores aproximades; si la càrrega baixa molt, caldrà retallar abast sense tocar el nucli del model
 - el paquet és exportable, però no automàticament transplantable: cada centre ha de contextualitzar horari, resultats d'aprenentatge, autonomia de l'alumnat i marge real de seguiment
 

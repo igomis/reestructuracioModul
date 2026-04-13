@@ -58,7 +58,7 @@ Regla pràctica:
 
 - les setmanes de canvi de repte necessiten més classe guiada
 - les setmanes de consolidació, proves o documentació necessiten més autonomia supervisada
-- el treball compartit pot existir, però cada alumne ha de mantindre rastre propi, evidència pròpia i capacitat de defensa individual
+- la cooperació tècnica pot existir, però cada alumne ha de mantindre rastre propi, evidència pròpia i capacitat de defensa individual
 
 ## Seqüència setmanal o per blocs
 
@@ -73,16 +73,16 @@ Regla pràctica:
 - Evidència mínima del bloc: repositori creat, `README` inicial i criteri compartit de treball
 - Checkpoint docent: comprovar que l'arrancada no queda en simple explicació oral
 - Pla per a alumnat endarrerit: repositori mínim, `README` curt i checklist de posada en marxa
-- Pla per a alumnat avançat: justificar dues alternatives de domini o stack abans de decidir
+- Pla per a alumnat avançat: justificar dues alternatives de domini o dos enfocaments funcionals abans de decidir
 
 #### Setmana 2
 
-- Focus o repte: domini, stack i decisió tècnica inicial
+- Focus o repte: domini, base comuna en `PHP` i decisió tècnica inicial
 - Què fa el professorat: modela una decisió tècnica breu, exemplifica un `ADR` curt i acota què no és suficient en `R1`
-- Què fa l'alumnat: tria domini, itinerari i primer cas d'ús mínim del producte
-- Materials per a l'alumnat: fitxa del Repte 1, itineraris tecnològics, guia `README` i `ADR`
+- Què fa l'alumnat: tria domini, assumix la base comuna en `PHP` i concreta el primer cas d'ús mínim del producte
+- Materials per a l'alumnat: fitxa del Repte 1, base comuna del curs, guia `README` i `ADR`
 - Evidència mínima del bloc: domini triat, decisió tècnica justificada i traçabilitat inicial
-- Checkpoint docent: validar que hi ha producte pensat, no només framework triat
+- Checkpoint docent: validar que hi ha producte pensat, no només infraestructura preparada
 - Pla per a alumnat endarrerit: domini més acotat i un sol cas d'ús d'entrada
 - Pla per a alumnat avançat: explorar riscos i trade-offs de la decisió tècnica
 
@@ -91,7 +91,7 @@ Regla pràctica:
 - Focus o repte: `R1` com a primera peça funcional real
 - Què fa el professorat: modela una landing page o equivalent i un formulari mínim amb validació bàsica
 - Què fa l'alumnat: implementa la primera entrada funcional del producte
-- Materials per a l'alumnat: apunt real del Repte 1, materials comuns i suport de l'itinerari triat
+- Materials per a l'alumnat: apunt real del Repte 1, materials comuns i suport de la base comuna en `PHP`
 - Evidència mínima del bloc: pàgina inicial funcional i formulari bàsic operatiu
 - Checkpoint docent: revisar que hi ha interacció real del producte
 - Pla per a alumnat endarrerit: formulari amb menys camps i un flux més curt
@@ -113,7 +113,7 @@ Regla pràctica:
 - Focus o repte: arranque de `R2`, autenticació com a infraestructura
 - Què fa el professorat: explica diferència entre auth, autorització i flux funcional del domini; modela alta o login mínim
 - Què fa l'alumnat: prepara usuaris, estat equivalent i punt d'entrada al primer flux autenticat
-- Materials per a l'alumnat: materials del Repte 2, apunt real del Repte 2, itinerari triat
+- Materials per a l'alumnat: materials del Repte 2, apunt real del Repte 2, base comuna en `PHP`
 - Evidència mínima del bloc: registre o login operatiu i cas d'ús de domini identificat
 - Checkpoint docent: evitar que `R2` es reduïsca a formularis d'accés
 - Pla per a alumnat endarrerit: un únic actor i una única operació protegida

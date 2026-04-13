@@ -1,12 +1,12 @@
 # Plantilla de registre de seguiment individual
 
-> Nota: es manté el nom històric del fitxer per continuïtat del repositori, però esta plantilla s'ha d'utilitzar amb criteri d'acreditació individual. Si hi ha producte, repositori o context de treball compartit, només s'hi recull com a context; la revisió i la decisió docent s'han de registrar per alumne.
+> Nota: es manté el nom històric del fitxer per continuïtat del repositori, però esta plantilla s'ha d'utilitzar amb criteri d'acreditació individual. Si hi ha un mateix projecte funcional, una parella de contrast tècnic o un altre context coordinat, només s'hi recull com a context; la revisió i la decisió docent s'han de registrar per alumne.
 
 ## Ús de la plantilla
 
 Utilitza esta plantilla en revisions setmanals o quinzenals per deixar constància breu del punt real en què està cada alumne i de la decisió docent individual associada.
 
-Pot haver-hi moments de treball sincronitzat o parts del producte parcialment comunes, però això no substituïx:
+Pot haver-hi moments de treball sincronitzat, checkpoints comuns o un mateix projecte funcional entre diversos alumnes, però això no substituïx:
 
 - la verificació individual de què sap fer i explicar cada alumne
 - la revisió individual de traçabilitat, proves i ús de la IA
@@ -16,8 +16,8 @@ Pot haver-hi moments de treball sincronitzat o parts del producte parcialment co
 
 - Data:
 - Alumne:
-- Equip o context compartit, si aplica:
-- Itinerari tecnològic: `Laravel` / `Express/Nest` / `FastAPI`
+- Parella de contrast o context compartit, si aplica:
+- Itinerari tecnològic: `base comuna PHP` / `Laravel` / `Symfony` / `NestJS` / `FastAPI avançat`
 - Repte o fase actual:
 - Setmana o tram del curs:
 

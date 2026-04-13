@@ -2,7 +2,7 @@
 
 ## Per a què servix
 
-Esta comprovació curta servix per decidir si la base inicial del curs ja és prou sòlida per entrar en el primer flux autenticat de veritat.
+Esta comprovació curta servix per decidir si la base inicial del curs ja és prou sòlida per entrar en el primer flux autenticat de veritat sobre la base comuna en `PHP`.
 
 ## Hauries de poder ensenyar
 

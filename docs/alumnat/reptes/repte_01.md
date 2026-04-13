@@ -6,7 +6,7 @@
 
 ## Què no és suficient
 
-- triar stack i parar ahí
+- preparar la base tècnica i parar ahí
 - deixar un esquelet buit o un `hello world`
 - una pàgina estàtica sense flux real
 - validació només al client o sense registre de dades

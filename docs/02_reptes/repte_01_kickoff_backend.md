@@ -15,7 +15,7 @@ No es considera suficient triar tecnologia o generar un esquelet buit. Tampoc es
 Una primera versió funcional i verificable del servei backend, amb:
 
 - repositori inicial funcional
-- stack triat dins d’un marc docent acotat
+- base comuna en `PHP` assumida dins d’un marc docent acotat
 - projecte executable en local de manera reproductible
 - ús de Docker
 - punt d’entrada funcional simple
@@ -319,7 +319,7 @@ Construir una primera peça funcional simple del producte perquè el repte no qu
 
 **Tasca**
 
-L’equip implementa almenys una d’estes opcions, o una alternativa equivalent coherent amb l’stack triat:
+L’equip implementa almenys una d’estes opcions, o una alternativa equivalent coherent amb la base comuna del curs:
 
 - una landing page
 - una ruta inicial

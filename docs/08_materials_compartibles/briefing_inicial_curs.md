@@ -15,9 +15,11 @@ Treballaràs sobre un dels tres projectes base del curs:
 ## Com funciona el curs
 
 - es treballa per reptes
+- `R2` es resol sobre una base comuna en `PHP`
+- el contrast de frameworks entra a partir de `R3`
 - el producte principal s'ha de resoldre dins de les dues primeres avaluacions
 - allò important no és només que funcione, sinó que pugues provar-ho, explicar-ho i defensar-ho
-- l'avaluació és individual encara que hi haja moments de treball compartit
+- l'avaluació és individual encara que hi haja contrast tècnic compartit o revisió creuada
 
 ## Què s'espera de tu des del principi
 

@@ -13,7 +13,9 @@ La `v1` prepilotatge inclou, com a paquet usable:
 - projecte base del curs i enunciat base del producte
 - seqüència de treball per reptes `R1-R5`
 - materials comuns, materials nuclears per repte i apunts reals
-- itineraris `Laravel`, `Express/Nest` i `FastAPI` com a variants homologables
+- `R2` com a base comuna en `PHP`
+- itineraris `Laravel`, `Symfony` i `NestJS` com a variants homologables des de `R3`
+- `FastAPI` com a via avançada o excepcional
 - implantació docent en `2` avaluacions, amb calendari, programació, seqüenciació i curs executable
 - sistema d'evidències, rúbriques, checklists i instruments de seguiment
 - kits de pilotatge de les setmanes `1-20`
@@ -26,7 +28,7 @@ A efectes de prepilotatge, es considera estable allò que ja no necessita més a
 - el curs es desplega sobre un mateix producte backend i una seqüència comuna de reptes
 - el desenvolupament principal es resol dins de les dues primeres avaluacions
 - la tercera avaluació queda fora del desenvolupament nuclear del projecte
-- l'avaluació es resol amb criteri individual, encara que puguen existir contextos de producte compartit
+- l'avaluació es resol amb criteri individual, encara que puguen existir contextos de contrast tècnic compartit
 - Git/GitHub es tracta com a traçabilitat i repàs metodològic, no com a iniciació
 - la IA es tracta com a eina guiada i verificable, amb contrast i defensa
 - el nivell d'exigència es manté entre itineraris encara que canvie la implementació

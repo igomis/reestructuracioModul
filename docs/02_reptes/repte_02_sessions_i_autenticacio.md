@@ -8,6 +8,8 @@ Construir la primera funcionalitat de negoci real del projecte a partir d’una 
 
 Este repte no s’entén com un bloc reduït a registre, login i logout. El seu sentit és més ampli: consolidar els fonaments tècnics bàsics del treball en entorn servidor i fer-los desembocar en una funcionalitat autenticada amb valor real dins del producte del curs.
 
+Este repte es resol sobre una **base comuna en `PHP`** per a tot l’alumnat. El contrast de frameworks no entra ací com a norma general.
+
 **Producte principal del repte**
 
 Una primera funcionalitat de domini protegida, construïda sobre una seqüència progressiva que inclou:
@@ -26,9 +28,17 @@ Una primera funcionalitat de domini protegida, construïda sobre una seqüència
 
 Després del kickoff inicial del projecte, l’equip necessita deixar arrere la simple posada en marxa del backend i començar a construir comportament real del sistema. Açò implica rebre dades, processar-les correctament, mantindre informació d’estat quan cal, gestionar usuaris i assegurar que una primera operació del domini només es pot executar en les condicions adequades.
 
+Per això, en este punt del curs es manté una base més controlada i comuna. El contrast fort de `Laravel`, `Symfony` o `NestJS` s’obri després, quan el flux ja està consolidat.
+
 **Relació amb el projecte global del curs**
 
 Este repte reutilitza la base tècnica creada en el Repte 1 i la transforma en una primera peça funcional realment usable. A més, prepara el pas al Repte 3, on la funcionalitat construïda ací s’haurà de reorganitzar, mantindre i professionalitzar millor.
+
+El canvi metodològic del curs es concreta així:
+
+- `R2` és base comuna en `PHP`
+- `R3` és el punt d’entrada del contrast de frameworks
+- el mateix projecte continua després amb itineraris diferents
 
 ---
 
@@ -135,10 +145,12 @@ Mòdul funcional integrat en el projecte que incloga:
 
 > **Norma del repte**
 >
-> - Els microprojectes cobrixen sobretot criteris procedimentals.
+> - Els microprojectes cobrixen la progressió real de `SA2` i no només el tram final d’autenticació.
 > - Les microtasques d’investigació o decisió cobrixen sobretot criteris conceptuals o de modelització.
 > - Cap microprojecte apareix sense el camp **“CA coberts”**.
 > - El repte no es considera suficient si només hi ha login/logout sense un recorregut previ de processament i sense una operació real protegida.
+> - El pas al Repte 3 només té sentit si el flux actual ja funciona de manera reproduïble i mínimament explicable.
+> - El contrast de frameworks encara no és el centre del repte.
 
 ### Microprojecte MP1 — Formulari base i recuperació de dades
 
@@ -152,7 +164,7 @@ Construir un punt d’entrada de dades usable i demostrar que el sistema és cap
 
 **Tasca**
 
-L’equip crea un formulari funcional, o una entrada equivalent coherent amb l’stack utilitzat, i implementa la recuperació de les dades enviades per l’usuari.
+L’equip crea un formulari funcional, o una entrada equivalent coherent amb la base comuna en `PHP`, i implementa la recuperació de les dades enviades per l’usuari.
 
 S’ha de veure amb claredat:
 
@@ -389,7 +401,7 @@ L’equip implementa una evidència bàsica de manteniment d’estat, per exempl
 
 - sessió
 - cookies
-- o mecanisme equivalent coherent amb l’stack
+- o mecanisme equivalent coherent amb la base comuna en `PHP`
 
 S’ha de veure:
 
@@ -710,7 +722,7 @@ Checklist de verificació + defensa tècnica.
 
 **Duració orientativa**
 
-6 a 8 sessions, segons el nivell del grup i l’stack utilitzat.
+6 a 8 sessions, segons el nivell del grup i la solidesa de la base comuna en `PHP`.
 
 **Moment del curs**
 
@@ -725,7 +737,7 @@ Després del Repte 1 i abans del Repte 3.
 
 **Possibles variants tecnològiques**
 
-Es pot implementar amb l’stack triat pel departament o pel projecte, sempre que permeta:
+Es pot implementar sobre la base comuna en `PHP` fixada pel curs o pel departament, sempre que permeta:
 
 - tractament d’entrada de dades
 - processament en servidor

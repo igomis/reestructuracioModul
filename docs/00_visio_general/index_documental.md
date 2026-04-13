@@ -6,6 +6,17 @@ Este document organitza l'acces al repositori per camins d'us i no com a llista 
 
 En la versio web amb MkDocs, esta pagina funciona tambe com a portada principal de la documentacio.
 
+## Decisio metodologica transversal
+
+La lectura comuna del repositori queda fixada aixi:
+
+- `R2` es resol sobre una base comuna en `PHP`
+- el contrast de frameworks no entra com a norma general en `R2`
+- el contrast s'obri des de `R3` sobre el mateix projecte i el mateix encarrec funcional
+- els frameworks base del tram de contrast son `Laravel`, `Symfony` i `NestJS`
+- `FastAPI` queda com a opcio avancada o excepcional, no com a itinerari base general
+- la cooperacio pot existir, pero repositori, evidencies, autoria i defensa continuen sent individuals
+
 ## Dos camins principals de consulta
 
 - [Alumnat](../alumnat/index.md): entrada curta per entendre com funciona el curs, com es valora, com usar la IA i com llegir `R1-R5`.
@@ -70,7 +81,7 @@ Criteri d'us:
 - [Paquet docent exportable del modul](paquet_docent_exportable.md): quines peces son transferibles.
 - [Versio prepilotatge v1](versio_prepilotatge_v1.md): que es considera estable i reutilitzable.
 - [Programacio d'aula per repte](../01_programacio_modul/programacio_aula_per_repte.md): lectura docent reutilitzable per blocs.
-- [Model d'itineraris tecnologiques](../01_programacio_modul/model_itineraris_tecnologics.md): criteri per comparar stacks sense canviar el model.
+- [Model d'itineraris tecnologiques](../01_programacio_modul/model_itineraris_tecnologics.md): criteri per passar de la base comuna en `PHP` al contrast de frameworks sense canviar el model.
 - [Criteris de ponderacio dels reptes amb IA](../03_avaluacio/criteris_ponderacio_reptes_amb_ia.md): base d'avaluacio adaptable.
 - [Plantilla de planificacio de repte amb microprojectes](../06_plantilles/plantilla_planificacio_repte_microprojectes.md): patro ampliat per dissenyar reptes amb `CA`, evidencies i verificacio del treball real.
 

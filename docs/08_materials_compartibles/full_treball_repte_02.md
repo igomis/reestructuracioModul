@@ -2,10 +2,12 @@
 
 ## Objectiu
 
-Convertir la primera peça funcional del producte en una operació de negoci protegida i verificable.
+Convertir la primera peça funcional del producte en una operació de negoci protegida i verificable sobre una base comuna en `PHP`.
 
 ## Has de fer
 
+- tractar dades d'entrada al servidor amb criteri
+- ordenar la lògica bàsica del flux
 - implementar alta/login/logout o estat equivalent
 - definir un actor clar del domini
 - protegir una operació real del producte
@@ -42,6 +44,7 @@ Convertir la primera peça funcional del producte en una operació de negoci pro
 
 - treballa amb un únic actor i una sola operació protegida
 - elimina extensions de rols fins que el flux principal estiga tancat
+- no canvies encara de framework per intentar desbloquejar `R2`
 - revisa la [consulta tècnica sobre cookies, sessions i estat](../alumnat/consulta_tecnica/cookies_sessions_i_estat.md)
 - revisa la [consulta tècnica sobre autenticació i autorització](../alumnat/consulta_tecnica/autenticacio_i_autoritzacio.md)
 

@@ -8,6 +8,12 @@ Convertir el backend funcional dels reptes anteriors en una base més mantenible
 
 Este repte no s’entén com una reorganització estètica del codi ni com una simple connexió a base de dades. El seu sentit és professionalitzar una funcionalitat existent i deixar-la preparada per créixer sense deute tècnic crític.
 
+És també el punt on s’obri el contrast de frameworks del curs. El mateix projecte que en `R2` s’ha consolidat sobre base comuna en `PHP` continua ara amb `Laravel`, `Symfony` o `NestJS`.
+
+No és un repte de tècnica aïllada. Aplicar MVC, afegir carpetes o connectar una base de dades només té valor si professionalitza una funcionalitat real del producte, la fa més mantenible i permet defensar millor el seu comportament.
+
+Les vies base d’este repte són `Laravel`, `Symfony` i `NestJS`. `FastAPI` només s’hauria d’obrir com a via avançada o excepcional quan hi haja marc docent clar per sostenir-la.
+
 **Producte principal del repte**
 
 Una versió refactoritzada d’almenys un cas d’ús real del domini, amb:

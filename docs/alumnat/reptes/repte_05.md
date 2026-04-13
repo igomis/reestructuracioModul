@@ -4,6 +4,11 @@
 
 És el tancament del producte del curs. Has de demostrar que la teua API no és només usable des de dins, sinó integrable en un flux híbrid o automatitzat amb valor real.
 
+Ací continua vigent la mateixa regla del curs:
+
+- projecte compartit com a context, si cal
+- implementació, evidències i defensa individuals
+
 ## Què no és suficient
 
 - un workflow visual però decoratiu

@@ -4,6 +4,14 @@ Benvingut a la documentació del redisseny del mòdul **DWES** per reptes, evid�
 
 Esta portada recull els accessos principals del paquet docent. Si necessites la navegació completa, consulta l'[índex documental](00_visio_general/index_documental.md).
 
+## Idea clau del model
+
+- `R2` és una base comuna en `PHP`
+- el contrast de frameworks entra a partir de `R3`
+- el mateix projecte continua després amb `Laravel`, `Symfony` o `NestJS`
+- `FastAPI` només apareix com a via avançada o excepcional
+- autoria, traçabilitat, evidències i defensa continuen sent individuals
+
 ## Entendre el projecte
 
 - [Presentació breu del model DWES](00_visio_general/presentacio_model_dwes_reptes_ia.md)

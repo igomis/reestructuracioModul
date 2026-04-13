@@ -2,7 +2,7 @@
 
 ## Principi general
 
-L'avaluació continua sent individual, encara que hi puga haver contextos de producte parcialment compartit. El criteri és si cada alumne pot traçar, reproduir, explicar i defensar la seua part.
+L'avaluació continua sent individual, encara que hi puga haver contextos de projecte compartit o contrast tècnic coordinat. El criteri és si cada alumne pot traçar, reproduir, explicar i defensar la seua part.
 
 ## Què es valora realment
 
@@ -44,8 +44,8 @@ El professorat ha de demanar rastre mínim i preguntes de contrast quan detecte 
 ## Checkpoints mínims
 
 - `CP0`: repositori usable, `README` inicial i criteri de traçabilitat
-- `CP1`: domini, stack, entorn funcional i primera decisió tècnica
-- `CP2`: operació protegida o equivalent, validacions i errors mínims
+- `CP1`: domini, base comuna en `PHP`, entorn funcional i primera decisió tècnica
+- `CP2`: operació protegida o equivalent, validacions i errors mínims sobre la base comuna en `PHP`
 - `CP3`: persistència coherent i arquitectura explicable
 - `CP4`: `API` publicada, documentada i provada
 - `CP5`: integració final, `AI log` tancat i defensa preparada
@@ -62,4 +62,5 @@ El professorat ha de demanar rastre mínim i preguntes de contrast quan detecte 
 - revisar producte real abans que discurs
 - registrar decisions docents breus en checkpoints o seguiment periòdic
 - bloquejar el pas al repte següent si no hi ha evidència mínima individual
-- mantindre la mateixa exigència en `Laravel`, `Express/Nest` i `FastAPI`
+- mantindre la mateixa exigència en `Laravel`, `Symfony` i `NestJS`
+- tractar `FastAPI` només com a via avançada o excepcional quan realment s'haja autoritzat

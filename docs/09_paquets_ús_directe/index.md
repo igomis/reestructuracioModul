@@ -35,3 +35,5 @@ Este espai agrupa els materials més útils segons el moment del curs perquè el
 - estos paquets són una capa superior d'ordenació per moment docent
 - si necessites orientació general de rol i recorregut, entra pel [portal de professorat](../professorat/index.md)
 - si necessites aprofundir, cada paquet et deriva a apunts reals, materials de sessió i portals d'ús
+- el paquet de pas a `R2` manté base comuna en `PHP`
+- el paquet de pas a `R3-R4` és on s'obri el contrast de frameworks

@@ -53,6 +53,10 @@ Este repte permet passar d’un sistema que ja té lògica pròpia, persistènci
 
 La dificultat no està sols en connectar-se a una font externa, sinó en decidir què aporta realment, com es transforma i com s’integra dins del producte.
 
+En este punt del curs, el repte reutilitza l'API publicada i consumida al Repte 4, posa a prova la robustesa real del backend més enllà del seu ús intern i permet usar `n8n` o una eina equivalent d'orquestració, automatització o integració si s'ajusta millor al cas d'ús.
+
+És compatible amb `Laravel`, `Symfony` i `NestJS` i manté el criteri del repositori: canvien les eines concretes, però no els objectius, les evidències ni la verificació exigida. Quan es treballe `FastAPI`, s'ha d'entendre com a via avançada o excepcional, no com a itinerari base general.
+
 ---
 
 ## 3. Canvi metodològic que introdueix la IA

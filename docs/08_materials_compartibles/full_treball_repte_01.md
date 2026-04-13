@@ -6,7 +6,7 @@ Deixar obert el projecte amb una primera entrada funcional real del producte.
 
 ## Has de fer
 
-- confirmar domini i stack
+- confirmar domini i base comuna en `PHP`
 - deixar repositori usable i `README` inicial
 - crear una landing page o equivalent
 - implementar un formulari o entrada mínima del domini

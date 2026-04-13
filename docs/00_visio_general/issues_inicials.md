@@ -13,7 +13,9 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 
 - la base curricular, el projecte base del curs i els documents centrals de planificació ja existixen i són visibles a `master`
 - els materials comuns del mòdul i els paquets nuclears dels Reptes `2`, `3`, `4` i `5` ja estan publicats com a base usable
-- els itineraris `Laravel`, `Express/Nest` i `FastAPI` ja existixen com a variacions homologables del mateix producte
+- `R2` queda ja definit com a base comuna en `PHP`
+- `Laravel`, `Symfony` i `NestJS` queden com a vies base de contrast des de `R3`
+- `FastAPI` queda reservat com a via avançada o excepcional
 - la implantació docent ja està descrita en clau de fases, avaluacions, blocs d'aula i sessions
 - el marc temporal de referència queda fixat en unes `20` setmanes aproximades amb `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
 - el model docent assumit és clar: el projecte s'ha de desenvolupar i tancar dins de les dues primeres avaluacions lectives
@@ -181,8 +183,9 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 ## Itineraris consolidats / en revisió
 
 - `MI-01` `Laravel` queda consolidat com a primer patró reutilitzable de stack.
-- `MI-02` `Express/Nest` queda consolidat com a segon patró reutilitzable de stack.
-- `MI-03` `FastAPI` queda en revisió transversal junt amb `MI-01` i `MI-02` per assegurar comparabilitat pública.
+- `MI-02` `Symfony` queda consolidat com a segon patró reutilitzable de stack.
+- `MI-03` `NestJS` queda consolidat com a tercer patró reutilitzable de stack.
+- `MI-04` `FastAPI` queda en revisió transversal com a via avançada o excepcional.
 
 Criteri comú dels itineraris:
 
@@ -208,7 +211,7 @@ Criteri comú dels itineraris:
 - la sèrie curta de micro-presentacions continua disponible com a suport docent breu dins de la mateixa web
 - la revisió final abans de l'inici de curs queda tancada amb ajustos menors de relat, navegació i coherència entre capes
 - el projecte queda llest per començar el curs sense necessitat de canvis substancials d'estructura
-- la lectura de treball compartit queda subordinada a un criteri estable d'acreditació individual: cada alumne ha de poder traçar, explicar, verificar i defensar la seua part
+- la lectura de contrast tècnic compartit queda subordinada a un criteri estable d'acreditació individual: cada alumne ha de poder traçar, explicar, verificar i defensar la seua part
 - el reforç de densitat funcional dels reptes queda consolidat i passa a funcionar com a criteri estable de lectura del sistema
 
 ## Següent focus recomanat

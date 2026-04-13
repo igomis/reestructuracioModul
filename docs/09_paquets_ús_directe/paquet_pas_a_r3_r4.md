@@ -4,6 +4,8 @@
 
 Passar de producte funcional a producte professionalitzat i publicable com a `API`, amb persistència, contracte i verificació suficients.
 
+És ací on s'obri el contrast de frameworks del curs sobre el mateix projecte.
+
 ## Materials que ha d'obrir el professorat
 
 - [Materials de sessió del Repte 3](../04_materials/materials_aula/repte_03_materials_sessio.md)

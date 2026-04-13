@@ -27,7 +27,7 @@ El kit s'ha calibrat sobre l'escenari docent que ja assumix el paquet:
 ## Estructura del tram inicial
 
 - `Setmana 1`: marc comú, producte, repositori i traçabilitat
-- `Setmana 2`: domini, itinerari i decisió tècnica justificada
+- `Setmana 2`: domini, base comuna en `PHP` i decisió tècnica justificada
 - `Setmana 3`: primera peça funcional real del producte
 - `Setmana 4`: validació, primer registre de dades i tancament usable de `R1`
 
@@ -57,22 +57,22 @@ El kit s'ha calibrat sobre l'escenari docent que ja assumix el paquet:
 - Evidència mínima a arreplegar: repositori creat, `README` inicial, domini provisional i primera traça de decisió tècnica
 - Checkpoint docent: comprovar que l'equip pot explicar quin producte començarà a construir i com ho documentarà
 - Intervenció per alumnat endarrerit: reduir el bloc a repositori usable, `README` curt i una sola descripció de cas d'ús inicial
-- Ampliació per alumnat avançat: comparar dues opcions de domini o stack i justificar la triada amb un mini `ADR`
+- Ampliació per alumnat avançat: comparar dues opcions de domini o dos enfocaments funcionals i justificar la triada amb un mini `ADR`
 - Què s'ha de registrar al pilotatge: dubtes recurrents sobre el model del curs, comprensió real d'evidències, bloquejos inicials amb `README` o traçabilitat i adequació del temps de la setmana
 
 ### Setmana 2
 
 - Objectiu docent: convertir el kickoff en una decisió tècnica i funcional recognoscible
-- Focus o repte: `R1` com a decisió de domini, itinerari i flux d'entrada
-- Què explica el professorat: què no és suficient en `R1`, com acotar un primer flux funcional i com triar itinerari sense convertir el repte en debat de frameworks
+- Focus o repte: `R1` com a decisió de domini, base comuna en `PHP` i flux d'entrada
+- Què explica el professorat: què no és suficient en `R1`, com acotar un primer flux funcional i per què encara no toca obrir itineraris ni debat de frameworks
 - Què modela en directe: decisió tècnica breu, cas d'ús inicial del producte i esquema del primer flux que s'hauria de poder ensenyar
-- Què fa l'alumnat: tria itinerari, concreta el primer cas d'ús, descriu el flux d'entrada i prepara l'estructura mínima del projecte
-- Materials concrets que s'activen: [repte_01_materials_sessio.md](../04_materials/materials_aula/repte_01_materials_sessio.md), [fulls_treball_base.md](../04_materials/materials_aula/fulls_treball_base.md), itinerari tecnològic corresponent i guia `README`/`ADR`
-- Evidència mínima a arreplegar: domini triat, stack justificat, flux inicial descrit i estructura mínima del projecte recognoscible
-- Checkpoint docent: validar que hi ha producte i primer cas d'ús, no només stack triat o projecte buit
+- Què fa l'alumnat: concreta el primer cas d'ús, descriu el flux d'entrada i prepara l'estructura mínima del projecte sobre la base comuna en `PHP`
+- Materials concrets que s'activen: [repte_01_materials_sessio.md](../04_materials/materials_aula/repte_01_materials_sessio.md), [fulls_treball_base.md](../04_materials/materials_aula/fulls_treball_base.md), base comuna del curs i guia `README`/`ADR`
+- Evidència mínima a arreplegar: domini triat, base comuna en `PHP` arrancada, flux inicial descrit i estructura mínima del projecte recognoscible
+- Checkpoint docent: validar que hi ha producte i primer cas d'ús, no només infraestructura o projecte buit
 - Intervenció per alumnat endarrerit: forçar un únic cas d'ús d'entrada i bloquejar qualsevol ampliació lateral
 - Ampliació per alumnat avançat: afegir una alternativa descartada amb trade-off curt o un criteri tècnic addicional de decisió
-- Què s'ha de registrar al pilotatge: quins punts generen més dispersió en la tria de domini o itinerari, quines instruccions del `R1` demanen més aclariment i quins equips confonen producte amb infraestructura
+- Què s'ha de registrar al pilotatge: quins punts generen més dispersió en la tria de domini, quines instruccions del `R1` demanen més aclariment i quins equips confonen producte amb infraestructura
 
 ### Setmana 3
 
@@ -81,12 +81,12 @@ El kit s'ha calibrat sobre l'escenari docent que ja assumix el paquet:
 - Què explica el professorat: com passar de decisió tècnica a interacció real, què compta com a landing page o equivalent útil i quin és el mínim funcional no trivial del repte
 - Què modela en directe: una entrada funcional del producte amb formulari mínim, camp obligatori i resposta bàsica
 - Què fa l'alumnat: implementa la primera pantalla o punt d'entrada usable i connecta el formulari amb el primer flux real del domini
-- Materials concrets que s'activen: [repte_01_materials_sessio.md](../04_materials/materials_aula/repte_01_materials_sessio.md), [mini_briefings_setmanals.md](../04_materials/materials_aula/mini_briefings_setmanals.md), [checkpoints_curts_aula.md](../04_materials/materials_aula/checkpoints_curts_aula.md) i l'itinerari triat
+- Materials concrets que s'activen: [repte_01_materials_sessio.md](../04_materials/materials_aula/repte_01_materials_sessio.md), [mini_briefings_setmanals.md](../04_materials/materials_aula/mini_briefings_setmanals.md), [checkpoints_curts_aula.md](../04_materials/materials_aula/checkpoints_curts_aula.md) i la base comuna del curs
 - Evidència mínima a arreplegar: landing page o equivalent funcional, formulari executable i recorregut visible d'entrada al producte
 - Checkpoint docent: verificar en `2-3` minuts que el producte ja fa alguna cosa real i que no és una plantilla estàtica
 - Intervenció per alumnat endarrerit: simplificar camps, congelar decoració i exigir només una interacció real completa
 - Ampliació per alumnat avançat: millorar feedback d'errors, afegir una segona validació coherent o deixar millor explicat el flux al `README`
-- Què s'ha de registrar al pilotatge: dificultats reals per passar d'estructura a funcionalitat, patrons de bloqueig per itinerari i si el modelatge docent és suficient per desencallar el tram
+- Què s'ha de registrar al pilotatge: dificultats reals per passar d'estructura a funcionalitat, patrons de bloqueig sobre la base comuna i si el modelatge docent és suficient per desencallar el tram
 
 ### Setmana 4
 

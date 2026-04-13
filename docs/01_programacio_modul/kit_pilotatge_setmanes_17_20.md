@@ -22,7 +22,7 @@ El kit manté el mateix escenari docent de referència:
 
 - cada setmana equival a un bloc d'unes `6` hores, repartible en dues o tres sessions si es manté el mateix objectiu
 - Git/GitHub es tracta com a traçabilitat i repàs metodològic, no com a alfabetització inicial
-- pot haver-hi context de producte compartit o moments de treball coordinat, però l'evidència, la verificació, la defensa i la decisió docent s'han de resoldre individualment
+- poden existir parelles de contrast tècnic, trios avançats puntuals o checkpoints coordinats, però l'evidència, la verificació, la defensa i la decisió docent s'han de resoldre individualment
 - `R5` no s'ha d'entendre com a “fer `n8n`” ni com a demo visual d'automatització; només té sentit si resol una necessitat real del producte reutilitzant l'`API` publicada
 - la IA es pot usar com a eina guiada per mapar payloads, diagnosticar errors, preparar proves o documentació, però qualsevol ús ha de quedar verificat, registrat i defensable individualment
 - si en una setmana no apareix l'evidència mínima, cal prioritzar reconducció abans d'avançar cap a defensa final o tancament del pilotatge
@@ -81,7 +81,7 @@ El kit manté el mateix escenari docent de referència:
 - Què fa l'alumnat: implementa el recorregut principal de la integració, connecta l'`API` pròpia amb el servei extern o workflow, estabilitza el flux nuclear i deixa una primera execució reproduïble del cas principal
 - Materials concrets que s'activen: [repte_05_materials_sessio.md](../04_materials/materials_aula/repte_05_materials_sessio.md), [guia_integracio_externa_i_flux_hibrid.md](../04_materials/repte_05/guia_integracio_externa_i_flux_hibrid.md), [guia_n8n_i_automatitzacio.md](../04_materials/repte_05/guia_n8n_i_automatitzacio.md), [repte_05_integracio_hibrida_n8n.md](../04_materials/apunts_reals/repte_05_integracio_hibrida_n8n.md), [plantilles_feedback_rapid.md](../04_materials/materials_aula/plantilles_feedback_rapid.md) i [checkpoints_curts_aula.md](../04_materials/materials_aula/checkpoints_curts_aula.md)
 - Evidència mínima a arreplegar: flux híbrid parcial o complet ja executable, consum real de l'`API` dins del workflow i primera eixida observable del procés
-- Checkpoint docent: comprovar que la integració ja fa alguna cosa útil, que reutilitza l'`API` com a contracte central i que cada alumne pot localitzar la seua part del flux dins del producte compartit si n'hi ha
+- Checkpoint docent: comprovar que la integració ja fa alguna cosa útil, que reutilitza l'`API` com a contracte central i que cada alumne pot localitzar la seua part del flux dins del mateix projecte funcional si compartix encàrrec amb altres alumnes
 - Intervenció per alumnat endarrerit: congelar passos no nuclears, estabilitzar només el recorregut principal i ajornar qualsevol refinament que no siga imprescindible per executar el flux
 - Ampliació per alumnat avançat: afegir millor diagnòstic d'incidències, control d'errors més fi o una eixida addicional justificada dins del mateix flux
 - Què s'ha de registrar al pilotatge: si la implementació real de `R5` entra amb la càrrega prevista, quins bloquejos apareixen en consum d'`API`, credencials, workflow o manteniment i quines simplificacions resulten més útils
@@ -104,7 +104,7 @@ El kit manté el mateix escenari docent de referència:
 
 - Objectiu docent: resoldre la defensa final individual i tancar formalment el producte i el pilotatge complet del curs
 - Focus o repte: defensa final individual i tancament del producte i del pilotatge
-- Què explica el professorat: criteri final de revisió, com es resol la defensa individual encara que hi haja producte compartit, què es considera tancament suficient del curs i com es recull feedback útil per a la iteració següent del paquet docent
+- Què explica el professorat: criteri final de revisió, com es resol la defensa individual encara que hi haja cooperació tècnica coordinada, què es considera tancament suficient del curs i com es recull feedback útil per a la iteració següent del paquet docent
 - Què modela en directe: lectura final de repositori, `README`, evidències, AI log i flux complet; també una defensa curta amb justificació de decisions, detecció d'errors i capacitat de modificació o contrast
 - Què fa l'alumnat: presenta i defensa individualment el seu treball real, entrega evidències finals, deixa el repositori en estat coherent de tancament i aporta feedback sobre càrrega, materials, checkpoints i comprensió dels reptes
 - Materials concrets que s'activen: [rubrica_defensa_tecnica.md](../03_avaluacio/rubrica_defensa_tecnica.md), [plantilla_recollida_feedback_pilotatge.md](../03_avaluacio/plantilla_recollida_feedback_pilotatge.md), [registre_incidents_i_ajustos_pilotatge.md](../03_avaluacio/registre_incidents_i_ajustos_pilotatge.md), [instruments_seguiment_docent.md](../03_avaluacio/instruments_seguiment_docent.md), [sistema_evidencies.md](../03_avaluacio/sistema_evidencies.md) i [repte_05_materials_sessio.md](../04_materials/materials_aula/repte_05_materials_sessio.md)
@@ -129,7 +129,7 @@ Només convé donar per tancada la seqüència pilotable si:
 
 - existix una integració o flux híbrid lligat a una necessitat real del producte i sostingut sobre l'`API` publicada
 - hi ha prova reproduïble del camí correcte i d'almenys una fallada rellevant, amb documentació operativa alineada amb l'estat real
-- cada alumne pot explicar, verificar i defensar individualment la seua part del producte, encara que hi haja hagut context de producte compartit o treball coordinat
+- cada alumne pot explicar, verificar i defensar individualment la seua part del producte, encara que hi haja hagut cooperació tècnica coordinada o un mateix encàrrec funcional
 - el repositori, el `README`, l'AI log i les evidències finals permeten revisar el curs complet com a seqüència tancada dins de les dues primeres avaluacions
 
 ## Definition of done del document
@@ -139,5 +139,5 @@ Este kit es considera completat quan:
 - concreta les setmanes `17-20` com a quint i últim tram operatiu del curs
 - indica per a cada setmana objectiu, paper docent, treball de l'alumnat, materials activats, evidència mínima, checkpoint, suport, ampliació i registre de pilotatge
 - connecta l'entrada explícita a `R5`, la necessitat real d'integració, la implementació del flux híbrid, les proves, la documentació, la defensa final individual i el tancament del pilotatge
-- deixa clar que pot haver-hi context de treball compartit, però que l'evidència, la verificació i la defensa són individuals
+- deixa clar que pot haver-hi cooperació tècnica coordinada, però que l'evidència, la verificació i la defensa són individuals
 - deixa la seqüència pilotable completa del curs tancada com a recorregut docent usable dins de les dues avaluacions

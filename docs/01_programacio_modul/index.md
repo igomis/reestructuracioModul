@@ -4,6 +4,13 @@
 
 Este bloc reuneix la capa de planificacio docent del modul: implantacio general, calendaritzacio, sequenciacio de sessions, programacio per reptes, kits de pilotatge i documents de preparacio abans de l'inici de curs.
 
+## Clau metodologica del bloc
+
+- `R2` es programa sobre una base comuna en `PHP`
+- el contrast de frameworks s'obri des de `R3`
+- el mateix projecte continua amb `Laravel`, `Symfony` o `NestJS`
+- la cooperacio pot existir, pero la verificacio i la defensa continuen sent individuals
+
 ## Documents principals
 
 - [Pla d'implantacio docent del modul](pla_implantacio_docent.md): marc general del desplegament docent.

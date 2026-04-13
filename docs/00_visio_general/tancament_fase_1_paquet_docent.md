@@ -11,7 +11,7 @@ Esta fase comprén:
 - reestructuració del mòdul en clau de treball per reptes
 - definició del projecte base i de l'enunciat base del curs
 - producció de materials comuns i materials nuclears per repte
-- construcció dels itineraris `Laravel`, `Express/Nest` i `FastAPI`
+- construcció de la base comuna de `R2` i dels itineraris `Laravel`, `Symfony` i `NestJS`
 - desplegament de la capa d'implantació docent en `2` avaluacions
 - definició d'evidències, instruments i seguiment docent
 - consolidació del paquet docent exportable, del resum executiu i de la presentació breu del model
@@ -45,7 +45,8 @@ El resultat és un paquet docent complet, coherent i desplegable que:
 - la tercera avaluació no és període central de desenvolupament, sinó espai residual o de connexió amb empresa o `FCT`
 - Git/GitHub es tracta com a metodologia de treball i traçabilitat, no com a iniciació bàsica
 - el curs es desplega sobre un projecte base compartit i una seqüència comuna de reptes
-- els itineraris tecnològics canvien la implementació, però no el nivell d'exigència
+- `R2` queda fixat com a base comuna en `PHP`
+- els itineraris tecnològics canvien la implementació des de `R3`, però no el nivell d'exigència
 - l'ús de la IA és admissible com a suport normal, però sempre amb validació i traça verificable
 
 ## Què queda fora d'esta fase

@@ -42,8 +42,12 @@ Si el dubte que tens és tècnic i no de funcionament general del curs, entra di
 ## Idees clau
 
 - el curs es construeix sobre un únic producte que creix de `R1` a `R5`
+- `R2` es resol sobre una base comuna en `PHP`
+- el contrast de frameworks entra després, a partir de `R3`
+- el mateix projecte pot continuar amb `Laravel`, `Symfony` o `NestJS`
 - el projecte s'ha de completar dins de les dues primeres avaluacions lectives
 - allò important no és només que "funcione", sinó que pugues provar-ho, explicar-ho i defensar-ho
+- pots cooperar i comparar-te amb altres companys, però el repositori, les evidències i la defensa continuen sent teus
 - la IA es pot usar, però només si el que entregues és verificable i realment teu
 
 ## Si necessites el detall complet

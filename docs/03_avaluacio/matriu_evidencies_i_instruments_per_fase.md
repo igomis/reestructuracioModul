@@ -14,6 +14,7 @@ Este document completa la calendarització orientativa d'aula. La calendaritzaci
 - els itineraris tecnològics no canvien el tipus d'evidència exigida, només la forma d'implementació
 - l'ús de la IA només compta com a evidència vàlida si queda registrat, contrastat i defensable
 - el pas d'una fase a la següent ha d'estar recolzat per un mínim d'evidències suficients, no només per calendari
+- `R2` manté una base comuna en `PHP` abans d'obrir el contrast de frameworks
 
 ## Matriu global per fases
 
@@ -21,8 +22,8 @@ Este document completa la calendarització orientativa d'aula. La calendaritzaci
 |---|---|---|---|---|
 | **Fase 0. Arrancada i marc comú** | repositori creat, estructura mínima, primer `README`, criteri de commits, AI log assumit | `checklist_revisio_repo.md` | `sistema_evidencies.md`, `plantilla_ai_log.md` | verificar que el grup usa Git/GitHub com a traçabilitat professional i no com a simple còpia de seguretat |
 | **Fase 1. Kickoff tècnic** | entorn funcional, domini triat, ADR inicial, primera decisió tècnica, primers commits útils | `rubrica_base_reptes.md` | `checklist_revisio_repo.md`, `plantilla_ai_log.md` | evitar que el kickoff quede en infraestructura sense producte ni justificació tècnica |
-| **Fase 2. Base funcional del producte** | registre/login/logout, accés protegit, validacions mínimes, errors controlats, proves bàsiques | `rubrica_base_reptes.md` | checklist del Repte 2, `plantilla_ai_log.md` | comprovar que la funcionalitat és real, reproduïble i no una demo puntual |
-| **Fase 3. Arquitectura i persistència** | arquitectura per capes o equivalent, persistència coherent, model de dades, proves de regressió | `rubrica_base_reptes.md` | checklist del Repte 3, `plantilla_ai_log.md` | no obrir API sense base persistent i mantenible suficient |
+| **Fase 2. Base funcional del producte** | registre/login/logout, accés protegit, validacions mínimes, errors controlats, proves bàsiques sobre base comuna en `PHP` | `rubrica_base_reptes.md` | checklist del Repte 2, `plantilla_ai_log.md` | comprovar que la funcionalitat és real, reproduïble i no una demo puntual |
+| **Fase 3. Arquitectura i persistència** | arquitectura per capes o equivalent, persistència coherent, model de dades, proves de regressió amb entrada de framework | `rubrica_base_reptes.md` | checklist del Repte 3, `plantilla_ai_log.md` | no obrir API sense base persistent i mantenible suficient |
 | **Fase 4. Publicació i consum d'API** | endpoints clau, contracte API, documentació d'endpoints, col·lecció de proves, consum verificat | `rubrica_base_reptes.md` | checklist del Repte 4, `checklist_revisio_repo.md` | assegurar coherència entre contracte, proves, errors i documentació real |
 | **Fase 5. Integració híbrida i tancament** | flux híbrid complet, prova de punta a punta, documentació final, defensa tècnica, AI log tancat | `rubrica_defensa_tecnica.md` | `rubrica_base_reptes.md`, checklist del Repte 5, `plantilla_ai_log.md` | evitar tancaments ornamentals sense valor funcional, manteniment ni autoria verificable |
 
@@ -202,7 +203,7 @@ Esta matriu s'ha de llegir conjuntament amb `docs/01_programacio_modul/calendari
 | revisar només demos finals | hi ha presentació però poca traça de procés | tornar al repositori, `README`, proves i AI log com a base de revisió |
 | infraavaluar la documentació | el codi avança però les instruccions no reflectixen l'estat real | revisar `README`, ADR i contractes API en el tancament de cada fase |
 | ús opac de la IA | el resultat sembla correcte però no es pot explicar ni justificar | exigir AI log, prova posterior i preguntes de contrast |
-| desigualtat entre itineraris | la stack triada canvia el nivell d'exigència percebut | aplicar la mateixa matriu d'evidències i instruments a tots els itineraris |
+| desigualtat entre itineraris | la stack triada canvia el nivell d'exigència percebut | aplicar la mateixa matriu d'evidències i instruments a `Laravel`, `Symfony` i `NestJS`, i només obrir `FastAPI` si hi ha marc docent clar |
 
 ## Definition of done del document
 

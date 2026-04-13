@@ -7,10 +7,16 @@ Este mòdul es treballa per reptes. Això vol dir que no faràs peces inconnexes
 La seqüència és:
 
 - `R1`: arrancada real del producte
-- `R2`: autenticació i primera funcionalitat de negoci
-- `R3`: arquitectura mantenible i persistència
+- `R2`: base comuna en `PHP` amb dades, lògica, estat i autenticació
+- `R3`: entrada de framework, arquitectura mantenible i persistència
 - `R4`: publicació i consum d'API
 - `R5`: integració híbrida, tancament i defensa
+
+La idea clau és esta:
+
+- en `R2` tot el grup treballa sobre una base comuna més controlada
+- el contrast de frameworks comença després
+- el mateix projecte continua amb itineraris diferents a partir de `R3`
 
 ## El producte base
 
@@ -20,10 +26,24 @@ El producte base:
 
 - ha de tindre un cas d'ús real
 - ha de poder créixer sense reiniciar-lo a cada repte
-- ha de ser compatible amb `Laravel`, `Express/Nest` o `FastAPI`
-- s'ha de poder defensar individualment encara que hi haja moments de treball compartit
+- en `R2` es treballa sobre una base comuna en `PHP`
+- des de `R3` pot continuar-se amb `Laravel`, `Symfony` o `NestJS`
+- s'ha de poder defensar individualment encara que hi haja anàlisi compartida, revisió creuada o checkpoints comuns
 
 Pots consultar els tres projectes admesos en [Projectes base](projectes_base.md).
+
+## Com es combina cooperació i autoria
+
+La modalitat preferent és:
+
+- mateix projecte
+- mateix encàrrec funcional
+- repositoris individuals
+- evidències individuals
+- defensa individual
+- contrast tècnic compartit
+
+El model base és el de parelles de contrast tècnic. En alguns casos es poden obrir trios avançats amb tres stacks diferents, però no és la modalitat general.
 
 ## Dues avaluacions lectives
 

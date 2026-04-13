@@ -2,13 +2,13 @@
 
 ## Finalitat
 
-Esta checklist servix per revisar si l'itinerari `FastAPI` ja disposa d'una base prou sòlida per aplicar-se al projecte del curs i adaptar-se després als Reptes 2, 3, 4 i 5 sense improvisació estructural.
+Esta checklist servix per revisar si l'itinerari `FastAPI` ja disposa d'una base prou sòlida per aplicar-se al projecte del curs com a via avançada o excepcional i adaptar-se després als Reptes 3, 4 i 5 sense improvisació estructural.
 
 ## Contingut operatiu
 
 La revisió final de l'itinerari no s'ha de limitar al fet que l'aplicació arranque. També ha de comprovar autenticació, persistència, validació, proves, documentació, `AI log` i capacitat real de continuar el projecte base sobre ecosistema Python.
 
-Preparació per als Reptes 2-5:
+Preparació per als Reptes 3-5:
 
 - el tancament d'esta primera guia d'itinerari ha de deixar clar com es cobriran autenticació, persistència, API i integració híbrida dins de `FastAPI`
 - també ha de deixar identificades les peces pròpies de l'ecosistema Python que funcionaran com a patró reusable i comparable amb els altres itineraris
@@ -64,7 +64,6 @@ Preparació per als Reptes 2-5:
 
 ### Preparació per adaptar-se als Reptes 2-5
 
-- [ ] el stack està preparat per cobrir sessions i autenticació del Repte 2
 - [ ] el projecte es pot reorganitzar o mantindre per capes clares al Repte 3
 - [ ] la base és prou estable per exposar API al Repte 4
 - [ ] l'itinerari deixa marge per a integració i automatització al Repte 5

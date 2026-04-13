@@ -48,7 +48,7 @@ Micro-presentació docent breu. Equival aproximadament a `8` diapositives.
 - has de poder explicar el flux funcional complet
 - s'espera justificació de decisions i proves
 - es poden fer preguntes de contrast o microcanvis
-- treball compartit no anul·la responsabilitat individual
+- el contrast tècnic compartit no anul·la responsabilitat individual
 
 ## Diapositiva 8. Missatge final
 

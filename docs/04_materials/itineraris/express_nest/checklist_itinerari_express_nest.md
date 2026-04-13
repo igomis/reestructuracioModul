@@ -1,22 +1,22 @@
-# Checklist de l'itinerari Express/Nest
+# Checklist de l'itinerari NestJS
 
 ## Finalitat
 
-Esta checklist servix per revisar si l'itinerari `Express/Nest` ja disposa d'una base prou sòlida per aplicar-se al projecte del curs i adaptar-se després als Reptes 2, 3, 4 i 5 sense improvisació arquitectònica.
+Esta checklist servix per revisar si l'itinerari `NestJS` ja disposa d'una base prou sòlida per aplicar-se al projecte del curs i adaptar-se després als Reptes 3, 4 i 5 sense improvisació arquitectònica.
 
 ## Contingut operatiu
 
 La revisió final de l'itinerari no s'ha de limitar al fet que el servidor arranque. També ha de comprovar autenticació, persistència, validació, proves, documentació, `AI log` i capacitat real de continuar el projecte base amb una estructura defensable en ecosistema `Node.js`.
 
-Preparació per als Reptes 2-5:
+Preparació per als Reptes 3-5:
 
-- el tancament d'esta primera guia d'itinerari ha de deixar clar com es cobriran autenticació, persistència, API i integració híbrida dins de la via `Express` o `Nest`
+- el tancament d'esta primera guia d'itinerari ha de deixar clar com es cobriran autenticació, persistència, API i integració híbrida dins de la via `NestJS`
 - també ha de deixar identificades les peces pròpies de l'ecosistema Node que funcionaran com a patró reusable i comparable amb els altres itineraris
 
 ## Errors habituals o riscos
 
 - confondre "servidor arranca" amb "itinerari preparat"
-- no justificar amb criteri per què s'ha triat `Express` o `Nest`
+- no justificar amb criteri per què s'ha triat `NestJS`
 - mantindre punts crítics de negoci o persistència massa acoblats
 - dependre de middleware, generadors o IA sense validar el comportament real
 
@@ -24,7 +24,7 @@ Preparació per als Reptes 2-5:
 
 ### Projecte arranca correctament
 
-- [ ] el projecte `Express` o `Nest` arranca sense passos opacs o no documentats
+- [ ] el projecte `NestJS` arranca sense passos opacs o no documentats
 - [ ] la configuració mínima d'entorn i dependències és reproduïble
 - [ ] el `README` explica la posada en marxa real
 
@@ -64,7 +64,6 @@ Preparació per als Reptes 2-5:
 
 ### Preparació per adaptar-se als Reptes 2-5
 
-- [ ] el stack està preparat per cobrir sessions i autenticació del Repte 2
 - [ ] el projecte es pot reorganitzar o mantindre per capes clares al Repte 3
 - [ ] la base és prou estable per exposar API al Repte 4
 - [ ] l'itinerari deixa marge per a integració i automatització al Repte 5

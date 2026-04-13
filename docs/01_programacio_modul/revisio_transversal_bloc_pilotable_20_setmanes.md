@@ -4,7 +4,7 @@
 
 Deixar constància de la revisió transversal del bloc pilotable complet de `20` setmanes i verificar que els cinc kits funcionen com una seqüència comuna, coherent i usable de punta a punta. Esta peça no crea un sisé kit: revisa el conjunt, comprova la progressió `R1 -> R5` i deixa alineat el relat públic del repositori amb l'estat real actual.
 
-La revisió es llig amb el mateix marc del paquet docent: treball per reptes, projecte base del curs, seqüència en `2` avaluacions, entorn professional realista, evidències autèntiques, IA com a eina guiada i verificable, i acreditació individual encara que hi puguen existir contextos de producte compartit o moments de treball coordinat.
+La revisió es llig amb el mateix marc del paquet docent: treball per reptes, projecte base del curs, seqüència en `2` avaluacions, entorn professional realista, evidències autèntiques, IA com a eina guiada i verificable, i acreditació individual encara que hi puguen existir parelles de contrast tècnic o altres moments de coordinació.
 
 ## KITS revisats
 
@@ -51,7 +51,7 @@ S'han revisat especialment estes transicions:
 
 La revisió confirma una línia comuna estable:
 
-- pot haver-hi context de producte compartit, però l'evidència mínima, la verificació i la defensa continuen sent individuals
+- pot haver-hi un mateix projecte funcional o contrast tècnic compartit, però l'evidència mínima, la verificació i la defensa continuen sent individuals
 - cada canvi de repte demana una evidència curta però defensable del mateix alumne o alumna
 - `README`, traçabilitat, proves, documentació i AI log funcionen com a peces de lectura individual, no només d'equip
 - els checkpoints dels trams `9-12`, `13-16` i `17-20` reforcen especialment la necessitat que cada alumne puga explicar què ha fet, què pot provar i què pot defensar

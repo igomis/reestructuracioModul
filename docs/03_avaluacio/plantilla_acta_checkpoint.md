@@ -4,14 +4,14 @@
 
 Utilitza esta acta quan es tanca una fase, un repte o un punt de pas crític del curs. La seua funció és deixar constància formal de què s'ha revisat, quin resultat ha tingut i quina decisió docent s'adopta.
 
-Encara que hi haja contextos de treball compartit, esta acta s'ha d'emplenar amb criteri individual. El checkpoint pot produir-se el mateix dia per a diversos alumnes o sobre un mateix producte parcialment comú, però el resultat, la verificació i la decisió docent s'han de deixar per alumne.
+Encara que hi haja parelles de contrast tècnic, checkpoints coordinats o un mateix projecte funcional de referència, esta acta s'ha d'emplenar amb criteri individual. El checkpoint pot produir-se el mateix dia per a diversos alumnes o sobre un mateix encàrrec funcional, però el resultat, la verificació i la decisió docent s'han de deixar per alumne.
 
 ## Identificació del checkpoint
 
 - Checkpoint:
 - Data:
 - Alumne:
-- Equip o context compartit, si aplica:
+- Parella de contrast o context compartit, si aplica:
 - Avaluació:
 - Fase o repte associat:
 

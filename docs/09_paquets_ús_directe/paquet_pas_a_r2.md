@@ -4,6 +4,8 @@
 
 Entrar en `R2` amb una base funcional real i activar el primer flux autenticat sense reduir el repte a “fer login”.
 
+Este paquet servix per a mantindre `R2` com a base comuna en `PHP`, abans d'obrir el contrast de frameworks.
+
 ## Materials que ha d'obrir el professorat
 
 - [Materials de sessió del Repte 2](../04_materials/materials_aula/repte_02_materials_sessio.md)

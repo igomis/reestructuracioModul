@@ -11,10 +11,13 @@ Este document no substituïx [pla_implantacio_docent.md](pla_implantacio_docent.
 - el curs es calibra sobre un escenari orientatiu de `20` setmanes, `6` hores setmanals i unes `120` hores lectives aproximades
 - el desenvolupament principal del projecte s'ha de completar dins de les dues primeres avaluacions
 - la tercera avaluació no és període central de desenvolupament, sinó espai residual o de connexió amb empresa o `FCT`
-- el model de treball és per reptes i amb projecte base compartit
+- el model de treball és per reptes i amb projecte base comú
 - l'alumnat ja té base prèvia de treball amb GitHub; per tant, Git/GitHub es tracta com a repàs metodològic, traçabilitat i criteri professional, no com a iniciació des de zero
 - els dominis admesos continuen sent gestor d'incidències o tickets, sistema de reserves o cites i gestor intern de recursos o inventari
-- els itineraris `Laravel`, `Express/Nest` i `FastAPI` són variacions tecnològiques del mateix producte docent, no cursos paral·lels
+- `R2` es resol sobre una base comuna en `PHP`
+- el contrast de frameworks s'obri a partir de `R3`
+- `Laravel`, `Symfony` i `NestJS` són les vies base del tram de contrast
+- `FastAPI` només s'obri com a via avançada o excepcional
 - la IA es tracta com a eina guiada i verificable; si s'usa en parts nuclears, cal deixar evidència i validació humana explícites
 
 ## Estructura global en 2 avaluacions
@@ -38,10 +41,11 @@ Lectura operativa:
 - selecció clara dels dominis admesos i del criteri amb què l'alumnat en triarà un
 - materials comuns accessibles des del primer dia
 - materials dels Reptes `2`, `3`, `4` i `5` preparats per a activació progressiva
-- itineraris `Laravel`, `Express/Nest` i `FastAPI` disponibles com a suport de stack
+- base comuna en `PHP` preparada per a `R2`
+- materials de `Laravel`, `Symfony` i `NestJS` disponibles per a `R3-R5`
 - instruments mínims localitzats abans de començar: control inicial de repositori, rúbrica base de reptes, checklist de repte i defensa tècnica
 - criteri compartit sobre ús verificable de la IA, `AI log`, `README`, `ADR`, proves i evidències de procés
-- decisió docent sobre com es faran equips, seguiment i checkpoints dins de les dues primeres avaluacions
+- decisió docent sobre parelles de contrast tècnic, seguiment i checkpoints dins de les dues primeres avaluacions
 
 ## Seqüència mínima obligatòria
 
@@ -67,25 +71,25 @@ Resultat mínim exigible:
 
 Objectiu:
 
-- passar del marc comú a un producte amb domini, stack i esquelet tècnic defensable
+- passar del marc comú a un producte amb domini, base comuna en `PHP` i esquelet tècnic defensable
 
 Accions mínimes:
 
 - seleccionar domini i focus funcional inicial
-- triar itinerari tecnològic i justificar-lo
+- deixar la base tècnica inicial preparada per entrar a `R2`
 - deixar documentada una primera decisió tècnica
 
 Resultat mínim exigible:
 
 - entorn funcional
-- domini i stack definits
+- domini definit
 - primera decisió tècnica registrada
 
 ### Tram 3. Base funcional del producte
 
 Objectiu:
 
-- resoldre `R2` com a nucli funcional real
+- resoldre `R2` com a nucli funcional real sobre la base comuna en `PHP`
 
 Accions mínimes:
 
@@ -103,7 +107,7 @@ Resultat mínim exigible:
 
 Objectiu:
 
-- obrir i tancar `R3` com a base de mantenibilitat i persistència del producte
+- obrir i tancar `R3` com a base de mantenibilitat i persistència del producte, ja amb contrast de frameworks
 
 Accions mínimes:
 
@@ -158,9 +162,9 @@ Resultat mínim exigible:
 | Moment | Materials prioritaris |
 |---|---|
 | **Inici de curs** | materials comuns, enunciat base del projecte, projecte base, sistema d'evidències |
-| **Kickoff tècnic** | criteris metodològics, model d'itineraris, suport inicial de `Laravel`, `Express/Nest` o `FastAPI` |
-| **Repte 2** | [materials del Repte 2](../04_materials/repte_02/), materials comuns, guia inicial de l'itinerari triat |
-| **Repte 3** | [materials del Repte 3](../04_materials/repte_03/), materials comuns, suport directe d'itinerari per auth, capes i persistència |
+| **Kickoff tècnic** | criteris metodològics, model d'itineraris, base comuna de curs |
+| **Repte 2** | [materials del Repte 2](../04_materials/repte_02/), materials comuns, base comuna en `PHP` |
+| **Repte 3** | [materials del Repte 3](../04_materials/repte_03/), materials comuns, suport directe de `Laravel`, `Symfony` o `NestJS` |
 | **Repte 4** | [materials del Repte 4](../04_materials/repte_04/), materials comuns, reutilització de l'itinerari en context d'`API` |
 | **Repte 5** | [materials del Repte 5](../04_materials/repte_05/), materials comuns, suport final d'itinerari per integració i tancament |
 
@@ -188,7 +192,7 @@ Resultat mínim exigible:
 ## Punts de decisió docent
 
 - si el repositori no mostra traçabilitat mínima en el tram inicial, no s'hauria de donar per estabilitzat el marc comú
-- si el kickoff tècnic no deixa domini, stack i entorn funcional, convé retallar superfície del projecte abans d'obrir `R2`
+- si el kickoff tècnic no deixa domini, base comuna en `PHP` i entorn funcional, convé retallar superfície del projecte abans d'obrir `R2`
 - si `R2` no és reproduïble, no s'hauria d'obrir `R3`
 - si `R3` no deixa persistència coherent i capes o equivalent explicables, no s'hauria d'obrir `R4`
 - si `R4` no està provat ni documentat, no s'hauria d'avançar cap a `R5`

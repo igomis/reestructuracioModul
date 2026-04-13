@@ -1,8 +1,8 @@
-# Guia d'auth i persistència en Express/Nest
+# Guia d'auth i persistència en NestJS
 
 ## Finalitat
 
-Traduir els mínims dels Reptes 2 i 3 a l'itinerari `Node.js`, de manera que autenticació, control d'accés, persistència i validació queden resolts amb una estructura defensable tant si l'equip treballa amb `Express` com si treballa amb `Nest`.
+Traduir els mínims dels Reptes 3 i 4 a l'itinerari `NestJS`, de manera que autenticació, control d'accés, persistència i validació queden resolts amb una estructura defensable.
 
 Esta guia no pretén imposar una llibreria concreta, sinó fixar el mínim operatiu perquè el projecte del curs siga coherent amb el domini triat, el projecte base i l'entorn professional realista del repositori.
 
@@ -50,18 +50,10 @@ S'hauria de validar, com a mínim:
 
 Formes vàlides de resoldre-ho:
 
-- middleware o validació desacoblada en `Express` quan mantinga claredat
 - `DTO` i `ValidationPipe` en `Nest` quan l'equip puga defensar el flux
 - validació complementària en servei o cas d'ús quan depenga d'estat persistent
 
-### Criteri propi de l'itinerari Express/Nest
-
-En `Express` és habitual trobar:
-
-- rutes o routers que deleguen a controladors
-- middleware per autenticació i control d'accés
-- serveis i repositoris definits de manera més manual
-- validació explícita amb paquets o capes pròpies
+### Criteri propi de l'itinerari NestJS
 
 En `Nest` és habitual trobar:
 
@@ -73,15 +65,14 @@ En `Nest` és habitual trobar:
 
 Criteri comú:
 
-- `Express` exigix més disciplina manual
-- `Nest` exigix entendre més infraestructura del framework
-- en els dos casos, la persistència i l'autenticació només són vàlides si el flux queda clar, provable i alineat amb el domini
+- `Nest` exigix entendre infraestructura del framework
+- la persistència i l'autenticació només són vàlides si el flux queda clar, provable i alineat amb el domini
 
 ### Evidències mínimes
 
 S'espera trobar evidències com:
 
-- flux funcional de registre o autenticació dins de la via `Express` o `Nest`
+- flux funcional de registre o autenticació dins de `NestJS`
 - almenys una operació del domini protegida per control d'accés
 - model mínim recognoscible i alineat amb el projecte base
 - persistència funcional amb lectura, creació o actualització sobre el domini
@@ -91,7 +82,6 @@ S'espera trobar evidències com:
 
 ## Riscos habituals
 
-- deixar en `Express` tota la lògica barrejada entre ruta, middleware i controlador
 - confiar en `Nest` com si la presència de `guard` o `dto` garantira per si sola una bona arquitectura
 - confondre autenticació amb autorització
 - modelar dades sense relació clara amb el domini del projecte base
@@ -101,7 +91,7 @@ S'espera trobar evidències com:
 ## Checklist final
 
 - l'autenticació és funcional i el control d'accés està aplicat amb criteri
-- el domini disposa d'un model mínim coherent en la via `Express` o `Nest`
+- el domini disposa d'un model mínim coherent en la via `NestJS`
 - la persistència o evolució d'esquema és recognoscible i usable en els fluxos prioritaris
 - hi ha validacions mínimes alineades amb el comportament real del projecte
-- la base resultant és prou estable per adaptar-se als Reptes 2 i 3 i preparar el salt cap a API
+- la base resultant és prou estable per adaptar-se als Reptes 3 i 4 i preparar el salt cap a API

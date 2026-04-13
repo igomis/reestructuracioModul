@@ -32,11 +32,14 @@ L'equivalència docent no exigeix la mateixa estructura exacta, però sí una se
 - **Laravel**
   Patró habitual: `Controller` -> `Service` o cas d'ús -> `Model`/persistència. Quan calga, es pot afegir `Form Request`, repositori o capa de consulta.
 
-- **Express o Nest**
-  Patró habitual: ruta/controlador -> servei -> repositori o capa de dades -> model/esquema. En Nest, esta separació sol aparéixer de forma més explícita amb `controller`, `service`, `module` i `dto`.
+- **Symfony**
+  Patró habitual: `Controller` -> servei o cas d'ús -> repositori -> entitat o model de domini. La separació entre formulari, validació, servei i persistència ha de quedar recognoscible.
+
+- **NestJS**
+  Patró habitual: `controller` -> `service` -> repositori o capa de dades -> `entity` o `dto`. Esta separació sol aparéixer de forma explícita amb `controller`, `service`, `module`, `guard` i `dto`.
 
 - **FastAPI**
-  Patró habitual: `router` -> servei -> repositori o accés a dades -> `schema`/model. La validació d'entrada pot descansar en esquemes, però la lògica de negoci no hauria de quedar absorbida només al `router`.
+  Patró habitual: `router` -> servei -> repositori o accés a dades -> `schema`/model. La validació d'entrada pot descansar en esquemes, però la lògica de negoci no hauria de quedar absorbida només al `router`. En este repositori, només s'ha de llegir com a via avançada o excepcional.
 
 El criteri comú és este:
 

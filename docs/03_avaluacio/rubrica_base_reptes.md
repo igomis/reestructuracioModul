@@ -21,7 +21,7 @@ Per això, en este mòdul:
 
 - esta rúbrica és el marc comú per als reptes `1-5`
 - totes les dimensions s'han d'avaluar amb evidències observables del producte, del repositori i de la defensa
-- l'avaluació és individual, encara que puguen existir moments de treball compartit o un context de producte parcialment comú
+- l'avaluació és individual, encara que puguen existir parelles de contrast tècnic, checkpoints comuns o un mateix projecte funcional de referència
 - el pes pot ajustar-se lleugerament segons el repte, però la lògica general s'ha de mantindre
 - una bona presentació no pot compensar l'absència de funcionalitat, proves o traçabilitat
 - un codi formalment correcte no pot compensar manca de verificació, manca de comprensió o ús opac de la IA
@@ -52,7 +52,7 @@ Per això, en este mòdul:
 No es pot considerar que un repte arriba a nivell `Adequat` si es queda en alguna d'estes formes de resolució superficial:
 
 - **Repte 1:** elecció d'stack, esquelet buit o `hello world` sense primera peça funcional real
-- **Repte 2:** login o registre sense una funcionalitat de negoci autenticada
+- **Repte 2:** login o registre sense una funcionalitat de negoci autenticada i sense base comuna de dades i lògica
 - **Repte 3:** canvi cosmètic d'estructura o persistència aparent sense cas d'ús verificat
 - **Repte 4:** rutes soltes o documentació ornamental sense contracte API realment consumit
 - **Repte 5:** workflow o integració visual sense valor funcional ni prova de punta a punta
@@ -100,8 +100,8 @@ La IA és una eina admesa i habitual, però no és un criteri positiu per si sol
 ## Criteris d'adaptació a cada repte
 
 - **Repte 1:** augmentar lleugerament pes de traçabilitat, comprensió i documentació; el codi no ha de dominar l'avaluació.
-- **Repte 2:** reforçar resolució funcional i verificació tècnica de fluxos autenticats de negoci, validacions i errors.
-- **Repte 3:** reforçar verificació, defensa i qualitat tècnica bàsica del pas a arquitectura i persistència sobre un cas d'ús real, sense convertir el codi en criteri principal.
+- **Repte 2:** reforçar resolució funcional i verificació tècnica de fluxos autenticats de negoci, validacions i errors sobre la base comuna en `PHP`.
+- **Repte 3:** reforçar verificació, defensa i qualitat tècnica bàsica del pas a arquitectura i persistència sobre un cas d'ús real, ja amb entrada de framework, sense convertir el codi en criteri principal.
 - **Repte 4:** reforçar funcionalitat, proves i documentació d'`API` sobre casos d'ús publicables del producte.
 - **Repte 5:** reforçar defensa tècnica, ús verificable de la IA, traçabilitat i prova de punta a punta sobre una integració amb valor real.
 

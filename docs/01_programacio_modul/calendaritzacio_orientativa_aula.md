@@ -18,7 +18,8 @@ La hipòtesi de treball usada en esta planificació és un curs d'unes `20` setm
 - cada fase s'ha d'entendre com a tram de producte i d'evidència, no només com a bloc temàtic
 - els materials comuns s'activen des del començament i continuen vigents durant tot el curs
 - els materials per repte s'incorporen quan el producte necessita eixa capa tècnica, no abans
-- els itineraris tecnològics s'introduïxen de manera guiada i comparables, especialment a partir de les fases de base funcional i arquitectura
+- `R2` es resol sobre una base comuna en `PHP`
+- els itineraris tecnològics s'introduïxen de manera guiada a partir de `R3`
 - el pas d'una fase a la següent ha de dependre d'evidències mínimes verificables, no només del calendari
 
 ## Taula global de fases
@@ -27,8 +28,8 @@ La hipòtesi de treball usada en esta planificació és un curs d'unes `20` setm
 |---|---|---|---|---|---|---|
 | **Fase 0. Arrancada i marc comú** | `1-2` | marc de treball, projecte base i criteris comuns | materials comuns de mòdul, sistema d'evidències, enunciat base del projecte | repositori creat, primer `README`, organització mínima, traça inicial | `checklist_revisio_repo.md` | comprovar que el grup usa Git/GitHub com a repàs metodològic i traçabilitat professional, no com a iniciació bàsica |
 | **Fase 1. Kickoff tècnic** | `3-4` | Repte 1 i definició operativa del producte | fitxa del Repte 1, materials comuns, projecte base, model d'itineraris com a marc | entorn funcional, ADR inicial, decisió de domini, primers commits útils | `rubrica_base_reptes.md` | evitar que el kickoff quede en infraestructura buida sense decisió tècnica ni producte recognoscible |
-| **Fase 2. Base funcional del producte** | `5-8` | Repte 2: usuaris, sessions, autenticació i validacions | materials del Repte 2, materials comuns, suport inicial dels itineraris | registre/login/logout, accés protegit, errors mínims, proves bàsiques, `README` actualitzat | `rubrica_base_reptes.md` | controlar que el flux funcional siga real i no només una demo puntual |
-| **Fase 3. Arquitectura i persistència** | `9-12` | Repte 3: capes, persistència i qualitat tècnica | materials del Repte 3, materials comuns, itineraris `Laravel`, `Express/Nest`, `FastAPI` com a suport principal | model de dades, persistència funcional, refactorització per capes o equivalent, regressió mínima | `rubrica_base_reptes.md` | no passar a API sense base persistent i mantenible suficient |
+| **Fase 2. Base funcional del producte** | `5-8` | Repte 2: usuaris, sessions, autenticació i validacions | materials del Repte 2, materials comuns, base comuna en `PHP` | registre/login/logout, accés protegit, errors mínims, proves bàsiques, `README` actualitzat | `rubrica_base_reptes.md` | controlar que el flux funcional siga real i no només una demo puntual |
+| **Fase 3. Arquitectura i persistència** | `9-12` | Repte 3: capes, persistència i qualitat tècnica | materials del Repte 3, materials comuns, itineraris `Laravel`, `Symfony` i `NestJS` com a suport principal | model de dades, persistència funcional, refactorització per capes o equivalent, regressió mínima | `rubrica_base_reptes.md` | no passar a API sense base persistent i mantenible suficient |
 | **Fase 4. Publicació i consum d'API** | `13-16` | Repte 4: contracte API, documentació i consum | materials del Repte 4, materials comuns, itineraris reutilitzats en context d'API | endpoints clau, documentació d'API, col·lecció de proves, consum verificat | `rubrica_base_reptes.md` | assegurar coherència entre contracte, proves, errors i documentació real |
 | **Fase 5. Integració híbrida i tancament** | `17-20` | Repte 5: integració externa, automatització i defensa final | materials del Repte 5, materials comuns, reutilització final dels itineraris | flux híbrid complet, prova de punta a punta, documentació final, defensa tècnica | `rubrica_defensa_tecnica.md` | evitar tancaments ornamentals sense valor funcional ni capacitat real de defensa |
 
@@ -72,7 +73,7 @@ Focus:
 
 - activar el flux funcional mínim del producte: usuaris, sessions i control d'accés
 - introduir validacions, errors mínims i proves bàsiques
-- començar a usar l'itinerari triat com a suport de stack sense trencar el nucli comú
+- consolidar la base comuna en `PHP` sense obrir encara el contrast de frameworks
 
 Resultat esperat del bloc:
 
@@ -87,7 +88,7 @@ Focus:
 
 - refactoritzar el backend a capes o equivalent
 - consolidar model de dades, persistència i validacions lligades al domini
-- activar els itineraris com a patró directe de stack per a R3
+- activar `Laravel`, `Symfony` i `NestJS` com a patró directe de stack per a `R3`
 
 Resultat esperat del bloc:
 
@@ -130,8 +131,8 @@ Resultat esperat del bloc:
 |---|---|
 | **Des de la setmana 1** | materials comuns: Git, `README/ADR`, testing/debugging, ús verificable de la IA |
 | **Setmanes 1-4** | projecte base del curs, enunciat base, sistema d'evidències, fitxa del Repte 1 |
-| **Setmanes 5-8** | materials del Repte 2 i entrada controlada dels itineraris per bootstrap i auth |
-| **Setmanes 9-12** | materials del Repte 3 i activació principal dels itineraris `Laravel`, `Express/Nest` i `FastAPI` |
+| **Setmanes 5-8** | materials del Repte 2 i base comuna en `PHP` |
+| **Setmanes 9-12** | materials del Repte 3 i activació principal dels itineraris `Laravel`, `Symfony` i `NestJS` |
 | **Setmanes 13-16** | materials del Repte 4, reutilització dels itineraris per contracte API, proves i documentació |
 | **Setmanes 17-20** | materials del Repte 5, reutilització final dels itineraris per integració i tancament |
 
@@ -139,7 +140,7 @@ Lectura operativa:
 
 - els materials comuns no desapareixen després de Fase 0; es reusen en totes les fases
 - els materials per repte s'activen segons necessitat de producte
-- els itineraris entren de manera visible en Fase 2, però tenen pes principal a partir de Fase 3
+- els itineraris entren de manera visible en Fase 3
 
 ## Evidències clau per moment
 

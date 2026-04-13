@@ -39,3 +39,5 @@ Ací trobaràs materials pensats per a:
 - els materials compartibles no substituïxen el producte del curs: l'acompanyen
 - cada peça ha d'ajudar a deixar evidència real, no només a “seguir una fitxa”
 - el valor està en la reutilització: poc text, criteri clar i ús immediat
+- `R2` manté una base comuna en `PHP`
+- la cooperació no substituïx l'autoria individual

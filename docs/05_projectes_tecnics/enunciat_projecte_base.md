@@ -28,6 +28,12 @@ L'objectiu no és fer el producte més gran possible, sinó arribar a una base s
 
 Com a concretització operativa dels dominis admesos, este enunciat es desplega ara en [projectes_base_concretats.md](projectes_base_concretats.md), que fixa tres projectes base ja usables i més tancats per a treball docent, comparabilitat entre itineraris i defensa individual.
 
+La seqüència metodològica associada és:
+
+- `R2` sobre base comuna en `PHP`
+- contrast de frameworks a partir de `R3`
+- mateix projecte amb implementació individual i contrast tècnic compartit
+
 Criteri transversal d'exigència:
 
 - cap repte del projecte es pot donar per resolt amb una tècnica aïllada
@@ -79,11 +85,13 @@ Si el domini triat no permet arribar de manera creïble a estos objectius, no é
 
 L'enunciat és compatible amb els itineraris següents:
 
-- **PHP + Laravel**
-- **Node.js + Express o Nest**
-- **Python + FastAPI**
+- **Laravel**
+- **Symfony**
+- **NestJS**
 
 La compatibilitat s'avalua per objectius, evidències i qualitat de la solució, no per identitat d'implementació interna. Cada itinerari pot resoldre l'encàrrec amb patrons i eines pròpies, sempre que mantinga un nivell equivalent de verificació i mantenibilitat.
+
+`FastAPI` només s'hauria d'obrir com a opció avançada o excepcional.
 
 ## Relació amb els reptes del curs
 
@@ -92,8 +100,8 @@ El projecte base és la peça transversal que dona continuïtat al treball per r
 | Repte | Aportació al projecte base |
 |---|---|
 | Repte 1. Kickoff funcional | prepara el repositori, l'entorn de treball, la primera estructura i una primera peça funcional real del producte |
-| Repte 2. Sessions, autenticació i primera funcionalitat de negoci | incorpora identitat, control d'accés i una primera funcionalitat de negoci autenticada |
-| Repte 3. Migració a MVC i persistència segura | consolida arquitectura mantenible, persistència i qualitat tècnica sobre eixa funcionalitat real |
+| Repte 2. Sessions, autenticació i primera funcionalitat de negoci | incorpora identitat, control d'accés i una primera funcionalitat de negoci autenticada sobre base comuna en `PHP` |
+| Repte 3. Migració a MVC i persistència segura | consolida arquitectura mantenible, persistència i qualitat tècnica sobre eixa funcionalitat real, ja amb entrada de framework |
 | Repte 4. Publicació i consum d'API | exposa casos d'ús principals del producte mitjançant una API documentada i consumible |
 | Repte 5. Integració híbrida, automatització i manteniment | connecta el producte amb serveis externs o automatitzacions i demostra manteniment real sobre un flux complet |
 
@@ -165,7 +173,7 @@ Este document es considera completat quan:
 - fixa de manera inequívoca els dominis admesos
 - concreta objectius tècnics mínims compatibles amb el projecte backend base del curs
 - deixa clar el criteri transversal de no trivialitat funcional dels reptes
-- manté compatibilitat amb Laravel, Express o Nest i FastAPI
+- manté compatibilitat amb `Laravel`, `Symfony` i `NestJS`
 - connecta el projecte amb el treball per reptes i amb les evidències autèntiques del repositori
 - establix lliurables obligatoris, paper de la IA i criteris de validació
 - deixa oberta una extensió futura vinculada a tokenització sense convertir-la en obligatòria

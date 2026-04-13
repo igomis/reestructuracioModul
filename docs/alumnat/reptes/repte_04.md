@@ -4,6 +4,8 @@
 
 És el pas de backend usable per a l'equip a backend publicable i consumible per tercers. Has de convertir casos d'ús reals del producte en una API clara, provada i documentada.
 
+El treball continua sobre el mateix projecte i sobre el mateix encàrrec funcional. El que canvia és la manera de professionalitzar-lo segons el framework triat.
+
 ## Què no és suficient
 
 - obrir rutes soltes

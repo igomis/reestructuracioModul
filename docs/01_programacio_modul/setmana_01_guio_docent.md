@@ -2,13 +2,13 @@
 
 ## Finalitat de la setmana
 
-Esta setmana ha de situar el curs, fer comprensible què significa programar en entorn servidor i deixar el producte realment arrancat. No es tracta només de triar stack i instal·lar dependències, però tampoc d'exigir ja el tractament complet d'un flux funcional de formulari en servidor.
+Esta setmana ha de situar el curs, fer comprensible què significa programar en entorn servidor i deixar el producte realment arrancat. No es tracta només de preparar la base comuna en `PHP` i instal·lar dependències, però tampoc d'exigir ja el tractament complet d'un flux funcional de formulari en servidor.
 
 El tancament correcte de la setmana 1 és este:
 
 - el curs queda explicat en clau de treball per reptes i producte únic
 - l'alumnat entén la lògica bàsica client/servidor i petició/resposta
-- el projecte base i l'itinerari tecnològic queden triats i justificats
+- el projecte base queda triat i la base comuna en `PHP` queda assumida com a punt de partida
 - el projecte arranca localment amb estructura recognoscible
 - existix una pantalla inicial funcional, visible i coherent amb el producte
 - la traçabilitat inicial i l'ús acceptable de la IA queden activats en clau individual
@@ -22,12 +22,12 @@ La recepció completa de la dada, la validació en servidor, el cas incorrecte i
 ## Què ha d'explicar el professorat
 
 - què és el curs i com es treballa per reptes: un únic producte backend que creix de `R1` a `R5`, no una col·lecció de pràctiques aïllades
-- que l'avaluació és individual encara que puguen existir moments de treball coordinat o contextos puntuals de producte compartit
+- que l'avaluació és individual encara que puguen existir parelles de contrast tècnic o moments puntuals de coordinació
 - què és programar en entorn servidor: codi que viu al backend, rep peticions, aplica lògica i retorna una resposta útil
 - diferència client/servidor: què passa al navegador o client i què passa al servidor
 - lògica de petició/resposta: ruta, entrada, processament bàsic i resposta visible
 - arquitectura mínima o estructura inicial d'un backend: punt d'entrada, configuració, rutes, controladors o handlers, vista o resposta, serveis o capes mínimes i espai per a persistència posterior
-- què necessita un projecte per arrancar bé: repositori usable, projecte base recognoscible, itinerari triat, entorn preparat, instruccions d'arrancada, estructura mínima i primer rastre de decisions
+- què necessita un projecte per arrancar bé: repositori usable, projecte base recognoscible, base comuna en `PHP`, entorn preparat, instruccions d'arrancada, estructura mínima i primer rastre de decisions
 - què és un mínim funcional no trivial en setmana 1: una peça real del producte servida pel backend i explicable, no un esquelet buit
 - què compta com a evidència: `README`, justificacions curtes, commits o rastre equivalent, prova d'arrancada i peça visible del producte
 - què és traçabilitat individual: cada alumne ha de poder mostrar què ha decidit, què ha fet i què ha verificat
@@ -41,14 +41,14 @@ La recepció completa de la dada, la validació en servidor, el cas incorrecte i
 - programar en entorn servidor no és només fer una pantalla: és fer que el backend servisca una resposta útil
 - client i servidor tenen rols diferents i han de poder explicar-se amb un exemple del propi projecte
 - tota funcionalitat visible ha d'estar connectada amb un cas d'ús real del domini
-- projecte base i itinerari tecnològic no són una decisió ornamental: condicionen l'estructura i el tipus d'arrancada
+- projecte base i base comuna en `PHP` no són una capa ornamental: condicionen l'estructura i el tipus d'arrancada abans del pas a frameworks
 - un `README` inicial i la traçabilitat individual formen part de la feina, no són un afegit final
 - la IA només és acceptable si el seu ús queda guiat, verificable i defensable
 
 ## Què modela el professorat en directe
 
 - lectura curta del briefing del curs i del criteri de no trivialitat del producte
-- tria d'un projecte base i d'un itinerari tecnològic amb justificació breu i explícita
+- tria d'un projecte base i lectura explícita de la base comuna en `PHP` com a punt d'arrancada
 - preparació d'entorn i arrencada local del projecte de referència
 - recorregut comentat per l'estructura mínima del backend perquè es veja on entren rutes, controladors o handlers, configuració i resposta
 - creació o adaptació de la ruta inicial del producte perquè el backend servisca una primera pantalla recognoscible
@@ -60,20 +60,20 @@ La recepció completa de la dada, la validació en servidor, el cas incorrecte i
 ## Què fa l'alumnat
 
 - tria el projecte base del curs sobre el qual treballarà
-- tria l'itinerari tecnològic amb què arrancarà el backend
+- assumix la base comuna en `PHP` amb què arrancarà el backend
 - deixa una justificació curta de les dos decisions
 - prepara l'entorn local i comprova que el projecte arranca
 - posa en marxa l'estructura mínima de treball del projecte
 - construeix una pantalla inicial funcional servida pel backend
 - integra en eixa pantalla, si és coherent amb el producte, un formulari o altre element d'entrada visible del domini
 - assumix que el tractament complet del formulari en servidor no és encara exigible en esta setmana
-- redacta un `README` inicial amb context, arrencada, decisió de projecte base, decisió d'itinerari i estat actual
+- redacta un `README` inicial amb context, arrencada, decisió de projecte base, base comuna assumida i estat actual
 - deixa la primera traçabilitat individual: decisió registrada, primer rastre de treball i ús verificable de la IA si l'ha emprada
 
 ## Evidència mínima de la setmana 1
 
 - projecte base triat i justificat
-- itinerari tecnològic triat i justificat
+- base comuna en `PHP` assumida i arrencada justificada
 - entorn preparat i projecte arrancant localment
 - estructura inicial del backend recognoscible
 - pantalla inicial funcional i servida pel projecte
@@ -88,7 +88,7 @@ Criteri important:
 
 ## Què no és suficient
 
-- només triar stack
+- només preparar la base tècnica i parar ahí
 - només instal·lar dependències
 - només crear repositori
 - una pantalla purament decorativa sense cap relació clara amb el producte
@@ -103,7 +103,7 @@ Criteri important:
 - no explicar bé la diferència client/servidor i deixar la pantalla inicial com a maqueta estàtica
 - voler tancar massa prompte el formulari complet en servidor i bloquejar l'arrancada
 - deixar el `README` per al final o tractar-lo com a tràmit
-- no deixar rastre individual perquè es pressuposa treball compartit
+- no deixar rastre individual perquè es pressuposa cooperació tècnica
 - usar IA per generar peces que després no es poden entendre ni verificar
 - dedicar temps a reexplicar Git/GitHub des de zero en lloc d'exigir-ne un ús operatiu
 
@@ -112,7 +112,7 @@ Criteri important:
 Al tancament de la setmana 1, cada alumne ha de poder mostrar i explicar:
 
 - quin projecte base ha triat i per què
-- quin itinerari tecnològic ha triat i per què
+- com ha arrancat la base comuna en `PHP` i per què és coherent amb el producte
 - què vol dir, en el seu cas, programar en entorn servidor
 - on es veu la diferència client/servidor en el seu projecte
 - com arranca el projecte i què retorna o renderitza la ruta inicial

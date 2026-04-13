@@ -41,6 +41,12 @@ Si ja tens el curs en marxa, entra directament en:
 - [Materials de sessió de `R1`](../04_materials/materials_aula/repte_01_materials_sessio.md)
 - [Materials de sessió de `R2`](../04_materials/materials_aula/repte_02_materials_sessio.md)
 
+Lectura curta del tram:
+
+- `R2` es treballa sobre base comuna en `PHP`
+- el contrast de frameworks s'obri després
+- la cooperació es formula amb autoria individual
+
 ### Durant `R3`, `R4` i `R5`
 
 - [Com conduir els reptes](com_conduir_els_reptes.md)
@@ -48,6 +54,12 @@ Si ja tens el curs en marxa, entra directament en:
 - [Materials de sessió de `R4`](../04_materials/materials_aula/repte_04_materials_sessio.md)
 - [Materials de sessió de `R5`](../04_materials/materials_aula/repte_05_materials_sessio.md)
 - [Micro-presentacions docents](../07_presentacions/presentacio_00_visio_curs.md)
+
+Lectura curta del tram:
+
+- el mateix projecte continua amb `Laravel`, `Symfony` o `NestJS`
+- les parelles de contrast tècnic són la modalitat base
+- els trios avançats només s'obrin de manera puntual
 
 ### Per avaluar i fer seguiment
 

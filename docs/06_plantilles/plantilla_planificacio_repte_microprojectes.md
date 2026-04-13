@@ -399,7 +399,7 @@ La idea no és fragmentar el repte en activitats desconnectades, sinó fer traç
 [Què cal saber abans]
 
 **Possibles variants tecnològiques**
-[Laravel / Express / Nest / FastAPI / Django / Spring / ASP.NET / altres]
+[PHP comú a `R2` / Laravel / Symfony / NestJS / FastAPI avançat / altres justificades]
 
 **Part comuna del grup**
 [Què fa tot l’alumnat]

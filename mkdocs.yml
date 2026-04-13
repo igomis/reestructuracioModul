@@ -48,8 +48,9 @@ nav:
               - PHP: alumnat/consulta_tecnica/php_consulta_rapida.md
               - Sessions i auth en PHP: alumnat/consulta_tecnica/sessions_i_auth_php.md
               - Laravel: alumnat/consulta_tecnica/laravel_consulta_rapida.md
-              - Express/Nest: alumnat/consulta_tecnica/express_nest_consulta_rapida.md
-              - FastAPI: alumnat/consulta_tecnica/fastapi_consulta_rapida.md
+              - Symfony: alumnat/consulta_tecnica/symfony_consulta_rapida.md
+              - NestJS: alumnat/consulta_tecnica/express_nest_consulta_rapida.md
+              - FastAPI avançat: alumnat/consulta_tecnica/fastapi_consulta_rapida.md
               - n8n: alumnat/consulta_tecnica/n8n_consulta_rapida.md
       - Reptes:
           - Index: alumnat/reptes/index.md

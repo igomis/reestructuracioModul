@@ -2,9 +2,11 @@
 
 ## Finalitat
 
-Traduir els mínims dels Reptes 2 i 3 a l'itinerari `FastAPI`, de manera que autenticació, control d'accés, persistència, validació i separació entre models i esquemes queden resolts amb una estructura defensable dins de l'ecosistema Python.
+Traduir els mínims dels Reptes 3 i 4 a l'itinerari `FastAPI`, de manera que autenticació, control d'accés, persistència, validació i separació entre models i esquemes queden resolts amb una estructura defensable dins de l'ecosistema Python.
 
 Esta guia no imposa una llibreria única, però sí fixa el mínim operatiu perquè el projecte del curs siga coherent amb el domini triat, el projecte base i les evidències autèntiques del repositori.
+
+`FastAPI` només s'hauria d'usar ací com a via avançada o excepcional.
 
 ## Contingut operatiu
 
@@ -97,4 +99,4 @@ S'espera trobar evidències com:
 - la persistència o evolució d'esquema és recognoscible i usable en els fluxos prioritaris
 - hi ha validacions mínimes alineades amb el comportament real del projecte
 - la relació entre models, esquemes i operacions és clara i defensable
-- la base resultant és prou estable per adaptar-se als Reptes 2 i 3 i preparar el salt cap a API
+- la base resultant és prou estable per adaptar-se als Reptes 3 i 4 i preparar el salt cap a API

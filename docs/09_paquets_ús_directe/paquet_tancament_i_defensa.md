@@ -4,6 +4,12 @@
 
 Tancar el producte del curs amb una integració útil, proves clares, documentació final i preparació solvent de la defensa individual.
 
+La regla metodològica continua sent la mateixa:
+
+- cooperació possible
+- evidències individuals
+- defensa individual
+
 ## Materials que ha d'obrir el professorat
 
 - [Materials de sessió del Repte 5](../04_materials/materials_aula/repte_05_materials_sessio.md)

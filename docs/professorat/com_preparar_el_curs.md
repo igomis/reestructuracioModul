@@ -11,6 +11,8 @@ Esta guia resumix què ha d'estar decidit i llest abans d'iniciar el curs. No re
 - desenvolupament principal dins de dues avaluacions lectives
 - avaluació, seguiment i defensa amb criteri individual
 - IA admesa com a eina guiada i verificable, no com a substitut de criteri tècnic
+- `R2` fixat com a base comuna en `PHP`
+- entrada de frameworks a partir de `R3`
 
 ## Què s'ha de revisar abans de setembre
 
@@ -41,8 +43,10 @@ Esta guia resumix què ha d'estar decidit i llest abans d'iniciar el curs. No re
 
 ## Decisió docent mínima abans d'obrir el curs
 
-- quin itinerari funcionarà com a referència principal
-- quin criteri s'aplicarà per homologar `Laravel`, `Express/Nest` i `FastAPI`
+- quin criteri s'aplicarà per sostindre `R2` com a base comuna en `PHP`
+- quines parelles de contrast tècnic poden funcionar amb més sentit
+- quin itinerari o combinació d'itineraris es prepararà per a `R3-R5`
+- com es gestionarà `FastAPI` només com a opció avançada o excepcional
 - quins checkpoints són de pas real
 - quin mínim funcional s'exigirà per no avançar només per calendari
 - com es reconduirà alumnat endarrerit sense obrir recorreguts paral·lels

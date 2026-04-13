@@ -7,7 +7,7 @@ Obrir una peça curta i operativa per seguir l'execució real del pilotatge del 
 Regla d'ús:
 
 - actualitzar només quan hi haja observació real, incident real o decisió docent real
-- si hi ha context de producte compartit, el registre ha de continuar permetent lectura individual de verificació, defensa i seguiment
+- si hi ha un mateix projecte funcional o contrast tècnic compartit, el registre ha de continuar permetent lectura individual de verificació, defensa i seguiment
 - Git/GitHub es continua llegint com a traçabilitat i repàs metodològic, no com a iniciació des de zero
 - la IA només s'ha de registrar ací quan haja afectat verificació, bloquejos, defensa o criteri docent d'una manera rellevant
 

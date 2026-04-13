@@ -11,7 +11,7 @@ Oferir una entrada curta, clara i compartible al paquet docent del mòdul perqu�
 - treball per reptes
 - projecte base compartit
 - materials comuns i materials per repte
-- itineraris tecnològics homologables
+- base comuna en `PHP` a `R2` i contrast de frameworks des de `R3`
 - implantació en `2` avaluacions lectives
 - seguiment basat en evidències i checkpoints
 - ús de la IA com a eina guiada i verificable
@@ -26,7 +26,8 @@ Respon a un problema habitual: tindre materials, reptes i instruments dispersos 
 - seqüència de reptes del mòdul
 - materials comuns de metodologia, documentació, proves i IA
 - materials nuclears dels Reptes `2`, `3`, `4` i `5`
-- itineraris `Laravel`, `Express/Nest` i `FastAPI`
+- itineraris base `Laravel`, `Symfony` i `NestJS`
+- `FastAPI` com a via avançada o excepcional
 - documents d'implantació docent, calendarització, programació i seqüenciació
 - matriu d'evidències, instruments de seguiment i plantilles de checkpoint
 - paquet docent exportable i plantilla reutilitzable per a altres contextos
@@ -43,8 +44,8 @@ El model es calibra sobre unes `20` setmanes i `120` hores lectives aproximades.
 
 - assumir una seqüència docent per reptes i amb producte real
 - tindre visibles el projecte base, els reptes, els materials i els instruments de seguiment
-- decidir com es faran equips, checkpoints i revisió d'evidències
-- triar un únic itinerari o permetre diversos itineraris tecnològics amb la mateixa exigència
+- decidir com es faran parelles de contrast tècnic, checkpoints i revisió d'evidències
+- decidir si es treballarà amb un sol framework de referència o amb diverses vies de contrast des de `R3`
 - treballar Git/GitHub com a metodologia de treball i traçabilitat, no com a iniciació bàsica
 
 ## Què és transferible a altres mòduls

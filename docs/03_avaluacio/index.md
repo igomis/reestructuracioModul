@@ -4,6 +4,13 @@
 
 Este bloc concentra les peces que permeten llegir, verificar i defensar el treball de l'alumnat amb criteri individual: sistema d'evidencies, rubriques, instruments de seguiment, plantilles i documents de pilotatge vinculats a l'avaluacio.
 
+## Regla comuna d'acreditacio
+
+- el repositori es revisa per alumne
+- les evidencies es validen per alumne
+- la defensa es resol individualment
+- la cooperacio o el contrast tecnic compartit nomes compten com a context complementari
+
 ## Documents principals
 
 - [Sistema d'evidencies](sistema_evidencies.md): base del model d'acreditacio.

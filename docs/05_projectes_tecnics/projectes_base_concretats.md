@@ -4,7 +4,7 @@
 
 Baixar l'[enunciat base del projecte del curs](enunciat_projecte_base.md) a tres encàrrecs docents quasi tancats, usables i comparables, de manera que el projecte base deixe de ser només un domini general i passe a ser una proposta operativa ja defensable en aula.
 
-Este document no substituïx l'enunciat base. El concreta. La seua funció és fixar tres projectes compatibles amb `Laravel`, `Express/Nest` i `FastAPI`, sostenibles dins de la seqüència en `2` avaluacions i prou densos per generar evidències autèntiques i defensa individual.
+Este document no substituïx l'enunciat base. El concreta. La seua funció és fixar tres projectes compatibles amb `Laravel`, `Symfony` i `NestJS`, sostenibles dins de la seqüència en `2` avaluacions i prou densos per generar evidències autèntiques i defensa individual.
 
 La tokenització s'entén ací en sentit funcional útil per al backend: tokens d'operació, confirmació, cancel·lació, invitació o seguiment. No es planteja com a línia `web3` obligatòria ni com a ornament tècnic.
 
@@ -18,6 +18,12 @@ La tokenització s'entén ací en sentit funcional útil per al backend: tokens 
 - ha de ser comparable entre itineraris: canvia l'stack, no el nivell d'exigència ni el tipus d'evidència
 - ha de cabre en un recorregut docent realista d'unes `20` setmanes i unes `120` hores lectives dins de les dues primeres avaluacions
 - ha d'evitar lectures trivials del producte: no val un CRUD sense regles, sense fluxs o sense rastre verificable
+
+Seqüència metodològica associada:
+
+- `R2` és base comuna en `PHP`
+- `R3-R5` obrin el contrast de frameworks
+- la cooperació docent es formula com a contrast tècnic compartit amb implementació individual
 
 ## 1. Gestor d'inventari amb rols i token d'operació
 
@@ -250,7 +256,7 @@ Este document es considera completat quan:
 - concreta operativament els dominis admesos de l'enunciat base en tres projectes ja usables
 - definix criteris clars de selecció i d'assignació docent
 - descriu per a cada projecte context, actors, casos d'ús, mínim funcional, validacions, relació amb `R1-R5`, evidències i defensa
-- manté compatibilitat real amb `Laravel`, `Express/Nest` i `FastAPI`
+- manté compatibilitat real amb `Laravel`, `Symfony` i `NestJS`
 - manté el criteri de treball per reptes, entorn professional realista i acreditació individual
 - tracta la tokenització com a mecanisme funcional útil del backend i no com a exigència aliena al mòdul
 - deixa el paquet docent més tancat, més executable i més defensable que la llista prèvia de dominis generals

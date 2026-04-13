@@ -16,7 +16,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 ### Finalitat docent
 
-- obrir el projecte del curs amb un domini clar, un stack viable i una primera peça funcional real del producte
+- obrir el projecte del curs amb un domini clar, base comuna en `PHP` i una primera peça funcional real del producte
 
 ### Què no és suficient
 
@@ -26,14 +26,14 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 ### Quin és el mínim funcional no trivial
 
-- repositori inicial usable i decisió tecnològica justificada
+- repositori inicial usable i base comuna en `PHP` clarament assumida
 - landing page o equivalent funcional d'entrada al producte
 - formulari mínim per arreplegar una primera dada del domini
 - validació bàsica al servidor i primer registre o persistència mínima de la informació
 
 ### Què diferencia una resolució superficial d'una professional
 
-- superficial: stack triat, projecte arranca, però encara no hi ha producte recognoscible
+- superficial: infraestructura arrencada, però encara no hi ha producte recognoscible
 - professional: la base tècnica ja produïx una primera interacció funcional, verificable i documentada
 
 ### Què sap ja l'alumnat
@@ -51,18 +51,18 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 ### Què ha d'explicar el professorat
 
 - encàrrec del projecte base del curs
-- domini, stack i criteris mínims d'arrancada
+- domini, base tècnica inicial i criteris mínims d'arrancada
 - què comptarà com a evidència vàlida en este primer repte
 
 ### Què ha de modelar en directe
 
 - posada en marxa inicial del repositori amb estructura recognoscible
 - exemple curt de `README` inicial i d'una primera decisió tècnica registrada
-- arranque mínim d'un backend dins d'un dels itineraris autoritzats
+- arranque mínim d'un backend sobre la base comuna en `PHP`
 
 ### Què treballa l'alumnat amb autonomia
 
-- selecció de domini i stack
+- selecció de domini i resolució de la base inicial
 - arranque de l'entorn tècnic
 - primera decisió tècnica del producte
 - organització inicial del repositori
@@ -72,14 +72,14 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - fitxa del Repte 1
 - enunciat base del projecte
 - materials comuns del mòdul
-- itineraris tecnològics com a suport d'arrancada
+- base comuna del curs com a suport d'arrancada
 
 ### Evidències a arreplegar
 
 - repositori usable
 - primer `README`
 - entorn funcional
-- decisió de domini i stack
+- decisió de domini i base comuna assumida
 - primera traça tècnica del procés
 
 ### Errors habituals a anticipar
@@ -97,7 +97,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 ### Finalitat docent
 
-- construir la primera funcionalitat real del producte i demostrar que el backend ja resol un flux usable, autenticat i amb restriccions de negoci
+- construir la primera funcionalitat real del producte i demostrar que el backend ja resol un flux usable, autenticat i amb restriccions de negoci sobre una base comuna en `PHP`
 
 ### Què no és suficient
 
@@ -119,7 +119,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 ### Què sap ja l'alumnat
 
-- ja té domini, stack i repositori activat
+- ja té domini, repositori i base tècnica activats
 - sap posar en marxa l'entorn del projecte
 - ha iniciat criteris de documentació i traçabilitat
 
@@ -134,6 +134,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - què és el mínim funcional exigible en auth o estat equivalent
 - com es validen entrades i com es documenten errors
 - quines evidències tècniques s'esperen per considerar el repte resolt
+- que el contrast de frameworks encara no és el centre del repte
 
 ### Què ha de modelar en directe
 
@@ -152,7 +153,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 - materials del Repte 2
 - materials comuns
-- suport inicial de l'itinerari triat
+- base comuna en `PHP`
 
 ### Evidències a arreplegar
 
@@ -172,6 +173,11 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 ### Checkpoint docent
 
 - no s'obri `R3` fins que el flux funcional siga real, reproduïble i mínimament verificat
+
+### Regla metodològica del repte
+
+- `R2` manté una base comuna més controlada
+- el contrast de `Laravel`, `Symfony` i `NestJS` entra després
 
 ## Repte 3. Arquitectura i persistència
 
@@ -234,6 +240,14 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - materials comuns
 - itinerari triat com a suport directe de persistència i arquitectura
 
+En este punt, l'itinerari base del projecte pot ser:
+
+- `Laravel`
+- `Symfony`
+- `NestJS`
+
+`FastAPI` només s'hauria d'obrir si el centre l'està treballant com a via avançada o excepcional.
+
 ### Evidències a arreplegar
 
 - model de dades explicable
@@ -252,6 +266,13 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 ### Checkpoint docent
 
 - el grup només passa a `R4` si pot demostrar persistència real, arquitectura explicable i absència de dependència forta d'estat temporal
+
+## Organització docent del contrast
+
+- la modalitat base és la de parelles de contrast tècnic
+- es manté el mateix projecte i el mateix encàrrec funcional
+- el repositori, la traçabilitat i la defensa continuen sent individuals
+- els trios avançats només s'obrin amb prou autonomia i tres stacks diferents realment sostenibles
 
 ## Repte 4. Publicació i consum d'API
 

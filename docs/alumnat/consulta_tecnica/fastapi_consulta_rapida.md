@@ -2,14 +2,14 @@
 
 ## Què és
 
-És una guia curta per situar les peces clau de `FastAPI` dins del curs. La idea no és fer endpoints ràpids, sinó mantindre clara la separació entre contracte HTTP, validació, negoci i persistència.
+És una guia curta per situar les peces clau de `FastAPI` dins del curs. En este repositori, `FastAPI` no es presenta com a itinerari base general: queda com a via avançada o excepcional.
 
 ## Quan la necessites en el curs
 
-- en `R1`, per arrancar projecte i entendre l'estructura base
-- en `R2`, per auth, dependències i protecció d'operacions
+- només si el professorat t'ha autoritzat una via avançada
 - en `R3`, per no confondre `schemas`, `models` i serveis
 - en `R4`, per publicar `API` sobre una base clara i verificable
+- en `R5`, per mantindre el mateix projecte en integració
 
 ## Què has de saber sí o sí
 
@@ -26,6 +26,12 @@
 - tindre connexió a base de dades només aparent
 - muntar `FastAPI` com una col·lecció d'endpoints sense arquitectura
 - acceptar patrons d'IA sense provar si encaixen amb el projecte real
+
+## Línia metodològica
+
+- no és la via base general del curs
+- no s'usa per substituir la base comuna de `R2`
+- només té sentit si pots sostindre igualment autoria, traçabilitat i defensa individual
 
 ## On ampliar
 

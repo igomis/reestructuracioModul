@@ -4,6 +4,8 @@
 
 És el moment en què el producte deixa de ser només una base i passa a tindre una primera funcionalitat de negoci protegida per autenticació, sessió o estat equivalent.
 
+Este repte es resol sobre una **base comuna en `PHP`**. El contrast fort de frameworks encara no és l'objectiu del repte.
+
 ## Què no és suficient
 
 - fer només registre, login i logout
@@ -13,6 +15,8 @@
 
 ## Mínim funcional no trivial
 
+- tractament correcte de dades d'entrada al servidor
+- lògica bàsica recognoscible dins del flux
 - registre o alta d'usuari
 - login, logout i comprovació de sessió
 - almenys una funcionalitat real del domini protegida
@@ -37,7 +41,7 @@
 
 ## Connexió amb el següent pas
 
-En `R3` esta funcionalitat s'ha de mantindre viva, però refactoritzada a MVC o arquitectura equivalent i connectada a persistència segura.
+En `R3` esta funcionalitat s'ha de mantindre viva, però ja amb entrada de framework, arquitectura o equivalent i persistència segura. És ahí on comença el contrast de `Laravel`, `Symfony` o `NestJS`.
 
 ## Si vols el detall complet
 

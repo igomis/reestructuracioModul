@@ -26,7 +26,7 @@ La qualitat del codi continua important, però no tapa una solució trivial o no
 
 Per avaluar bé el treball, han d'existir com a mínim:
 
-- repositori amb historial recognoscible
+- repositori individual amb historial recognoscible
 - commits i, quan toque, issues o tasques
 - `README` i documentació operativa
 - proves, validacions o comprovacions tècniques
@@ -35,7 +35,17 @@ Per avaluar bé el treball, han d'existir com a mínim:
 
 ## Defensa individual
 
-Encara que hi haja moments de treball compartit o un context de producte semblant entre alumnes, l'avaluació és individual.
+Encara que hi haja cooperació tècnica, un mateix encàrrec funcional o un projecte semblant entre alumnes, l'avaluació és individual.
+
+La cooperació pot incloure:
+
+- anàlisi inicial compartida
+- comparació de tecnologies
+- revisió creuada
+- checkpoints comuns
+- contrast final de resultats
+
+Però això no substituïx ni el teu repositori ni la teua defensa.
 
 En la defensa s'espera que pugues:
 

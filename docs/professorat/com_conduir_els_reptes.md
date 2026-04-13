@@ -30,7 +30,7 @@ Només convé passar a `R2` si ja hi ha una acció real del producte sobre la qu
 
 ### Què resol
 
-Convertir auth o estat equivalent en infraestructura al servei d'una operació de negoci real.
+Convertir auth o estat equivalent en infraestructura al servei d'una operació de negoci real sobre una base comuna en `PHP`.
 
 ### Què modela el professorat
 
@@ -46,7 +46,7 @@ Convertir auth o estat equivalent en infraestructura al servei d'una operació d
 
 ### Pas a `R3`
 
-`R3` només té sentit si `R2` deixa un flux real que mereix ser refactoritzat i persistit.
+`R3` només té sentit si `R2` deixa un flux real que mereix ser refactoritzat i persistit. El contrast de frameworks comença ací, no abans.
 
 ## `R3`. Arquitectura i persistència del flux principal
 
@@ -120,3 +120,10 @@ Tancar el producte amb una integració o automatització que aporte valor real i
 - cada repte ha de deixar una evidència mínima reproduïble
 - el professorat modela fluxos curts i verificables, no solucions enormes
 - el punt crític no és la quantitat de codi, sinó si el producte es pot explicar, provar i defensar
+
+## Organització del contrast tècnic
+
+- la modalitat base és la de parelles de contrast tècnic
+- el mateix projecte i el mateix encàrrec funcional es mantenen
+- el repositori, les evidències i la defensa són individuals
+- els trios avançats només s'obrin quan hi ha prou autonomia i tres stacks diferents realment sostenibles
