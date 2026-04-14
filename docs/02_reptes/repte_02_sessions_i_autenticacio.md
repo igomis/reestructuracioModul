@@ -712,6 +712,67 @@ Checklist de verificació + defensa tècnica.
 - millor observabilitat del flux
 - preparació més detallada del Repte 3
 
+### 7.1 Forma mínima de prova del repte
+
+En `R2` no és suficient afirmar que el flux funciona. Cal deixar una prova visible i verificable del comportament real del sistema.
+
+La prova mínima hauria d’incloure, com a mínim:
+
+- enviament correcte del formulari o entrada equivalent
+- error de validació visible
+- correcció d’una entrada inicialment incorrecta
+- tractament correcte de la informació en servidor
+- conservació funcional o reutilització posterior de la informació correcta
+- cas autoritzat de la funcionalitat protegida
+- cas denegat de la funcionalitat protegida
+- tractament d’imatge o fitxer, si forma part del flux
+
+### 7.2 Presentació de proves
+
+Les proves es poden registrar de manera simple, però han de ser clares i reutilitzables en revisió docent.
+
+Formats recomanables:
+
+- checklist de verificació
+- taula curta de casos de prova
+- col·lecció de peticions o registre equivalent
+
+Si s’opta per una taula curta, convé incloure camps com:
+
+- cas de prova
+- entrada
+- resultat esperat
+- resultat obtingut
+- incidències detectades
+
+### 7.3 Documentació del codi i PHPDoc
+
+En este repte, la documentació del codi ha de ser útil i proporcionada.
+
+No es tracta d’omplir el projecte de text, sinó de fer visible:
+
+- què fa cada part important del flux
+- on es valida la informació
+- on es tracta l’autenticació o la comprovació d’accés
+- on es processa la imatge o el fitxer, si n’hi ha
+- com es conserva després la informació
+
+Es recomana l’ús selectiu de `PHPDoc` en funcions pròpies amb lògica rellevant, sobretot en validació, tractament de dades, tractament de fitxers, comprovació d’accés o funcions reutilitzables no evidents.
+
+Si s’utilitza, hauria d’aportar comprensió real del codi, per exemple amb:
+
+- descripció breu
+- `@param`
+- `@return`
+- `@throws`, quan realment aplique
+
+No es demana:
+
+- documentar cada variable
+- omplir de DocBlocks fitxers trivials
+- generar documentació automàtica completa
+- afegir documentació decorativa sense utilitat funcional
+
 ---
 
 ## 8. Instruments d’avaluació del repte
