@@ -49,7 +49,7 @@ El canvi metodològic del curs es concreta així:
 
 **Resultats d’aprenentatge principals**
 
-- **RA2**: desenvolupament de blocs bàsics de codi en entorn servidor, amb inclusió de codi, sintaxi, variables, operadors, directives i processament elemental
+- **RA2**: desenvolupament de blocs bàsics de codi en entorn servidor, amb mecanismes de generació de pàgines o respostes amb codi embegut, tecnologies associades, inclusió de codi, sintaxi, variables, operadors, directives i processament elemental
 - **RA3**: construcció de fluxos amb decisions, repeticions, arrays, funcions i interacció amb formularis
 - **RA4**: manteniment d’estat, autenticació d’usuaris, control d’accés i ús d’eines de prova i depuració
 
@@ -203,6 +203,7 @@ S’ha de veure amb claredat:
 - com es mostren els errors quan alguna dada no és vàlida
 - quin tractament inicial se’ls dona
 - quina resposta bàsica retorna el sistema
+- quins comentaris breus ajuden a entendre el flux quan el codi ho necessita
 
 **Relació amb el producte principal**
 
@@ -218,7 +219,7 @@ S’ha de veure amb claredat:
 
 - L’alumnat usa formularis o mecanismes equivalents per interactuar amb l’usuari.
 - L’alumnat recupera correctament les dades introduïdes.
-- L’alumnat documenta el codi amb un mínim de claredat.
+- L’alumnat documenta el codi amb comentaris útils i claredat mínima.
 
 **Paper de la IA**
 
@@ -274,6 +275,8 @@ Fer visible el treball elemental de programació en servidor que permet processa
 
 L’equip implementa tractament bàsic de la petició, incloent:
 
+- mecanisme bàsic de generació de pàgina o resposta amb codi embegut o equivalent sobre la base comuna en `PHP`
+- identificació de les tecnologies mínimes associades al flux: servidor, fitxer o plantilla, petició i resposta
 - inclusió de codi en el llenguatge de marques o equivalent
 - ús correcte de sintaxi
 - sentències simples
@@ -289,6 +292,8 @@ També ha de deixar clar com la informació correcta es conserva de manera funci
 
 **CA coberts**
 
+- **RA2.a**
+- **RA2.b**
 - **RA2.c**
 - **RA2.d**
 - **RA2.e**
@@ -298,6 +303,8 @@ També ha de deixar clar com la informació correcta es conserva de manera funci
 
 **Descripció dels CA en llenguatge docent**
 
+- L’alumnat entén el mecanisme bàsic de generació de pàgines o respostes amb codi embegut.
+- L’alumnat identifica les tecnologies associades mínimes del flux sobre la base comuna en `PHP`.
 - L’alumnat integra codi de servidor dins del context de l’aplicació.
 - L’alumnat usa sintaxi i sentències amb correcció.
 - L’alumnat treballa amb variables, operadors i directives de manera funcional.
@@ -309,6 +316,7 @@ La IA pot proposar fragments inicials, però l’alumnat ha de depurar-los, adap
 
 **Evidències obligatòries**
 
+- tram recognoscible de codi embegut o equivalent
 - codi executable de processament
 - evidència de variables i operadors en ús
 - comportament modificat per alguna directiva o configuració bàsica
@@ -334,6 +342,7 @@ Rúbrica breu de processament bàsic en servidor.
 
 **Verificació del treball real**
 
+- pregunta oral sobre com es genera la pàgina o resposta i quines peces tècniques hi intervenen
 - pregunta oral sobre variables i àmbits
 - canvi menut en viu sobre una operació o una directiva
 
@@ -443,6 +452,7 @@ S’ha de veure:
 - per a què es conserva
 - quan es recupera
 - quan deixa de ser vàlida o es neteja
+- si hi ha informació guardada en client, com es recupera
 - quina diferència hi ha entre estat de sessió i informació del projecte que després s’ha de reutilitzar
 
 **Relació amb el producte principal**
@@ -459,7 +469,7 @@ Sense estat no hi ha base sòlida per entendre després l’autenticació ni per
 
 - L’alumnat identifica els mecanismes disponibles per mantindre informació d’un client concret.
 - L’alumnat usa un mecanisme real d’estat.
-- L’alumnat sap guardar i recuperar informació del client quan toca.
+- L’alumnat sap guardar i recuperar informació del client quan toca, i distingir-la del que es manté al servidor.
 
 **Paper de la IA**
 
@@ -469,6 +479,7 @@ La IA pot ajudar a recordar sintaxi o patrons, però l’alumnat ha d’explicar
 
 - mecanisme d’estat implementat
 - demostració de recuperació de la informació
+- si hi ha cookies o emmagatzematge en client, demostració de lectura i recuperació
 - demostració de neteja o invalidació quan siga necessari
 - explicació clara de la frontera entre estat i conservació funcional
 - captura o demo del comportament
@@ -599,6 +610,7 @@ L’equip:
 - revisa casos positius i negatius
 - prova validacions i errors
 - comprova que la informació correcta es pot recuperar o reutilitzar
+- usa alguna eina o entorn simple de prova i depuració
 - documenta instruccions de prova
 - registra incidències detectades
 - actualitza la documentació tècnica
@@ -626,6 +638,7 @@ La IA pot ajudar a generar casos de prova o text documental, però l’alumnat h
 - registre de proves mínimes
 - casos positius i negatius
 - incidències detectades
+- rastre de l’eina o entorn utilitzat per provar o depurar
 - evidència breu de reutilització de dades
 - documentació tècnica actualitzada
 - llista de millores o refactoritzacions futures
@@ -664,7 +677,7 @@ Checklist de verificació + defensa tècnica.
 | Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
 |---|---|---|---|---|---|---|
 | MP1 | Procedimental | Formulari base i recuperació de dades | RA3.e, RA3.f, RA3.g | formulari, recuperació, demo, comentaris | checklist | 15% |
-| MP2 | Procedimental | Processament bàsic de la petició | RA2.c, RA2.d, RA2.e, RA2.f, RA2.g, RA2.h | codi executable, variables, directiva, demo | rúbrica breu | 15% |
+| MP2 | Procedimental | Processament bàsic de la petició | RA2.a, RA2.b, RA2.c, RA2.d, RA2.e, RA2.f, RA2.g, RA2.h | codi executable, codi embegut, variables, directiva, demo | rúbrica breu | 15% |
 | MP3 | Procedimental | Decisions, arrays i funcions aplicades | RA3.a, RA3.b, RA3.c, RA3.d | lògica observable, funcions, demo | rúbrica | 15% |
 | MP4 | Procedimental | Estat, sessió i/o cookies | RA4.a, RA4.b, RA4.c | demo d’estat, recuperació i invalidació | checklist | 15% |
 | MP5 | Procedimental | Autenticació i operació protegida | RA4.d, RA4.e | login, operació protegida, cas autoritzat i denegat | rúbrica | 25% |
