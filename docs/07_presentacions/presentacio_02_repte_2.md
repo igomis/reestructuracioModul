@@ -12,6 +12,8 @@ Micro-presentació docent breu. Equival aproximadament a `8` diapositives.
 
 - alta o login funcional
 - control de sessió o estat equivalent
+- validació visible i correcció del flux
+- conservació funcional simple de la dada bona
 - primera operació de negoci protegida
 - primera regla de rol, permís o restricció
 
@@ -28,11 +30,14 @@ Micro-presentació docent breu. Equival aproximadament a `8` diapositives.
 - un flux curt amb accés autoritzat i denegat
 - validació mínima del costat servidor
 - un error clar i visible
+- reutilització posterior de la informació correcta
 
 ## Diapositiva 5. Què construeix l'alumnat
 
 - mòdul funcional d'accés
+- una entrada de dades amb processament real
 - operació real del domini protegida
+- conservació funcional simple o controlada
 - una restricció de negoci o de rol
 - documentació i verificació del flux
 
@@ -53,5 +58,6 @@ Micro-presentació docent breu. Equival aproximadament a `8` diapositives.
 ## Diapositiva 8. Connexió amb `R3`
 
 - el flux que naix ací ha de continuar viu en `R3`
-- `R3` no és començar de zero, sinó professionalitzar esta funcionalitat
+- `R3` no és començar de zero, sinó professionalitzar esta funcionalitat i la seua persistència
+- en `R2` la persistència pot aparéixer com a suport funcional, però no és encara el focus principal
 - si `R2` és superficial, `R3` no tindrà un cas d'ús seriós per mantindre

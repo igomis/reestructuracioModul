@@ -15,8 +15,11 @@ Este repte es resol sobre una **base comuna en `PHP`** per a tot l’alumnat. El
 Una primera funcionalitat de domini protegida, construïda sobre una seqüència progressiva que inclou:
 
 - formulari funcional o entrada equivalent de dades
+- validació visible, errors interpretables i possibilitat de correcció
 - recuperació i tractament de dades en servidor
+- conservació funcional de la informació correcta perquè es puga reutilitzar
 - ús de decisions, estructures de dades i funcions
+- tractament bàsic d’imatge o fitxer quan tinga sentit dins del flux
 - gestió bàsica d’estat
 - mecanisme d’autenticació
 - operació de domini restringida
@@ -26,7 +29,7 @@ Una primera funcionalitat de domini protegida, construïda sobre una seqüència
 
 **Context professional simul·lat o realista**
 
-Després del kickoff inicial del projecte, l’equip necessita deixar arrere la simple posada en marxa del backend i començar a construir comportament real del sistema. Açò implica rebre dades, processar-les correctament, mantindre informació d’estat quan cal, gestionar usuaris i assegurar que una primera operació del domini només es pot executar en les condicions adequades.
+Després del kickoff inicial del projecte, l’equip necessita deixar arrere la simple posada en marxa del backend i començar a construir comportament real del sistema. Açò implica rebre dades, processar-les correctament, mostrar errors útils, conservar la informació que té valor funcional, mantindre informació d’estat quan cal, gestionar usuaris i assegurar que una primera operació del domini només es pot executar en les condicions adequades.
 
 Per això, en este punt del curs es manté una base més controlada i comuna. El contrast fort de `Laravel`, `Symfony` o `NestJS` s’obri després, quan el flux ja està consolidat.
 
@@ -52,7 +55,7 @@ El canvi metodològic del curs es concreta així:
 
 **Justificació curricular**
 
-Este repte no ha de començar directament per l’autenticació com si fora un bloc aïllat. Perquè siga curricularment sòlid, ha de recórrer abans els elements bàsics de processament de dades en servidor i de programació necessaris per a entendre què es rep, què es valida, què es guarda temporalment, què es protegix i per què.
+Este repte no ha de començar directament per l’autenticació com si fora un bloc aïllat. Perquè siga curricularment sòlid, ha de recórrer abans els elements bàsics de processament de dades en servidor i de programació necessaris per a entendre què es rep, què es valida, què es conserva de manera funcional, què es protegix i per què.
 
 ---
 
@@ -108,9 +111,12 @@ Construir una primera funcionalitat de negoci real que recórrega de manera cohe
 Mòdul funcional integrat en el projecte que incloga:
 
 - formulari o entrada de dades equivalent
+- visualització d’errors de validació i possibilitat de correcció
 - recuperació de dades en servidor
 - lògica bàsica amb decisions, arrays o funcions
-- estat o persistència temporal mínima quan siga necessari
+- conservació funcional simple de la informació correcta
+- estat o sessió quan siga necessari
+- tractament d’imatge o fitxer quan tinga sentit dins del cas d’ús
 - alta o identificació d’usuari
 - autenticació
 - una operació de domini protegida
@@ -131,13 +137,37 @@ Mòdul funcional integrat en el projecte que incloga:
 - seqüència de commits significativa
 - formulari funcional o equivalent
 - evidència de processament correcte i incorrecte
+- evidència de validació visible i correcció del flux
 - ús visible de lògica bàsica
+- evidència de conservació funcional o reutilització de la informació correcta
 - evidència d’estat, sessió o cookies
 - flux d’autenticació funcional
 - operació de domini protegida
 - proves mínimes
 - documentació tècnica
 - AI log quan hi haja ús d’IA
+
+### 4.2 Límit metodològic sobre persistència
+
+En este repte, la informació correcta del formulari o de l’entrada equivalent ha de poder continuar viva dins del projecte.
+
+Això pot significar:
+
+- recuperar un usuari o un element creat
+- tornar a mostrar un producte, una reserva o un recurs
+- llistar dades que ja formen part del flux funcional
+
+Ara bé, esta conservació no convertix encara `R2` en un repte centrat en accés a dades o arquitectura de persistència.
+
+El que importa ací és:
+
+- tractament de dades
+- lògica bàsica
+- estat o sessió
+- autenticació
+- funcionalitat protegida
+
+La conservació es pot resoldre amb mecanismes simples i controlats. La base de dades pot aparéixer si el projecte o el professorat ho demanen, però en este punt no és el focus principal del repte. Eixa professionalització metodològica i arquitectònica guanya pes en `R3`.
 
 ---
 
@@ -152,7 +182,7 @@ Mòdul funcional integrat en el projecte que incloga:
 > - El pas al Repte 3 només té sentit si el flux actual ja funciona de manera reproduïble i mínimament explicable.
 > - El contrast de frameworks encara no és el centre del repte.
 
-### Microprojecte MP1 — Formulari base i recuperació de dades
+### Microprojecte MP1 — Formulari base, validació visible i recuperació de dades
 
 **Tipus**
 
@@ -160,7 +190,7 @@ Microprojecte procedimental.
 
 **Objectiu**
 
-Construir un punt d’entrada de dades usable i demostrar que el sistema és capaç de recuperar la informació aportada per l’usuari.
+Construir un punt d’entrada de dades usable i demostrar que el sistema és capaç de recuperar la informació aportada per l’usuari, validar-la i mostrar errors interpretables.
 
 **Tasca**
 
@@ -170,6 +200,7 @@ S’ha de veure amb claredat:
 
 - quins camps es reben
 - com es recuperen
+- com es mostren els errors quan alguna dada no és vàlida
 - quin tractament inicial se’ls dona
 - quina resposta bàsica retorna el sistema
 
@@ -197,6 +228,7 @@ La IA pot suggerir l’estructura inicial del formulari o exemples de tractament
 
 - formulari funcional o entrada equivalent
 - recuperació correcta de dades
+- error de validació visible i possibilitat de reintent
 - captura o demo del cas correcte
 - codi comentat mínimament
 - commits associats
@@ -228,7 +260,7 @@ Checklist de formulari i recuperació de dades.
 
 ---
 
-### Microprojecte MP2 — Processament bàsic de la petició i lògica inicial del formulari
+### Microprojecte MP2 — Processament bàsic de la petició i conservació funcional simple
 
 **Tipus**
 
@@ -236,7 +268,7 @@ Microprojecte procedimental.
 
 **Objectiu**
 
-Fer visible el treball elemental de programació en servidor que permet processar les dades rebudes i modificar el comportament del sistema.
+Fer visible el treball elemental de programació en servidor que permet processar les dades rebudes, modificar el comportament del sistema i deixar la informació correcta en un estat reutilitzable.
 
 **Tasca**
 
@@ -253,6 +285,7 @@ L’equip implementa tractament bàsic de la petició, incloent:
 **Relació amb el producte principal**
 
 Este microprojecte dona la base de processament necessari perquè després el sistema puga prendre decisions, validar i actuar sobre l’estat de l’usuari.
+També ha de deixar clar com la informació correcta es conserva de manera funcional sense convertir encara el repte en un exercici centrat en accés a dades.
 
 **CA coberts**
 
@@ -280,6 +313,7 @@ La IA pot proposar fragments inicials, però l’alumnat ha de depurar-los, adap
 - evidència de variables i operadors en ús
 - comportament modificat per alguna directiva o configuració bàsica
 - demo de processament correcte
+- demo d’una conservació funcional simple o reutilització posterior
 - commits i issue relacionades
 
 **Instrument d’avaluació**
@@ -393,7 +427,7 @@ Microprojecte procedimental.
 
 **Objectiu**
 
-Fer visible que el sistema pot conservar informació rellevant entre interaccions i diferenciar el comportament segons l’estat de l’usuari o del client.
+Fer visible que el sistema pot conservar informació rellevant entre interaccions i diferenciar el comportament segons l’estat de l’usuari o del client, sense confondre això amb la conservació funcional de dades del domini.
 
 **Tasca**
 
@@ -409,6 +443,7 @@ S’ha de veure:
 - per a què es conserva
 - quan es recupera
 - quan deixa de ser vàlida o es neteja
+- quina diferència hi ha entre estat de sessió i informació del projecte que després s’ha de reutilitzar
 
 **Relació amb el producte principal**
 
@@ -435,6 +470,7 @@ La IA pot ajudar a recordar sintaxi o patrons, però l’alumnat ha d’explicar
 - mecanisme d’estat implementat
 - demostració de recuperació de la informació
 - demostració de neteja o invalidació quan siga necessari
+- explicació clara de la frontera entre estat i conservació funcional
 - captura o demo del comportament
 
 **Instrument d’avaluació**
@@ -484,7 +520,7 @@ L’equip implementa:
 - una operació real del domini protegida
 - una restricció observable de rol, permís o regla de negoci
 
-La funcionalitat protegida ha de tindre valor real dins del producte del curs.
+La funcionalitat protegida ha de tindre valor real dins del producte del curs i treballar amb informació que després continue sent útil dins del mateix projecte.
 
 **Relació amb el producte principal**
 
@@ -511,6 +547,7 @@ La IA pot suggerir esquelets o fluxos d’accés, però l’alumnat ha de valida
 - login funcional
 - comprovació d’usuari autenticat
 - operació protegida
+- dada o conjunt de dades reutilitzables dins del flux protegit
 - cas autoritzat
 - cas denegat
 - evidència de la restricció aplicada
@@ -561,6 +598,7 @@ L’equip:
 
 - revisa casos positius i negatius
 - prova validacions i errors
+- comprova que la informació correcta es pot recuperar o reutilitzar
 - documenta instruccions de prova
 - registra incidències detectades
 - actualitza la documentació tècnica
@@ -588,6 +626,7 @@ La IA pot ajudar a generar casos de prova o text documental, però l’alumnat h
 - registre de proves mínimes
 - casos positius i negatius
 - incidències detectades
+- evidència breu de reutilització de dades
 - documentació tècnica actualitzada
 - llista de millores o refactoritzacions futures
 - defensa tècnica breu

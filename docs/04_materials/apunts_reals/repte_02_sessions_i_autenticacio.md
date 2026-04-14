@@ -2,7 +2,7 @@
 
 ## Finalitat del document
 
-Convertir el Repte 2 en un apunt de treball real, curt i executable, pensat perquè professorat i alumnat tinguen clara la seqüència mínima per construir la primera funcionalitat sòlida del producte: registre, autenticació, estat equivalent, validacions bàsiques, errors previsibles i evidències verificables.
+Convertir el Repte 2 en un apunt de treball real, curt i executable, pensat perquè professorat i alumnat tinguen clara la seqüència mínima per construir la primera funcionalitat sòlida del producte: entrada de dades, registre o identificació, autenticació, estat equivalent, validacions bàsiques, errors previsibles, conservació funcional de la informació correcta i evidències verificables.
 
 Este repte no consistix a "fer un login". El que s'espera és obrir el primer flux funcional real del producte amb autenticació, control d'accés i una operació de negoci recognoscible que es puga provar i defensar.
 
@@ -17,13 +17,16 @@ Este repte no consistix a "fer un login". El que s'espera és obrir el primer fl
 
 - el repte no consistix a "fer un login", sinó a obrir el primer flux real del producte
 - el servidor ha de validar i respondre amb criteri mínim, encara que hi haja ajuda al client
+- la informació correcta ha de poder-se conservar per tornar a usar-se dins del projecte
 - un flux només compta si es pot reproduir i defensar
 - la IA és admissible com a suport, però s'ha de poder explicar què ha suggerit i què s'ha verificat després
 
 ## Què ha d'explicar el professorat
 
 - quin és el mínim funcional exigible: registre o alta, login, logout i una operació de negoci protegida
+- que la dada bona no es perda sense més i puga reaparéixer dins del flux
 - diferència entre autenticació, autorització i estat de sessió o equivalent
+- diferència entre estat temporal i persistència funcional de suport
 - què s'espera com a evidència: flux funcional, casos límit, proves bàsiques, `README` actualitzat i traçabilitat del procés
 - per què este repte es tancarà només si deixa una base refactoritzable per al Repte 3
 
@@ -31,6 +34,7 @@ Este repte no consistix a "fer un login". El que s'espera és obrir el primer fl
 
 - una alta d'usuari amb validació bàsica de camps obligatoris
 - un login amb resposta clara en cas correcte i incorrecte
+- un exemple simple de conservació funcional d'una dada del domini i la seua reutilització
 - una comprovació d'accés a una ruta o operació protegida amb valor real dins del domini
 - una restricció simple de rol, permís o condició de negoci quan tinga sentit
 - un exemple breu de prova o verificació manual reproduïble del flux
@@ -40,6 +44,7 @@ Este repte no consistix a "fer un login". El que s'espera és obrir el primer fl
 
 - decidir quin actor o usuari té sentit en el domini triat
 - implementar registre, login, logout o estat equivalent
+- conservar de manera simple la informació correcta del flux principal
 - protegir una operació real del producte i definir la seua regla mínima d'accés
 - validar dades d'entrada i gestionar errors mínims
 - deixar rastre de proves, correccions i actualització de documentació
@@ -55,19 +60,22 @@ Exemple orientatiu de recorregut mínim:
    - crear una incidència
    - reservar una cita
    - consultar un recurs intern protegit
-5. Bloquejar eixa operació si l'usuari no està autenticat.
-6. Després del logout, tornar a provar l'operació protegida i verificar que ja no és accessible.
+5. Conservar la informació correcta amb un mecanisme simple i tornar-la a mostrar, recuperar o llistar.
+6. Bloquejar eixa operació si l'usuari no està autenticat.
+7. Després del logout, tornar a provar l'operació protegida i verificar que ja no és accessible.
 
 Criteri docent:
 
 - l'exemple no s'ha de copiar literalment
 - servix per entendre la seqüència mínima que s'ha de poder demostrar
 - el punt no és només autenticar, sinó demostrar que el producte ja resol una primera acció de negoci amb sentit
+- la persistència pot ser simple o controlada; la base de dades no és encara el centre metodològic del repte
 
 ## Errors habituals
 
 - resoldre només el cas feliç i no provar dades incorrectes
 - deixar la validació només al client
+- guardar dades però no reutilitzar-les dins del producte
 - tindre login aparent però sense protecció real d'una operació
 - deixar l'autenticació desconnectada d'una necessitat real del domini
 - no comprovar què passa després del logout
@@ -83,6 +91,7 @@ Per donar el repte per verificat, cal poder demostrar com a mínim:
 - login correcte
 - login incorrecte
 - accés autoritzat a una operació protegida amb valor funcional real
+- reutilització o recuperació d'una dada correcta dins del flux
 - accés denegat sense autenticació o amb estat ja invalidat
 - comportament coherent d'una restricció bàsica de rol, permís o condició de negoci quan s'haja definit
 - logout i comprovació posterior
@@ -100,6 +109,7 @@ Formats de verificació acceptables:
 - `README` actualitzat amb com provar el Repte 2
 - prova o registre de casos correctes i casos límit
 - operació del domini realment protegida
+- evidència de conservació funcional o reutilització de dades
 - evidència de la regla mínima d'accés o restricció aplicada al flux principal
 - resposta coherent del servidor en errors mínims
 - `AI log` si s'ha utilitzat IA en decisions, esquelets, depuració o validacions
@@ -110,6 +120,7 @@ Formats de verificació acceptables:
 - [ ] existix login funcional amb comprovació de credencials
 - [ ] existix logout funcional o invalidació equivalent d'estat
 - [ ] existix almenys una operació del domini protegida i lligada a una funcionalitat real del producte
+- [ ] la informació correcta queda conservada de manera funcional i es pot reutilitzar
 - [ ] existix una regla mínima de rol, permís o restricció recognoscible quan el cas d'ús ho demana
 - [ ] el servidor diferencia cas correcte, validació incorrecta i accés no autoritzat
 - [ ] hi ha almenys una prova o verificació clara del flux complet

@@ -4,6 +4,8 @@
 
 És el moment en què el producte deixa de ser només una base i passa a tindre una primera funcionalitat de negoci protegida per autenticació, sessió o estat equivalent.
 
+El repte no es queda en formulari, login i error. El flux ha d’incloure entrada de dades, validació visible, processament, correcció quan hi ha error i conservació funcional de la informació correcta perquè després es puga reutilitzar.
+
 Este repte es resol sobre una **base comuna en `PHP`**. El contrast fort de frameworks encara no és l'objectiu del repte.
 
 ## Què no és suficient
@@ -16,12 +18,18 @@ Este repte es resol sobre una **base comuna en `PHP`**. El contrast fort de fram
 ## Mínim funcional no trivial
 
 - tractament correcte de dades d'entrada al servidor
+- visualització d'errors de validació i possibilitat de reintent
 - lògica bàsica recognoscible dins del flux
+- conservació funcional simple de la informació correcta
+- reutilització posterior d'eixa informació dins del projecte
 - registre o alta d'usuari
 - login, logout i comprovació de sessió
 - almenys una funcionalitat real del domini protegida
 - una regla de rol o restricció de negoci
+- tractament d'imatge o fitxer si el cas d'ús ho demana
 - errors coherents d'autenticació, autorització i validació
+
+La base de dades pot aparéixer de manera controlada, però en `R2` encara no és el centre del repte. El focus continua sent el flux funcional complet i la seua defensa tècnica.
 
 ## Evidència mínima
 
@@ -41,7 +49,7 @@ Este repte es resol sobre una **base comuna en `PHP`**. El contrast fort de fram
 
 ## Connexió amb el següent pas
 
-En `R3` esta funcionalitat s'ha de mantindre viva, però ja amb entrada de framework, arquitectura o equivalent i persistència segura. És ahí on comença el contrast de `Laravel`, `Symfony` o `NestJS`.
+En `R3` esta funcionalitat s'ha de mantindre viva, però ja amb entrada de framework, arquitectura o equivalent i persistència més explicable i segura. És ahí on comença el contrast de `Laravel`, `Symfony` o `NestJS`.
 
 ## Si vols el detall complet
 

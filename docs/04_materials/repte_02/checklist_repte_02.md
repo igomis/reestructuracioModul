@@ -2,16 +2,25 @@
 
 ## Finalitat
 
-Esta checklist servix per revisar si el Repte 2 ja aporta un mòdul d'usuaris i sessions prou funcional, verificable i preparat per passar després a refactorització arquitectònica al Repte 3.
+Esta checklist servix per revisar si el Repte 2 ja aporta un flux funcional prou clar, verificable i preparat per passar després a refactorització arquitectònica al Repte 3.
 
 ## Contingut operatiu
 
-La revisió final del Repte 2 s'ha de fer comprovant no només el cas feliç del flux, sinó també la solidesa mínima d'autenticació, validació, errors, proves i documentació.
+La revisió final del Repte 2 s'ha de fer comprovant no només el cas feliç del flux, sinó també la solidesa mínima de validació, errors, conservació funcional de la informació, autenticació, proves i documentació.
 
 Transició al Repte 3:
 
 - el tancament del repte ha de deixar clar què s'ha de reorganitzar en capes o components equivalents
 - també ha de deixar identificades les validacions, errors i punts de persistència que convindrà encapsular millor
+- la persistència pot aparéixer ja com a suport funcional, però encara no és el focus principal d'avaluació
+
+### Flux de dades i reutilització
+
+- [ ] existix una entrada de dades útil dins del domini
+- [ ] el backend mostra errors de validació de manera interpretable
+- [ ] l'usuari pot corregir la dada i repetir el flux
+- [ ] la informació correcta queda conservada amb un mecanisme simple o controlat
+- [ ] el projecte pot tornar a mostrar, recuperar o llistar eixa informació
 
 ## Errors habituals o riscos
 
@@ -39,6 +48,7 @@ Transició al Repte 3:
 
 - [ ] el servidor valida camps obligatoris del registre o del login
 - [ ] hi ha tractament de dades invàlides o inconsistents
+- [ ] si el cas d'ús ho demana, hi ha control bàsic d'imatge o fitxer
 - [ ] les regles mínimes estan alineades amb el comportament real del flux
 
 ### Tractament d'errors

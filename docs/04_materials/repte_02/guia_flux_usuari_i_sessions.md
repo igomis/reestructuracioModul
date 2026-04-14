@@ -4,13 +4,13 @@
 
 Convertir el Repte 2 en un flux funcional clar i verificable d'accés d'usuari, de manera que l'equip puga implementar la primera funcionalitat real del producte sense desconnectar-se del projecte base ni del treball per reptes.
 
-Esta guia s'ha d'usar per ordenar la seqüència mínima de registre, autenticació, estat de sessió i accés protegit. El valor no està en afegir opcions, sinó en aconseguir que el flux base siga coherent, defensable i reutilitzable en el pas posterior al Repte 3.
+Esta guia s'ha d'usar per ordenar la part de registre, autenticació, estat de sessió i accés protegit dins del Repte 2. No substituïx la resta del flux del repte, que també inclou tractament de dades, validació visible i conservació funcional de la informació correcta. El valor no està en afegir opcions, sinó en aconseguir que el flux base siga coherent, defensable i reutilitzable en el pas posterior al Repte 3.
 
 ## Contingut operatiu
 
 ### Flux base
 
-El flux mínim del Repte 2 ha de cobrir estes quatre situacions:
+Dins del bloc de sessions i autenticació, el flux mínim ha de cobrir estes quatre situacions:
 
 1. **Registre o alta d'usuari**
    El sistema rep dades bàsiques d'usuari, valida camps obligatoris, comprova restriccions mínimes i crea l'usuari o retorna errors interpretables.
@@ -60,6 +60,7 @@ Per considerar el flux ben resolt, s'espera trobar:
 - seqüència de commits que mostre construcció real del flux
 - demostració funcional o registre verificable dels casos correctes i incorrectes
 - prova o evidència de comprovació de sessió abans i després del logout
+- evidència que la funcionalitat protegida treballa amb dades que després continuen tenint sentit dins del projecte
 - documentació tècnica actualitzada del mòdul o del `README`
 - AI log si la IA s'ha utilitzat per generar esquelets, resoldre errors o proposar validacions
 

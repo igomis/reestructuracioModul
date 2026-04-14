@@ -30,11 +30,14 @@ Només convé passar a `R2` si ja hi ha una acció real del producte sobre la qu
 
 ### Què resol
 
-Convertir auth o estat equivalent en infraestructura al servei d'una operació de negoci real sobre una base comuna en `PHP`.
+Convertir auth o estat equivalent en infraestructura al servei d'una operació de negoci real sobre una base comuna en `PHP`, amb tractament de dades, errors visibles i conservació funcional de suport quan faça falta.
 
 ### Què modela el professorat
 
-- alta, login o estat equivalent amb sentit de producte
+- entrada de dades o formulari amb sentit de producte
+- validació visible i correcció del flux
+- alta, login o estat equivalent quan la funcionalitat ho demana
+- conservació funcional simple de la informació correcta
 - primera operació protegida
 - cas correcte, cas denegat i error mínim controlat
 
@@ -46,7 +49,7 @@ Convertir auth o estat equivalent en infraestructura al servei d'una operació d
 
 ### Pas a `R3`
 
-`R3` només té sentit si `R2` deixa un flux real que mereix ser refactoritzat i persistit. El contrast de frameworks comença ací, no abans.
+`R3` només té sentit si `R2` deixa un flux real que ja pot conservar dades de manera funcional i que ara mereix ser refactoritzat i professionalitzat en arquitectura i persistència. El contrast de frameworks comença ací, no abans.
 
 ## `R3`. Arquitectura i persistència del flux principal
 
