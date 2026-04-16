@@ -27,7 +27,7 @@ La hipòtesi de treball usada en esta planificació és un curs d'unes `20` setm
 | Fase | Setmanes orientatives | Repte o focus principal | Materials activats | Evidències principals | Instrument principal | Punt crític de seguiment |
 |---|---|---|---|---|---|---|
 | **Fase 0. Arrancada i marc comú** | `1-2` | marc de treball, projecte base i criteris comuns | materials comuns de mòdul, sistema d'evidències, enunciat base del projecte | repositori creat, primer `README`, organització mínima, traça inicial | `checklist_revisio_repo.md` | comprovar que el grup usa Git/GitHub com a repàs metodològic i traçabilitat professional, no com a iniciació bàsica |
-| **Fase 1. Kickoff tècnic** | `3-4` | Repte 1 i definició operativa del producte | fitxa del Repte 1, materials comuns, projecte base, model d'itineraris com a marc | entorn funcional, ADR inicial, decisió de domini, primers commits útils | `rubrica_base_reptes.md` | evitar que el kickoff quede en infraestructura buida sense decisió tècnica ni producte recognoscible |
+| **Fase 1. Kickoff tècnic** | `3-4` | Repte 1 en `4` sessions de `3h`: base executable i primer punt d'entrada funcional | fitxa del Repte 1, materials comuns, projecte base, model d'itineraris com a marc | entorn funcional, ADR inicial, `README` executable, primer punt d'entrada funcional i primers commits útils | `rubrica_base_reptes.md` | evitar que el kickoff quede en infraestructura buida sense decisió tècnica ni producte recognoscible |
 | **Fase 2. Base funcional del producte** | `5-8` | Repte 2: usuaris, sessions, autenticació i validacions | materials del Repte 2, materials comuns, base comuna en `PHP` | registre/login/logout, accés protegit, errors mínims, proves bàsiques, `README` actualitzat | `rubrica_base_reptes.md` | controlar que el flux funcional siga real i no només una demo puntual |
 | **Fase 3. Arquitectura i persistència** | `9-12` | Repte 3: capes, persistència i qualitat tècnica | materials del Repte 3, materials comuns, itineraris `Laravel`, `Symfony` i `NestJS` com a suport principal | model de dades, persistència funcional, refactorització per capes o equivalent, regressió mínima | `rubrica_base_reptes.md` | no passar a API sense base persistent i mantenible suficient |
 | **Fase 4. Publicació i consum d'API** | `13-16` | Repte 4: contracte API, documentació i consum | materials del Repte 4, materials comuns, itineraris reutilitzats en context d'API | endpoints clau, documentació d'API, col·lecció de proves, consum verificat | `rubrica_base_reptes.md` | assegurar coherència entre contracte, proves, errors i documentació real |
@@ -56,13 +56,15 @@ Setmanes orientatives: `3-4`
 
 Focus:
 
-- seleccionar domini i concretar el primer encàrrec tècnic
-- preparar l'entorn funcional del servei backend
-- deixar la primera decisió d'arquitectura i d'organització tècnica documentada
+- resoldre `R1` en `4` sessions de `3` hores
+- entendre model client/servidor i concretar la primera decisió tècnica
+- preparar l'entorn executable del servei backend
+- deixar un primer punt d'entrada funcional i la seua documentació mínima
 
 Resultat esperat del bloc:
 
 - existix una base tècnica executable i defensable
+- existix un primer punt d'entrada funcional del backend
 - l'equip ja treballa sobre producte, no només sobre marc abstracte
 
 ### Fase 2. Base funcional del producte
@@ -147,7 +149,7 @@ Lectura operativa:
 | Moment | Evidències clau |
 |---|---|
 | **Setmanes 1-2** | repositori creat, estructura mínima, primer `README`, criteri de commits i AI log assumit |
-| **Setmanes 3-4** | entorn funcional, domini triat, ADR inicial, primers artefactes tècnics estables |
+| **Setmanes 3-4** | entorn funcional, domini triat, ADR inicial, `README` executable i primer punt d'entrada funcional |
 | **Setmanes 5-8** | autenticació funcional, estat o sessió equivalent, validacions mínimes, primers casos de prova |
 | **Setmanes 9-12** | arquitectura per capes o equivalent, persistència coherent, model de dades, proves de regressió |
 | **Setmanes 13-16** | contracte API, documentació d'endpoints, col·lecció de proves, consum verificat |

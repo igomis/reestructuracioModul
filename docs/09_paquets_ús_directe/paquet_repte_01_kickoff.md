@@ -4,6 +4,12 @@
 
 Este paquet agrupa les peces que el professorat necessita per obrir, conduir i tancar `R1` amb pocs clics. No substituïx la fitxa llarga del repte: la baixa a ús immediat d'aula.
 
+## Calibratge del paquet
+
+- `12` hores de base
+- `4` sessions de `3` hores
+- `1` microrepte docent per sessió
+
 ## Què ha d'obrir el professorat abans d'entrar a classe
 
 - [Programació d'aula del Repte 1](../01_programacio_modul/programacio_aula_repte_01.md)
@@ -26,16 +32,15 @@ Este paquet agrupa les peces que el professorat necessita per obrir, conduir i t
 - [Guia README i ADR](../04_materials/materials_comuns/guia_readme_i_adr.md)
 - [Guia Git i flux de treball](../04_materials/materials_comuns/guia_git_i_flux_treball.md)
 - [Guia d'ús verificable de la IA](../04_materials/materials_comuns/guia_ús_verificable_ia.md)
-- [Consulta tècnica sobre formularis i validació](../alumnat/consulta_tecnica/formularis_i_validacio.md)
 - [Consulta ràpida de PHP](../alumnat/consulta_tecnica/php_consulta_rapida.md)
+- [Guia testing i debugging](../04_materials/materials_comuns/guia_testing_i_debugging.md)
 
 ## Seqüència recomanada d'ús
 
-1. Obrir el repte amb el [briefing inicial](../08_materials_compartibles/briefing_inicial_curs.md) i la [presentació 01](../07_presentacions/presentacio_01_repte_1.md).
-2. Passar de seguida al [full de treball del Repte 1](../08_materials_compartibles/full_treball_repte_01.md) perquè l'alumnat veja què ha de deixar fet.
-3. Conduir les sessions amb la [programació d'aula del Repte 1](../01_programacio_modul/programacio_aula_repte_01.md) i els [materials de sessió](../04_materials/materials_aula/repte_01_materials_sessio.md).
-4. Si apareixen bloquejos, obrir només la peça de suport necessària i no tot el bloc de materials alhora.
-5. Tancar el repte amb el [checkpoint inicial `R1 -> R2`](../08_materials_compartibles/checkpoint_inicial_r1_r2.md) i una demo curta del flux.
+1. Sessió `1`: obrir el repte amb el [briefing inicial](../08_materials_compartibles/briefing_inicial_curs.md), la [presentació 01](../07_presentacions/presentacio_01_repte_1.md) i les [orientacions docents](../04_materials/repte_01/orientacions_docents_repte_01.md).
+2. Sessió `2`: conduir l'arrencada amb la [programació d'aula del Repte 1](../01_programacio_modul/programacio_aula_repte_01.md), els [materials de sessió](../04_materials/materials_aula/repte_01_materials_sessio.md) i la [guia README i ADR](../04_materials/materials_comuns/guia_readme_i_adr.md).
+3. Sessió `3`: activar el [full de treball del Repte 1](../08_materials_compartibles/full_treball_repte_01.md) i l'[apunt real del Repte 1](../04_materials/apunts_reals/repte_01_kickoff_backend.md) per tancar el primer punt d'entrada funcional.
+4. Sessió `4`: tancar el repte amb el [checkpoint inicial `R1 -> R2`](../08_materials_compartibles/checkpoint_inicial_r1_r2.md), la [guia testing i debugging](../04_materials/materials_comuns/guia_testing_i_debugging.md) i una demo curta del punt d'entrada funcional.
 
 ## Què s'usa per checkpoint i tancament
 
@@ -48,9 +53,8 @@ Este paquet agrupa les peces que el professorat necessita per obrir, conduir i t
 
 - repositori usable i `README` clar
 - entorn executable sobre la base comuna en `PHP`
-- primera entrada funcional del producte
-- recepció de dades amb cas correcte i incorrecte
-- registre o persistència bàsica de la dada correcta
+- primer punt d'entrada funcional del backend
+- verificació real de l'arrencada i de la resposta inicial
 - explicació clara del flux que es protegirà després en `R2`
 
 ## Criteri d'ús del paquet

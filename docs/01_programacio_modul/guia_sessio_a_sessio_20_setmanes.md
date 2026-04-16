@@ -88,25 +88,25 @@ Regla pràctica:
 
 #### Setmana 3
 
-- Focus o repte: `R1` com a primera peça funcional real
-- Què fa el professorat: modela una landing page o equivalent i un formulari mínim amb validació bàsica
-- Què fa l'alumnat: implementa la primera entrada funcional del producte
+- Focus o repte: `R1` com a microreptes `1-2`: model client/servidor i entorn executable
+- Què fa el professorat: modela una decisió tècnica breu, una arrencada amb `Docker`, `PHP` i servidor web i l'estructura mínima del `README`
+- Què fa l'alumnat: concreta la base tècnica i deixa el projecte arrancant de manera reproduïble
 - Materials per a l'alumnat: apunt real del Repte 1, materials comuns i suport de la base comuna en `PHP`
-- Evidència mínima del bloc: pàgina inicial funcional i formulari bàsic operatiu
-- Checkpoint docent: revisar que hi ha interacció real del producte
-- Pla per a alumnat endarrerit: formulari amb menys camps i un flux més curt
-- Pla per a alumnat avançat: afegir validació més robusta o millor feedback d'errors
+- Evidència mínima del bloc: decisió tècnica visible, projecte arrancant i `README` inicial usable
+- Checkpoint docent: revisar que hi ha arrencada real i no només fitxers de configuració
+- Pla per a alumnat endarrerit: entorn més simple i un únic camí d'arrencada
+- Pla per a alumnat avançat: millorar scripts o explicar millor els trade-offs de la base tècnica
 
 #### Setmana 4
 
-- Focus o repte: validació de servidor i primer registre de dades
-- Què fa el professorat: modela resposta correcta i incorrecta, i exemplifica com deixar rastre al `README`
-- Què fa l'alumnat: completa validació mínima al servidor i registra o persistix la primera dada útil del domini
+- Focus o repte: `R1` com a microreptes `3-4`: primer punt d'entrada funcional, documentació i checkpoint
+- Què fa el professorat: modela una ruta, vista, `endpoint` o `healthcheck` simple i exemplifica com deixar rastre real al `README`
+- Què fa l'alumnat: completa el primer punt d'entrada funcional del backend, revisa documentació i prepara el checkpoint `R1 -> R2`
 - Materials per a l'alumnat: apunt real del Repte 1, guia de testing i debugging
-- Evidència mínima del bloc: flux `R1` reproduïble amb validació i primer registre verificable
+- Evidència mínima del bloc: `R1` reproduïble amb punt d'entrada funcional i `README` executable
 - Checkpoint docent: tancament de `R1` només si no és un esquelet buit
-- Pla per a alumnat endarrerit: una sola validació obligatòria i un únic camí de registre
-- Pla per a alumnat avançat: reforçar persistència bàsica o documentació tècnica del bloc
+- Pla per a alumnat endarrerit: un únic punt d'entrada funcional i una única prova d'arrencada reproduïble
+- Pla per a alumnat avançat: reforçar onboarding o documentació tècnica del bloc
 
 #### Setmana 5
 

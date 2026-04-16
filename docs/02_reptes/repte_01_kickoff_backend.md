@@ -135,7 +135,7 @@ Backend inicial funcional amb:
 
 ---
 
-## 5. Microprojectes i microtasques del repte
+## 5. Microreptes, microprojectes i microtasques del repte
 
 > **Norma del repte**
 >
@@ -145,8 +145,9 @@ Backend inicial funcional amb:
 > - Cada microprojecte ha de generar almenys una evidència verificable.
 > - El mínim funcional del repte no obliga a incloure formulari, validació ni persistència.
 > - Estos elements poden aparéixer com a ampliació opcional o com a pas natural del Repte 2.
+> - En la concreció docent d’aula, cada microrepte es resol en una sessió base de `3` hores.
 
-### Microprojecte MP1 — Elecció guiada de stack i marc tècnic inicial
+### Microrepte MP1 — Model client/servidor i elecció guiada de stack
 
 **Tipus**
 
@@ -154,19 +155,19 @@ Microtasca d’investigació i decisió tècnica.
 
 **Objectiu**
 
-Triar una tecnologia de backend dins d’un marc docent acotat i justificar per què és adequada per al recorregut del curs.
+Entendre el model client/servidor del producte i fixar una base tècnica guiada que siga coherent amb el recorregut del curs.
 
 **Tasca**
 
-L’equip prepara una comparativa breu entre opcions guiades pel mòdul i redacta una decisió tècnica argumentada.
+L’equip prepara una comparativa breu dins del marc docent del curs i redacta una decisió tècnica argumentada.
 
 La comparativa ha d’incloure:
 
+- paper del client i del servidor dins del producte
 - model d’execució
 - tipus de servidor o runtime
 - encaix amb el curs i amb el projecte
-- documentació disponible
-- viabilitat amb Docker
+- encaix amb `Docker`, `PHP` i servidor web
 - continuïtat per als reptes següents
 
 **Relació amb el producte principal**
@@ -222,7 +223,7 @@ Rúbrica d’investigació aplicada.
 
 20%
 
-### Microprojecte MP2 — Entorn executable, Docker i estructura base del servei
+### Microrepte MP2 — Entorn executable amb Docker, PHP i servidor web
 
 **Tipus**
 
@@ -230,7 +231,7 @@ Microprojecte procedimental.
 
 **Objectiu**
 
-Inicialitzar el projecte perquè es puga arrancar de manera reproductible en local i quede organitzat amb una estructura coherent des del primer moment.
+Inicialitzar el projecte perquè es puga arrancar de manera reproductible en local sobre una base clara de `Docker`, `PHP` i servidor web.
 
 **Tasca**
 
@@ -239,6 +240,7 @@ L’equip:
 - crea el repositori
 - configura l’entorn mínim
 - prepara arrencada amb `docker compose up` o equivalent
+- deixa visible el paper de `PHP` i del servidor web
 - definix estructura bàsica de carpetes
 - establix convencions inicials
 - prepara README de posada en marxa
@@ -307,7 +309,7 @@ Checklist tècnica de repositori + revisió docent de README.
 
 35%
 
-### Microprojecte MP3 — Primer punt d’entrada funcional del producte
+### Microrepte MP3 — Primer punt d’entrada funcional del backend
 
 **Tipus**
 
@@ -384,7 +386,7 @@ Rúbrica de microprojecte funcional.
 
 25%
 
-### Microprojecte MP4 — Documentació tècnica, verificació i defensa breu
+### Microrepte MP4 — Documentació tècnica, verificació i checkpoint
 
 **Tipus**
 
@@ -461,14 +463,23 @@ Rúbrica de defensa tècnica + checklist de documentació.
 
 ---
 
-## 6. Taula resum de microprojectes i criteris d’avaluació
+## 6. Taula resum de microreptes i criteris d’avaluació
 
-| Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
+| Microrepte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
 |---|---|---|---|---|---|---|
 | MP1 | Investigació / decisió tècnica | Comparativa guiada + justificació tècnica inicial | RA1b, RA1c, RA1g | Taula comparativa, justificació, defensa breu | Rúbrica | 20% |
 | MP2 | Procedimental | Repositori executable amb Docker i estructura base | RA1c, RA1d, RA1e, RA1f | Repo, Docker, README, issues, commits, prova d’arrancada | Checklist + revisió | 35% |
 | MP3 | Procedimental | Punt d’entrada funcional simple | RA1b, RA1e, RA1f | Demo funcional, logs o captures, evidència d’execució | Rúbrica | 25% |
 | MP4 | Tancament / verificació | README final + justificació tècnica + defensa | RA1d, RA1g | Documentació, validació, defensa, AI log | Rúbrica + checklist | 20% |
+
+### 6.1 Coordinació docent amb sessions de `3` hores
+
+| Sessió | Duració | Microrepte | Focus docent | Producte o evidència clau |
+|---|---:|---|---|---|
+| `1` | `3h` | MP1 | model client/servidor i decisió tècnica guiada | comparativa breu + justificació inicial |
+| `2` | `3h` | MP2 | entorn executable amb Docker, PHP i servidor web | projecte arrancant + `README` inicial |
+| `3` | `3h` | MP3 | primer punt d’entrada funcional del backend | ruta, vista, `endpoint` o `healthcheck` funcional |
+| `4` | `3h` | MP4 | documentació tècnica, verificació i checkpoint | README executable + defensa breu + pas cap a `R2` |
 
 ---
 
@@ -560,7 +571,7 @@ Rúbrica de defensa tècnica + checklist de documentació.
 
 **Duració orientativa**
 
-4 a 6 sessions segons el nivell d’entrada del grup i el grau d’autonomia amb Git, Docker i entorn de desenvolupament.
+`12` hores de base, organitzades en `4` sessions de `3` hores.
 
 **Moment del curs**
 
@@ -572,15 +583,16 @@ No es pressuposa domini del backend, però sí maneig bàsic d’ordinador, edit
 
 **Marc docent acotat de tecnologies**
 
-La tria tecnològica no hauria de quedar completament oberta.
+La tria tècnica de `R1` no hauria de quedar completament oberta.
 
-Convé treballar dins d’opcions guiades pel departament o pel curs, per exemple:
+Per a la implementació base d’aula, convé treballar dins d’un marc clar i comú:
 
-- PHP + Laravel
-- Node.js + Express o Nest
-- Python + FastAPI
+- `Docker`
+- `PHP`
+- servidor web
+- estructura mínima de projecte executable
 
-La finalitat és evitar dispersió tecnològica i assegurar que la decisió siga assumible, acompanyable i sostenible durant el curs.
+La decisió guiada de stack en este repte afecta sobretot com s’explica, s’ordena i s’arranca esta base, no encara quin framework gran s’incorporarà després.
 
 **Part comuna del grup**
 
@@ -593,13 +605,12 @@ La finalitat és evitar dispersió tecnològica i assegurar que la decisió siga
 
 **Ampliacions realistes**
 
-- formulari inicial
-- validació mínima
-- registre simple de dades
-- millor estructuració de l’entorn
-- millor tractament d’errors
-- primer test automatitzat
-- mini pipeline de qualitat
+- millora del `README` i de l’onboarding tècnic
+- una segona resposta simple del backend coherent amb el domini
+- millor estructuració de carpetes o scripts d’arrancada
+- millor tractament d’errors d’arrancada
+- primer test o comprovació automatitzada molt simple
+- mini checklist tècnic d’obertura per a tercers
 
 **Recuperació o reforç per CA**
 
@@ -631,6 +642,6 @@ El repte es considera superat quan:
 
 Per mantindre coherència amb la programació actual del mòdul, este repte s’ha de llegir principalment com a desplegament aplicat de RA1.
 
-El formulari, la validació de dades, el registre d’informació o la persistència poden aparéixer com a ampliació opcional, però no haurien de formar part del mínim obligatori del kickoff.
+El formulari, la validació de dades, el registre d’informació o la persistència poden aparéixer com a extensió puntual, però no haurien de formar part del mínim obligatori del kickoff.
 
 Si es vol fer qualificable també una part de RA5, caldrà ajustar abans la distribució SA → RA i la matriu d’instruments del mòdul.

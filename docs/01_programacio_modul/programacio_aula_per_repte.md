@@ -16,7 +16,13 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 ### Finalitat docent
 
-- obrir el projecte del curs amb un domini clar, base comuna en `PHP` i una primera peça funcional real del producte
+- obrir el projecte del curs amb una base clara sobre `PHP`, un entorn executable i un primer punt d'entrada funcional del backend
+
+### Duració base recomanada
+
+- `12` hores
+- `4` sessions de `3` hores
+- una sessió per cada microrepte docent de `R1`
 
 ### Què no és suficient
 
@@ -27,14 +33,14 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 ### Quin és el mínim funcional no trivial
 
 - repositori inicial usable i base comuna en `PHP` clarament assumida
-- landing page o equivalent funcional d'entrada al producte
-- formulari mínim per arreplegar una primera dada del domini
-- validació bàsica al servidor i primer registre o persistència mínima de la informació
+- entorn executable amb `Docker`, `PHP` i servidor web
+- una ruta, vista, `endpoint` o `healthcheck` funcional d'entrada al backend
+- `README` executable i verificació bàsica del que ja funciona
 
 ### Què diferencia una resolució superficial d'una professional
 
 - superficial: infraestructura arrencada, però encara no hi ha producte recognoscible
-- professional: la base tècnica ja produïx una primera interacció funcional, verificable i documentada
+- professional: la base tècnica ja arranca, es pot explicar i deixa un primer punt d'entrada funcional, verificable i documentat
 
 ### Què sap ja l'alumnat
 
@@ -51,14 +57,15 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 ### Què ha d'explicar el professorat
 
 - encàrrec del projecte base del curs
-- domini, base tècnica inicial i criteris mínims d'arrancada
+- model client/servidor, base tècnica inicial i criteris mínims d'arrancada
 - què comptarà com a evidència vàlida en este primer repte
 
 ### Què ha de modelar en directe
 
 - posada en marxa inicial del repositori amb estructura recognoscible
 - exemple curt de `README` inicial i d'una primera decisió tècnica registrada
-- arranque mínim d'un backend sobre la base comuna en `PHP`
+- arranque mínim d'un backend amb `Docker`, `PHP` i servidor web
+- primer punt d'entrada funcional simple del backend
 
 ### Què treballa l'alumnat amb autonomia
 
@@ -66,6 +73,8 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - arranque de l'entorn tècnic
 - primera decisió tècnica del producte
 - organització inicial del repositori
+- primer punt d'entrada funcional del backend
+- documentació i verificació bàsica del que ja funciona
 
 ### Materials que s'activen
 
@@ -81,6 +90,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - entorn funcional
 - decisió de domini i base comuna assumida
 - primera traça tècnica del procés
+- punt d'entrada funcional del backend
 
 ### Errors habituals a anticipar
 
@@ -91,7 +101,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 ### Checkpoint docent
 
-- el grup només pot donar el repte per superat si té entorn executable, primer `README`, decisió tècnica i traçabilitat mínima del procés
+- el grup només pot donar el repte per superat si té entorn executable, primer `README`, decisió tècnica, punt d'entrada funcional i traçabilitat mínima del procés
 
 ## Repte 2. Sessions, autenticació i primera funcionalitat de negoci
 

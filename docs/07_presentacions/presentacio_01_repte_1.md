@@ -11,60 +11,59 @@ Micro-presentació docent breu. Equival aproximadament a `8-9` diapositives i es
 ## Diapositiva 2. Què construirem
 
 - repositori usable i `README` inicial
-- entorn executable sobre la base comuna en `PHP`
-- primera pantalla o punt d'entrada funcional del producte
-- primera dada del domini tractada pel servidor
+- entorn executable amb `Docker`, `PHP` i servidor web
+- primer punt d'entrada funcional del backend
+- verificació real de l'arrencada i del punt d'entrada
 
-## Diapositiva 3. Què no és suficient
+## Diapositiva 3. Com es treballarà en aula
 
-- esquelet buit
-- `hello world`
-- pàgina estàtica sense relació amb el producte
-- formulari que no es tracta al servidor
-- documentació genèrica que no explica què està funcionant
+- `12` hores de base
+- `4` sessions de `3` hores
+- `1` microrepte per sessió
+- seqüència curta i tancada perquè `R1` no quede inflat
 
 ## Diapositiva 4. Microreptes del repte
 
-- arrencar repositori, `README` i decisió tècnica
-- deixar una entrada funcional del producte
-- rebre una primera dada i validar-la mínimament
-- mostrar cas correcte i cas incorrecte
-- deixar un primer registre o persistència bàsica
+- microrepte `1`: model client/servidor i stack guiat
+- microrepte `2`: entorn executable amb `Docker`, `PHP` i servidor web
+- microrepte `3`: primer punt d'entrada funcional del backend
+- microrepte `4`: documentació tècnica, verificació i checkpoint
 
-## Diapositiva 5. Què s'entrega
+## Diapositiva 5. Què no és suficient
+
+- esquelet buit
+- `hello world`
+- contenidors o fitxers que ningú sap explicar
+- documentació genèrica que no explica què està funcionant
+
+## Diapositiva 6. Què s'entrega
 
 - repositori recognoscible
-- `README` amb com arranca i què fa el producte ara mateix
-- primera peça funcional servida pel backend
-- prova del flux correcte i incorrecte
-- rastre bàsic de la dada correcta
+- `README` amb com arranca i què fa el backend ara mateix
+- entorn executable reproduïble
+- primer punt d'entrada funcional servit pel backend
+- justificació tècnica breu i traçabilitat mínima
 
-## Diapositiva 6. Què es comprovarà
+## Diapositiva 7. Què es comprovarà
 
 - que el projecte arranca de veritat
-- que el flux té sentit dins del domini triat
-- que el servidor rep dades i no només mostra una pantalla
-- que hi ha validació mínima i error visible
+- que s'entén el model client/servidor del producte
+- que `Docker`, `PHP` i servidor web tenen un paper recognoscible
+- que el backend respon amb un primer punt d'entrada funcional
 - que l'alumne pot explicar què ha fet i com ho ha provat
 
-## Diapositiva 7. Errors habituals
+## Diapositiva 8. Errors habituals
 
 - confondre infraestructura amb producte
 - obrir massa fronts alhora
 - deixar el `README` per al final
-- mostrar només el cas feliç
+- no saber què fa cada component tècnic
 - usar IA sense poder explicar després el flux real
 
-## Diapositiva 8. Què ha d'estar preparat per al checkpoint
+## Diapositiva 9. Què ha d'estar preparat per al checkpoint
 
 - repositori usable
 - `README` curt però executable
-- primera entrada funcional del producte
-- cas correcte i incorrecte visibles
+- entorn executable amb `Docker`, `PHP` i servidor web
+- primer punt d'entrada funcional del backend
 - idea clara de quin flux es protegirà després en `R2`
-
-## Diapositiva 9. Com connecta amb `R2`
-
-- si `R1` deixa només infraestructura, `R2` comença sobre una base falsa
-- si `R1` deixa una entrada real del producte, `R2` podrà protegir-la i donar-li més valor de negoci
-- el repte següent no substituïx `R1`: se sosté sobre el que s'ha deixat ben tancat ací

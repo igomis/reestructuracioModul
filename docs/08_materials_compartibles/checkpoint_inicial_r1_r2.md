@@ -8,30 +8,29 @@ Esta comprovació curta servix per decidir si la base inicial del curs ja és pr
 
 - repositori usable
 - `README` mínim i actualitzat
-- primera entrada funcional del producte
-- validació mínima al servidor
-- primer registre o persistència bàsica
+- entorn executable amb `Docker`, `PHP` i servidor web
+- primer punt d'entrada funcional del backend
 - idea clara de quina operació del domini protegiràs en `R2`
 
 ## Com es verifica en `2-3` minuts
 
 - obri el repositori i localitza el `README`
 - arranca el projecte
-- mostra la pantalla o entrada inicial
-- executa una dada correcta i una incorrecta
+- mostra el punt d'entrada funcional
+- explica què fa cada component tècnic principal
 - explica quina serà la primera operació protegida del producte
 
 ## Senyals d'alerta
 
 - només hi ha esquelet o configuració
-- el formulari no està lligat a una dada útil del domini
-- no hi ha diferència visible entre cas correcte i incorrecte
+- ningú sap explicar què aixeca `Docker` ni què executa `PHP`
+- no hi ha cap punt d'entrada funcional real
 - el grup no sap què passarà en `R2`
 
 ## Acció correctiva ràpida
 
 - congelar canvis de disseny o estructura
-- tancar un únic flux real del producte
+- tancar una sola arrencada reproduïble i un únic punt d'entrada funcional
 - actualitzar `README`
 - no obrir auth fins que `R1` deixe una base funcional de veritat
 

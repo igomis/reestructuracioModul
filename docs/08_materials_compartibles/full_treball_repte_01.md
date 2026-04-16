@@ -2,50 +2,56 @@
 
 ## Objectiu
 
-Deixar obert el projecte amb una primera entrada funcional real del producte.
+Deixar obert el projecte amb una base executable i un primer punt d'entrada funcional del backend.
+
+## Seqüència base
+
+- microrepte `1`: model client/servidor i elecció guiada de stack
+- microrepte `2`: entorn executable amb Docker, PHP i servidor web
+- microrepte `3`: primer punt d'entrada funcional del backend
+- microrepte `4`: documentació tècnica, verificació i checkpoint
 
 ## Has de fer
 
-- confirmar domini i base comuna en `PHP`
+- explicar el paper del client i del servidor en el teu producte
+- justificar la base tècnica dins del marc del curs
 - deixar repositori usable i `README` inicial
-- crear una landing page o equivalent
-- implementar un formulari o entrada mínima del domini
-- validar almenys un cas correcte i un cas incorrecte
-- registrar o persistir de manera bàsica la dada principal
+- arrancar l'entorn amb Docker, PHP i servidor web
+- crear una ruta, vista, `endpoint` o `healthcheck` simple però funcional
+- preparar una verificació curta i explicable del que ja funciona
 
 ## Evidència mínima
 
 - repositori obert i recognoscible
 - `README` amb com arranca el projecte
-- primera pantalla o punt d'entrada funcional
-- enviament correcte i incorrecte de la dada
-- primer registre o persistència mínima
+- entorn executable amb `Docker`, `PHP` i servidor web
+- primer punt d'entrada funcional del backend
+- justificació tècnica breu i traçabilitat mínima
 
 ## Com ho valides
 
 - arranca el projecte davant del professorat
-- mostra l'entrada al producte
-- envia una dada correcta
-- envia una dada incorrecta
-- ensenya on queda registrada o guardada
+- mostra el punt d'entrada funcional del backend
+- explica què fa `Docker`, què fa `PHP` i què fa el servidor web
+- ensenya que el `README` permet repetir la prova
 
 ## Errors habituals
 
 - quedar-se en l'esquelet del framework
 - justificar tecnologia però no el producte
-- no validar al servidor
-- mostrar només el cas feliç
+- no saber què fa cada component tècnic
+- no tindre cap punt d'entrada funcional real
 - no actualitzar el `README`
 
 ## Si et bloqueges
 
-- reduïx el repte a un únic flux d'entrada
-- simplifica camps i validacions
-- revisa la [consulta tècnica sobre formularis i validació](../alumnat/consulta_tecnica/formularis_i_validacio.md)
+- reduïx el repte a un únic punt d'entrada funcional
+- simplifica l'entorn fins al mínim que realment arranca
+- revisa la [consulta ràpida de PHP](../alumnat/consulta_tecnica/php_consulta_rapida.md)
 - torna a l'[apunt real de `R1`](../02_reptes/repte_01_kickoff_backend.md)
 
 ## Si acabes prompte
 
-- millora missatges d'error
 - deixa més clar el `README`
-- reforça el registre o persistència inicial sense obrir un segon flux
+- millora l'onboarding tècnic
+- reforça el punt d'entrada funcional amb una segona resposta simple sense obrir encara el flux complet de `R2`

@@ -4,7 +4,13 @@
 
 Convertir el Repte 1 en un apunt de treball real, curt i executable, pensat perquè professorat i alumnat tinguen clara la seqüència mínima per arrancar el producte amb una primera peça funcional visible, verificable i documentada.
 
-Este repte no consistix a triar tecnologia ni a crear un esquelet buit. El que s'espera és posar en marxa una primera entrada real al producte, per exemple una landing page o equivalent, un formulari útil, validació mínima al servidor i una primera arreplegada o registre de dades.
+Este repte no consistix a triar tecnologia ni a crear un esquelet buit. El que s'espera és posar en marxa una base tècnica curta i defensable: model client/servidor comprensible, entorn executable amb `Docker`, `PHP` i servidor web, primer punt d'entrada funcional del backend i documentació tècnica usable.
+
+## Calibratge d'aula
+
+- `12` hores de base
+- `4` sessions de `3` hores
+- `1` microrepte docent per sessió
 
 ## Què sap ja l'alumnat
 
@@ -24,68 +30,59 @@ Este repte no consistix a triar tecnologia ni a crear un esquelet buit. El que s
 
 - quin és l'encàrrec real del Repte 1: deixar una base funcional del producte, no només infraestructura
 - quins dominis admesos encaixen amb el projecte base del curs
-- què és el mínim funcional no trivial: landing page o equivalent, formulari, validació i primer registre de dades
+- què és el mínim funcional no trivial: una resposta real del backend sobre una base que arranca i es pot explicar
 - quines evidències mínimes s'han de deixar des del primer dia: `README`, decisió tècnica, traçabilitat i comprovació funcional
 
 ## Què s'ha de modelar en directe
 
 - una posada en marxa mínima del repositori i de l'estructura del projecte
 - una decisió tècnica inicial breu registrada al `README` o a un `ADR`
-- una landing page o equivalent servida pel backend
-- un formulari funcional que arreplegue una primera dada útil del domini
-- una validació bàsica al servidor i una resposta clara en cas correcte i incorrecte
-- un registre mínim de la informació, encara que siga bàsic o provisional
+- una arrencada real amb `Docker`, `PHP` i servidor web
+- una ruta, vista, `endpoint` o `healthcheck` simple servit pel backend
+- una revisió del `README` perquè una altra persona puga repetir la prova
 
 ## Què treballa l'alumnat amb autonomia
 
 - triar el domini concret i justificar-lo
-- decidir l'stack dins dels itineraris admesos
+- decidir el marc tècnic dins de la base guiada del curs
 - preparar repositori, estructura mínima i convencions bàsiques de treball
 - implementar la primera peça funcional d'entrada al producte
-- validar el flux mínim i deixar evidències clares de funcionament
+- verificar l'arrencada i deixar evidències clares de funcionament
 - actualitzar `README`, `ADR` i `AI log` si hi ha ús d'IA
 
 ## Exemple mínim orientatiu
 
 Exemple orientatiu de recorregut mínim:
 
-1. Crear una pàgina inicial del producte amb una explicació breu del servei.
-2. Afegir un formulari per arreplegar una primera dada útil del domini.
-3. Validar al servidor que els camps obligatoris arriben correctament.
-4. Rebutjar la petició si falta informació mínima o si el format és incorrecte.
-5. Registrar la dada enviada en fitxer, memòria controlada o persistència bàsica.
-6. Deixar constància al `README` de com reproduir el flux.
-
-Exemples de dada inicial útil:
-
-- una sol·licitud d'incidència
-- una petició de reserva
-- una alta o petició d'un recurs intern
+1. Explicar amb un dibuix curt o una nota tècnica on està el client i on està el servidor.
+2. Fixar una decisió tècnica inicial coherent amb la base del curs.
+3. Preparar l'entorn amb `Docker`, `PHP` i servidor web.
+4. Arrancar el projecte i demostrar que la base és executable.
+5. Implementar una ruta, vista, `endpoint` o `healthcheck` simple però funcional.
+6. Deixar constància al `README` de com reproduir l'arrencada i la prova funcional.
 
 Criteri docent:
 
-- el valor no està en la complexitat del formulari
-- el valor està en demostrar que el producte ja té una primera interacció real i verificable
+- el valor no està en la quantitat de fitxers o contenidors
+- el valor està en demostrar que el backend arranca, respon i es pot explicar
 
 ## Errors habituals
 
 - confondre arrancada tècnica amb primera funcionalitat real
 - deixar només una ruta de prova o un text estàtic sense flux recognoscible
-- validar només al client o no validar res
-- guardar dades sense criteri o sense poder reproduir després què s'ha registrat
+- no saber què fa cada component de l'entorn
+- tindre un `README` que no permet repetir l'arrencada
 - tindre `README` massa genèric o incomplet
-- usar IA per generar arrencada, formulari o estructura sense entendre què s'ha creat
+- usar IA per generar arrencada, configuració o estructura sense entendre què s'ha creat
 
 ## Com es verifica que funciona
 
 Per donar el repte per verificat, cal poder demostrar com a mínim:
 
 - que el projecte arranca seguint el `README`
-- que existix una landing page o equivalent funcional d'entrada al producte
-- que el formulari es pot enviar
-- que el servidor valida almenys els camps obligatoris
-- que hi ha resposta diferenciada entre cas correcte i incorrecte
-- que la informació enviada queda registrada o persistida de manera mínima i comprovable
+- que existix un punt d'entrada funcional del backend
+- que es pot explicar el paper de `Docker`, `PHP` i del servidor web
+- que la resposta del sistema és real i reproduïble
 - que el repositori mostra traçabilitat recognoscible del treball
 
 Formats de verificació acceptables:
@@ -100,19 +97,17 @@ Formats de verificació acceptables:
 - repositori amb estructura inicial usable
 - `README` de posada en marxa i comprovació del Repte 1
 - justificació breu del domini i de la decisió tècnica inicial
-- formulari funcional i validació mínima al servidor
-- evidència del primer registre o persistència de dades
+- entorn executable amb `Docker`, `PHP` i servidor web
+- evidència del primer punt d'entrada funcional del backend
 - traçabilitat mínima del procés amb commits i, si aplica, issues
-- `AI log` si s'ha utilitzat IA per a configuració, esquelets, validació o documentació
+- `AI log` si s'ha utilitzat IA per a configuració, esquelets o documentació
 
 ## Checklist final del repte
 
 - [ ] existix repositori usable i estructura inicial coherent
 - [ ] la decisió tecnològica està justificada de manera breu i defensable
-- [ ] existix landing page o equivalent funcional d'entrada al producte
-- [ ] existix formulari útil per arreplegar una primera dada del domini
-- [ ] el servidor valida almenys els camps obligatoris
-- [ ] la dada enviada queda registrada o persistida de manera mínima i verificable
+- [ ] el projecte arranca amb `Docker`, `PHP` i servidor web
+- [ ] existix ruta, vista, `endpoint` o `healthcheck` funcional d'entrada al backend
 - [ ] el `README` explica com arrancar i provar el repte
 - [ ] hi ha traçabilitat mínima del procés de treball
 - [ ] l'ús de la IA, si existix, està registrat i contrastat
@@ -122,11 +117,11 @@ Formats de verificació acceptables:
 
 El Repte 1 només té sentit si deixa preparada l'entrada al primer flux funcional autenticat del producte. En concret, hauria de deixar identificat:
 
-- quina dada inicial del domini evolucionarà a funcionalitat de negoci real
+- quin punt d'entrada del backend evolucionarà a funcionalitat de negoci real
 - quin actor o usuari tindrà sentit en el pas a autenticació
-- quina part del flux inicial es mantindrà i quina s'haurà d'enfortir amb control d'accés, validació i estat
+- quina part de la base tècnica es mantindrà i quina s'haurà d'enfortir amb control d'accés i estat
 
 Lectura de transició:
 
 - si `R1` només ha deixat infraestructura, `R2` començarà massa tard
-- si `R1` ja ha deixat una entrada funcional del producte, `R2` podrà convertir-la en un flux autenticat i amb regla de negoci
+- si `R1` ja ha deixat una entrada funcional del backend i una base executable, `R2` podrà convertir-la en un flux autenticat i amb regla de negoci

@@ -27,9 +27,9 @@ El kit s'ha calibrat sobre l'escenari docent que ja assumix el paquet:
 ## Estructura del tram inicial
 
 - `Setmana 1`: marc comú, producte, repositori i traçabilitat
-- `Setmana 2`: domini, base comuna en `PHP` i decisió tècnica justificada
-- `Setmana 3`: primera peça funcional real del producte
-- `Setmana 4`: validació, primer registre de dades i tancament usable de `R1`
+- `Setmana 2`: domini, model client/servidor i decisió tècnica justificada
+- `Setmana 3`: `R1` com a microreptes `1-2` en `2` sessions de `3` hores
+- `Setmana 4`: `R1` com a microreptes `3-4` en `2` sessions de `3` hores
 
 ## Peces que s'activen en este tram
 
@@ -76,30 +76,30 @@ El kit s'ha calibrat sobre l'escenari docent que ja assumix el paquet:
 
 ### Setmana 3
 
-- Objectiu docent: obrir una primera interacció real i visible del producte
-- Focus o repte: `R1` com a primera peça funcional no trivial
-- Què explica el professorat: com passar de decisió tècnica a interacció real, què compta com a landing page o equivalent útil i quin és el mínim funcional no trivial del repte
-- Què modela en directe: una entrada funcional del producte amb formulari mínim, camp obligatori i resposta bàsica
-- Què fa l'alumnat: implementa la primera pantalla o punt d'entrada usable i connecta el formulari amb el primer flux real del domini
+- Objectiu docent: resoldre la primera mitat de `R1` en `2` sessions de `3` hores sense inflar el repte
+- Focus o repte: microreptes `1-2` de `R1`: model client/servidor i entorn executable
+- Què explica el professorat: com acotar una decisió tècnica guiada i com convertir-la en un entorn executable amb `Docker`, `PHP` i servidor web
+- Què modela en directe: una arrencada mínima reproduïble i una actualització del `README` amb passos reals
+- Què fa l'alumnat: justifica el stack base, prepara l'entorn i deixa el projecte arrancant
 - Materials concrets que s'activen: [repte_01_materials_sessio.md](../04_materials/materials_aula/repte_01_materials_sessio.md), [mini_briefings_setmanals.md](../04_materials/materials_aula/mini_briefings_setmanals.md), [checkpoints_curts_aula.md](../04_materials/materials_aula/checkpoints_curts_aula.md) i la base comuna del curs
-- Evidència mínima a arreplegar: landing page o equivalent funcional, formulari executable i recorregut visible d'entrada al producte
-- Checkpoint docent: verificar en `2-3` minuts que el producte ja fa alguna cosa real i que no és una plantilla estàtica
-- Intervenció per alumnat endarrerit: simplificar camps, congelar decoració i exigir només una interacció real completa
-- Ampliació per alumnat avançat: millorar feedback d'errors, afegir una segona validació coherent o deixar millor explicat el flux al `README`
-- Què s'ha de registrar al pilotatge: dificultats reals per passar d'estructura a funcionalitat, patrons de bloqueig sobre la base comuna i si el modelatge docent és suficient per desencallar el tram
+- Evidència mínima a arreplegar: decisió tècnica visible, projecte arrancant i `README` inicial usable
+- Checkpoint docent: verificar en `2-3` minuts que el projecte arranca de veritat i que el grup sap explicar la base tècnica
+- Intervenció per alumnat endarrerit: simplificar l'entorn i congelar qualsevol ampliació lateral fins que l'arrencada siga reproduïble
+- Ampliació per alumnat avançat: millorar scripts, justificar millor la base tècnica o documentar un trade-off addicional
+- Què s'ha de registrar al pilotatge: dificultats reals per passar de decisió tècnica a arrencada i si la seqüència de `2` sessions és suficient
 
 ### Setmana 4
 
-- Objectiu docent: tancar `R1` amb validació, primer registre de dades i preparació neta de `R2`
-- Focus o repte: final usable de `R1`
-- Què explica el professorat: diferència entre cas feliç i verificació real, necessitat de deixar rastre de prova i per què `R1` no està tancat fins que hi ha dada validada i registrada
-- Què modela en directe: enviament correcte i incorrecte del formulari, resposta d'error mínima i registre o persistència bàsica de la dada
-- Què fa l'alumnat: completa validació mínima, registra la primera dada útil del domini, actualitza `README` i prepara el pas a auth o estat equivalent
+- Objectiu docent: tancar `R1` amb primer punt d'entrada funcional, documentació i checkpoint net cap a `R2`
+- Focus o repte: microreptes `3-4` de `R1`
+- Què explica el professorat: diferència entre infraestructura i punt d'entrada funcional, necessitat de deixar rastre de prova i què ha d'arribar preparat al checkpoint `R1 -> R2`
+- Què modela en directe: una ruta, vista, `endpoint` o `healthcheck` simple i la seua verificació seguint el `README`
+- Què fa l'alumnat: completa el primer punt d'entrada funcional del backend, actualitza `README` i prepara el pas a auth o estat equivalent
 - Materials concrets que s'activen: [repte_01_materials_sessio.md](../04_materials/materials_aula/repte_01_materials_sessio.md), guia de testing i debugging, [plantilles_feedback_rapid.md](../04_materials/materials_aula/plantilles_feedback_rapid.md) i plantilla de feedback de pilotatge
-- Evidència mínima a arreplegar: prova reproduïble del flux correcte i incorrecte, primer registre o persistència mínima i `README` actualitzat
+- Evidència mínima a arreplegar: prova reproduïble del punt d'entrada funcional i `README` actualitzat
 - Checkpoint docent: decidir si l'equip té prou base real per obrir `R2` sense començar sobre un esquelet buit
-- Intervenció per alumnat endarrerit: tancar només camps obligatoris, validació mínima i una prova clara; ajornar qualsevol millora lateral
-- Ampliació per alumnat avançat: reforçar missatges d'error, persistència inicial o documentar millor la decisió funcional que porta cap a `R2`
+- Intervenció per alumnat endarrerit: tancar un únic punt d'entrada funcional i una única prova clara; ajornar qualsevol millora lateral
+- Ampliació per alumnat avançat: reforçar documentació tècnica, onboarding o una segona resposta simple del backend
 - Què s'ha de registrar al pilotatge: si el temps de `R1` és suficient, quines evidències costen més de fer emergir, si els checkpoints són prou clars i quins ajustos immediats convé aplicar abans d'entrar en `R2`
 
 ## Registre mínim de pilotatge per al tram inicial
@@ -116,7 +116,7 @@ Per a les setmanes `1-4`, convé deixar com a mínim:
 Només convé entrar en `R2` si:
 
 - el producte ja té una primera interacció real i visible
-- la dada d'entrada es valida i es registra o persistix mínimament
+- el projecte arranca de manera reproduïble i deixa un primer punt d'entrada funcional del backend
 - l'equip pot defensar què fa ja el producte i quin serà el flux que es protegirà a `R2`
 - el `README` i la traçabilitat permeten entendre on està el projecte real
 
