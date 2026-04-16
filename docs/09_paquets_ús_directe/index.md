@@ -18,6 +18,7 @@ Este espai agrupa els materials més útils segons el moment del curs perquè el
 ## Paquets disponibles
 
 - [Paquet d'inici de curs](paquet_inici_curs.md)
+- [Paquet docent del Repte 1](paquet_repte_01_kickoff.md)
 - [Paquet de pas a `R2`](paquet_pas_a_r2.md)
 - [Paquet de pas a `R3-R4`](paquet_pas_a_r3_r4.md)
 - [Paquet de tancament i defensa](paquet_tancament_i_defensa.md)
@@ -25,6 +26,7 @@ Este espai agrupa els materials més útils segons el moment del curs perquè el
 ## Ordre recomanat d'ús
 
 - arrancada del curs i primeres setmanes: [Paquet d'inici de curs](paquet_inici_curs.md)
+- conducció específica de `R1`: [Paquet docent del Repte 1](paquet_repte_01_kickoff.md)
 - consolidació del primer flux autenticat: [Paquet de pas a `R2`](paquet_pas_a_r2.md)
 - professionalització, persistència i `API`: [Paquet de pas a `R3-R4`](paquet_pas_a_r3_r4.md)
 - tram final, integració i defensa: [Paquet de tancament i defensa](paquet_tancament_i_defensa.md)

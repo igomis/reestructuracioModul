@@ -21,6 +21,11 @@ Este bloc reunix els materials reutilitzables del curs: materials comuns, materi
 - [Fulls de treball base](materials_aula/fulls_treball_base.md)
 - [Materials de sessio del Repte 1](materials_aula/repte_01_materials_sessio.md) a [Repte 5](materials_aula/repte_05_materials_sessio.md)
 
+## Concrecio docent del Repte 1
+
+- [Mapa de materials del Repte 1](repte_01/mapa_materials_repte_01.md): vista curta del que cal obrir, reutilitzar o refondre.
+- [Orientacions docents del Repte 1](repte_01/orientacions_docents_repte_01.md): missatges d'aula, preguntes de control i criteri de tancament.
+
 ## Materials per reptes i itineraris
 
 - [Apunts reals](apunts_reals/repte_01_kickoff_backend.md) fins a [tancament de la serie](apunts_reals/tancament_fase_apunts_reals.md)

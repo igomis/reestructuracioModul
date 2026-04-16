@@ -31,3 +31,7 @@ Obrir el curs amb un missatge clar, deixar orientat el projecte base i activar `
 ## Què s'usa per defensa o tancament
 
 No és el focus principal d'este paquet. Si cal recordar el criteri individual des del principi, pots tindre a mà el [Guió breu de defensa individual](../08_materials_compartibles/guio_defensa_individual_breu.md).
+
+## Si necessites baixar ja al detall de `R1`
+
+Quan ja no estàs només obrint el curs, sinó conduint el repte de punta a punta, convé passar al [Paquet docent del Repte 1](paquet_repte_01_kickoff.md). Allí queda agrupada la programació d'aula, la micropresentació, el mapa de materials, les orientacions docents i el suport de checkpoint específic del repte.
