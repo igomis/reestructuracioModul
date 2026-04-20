@@ -22,6 +22,7 @@ Este paquet agrupa les peces que el professorat necessita per obrir, conduir i t
 ## Què es pot projectar o donar a l'alumnat
 
 - [Briefing inicial del curs](../08_materials_compartibles/briefing_inicial_curs.md)
+- [Fitxa breu d'exploració tècnica inicial](../08_materials_compartibles/fitxa_exploracio_tecnica_inicial.md)
 - [Full de treball del Repte 1](../08_materials_compartibles/full_treball_repte_01.md)
 - [Guió breu d'ús de la IA per a l'alumnat](../08_materials_compartibles/guio_ús_ia_per_a_lalumnat.md)
 - [Presentació 01 del Repte 1](../07_presentacions/presentacio_01_repte_1.md)
@@ -37,7 +38,7 @@ Este paquet agrupa les peces que el professorat necessita per obrir, conduir i t
 
 ## Seqüència recomanada d'ús
 
-1. Sessió `1`: obrir el repte amb el [briefing inicial](../08_materials_compartibles/briefing_inicial_curs.md), la [presentació 01](../07_presentacions/presentacio_01_repte_1.md) i les [orientacions docents](../04_materials/repte_01/orientacions_docents_repte_01.md).
+1. Sessió `1`: obrir el repte amb el [briefing inicial](../08_materials_compartibles/briefing_inicial_curs.md), la [fitxa breu d'exploració tècnica inicial](../08_materials_compartibles/fitxa_exploracio_tecnica_inicial.md), la [presentació 01](../07_presentacions/presentacio_01_repte_1.md) i les [orientacions docents](../04_materials/repte_01/orientacions_docents_repte_01.md).
 2. Sessió `2`: conduir l'arrencada amb la [programació d'aula del Repte 1](../01_programacio_modul/programacio_aula_repte_01.md), els [materials de sessió](../04_materials/materials_aula/repte_01_materials_sessio.md) i la [guia README i ADR](../04_materials/materials_comuns/guia_readme_i_adr.md).
 3. Sessió `3`: activar el [full de treball del Repte 1](../08_materials_compartibles/full_treball_repte_01.md) i l'[apunt real del Repte 1](../04_materials/apunts_reals/repte_01_kickoff_backend.md) per tancar el primer punt d'entrada funcional.
 4. Sessió `4`: tancar el repte amb el [checkpoint inicial `R1 -> R2`](../08_materials_compartibles/checkpoint_inicial_r1_r2.md), la [guia testing i debugging](../04_materials/materials_comuns/guia_testing_i_debugging.md) i una demo curta del punt d'entrada funcional.

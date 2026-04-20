@@ -16,13 +16,15 @@ Contextualitzar les plantilles d'aula del curs per al `R1` amb una seqüència c
 ### Sessió 1. Microrepte 1
 
 - Objectiu de la sessió: entendre què fa el servidor dins del producte i fixar una base tècnica guiada.
-- Què s'espera al final: decisió tècnica inicial i explicació clara del model client/servidor.
+- Què s'espera al final: [fitxa breu d'exploració tècnica inicial](../../08_materials_compartibles/fitxa_exploracio_tecnica_inicial.md), decisió tècnica orientativa i explicació clara del model client/servidor.
 - Error habitual a evitar: convertir la sessió en un debat genèric de tecnologies sense impacte real en el producte.
-- Evidència mínima del dia: justificació breu de stack i criteri tècnic visible.
+- Evidència mínima del dia: fitxa breu d'exploració tècnica inicial amb criteri tècnic visible.
+- Tancament possible: al final de la sessió o entre la sessió `1` i la `2`.
 - Pregunta de tancament: quin paper jugarà el servidor en el vostre producte i per què esta base és assumible?
 
 ### Sessió 2. Microrepte 2
 
+- Obertura possible: posada en comú breu de les fitxes d'exploració tècnica inicial abans d'entrar en l'entorn executable.
 - Objectiu de la sessió: posar en marxa un entorn executable amb `Docker`, `PHP` i servidor web.
 - Què s'espera al final: projecte arrancant i `README` inicial prou clar per repetir l'arrencada.
 - Error habitual a evitar: tindre configuració aparent però no un entorn realment executable.
@@ -48,10 +50,10 @@ Contextualitzar les plantilles d'aula del curs per al `R1` amb una seqüència c
 ## Checkpoints curts específics
 
 - `CP-R1.1`
-  - Què hauria d'estar fet: explicació client/servidor i decisió tècnica breu.
-  - Com es verifica en `2-3` minuts: explicar el paper del servidor i justificar la base triada.
+  - Què hauria d'estar fet: fitxa breu d'exploració tècnica inicial, explicació client/servidor i decisió tècnica orientativa.
+  - Com es verifica en `2-3` minuts: revisar la fitxa, explicar el paper del servidor i justificar amb què començarien.
   - Senyal d'alerta: hi ha noms d'eines, però no hi ha criteri de producte ni comprensió del flux.
-  - Acció correctiva ràpida: reduir la comparativa i tancar una sola decisió tècnica defensable.
+  - Acció correctiva ràpida: reduir la fitxa, tancar una sola decisió tècnica defensable i deixar visibles els dubtes oberts.
 - `CP-R1.2`
   - Què hauria d'estar fet: entorn executable amb `Docker`, `PHP` i servidor web.
   - Com es verifica en `2-3` minuts: arrancar projecte i llegir els passos des del `README`.
@@ -81,9 +83,9 @@ Contextualitzar les plantilles d'aula del curs per al `R1` amb una seqüència c
 ### Full 1. Model client/servidor i stack
 
 - Objectiu: decidir amb criteri què s'arrancarà i com s'explicarà.
-- Tasca: concretar producte, paper del servidor i decisió tècnica inicial.
-- Evidència a generar: comparativa breu o `ADR` curt.
-- Validació mínima: una altra persona entén què farà el backend i per què la base triada és assumible.
+- Tasca: concretar producte, paper del servidor i completar la [fitxa breu d'exploració tècnica inicial](../../08_materials_compartibles/fitxa_exploracio_tecnica_inicial.md) amb tecnologies identificades, opcions explorades, primera decisió orientativa i dubtes detectats.
+- Evidència a generar: fitxa breu d'exploració tècnica inicial.
+- Validació mínima: una altra persona entén què farà el backend, quines tecnologies heu identificat i per què la base triada és assumible.
 - Ajuda si et bloqueges: torna al briefing inicial i a la guia `README`/`ADR`.
 - Ampliació si acabes prompte: documenta una alternativa descartada amb un trade-off curt.
 
@@ -129,7 +131,7 @@ Contextualitzar les plantilles d'aula del curs per al `R1` amb una seqüència c
 
 ## Evidència mínima per sessió
 
-- Sessió `1`: criteri tècnic i explicació client/servidor.
+- Sessió `1`: fitxa breu d'exploració tècnica inicial, criteri tècnic i explicació client/servidor.
 - Sessió `2`: projecte arrancant i `README` inicial usable.
 - Sessió `3`: punt d'entrada funcional del backend.
 - Sessió `4`: documentació, verificació i checkpoint de pas.

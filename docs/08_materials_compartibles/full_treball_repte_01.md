@@ -14,6 +14,7 @@ Deixar obert el projecte amb una base executable i un primer punt d'entrada func
 ## Has de fer
 
 - explicar el paper del client i del servidor en el teu producte
+- omplir la [fitxa breu d'exploració tècnica inicial](fitxa_exploracio_tecnica_inicial.md) amb tecnologies identificades, opcions explorades i primera decisió orientativa
 - justificar la base tècnica dins del marc del curs
 - deixar repositori usable i `README` inicial
 - arrancar l'entorn amb Docker, PHP i servidor web
@@ -22,6 +23,7 @@ Deixar obert el projecte amb una base executable i un primer punt d'entrada func
 
 ## Evidència mínima
 
+- fitxa breu d'exploració tècnica inicial
 - repositori obert i recognoscible
 - `README` amb com arranca el projecte
 - entorn executable amb `Docker`, `PHP` i servidor web
@@ -30,6 +32,7 @@ Deixar obert el projecte amb una base executable i un primer punt d'entrada func
 
 ## Com ho valides
 
+- ensenya la fitxa i explica què has investigat, què has entés i amb què començaries
 - arranca el projecte davant del professorat
 - mostra el punt d'entrada funcional del backend
 - explica què fa `Docker`, què fa `PHP` i què fa el servidor web
@@ -37,6 +40,8 @@ Deixar obert el projecte amb una base executable i un primer punt d'entrada func
 
 ## Errors habituals
 
+- convertir la fitxa en un informe llarg o una comparativa eterna
+- adjuntar captures de totes les converses amb IA com si això substituïra la fitxa
 - quedar-se en l'esquelet del framework
 - justificar tecnologia però no el producte
 - no saber què fa cada component tècnic

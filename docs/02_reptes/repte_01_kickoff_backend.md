@@ -159,16 +159,22 @@ Entendre el model client/servidor del producte i fixar una base tècnica guiada 
 
 **Tasca**
 
-L’equip prepara una comparativa breu dins del marc docent del curs i redacta una decisió tècnica argumentada.
+L’equip completa una [fitxa breu d’exploració tècnica inicial](../08_materials_compartibles/fitxa_exploracio_tecnica_inicial.md) i la convertix en una primera decisió tècnica orientativa dins del marc docent del curs.
 
-La comparativa ha d’incloure:
+Esta exploració es pot fer amb ajuda d’IA i amb consulta de materials del curs.
+
+No busca una comparativa exhaustiva ni un informe llarg. Busca sobretot comprensió inicial, criteri tècnic i capacitat d’explicar amb què començaríem i quins dubtes continuen oberts.
+
+No cal adjuntar captures de totes les converses amb IA.
+
+La fitxa ha d’incloure:
 
 - paper del client i del servidor dins del producte
-- model d’execució
-- tipus de servidor o runtime
-- encaix amb el curs i amb el projecte
-- encaix amb `Docker`, `PHP` i servidor web
-- continuïtat per als reptes següents
+- identificació de tecnologies de client i de servidor
+- exploració breu de possibles stacks o frameworks
+- diferències inicials entre exemples com `Laravel`, `Symfony` i `NestJS`
+- primera decisió tècnica orientativa
+- dubtes tècnics detectats
 
 **Relació amb el producte principal**
 
@@ -188,14 +194,14 @@ Sense una decisió inicial coherent, el kickoff funcional queda en un esquelet p
 
 **Paper de la IA**
 
-La IA pot ajudar a generar una primera comparativa, però la decisió final s’ha de verificar amb documentació i amb el marc docent del curs.
+La IA pot ajudar a localitzar exemples de stack, frameworks, tecnologies de client i servidor o diferències inicials entre `Laravel`, `Symfony` i `NestJS`, però el resultat final ha de reflectir què s’ha entés, què s’ha contrastat i quina orientació provisional es pren dins del marc docent del curs.
 
 **Evidències obligatòries**
 
-- taula comparativa breu
-- justificació tècnica curta o ADR curt
-- referència a alternatives descartades
-- defensa oral breu
+- fitxa breu d’exploració tècnica inicial
+- primera decisió tècnica orientativa
+- referència breu a alternatives i dubtes oberts
+- posada en comú o defensa oral breu
 
 **Instrument d’avaluació**
 
@@ -203,19 +209,22 @@ Rúbrica d’investigació aplicada.
 
 **Indicadors d’assoliment**
 
-- comparativa no superficial
+- fitxa breu amb criteri, no superficial
 - marc tecnològic acotat i realista
-- elecció coherent amb el curs
+- orientació coherent amb el curs
 - justificació oral convincent
 
 **Riscos habituals**
 
-- comparativa massa genèrica
+- fitxa convertida en comparativa massa llarga o genèrica
+- voler substituir la fitxa per captures de converses amb IA
 - elecció per preferència personal sense criteri docent
 - dispersió tecnològica difícil de sostindre
 
 **Verificació del treball real**
 
+- revisió de la fitxa breu entregada per la parella o alumne
+- posada en comú oral breu al final de la sessió o a l’inici de la següent
 - pregunta oral: “per què esta opció és assumible per al curs i quina has descartat?”
 - pregunta oral: “què fa el runtime o servidor triat dins del flux d’execució?”
 
@@ -467,7 +476,7 @@ Rúbrica de defensa tècnica + checklist de documentació.
 
 | Microrepte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
 |---|---|---|---|---|---|---|
-| MP1 | Investigació / decisió tècnica | Comparativa guiada + justificació tècnica inicial | RA1b, RA1c, RA1g | Taula comparativa, justificació, defensa breu | Rúbrica | 20% |
+| MP1 | Investigació / decisió tècnica | Fitxa breu d’exploració tècnica + decisió orientativa | RA1b, RA1c, RA1g | Fitxa, dubtes detectats, posada en comú | Rúbrica | 20% |
 | MP2 | Procedimental | Repositori executable amb Docker i estructura base | RA1c, RA1d, RA1e, RA1f | Repo, Docker, README, issues, commits, prova d’arrancada | Checklist + revisió | 35% |
 | MP3 | Procedimental | Punt d’entrada funcional simple | RA1b, RA1e, RA1f | Demo funcional, logs o captures, evidència d’execució | Rúbrica | 25% |
 | MP4 | Tancament / verificació | README final + justificació tècnica + defensa | RA1d, RA1g | Documentació, validació, defensa, AI log | Rúbrica + checklist | 20% |
@@ -476,7 +485,7 @@ Rúbrica de defensa tècnica + checklist de documentació.
 
 | Sessió | Duració | Microrepte | Focus docent | Producte o evidència clau |
 |---|---:|---|---|---|
-| `1` | `3h` | MP1 | model client/servidor i decisió tècnica guiada | comparativa breu + justificació inicial |
+| `1` | `3h` | MP1 | model client/servidor i decisió tècnica guiada | fitxa breu + decisió orientativa + dubtes |
 | `2` | `3h` | MP2 | entorn executable amb Docker, PHP i servidor web | projecte arrancant + `README` inicial |
 | `3` | `3h` | MP3 | primer punt d’entrada funcional del backend | ruta, vista, `endpoint` o `healthcheck` funcional |
 | `4` | `3h` | MP4 | documentació tècnica, verificació i checkpoint | README executable + defensa breu + pas cap a `R2` |
@@ -491,6 +500,7 @@ Rúbrica de defensa tècnica + checklist de documentació.
 - issue mare de kickoff
 - historial de commits significatiu
 - README executable per tercers
+- fitxa breu d’exploració tècnica inicial del `MP1`
 - justificació tècnica breu o ADR curt
 - projecte executable amb Docker
 - primera peça funcional simple del producte

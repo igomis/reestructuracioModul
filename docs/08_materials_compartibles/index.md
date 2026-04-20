@@ -15,6 +15,7 @@ Ací trobaràs materials pensats per a:
 ## Què hi ha ara
 
 - [Briefing inicial del curs](briefing_inicial_curs.md)
+- [Fitxa breu d'exploració tècnica inicial](fitxa_exploracio_tecnica_inicial.md)
 - [Full de treball del Repte 1](full_treball_repte_01.md)
 - [Full de treball del Repte 2](full_treball_repte_02.md)
 - [Full de treball del Repte 3](full_treball_repte_03.md)

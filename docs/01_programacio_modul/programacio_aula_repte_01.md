@@ -23,7 +23,7 @@ Este document baixa `R1` a una seqüència operativa d'aula perquè el professor
 
 | Sessió | Duració | Microrepte | Focus principal | Evidència clau |
 |---|---:|---|---|---|
-| `1` | `3h` | Microrepte `1` | model client/servidor i elecció guiada de stack | decisió tècnica inicial i explicació del model |
+| `1` | `3h` | Microrepte `1` | model client/servidor i elecció guiada de stack | fitxa breu d'exploració tècnica i explicació del model |
 | `2` | `3h` | Microrepte `2` | entorn executable amb Docker, PHP i servidor web | projecte arrancant i `README` inicial |
 | `3` | `3h` | Microrepte `3` | primer punt d'entrada funcional del backend | ruta, vista, endpoint o `healthcheck` funcional |
 | `4` | `3h` | Microrepte `4` | documentació tècnica, verificació i checkpoint | README executable, verificació i pas cap a `R2` |
@@ -36,14 +36,17 @@ Este document baixa `R1` a una seqüència operativa d'aula perquè el professor
 
 - Objectiu: situar el curs, explicar el paper del servidor i acotar la base tècnica del repte.
 - Què explica el professorat: projecte únic del curs, diferència client/servidor, què fa el backend i per què `R1` encara no és un repte de framework complet.
-- Què modela el professorat: lectura curta del briefing inicial, mapa bàsic client/servidor i exemple molt breu de decisió tècnica registrada.
-- Què fa l'alumnat: concreta el producte, justifica el stack base dins del marc docent i deixa una primera decisió tècnica visible.
-- Evidència esperada: comparativa o justificació breu, producte triat i primera nota tècnica o `ADR` curt.
-- Checkpoint: cada alumne pot explicar quin paper jugarà el servidor en el seu producte i per què la base triada és assumible.
+- Què modela el professorat: lectura curta del briefing inicial, mapa bàsic client/servidor i ús de la [fitxa breu d'exploració tècnica inicial](../08_materials_compartibles/fitxa_exploracio_tecnica_inicial.md) amb un exemple molt breu de decisió tècnica orientativa.
+- Què fa l'alumnat: concreta el producte, ompli la fitxa breu d'exploració tècnica inicial, identifica tecnologies de client i servidor, explora de manera breu possibles stacks o frameworks amb ajuda d'IA si convé i deixa una primera decisió tècnica visible amb dubtes oberts.
+- Producte final de la sessió: fitxa breu d'exploració tècnica inicial, tancada al final de la sessió o entre la sessió `1` i la `2`, i usada com a evidència del microrepte `1`.
+- Evidència esperada: fitxa breu entregada, primera decisió tècnica orientativa i explicació del model client/servidor.
+- Checkpoint: cada alumne pot explicar quin paper jugarà el servidor en el seu producte, quines tecnologies ha identificat, amb què començaria i quins dubtes tècnics manté oberts.
 
 ### Sessió 2. Microrepte 2
 
 **Entorn executable amb Docker, PHP i servidor web**
+
+Abans d'entrar en `MP2`, es pot fer una posada en comú breu de les fitxes d'exploració tècnica inicial tancades entre la sessió `1` i la `2`.
 
 - Objectiu: convertir la decisió tècnica en un entorn real que arranca.
 - Què explica el professorat: què posa en marxa `Docker`, quin paper té `PHP`, quin paper té el servidor web i què compta com a entorn executable.
@@ -76,14 +79,14 @@ Este document baixa `R1` a una seqüència operativa d'aula perquè el professor
 
 ## Evidències esperades per sessió
 
-- Sessió `1`: explicació client/servidor i decisió tècnica inicial.
+- Sessió `1`: fitxa breu d'exploració tècnica inicial, explicació client/servidor i decisió tècnica orientativa.
 - Sessió `2`: entorn executable amb `Docker`, `PHP`, servidor web i `README` inicial.
 - Sessió `3`: punt d'entrada funcional del backend en execució real.
 - Sessió `4`: documentació, verificació i checkpoint de pas a `R2`.
 
 ## Moments de checkpoint
 
-- Checkpoint curt `1`: al final de la sessió `1`, per validar que hi ha criteri tècnic i no només intuïció.
+- Checkpoint curt `1`: al final de la sessió `1` o a l'inici de la sessió `2`, per validar que hi ha criteri tècnic i no només intuïció.
 - Checkpoint curt `2`: al final de la sessió `2`, per comprovar que el projecte arranca de veritat.
 - Checkpoint curt `3`: al final de la sessió `3`, per confirmar que existix un punt d'entrada funcional.
 - Checkpoint de pas `R1 -> R2`: al final de la sessió `4`, per decidir si el grup entra a `R2` sobre una base real.
