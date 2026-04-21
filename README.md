@@ -85,6 +85,7 @@ Lectura ràpida de la fase actual:
 
 - [Index documental del projecte](docs/00_visio_general/index_documental.md)
 - [Index de programació del mòdul](docs/01_programacio_modul/index.md)
+- [Programació d'aula del Repte 2](docs/01_programacio_modul/programacio_aula_repte_02.md)
 - [Index del bloc d’avaluació](docs/03_avaluacio/index.md)
 - [Index del bloc de materials](docs/04_materials/index.md)
 - [Curs executable DWES en 2 avaluacions](docs/01_programacio_modul/curs_executable_dwes_2_avaluacions.md)

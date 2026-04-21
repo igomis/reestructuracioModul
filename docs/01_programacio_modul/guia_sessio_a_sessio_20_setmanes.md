@@ -110,34 +110,34 @@ Regla pràctica:
 
 #### Setmana 5
 
-- Focus o repte: arranque de `R2`, autenticació com a infraestructura
-- Què fa el professorat: explica diferència entre auth, autorització i flux funcional del domini; modela alta o login mínim
-- Què fa l'alumnat: prepara usuaris, estat equivalent i punt d'entrada al primer flux autenticat
-- Materials per a l'alumnat: materials del Repte 2, apunt real del Repte 2, base comuna en `PHP`
-- Evidència mínima del bloc: registre o login operatiu i cas d'ús de domini identificat
-- Checkpoint docent: evitar que `R2` es reduïsca a formularis d'accés
-- Pla per a alumnat endarrerit: un únic actor i una única operació protegida
-- Pla per a alumnat avançat: definir també una primera restricció de rol o regla de negoci
+- Focus o repte: arranque de `R2` com a flux de dades i processament, no com a simple infraestructura d'auth
+- Què fa el professorat: modela formulari, validació visible i primer tram de processament amb reutilització funcional de la dada correcta
+- Què fa l'alumnat: tanca `MP1` i `MP2`, prepara l'acció del domini i deixa la informació correcta disponible dins del projecte
+- Materials per a l'alumnat: materials del Repte 2, apunt real del Repte 2, base comuna en `PHP`, guia de validació i errors
+- Evidència mínima del bloc: dades recuperades, errors visibles, tractament correcte i primera reutilització funcional
+- Checkpoint docent: evitar que `R2` es reduïsca a formularis d'accés o a persistència ornamental
+- Pla per a alumnat endarrerit: un únic formulari, una única dada central i una sola reutilització funcional
+- Pla per a alumnat avançat: incorporar fitxer o imatge amb control bàsic si el flux ho demana
 
 #### Setmana 6
 
-- Focus o repte: funcionalitat de negoci autenticada
-- Què fa el professorat: modela una operació protegida amb valor real del domini i una restricció recognoscible
-- Què fa l'alumnat: implementa el primer flux funcional autenticat del producte
-- Materials per a l'alumnat: apunt real del Repte 2, materials comuns
-- Evidència mínima del bloc: operació del domini protegida i usable
-- Checkpoint docent: comprovar que el producte ja resol una acció real, no només auth
-- Pla per a alumnat endarrerit: reduir la funcionalitat a un sol cas d'ús complet
-- Pla per a alumnat avançat: incorporar segona regla de negoci o millor control d'accés
+- Focus o repte: lògica del flux i estat temporal del `R2`
+- Què fa el professorat: modela una regla recognoscible del domini i un ús d'estat, sessió o cookies amb sentit funcional
+- Què fa l'alumnat: implementa `MP3` i `MP4`, deixa una decisió observable i recupera un pas o dada temporal del flux
+- Materials per a l'alumnat: apunt real del Repte 2, guia de flux d'usuari i sessions, materials comuns
+- Evidència mínima del bloc: regla del projecte aplicada, estat recuperable i frontera clara entre estat i conservació funcional
+- Checkpoint docent: comprovar que el producte ja resol comportament de domini, no només recepció de dades
+- Pla per a alumnat endarrerit: reduir la funcionalitat a un sol cas d'ús complet i una única dada temporal útil
+- Pla per a alumnat avançat: incorporar segona regla de negoci o millor tractament d'estat
 
 #### Setmana 7
 
-- Focus o repte: validacions, errors i proves mínimes de `R2`
-- Què fa el professorat: modela tractament d'errors i una prova mínima del flux complet
-- Què fa l'alumnat: reforça validacions, prova casos correctes i casos límit, actualitza `README`
-- Materials per a l'alumnat: guia de validació i errors del Repte 2, guia de testing i debugging
-- Evidència mínima del bloc: flux de `R2` verificat amb errors controlats
-- Checkpoint docent: no obrir `R3` sense evidència reproduïble
+- Focus o repte: autenticació, funcionalitat protegida i prova mínima de `R2`
+- Què fa el professorat: modela una operació protegida amb valor real del domini, un cas denegat i una prova curta del flux complet
+- Què fa l'alumnat: implementa `MP5` i `MP6`, protegix una acció real, prova casos correctes i incorrectes i actualitza `README`
+- Materials per a l'alumnat: guia de validació i errors del Repte 2, guia de testing i debugging, checklist del Repte 2
+- Evidència mínima del bloc: operació del domini protegida, cas autoritzat, cas denegat i documentació mínima reproduïble
+- Checkpoint docent: no obrir `R3` sense evidència reproduïble del flux complet
 - Pla per a alumnat endarrerit: tancar només el cas d'ús principal i els errors crítics
 - Pla per a alumnat avançat: afegir proves més sistemàtiques o millor missatge d'error
 

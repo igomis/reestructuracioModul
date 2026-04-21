@@ -103,29 +103,47 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 - el grup només pot donar el repte per superat si té entorn executable, primer `README`, decisió tècnica, punt d'entrada funcional i traçabilitat mínima del procés
 
-## Repte 2. Sessions, autenticació i primera funcionalitat de negoci
+## Repte 2. Processament, estat, autenticació i primera funcionalitat de negoci
 
 ### Finalitat docent
 
-- construir la primera funcionalitat real del producte i demostrar que el backend ja resol un flux usable, autenticat i amb restriccions de negoci sobre una base comuna en `PHP`
+- construir la primera funcionalitat real del producte a partir d'un flux complet: entrada de dades, processament en servidor, lògica bàsica, estat, autenticació i operació protegida sobre una base comuna en `PHP`
+
+### Duració base recomanada
+
+- `18` hores
+- `6` sessions de `3` hores
+- una sessió per cada microprojecte docent principal
+
+### Coordinació mínima entre microprojectes
+
+- `MP1`: formulari i validació visible
+- `MP2`: processament i guardat funcional
+- `MP3`: lògica del flux i regles del projecte
+- `MP4`: estat, sessió i/o cookies
+- `MP5`: autenticació i funcionalitat protegida
+- `MP6`: prova, depuració, documentació mínima i checkpoint
 
 ### Què no és suficient
 
-- implementar només registre, login o logout sense un cas d'ús del domini
+- implementar només formulari, registre, login o logout sense un cas d'ús del domini
 - protegir una ruta decorativa o sense valor funcional real
-- mostrar auth aparent sense proves d'accés, restriccions i errors
+- convertir la persistència en el centre del repte mentre el flux principal continua dèbil
+- deixar la prova només com a frase final sense verificació real del recorregut
 
 ### Quin és el mínim funcional no trivial
 
-- flux complet de registre o alta, login, logout i control d'accés
-- almenys una funcionalitat de negoci autenticada del domini
-- una regla de rol, permís o restricció recognoscible sobre eixa funcionalitat
-- validacions i errors mínims verificats sobre el flux complet
+- formulari o entrada equivalent amb validació visible
+- tractament correcte en servidor i conservació funcional de la informació
+- almenys una regla recognoscible del projecte
+- evidència d'estat, sessió i/o cookies quan el flux ho necessita
+- una funcionalitat de negoci autenticada del domini
+- una prova autoritzada, una prova denegada i un cas d'error o validació visible
 
 ### Què diferencia una resolució superficial d'una professional
 
-- superficial: la sessió funciona, però el producte encara no resol res rellevant
-- professional: l'autenticació sosté una operació de negoci real, defensable i comprovada
+- superficial: hi ha auth aparent, però el producte encara no resol res rellevant o no es pot demostrar el flux complet
+- professional: l'autenticació sosté una operació de negoci real, la dada correcta es reutilitza, els errors són visibles i el conjunt es pot provar i defendre
 
 ### Què sap ja l'alumnat
 
@@ -135,28 +153,30 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 ### Què cal recordar breument
 
-- lògica de validació de servidor i tractament mínim d'errors
-- diferència entre demo puntual i flux real reproduïble
-- necessitat de proves bàsiques i de documentació actualitzada
+- la diferència entre estat temporal i conservació funcional del domini
+- que la persistència pot aparéixer, però encara no és el focus principal
+- la diferència entre autenticació, autorització i funcionalitat protegida
+- que el contrast de frameworks encara no és el centre del repte
 
 ### Què ha d'explicar el professorat
 
-- què és el mínim funcional exigible en auth o estat equivalent
-- com es validen entrades i com es documenten errors
-- quines evidències tècniques s'esperen per considerar el repte resolt
-- que el contrast de frameworks encara no és el centre del repte
+- la seqüència real del repte: dades, processament, lògica, estat, auth i prova
+- quins criteris de `RA2`, `RA3` i `RA4` es fan visibles en cada tram
+- com es validen entrades, com es documenten errors i quina prova mínima s'exigirà
 
 ### Què ha de modelar en directe
 
-- un flux simple de registre o login
-- una validació de servidor amb resposta d'error comprensible
-- una comprovació tècnica bàsica del flux implementat
+- una entrada de dades amb validació visible
+- un tram curt de processament en servidor amb resposta generada
+- una regla bàsica del domini o un ús d'estat recognoscible
+- una comprovació tècnica del cas autoritzat i del cas denegat
 
 ### Què treballa l'alumnat amb autonomia
 
 - construcció del flux funcional del repte
-- control d'accés, sessió o estat equivalent
-- validacions mínimes i primeres proves
+- processament, lògica i conservació funcional de dades
+- estat, sessió o mecanisme equivalent
+- control d'accés, validacions i primeres proves
 - actualització de documentació operativa
 
 ### Materials que s'activen
@@ -164,11 +184,15 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - materials del Repte 2
 - materials comuns
 - base comuna en `PHP`
+- programació d'aula específica de `R2`
 
 ### Evidències a arreplegar
 
 - flux funcional executable
 - validacions i errors mínims controlats
+- primera reutilització de la informació correcta
+- estat o sessió verificables
+- operació real protegida
 - proves bàsiques o comprovacions equivalents
 - `README` actualitzat
 - `AI log` si aplica
@@ -176,18 +200,20 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 ### Errors habituals a anticipar
 
 - validar només al client o només en casos feliços
-- tindre auth aparent però sense accés protegit real
+- tindre auth aparent però sense acció protegida real
+- confondre persistència del domini amb estat temporal
 - funcionar només en una demostració preparada
 - no poder explicar què ha generat la IA i què s'ha verificat
 
 ### Checkpoint docent
 
-- no s'obri `R3` fins que el flux funcional siga real, reproduïble i mínimament verificat
+- no s'obri `R3` fins que el flux funcional siga real, reproduïble, mínimament verificat i prou clar per justificar el pas a arquitectura i persistència
 
 ### Regla metodològica del repte
 
 - `R2` manté una base comuna més controlada
 - el contrast de `Laravel`, `Symfony` i `NestJS` entra després
+- la prova i la depuració no es deixen només per al final, sinó que s'arrepleguen al llarg dels microprojectes
 
 ## Repte 3. Arquitectura i persistència
 

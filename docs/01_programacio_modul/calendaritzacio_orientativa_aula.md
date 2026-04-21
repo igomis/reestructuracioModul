@@ -28,7 +28,7 @@ La hipòtesi de treball usada en esta planificació és un curs d'unes `20` setm
 |---|---|---|---|---|---|---|
 | **Fase 0. Arrancada i marc comú** | `1-2` | marc de treball, projecte base i criteris comuns | materials comuns de mòdul, sistema d'evidències, enunciat base del projecte | repositori creat, primer `README`, organització mínima, traça inicial | `checklist_revisio_repo.md` | comprovar que el grup usa Git/GitHub com a repàs metodològic i traçabilitat professional, no com a iniciació bàsica |
 | **Fase 1. Kickoff tècnic** | `3-4` | Repte 1 en `4` sessions de `3h`: base executable i primer punt d'entrada funcional | fitxa del Repte 1, materials comuns, projecte base, model d'itineraris com a marc | entorn funcional, ADR inicial, `README` executable, primer punt d'entrada funcional i primers commits útils | `rubrica_base_reptes.md` | evitar que el kickoff quede en infraestructura buida sense decisió tècnica ni producte recognoscible |
-| **Fase 2. Base funcional del producte** | `5-8` | Repte 2: usuaris, sessions, autenticació i validacions | materials del Repte 2, materials comuns, base comuna en `PHP` | registre/login/logout, accés protegit, errors mínims, proves bàsiques, `README` actualitzat | `rubrica_base_reptes.md` | controlar que el flux funcional siga real i no només una demo puntual |
+| **Fase 2. Base funcional del producte** | `5-8` | Repte 2: dades, processament, lògica, estat, autenticació i funcionalitat protegida sobre base comuna en `PHP` | materials del Repte 2, materials comuns, base comuna en `PHP` | flux complet de `R2`, reutilització funcional de dades, accés protegit, errors controlats, proves bàsiques, `README` actualitzat | `rubrica_base_reptes.md` | controlar que el flux funcional siga real i no només una demo puntual |
 | **Fase 3. Arquitectura i persistència** | `9-12` | Repte 3: capes, persistència i qualitat tècnica | materials del Repte 3, materials comuns, itineraris `Laravel`, `Symfony` i `NestJS` com a suport principal | model de dades, persistència funcional, refactorització per capes o equivalent, regressió mínima | `rubrica_base_reptes.md` | no passar a API sense base persistent i mantenible suficient |
 | **Fase 4. Publicació i consum d'API** | `13-16` | Repte 4: contracte API, documentació i consum | materials del Repte 4, materials comuns, itineraris reutilitzats en context d'API | endpoints clau, documentació d'API, col·lecció de proves, consum verificat | `rubrica_base_reptes.md` | assegurar coherència entre contracte, proves, errors i documentació real |
 | **Fase 5. Integració híbrida i tancament** | `17-20` | Repte 5: integració externa, automatització i defensa final | materials del Repte 5, materials comuns, reutilització final dels itineraris | flux híbrid complet, prova de punta a punta, documentació final, defensa tècnica | `rubrica_defensa_tecnica.md` | evitar tancaments ornamentals sense valor funcional ni capacitat real de defensa |
@@ -73,7 +73,7 @@ Setmanes orientatives: `5-8`
 
 Focus:
 
-- activar el flux funcional mínim del producte: usuaris, sessions i control d'accés
+- activar el flux funcional mínim del producte: dades, lògica, estat i control d'accés sobre una acció real del domini
 - introduir validacions, errors mínims i proves bàsiques
 - consolidar la base comuna en `PHP` sense obrir encara el contrast de frameworks
 

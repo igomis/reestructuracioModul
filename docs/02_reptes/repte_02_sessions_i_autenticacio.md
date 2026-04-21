@@ -20,7 +20,7 @@ Una primera funcionalitat de domini protegida, construïda sobre una seqüència
 - conservació funcional de la informació correcta perquè es puga reutilitzar
 - ús de decisions, estructures de dades i funcions
 - tractament bàsic d’imatge o fitxer quan tinga sentit dins del flux
-- gestió bàsica d’estat
+- gestió bàsica d’estat, sessió i/o cookies quan tinga sentit
 - mecanisme d’autenticació
 - operació de domini restringida
 - validació i tractament d’errors
@@ -42,6 +42,14 @@ El canvi metodològic del curs es concreta així:
 - `R2` és base comuna en `PHP`
 - `R3` és el punt d’entrada del contrast de frameworks
 - el mateix projecte continua després amb itineraris diferents
+
+**Coordinació amb programació d’aula**
+
+La baixada operativa d’este repte es concreta en la [Programació d'aula del Repte 2](../01_programacio_modul/programacio_aula_repte_02.md).
+
+La base recomanada del repte és de `18` hores, organitzades en `6` sessions de `3` hores, una per cada microprojecte docent principal.
+
+En la seqüència global del curs es pot reservar un bloc addicional de marge per al checkpoint final o per al pas a `R3`, però la programació d’aula base de `R2` queda fixada en estes sis sessions.
 
 ---
 
@@ -163,11 +171,17 @@ El que importa ací és:
 
 - tractament de dades
 - lògica bàsica
-- estat o sessió
+- estat, sessió i/o cookies
 - autenticació
 - funcionalitat protegida
 
 La conservació es pot resoldre amb mecanismes simples i controlats. La base de dades pot aparéixer si el projecte o el professorat ho demanen, però en este punt no és el focus principal del repte. Eixa professionalització metodològica i arquitectònica guanya pes en `R3`.
+
+### 4.3 Exemples de lectura del repte segons tipus de projecte
+
+- **Tenda o catàleg**: alta o edició d’un producte amb nom, preu, categoria i imatge; el flux valida, processa, guarda de manera funcional, aplica una regla bàsica i protegix una acció real del catàleg.
+- **Activitats, reserves o esdeveniments**: creació o gestió d’una reserva o activitat amb data, places i possibles adjunts; el sistema valida, recupera estat temporal del flux i restringix una operació de confirmació, edició o gestió.
+- **Recursos, publicacions o continguts**: alta d’un recurs, notícia o publicació amb text i, quan toque, fitxer o imatge; el servidor tracta dades, conserva el recurs, l’autenticació protegix una acció del domini i la prova documenta els casos correcte i denegat.
 
 ---
 
@@ -181,6 +195,7 @@ La conservació es pot resoldre amb mecanismes simples i controlats. La base de 
 > - El repte no es considera suficient si només hi ha login/logout sense un recorregut previ de processament i sense una operació real protegida.
 > - El pas al Repte 3 només té sentit si el flux actual ja funciona de manera reproduïble i mínimament explicable.
 > - El contrast de frameworks encara no és el centre del repte.
+> - La prova i la depuració comencen des del primer microprojecte i no només al tancament.
 
 ### Microprojecte MP1 — Formulari base, validació visible i recuperació de dades
 
@@ -284,6 +299,9 @@ L’equip implementa tractament bàsic de la petició, incloent:
 - variables
 - operadors
 - àmbits de variables quan siga rellevant
+- primera reutilització funcional de la informació correcta dins del projecte
+- si hi ha fitxer o imatge, control bàsic de tipus i grandària
+- si apareix base de dades, ús justificat com a suport funcional del flux i no com a centre metodològic del repte
 
 **Relació amb el producte principal**
 
@@ -620,6 +638,8 @@ L’equip:
 
 Sense esta capa, el repte podria funcionar aparentment, però no quedaria prou verificat ni orientat al pas següent.
 
+Este microprojecte consolida i documenta comprovacions que han d’haver anat apareixent des dels microprojectes anteriors.
+
 **CA coberts**
 
 - **RA4.f**
@@ -722,6 +742,8 @@ La prova mínima hauria d’incloure, com a mínim:
 - error de validació visible
 - correcció d’una entrada inicialment incorrecta
 - tractament correcte de la informació en servidor
+- aplicació d’alguna regla bàsica del projecte
+- recuperació d’estat, sessió o cookies, si formen part del flux
 - conservació funcional o reutilització posterior de la informació correcta
 - cas autoritzat de la funcionalitat protegida
 - cas denegat de la funcionalitat protegida
@@ -835,7 +857,9 @@ No es demana:
 
 **Duració orientativa**
 
-6 a 8 sessions, segons el nivell del grup i la solidesa de la base comuna en `PHP`.
+- base recomanada: `18` hores
+- organització base: `6` sessions de `3` hores
+- marge global possible: un bloc addicional de checkpoint final o d’entrada a `R3` segons el ritme real del grup
 
 **Moment del curs**
 

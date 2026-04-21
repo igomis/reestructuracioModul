@@ -25,7 +25,7 @@ La implantació prevista es calibra sobre un escenari orientatiu d'unes `20` set
 |---|---|---|---|---|---|
 | **Fase 0. Arrancada i marc comú** | establir criteris compartits de treball, evidència i ús de la IA abans d'entrar al producte | marc previ al Repte 1 | materials comuns de mòdul (`Git`, `README/ADR`, testing/debugging, IA verificable), sistema d'evidències, projecte base del curs | repositori inicial, criteris de treball assumits, primer `README`, traça mínima d'organització | `checklist_revisio_repo.md` |
 | **Fase 1. Kickoff tècnic** | preparar el servei backend base i fixar domini, entorn i primera decisió tècnica | Repte 1 | fitxa del Repte 1, enunciat base del projecte, materials comuns, model d'itineraris com a marc | repo funcional, decisió d'arquitectura, `README`, ADR inicial, AI log si cal | `rubrica_base_reptes.md` |
-| **Fase 2. Base funcional del producte** | construir identitat, sessions, validacions i primera funcionalitat real del producte | Repte 2 | materials del Repte 2, materials comuns, suport controlat de l'itinerari triat per a bootstrap i auth | registre/login/logout, accés protegit, validacions, primers casos de prova, documentació actualitzada | `rubrica_base_reptes.md` |
+| **Fase 2. Base funcional del producte** | construir un flux real de dades, lògica, estat, autenticació i primera funcionalitat protegida del producte | Repte 2 | materials del Repte 2, materials comuns, base comuna en `PHP` i suport controlat de l'itinerari triat quan faça falta | flux complet de `R2`, reutilització funcional de dades, acció protegida, primers casos de prova, documentació actualitzada | `rubrica_base_reptes.md` |
 | **Fase 3. Arquitectura i persistència** | convertir el backend funcional en una base mantenible, persistent i preparada per créixer | Repte 3 | materials del Repte 3, materials comuns, itineraris tecnològics com a suport principal de stack | refactorització per capes o equivalent, persistència funcional, proves de regressió, model de dades, AI log si hi ha suport de IA | `rubrica_base_reptes.md` |
 | **Fase 4. Publicació i consum d'API** | exposar el producte com a API usable i provar-ne el consum | Repte 4 | materials del Repte 4, materials comuns, reutilització dels itineraris per aplicar auth, estructura i proves al contracte API | endpoints principals, documentació d'API, col·lecció de proves, consum verificat, `README` actualitzat | `rubrica_base_reptes.md` |
 | **Fase 5. Integració híbrida i tancament** | connectar el producte amb automatització o servei extern i tancar-lo com a resultat defensable de curs | Repte 5 | materials del Repte 5, materials comuns, itineraris com a suport de stack per al tancament tècnic | workflow híbrid documentat, prova completa del flux, evidències de manteniment, AI log, defensa final | `rubrica_defensa_tecnica.md` |
@@ -47,9 +47,9 @@ La implantació prevista es calibra sobre un escenari orientatiu d'unes `20` set
 
 ### Fase 2. Base funcional del producte
 
-- s'activen els materials específics del Repte 2 sobre flux d'usuari, sessions, validació i errors
+- s'activen els materials específics del Repte 2 sobre formulari, processament, estat, autenticació, validació i errors
 - es mantenen com a base obligatòria els materials comuns de documentació, proves i IA
-- l'itinerari triat pot usar-se com a suport controlat per arrancada i auth, sense trencar el nucli comú
+- l'itinerari triat pot usar-se com a suport controlat quan faça falta, sense trencar el nucli comú en `PHP`
 
 ### Fase 3. Arquitectura i persistència
 
