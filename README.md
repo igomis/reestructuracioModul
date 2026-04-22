@@ -22,7 +22,7 @@ El model del repositori queda fixat així:
 
 - `R1` obri el projecte i deixa una primera peça funcional real.
 - `R2` es resol sobre una **base comuna en PHP** per a tot l’alumnat.
-- `R2` pot tancar-se, si el flux ja és funcional i verificable, amb un tram final curt de refactorització orientat a mantenibilitat.
+- `R2` es desplega en `7` sessions de `3` hores i incorpora una sessió final específica de refactorització i millora de mantenibilitat.
 - el contrast fort de frameworks **no entra com a norma general en `R2`**
 - a partir de `R3` el mateix projecte pot continuar-se amb itineraris diferents
 - els frameworks base del tram de contrast són `Laravel`, `Symfony` i `NestJS`
@@ -74,7 +74,7 @@ Lectura ràpida de la fase actual:
 
 - el projecte base del curs, l'enunciat base i la seua concretització en tres projectes base ja existixen com a base pública usable del mòdul
 - `R2` queda definit com a base comuna controlada en PHP per consolidar tractament de dades, lògica bàsica, estat o sessió, autenticació i funcionalitat protegida
-- el possible tancament final de `R2` es llig a refactorització lleu i millora de mantenibilitat, no a una entrada obligatòria a POO completa o BBDD com a focus central
+- la sessió `7` de `R2` queda lligada a refactorització i millora de mantenibilitat, no a una entrada obligatòria a POO completa o BBDD com a focus central
 - el contrast de frameworks s’obri a partir de `R3` sobre el mateix projecte i el mateix encàrrec funcional
 - `Laravel`, `Symfony` i `NestJS` passen a ser els frameworks base del tram de contrast
 - `FastAPI` es manté documentat només com a via avançada o excepcional
@@ -98,6 +98,6 @@ Lectura ràpida de la fase actual:
 ## Focus actual
 
 1. Mantindre la `v1` prepilotatge preparada com a base estable i reusable del paquet docent.
-2. Deixar explícita i coherent la seqüència `R2` comú en PHP amb possible tancament curt de refactorització -> contrast de frameworks des de `R3`.
+2. Deixar explícita i coherent la seqüència `R2` comú en PHP en `7` sessions, amb sessió final de mantenibilitat, -> contrast de frameworks des de `R3`.
 3. Fixar el model preferent de cooperació com a implementació individual amb contrast tècnic compartit.
 4. Mantindre visible i usable el doble accés web per a alumnat i professorat sense duplicar la documentació llarga.

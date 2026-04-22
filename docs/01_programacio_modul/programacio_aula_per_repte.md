@@ -111,8 +111,8 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 ### Duració base recomanada
 
-- `18` hores
-- `6` sessions de `3` hores
+- `21` hores
+- `7` sessions de `3` hores
 - una sessió per cada microprojecte docent principal
 
 ### Coordinació mínima entre microprojectes
@@ -122,7 +122,8 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - `MP3`: lògica del flux i regles del projecte
 - `MP4`: estat, sessió i/o cookies
 - `MP5`: autenticació i funcionalitat protegida
-- `MP6`: prova, depuració, documentació mínima i checkpoint
+- `MP6`: prova, depuració, documentació mínima i checkpoint tècnic
+- `MP7`: refactorització i millora de mantenibilitat
 
 ### Què no és suficient
 
@@ -130,6 +131,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - protegir una ruta decorativa o sense valor funcional real
 - convertir la persistència en el centre del repte mentre el flux principal continua dèbil
 - deixar la prova només com a frase final sense verificació real del recorregut
+- convertir la sessió `7` en una reescriptura arquitectònica gran o en una entrada obligatòria a POO completa i BBDD
 
 ### Quin és el mínim funcional no trivial
 
@@ -139,11 +141,12 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - evidència d'estat, sessió i/o cookies quan el flux ho necessita
 - una funcionalitat de negoci autenticada del domini
 - una prova autoritzada, una prova denegada i un cas d'error o validació visible
+- una revisió final del codi amb millora de mantenibilitat justificable
 
 ### Què diferencia una resolució superficial d'una professional
 
-- superficial: hi ha auth aparent, però el producte encara no resol res rellevant o no es pot demostrar el flux complet
-- professional: l'autenticació sosté una operació de negoci real, la dada correcta es reutilitza, els errors són visibles i el conjunt es pot provar i defendre
+- superficial: hi ha auth aparent, però el producte encara no resol res rellevant, no es pot demostrar el flux complet o la sessió `7` es reduïx a canvis cosmètics
+- professional: l'autenticació sosté una operació de negoci real, la dada correcta es reutilitza, els errors són visibles, el conjunt es pot provar i la revisió final deixa el codi un poc més clar i mantenible
 
 ### Què sap ja l'alumnat
 
@@ -157,10 +160,11 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - que la persistència pot aparéixer, però encara no és el focus principal
 - la diferència entre autenticació, autorització i funcionalitat protegida
 - que el contrast de frameworks encara no és el centre del repte
+- que la sessió `7` millora mantenibilitat, però no substituïx `R3`
 
 ### Què ha d'explicar el professorat
 
-- la seqüència real del repte: dades, processament, lògica, estat, auth i prova
+- la seqüència real del repte: dades, processament, lògica, estat, auth, prova i revisió final de mantenibilitat
 - quins criteris de `RA2`, `RA3` i `RA4` es fan visibles en cada tram
 - com es validen entrades, com es documenten errors i quina prova mínima s'exigirà
 
@@ -170,6 +174,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - un tram curt de processament en servidor amb resposta generada
 - una regla bàsica del domini o un ús d'estat recognoscible
 - una comprovació tècnica del cas autoritzat i del cas denegat
+- una revisió curta de codi amb comparativa abans/després i comprovació final del flux
 
 ### Què treballa l'alumnat amb autonomia
 
@@ -177,6 +182,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - processament, lògica i conservació funcional de dades
 - estat, sessió o mecanisme equivalent
 - control d'accés, validacions i primeres proves
+- revisió final del codi i millora de mantenibilitat
 - actualització de documentació operativa
 
 ### Materials que s'activen
@@ -194,6 +200,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - estat o sessió verificables
 - operació real protegida
 - proves bàsiques o comprovacions equivalents
+- comparativa breu abans/després de la revisió final
 - `README` actualitzat
 - `AI log` si aplica
 
@@ -203,17 +210,20 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - tindre auth aparent però sense acció protegida real
 - confondre persistència del domini amb estat temporal
 - funcionar només en una demostració preparada
+- voler convertir la sessió `7` en un salt complet a arquitectura o persistència forta
 - no poder explicar què ha generat la IA i què s'ha verificat
 
 ### Checkpoint docent
 
-- no s'obri `R3` fins que el flux funcional siga real, reproduïble, mínimament verificat i prou clar per justificar el pas a arquitectura i persistència
+- no s'obri `R3` fins que el flux funcional siga real, reproduïble, mínimament verificat i la sessió `7` haja deixat una primera millora de mantenibilitat explicable
 
 ### Regla metodològica del repte
 
 - `R2` manté una base comuna més controlada
+- `R2` incorpora una sessió final real de refactorització i millora de mantenibilitat
 - el contrast de `Laravel`, `Symfony` i `NestJS` entra després
 - la prova i la depuració no es deixen només per al final, sinó que s'arrepleguen al llarg dels microprojectes
+- la sessió `7` no substituïx el treball d’arquitectura, persistència i frameworks propi de `R3`
 
 ## Repte 3. Arquitectura i persistència
 

@@ -14,7 +14,7 @@ Transició al Repte 3:
 - també ha de deixar identificades les validacions, errors i punts de persistència que convindrà encapsular millor
 - la persistència pot aparéixer ja com a suport funcional, però encara no és el focus principal d'avaluació
 
-Si el professorat obri un tram final de refactorització lleu, esta revisió ha de servir per netejar i fer més mantenible el que ja funciona, no per reconstruir `R2` amb l'arquitectura completa de `R3`.
+La sessió `7` de refactorització ha de servir per netejar i fer més mantenible el que ja funciona, no per reconstruir `R2` amb l'arquitectura completa de `R3`.
 
 ### Flux de dades i reutilització
 
@@ -24,9 +24,9 @@ Si el professorat obri un tram final de refactorització lleu, esta revisió ha 
 - [ ] la informació correcta queda conservada amb un mecanisme simple o controlat
 - [ ] el projecte pot tornar a mostrar, recuperar o llistar eixa informació
 
-### Refactorització final opcional
+### Refactorització final i mantenibilitat
 
-- [ ] si s'ha activat, la revisió final millora claredat o mantenibilitat sense trencar el flux funcional
+- [ ] la revisió final millora claredat o mantenibilitat sense trencar el flux funcional
 - [ ] s'ha reduït duplicació, barreja excessiva de `HTML + PHP` o acoblament innecessari
 - [ ] hi ha una justificació breu del abans/després
 - [ ] si apareixen classes, objectes o persistència més formal, es presenten com a tast o pont cap a `R3`
@@ -85,6 +85,7 @@ Si el professorat obri un tram final de refactorització lleu, esta revisió ha 
 
 ### Preparació per al Repte 3
 
+- [ ] la sessió `7` deixa clar què s'ha pogut netejar en `R2` i què encara queda reservat per a `R3`
 - [ ] estan identificats punts a reorganitzar en MVC o arquitectura equivalent
 - [ ] estan identificades validacions o errors que convindrà encapsular millor
 - [ ] el resultat actual es pot refactoritzar sense reconstruir la funcionalitat des de zero

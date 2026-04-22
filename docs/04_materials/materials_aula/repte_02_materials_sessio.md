@@ -52,11 +52,11 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 - Què s'espera al final: checklist breu, `README` actualitzat i demo curta del flux complet.
 - Error habitual a evitar: tindre funcionalitat aparent sense prova verificable ni rastre d'error controlat.
 - Evidència mínima del dia: flux complet provat, cas autoritzat, cas denegat i un cas d'error registrat.
-- Pregunta de tancament: què has demostrat de punta a punta i què hauràs de reorganitzar després en `R3`?
+- Pregunta de tancament: què has demostrat de punta a punta i quines parts del codi revisaràs després?
 
-### Tram final opcional. Refactorització lleu i millora de mantenibilitat
+### Sessió clau 7. Refactorització i millora de mantenibilitat
 
-- Objectiu de la sessió o del marge final: netejar una part del codi que ja funciona perquè el flux quede més clar, menys duplicat i més fàcil de mantindre.
+- Objectiu de la sessió: netejar una part del codi que ja funciona perquè el flux quede més clar, menys duplicat i més fàcil de mantindre.
 - Què s'espera al final: millora visible en noms, funcions, separació de preparació de dades i renderitzat o reducció de barreja `HTML + PHP`.
 - Error habitual a evitar: convertir este tram en una reescriptura completa o en una entrada obligatòria a POO i BBDD com a focus del repte.
 - Evidència mínima del dia: comparativa breu abans/després i justificació clara de per què la versió revisada és millor.
@@ -85,10 +85,15 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
   - Senyal d'alerta: hi ha auth, però no hi ha valor funcional del producte.
   - Acció correctiva ràpida: connectar la protecció a una única acció central del domini.
 - `CP-R2.5`
-  - Què hauria d'estar fet: prova mínima, documentació i pas a `R3` preparats.
+  - Què hauria d'estar fet: prova mínima, documentació i checkpoint tècnic preparats.
   - Com es verifica en `2-3` minuts: seguir la demo breu i la guia de reproducció.
   - Senyal d'alerta: el grup ensenya una demo memòria però no una prova repetible.
-  - Acció correctiva ràpida: documentar només tres casos clau abans d'obrir `R3`.
+  - Acció correctiva ràpida: documentar només tres casos clau abans d'obrir la sessió `7`.
+- `CP-R2.6`
+  - Què hauria d'estar fet: refactorització final amb millora clara de mantenibilitat i flux encara viu.
+  - Com es verifica en `2-3` minuts: comparar un fragment abans/després i repetir una prova curta del flux.
+  - Senyal d'alerta: hi ha canvi visual de fitxers, però no una millora explicable del codi.
+  - Acció correctiva ràpida: tornar a una sola millora clara de noms, funcions o separació de responsabilitats.
 
 ## Exemples de feedback ràpid
 
@@ -96,6 +101,7 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 - Cal corregir abans de seguir: `No pots obrir R3 si encara no hi ha una operació de negoci protegida i reproduïble.`
 - Tens funcionalitat però falta coherència: `La sessió funciona, però encara no queda clara la diferència entre estat temporal i informació del domini.`
 - Tens solució massa superficial: `El login funciona, però el producte encara no resol res rellevant amb eixa auth.`
+- Tens la base preparada per a la sessió 7: `Ara que el flux ja passa la prova mínima, toca netejar duplicació i aclarir millor el codi.`
 - Tens marge per ampliar: `Si el flux principal ja està tancat, pots afegir una segona regla del projecte o millorar el tractament d'errors.`
 
 ## Fulls de treball base contextualitzats
@@ -118,6 +124,15 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 - Ajuda si et bloqueges: tanca només una operació central i elimina funcionalitat lateral.
 - Ampliació si acabes prompte: afegeix una segona restricció o una prova més sistemàtica del mateix flux.
 
+### Full 3. Refactorització i mantenibilitat
+
+- Objectiu: revisar el flux ja tancat i deixar-lo una mica més clar i mantenible.
+- Tasca: reduir duplicació, millorar noms, extraure funcions útils i separar millor dades i renderitzat quan toque.
+- Evidència a generar: comparativa breu abans/després i justificació clara de la millora.
+- Validació mínima: el flux continua funcionant després dels canvis.
+- Ajuda si et bloqueges: tria una sola part del codi que estiga repetida o massa mesclada i neteja només eixa peça.
+- Ampliació si acabes prompte: prova una separació lleu d'arxius o una classe simple només si realment millora el flux i sense obrir encara `R3`.
+
 ## Suport per alumnat endarrerit
 
 - treballar amb un sol actor i una sola operació protegida
@@ -138,10 +153,11 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 - Tram inicial: entrada de dades, validació visible i processament bàsic
 - Tram funcional: reutilització de la informació correcta, regla del projecte i estat temporal
 - Tram protegit: autenticació funcional i operació de negoci protegida
-- Tram de tancament: errors mínims controlats, prova reproduïble i `README` actualitzat
+- Tram de checkpoint tècnic: errors mínims controlats, prova reproduïble i `README` actualitzat
+- Tram final de mantenibilitat: codi revisat, comparativa abans/després i justificació de la millora
 
 ## Connexió amb el repte següent
 
 El `R2` ha de deixar un flux prou real per justificar `R3`. Si només hi ha auth aparent, o si la dada correcta encara no es reutilitza dins del producte, la refactorització i la persistència no tindran una base funcional seriosa sobre la qual treballar.
 
-Si hi ha un tram final de refactorització en `R2`, ha de servir per netejar i fer més mantenible el que ja funciona, no per avançar tota l'arquitectura del repte següent.
+La sessió `7` ha de servir per netejar i fer més mantenible el que ja funciona, no per avançar tota l'arquitectura del repte següent.

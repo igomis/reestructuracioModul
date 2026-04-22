@@ -2,7 +2,7 @@
 
 ## Objectiu
 
-Convertir la primera peça funcional del producte en una operació de negoci protegida i verificable sobre una base comuna en `PHP`.
+Convertir la primera peça funcional del producte en una operació de negoci protegida i verificable sobre una base comuna en `PHP` i tancar-la amb una revisió final de mantenibilitat.
 
 ## Has de fer
 
@@ -18,12 +18,14 @@ Convertir la primera peça funcional del producte en una operació de negoci pro
 - provar accés autoritzat i accés denegat
 - controlar almenys un error de validació o credencial
 - actualitzar `README` amb com reproduir el flux
+- revisar el codi al final del repte
+- netejar parts repetides o massa mesclades
+- millorar funcions, noms o separació de dades i renderitzat
+- justificar per què la versió final és millor
 
 En `R2` la persistència pot ser simple o, si cal, amb base de dades. El punt principal no és la sofisticació tècnica d'eixa persistència, sinó que el flux complet tinga sentit funcional.
 
-Si el flux principal ja està tancat, `R2` es pot acabar amb una revisió curta de mantenibilitat sobre codi que ja funciona.
-
-## Tram final opcional de revisió del codi
+## Sessió 7. Revisió final del codi
 
 - revisa si hi ha barreja excessiva de `HTML + PHP`
 - extrau funcions quan ajuden a entendre millor el flux
@@ -42,6 +44,7 @@ Si apareixen classes, objectes o una persistència més formal, han de quedar co
 - prova del cas denegat o incorrecte
 - resposta d'error interpretable
 - `README` actualitzat
+- comparativa breu abans/després o justificació equivalent de la revisió final
 
 ## Com ho valides
 
@@ -51,6 +54,7 @@ Si apareixen classes, objectes o una persistència més formal, han de quedar co
 - torna a provar-la sense accés o amb estat invalidat
 - mostra almenys un error rellevant
 - ensenya com reproduir-ho des del `README`
+- comprova que el flux continua funcionant després de la sessió `7`
 
 ## Errors habituals
 
@@ -61,6 +65,7 @@ Si apareixen classes, objectes o una persistència més formal, han de quedar co
 - provar només el cas feliç
 - complicar massa la persistència abans de tancar el flux principal
 - no saber què passa després del logout
+- convertir la sessió `7` en una reescriptura completa fora d'escala
 
 ## Si et bloqueges
 
@@ -76,4 +81,4 @@ Si apareixen classes, objectes o una persistència més formal, han de quedar co
 - afegeix una restricció simple de rol o permís
 - reforça missatges d'error
 - deixa una prova més clara del cas denegat
-- neteja duplicació, millora noms o separa millor preparació de dades i renderitzat sobre codi ja funcional
+- millora la revisió final amb una comparativa més clara del abans/després

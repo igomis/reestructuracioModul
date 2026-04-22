@@ -14,11 +14,11 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 
 ## Duració base
 
-- `18 hores`
-- `6` sessions de `3` hores
+- `21 hores`
+- `7` sessions de `3` hores
 - cada sessió es correspon amb un microprojecte docent concret
 
-`R2` manté estes `6` sessions com a base. Si el grup arriba a la sessió `6` amb el flux ja verificat, el professorat pot reservar un tram final curt de refactorització integradora sense convertir-lo en una reescriptura de `R3`.
+`R2` queda fixat amb estes `7` sessions com a base. La sessió `7` està dedicada específicament a refactorització i millora de mantenibilitat sobre un flux ja verificat.
 
 ## Coordinació explícita entre sessions i microprojectes
 
@@ -29,7 +29,8 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 | `3` | `3h` | `MP3` | lògica del flux i regles del projecte | decisió, estructura o funció amb efecte visible |
 | `4` | `3h` | `MP4` | estat, sessió i/o cookies | recuperació del flux i invalidació controlada |
 | `5` | `3h` | `MP5` | autenticació i funcionalitat protegida | cas autoritzat i cas denegat d'una operació real |
-| `6` | `3h` | `MP6` | prova, depuració, documentació mínima i checkpoint | checklist, README i demo reproduïble |
+| `6` | `3h` | `MP6` | prova, depuració, documentació mínima i checkpoint tècnic | checklist, README i demo reproduïble |
+| `7` | `3h` | `MP7` | refactorització i millora de mantenibilitat | comparativa abans/després i justificació de la millora |
 
 ## Seqüència recomanada de sessions
 
@@ -95,21 +96,29 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 
 ### Sessió 6. Microprojecte 6
 
-**Prova, depuració, documentació mínima i checkpoint**
+**Prova, depuració, documentació mínima i checkpoint tècnic**
 
-- Objectiu: revisar el flux complet, deixar proves mínimes registrades i preparar la transició cap a `R3`.
+- Objectiu: revisar el flux complet, deixar proves mínimes registrades i tancar un checkpoint tècnic abans de la sessió final de refactorització.
 - Què explica el professorat: com usar la checklist de proves, quins casos s'han de poder mostrar i quina documentació mínima ha d'estar viva al `README`.
 - Què modela el professorat: una prova curta del flux complet i una lectura ràpida de com la documentació ajuda a reproduir-lo.
-- Què fa l'alumnat: executa casos correctes i incorrectes, registra incidències, actualitza `README` i deixa clar què caldrà reorganitzar després. Si el flux ja està tancat, pot aplicar una refactorització lleu i justificada sobre una part del codi.
-- Materials necessaris: checklist del Repte 2, guia de testing i debugging, fitxa del Repte 2, materials comuns i, si hi ha marge, una comparativa breu abans/després del codi revisat.
-- Evidència esperada: proves mínimes, errors controlats, rastre de depuració, documentació actualitzada, demo breu reproduïble i, si toca, justificació curta de la millora de mantenibilitat.
-- Checkpoint: el professorat valida que el pas a `R3` es fa sobre un flux real i no sobre una demo puntual.
+- Què fa l'alumnat: executa casos correctes i incorrectes, registra incidències, actualitza `README` i deixa clar quines parts del codi es revisaran a la sessió `7`.
+- Materials necessaris: checklist del Repte 2, guia de testing i debugging, fitxa del Repte 2 i materials comuns.
+- Evidència esperada: proves mínimes, errors controlats, rastre de depuració, documentació actualitzada i demo breu reproduïble.
+- Checkpoint: el professorat valida que la sessió `7` partirà d’un flux real i no d’una demo puntual.
 
-## Tram final integrador opcional de refactorització
+### Sessió 7. Microprojecte 7
 
-Este tram només s'obri quan el flux base de `R2` ja és funcional, verificable i defensable.
+**Refactorització i millora de mantenibilitat**
 
-Per defecte, s'absorbeix en el tancament de la sessió `6` o en un marge puntual ja previst. Només tindria sentit convertir-lo en una setena sessió si la planificació concreta ja disposa d'eixe marge i el grup no necessita usar-lo per consolidar el nucli obligatori del repte.
+- Objectiu: revisar el codi que ja funciona, netejar-lo i justificar una millora de mantenibilitat sense convertir esta fase en una reescriptura de `R3`.
+- Què explica el professorat: com detectar duplicació, mescla excessiva de `HTML + PHP`, responsabilitats poc clares o noms millorables i per què això encara no equival a "fer arquitectura completa".
+- Què modela el professorat: una refactorització curta sobre una part del flux ja validat, amb comprovació final de no regressió.
+- Què fa l'alumnat: neteja una part rellevant del codi, extraïx funcions si cal, ordena millor dades i renderitzat, millora noms i justifica per què la versió revisada és millor.
+- Materials necessaris: fitxa del Repte 2, full de treball del Repte 2, checklist del Repte 2, materials comuns i comparativa breu abans/després.
+- Evidència esperada: reducció visible de duplicació o mescla innecessària, comparativa abans/després, justificació de la millora i comprovació final del flux.
+- Checkpoint: el professorat valida que la refactorització aporta claredat i mantenibilitat sense desplaçar el nucli de `R3`.
+
+## Criteri metodològic de la sessió 7
 
 Què sí pot incloure:
 
@@ -136,15 +145,16 @@ Si apareixen una classe simple, un objecte mínim o una persistència més forma
 - Sessió `3`: decisió, regla o funció amb efecte real sobre el flux.
 - Sessió `4`: estat recuperable, demostració d'invalidació i frontera clara entre estat i conservació funcional.
 - Sessió `5`: operació del domini protegida amb cas autoritzat i cas denegat.
-- Sessió `6`: checklist de prova, documentació mínima i checkpoint final.
-- Tram final opcional: comparativa breu abans/després i justificació d'una millora de mantenibilitat sobre codi ja funcional.
+- Sessió `6`: checklist de prova, documentació mínima i checkpoint tècnic.
+- Sessió `7`: comparativa breu abans/després, millora de mantenibilitat i comprovació final del flux.
 
 ## Moments de checkpoint
 
 - Checkpoint curt `1`: al final de la sessió `2`, per comprovar que el flux ja rep, valida, processa i reutilitza dades.
 - Checkpoint curt `2`: al final de la sessió `4`, per validar que estat, sessió o cookies no s'estan confonent amb persistència del domini.
 - Checkpoint curt `3`: al final de la sessió `5`, per confirmar que hi ha una operació real protegida.
-- Checkpoint de pas `R2 -> R3`: al final de la sessió `6`, per decidir si el grup entra al contrast de frameworks amb una base funcional defensable.
+- Checkpoint tècnic `4`: al final de la sessió `6`, per confirmar que el flux és reproduïble, provat i documentat.
+- Checkpoint de pas `R2 -> R3`: al final de la sessió `7`, per decidir si el grup entra al contrast de frameworks amb una base funcional i una primera millora de mantenibilitat defensable.
 
 ## Preparació del tancament del repte
 
@@ -152,11 +162,11 @@ Si apareixen una classe simple, un objecte mínim o una persistència més forma
 - revisar que la informació correcta es recupera o es reutilitza dins del projecte
 - exigir un cas de validació visible, un cas autoritzat i un cas denegat
 - comprovar que la documentació mínima permet repetir la prova
-- si s'obri el tram final integrador, demanar una refactorització lleu sobre codi que ja funciona i una justificació breu del canvi
+- demanar una refactorització lleu sobre codi que ja funciona i una justificació breu del canvi
 - demanar què haurà de reorganitzar-se en `R3` i què encara continua sent suport funcional de `R2`
 
 ## Criteri pràctic de tancament
 
-`R2` queda preparat quan el professorat pot veure un flux complet de dades, lògica, estat i autenticació sobre la base comuna en `PHP`, amb una operació real protegida, proves mínimes reproduïbles i un pas justificat cap a `R3`.
+`R2` queda preparat quan el professorat pot veure un flux complet de dades, lògica, estat i autenticació sobre la base comuna en `PHP`, amb una operació real protegida, proves mínimes reproduïbles, una sessió final de refactorització amb millora de mantenibilitat justificable i un pas net cap a `R3`.
 
-Si s'activa el tram final integrador, el tancament també ha de demostrar que el codi queda una mica més clar i mantenible sense convertir el repte en una reescriptura arquitectònica completa.
+La sessió `7` ha de demostrar que el codi queda una mica més clar i mantenible sense convertir el repte en una reescriptura arquitectònica completa.

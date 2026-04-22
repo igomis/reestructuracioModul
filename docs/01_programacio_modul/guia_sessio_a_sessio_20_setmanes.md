@@ -132,23 +132,23 @@ Regla pràctica:
 
 #### Setmana 7
 
-- Focus o repte: autenticació, funcionalitat protegida i prova mínima de `R2`
+- Focus o repte: autenticació, funcionalitat protegida, prova mínima i checkpoint tècnic de `R2`
 - Què fa el professorat: modela una operació protegida amb valor real del domini, un cas denegat i una prova curta del flux complet
 - Què fa l'alumnat: implementa `MP5` i `MP6`, protegix una acció real, prova casos correctes i incorrectes i actualitza `README`
 - Materials per a l'alumnat: guia de validació i errors del Repte 2, guia de testing i debugging, checklist del Repte 2
-- Evidència mínima del bloc: operació del domini protegida, cas autoritzat, cas denegat i documentació mínima reproduïble
-- Checkpoint docent: no obrir `R3` sense evidència reproduïble del flux complet
+- Evidència mínima del bloc: operació del domini protegida, cas autoritzat, cas denegat, prova mínima i documentació reproduïble
+- Checkpoint docent: no obrir la sessió final de `R2` sense evidència reproduïble del flux complet
 - Pla per a alumnat endarrerit: tancar només el cas d'ús principal i els errors crítics
 - Pla per a alumnat avançat: afegir proves més sistemàtiques o millor missatge d'error
 
 #### Setmana 8
 
-- Focus o repte: tancament de `R2` i entrada a `R3`
-- Què fa el professorat: explica què s'ha de refactoritzar primer i per què `R3` no és “fer MVC”
-- Què fa l'alumnat: identifica punt de refactorització, entitats i model mínim del domini
-- Materials per a l'alumnat: materials del Repte 3, apunt real del Repte 3
-- Evidència mínima del bloc: mapa de refactorització i primer model de dades
-- Checkpoint docent: validar que el pas a `R3` es fa sobre un flux real
+- Focus o repte: sessió final de `R2` amb refactorització i millora de mantenibilitat, i primer mapa de pas a `R3`
+- Què fa el professorat: modela una refactorització curta del codi ja funcional i explica què encara queda reservat a `R3`
+- Què fa l'alumnat: implementa `MP7`, compara abans/després, justifica la millora i identifica el primer punt de pas a arquitectura
+- Materials per a l'alumnat: full de treball del Repte 2, checklist del Repte 2, materials del Repte 3 com a lectura de transició
+- Evidència mínima del bloc: comparativa breu abans/després, justificació de mantenibilitat i primer mapa de pas a `R3`
+- Checkpoint docent: validar que el pas a `R3` es fa sobre un flux real i una revisió final explicable
 - Pla per a alumnat endarrerit: centrar-se en una sola entitat i un sol cas d'ús
 - Pla per a alumnat avançat: preparar relació addicional o separació més clara de capes
 

@@ -8,6 +8,8 @@ El repte no es queda en formulari, login i error. El flux ha d’incloure entrad
 
 Este repte es resol sobre una **base comuna en `PHP`**. El contrast fort de frameworks encara no és l'objectiu del repte.
 
+La base del repte queda en `7` sessions de `3` hores. La sessió `7` està dedicada a refactorització i millora de mantenibilitat sobre el codi que ja funciona.
+
 ## Què no és suficient
 
 - fer només registre, login i logout
@@ -28,8 +30,11 @@ Este repte es resol sobre una **base comuna en `PHP`**. El contrast fort de fram
 - una regla de rol o restricció de negoci
 - tractament d'imatge o fitxer si el cas d'ús ho demana
 - errors coherents d'autenticació, autorització i validació
+- revisió final del codi per reduir repetició, millorar noms i deixar el flux més clar
 
 La base de dades pot aparéixer de manera controlada, però en `R2` encara no és el centre del repte. El focus continua sent el flux funcional complet i la seua defensa tècnica.
+
+La sessió `7` no equival a passar tot el projecte a POO ni a obrir una arquitectura gran. És una sessió de neteja i millora de mantenibilitat.
 
 ## Evidència mínima
 
@@ -37,6 +42,7 @@ La base de dades pot aparéixer de manera controlada, però en `R2` encara no é
 - prova d'un cas permés i un cas denegat
 - commits i documentació actualitzada
 - verificació de validacions i errors
+- justificació breu de la revisió final del codi
 - `AI log` si la IA ha participat en una part rellevant
 
 ## Errors habituals
@@ -50,6 +56,8 @@ La base de dades pot aparéixer de manera controlada, però en `R2` encara no é
 ## Connexió amb el següent pas
 
 En `R3` esta funcionalitat s'ha de mantindre viva, però ja amb entrada de framework, arquitectura o equivalent i persistència més explicable i segura. És ahí on comença el contrast de `Laravel`, `Symfony` o `NestJS`.
+
+La sessió `7` ha de servir per fer una primera neteja útil, no per consumir abans d’hora tot el treball metodològic propi de `R3`.
 
 ## Si vols el detall complet
 
