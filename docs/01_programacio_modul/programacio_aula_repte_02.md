@@ -18,6 +18,8 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 - `6` sessions de `3` hores
 - cada sessió es correspon amb un microprojecte docent concret
 
+`R2` manté estes `6` sessions com a base. Si el grup arriba a la sessió `6` amb el flux ja verificat, el professorat pot reservar un tram final curt de refactorització integradora sense convertir-lo en una reescriptura de `R3`.
+
 ## Coordinació explícita entre sessions i microprojectes
 
 | Sessió | Duració | Microprojecte | Focus principal | Evidència clau |
@@ -98,10 +100,34 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 - Objectiu: revisar el flux complet, deixar proves mínimes registrades i preparar la transició cap a `R3`.
 - Què explica el professorat: com usar la checklist de proves, quins casos s'han de poder mostrar i quina documentació mínima ha d'estar viva al `README`.
 - Què modela el professorat: una prova curta del flux complet i una lectura ràpida de com la documentació ajuda a reproduir-lo.
-- Què fa l'alumnat: executa casos correctes i incorrectes, registra incidències, actualitza `README` i deixa clar què caldrà reorganitzar després.
-- Materials necessaris: checklist del Repte 2, guia de testing i debugging, fitxa del Repte 2, materials comuns.
-- Evidència esperada: proves mínimes, errors controlats, rastre de depuració, documentació actualitzada i demo breu reproduïble.
+- Què fa l'alumnat: executa casos correctes i incorrectes, registra incidències, actualitza `README` i deixa clar què caldrà reorganitzar després. Si el flux ja està tancat, pot aplicar una refactorització lleu i justificada sobre una part del codi.
+- Materials necessaris: checklist del Repte 2, guia de testing i debugging, fitxa del Repte 2, materials comuns i, si hi ha marge, una comparativa breu abans/després del codi revisat.
+- Evidència esperada: proves mínimes, errors controlats, rastre de depuració, documentació actualitzada, demo breu reproduïble i, si toca, justificació curta de la millora de mantenibilitat.
 - Checkpoint: el professorat valida que el pas a `R3` es fa sobre un flux real i no sobre una demo puntual.
+
+## Tram final integrador opcional de refactorització
+
+Este tram només s'obri quan el flux base de `R2` ja és funcional, verificable i defensable.
+
+Per defecte, s'absorbeix en el tancament de la sessió `6` o en un marge puntual ja previst. Només tindria sentit convertir-lo en una setena sessió si la planificació concreta ja disposa d'eixe marge i el grup no necessita usar-lo per consolidar el nucli obligatori del repte.
+
+Què sí pot incloure:
+
+- netejar barreja excessiva de `HTML + PHP`
+- extraure funcions útils
+- ordenar millor el codi
+- millorar noms
+- reduir duplicació
+- separar millor preparació de dades i renderitzat
+- justificar per què la nova versió és més clara i mantenible
+
+Què no ha de convertir-se en:
+
+- entrada obligatòria a POO completa
+- entrada obligatòria a BBDD com a focus central
+- reescriptura arquitectònica total del repte
+
+Si apareixen una classe simple, un objecte mínim o una persistència més formal, s'han de plantejar com a tast introductori, ampliació opcional o pont cap a `R3`.
 
 ## Evidències esperades per sessió
 
@@ -111,6 +137,7 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 - Sessió `4`: estat recuperable, demostració d'invalidació i frontera clara entre estat i conservació funcional.
 - Sessió `5`: operació del domini protegida amb cas autoritzat i cas denegat.
 - Sessió `6`: checklist de prova, documentació mínima i checkpoint final.
+- Tram final opcional: comparativa breu abans/després i justificació d'una millora de mantenibilitat sobre codi ja funcional.
 
 ## Moments de checkpoint
 
@@ -125,8 +152,11 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 - revisar que la informació correcta es recupera o es reutilitza dins del projecte
 - exigir un cas de validació visible, un cas autoritzat i un cas denegat
 - comprovar que la documentació mínima permet repetir la prova
+- si s'obri el tram final integrador, demanar una refactorització lleu sobre codi que ja funciona i una justificació breu del canvi
 - demanar què haurà de reorganitzar-se en `R3` i què encara continua sent suport funcional de `R2`
 
 ## Criteri pràctic de tancament
 
 `R2` queda preparat quan el professorat pot veure un flux complet de dades, lògica, estat i autenticació sobre la base comuna en `PHP`, amb una operació real protegida, proves mínimes reproduïbles i un pas justificat cap a `R3`.
+
+Si s'activa el tram final integrador, el tancament també ha de demostrar que el codi queda una mica més clar i mantenible sense convertir el repte en una reescriptura arquitectònica completa.

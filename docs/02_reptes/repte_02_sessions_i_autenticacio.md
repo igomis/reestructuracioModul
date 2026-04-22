@@ -49,7 +49,9 @@ La baixada operativa d’este repte es concreta en la [Programació d'aula del R
 
 La base recomanada del repte és de `18` hores, organitzades en `6` sessions de `3` hores, una per cada microprojecte docent principal.
 
-En la seqüència global del curs es pot reservar un bloc addicional de marge per al checkpoint final o per al pas a `R3`, però la programació d’aula base de `R2` queda fixada en estes sis sessions.
+En la seqüència global del curs es pot reservar un bloc addicional curt per al checkpoint final, per a una refactorització lleu del que ja funciona o per al pas a `R3`, segons el ritme real del grup.
+
+Açò no altera la base obligatòria de `6` microprojectes ni convertix `R2` en un avançament arquitectònic complet del repte següent.
 
 ---
 
@@ -182,6 +184,30 @@ La conservació es pot resoldre amb mecanismes simples i controlats. La base de 
 - **Tenda o catàleg**: alta o edició d’un producte amb nom, preu, categoria i imatge; el flux valida, processa, guarda de manera funcional, aplica una regla bàsica i protegix una acció real del catàleg.
 - **Activitats, reserves o esdeveniments**: creació o gestió d’una reserva o activitat amb data, places i possibles adjunts; el sistema valida, recupera estat temporal del flux i restringix una operació de confirmació, edició o gestió.
 - **Recursos, publicacions o continguts**: alta d’un recurs, notícia o publicació amb text i, quan toque, fitxer o imatge; el servidor tracta dades, conserva el recurs, l’autenticació protegix una acció del domini i la prova documenta els casos correcte i denegat.
+
+### 4.4 Tram final integrador opcional de refactorització
+
+La seqüència base del repte continua sent de `6` microprojectes obligatoris.
+
+Quan el flux ja és funcional, verificable i defensable, el repte es pot tancar amb una fase breu de refactorització orientada a millorar mantenibilitat i claredat del codi sense avançar encara el nucli metodològic de `R3`.
+
+Esta fase final sí que pot incloure:
+
+- reducció de la mescla excessiva de `HTML + PHP`
+- extracció de funcions
+- millor ordenació del codi
+- millora de noms
+- reducció de duplicació
+- separació més clara entre preparació de dades i renderitzat
+- justificació breu de per què la nova versió és millor
+
+Esta fase final només pot obrir de manera lleu o opcional:
+
+- alguna classe simple
+- algun objecte mínim
+- alguna persistència més formal
+
+Si apareixen estos elements, s’han de llegir com a tast introductori, ampliació opcional o pont cap a `R3`, no com a exigència nuclear de `R2`.
 
 ---
 
@@ -634,6 +660,8 @@ L’equip:
 - actualitza la documentació tècnica
 - identifica punts de deute tècnic o necessitat de reorganització per al Repte 3
 
+Si el professorat obri el tram final integrador, esta revisió pot desembocar en una refactorització lleu del codi ja funcional, amb comparativa breu abans/després i sense reescriptura arquitectònica total.
+
 **Relació amb el producte principal**
 
 Sense esta capa, el repte podria funcionar aparentment, però no quedaria prou verificat ni orientat al pas següent.
@@ -662,6 +690,7 @@ La IA pot ajudar a generar casos de prova o text documental, però l’alumnat h
 - evidència breu de reutilització de dades
 - documentació tècnica actualitzada
 - llista de millores o refactoritzacions futures
+- si hi ha tram final integrador, comparativa breu abans/després i justificació de la millora de mantenibilitat
 - defensa tècnica breu
 
 **Instrument d’avaluació**
@@ -730,6 +759,7 @@ Checklist de verificació + defensa tècnica.
 - rols addicionals
 - test automatitzat mínim
 - millor observabilitat del flux
+- comparativa breu abans/després d’una refactorització lleu del flux ja funcional
 - preparació més detallada del Repte 3
 
 ### 7.1 Forma mínima de prova del repte
@@ -859,7 +889,7 @@ No es demana:
 
 - base recomanada: `18` hores
 - organització base: `6` sessions de `3` hores
-- marge global possible: un bloc addicional de checkpoint final o d’entrada a `R3` segons el ritme real del grup
+- marge global possible: un bloc addicional curt de checkpoint final, refactorització lleu del que ja funciona o entrada a `R3`, segons el ritme real del grup
 
 **Moment del curs**
 
@@ -934,3 +964,5 @@ El repte es considera superat quan:
 **Observacions docents**
 
 Este repte s’ha de llegir com una progressió completa dins de SA2. Per tant, no s’hauria de reduir a un bloc d’autenticació. El seu valor està en connectar fonaments bàsics de programació en servidor amb una primera funcionalitat de producte realment protegida.
+
+Si s’activa un tram final de refactorització, s’ha de llegir com a tancament integrador de mantenibilitat. No és encara una entrada obligatòria a POO completa, a BBDD com a focus principal ni a una reescriptura total del repte.

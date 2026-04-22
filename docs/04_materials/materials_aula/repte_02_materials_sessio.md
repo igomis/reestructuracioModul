@@ -54,6 +54,14 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 - Evidència mínima del dia: flux complet provat, cas autoritzat, cas denegat i un cas d'error registrat.
 - Pregunta de tancament: què has demostrat de punta a punta i què hauràs de reorganitzar després en `R3`?
 
+### Tram final opcional. Refactorització lleu i millora de mantenibilitat
+
+- Objectiu de la sessió o del marge final: netejar una part del codi que ja funciona perquè el flux quede més clar, menys duplicat i més fàcil de mantindre.
+- Què s'espera al final: millora visible en noms, funcions, separació de preparació de dades i renderitzat o reducció de barreja `HTML + PHP`.
+- Error habitual a evitar: convertir este tram en una reescriptura completa o en una entrada obligatòria a POO i BBDD com a focus del repte.
+- Evidència mínima del dia: comparativa breu abans/després i justificació clara de per què la versió revisada és millor.
+- Pregunta de tancament: què has netejat exactament i per què això prepara millor el pas a `R3` sense substituir-lo?
+
 ## Checkpoints curts específics
 
 - `CP-R2.1`
@@ -123,6 +131,7 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 - millor tractament de fitxer o imatge quan forme part del cas d'ús
 - proves més sistemàtiques del cas correcte i incorrecte
 - millor registre d'incidències i preparació de `R3`
+- revisió final de mantenibilitat sobre codi ja funcional amb millora de noms, funcions o separació de responsabilitats
 
 ## Evidència mínima per tram
 
@@ -134,3 +143,5 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 ## Connexió amb el repte següent
 
 El `R2` ha de deixar un flux prou real per justificar `R3`. Si només hi ha auth aparent, o si la dada correcta encara no es reutilitza dins del producte, la refactorització i la persistència no tindran una base funcional seriosa sobre la qual treballar.
+
+Si hi ha un tram final de refactorització en `R2`, ha de servir per netejar i fer més mantenible el que ja funciona, no per avançar tota l'arquitectura del repte següent.

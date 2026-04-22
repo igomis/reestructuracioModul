@@ -14,6 +14,8 @@ Transició al Repte 3:
 - també ha de deixar identificades les validacions, errors i punts de persistència que convindrà encapsular millor
 - la persistència pot aparéixer ja com a suport funcional, però encara no és el focus principal d'avaluació
 
+Si el professorat obri un tram final de refactorització lleu, esta revisió ha de servir per netejar i fer més mantenible el que ja funciona, no per reconstruir `R2` amb l'arquitectura completa de `R3`.
+
 ### Flux de dades i reutilització
 
 - [ ] existix una entrada de dades útil dins del domini
@@ -21,6 +23,13 @@ Transició al Repte 3:
 - [ ] l'usuari pot corregir la dada i repetir el flux
 - [ ] la informació correcta queda conservada amb un mecanisme simple o controlat
 - [ ] el projecte pot tornar a mostrar, recuperar o llistar eixa informació
+
+### Refactorització final opcional
+
+- [ ] si s'ha activat, la revisió final millora claredat o mantenibilitat sense trencar el flux funcional
+- [ ] s'ha reduït duplicació, barreja excessiva de `HTML + PHP` o acoblament innecessari
+- [ ] hi ha una justificació breu del abans/després
+- [ ] si apareixen classes, objectes o persistència més formal, es presenten com a tast o pont cap a `R3`
 
 ## Errors habituals o riscos
 

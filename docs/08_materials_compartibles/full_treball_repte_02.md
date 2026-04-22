@@ -21,6 +21,18 @@ Convertir la primera peça funcional del producte en una operació de negoci pro
 
 En `R2` la persistència pot ser simple o, si cal, amb base de dades. El punt principal no és la sofisticació tècnica d'eixa persistència, sinó que el flux complet tinga sentit funcional.
 
+Si el flux principal ja està tancat, `R2` es pot acabar amb una revisió curta de mantenibilitat sobre codi que ja funciona.
+
+## Tram final opcional de revisió del codi
+
+- revisa si hi ha barreja excessiva de `HTML + PHP`
+- extrau funcions quan ajuden a entendre millor el flux
+- millora noms i elimina duplicació clara
+- separa millor preparació de dades i renderitzat si el teu codi ho demana
+- justifica breument per què la versió final és més clara que la inicial
+
+Si apareixen classes, objectes o una persistència més formal, han de quedar com a ampliació o pont cap al repte següent, no com a exigència central de `R2`.
+
 ## Evidència mínima
 
 - usuari o estat operatiu
@@ -64,3 +76,4 @@ En `R2` la persistència pot ser simple o, si cal, amb base de dades. El punt pr
 - afegeix una restricció simple de rol o permís
 - reforça missatges d'error
 - deixa una prova més clara del cas denegat
+- neteja duplicació, millora noms o separa millor preparació de dades i renderitzat sobre codi ja funcional
