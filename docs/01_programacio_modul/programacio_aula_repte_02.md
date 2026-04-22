@@ -30,7 +30,7 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 | `4` | `3h` | `MP4` | estat, sessió i/o cookies | recuperació del flux i invalidació controlada |
 | `5` | `3h` | `MP5` | autenticació i funcionalitat protegida | cas autoritzat i cas denegat d'una operació real |
 | `6` | `3h` | `MP6` | prova, depuració, documentació mínima i checkpoint tècnic | checklist, README i demo reproduïble |
-| `7` | `3h` | `MP7` | refactorització i millora de mantenibilitat | comparativa abans/després i justificació de la millora |
+| `7` | `3h` | `MP7` | refactorització final, organització en fitxers i primer objecte de domini | comparativa abans/després, reutilització en fitxers i justificació de la millora |
 
 ## Seqüència recomanada de sessions
 
@@ -108,26 +108,28 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 
 ### Sessió 7. Microprojecte 7
 
-**Refactorització i millora de mantenibilitat**
+**Refactorització, organització en fitxers i primer objecte del domini**
 
-- Objectiu: revisar el codi que ja funciona, netejar-lo i justificar una millora de mantenibilitat sense convertir esta fase en una reescriptura de `R3`.
-- Què explica el professorat: com detectar duplicació, mescla excessiva de `HTML + PHP`, responsabilitats poc clares o noms millorables i per què això encara no equival a "fer arquitectura completa".
-- Què modela el professorat: una refactorització curta sobre una part del flux ja validat, amb comprovació final de no regressió.
-- Què fa l'alumnat: neteja una part rellevant del codi, extraïx funcions si cal, ordena millor dades i renderitzat, millora noms i justifica per què la versió revisada és millor.
-- Materials necessaris: fitxa del Repte 2, full de treball del Repte 2, checklist del Repte 2, materials comuns i comparativa breu abans/després.
-- Evidència esperada: reducció visible de duplicació o mescla innecessària, comparativa abans/després, justificació de la millora i comprovació final del flux.
-- Checkpoint: el professorat valida que la refactorització aporta claredat i mantenibilitat sense desplaçar el nucli de `R3`.
+- Objectiu: revisar el codi que ja funciona, netejar-lo i justificar una millora de mantenibilitat que incorpore reutilització real, organització simple en fitxers i un primer objecte de domini, sense convertir esta fase en una reescriptura de `R3`.
+- Què explica el professorat: com detectar duplicació, mescla excessiva de `HTML + PHP`, responsabilitats poc clares o noms millorables; per què no convé tindre-ho tot en un únic fitxer; per a què servixen `include` i `require`; diferència bàsica entre `include`, `require`, `include_once` i `require_once`; i per què una entitat mínima del domini dona més valor a la refactorització final.
+- Què modela el professorat: una refactorització curta sobre una part del flux ja validat, extraient funcions comunes a un fitxer, important-les amb `require_once` o equivalent, introduint un objecte simple del domini i comprovant després que no hi ha regressió.
+- Què fa l'alumnat: neteja una part rellevant del codi, extraïx funcions comunes a un fitxer separat, usa `include` / `require` amb sentit, ordena millor dades i renderitzat, representa almenys una entitat del projecte amb un objecte simple i justifica per què la versió revisada és millor.
+- Materials necessaris: fitxa del Repte 2, full de treball del Repte 2, checklist del Repte 2, apunts reals del Repte 2, materials comuns i comparativa breu abans/després.
+- Evidència esperada: reducció visible de duplicació o mescla innecessària, almenys un fitxer comú importat amb criteri, una entitat simple del domini recognoscible com a objecte, comparativa abans/després, justificació de la millora i comprovació final del flux.
+- Checkpoint: el professorat valida que la refactorització aporta claredat, reutilització i millor organització sense desplaçar el nucli de `R3`.
 
 ## Criteri metodològic de la sessió 7
 
 Què sí pot incloure:
 
 - netejar barreja excessiva de `HTML + PHP`
-- extraure funcions útils
+- extraure funcions útils a un fitxer separat
+- usar `include` / `require` o, millor encara quan toque, `include_once` / `require_once`
 - ordenar millor el codi
 - millorar noms
 - reduir duplicació
 - separar millor preparació de dades i renderitzat
+- incorporar una entitat mínima del domini com a objecte simple
 - justificar per què la nova versió és més clara i mantenible
 
 Què no ha de convertir-se en:
@@ -135,8 +137,9 @@ Què no ha de convertir-se en:
 - entrada obligatòria a POO completa
 - entrada obligatòria a BBDD com a focus central
 - reescriptura arquitectònica total del repte
+- arquitectura completa tipus `MVC`
 
-Si apareixen una classe simple, un objecte mínim o una persistència més formal, s'han de plantejar com a tast introductori, ampliació opcional o pont cap a `R3`.
+Si apareixen més classes, més objectes o una persistència més formal, s'han de plantejar com a tast introductori, ampliació opcional o pont cap a `R3`.
 
 ## Evidències esperades per sessió
 
@@ -146,7 +149,7 @@ Si apareixen una classe simple, un objecte mínim o una persistència més forma
 - Sessió `4`: estat recuperable, demostració d'invalidació i frontera clara entre estat i conservació funcional.
 - Sessió `5`: operació del domini protegida amb cas autoritzat i cas denegat.
 - Sessió `6`: checklist de prova, documentació mínima i checkpoint tècnic.
-- Sessió `7`: comparativa breu abans/després, millora de mantenibilitat i comprovació final del flux.
+- Sessió `7`: comparativa breu abans/després, fitxer comú importat amb criteri, objecte simple del domini i comprovació final del flux.
 
 ## Moments de checkpoint
 

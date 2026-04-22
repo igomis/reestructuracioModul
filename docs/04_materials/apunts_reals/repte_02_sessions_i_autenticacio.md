@@ -28,6 +28,9 @@ Este repte no consistix a "fer un login". El que s'espera és obrir el primer fl
 - diferència entre autenticació, autorització i estat de sessió o equivalent
 - diferència entre estat temporal i persistència funcional de suport
 - què s'espera com a evidència: flux funcional, casos límit, proves bàsiques, `README` actualitzat i traçabilitat del procés
+- per què no convé tindre tot el flux en un únic fitxer quan ja hi ha reutilització o responsabilitats repetides
+- per a què servixen `include` i `require`, quina diferència bàsica tenen i quan convé preferir `include_once` o `require_once`
+- per què un objecte mínim del domini dona més valor a la refactorització final sense convertir encara el repte en POO completa
 - per què este repte es tancarà només si deixa una base refactoritzable per al Repte 3
 
 ## Què s'ha de modelar en directe
@@ -38,6 +41,8 @@ Este repte no consistix a "fer un login". El que s'espera és obrir el primer fl
 - una comprovació d'accés a una ruta o operació protegida amb valor real dins del domini
 - una restricció simple de rol, permís o condició de negoci quan tinga sentit
 - un exemple breu de prova o verificació manual reproduïble del flux
+- una extracció curta de funcions comunes a un fitxer separat i la seua càrrega amb `require_once` o equivalent
+- un exemple mínim d'entitat del domini expressada com a objecte simple
 - un exemple curt d'anotació al `README` o a l'`AI log` després d'un canvi rellevant
 
 ## Què treballa l'alumnat amb autonomia
@@ -47,6 +52,8 @@ Este repte no consistix a "fer un login". El que s'espera és obrir el primer fl
 - conservar de manera simple la informació correcta del flux principal
 - protegir una operació real del producte i definir la seua regla mínima d'accés
 - validar dades d'entrada i gestionar errors mínims
+- extraure funcions comunes quan es repetixen, repartir millor el codi en fitxers i usar `include` / `require` amb sentit
+- donar forma a almenys una entitat del domini com a objecte simple
 - deixar rastre de proves, correccions i actualització de documentació
 
 ## Exemple mínim orientatiu
@@ -132,6 +139,8 @@ Formats de verificació acceptables:
 El Repte 2 no queda tancat només quan "funciona", sinó quan deixa preparat el pas a arquitectura i persistència. En concret, hauria de deixar identificat:
 
 - quina part del flux convé refactoritzar primer
+- quin fitxer comú o quina funció convé separar primer amb `include` / `require`
+- quina entitat mínima del domini ja comença a demanar un objecte simple
 - quines validacions s'han de moure o encapsular millor
 - quina operació protegida serà el primer cas d'ús a reorganitzar amb persistència
 

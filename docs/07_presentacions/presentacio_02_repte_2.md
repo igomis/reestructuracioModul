@@ -40,6 +40,7 @@ Micro-presentació docent breu. Equival aproximadament a `8` diapositives.
 - conservació funcional simple o controlada
 - una restricció de negoci o de rol
 - documentació i verificació del flux
+- revisió final amb fitxer comú, `include` / `require` i un objecte simple del domini
 
 ## Diapositiva 6. Evidència mínima
 
@@ -47,6 +48,9 @@ Micro-presentació docent breu. Equival aproximadament a `8` diapositives.
 - prova d'un cas permés i un cas denegat
 - commits i `README` actualitzats
 - verificació de validacions i errors
+- comparativa breu abans/després de la sessió `7`
+- evidència d'organització en fitxers amb `include` / `require_once`
+- primera entitat mínima del domini expressada com a objecte simple
 
 ## Diapositiva 7. Errors habituals
 
@@ -54,10 +58,12 @@ Micro-presentació docent breu. Equival aproximadament a `8` diapositives.
 - no distingir auth i autorització
 - no provar credencials incorrectes o accessos sense permís
 - voler obrir massa funcionalitats sense tancar el nucli
+- reduir la sessió `7` a neteja cosmètica o, a l'altre extrem, convertir-la en una reescriptura completa
 
 ## Diapositiva 8. Connexió amb `R3`
 
 - el flux que naix ací ha de continuar viu en `R3`
 - `R3` no és començar de zero, sinó professionalitzar esta funcionalitat i la seua persistència
+- l'objecte mínim que apareix en `R2` és un pont, no encara una arquitectura completa
 - en `R2` la persistència pot aparéixer com a suport funcional, però no és encara el focus principal
 - si `R2` és superficial, `R3` no tindrà un cas d'ús seriós per mantindre

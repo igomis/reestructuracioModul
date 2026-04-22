@@ -12,9 +12,10 @@ Transició al Repte 3:
 
 - el tancament del repte ha de deixar clar què s'ha de reorganitzar en capes o components equivalents
 - també ha de deixar identificades les validacions, errors i punts de persistència que convindrà encapsular millor
+- també ha de deixar visible quines funcions o responsabilitats ja convé separar en fitxers i quina entitat mínima del domini comença a demanar un objecte simple
 - la persistència pot aparéixer ja com a suport funcional, però encara no és el focus principal d'avaluació
 
-La sessió `7` de refactorització ha de servir per netejar i fer més mantenible el que ja funciona, no per reconstruir `R2` amb l'arquitectura completa de `R3`.
+La sessió `7` de refactorització ha de servir per netejar i fer més mantenible el que ja funciona, repartir millor responsabilitats entre fitxers i introduir un objecte mínim de domini, no per reconstruir `R2` amb l'arquitectura completa de `R3`.
 
 ### Flux de dades i reutilització
 
@@ -28,6 +29,8 @@ La sessió `7` de refactorització ha de servir per netejar i fer més mantenibl
 
 - [ ] la revisió final millora claredat o mantenibilitat sense trencar el flux funcional
 - [ ] s'ha reduït duplicació, barreja excessiva de `HTML + PHP` o acoblament innecessari
+- [ ] existix almenys un fitxer comú amb funcions o peces reutilitzables carregat amb `include` / `require` o `include_once` / `require_once`
+- [ ] existix almenys una entitat mínima del domini expressada com a objecte simple
 - [ ] hi ha una justificació breu del abans/després
 - [ ] si apareixen classes, objectes o persistència més formal, es presenten com a tast o pont cap a `R3`
 

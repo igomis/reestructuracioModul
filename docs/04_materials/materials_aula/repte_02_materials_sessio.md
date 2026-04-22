@@ -56,11 +56,11 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 
 ### Sessió clau 7. Refactorització i millora de mantenibilitat
 
-- Objectiu de la sessió: netejar una part del codi que ja funciona perquè el flux quede més clar, menys duplicat i més fàcil de mantindre.
-- Què s'espera al final: millora visible en noms, funcions, separació de preparació de dades i renderitzat o reducció de barreja `HTML + PHP`.
-- Error habitual a evitar: convertir este tram en una reescriptura completa o en una entrada obligatòria a POO i BBDD com a focus del repte.
-- Evidència mínima del dia: comparativa breu abans/després i justificació clara de per què la versió revisada és millor.
-- Pregunta de tancament: què has netejat exactament i per què això prepara millor el pas a `R3` sense substituir-lo?
+- Objectiu de la sessió: netejar una part del codi que ja funciona perquè el flux quede més clar, menys duplicat, millor repartit en fitxers i més fàcil de mantindre.
+- Què s'espera al final: millora visible en noms, funcions, separació de preparació de dades i renderitzat o reducció de barreja `HTML + PHP`, amb almenys un fitxer comú importat amb `include` / `require` i una entitat mínima del domini expressada com a objecte simple.
+- Error habitual a evitar: convertir este tram en una reescriptura completa, en “ara tot a objectes” o en una entrada obligatòria a POO i BBDD com a focus del repte.
+- Evidència mínima del dia: comparativa breu abans/després, fitxer comú reutilitzat, objecte simple del domini i justificació clara de per què la versió revisada és millor.
+- Pregunta de tancament: què has separat en fitxers, quin `include` o `require` uses, quin objecte mínim has introduït i per què això prepara millor el pas a `R3` sense substituir-lo?
 
 ## Checkpoints curts específics
 
@@ -101,7 +101,7 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 - Cal corregir abans de seguir: `No pots obrir R3 si encara no hi ha una operació de negoci protegida i reproduïble.`
 - Tens funcionalitat però falta coherència: `La sessió funciona, però encara no queda clara la diferència entre estat temporal i informació del domini.`
 - Tens solució massa superficial: `El login funciona, però el producte encara no resol res rellevant amb eixa auth.`
-- Tens la base preparada per a la sessió 7: `Ara que el flux ja passa la prova mínima, toca netejar duplicació i aclarir millor el codi.`
+- Tens la base preparada per a la sessió 7: Ara que el flux ja passa la prova mínima, toca netejar duplicació, separar funcions comunes en fitxers, usar `require_once` amb sentit i donar forma a una entitat mínima del domini.
 - Tens marge per ampliar: `Si el flux principal ja està tancat, pots afegir una segona regla del projecte o millorar el tractament d'errors.`
 
 ## Fulls de treball base contextualitzats
@@ -126,12 +126,12 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 
 ### Full 3. Refactorització i mantenibilitat
 
-- Objectiu: revisar el flux ja tancat i deixar-lo una mica més clar i mantenible.
-- Tasca: reduir duplicació, millorar noms, extraure funcions útils i separar millor dades i renderitzat quan toque.
-- Evidència a generar: comparativa breu abans/després i justificació clara de la millora.
+- Objectiu: revisar el flux ja tancat i deixar-lo una mica més clar, reutilitzable i mantenible.
+- Tasca: reduir duplicació, millorar noms, extraure funcions útils a un fitxer separat, importar-les amb `include` / `require` i representar almenys una entitat del domini amb un objecte simple.
+- Evidència a generar: comparativa breu abans/després, fitxer comú reutilitzat, objecte simple recognoscible i justificació clara de la millora.
 - Validació mínima: el flux continua funcionant després dels canvis.
 - Ajuda si et bloqueges: tria una sola part del codi que estiga repetida o massa mesclada i neteja només eixa peça.
-- Ampliació si acabes prompte: prova una separació lleu d'arxius o una classe simple només si realment millora el flux i sense obrir encara `R3`.
+- Ampliació si acabes prompte: prova una separació lleu d'arxius amb `require_once` o reforça l'objecte mínim del domini només si realment millora el flux i sense obrir encara `R3`.
 
 ## Suport per alumnat endarrerit
 
@@ -146,7 +146,7 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 - millor tractament de fitxer o imatge quan forme part del cas d'ús
 - proves més sistemàtiques del cas correcte i incorrecte
 - millor registre d'incidències i preparació de `R3`
-- revisió final de mantenibilitat sobre codi ja funcional amb millora de noms, funcions o separació de responsabilitats
+- revisió final de mantenibilitat sobre codi ja funcional amb millora de noms, funcions, separació en fitxers o un objecte mínim del domini
 
 ## Evidència mínima per tram
 
@@ -154,10 +154,10 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 - Tram funcional: reutilització de la informació correcta, regla del projecte i estat temporal
 - Tram protegit: autenticació funcional i operació de negoci protegida
 - Tram de checkpoint tècnic: errors mínims controlats, prova reproduïble i `README` actualitzat
-- Tram final de mantenibilitat: codi revisat, comparativa abans/després i justificació de la millora
+- Tram final de mantenibilitat: codi revisat, fitxer comú reutilitzat, objecte simple del domini, comparativa abans/després i justificació de la millora
 
 ## Connexió amb el repte següent
 
 El `R2` ha de deixar un flux prou real per justificar `R3`. Si només hi ha auth aparent, o si la dada correcta encara no es reutilitza dins del producte, la refactorització i la persistència no tindran una base funcional seriosa sobre la qual treballar.
 
-La sessió `7` ha de servir per netejar i fer més mantenible el que ja funciona, no per avançar tota l'arquitectura del repte següent.
+La sessió `7` ha de servir per netejar i fer més mantenible el que ja funciona, introduir organització bàsica en fitxers i un objecte mínim del domini, no per avançar tota l'arquitectura del repte següent.

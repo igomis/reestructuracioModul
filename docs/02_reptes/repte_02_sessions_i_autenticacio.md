@@ -26,7 +26,7 @@ Una primera funcionalitat de domini protegida, construïda sobre una seqüència
 - validació i tractament d’errors
 - proves mínimes o verificacions registrades
 - documentació tècnica actualitzada
-- revisió final del codi orientada a mantenibilitat i justificació de la millora
+- revisió final del codi orientada a mantenibilitat, organització en fitxers i justificació de la millora, amb una primera entitat simple del domini
 
 **Context professional simul·lat o realista**
 
@@ -50,9 +50,9 @@ La baixada operativa d’este repte es concreta en la [Programació d'aula del R
 
 La base recomanada del repte és de `21` hores, organitzades en `7` sessions de `3` hores, una per cada microprojecte docent principal.
 
-La sessió `7` està dedicada específicament a refactorització i millora de mantenibilitat sobre codi que ja funciona i que ja ha passat per prova, depuració i checkpoint tècnic.
+La sessió `7` està dedicada específicament a refactorització i millora de mantenibilitat sobre codi que ja funciona i que ja ha passat per prova, depuració i checkpoint tècnic, incorporant organització simple en fitxers amb `include` / `require` i una primera entitat de domini com a objecte simple.
 
-Açò reforça el valor integrador de `R2`, però no el convertix en una entrada obligatòria a POO completa, BBDD com a focus principal ni reescriptura arquitectònica total del repte següent.
+Açò reforça el valor integrador de `R2` com a fase final de preparació del pas a `RA5`, però no el convertix en una entrada obligatòria a POO completa, BBDD com a focus principal ni reescriptura arquitectònica total del repte següent.
 
 ---
 
@@ -191,25 +191,28 @@ La conservació es pot resoldre amb mecanismes simples i controlats. La base de 
 
 La seqüència base del repte queda en `7` microprojectes obligatoris.
 
-La sessió `7` s’activa després del checkpoint tècnic del microprojecte `MP6` i servix per revisar el codi que ja funciona, netejar-lo i deixar-lo més clar i més mantenible sense avançar encara el nucli metodològic de `R3`.
+La sessió `7` s’activa després del checkpoint tècnic del microprojecte `MP6` i servix per revisar el codi que ja funciona, netejar-lo i deixar-lo més clar i més mantenible com a fase final de refactorització i preparació del pas a `RA5`, sense avançar encara el nucli metodològic de `R3`.
 
-Esta fase final sí que ha d’incloure treball com:
+Esta fase final ha d’incloure com a mínim treball com:
 
 - reducció de la mescla excessiva de `HTML + PHP`
-- extracció de funcions
+- extracció de funcions comunes a un fitxer separat
+- ús amb sentit de `include` / `require` i, quan convinga, de `include_once` / `require_once`
 - millor ordenació del codi
 - millora de noms
 - reducció de duplicació
 - separació més clara entre preparació de dades i renderitzat
+- primera representació d’una entitat del domini com a objecte simple
 - justificació breu de per què la nova versió és millor
 
-Esta fase final només pot obrir de manera lleu o opcional:
+Esta fase final no ha de convertir-se en:
 
-- alguna classe simple
-- algun objecte mínim
-- alguna persistència més formal
+- migració completa del projecte a POO
+- entrada obligatòria a BBDD com a focus central
+- arquitectura completa tipus `MVC`
+- substitució del treball propi de `R3`
 
-Si apareixen estos elements, s’han de llegir com a millora de mantenibilitat, tast introductori o pont cap a `R3`, no com a exigència nuclear de `R2`.
+Si apareixen més classes, més objectes o alguna persistència més formal, s’han de llegir com a millora de mantenibilitat, tast introductori o pont cap a `R3`, no com a exigència nuclear de `R2`.
 
 ---
 
@@ -725,25 +728,29 @@ Checklist de verificació + defensa tècnica.
 
 **Tipus**
 
-Microprojecte integrador de revisió i neteja del codi.
+Microprojecte integrador de revisió, reutilització i reorganització lleu del codi.
 
 **Objectiu**
 
-Revisar el codi ja funcional del repte, netejar-lo i justificar una millora real de mantenibilitat sense convertir encara `R2` en una reescriptura arquitectònica completa.
+Revisar el codi ja funcional del repte, netejar-lo i justificar una millora real de mantenibilitat que incorpore reutilització en fitxers, `include` / `require` amb sentit i una primera entitat simple del domini, sense convertir encara `R2` en una reescriptura arquitectònica completa.
 
 **Tasca**
 
-L’equip revisa el flux que ja ha sigut provat i documentat i aplica una millora clara de mantenibilitat, per exemple amb:
+L’equip revisa el flux que ja ha sigut provat i documentat i aplica una millora clara de mantenibilitat, que ha d’incloure com a mínim:
 
 - reducció de duplicació
-- extracció de funcions útils
+- extracció de funcions útils a un fitxer separat
+- ús amb sentit de `include` / `require` o, quan toque, de `include_once` / `require_once`
 - millora de noms
 - separació més clara entre preparació de dades i renderitzat
 - reducció de la mescla excessiva de `HTML + PHP`
 - reorganització lleu d’arxius o peces del flux quan tinga sentit
+- una entitat mínima del domini expressada com a objecte simple
 - comprovació final que el flux continua viu després del canvi
 
-Si apareixen classes simples, objectes mínims o una persistència un poc més formal, han de quedar com a tast introductori, millora puntual o pont cap a `R3`, no com a exigència de reescriptura total.
+Esta fase no ha de convertir-se en POO completa, en una arquitectura `MVC` ja tancada ni en una entrada obligatòria a BBDD com a focus principal.
+
+Si apareixen més classes, més objectes o una persistència un poc més formal, han de quedar com a tast introductori, millora puntual o pont cap a `R3`, no com a exigència de reescriptura total.
 
 **Relació amb el producte principal**
 
@@ -757,18 +764,21 @@ Este microprojecte tanca `R2` amb un guany explícit de claredat i mantenibilita
 
 **Descripció dels CA en llenguatge docent**
 
-- L’alumnat reorganitza parts del flux en funcions o peces més clares quan això millora el manteniment.
+- L’alumnat reorganitza parts del flux en funcions o peces més clares, repartides en fitxers quan això millora el manteniment.
 - L’alumnat deixa el codi més llegible i millor justificat.
+- L’alumnat fa visible una primera entitat del domini com a objecte simple sense convertir tot el repte en POO completa.
 - L’alumnat comprova que la revisió final no ha trencat el comportament funcional del sistema.
 
 **Paper de la IA**
 
-La IA pot ajudar a detectar duplicació, suggerir extracció de funcions o proposar una comparativa abans/després, però l’alumnat ha de decidir què canvia, verificar que el flux continua funcionant i justificar per què la nova versió és millor.
+La IA pot ajudar a detectar duplicació, suggerir extracció de funcions, proposar quan usar `include` o `require` o esbossar un objecte mínim del domini, però l’alumnat ha de decidir què canvia, verificar que el flux continua funcionant i justificar per què la nova versió és millor.
 
 **Evidències obligatòries**
 
 - comparativa breu abans/després
 - reducció visible d’algun problema de claredat, duplicació o mescla innecessària
+- almenys un fitxer comú importat amb criteri
+- almenys una entitat simple del domini expressada com a objecte
 - justificació de la millora de mantenibilitat
 - comprovació que el flux continua funcionant després del canvi
 - documentació tècnica o nota breu actualitzada sobre la revisió final
@@ -783,20 +793,21 @@ Rúbrica curta de refactorització i mantenibilitat.
 - la millora és real i no cosmètica
 - el flux continua viu després de la revisió
 - l’equip sap explicar què ha netejat i per què
-- la sessió no s’ha convertit en una reescriptura total fora d’escala
+- la sessió no s’ha convertit en una reescriptura total fora d’escala ni en un fals `R3`
 
 **Riscos habituals**
 
 - canviar massa coses sense necessitat
 - obrir POO o persistència com a focus central abans d’hora
 - deixar el codi més dispers o menys clar que abans
+- usar `include` / `require` sense poder justificar per què s’ha separat cada peça
 - no poder justificar el valor real del canvi
 
 **Verificació del treball real**
 
 - comparació entre versió inicial i revisada
 - execució breu del flux després de la revisió
-- pregunta oral sobre què s’ha millorat i què encara es reserva per a `R3`
+- pregunta oral sobre què s’ha millorat, per què s’ha separat en fitxers, què aporta l’objecte mínim i què encara es reserva per a `R3`
 
 **Pes orientatiu dins del repte**
 
@@ -814,7 +825,7 @@ Rúbrica curta de refactorització i mantenibilitat.
 | MP4 | Procedimental | Estat, sessió i/o cookies | RA4.a, RA4.b, RA4.c | demo d’estat, recuperació i invalidació | checklist | 15% |
 | MP5 | Procedimental | Autenticació i operació protegida | RA4.d, RA4.e | login, operació protegida, cas autoritzat i denegat | rúbrica | 20% |
 | MP6 | Tancament / verificació | Proves, documentació mínima i checkpoint tècnic | RA4.f | proves, incidències, documentació, defensa | checklist + defensa | 10% |
-| MP7 | Integrador | Refactorització i millora de mantenibilitat | RA3.d, RA3.g, RA4.f | comparativa abans/després, millora de claredat, comprovació final | rúbrica curta | 10% |
+| MP7 | Integrador | Refactorització, organització en fitxers i objecte mínim del domini | RA3.d, RA3.g, RA4.f | comparativa abans/després, fitxer comú, objecte simple, comprovació final | rúbrica curta | 10% |
 
 ---
 
@@ -835,6 +846,7 @@ Rúbrica curta de refactorització i mantenibilitat.
 - registre de proves mínimes
 - documentació tècnica actualitzada
 - evidència de revisió final del codi i justificació de la millora de mantenibilitat
+- almenys un fitxer comú importat amb criteri i una entitat simple del domini expressada com a objecte
 - AI log quan hi haja ús d’IA
 
 **Evidències opcionals d’ampliació**
@@ -844,7 +856,7 @@ Rúbrica curta de refactorització i mantenibilitat.
 - rols addicionals
 - test automatitzat mínim
 - millor observabilitat del flux
-- alguna classe simple, objecte mínim o millora puntual de persistència com a tast introductori
+- més classes, més objectes o alguna millora puntual de persistència com a tast introductori
 - preparació més detallada del Repte 3
 
 ### 7.1 Forma mínima de prova del repte

@@ -143,14 +143,14 @@ Regla pràctica:
 
 #### Setmana 8
 
-- Focus o repte: sessió final de `R2` amb refactorització i millora de mantenibilitat, i primer mapa de pas a `R3`
-- Què fa el professorat: modela una refactorització curta del codi ja funcional i explica què encara queda reservat a `R3`
-- Què fa l'alumnat: implementa `MP7`, compara abans/després, justifica la millora i identifica el primer punt de pas a arquitectura
+- Focus o repte: sessió final de `R2` amb refactorització, organització en fitxers amb `include` / `require`, primer objecte de domini i primer mapa de pas a `R3`
+- Què fa el professorat: modela una refactorització curta del codi ja funcional, mostra com separar funcions comunes en fitxers, explica la diferència bàsica entre `include`, `require`, `include_once` i `require_once`, introduïx un objecte simple del domini i delimita què encara queda reservat a `R3`
+- Què fa l'alumnat: implementa `MP7`, reorganitza una part del codi en fitxers, usa `include` / `require` amb sentit, incorpora una entitat mínima del domini com a objecte simple, compara abans/després, justifica la millora i identifica el primer punt de pas a arquitectura
 - Materials per a l'alumnat: full de treball del Repte 2, checklist del Repte 2, materials del Repte 3 com a lectura de transició
-- Evidència mínima del bloc: comparativa breu abans/després, justificació de mantenibilitat i primer mapa de pas a `R3`
+- Evidència mínima del bloc: comparativa breu abans/després, almenys un fitxer comú importat amb criteri, objecte simple del domini, justificació de mantenibilitat i primer mapa de pas a `R3`
 - Checkpoint docent: validar que el pas a `R3` es fa sobre un flux real i una revisió final explicable
 - Pla per a alumnat endarrerit: centrar-se en una sola entitat i un sol cas d'ús
-- Pla per a alumnat avançat: preparar relació addicional o separació més clara de capes
+- Pla per a alumnat avançat: reforçar la separació de responsabilitats sense saltar encara a capes completes ni a persistència com a focus central
 
 #### Setmana 9
 

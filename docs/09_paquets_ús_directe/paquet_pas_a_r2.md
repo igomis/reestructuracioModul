@@ -6,7 +6,7 @@ Entrar en `R2` amb una base funcional real i activar el primer flux autenticat s
 
 Este paquet servix per a mantindre `R2` com a base comuna en `PHP`, abans d'obrir el contrast de frameworks.
 
-El mateix paquet també ha de permetre tancar `R2` en `7` sessions amb una sessió final específica de refactorització lleu i millora de mantenibilitat abans d'obrir `R3`.
+El mateix paquet també ha de permetre tancar `R2` en `7` sessions amb una sessió final específica de refactorització lleu i millora de mantenibilitat, organització simple en fitxers i un objecte mínim de domini abans d'obrir `R3`.
 
 ## Materials que ha d'obrir el professorat
 
@@ -35,4 +35,4 @@ El mateix paquet també ha de permetre tancar `R2` en `7` sessions amb una sessi
 
 Encara no és un paquet de tancament, però convé començar a recordar el [Guió breu de defensa individual](../08_materials_compartibles/guio_defensa_individual_breu.md) per reforçar autoria, proves i explicació del flux.
 
-El [Full de treball del Repte 2](../08_materials_compartibles/full_treball_repte_02.md) també servix per orientar la sessió `7` de revisió del codi i mantenibilitat.
+El [Full de treball del Repte 2](../08_materials_compartibles/full_treball_repte_02.md) també servix per orientar la sessió `7` de revisió del codi, mantenibilitat, `include` / `require` i objecte mínim del domini.
