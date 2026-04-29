@@ -105,6 +105,8 @@ Refactoritzar una funcionalitat real del producte perquè passe d’una implemen
 
 Mòdul refactoritzat del producte que incloga:
 
+- cas d’ús real seleccionat i justificat
+- entorn de migració inicialitzat i arrancable
 - estructura MVC o equivalent
 - separació de capes o responsabilitats
 - almenys un cas d’ús prioritari complet migrat
@@ -123,7 +125,9 @@ Mòdul refactoritzat del producte que incloga:
 - repositori actualitzat
 - issue principal del repte i microtasques
 - seqüència de commits significativa
-- diagnosi inicial del codi
+- diagnosi inicial guiada del codi
+- decisió breu de stack
+- prova d’arrencada de l’entorn nou
 - cas d’ús abans i després de la migració
 - persistència funcional i verificable
 - validacions i errors observables
@@ -142,72 +146,124 @@ Mòdul refactoritzat del producte que incloga:
 > - No es considera suficient una reorganització cosmètica ni una persistència només aparent.
 > - El repte ha de professionalitzar un cas d’ús real del producte, no crear una arquitectura buida.
 
-### Microprojecte MP1 — Diagnosi del codi actual i pla de migració
+### Microprojecte MP1 — Diagnosi guiada, selecció del cas d’ús i preparació de l’entorn de migració
 
 **Tipus**
 
-Microtasca d’investigació i decisió tècnica.
+Microtasca d’entrada al repte, diagnosi guiada i preparació tècnica inicial.
+
+**Finalitat**
+
+MP1 ja no és només “analitzar”. És el microprojecte que obri realment `R3`: ha de deixar l’alumnat amb un cas d’ús clarament triat, un pla de migració viable i l’entorn mínim preparat per començar `MP2` sense perdre temps estructural.
+
+Cal tindre en compte que al final de `R2` no tot l’alumnat arriba amb el mateix grau de producte ni amb prou maduresa per fer una diagnosi autònoma útil. Per això, la tria del que es migrarà ha de ser guiada i la instal·lació o inicialització del nou stack forma part del treball planificat del repte, no d’un temps invisible que després absorbisca `MP2`.
 
 **Objectiu**
 
-Analitzar la implementació actual del cas d’ús seleccionat i detectar quins acoblaments, duplicacions o dependències convé corregir abans de migrar-lo a una arquitectura més neta.
+Diagnosticar el punt de partida real heretat de `R2`, seleccionar un cas d’ús migrable i preparar la infraestructura mínima del nou stack perquè la migració puga començar amb criteri.
 
 **Tasca**
 
-L’equip audita el codi actual i identifica:
+Este microprojecte té dues parts.
+
+**Part A. Diagnosi guiada i selecció del cas d’ús**
+
+L’alumnat revisa el producte real heretat de `R2` i identifica:
 
 - punts de mescla entre presentació i lògica
 - dependències excessives
-- parts del flux massa acoblades
+- fitxers, pantalles, rutes o fluxos amb excés de càrrega
+- parts del flux massa acoblades o difícils d’explicar
 - punts febles de persistència o traçabilitat
-- proposta de migració per iteracions curtes
+- un cas d’ús realment migrable, acotat i verificable
+- per què eixe cas d’ús és el millor punt d’entrada a `R3`
+- esquema abans/després de responsabilitats o flux principal
+
+**Part B. Preparació de l’entorn de migració**
+
+L’alumnat prepara la base tècnica mínima:
+
+- tria d’itinerari o stack: `Laravel`, `Symfony` o `NestJS`
+- nota breu de decisions de stack
+- instal·lació o inicialització de la nova infraestructura mínima
+- prova d’arrencada de l’entorn nou
+- estructura inicial del projecte de migració
+- issues, microtasques o roadmap curt per començar `MP2`
+
+**Seqüència de sessions**
+
+MP1 ocupa `2` sessions:
+
+- **Sessió 1**: diagnosi guiada del producte de `R2`, selecció del cas d’ús i defensa breu de la tria.
+- **Sessió 2**: pla de migració, decisió de stack i preparació o instal·lació de l’entorn mínim.
 
 **Relació amb el producte principal**
 
-Sense una diagnosi real, la refactorització es convertix fàcilment en un canvi superficial o arbitrari.
+Sense una diagnosi real i una infraestructura mínima arrancable, la refactorització es convertix fàcilment en un canvi superficial o arbitrari. MP1 ha de deixar preparat el terreny perquè `MP2` siga ja treball de migració, no una barreja improvisada de diagnosi tardana i instal·lació.
 
 **CA coberts**
 
 - **RA5.c**
 - **RA5.d**
+- **RA5.e**
 
 **Descripció dels CA en llenguatge docent**
 
 - L’alumnat identifica mecanismes reals de separació de responsabilitats.
 - L’alumnat analitza el punt de partida i detecta per què l’estructura actual és poc mantenible.
+- L’alumnat prepara una base tècnica coherent amb el stack triat per començar la migració.
 
 **Paper de la IA**
 
-La IA pot suggerir patrons i riscos habituals, però l’alumnat ha de contrastar-los amb el codi real del projecte.
+La IA pot suggerir patrons, riscos habituals, alternatives de stack o microtasques, però l’alumnat ha de contrastar-ho amb el codi real del projecte i defensar la selecció del cas d’ús.
 
 **Evidències obligatòries**
 
 - diagnosi breu del codi
 - mapa inicial de dependències o responsabilitats
-- pla de migració
+- cas d’ús seleccionat i justificat
+- esquema abans/després
+- nota breu de decisions de stack
+- prova que el nou entorn arranca
+- estructura inicial del projecte de migració
 - issue principal i microtasques
+- roadmap curt o pla de migració
 - defensa oral breu
 
 **Instrument d’avaluació**
 
-Rúbrica de diagnosi i pla tècnic.
+Rúbrica de diagnosi i pla tècnic, checklist d’arrencada de l’entorn i validació docent del cas d’ús triat.
 
 **Indicadors d’assoliment**
 
 - diagnosi concreta i no genèrica
+- cas d’ús real, acotat i viable
 - proposta de migració viable
 - connexió clara amb el cas d’ús triat
+- entorn nou arrancable i reproduïble
+- microtasques suficients per començar `MP2`
 
 **Riscos habituals**
 
 - diagnosi superficial
 - parlar d’MVC en abstracte sense relació amb el producte
+- triar “tot el projecte” com a cas d’ús
+- triar una funcionalitat que encara no existix mínimament en `R2`
 - pla massa gran o inviable
+- deixar la instal·lació del framework com a feina invisible fora del repte
+- arribar a `MP2` sense entorn arrancable ni tasques concretes
 
 **Verificació del treball real**
 
-- pregunta oral sobre quin acoblament concret es vol eliminar i per què
+- defensa breu de la selecció del cas d’ús
+- validació del pla de migració
+- comprovació que l’entorn nou arranca
+- verificació que no s’ha triat un cas d’ús inviable, massa gran o massa vague
 - contrast entre diagnosi i canvis reals fets després
+
+**Relació amb MP2**
+
+MP2 comença amb el terreny preparat: cas d’ús triat, stack decidit, entorn base arrancable i roadmap curt. Això permet que MP2 es dedique a migrar el cas d’ús i separar responsabilitats, no a descobrir tard què es vol migrar ni a consumir temps de classe en instal·lacions no planificades.
 
 **Pes orientatiu dins del repte**
 
@@ -223,11 +279,11 @@ Microprojecte procedimental.
 
 **Objectiu**
 
-Migrar un cas d’ús real del domini a una estructura més neta, separant almenys la coordinació del flux de la lògica de negoci i de la interfície o presentació.
+Migrar el cas d’ús real del domini triat en `MP1` a una estructura més neta, partint de l’entorn ja preparat, i separant almenys la coordinació del flux de la lògica de negoci i de la interfície o presentació.
 
 **Tasca**
 
-L’equip reorganitza el cas d’ús seleccionat de manera que quede clar:
+L’equip reorganitza el cas d’ús validat en `MP1` de manera que quede clar:
 
 - qui rep la petició o entrada
 - qui coordina el flux
@@ -587,7 +643,7 @@ Rúbrica de defensa + checklist de documentació.
 
 | Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
 |---|---|---|---|---|---|---|
-| MP1 | Investigació / decisió tècnica | Diagnosi i pla de migració | RA5.c, RA5.d | diagnosi, pla, issues, defensa breu | rúbrica | 15% |
+| MP1 | Diagnosi / decisió / preparació tècnica | Cas d’ús triat, pla i entorn arrancable | RA5.c, RA5.d, RA5.e | diagnosi, cas justificat, esquema abans/després, prova d’arrencada, issues | rúbrica + checklist | 15% |
 | MP2 | Procedimental | Cas d’ús migrat a arquitectura més neta | RA5.e, RA5.f | migració, demo abans/després, commits | rúbrica | 20% |
 | MP3 | Procedimental | Consolidació de capes i responsabilitats | RA5.g, RA5.h | estructura final, justificació, demo | checklist | 15% |
 | MP4 | Procedimental | Persistència segura aplicada al cas d’ús | RA6.a, RA6.b, RA6.c, RA6.d | lectura/escriptura, demo, commits | rúbrica | 20% |
@@ -602,8 +658,12 @@ Rúbrica de defensa + checklist de documentació.
 
 - issue principal amb microtasques
 - seqüència de commits significativa
-- diagnosi inicial del codi
-- cas d’ús real seleccionat
+- diagnosi inicial guiada del codi
+- cas d’ús real seleccionat i justificat
+- esquema abans/després
+- nota breu de decisions de stack
+- prova que el nou entorn arranca
+- estructura inicial del projecte de migració
 - demo abans/després
 - arquitectura més clara i defensable
 - persistència funcional i verificable
@@ -628,6 +688,7 @@ Rúbrica de defensa + checklist de documentació.
 ### 8.1 Instruments principals
 
 - rúbrica base del repte adaptada al pes principal de RA5 i suport de RA6
+- checklist de diagnosi guiada, selecció del cas d’ús i arrencada d’entorn
 - rúbriques específiques de migració i persistència
 - checklist d’arquitectura i mantenibilitat
 - checklist de persistència i seguretat bàsica
@@ -636,6 +697,9 @@ Rúbrica de defensa + checklist de documentació.
 ### 8.2 Instruments de verificació
 
 - demostració del cas d’ús abans i després
+- defensa breu de la selecció del cas d’ús
+- validació del pla de migració
+- comprovació que l’entorn nou arranca
 - execució real de lectura i escriptura o actualització
 - revisió de commits i issues
 - execució en directe de proves mínimes
@@ -661,6 +725,8 @@ Rúbrica de defensa + checklist de documentació.
 **Per comprovar aprenentatge real**
 
 - demostració del cas d’ús abans i després
+- comprovació inicial que el cas d’ús triat és viable i acotat
+- comprovació que l’entorn de migració arranca abans d’obrir MP2
 - execució real de persistència
 - revisió de commits i issues
 - execució de proves mínimes
@@ -683,6 +749,8 @@ Rúbrica de defensa + checklist de documentació.
 
 6 a 8 sessions, segons la qualitat de partida del codi del Repte 2 i l’stack triat.
 
+MP1 ocupa `2` sessions planificades: una per a diagnosi guiada i selecció del cas d’ús, i una altra per a pla de migració i preparació de l’entorn. Esta reserva evita que la instal·lació del stack i la tria real del que es migrarà queden com a temps ocult dins de MP2.
+
 **Moment del curs**
 
 Després del Repte 2 i abans del Repte 4.
@@ -692,6 +760,7 @@ Després del Repte 2 i abans del Repte 4.
 - funcionalitat real heretada del Repte 2
 - repositori operatiu
 - treball mínim amb issues i commits
+- cas d’ús seleccionat i entorn de migració preparat abans de començar MP2
 - base d’accés a dades o necessitat clara d’introduir-la per al cas d’ús
 
 **Possibles variants tecnològiques**
@@ -707,6 +776,8 @@ Es pot implementar amb MVC clàssic o arquitectura equivalent, sempre que permet
 **Part comuna del grup**
 
 - diagnosi inicial
+- selecció guiada del cas d’ús
+- preparació mínima de l’entorn de migració
 - migració d’un cas d’ús
 - separació de capes
 - persistència suficient

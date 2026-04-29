@@ -154,44 +154,44 @@ Regla pràctica:
 
 #### Setmana 9
 
-- Focus o repte: arquitectura i persistència inicials
-- Què fa el professorat: modela una refactorització curta a capes o equivalent i la primera entitat persistent, seguint la [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
-- Què fa l'alumnat: inicia el pas a arquitectura mantenible i persistència real
-- Materials per a l'alumnat: materials del Repte 3, itinerari triat com a suport de persistència, [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
-- Evidència mínima del bloc: primera entitat persistent i estructura refactoritzada recognoscible
-- Checkpoint docent: comprovar que la persistència no és només decorativa
-- Pla per a alumnat endarrerit: prioritzar una única entitat persistent i un servei o equivalent
-- Pla per a alumnat avançat: afegir relació simple o capa de servei més robusta
+- Focus o repte: `R3 MP1`, sessió 1: diagnosi guiada i selecció del cas d’ús
+- Què fa el professorat: guia la revisió del producte real de `R2`, ajuda a detectar fitxers o fluxos massa carregats i valida que el cas d’ús triat siga migrable
+- Què fa l'alumnat: diagnostica el punt de partida, selecciona un cas d’ús real, prepara l’esquema abans/després i defensa breument la tria
+- Materials per a l'alumnat: materials del Repte 3, checklist de diagnosi, [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
+- Evidència mínima del bloc: cas d’ús seleccionat i justificat, diagnosi guiada i esquema abans/després
+- Checkpoint docent: comprovar que no s’ha triat un cas d’ús massa gran, massa vague o encara inexistent
+- Pla per a alumnat endarrerit: reduir l’abast a un sol flux real i observable de `R2`
+- Pla per a alumnat avançat: comparar dos punts d’entrada possibles i justificar per què se’n prioritza un
 
 #### Setmana 10
 
-- Focus o repte: tancament de la primera avaluació amb `R3` obert
-- Què fa el professorat: revisa estat del producte, persistència mínima i riscos per a l'avaluació 2
-- Què fa l'alumnat: tanca el primer tram de `R3`, documenta estat i prepara el pas a la segona avaluació
+- Focus o repte: `R3 MP1`, sessió 2: pla de migració i preparació de l’entorn
+- Què fa el professorat: valida el pla curt de migració, acompanya la decisió de stack i comprova que la infraestructura mínima arranca
+- Què fa l'alumnat: decideix itinerari, inicialitza o instal·la el nou entorn, prova l’arrencada i prepara issues o microtasques per començar `MP2`
 - Materials per a l'alumnat: checklist del Repte 3, programació per repte, [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
-- Evidència mínima del bloc: flux funcional existent ja persistent o clarament encaminat a ser-ho
-- Checkpoint docent: decidir si l'equip entra a l'avaluació 2 amb base suficient
-- Pla per a alumnat endarrerit: freeze de noves funcionalitats i consolidació d'una sola peça persistent
-- Pla per a alumnat avançat: afinar model de dades o començar proves de regressió més clares
+- Evidència mínima del bloc: nota breu de decisions de stack, entorn nou arrancable, estructura inicial i roadmap curt de migració
+- Checkpoint docent: decidir si l'equip entra a l'avaluació 2 amb cas d’ús viable i entorn preparat
+- Pla per a alumnat endarrerit: usar el stack més directe i deixar una arrencada mínima reproduïble
+- Pla per a alumnat avançat: afinar microtasques i preparar el primer esquelet funcional sense avançar treball nuclear de `MP2`
 
 ### Avaluació 2
 
 #### Setmana 11
 
-- Focus o repte: consolidació de persistència i regressió
-- Què fa el professorat: modela comprovació de regressió sobre el flux ja refactoritzat
-- Què fa l'alumnat: completa persistència i valida que el flux principal continua viu
-- Materials per a l'alumnat: apunt real del Repte 3, guia de persistència i modelat, [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
-- Evidència mínima del bloc: cas d'ús principal persistent i verificat
+- Focus o repte: `R3 MP2`, primera migració del cas d’ús amb el terreny preparat
+- Què fa el professorat: modela el primer esquelet funcional del cas d’ús dins del framework i revisa el repartiment inicial de responsabilitats
+- Què fa l'alumnat: comença la migració real del cas d’ús validat, sense consumir la sessió en decidir què migrar o instal·lar l’entorn
+- Materials per a l'alumnat: apunt real del Repte 3, guia d’arquitectura i migració, [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
+- Evidència mínima del bloc: primer esquelet funcional del cas d’ús dins del framework i primers commits de migració
 - Checkpoint docent: no obrir `R4` sense base estable
-- Pla per a alumnat endarrerit: assegurar només un flux persistent sencer
-- Pla per a alumnat avançat: reforçar proves o segona lectura d'arquitectura
+- Pla per a alumnat endarrerit: assegurar només el primer esquelet funcional del cas d’ús validat
+- Pla per a alumnat avançat: reforçar el repartiment de responsabilitats o preparar una primera regressió mínima
 
 #### Setmana 12
 
-- Focus o repte: tancament formal de `R3`
-- Què fa el professorat: revisa decisions d'arquitectura i model de dades; acota què farà de nucli d'`API`
-- Què fa l'alumnat: tanca capes o equivalent, `README` tècnic i proves mínimes
+- Focus o repte: consolidació i tancament formal de `R3`
+- Què fa el professorat: revisa decisions d'arquitectura, persistència i regressió; acota què farà de nucli d'`API`
+- Què fa l'alumnat: completa la migració prioritzada, tanca capes o equivalent, `README` tècnic i proves mínimes
 - Materials per a l'alumnat: checklist del Repte 3, itinerari triat, [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
 - Evidència mínima del bloc: `R3` explicable, persistent i defensable
 - Checkpoint docent: validació formal d'entrada a `R4`

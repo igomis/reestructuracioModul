@@ -27,7 +27,7 @@ Esta implantació s'ha calibrat sobre un escenari orientatiu d'unes `20` setmane
 | **Bloc 1** | Avaluació 1 | Fase 0 | posar en marxa el marc de treball, evidències i criteris comuns | repositori usable, primer `README`, criteri de traçabilitat assumit |
 | **Bloc 2** | Avaluació 1 | Fase 1 / Repte 1 | concretar domini, base comuna en `PHP` i primer esquelet defensable del producte | base tècnica executable i primera decisió tècnica documentada |
 | **Bloc 3** | Avaluació 1 | Fase 2 / Repte 2 | construir la base funcional del producte amb auth, sessions o estat equivalent sobre base comuna en `PHP` | flux funcional mínim real i verificable |
-| **Bloc 4** | Avaluació 1 | inici de Fase 3 / Repte 3 | obrir arquitectura i persistència abans del canvi d'avaluació | primer model de dades i refactorització inicial explicable |
+| **Bloc 4** | Avaluació 1 | inici de Fase 3 / Repte 3 | obrir `R3` amb diagnosi guiada, tria del cas d’ús i entorn de migració | cas d’ús validat, pla curt i entorn arrancable |
 | **Bloc 5** | Avaluació 2 | tancament de Fase 3 / Repte 3 | consolidar persistència, capes i mantenibilitat amb entrada de framework | backend persistent i mantenible |
 | **Bloc 6** | Avaluació 2 | Fase 4 / Repte 4 | publicar i provar l'API del producte | API documentada i comprovada |
 | **Bloc 7** | Avaluació 2 | Fase 5 / Repte 5 i defensa final | integrar, tancar i defensar el producte del curs | producte final complet, integrat i defensable |
@@ -146,11 +146,11 @@ Punt crític de seguiment:
 
 - comprovar que la funcionalitat és real i reproduïble, no una demo puntual o una seqüència només preparada per a presentar
 
-### Bloc 4. Entrada a arquitectura i persistència
+### Bloc 4. Entrada guiada a R3 i preparació de l’entorn
 
 Objectiu docent:
 
-- obrir `R3` abans del canvi d'avaluació perquè la base funcional no quede desacoblada de l'arquitectura
+- obrir `R3` abans del canvi d'avaluació amb una tria guiada del cas d’ús, un pla viable i la infraestructura mínima preparada
 
 Repte o fase associada:
 
@@ -158,31 +158,35 @@ Repte o fase associada:
 
 Activitats d'aula:
 
-- identificar responsabilitats, capes o equivalents dins del stack triat
-- començar el model de dades del domini
-- preparar persistència inicial i primeres refactoritzacions
+- revisar el producte real heretat de `R2` i detectar mescles de responsabilitats
+- seleccionar un cas d’ús migrable i justificar per què és el millor punt d’entrada
+- decidir l’itinerari o stack i deixar-ne una nota breu
+- inicialitzar o instal·lar la infraestructura mínima del nou entorn
+- comprovar que l’entorn arranca i preparar issues o microtasques per a `MP2`
 
 Materials activats:
 
 - materials del Repte 3
 - [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
 - materials comuns
-- itinerari triat com a suport directe de capes i persistència
+- itinerari triat com a suport directe de la migració
 
 Evidències esperades:
 
-- primer model de dades explicable
-- separació inicial de responsabilitats
-- persistència en construcció o primer accés a dades verificable
-- traça de refactorització al repositori
+- diagnosi guiada del punt de partida
+- cas d’ús seleccionat i justificat
+- esquema abans/després
+- nota breu de decisions de stack
+- entorn base arrancable
+- issues o microtasques de migració
 
 Instrument principal:
 
-- `rubrica_base_reptes.md`
+- `rubrica_base_reptes.md` i checklist de diagnosi/arrencada
 
 Punt crític de seguiment:
 
-- no tancar la primera avaluació amb un producte exclusivament efímer o sense entrada real a mantenibilitat
+- no tancar la primera avaluació amb `R3` obert només en abstracte: ha d’haver-hi cas d’ús viable, pla curt i entorn preparat
 
 ### Bloc 5. Tancament de persistència i mantenibilitat
 
@@ -315,7 +319,7 @@ Punt crític de seguiment:
 | **Bloc 1** | repositori usable i primer `README` | base de treball compartida |
 | **Bloc 2** | entorn funcional i decisió tècnica inicial | esquelet de producte defensable |
 | **Bloc 3** | flux funcional d'autenticació i validacions mínimes | nucli de `R2` complet |
-| **Bloc 4** | model de dades inicial i refactorització observable | entrada efectiva a `R3` |
+| **Bloc 4** | cas d’ús validat, pla curt i entorn arrancable | entrada efectiva a `R3` |
 | **Bloc 5** | persistència coherent i arquitectura mantenible | backend preparat per a `R4` |
 | **Bloc 6** | API publicada, documentada i provada | producte exposat com a servei usable |
 | **Bloc 7** | integració funcional, defensa i documentació final | producte complet del curs |
@@ -337,7 +341,7 @@ Lectura docent:
 
 - al final del **Bloc 1**: comprovar criteri de traçabilitat i ús professional del repositori
 - al final del **Bloc 3**: comprovar que `R2` deixa una base funcional real i no una simulació
-- al final del **Bloc 4**: comprovar que l'entrada a `R3` és real abans del canvi d'avaluació
+- al final del **Bloc 4**: comprovar que l'entrada a `R3` és real abans del canvi d'avaluació, amb cas d’ús viable i entorn arrancable
 - al final del **Bloc 5**: comprovar que el backend és prou persistent i mantenible per publicar API
 - al final del **Bloc 6**: comprovar coherència entre contracte API, proves i documentació
 - al final del **Bloc 7**: comprovar valor real de la integració, autoria verificable i defensa tècnica
