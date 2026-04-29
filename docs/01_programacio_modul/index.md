@@ -20,7 +20,7 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - [Programacio d'aula per repte](programacio_aula_per_repte.md): lectura docent per `R1-R5`.
 - [Programació d'aula del Repte 1](programacio_aula_repte_01.md): baixada operativa de `R1` a sessions, checkpoints i tancament.
 - [Programació d'aula del Repte 2](programacio_aula_repte_02.md): baixada operativa de `R2` a sessions, microprojectes, checkpoints i pas cap a `R3`.
-- [Planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md): conducció comuna de `R3` en 4 sessions, amb variants de stack `Laravel`, `Symfony` i `NestJS`, persistència verificable i criteri d'entrada a `R4`.
+- [Planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md): conducció comuna de `R3` en 8 sessions orientatives, amb variants de stack `Laravel`, `Symfony` i `NestJS`, persistència verificable i criteri d'entrada a `R4`.
 
 ## Pilotatge i preparacio
 

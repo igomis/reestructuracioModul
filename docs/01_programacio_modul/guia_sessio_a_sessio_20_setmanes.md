@@ -157,7 +157,7 @@ Regla pràctica:
 - Focus o repte: arquitectura i persistència inicials
 - Què fa el professorat: modela una refactorització curta a capes o equivalent i la primera entitat persistent, seguint la [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
 - Què fa l'alumnat: inicia el pas a arquitectura mantenible i persistència real
-- Materials per a l'alumnat: materials del Repte 3, itinerari triat com a suport de persistència
+- Materials per a l'alumnat: materials del Repte 3, itinerari triat com a suport de persistència, [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
 - Evidència mínima del bloc: primera entitat persistent i estructura refactoritzada recognoscible
 - Checkpoint docent: comprovar que la persistència no és només decorativa
 - Pla per a alumnat endarrerit: prioritzar una única entitat persistent i un servei o equivalent
@@ -168,7 +168,7 @@ Regla pràctica:
 - Focus o repte: tancament de la primera avaluació amb `R3` obert
 - Què fa el professorat: revisa estat del producte, persistència mínima i riscos per a l'avaluació 2
 - Què fa l'alumnat: tanca el primer tram de `R3`, documenta estat i prepara el pas a la segona avaluació
-- Materials per a l'alumnat: checklist del Repte 3, programació per repte
+- Materials per a l'alumnat: checklist del Repte 3, programació per repte, [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
 - Evidència mínima del bloc: flux funcional existent ja persistent o clarament encaminat a ser-ho
 - Checkpoint docent: decidir si l'equip entra a l'avaluació 2 amb base suficient
 - Pla per a alumnat endarrerit: freeze de noves funcionalitats i consolidació d'una sola peça persistent
