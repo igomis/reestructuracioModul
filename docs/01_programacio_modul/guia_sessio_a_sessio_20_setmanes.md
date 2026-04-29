@@ -155,7 +155,7 @@ Regla pràctica:
 #### Setmana 9
 
 - Focus o repte: arquitectura i persistència inicials
-- Què fa el professorat: modela una refactorització curta a capes o equivalent i la primera entitat persistent
+- Què fa el professorat: modela una refactorització curta a capes o equivalent i la primera entitat persistent, seguint la [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
 - Què fa l'alumnat: inicia el pas a arquitectura mantenible i persistència real
 - Materials per a l'alumnat: materials del Repte 3, itinerari triat com a suport de persistència
 - Evidència mínima del bloc: primera entitat persistent i estructura refactoritzada recognoscible
@@ -181,7 +181,7 @@ Regla pràctica:
 - Focus o repte: consolidació de persistència i regressió
 - Què fa el professorat: modela comprovació de regressió sobre el flux ja refactoritzat
 - Què fa l'alumnat: completa persistència i valida que el flux principal continua viu
-- Materials per a l'alumnat: apunt real del Repte 3, guia de persistència i modelat
+- Materials per a l'alumnat: apunt real del Repte 3, guia de persistència i modelat, [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
 - Evidència mínima del bloc: cas d'ús principal persistent i verificat
 - Checkpoint docent: no obrir `R4` sense base estable
 - Pla per a alumnat endarrerit: assegurar només un flux persistent sencer
@@ -192,7 +192,7 @@ Regla pràctica:
 - Focus o repte: tancament formal de `R3`
 - Què fa el professorat: revisa decisions d'arquitectura i model de dades; acota què farà de nucli d'`API`
 - Què fa l'alumnat: tanca capes o equivalent, `README` tècnic i proves mínimes
-- Materials per a l'alumnat: checklist del Repte 3, itinerari triat
+- Materials per a l'alumnat: checklist del Repte 3, itinerari triat, [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
 - Evidència mínima del bloc: `R3` explicable, persistent i defensable
 - Checkpoint docent: validació formal d'entrada a `R4`
 - Pla per a alumnat endarrerit: tancar un únic flux persistent i ajornar millores no nuclears

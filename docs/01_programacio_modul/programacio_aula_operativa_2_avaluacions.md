@@ -165,6 +165,7 @@ Activitats d'aula:
 Materials activats:
 
 - materials del Repte 3
+- [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
 - materials comuns
 - itinerari triat com a suport directe de capes i persistència
 
@@ -202,6 +203,7 @@ Activitats d'aula:
 Materials activats:
 
 - materials del Repte 3
+- [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
 - materials comuns
 - itineraris `Laravel`, `Symfony` i `NestJS` com a suport principal de stack
 
@@ -301,8 +303,8 @@ Punt crític de seguiment:
 | **Bloc 1** | materials comuns, sistema d'evidències, enunciat base del projecte |
 | **Bloc 2** | fitxa del Repte 1, materials comuns, base comuna del curs |
 | **Bloc 3** | materials del Repte 2, materials comuns, base comuna en `PHP` |
-| **Bloc 4** | materials del Repte 3, materials comuns, itinerari triat |
-| **Bloc 5** | materials del Repte 3, materials comuns, itineraris com a suport principal |
+| **Bloc 4** | materials del Repte 3, [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md), materials comuns, itinerari triat |
+| **Bloc 5** | materials del Repte 3, [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md), materials comuns, itineraris com a suport principal |
 | **Bloc 6** | materials del Repte 4, materials comuns, itineraris reutilitzats en context d'API |
 | **Bloc 7** | materials del Repte 5, materials comuns, reutilització final dels itineraris |
 
