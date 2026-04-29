@@ -78,13 +78,32 @@ La distribució de `8` sessions permet que els microprojectes de `R3` no queden 
 | Qualitat i regressió | `7` | `MP5` | validar entrada, errors i continuïtat funcional |
 | Tancament i pas a `R4` | `8` | `MP6` | documentar, defensar i decidir entrada a API |
 
+## Correspondència entre microprojectes i sessions
+
+Esta planificació pren els microprojectes de `R3` com a eix. Les sessions són la manera d'executar-los a l'aula, no una seqüència independent del repte.
+
+| Microprojecte | Sessions | Producte parcial esperat | Evidència mínima | Checkpoint docent |
+|---|---|---|---|---|
+| `MP1` Diagnosi del codi actual i pla de migració | `1-2` | cas d'ús seleccionat, auditoria del punt de partida i pla de migració viable | diagnosi, mapa de responsabilitats, issue principal i pla curt | el cas d'ús ve de `R2`, és real i el pla no és una reescriptura total |
+| `MP2` Separació de capes i migració del primer cas d'ús | `2-4` | primer recorregut del cas d'ús dins del stack triat, amb separació inicial de responsabilitats | framework arrancable, entrada migrada, comparativa abans/després i commits | el flux conserva comportament i la separació és visible, no només nominal |
+| `MP3` Controladors, serveis i components de presentació o equivalent | `4-5` | mòdul amb rols tècnics consolidats i fronteres explicables | estructura del mòdul, justificació de rols i demo del flux | cada peça té una responsabilitat defensable i no hi ha capes buides |
+| `MP4` Persistència segura aplicada al cas d'ús prioritari | `5-6` | recurs central persistent i integrat en el flux | lectura real, escriptura o actualització verificable i prova abans/després | la persistència és comprovable fora de la pantalla final de demo |
+| `MP5` Validacions, errors i regressió mínima | `7` | flux refactoritzat i persistent validat amb cas positiu i negatiu | registre de proves, error controlat, incidències i correccions | les proves són reproduïbles i el flux de `R2` continua viu |
+| `MP6` Documentació tècnica i preparació del Repte 4 | `8` | `R3` documentat, defensat i preparat per decidir entrada a `R4` | README o equivalent, decisions, deute tècnic, defensa i base candidata d'API | només s'obri `R4` si `MP4`, `MP5` i `MP6` estan tancats amb evidències |
+
+El solapament entre microprojectes és intencionat. `MP2` comença al final de la sessió `2` perquè la decisió de stack ja ha d'aterrar en estructura real. `MP3` comença mentre encara es tanca `MP2`, perquè la migració no queda completa fins que les responsabilitats són defensables. `MP4` pot preparar-se al final de `MP3`, però només queda tancat quan la persistència és verificable.
+
 ## Seqüència detallada de 8 sessions de 3 hores
 
 ### Sessió 1. Diagnosi inicial del codi de `R2`
 
-**Microprojecte vinculat**
+**Microprojecte principal**
 
 - `MP1 — Diagnosi del codi actual i pla de migració`
+
+**Microprojecte secundari**
+
+- cap
 
 **Objectiu**
 
@@ -103,12 +122,18 @@ Auditar el cas d'ús candidat de `R2` i detectar problemes concrets de mantenibi
 - identificació d'acoblaments, duplicitats i punts fràgils
 - taula simple de responsabilitats actuals
 
-**Què fa l'alumnat**
+**Tasques**
 
 - selecciona un cas d'ús real heretat de `R2`
 - identifica fitxers, rutes, funcions, dades i punts de decisió implicats
 - registra què funciona ara i què no és mantenible
 - obri issue principal o registre equivalent de `R3`
+
+**Què pot deixar-se parcialment a la IA**
+
+- suggerir preguntes d'auditoria sobre el codi
+- detectar possibles acoblaments a partir de fragments concrets
+- proposar una primera llista de riscos que l'alumnat haurà de validar
 
 **Evidència mínima**
 
@@ -121,11 +146,19 @@ Auditar el cas d'ús candidat de `R2` i detectar problemes concrets de mantenibi
 
 El cas d'ús ha de ser real, funcional i vinculat al projecte. Si la diagnosi podria aplicar-se a qualsevol pràctica genèrica, no és suficient.
 
+**Condició de pas**
+
+Es pot passar a la sessió `2` quan hi ha un cas d'ús candidat, una diagnosi concreta i una primera traça del flux actual.
+
 ### Sessió 2. Selecció definitiva del cas d'ús i pla de migració
 
-**Microprojecte vinculat**
+**Microprojecte principal**
 
 - `MP1 — Diagnosi del codi actual i pla de migració`
+
+**Microprojecte secundari**
+
+- inici de `MP2 — Separació de capes i migració del primer cas d'ús`
 
 **Objectiu**
 
@@ -144,7 +177,7 @@ Tancar el cas d'ús que es professionalitzarà, decidir l'stack i convertir la d
 - comparació abans/després esperada
 - criteri de risc: què es pot ajornar i què bloqueja el repte
 
-**Què fa l'alumnat**
+**Tasques**
 
 - confirma el cas d'ús prioritari
 - tria `Laravel`, `Symfony` o `NestJS`
@@ -158,6 +191,12 @@ Tancar el cas d'ús que es professionalitzarà, decidir l'stack i convertir la d
 - `Symfony`: ruta, controlador, servei, formulari/DTO si aplica, entitat/repositori i plantilla o resposta.
 - `NestJS`: mòdul, controlador, servei, DTO, entitat/esquema i capa d'accés a dades.
 
+**Què pot deixar-se parcialment a la IA**
+
+- proposar una descomposició inicial en microtasques
+- comparar convencions bàsiques de l'stack triat
+- generar un primer esquelet de carpetes o peces, sempre revisat pel professorat i l'alumnat
+
 **Evidència mínima**
 
 - stack triat i justificat
@@ -169,11 +208,19 @@ Tancar el cas d'ús que es professionalitzarà, decidir l'stack i convertir la d
 
 El professorat valida que el pla no és una reescriptura total, que no duplica indefinidament `R2` i que deixa clar quin comportament s'ha de conservar.
 
+**Condició de pas**
+
+Es pot passar a la sessió `3` quan el pla de migració té tasques executables, criteri de prova i una primera decisió clara sobre l'estructura del stack.
+
 ### Sessió 3. Entrada real al framework i primera migració estructural
 
-**Microprojecte vinculat**
+**Microprojecte principal**
 
 - `MP2 — Separació de capes i migració del primer cas d'ús`
+
+**Microprojecte secundari**
+
+- cap
 
 **Objectiu**
 
@@ -192,12 +239,18 @@ Introduir o estabilitzar l'estructura base del framework triat i portar-hi el pr
 - un controlador mínim que no absorbeix tota la lògica
 - una comprovació immediata del flux parcial
 
-**Què fa l'alumnat**
+**Tasques**
 
 - crea o ajusta l'estructura base del framework
 - migra l'entrada del cas d'ús
 - conserva el comportament principal encara que siga en versió parcial
 - registra la comparació amb el punt de partida
+
+**Què pot deixar-se parcialment a la IA**
+
+- generar esquelets inicials de ruta, controlador, mòdul o servei
+- suggerir passos de migració incremental
+- proposar comprovacions ràpides d'arrencada
 
 **Evidència mínima**
 
@@ -210,11 +263,19 @@ Introduir o estabilitzar l'estructura base del framework triat i portar-hi el pr
 
 No basta que el framework arranque. Ha d'existir una connexió clara entre el cas d'ús de `R2` i el nou recorregut.
 
+**Condició de pas**
+
+Es pot passar a la sessió `4` quan el projecte arranca i ja hi ha un tram real del cas d'ús dins del framework.
+
 ### Sessió 4. Separació real de responsabilitats
 
-**Microprojecte vinculat**
+**Microprojecte principal**
 
 - `MP2 — Separació de capes i migració del primer cas d'ús`
+
+**Microprojecte secundari**
+
+- inici de `MP3 — Controladors, serveis i components de presentació o equivalent`
 
 **Objectiu**
 
@@ -232,12 +293,18 @@ Separar entrada, coordinació, lògica i resposta de manera visible i funcional.
 - separació de preparació de resposta i lògica
 - prova curta del cas positiu després de la refactorització
 
-**Què fa l'alumnat**
+**Tasques**
 
 - reorganitza el cas d'ús amb rols tècnics clars
 - redueix mescles entre presentació, lògica i accés a dades
 - documenta què ha canviat respecte de `R2`
 - comprova que el comportament principal continua viu
+
+**Què pot deixar-se parcialment a la IA**
+
+- suggerir on separar una regla o responsabilitat concreta
+- revisar si un controlador o servei concentra massa codi
+- proposar noms o convencions coherents amb l'stack
 
 **Evidència mínima**
 
@@ -250,11 +317,19 @@ Separar entrada, coordinació, lògica i resposta de manera visible i funcional.
 
 L'alumnat ha de poder respondre què fa cada peça i què no hauria de fer. Si la lògica continua concentrada en una sola peça, el checkpoint queda pendent.
 
+**Condició de pas**
+
+Es pot passar a la sessió `5` quan el cas d'ús funciona en el nou stack i la separació de responsabilitats és visible.
+
 ### Sessió 5. Consolidació de capes o equivalents
 
-**Microprojecte vinculat**
+**Microprojecte principal**
 
 - `MP3 — Controladors, serveis i components de presentació o equivalent`
+
+**Microprojecte secundari**
+
+- inici de `MP4 — Persistència segura aplicada al cas d'ús prioritari`
 
 **Objectiu**
 
@@ -272,12 +347,18 @@ Revisar i consolidar les fronteres internes del mòdul perquè la nova estructur
 - ajust d'un servei o cas d'ús
 - separació entre dades que venen del domini i dades preparades per a la resposta
 
-**Què fa l'alumnat**
+**Tasques**
 
 - revisa controladors, serveis, plantilles, DTO, casos d'ús o equivalents
 - ajusta noms, dependències i fronteres
 - prepara el punt d'entrada cap a model, entitat, repositori o mecanisme persistent
 - deixa una justificació breu de rols tècnics
+
+**Què pot deixar-se parcialment a la IA**
+
+- revisar una estructura de mòdul i assenyalar possibles responsabilitats confuses
+- suggerir una divisió entre servei, DTO, model, repositori o equivalent
+- proposar un primer esquema del recurs persistent, pendent de validació
 
 **Evidència mínima**
 
@@ -290,11 +371,19 @@ Revisar i consolidar les fronteres internes del mòdul perquè la nova estructur
 
 El professorat pot demanar un microcanvi en viu sobre una regla, resposta o validació. La ubicació del canvi ha de ser coherent amb l'arquitectura defensada.
 
+**Condició de pas**
+
+Es pot passar a la sessió `6` quan el mòdul té rols tècnics defensables i està clar quin recurs persistent es treballarà.
+
 ### Sessió 6. Model de dades i persistència segura aplicada
 
-**Microprojecte vinculat**
+**Microprojecte principal**
 
 - `MP4 — Persistència segura aplicada al cas d'ús prioritari`
+
+**Microprojecte secundari**
+
+- cap
 
 **Objectiu**
 
@@ -314,7 +403,7 @@ Consolidar una persistència real i suficient sobre el cas d'ús migrat, amb lec
 - operació de creació, actualització o equivalent
 - comprovació abans/després amb base de dades, consola, logs o prova reproduïble
 
-**Què fa l'alumnat**
+**Tasques**
 
 - defineix el recurs persistent central
 - implementa model, entitat, migració, esquema o repositori segons el stack
@@ -328,6 +417,12 @@ Consolidar una persistència real i suficient sobre el cas d'ús migrat, amb lec
 - `Symfony`: entitat, repositori, migració o actualització d'esquema controlada i ús des d'un servei.
 - `NestJS`: DTO, servei, entitat o esquema segons ORM/ODM i accés encapsulat en servei o repositori.
 
+**Què pot deixar-se parcialment a la IA**
+
+- generar una proposta inicial de migració, entitat, model, esquema o DTO
+- suggerir consultes o ús d'ORM
+- proposar casos de comprovació de lectura i escriptura
+
 **Evidència mínima**
 
 - recurs persistent definit
@@ -340,11 +435,19 @@ Consolidar una persistència real i suficient sobre el cas d'ús migrat, amb lec
 
 El professorat demana demostrar lectura i modificació de dades. El resultat ha de poder comprovar-se fora de la pantalla final de la demo.
 
+**Condició de pas**
+
+Es pot passar a la sessió `7` quan `MP4` està tancat: hi ha lectura i escriptura o actualització persistents, verificables i integrades en el flux.
+
 ### Sessió 7. Validacions, errors i regressió mínima
 
-**Microprojecte vinculat**
+**Microprojecte principal**
 
 - `MP5 — Validacions, errors i regressió mínima`
+
+**Microprojecte secundari**
+
+- reforç de `MP4` si la persistència encara presenta incidències menors
 
 **Objectiu**
 
@@ -363,13 +466,19 @@ Assegurar que el cas d'ús refactoritzat i persistent continua funcionant i resp
 - error provocat i tractat de manera visible
 - verificació de persistència després de l'error o de la correcció
 
-**Què fa l'alumnat**
+**Tasques**
 
 - prova el cas positiu principal
 - provoca almenys un error significatiu
 - revisa validacions i tractament d'errors
 - registra incidències detectades i correccions
 - comprova que el flux de `R2` continua viu després de la migració
+
+**Què pot deixar-se parcialment a la IA**
+
+- suggerir casos positius, negatius i límits
+- generar un esborrany de checklist de regressió
+- revisar missatges d'error o codis de resposta
 
 **Evidència mínima**
 
@@ -383,11 +492,19 @@ Assegurar que el cas d'ús refactoritzat i persistent continua funcionant i resp
 
 El professorat contrasta prova, codi i comportament real. Si la prova no s'executa o no es pot reproduir, no compta com a regressió.
 
+**Condició de pas**
+
+Es pot passar a la sessió `8` quan `MP5` deixa registrat un cas positiu, un cas negatiu i una regressió reproduïble del flux principal.
+
 ### Sessió 8. Documentació, defensa breu i validació d'entrada a `R4`
 
-**Microprojecte vinculat**
+**Microprojecte principal**
 
 - `MP6 — Documentació tècnica i preparació del Repte 4`
+
+**Microprojecte secundari**
+
+- verificació final de `MP4` i `MP5`
 
 **Objectiu**
 
@@ -406,13 +523,19 @@ Tancar `R3` amb documentació coherent, defensa tècnica breu i decisió explíc
 - revisió d'un `README` tècnic coherent amb el repositori
 - contrast entre commits, proves i documentació
 
-**Què fa l'alumnat**
+**Tasques**
 
 - actualitza `README`, decisions tècniques o `ADR`
 - registra deute tècnic pendent
 - completa `AI log` si ha usat IA
 - prepara defensa breu
 - identifica quin recurs o flux podrà exposar-se en `R4`
+
+**Què pot deixar-se parcialment a la IA**
+
+- ajudar a ordenar el `README` o la nota de decisions
+- suggerir una estructura de defensa breu
+- revisar coherència de llenguatge tècnic, sense inventar evidències
 
 **Evidència mínima**
 
@@ -426,20 +549,9 @@ Tancar `R3` amb documentació coherent, defensa tècnica breu i decisió explíc
 
 El professorat valida entrada a `R4` només si codi, persistència, proves, documentació i defensa són coherents entre si.
 
-## Relació entre sessions i microprojectes / microreptes ja definits al document de `R3`
+**Condició de pas**
 
-| Sessió | Microprojecte de `R3` | Motiu de la distribució |
-|---|---|---|
-| `1` | `MP1` | auditoria inicial del codi i detecció de problemes reals |
-| `2` | `MP1` | tancament del cas d'ús, stack i pla de migració |
-| `3` | `MP2` | entrada real al framework i primera migració executable |
-| `4` | `MP2` | separació de responsabilitats i conservació del comportament |
-| `5` | `MP3` | consolidació de controladors, serveis, presentació o equivalents |
-| `6` | `MP4` | model de dades i persistència segura aplicada |
-| `7` | `MP5` | validacions, errors i regressió mínima |
-| `8` | `MP6` | documentació, defensa i preparació de `R4` |
-
-`MP1` i `MP2` ocupen més d'una sessió perquè són els punts amb més risc metodològic: una diagnosi feble porta a una migració superficial, i una entrada precipitada al framework sol generar capes nominals sense millora real.
+Només es pot obrir `R4` si `MP4`, `MP5` i `MP6` estan tancats: persistència real, regressió mínima i documentació/defensa coherents.
 
 ## Què modela el professorat
 
@@ -580,6 +692,8 @@ Condició:
 ## Criteri d’entrada a `R4`
 
 No s'obri `R4` només perquè el calendari avance.
+
+La decisió d'entrada a `R4` depén especialment del tancament de `MP4`, `MP5` i `MP6`: persistència segura aplicada, regressió mínima i documentació/defensa tècnica. Si una d'estes tres peces queda incompleta, `R3` continua obert.
 
 `R4` pot començar quan el professorat pot verificar que:
 
