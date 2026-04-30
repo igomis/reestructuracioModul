@@ -14,6 +14,9 @@ Este repte es resol sobre una **base comuna en `PHP`** per a tot l’alumnat. El
 
 Una primera funcionalitat de domini protegida, construïda sobre una seqüència progressiva que inclou:
 
+- integració de codi servidor amb llenguatge de marques o plantilla `PHP`
+- ús de variables, operadors, sentències simples, directives i àmbits dins del flux
+- generació del document o resposta resultant des del servidor
 - formulari funcional o entrada equivalent de dades
 - validació visible, errors interpretables i possibilitat de correcció
 - recuperació i tractament de dades en servidor
@@ -67,6 +70,8 @@ Açò reforça el valor integrador de `R2` com a fase final de preparació del p
 **Justificació curricular**
 
 Este repte no ha de començar directament per l’autenticació com si fora un bloc aïllat. Perquè siga curricularment sòlid, ha de recórrer abans els elements bàsics de processament de dades en servidor i de programació necessaris per a entendre què es rep, què es valida, què es conserva de manera funcional, què es protegix i per què.
+
+Per això, `R2` cobreix explícitament `RA2`: el flux ha de mostrar codi servidor integrat amb el llenguatge de marques, variables i àmbits, operadors, sentències simples, directives bàsiques i generació del document o resposta resultant des del servidor. Estos elements no són teoria prèvia separada: han d'aparéixer dins del cas d'ús funcional del projecte.
 
 ---
 
@@ -122,6 +127,9 @@ Construir una primera funcionalitat de negoci real que recórrega de manera cohe
 Mòdul funcional integrat en el projecte que incloga:
 
 - formulari o entrada de dades equivalent
+- codi servidor integrat amb `HTML` o plantilla equivalent
+- variables, operadors, sentències simples, directives i àmbits aplicats al flux
+- document o resposta generada pel servidor a partir de les dades rebudes
 - visualització d’errors de validació i possibilitat de correcció
 - recuperació de dades en servidor
 - lògica bàsica amb decisions, arrays o funcions
@@ -148,6 +156,9 @@ Mòdul funcional integrat en el projecte que incloga:
 - issue principal del repte i microtasques
 - seqüència de commits significativa
 - formulari funcional o equivalent
+- codi servidor embegut o integrat en una plantilla
+- ús de variables, operadors, sentències simples, directives i àmbits
+- comprovació del document o resposta resultant generada pel servidor
 - evidència de processament correcte i incorrecte
 - evidència de validació visible i correcció del flux
 - ús visible de lògica bàsica
@@ -250,6 +261,8 @@ S’ha de veure amb claredat:
 - com es mostren els errors quan alguna dada no és vàlida
 - quin tractament inicial se’ls dona
 - quina resposta bàsica retorna el sistema
+- com s'integra el codi servidor amb el llenguatge de marques o plantilla
+- quines variables inicials i àmbits intervenen en la resposta generada
 - quins comentaris breus ajuden a entendre el flux quan el codi ho necessita
 
 **Relació amb el producte principal**
@@ -258,12 +271,19 @@ S’ha de veure amb claredat:
 
 **CA coberts**
 
+- **RA2.a**
+- **RA2.b**
+- **RA2.c**
+- **RA2.d**
 - **RA3.e**
 - **RA3.f**
 - **RA3.g**
 
 **Descripció dels CA en llenguatge docent**
 
+- L’alumnat identifica el mecanisme de generació de resposta en servidor i les tecnologies implicades.
+- L’alumnat integra codi servidor amb llenguatge de marques o plantilla sense reduir-ho a una pàgina estàtica.
+- L’alumnat usa sintaxi, variables inicials, àmbits i sentències simples en el primer tram del flux.
 - L’alumnat usa formularis o mecanismes equivalents per interactuar amb l’usuari.
 - L’alumnat recupera correctament les dades introduïdes.
 - L’alumnat documenta el codi amb comentaris útils i claredat mínima.
@@ -275,8 +295,11 @@ La IA pot suggerir l’estructura inicial del formulari o exemples de tractament
 **Evidències obligatòries**
 
 - formulari funcional o entrada equivalent
+- codi `PHP` integrat amb `HTML` o plantilla equivalent
+- ús visible de variables i sentències simples en la resposta
 - recuperació correcta de dades
 - error de validació visible i possibilitat de reintent
+- comprovació del document resultant generat pel servidor
 - captura o demo del cas correcte
 - codi comentat mínimament
 - commits associats
@@ -288,6 +311,7 @@ Checklist de formulari i recuperació de dades.
 **Indicadors d’assoliment**
 
 - les dades es reben realment
+- el document resultant canvia segons les dades rebudes o l'error detectat
 - el codi és comprensible
 - hi ha correspondència entre camps, recuperació i resposta
 
@@ -819,7 +843,7 @@ Rúbrica curta de refactorització i mantenibilitat.
 
 | Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
 |---|---|---|---|---|---|---|
-| MP1 | Procedimental | Formulari base i recuperació de dades | RA3.e, RA3.f, RA3.g | formulari, recuperació, demo, comentaris | checklist | 15% |
+| MP1 | Procedimental | Formulari base, codi servidor integrat i recuperació de dades | RA2.a, RA2.b, RA2.c, RA2.d, RA3.e, RA3.f, RA3.g | formulari, codi embegut, variables inicials, document generat, recuperació, demo | checklist | 15% |
 | MP2 | Procedimental | Processament bàsic de la petició | RA2.a, RA2.b, RA2.c, RA2.d, RA2.e, RA2.f, RA2.g, RA2.h | codi executable, codi embegut, variables, directiva, demo | rúbrica breu | 15% |
 | MP3 | Procedimental | Decisions, arrays i funcions aplicades | RA3.a, RA3.b, RA3.c, RA3.d | lògica observable, funcions, demo | rúbrica | 15% |
 | MP4 | Procedimental | Estat, sessió i/o cookies | RA4.a, RA4.b, RA4.c | demo d’estat, recuperació i invalidació | checklist | 15% |
@@ -836,6 +860,9 @@ Rúbrica curta de refactorització i mantenibilitat.
 - issue principal amb microtasques
 - seqüència de commits significativa
 - formulari funcional o entrada equivalent
+- integració de codi servidor amb llenguatge de marques o plantilla
+- ús de variables, operadors, sentències simples, directives i àmbits
+- document o resposta resultant generada des del servidor
 - recuperació real de dades
 - processament bàsic en servidor
 - ús visible de lògica amb decisions, arrays o funcions
@@ -869,6 +896,7 @@ La prova mínima hauria d’incloure, com a mínim:
 - error de validació visible
 - correcció d’una entrada inicialment incorrecta
 - tractament correcte de la informació en servidor
+- comprovació del document o resposta resultant generada pel servidor
 - aplicació d’alguna regla bàsica del projecte
 - recuperació d’estat, sessió o cookies, si formen part del flux
 - conservació funcional o reutilització posterior de la informació correcta

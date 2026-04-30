@@ -28,16 +28,19 @@ Els itineraris tecnològics funcionen com a suport de stack:
 - mateixos checkpoints
 - diferent nomenclatura tècnica segons el framework
 
-## Relació amb `RA5` i preparació de `RA6`
+## Relació amb `RA5`, `RA6` i `RA8`
 
 El nucli de `R3` és `RA5`: usar el framework per separar entrada HTTP, coordinació, lògica, presentació o resposta i responsabilitats internes.
 
 `RA6` s'activa com a suport fort i parcial: la persistència ha de ser real, segura i suficient per als fluxos prioritzats, però no cal convertir el repte en el model complet de dades de tot el producte.
 
+`RA8` queda integrat de manera explícita perquè almenys un flux de `R3` ha de generar una resposta `HTML` en servidor amb vista o plantilla, dades reals i una interacció processada pel framework.
+
 Lectura docent:
 
 - `RA5` marca si l'arquitectura del framework és clara, mantenible i explicable.
 - `RA6` marca si l'accés a dades és real, coherent, verificable i integrat en fluxos funcionals.
+- `RA8` marca si el framework s'usa també per generar pàgines dinàmiques, no només com a estructura interna o futura `API`.
 - `R4` només té sentit si `R3` deixa una base persistent que es pot exposar després com a `API` sense improvisació.
 
 ## Duració recomanada
@@ -63,10 +66,10 @@ Si cal reduir abast, es redueix la mida dels fluxos, no els mínims: Docker, pro
 
 | Microprojecte | Sessions | Producte parcial esperat | Evidència mínima | Checkpoint docent |
 |---|---|---|---|---|
-| `MP1` Arrencada del nou projecte | `1` | stack triat, Docker, projecte base, `.env` i rutes mínimes | projecte arrancable, ruta inicial, issue de `R3` i declaració dels `2` fluxos | no és només esquelet: arranca i té abast funcional definit |
+| `MP1` Arrencada del nou projecte | `1` | stack triat, Docker, projecte base, `.env` i rutes mínimes | projecte arrancable, ruta o vista inicial, issue de `R3` i declaració dels `2` fluxos | no és només esquelet: arranca i té abast funcional definit |
 | `MP2` Model de dades i persistència mínima | `2-3` | BBDD real amb esquema inicial i dades de prova | `migrations`, `seeders`, connexió i lectura real | la BBDD es pot reconstruir sense càrrega manual |
-| `MP3` Primer cas d'ús complet | `3-4` | primer flux end-to-end migrat de `R2` | ruta, controlador, model/servei, vista/resposta, BBDD i validació mínima | el flux ve de `R2` i funciona amb dades reals |
-| `MP4` Segon cas d'ús o ampliació funcional | `5-6` | segon flux end-to-end o ampliació útil | recorregut funcional, BBDD, validació/error i demo | no és canvi cosmètic ni duplicació buida |
+| `MP3` Primer cas d'ús complet | `3-4` | primer flux end-to-end migrat de `R2` | ruta, controlador, model/servei, vista o plantilla, BBDD, resposta `HTML` si és el flux server-rendered i validació mínima | el flux ve de `R2` i funciona amb dades reals |
+| `MP4` Segon cas d'ús o ampliació funcional | `5-6` | segon flux end-to-end o ampliació útil | recorregut funcional, BBDD, validació/error, canvi dinàmic de resposta i demo | no és canvi cosmètic ni duplicació buida |
 | `MP5` Qualitat i estabilització | `6-7` | validació, errors, proves i neteja d'estructura | proves mínimes, cas positiu/negatiu, revisió de responsabilitats | els dos fluxos continuen funcionant després de la neteja |
 | `MP6` Tancament tècnic | `8` | README, decisions, demo i backlog de migració | instruccions d'arrencada, fluxos documentats i mapa del que queda | només s'obri `R4` si la base és reproduïble i defensable |
 
@@ -82,18 +85,22 @@ El solapament entre microprojectes és intencionat. `MP2` pot començar mentre e
 
 **Objectiu**
 
-Triar l'stack, preparar Docker, crear el projecte base del framework i verificar una primera ruta mínima.
+Triar l'stack, comparar-lo amb una alternativa, preparar Docker, crear el projecte base del framework i verificar una primera ruta mínima.
 
 **Què explica el professorat**
 
 - per què `R3` no és migrar tota l'aplicació de `R2`
 - què vol dir base real en framework
+- per què separar ruta, controlador, vista o resposta i model millora la base de `R2`
+- com comparar dos frameworks sense convertir-ho en teoria abstracta
 - quins mínims tècnics no es poden ajornar: Docker, `.env`, rutes i arrencada
 - com declarar un abast de `2` casos d'ús sense obrir una reescriptura total
 
 **Què modela el professorat**
 
 - arrencada d'un projecte base en el framework triat
+- comparació curta entre el framework triat i una alternativa
+- esquema abans/després de responsabilitats entre `R2` i la nova base
 - configuració mínima de Docker i `.env`
 - ruta o `healthcheck`
 - issue principal de `R3` amb microtasques
@@ -101,22 +108,27 @@ Triar l'stack, preparar Docker, crear el projecte base del framework i verificar
 **Tasques**
 
 - triar `Laravel`, `Symfony`, `NestJS` o via excepcional autoritzada
+- comparar l'stack triat amb almenys una altra opció viable
+- justificar els avantatges de separar responsabilitats respecte a `R2`
 - crear o estabilitzar el projecte base
 - preparar Docker i configuració mínima
 - crear una ruta inicial
 - declarar els `2` casos d'ús de `R3`
 - indicar quin cas d'ús ve de `R2`
+- indicar quin cas d'ús quedarà renderitzat en servidor amb vista o plantilla
 
 **Evidència mínima**
 
 - projecte arrancable amb Docker
+- nota comparativa de stack
+- esquema abans/després de responsabilitats
 - `.env.example` o instruccions equivalents
-- ruta inicial funcional
+- ruta inicial funcional o vista mínima generada pel framework
 - issue principal amb els `2` fluxos
 
 **Checkpoint docent**
 
-L'aplicació ha d'arrancar. Si només hi ha instal·lació parcial o carpetes del framework sense execució, no es passa a la sessió següent.
+L'aplicació ha d'arrancar i la tria del framework ha d'estar justificada amb avantatges concrets de separació de responsabilitats. Si només hi ha instal·lació parcial o carpetes del framework sense execució, no es passa a la sessió següent.
 
 ### Sessió 2. Model de dades inicial
 
@@ -133,12 +145,14 @@ Definir l'esquema mínim de dades i crear la primera migració vinculada als flu
 - diferència entre persistència real i dades de demo incrustades
 - relació entre cas d'ús, entitat, migració i model o equivalent
 - què és una dada mínima suficient per provar un flux
+- què significa recuperar i tractar un conjunt de dades perquè alimente un flux real
 
 **Què modela el professorat**
 
 - una migració simple
 - un model, entitat o esquema
 - configuració de connexió a BBDD
+- consulta que retorna un conjunt de dades
 - comprovació de taula creada
 
 **Tasques**
@@ -147,12 +161,14 @@ Definir l'esquema mínim de dades i crear la primera migració vinculada als flu
 - crear `migrations`
 - configurar connexió de BBDD
 - executar migracions
+- preparar una consulta o recuperació de conjunt de dades per a un llistat, detall, filtre o resposta
 - registrar decisions de model de dades
 
 **Evidència mínima**
 
 - BBDD creada per `migrations`
 - esquema inicial coherent amb els fluxos
+- primera recuperació de conjunt de dades prevista per alimentar un flux
 - comprovació de connexió i estructura
 
 **Checkpoint docent**
@@ -171,36 +187,37 @@ La BBDD ha de poder crear-se de zero. Si l'esquema només existeix manualment en
 
 **Objectiu**
 
-Carregar dades inicials reproduïbles i preparar la primera lectura real des del framework.
+Carregar dades inicials reproduïbles i preparar la primera lectura real de conjunt de dades des del framework.
 
 **Què explica el professorat**
 
 - per què els seeders eviten demos irreproduïbles
 - com comprovar dades sense dependre de l'estat local d'una màquina
-- com una lectura simple prepara el primer flux
+- com un conjunt de dades recuperat prepara el primer flux
 
 **Què modela el professorat**
 
 - seeder, fixture o script equivalent
 - reset de BBDD i recàrrega de dades
-- lectura bàsica des d'un controlador, servei o consola del framework
+- lectura d'un conjunt de dades des d'un controlador, servei o consola del framework i ús en una vista, llistat o resposta
 
 **Tasques**
 
 - crear seeders o equivalent
 - carregar dades de demostració
-- verificar lectura real
+- verificar lectura real d'un conjunt de dades
+- usar eixe conjunt de dades en un llistat, detall, filtre o resposta equivalent
 - documentar com reiniciar BBDD i dades
 
 **Evidència mínima**
 
 - dades inicials reproduïbles
-- lectura real des de l'aplicació o eina del framework
+- lectura real d'un conjunt de dades i ús dins d'un flux
 - instruccions de reset de BBDD
 
 **Checkpoint docent**
 
-Les dades han de poder aparéixer després d'un reset. Si cal inserir-les a mà, el repte encara no té persistència reproduïble.
+Les dades han de poder aparéixer després d'un reset i alimentar un flux real. Si cal inserir-les a mà, el repte encara no té persistència reproduïble.
 
 ### Sessió 4. Primer cas d'ús complet migrat de `R2`
 
@@ -216,13 +233,14 @@ Portar al framework un cas d'ús real heretat de `R2` amb recorregut complet.
 
 - recorregut d'una petició pel framework
 - rols de ruta, controlador, model o servei i vista o resposta
+- què aporta una vista o plantilla server-rendered dins de `R3`
 - criteri de validació mínima i error controlat
 
 **Què modela el professorat**
 
 - una ruta connectada amb un controlador
 - lectura de BBDD dins del flux
-- resposta amb plantilla, vista o JSON segons l'stack
+- resposta amb plantilla o vista quan este siga el flux server-rendered
 - validació o error mínim
 
 **Tasques**
@@ -230,7 +248,8 @@ Portar al framework un cas d'ús real heretat de `R2` amb recorregut complet.
 - implementar ruta del primer cas d'ús
 - crear o ajustar controlador i servei o equivalent
 - llegir dades reals
-- retornar vista, plantilla o resposta
+- passar dades del controlador a una vista o plantilla, o justificar si aquest no és el flux server-rendered
+- retornar resposta `HTML` generada pel framework en almenys un cas d'ús de `R3`
 - afegir validació mínima si escau
 - registrar prova del cas positiu
 
@@ -239,6 +258,7 @@ Portar al framework un cas d'ús real heretat de `R2` amb recorregut complet.
 - primer flux end-to-end funcionant
 - traça que el flux ve de `R2`
 - BBDD implicada en el flux
+- vista o plantilla amb dades reals si aquest és el flux server-rendered
 - validació o error mínim
 
 **Checkpoint docent**
@@ -272,6 +292,7 @@ Construir un segon recorregut end-to-end que demostre que la base del framework 
 - decidir si el segon flux és migrat o ampliació
 - implementar ruta i controlador o equivalents
 - connectar-lo amb BBDD
+- fer que el contingut generat canvie segons dades, paràmetres, estat, filtre o formulari
 - afegir validació o error mínim
 - verificar demo end-to-end
 
@@ -279,6 +300,7 @@ Construir un segon recorregut end-to-end que demostre que la base del framework 
 
 - segon flux executable
 - justificació del seu valor
+- canvi dinàmic visible en la resposta generada
 - prova o verificació mínima
 
 **Checkpoint docent**
@@ -463,6 +485,7 @@ L'equip pot passar a `R4` quan pot demostrar:
 - dades inicials amb `seeders` o equivalent
 - `2` casos d'ús end-to-end
 - almenys `1` flux heretat de `R2`
+- almenys `1` flux server-rendered amb vista o plantilla i resposta `HTML` generada en servidor
 - validació i errors mínims
 - proves mínimes o verificacions reproduïbles
 - documentació tècnica curta

@@ -26,9 +26,9 @@ Esta implantació s'ha calibrat sobre un escenari orientatiu d'unes `20` setmane
 |---|---|---|---|---|
 | **Bloc 1** | Avaluació 1 | Fase 0 | posar en marxa el marc de treball, evidències i criteris comuns | repositori usable, primer `README`, criteri de traçabilitat assumit |
 | **Bloc 2** | Avaluació 1 | Fase 1 / Repte 1 | concretar domini, base comuna en `PHP` i primer esquelet defensable del producte | base tècnica executable i primera decisió tècnica documentada |
-| **Bloc 3** | Avaluació 1 | Fase 2 / Repte 2 | construir la base funcional del producte amb auth, sessions o estat equivalent sobre base comuna en `PHP` | flux funcional mínim real i verificable |
-| **Bloc 4** | Avaluació 1 | inici de Fase 3 / Repte 3 | obrir la reconstrucció en framework abans del canvi d'avaluació | projecte base en framework arrancable, Docker i persistència inicial |
-| **Bloc 5** | Avaluació 2 | tancament de Fase 3 / Repte 3 | consolidar base real en framework, persistència i primers fluxos verificables | aplicació en framework amb BBDD, seeders i 2 casos d'ús funcionals |
+| **Bloc 3** | Avaluació 1 | Fase 2 / Repte 2 | construir la base funcional del producte amb auth, sessions o estat equivalent sobre base comuna en `PHP`, codi servidor integrat amb marques i resposta generada en servidor | flux funcional mínim real i verificable amb tractament de dades i document resultant |
+| **Bloc 4** | Avaluació 1 | inici de Fase 3 / Repte 3 | obrir la reconstrucció en framework abans del canvi d'avaluació | projecte base en framework arrancable, Docker, persistència inicial i primera resposta dinàmica |
+| **Bloc 5** | Avaluació 2 | tancament de Fase 3 / Repte 3 | consolidar base real en framework, persistència, primers fluxos verificables i renderitzat servidor | aplicació en framework amb BBDD, seeders, 2 casos d'ús funcionals i almenys 1 cas server-rendered |
 | **Bloc 6** | Avaluació 2 | Fase 4 / Repte 4 | publicar i provar l'API del producte | API documentada i comprovada |
 | **Bloc 7** | Avaluació 2 | Fase 5 / Repte 5 i defensa final | integrar, tancar i defensar el producte del curs | producte final complet, integrat i defensable |
 
@@ -113,15 +113,18 @@ Punt crític de seguiment:
 
 Objectiu docent:
 
-- construir la primera funcionalitat real del producte amb usuaris, autenticació i validacions mínimes
+- construir la primera funcionalitat real del producte amb usuaris, autenticació, validacions mínimes i codi servidor integrat amb llenguatge de marques
 
 Repte o fase associada:
 
-- `Fase 2` / `Repte 2`
+- `Fase 2` / `Repte 2` (`RA2`, `RA3`, `RA4`)
 
 Activitats d'aula:
 
 - implementar registre, login, logout o mecanisme equivalent d'estat
+- integrar codi servidor amb `HTML` o plantilla equivalent per generar el document resultant
+- usar variables, operadors, sentències simples, directives i àmbits dins del flux funcional
+- passar dades de formularis al codi servidor i comprovar com modifiquen la resposta generada
 - aplicar accés protegit, validacions i tractament mínim d'errors
 - introduir primeres proves i actualitzar documentació operativa
 
@@ -134,6 +137,9 @@ Materials activats:
 Evidències esperades:
 
 - flux funcional d'usuari executable
+- codi servidor integrat amb llenguatge de marques o plantilla
+- ús visible de variables, operadors, sentències simples, directives i àmbits
+- document o resposta generada pel servidor a partir de les dades rebudes
 - estat o sessió equivalent funcionals
 - validacions i errors mínims controlats
 - `README` actualitzat i proves bàsiques
@@ -159,9 +165,12 @@ Repte o fase associada:
 Activitats d'aula:
 
 - triar o confirmar l'stack de framework i preparar el projecte base
+- comparar breument l'stack triat amb una altra opció viable i justificar la decisió
+- identificar quins avantatges aporta separar ruta, controlador, vista o resposta i model respecte a la base de `R2`
 - posar en marxa Docker, `.env` i rutes mínimes
 - començar el model de dades inicial amb BBDD real
 - crear `migrations` i `seeders` o equivalents
+- recuperar un conjunt de dades real i preparar-lo perquè alimente un llistat, detall, filtre o resposta
 - declarar els `2` casos d'ús de `R3`, indicant quin ve de `R2`
 
 Materials activats:
@@ -174,9 +183,11 @@ Materials activats:
 Evidències esperades:
 
 - projecte en framework arrancable
+- nota comparativa curta de stack i esquema abans/després de responsabilitats
 - Docker funcional i configuració mínima documentada
 - primeres rutes reals
 - BBDD connectada amb `migrations` i dades inicials amb `seeders`
+- consulta o lectura d'un conjunt de dades usable en un flux funcional
 - abast dels `2` casos d'ús definit i registrat
 
 Instrument principal:
@@ -191,17 +202,19 @@ Punt crític de seguiment:
 
 Objectiu docent:
 
-- consolidar el backend com a aplicació en framework persistent, mantenible i preparada per exposar-se com a API
+- consolidar el backend com a aplicació en framework persistent, mantenible, amb resposta dinàmica renderitzada en servidor i preparada per exposar-se com a API
 
 Repte o fase associada:
 
-- tancament de `Fase 3` / `Repte 3`
+- tancament de `Fase 3` / `Repte 3` (`RA5`, `RA6`, `RA8`)
 
 Activitats d'aula:
 
 - completar els `2` casos d'ús end-to-end
 - assegurar que almenys `1` cas d'ús és migrat de `R2`
+- assegurar que almenys `1` cas d'ús és server-rendered amb vista o plantilla i resposta `HTML` generada pel framework
 - reforçar rutes, controladors, vistes o respostes, models i serveis o equivalents
+- processar formularis, filtres, detalls o interaccions perquè el contingut generat canvie segons dades, paràmetres o estat
 - comprovar validació, errors bàsics i proves mínimes
 - verificar que `migrations` i `seeders` reconstrueixen la BBDD i les dades de demostració
 
@@ -218,6 +231,7 @@ Evidències esperades:
 - BBDD creada per `migrations`
 - dades inicials reproduïbles amb `seeders` o equivalent
 - `2` casos d'ús funcionals de punta a punta
+- almenys `1` cas d'ús amb vista o plantilla server-rendered i resposta `HTML` verificable
 - validació i errors mínims
 - proves mínimes i documentació tècnica curta
 - backlog o mapa del que quedaria per migrar de `R2`

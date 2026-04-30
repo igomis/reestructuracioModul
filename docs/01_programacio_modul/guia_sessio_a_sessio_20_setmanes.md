@@ -111,10 +111,10 @@ Regla pràctica:
 #### Setmana 5
 
 - Focus o repte: arranque de `R2` com a flux de dades i processament, no com a simple infraestructura d'auth
-- Què fa el professorat: modela formulari, validació visible i primer tram de processament amb reutilització funcional de la dada correcta
-- Què fa l'alumnat: tanca `MP1` i `MP2`, prepara l'acció del domini i deixa la informació correcta disponible dins del projecte
+- Què fa el professorat: modela formulari, validació visible, codi servidor integrat amb `HTML` o plantilla i primer tram de processament amb reutilització funcional de la dada correcta
+- Què fa l'alumnat: tanca `MP1` i `MP2`, prepara l'acció del domini, usa variables i sentències simples en el flux i deixa la informació correcta disponible dins del projecte
 - Materials per a l'alumnat: materials del Repte 2, apunt real del Repte 2, base comuna en `PHP`, guia de validació i errors
-- Evidència mínima del bloc: dades recuperades, errors visibles, tractament correcte i primera reutilització funcional
+- Evidència mínima del bloc: dades recuperades, codi servidor integrat amb marques, variables o operadors aplicats, errors visibles, tractament correcte i primera reutilització funcional
 - Checkpoint docent: evitar que `R2` es reduïsca a formularis d'accés o a persistència ornamental
 - Pla per a alumnat endarrerit: un únic formulari, una única dada central i una sola reutilització funcional
 - Pla per a alumnat avançat: incorporar fitxer o imatge amb control bàsic si el flux ho demana
@@ -122,10 +122,10 @@ Regla pràctica:
 #### Setmana 6
 
 - Focus o repte: lògica del flux i estat temporal del `R2`
-- Què fa el professorat: modela una regla recognoscible del domini i un ús d'estat, sessió o cookies amb sentit funcional
-- Què fa l'alumnat: implementa `MP3` i `MP4`, deixa una decisió observable i recupera un pas o dada temporal del flux
+- Què fa el professorat: modela una regla recognoscible del domini, l'ús de variables, operadors i àmbits en eixa regla, i un ús d'estat, sessió o cookies amb sentit funcional
+- Què fa l'alumnat: implementa `MP3` i `MP4`, deixa una decisió observable, recupera un pas o dada temporal del flux i comprova el document resultant generat pel servidor
 - Materials per a l'alumnat: apunt real del Repte 2, guia de flux d'usuari i sessions, materials comuns
-- Evidència mínima del bloc: regla del projecte aplicada, estat recuperable i frontera clara entre estat i conservació funcional
+- Evidència mínima del bloc: regla del projecte aplicada, variables i operadors usats amb sentit, resposta servidor comprovada, estat recuperable i frontera clara entre estat i conservació funcional
 - Checkpoint docent: comprovar que el producte ja resol comportament de domini, no només recepció de dades
 - Pla per a alumnat endarrerit: reduir la funcionalitat a un sol cas d'ús complet i una única dada temporal útil
 - Pla per a alumnat avançat: incorporar segona regla de negoci o millor tractament d'estat
@@ -155,10 +155,10 @@ Regla pràctica:
 #### Setmana 9
 
 - Focus o repte: arrencada de `R3` com a reconstrucció en framework
-- Què fa el professorat: modela l'arrencada d'un projecte en framework amb Docker, `.env`, ruta mínima i connexió inicial a BBDD, seguint la [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
-- Què fa l'alumnat: crea o estabilitza el projecte base en framework, declara els `2` casos d'ús de `R3` i identifica quin ve de `R2`
+- Què fa el professorat: modela l'arrencada d'un projecte en framework amb Docker, `.env`, ruta mínima, primera resposta generada pel framework, connexió inicial a BBDD i una comparació breu entre stacks, seguint la [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
+- Què fa l'alumnat: crea o estabilitza el projecte base en framework, compara l'opció triada amb una alternativa, justifica els avantatges de separar responsabilitats, declara els `2` casos d'ús de `R3`, identifica quin ve de `R2` i marca quin serà server-rendered
 - Materials per a l'alumnat: materials del Repte 3, guia d'itinerari triada, guia de persistència i [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
-- Evidència mínima del bloc: framework arrancable amb Docker, `.env` documentat, ruta mínima i abast dels `2` fluxos registrat
+- Evidència mínima del bloc: framework arrancable amb Docker, `.env` documentat, ruta mínima o vista inicial, nota comparativa de stack, esquema abans/després i abast dels `2` fluxos registrat
 - Checkpoint docent: comprovar que no és només un esquelet de framework i que almenys un flux ve de `R2`
 - Pla per a alumnat endarrerit: stack més acotat, una ruta mínima i declaració clara dels dos fluxos abans d'obrir més funcionalitat
 - Pla per a alumnat avançat: preparar ja el model de dades inicial i scripts d'arrencada més còmodes
@@ -166,10 +166,10 @@ Regla pràctica:
 #### Setmana 10
 
 - Focus o repte: model de dades, `migrations` i `seeders`
-- Què fa el professorat: modela una migració, un seeder o equivalent i la comprovació de lectura real des de l'aplicació
-- Què fa l'alumnat: defineix l'esquema mínim de dades, executa migracions, carrega dades inicials i documenta com reconstruir la BBDD
+- Què fa el professorat: modela una migració, un seeder o equivalent, una consulta que retorna un conjunt de dades i la comprovació que eixes dades alimenten una vista, llistat o resposta
+- Què fa l'alumnat: defineix l'esquema mínim de dades, executa migracions, carrega dades inicials, recupera un conjunt de dades real i documenta com reconstruir la BBDD
 - Materials per a l'alumnat: checklist del Repte 3, programació per repte, [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
-- Evidència mínima del bloc: BBDD real creada amb `migrations`, dades de demostració carregades amb `seeders` o equivalent i primera lectura verificable
+- Evidència mínima del bloc: BBDD real creada amb `migrations`, dades de demostració carregades amb `seeders` o equivalent, consulta de conjunt de dades i ús verificable en un flux
 - Checkpoint docent: decidir si l'equip entra a l'avaluació 2 amb una base reproduïble, no amb dades carregades a mà
 - Pla per a alumnat endarrerit: una sola entitat central, seeder mínim i lectura verificable
 - Pla per a alumnat avançat: afegir relació simple o una segona migració controlada si no trenca l'abast
@@ -179,10 +179,10 @@ Regla pràctica:
 #### Setmana 11
 
 - Focus o repte: primer cas d'ús complet migrat de `R2`
-- Què fa el professorat: modela el recorregut ruta, controlador, model o servei, vista o resposta, validació i lectura real de BBDD
-- Què fa l'alumnat: migra o reconstrueix en el framework el primer cas d'ús heretat de `R2` i el verifica de punta a punta
+- Què fa el professorat: modela el recorregut ruta, controlador, model o servei, vista o plantilla, validació, lectura real de BBDD i resposta `HTML` generada en servidor
+- Què fa l'alumnat: migra o reconstrueix en el framework el primer cas d'ús heretat de `R2`, passa dades del controlador a una vista o resposta i el verifica de punta a punta
 - Materials per a l'alumnat: apunt real del Repte 3, guia de persistència i modelat, [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
-- Evidència mínima del bloc: primer flux end-to-end amb dades reals, validació o error mínim i prova o verificació registrada
+- Evidència mínima del bloc: primer flux end-to-end amb dades reals, vista o plantilla server-rendered si és el flux triat, validació o error mínim i prova o verificació registrada
 - Checkpoint docent: el flux ha de vindre de `R2` i no pot ser només una pantalla nova sense persistència
 - Pla per a alumnat endarrerit: tancar un únic recorregut complet abans d'afegir camps o relacions
 - Pla per a alumnat avançat: reforçar validació, proves o separació de servei sense canviar d'abast
@@ -190,10 +190,10 @@ Regla pràctica:
 #### Setmana 12
 
 - Focus o repte: segon cas d'ús, estabilització i tancament formal de `R3`
-- Què fa el professorat: revisa els dos fluxos, força prova de `migrations` i `seeders`, demana errors controlats i acota què farà de nucli d'`API`
-- Què fa l'alumnat: implementa el segon flux o ampliació funcional útil, estabilitza validació i errors, executa proves mínimes i actualitza `README`
+- Què fa el professorat: revisa els dos fluxos, força prova de `migrations` i `seeders`, demana errors controlats, comprova que almenys un flux genera `HTML` en servidor i acota què farà de nucli d'`API`
+- Què fa l'alumnat: implementa el segon flux o ampliació funcional útil, estabilitza validació i errors, executa proves mínimes, documenta el cas server-rendered i actualitza `README`
 - Materials per a l'alumnat: checklist del Repte 3, itinerari triat, [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
-- Evidència mínima del bloc: aplicació en framework amb Docker, BBDD per `migrations`, dades amb `seeders`, `2` casos d'ús funcionals, proves mínimes i documentació curta
+- Evidència mínima del bloc: aplicació en framework amb Docker, BBDD per `migrations`, dades amb `seeders`, `2` casos d'ús funcionals, almenys `1` cas server-rendered, proves mínimes i documentació curta
 - Checkpoint docent: validació formal d'entrada a `R4`
 - Pla per a alumnat endarrerit: reduir el segon flux al mínim funcional real, però no eliminar-lo
 - Pla per a alumnat avançat: preparar ja contracte preliminar d'`API`

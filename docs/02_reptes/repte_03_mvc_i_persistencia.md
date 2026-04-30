@@ -52,15 +52,20 @@ L'equip té una aplicació inicial funcional, però encara no disposa d'una base
 
 - **RA5**: desenvolupa aplicacions web identificant i aplicant mecanismes per a separar el codi de presentació de la lògica de negoci
 
-**Resultat d'aprenentatge de suport fort i parcialment activat**
+**Resultats d'aprenentatge de suport**
 
 - **RA6**: desenvolupa aplicacions web d'accés a magatzems de dades, aplicant mesures per a mantindre la seguretat i la integritat de la informació
+- **RA8**: desenvolupa aplicacions web dinàmiques amb frameworks servidor, vistes o plantilles, formularis i generació de respostes HTML renderitzades en servidor
 
 **Justificació curricular**
 
 La programació vigent situa l'arquitectura MVC o equivalent com a **SA3** vinculada principalment a **RA5**, i reserva un pes més fort i específic d'**RA6** per a **SA4**. Per això, en `R3` el nucli continua sent **RA5**: usar el framework per ordenar entrada HTTP, coordinació, lògica, presentació i responsabilitats.
 
 Ara bé, `RA6` queda ja fortament preparada i parcialment activada: no es pot parlar d'una base real en framework sense base de dades, `migrations`, `seeders`, lectura i escriptura mínimes, validació i errors vinculats a dades. No s'inventa normativa nova ni es trasllada tot `RA6` a este repte, però sí es demana una persistència mínima real i verificable perquè el pas a `R4` no siga artificial.
+
+`RA8` queda integrat explícitament en `R3` perquè el repte construeix pàgines dinàmiques amb framework servidor: s'usen vistes o plantilles, es processen formularis o interaccions en el servidor i el framework participa en la generació de la resposta HTML. Per això, almenys un dels `2` casos d'ús de `R3` ha de ser **server-rendered** i no només una resposta d'API o una consulta de dades.
+
+En `MP1`, l'alumnat no sols posa en marxa un framework: compara opcions, justifica la tria i identifica per què separar ruta, controlador, vista o resposta i model millora la base funcional heretada de `R2`. En `MP2`, la informació recuperada des de la BBDD no queda com una consulta aïllada: es tracta com a conjunt de dades útil per alimentar llistats, detalls, filtres o respostes reals del projecte.
 
 ---
 
@@ -132,6 +137,7 @@ Aplicació en framework que incloga:
 - dades inicials creades per `seeders` o equivalent
 - `2` casos d'ús funcionals de punta a punta
 - almenys `1` cas d'ús migrat de `R2`
+- almenys `1` cas d'ús renderitzat en servidor amb vista o plantilla
 - validació i errors mínims
 - proves mínimes
 - documentació tècnica curta
@@ -141,6 +147,7 @@ Aplicació en framework que incloga:
 
 - CA de **RA5** vinculats a estructura del framework, separació de responsabilitats, rutes, controladors, vistes o equivalents i mantenibilitat del flux
 - CA de **RA6** vinculats a connexió, recuperació, persistència, integritat bàsica, verificació i tractament d'errors sobre dades reals
+- CA de **RA8** vinculats a ús de framework servidor, generació dinàmica de pàgines, vistes o plantilles, formularis i resposta HTML renderitzada en servidor
 
 **Evidències obligatòries del nucli**
 
@@ -153,6 +160,7 @@ Aplicació en framework que incloga:
 - `seeders` executables
 - captura o registre d'arrencada i càrrega de dades
 - demo dels `2` casos d'ús end-to-end
+- evidència d'un cas d'ús server-rendered amb vista o plantilla que rep dades reals
 - proves mínimes executades
 - README tècnic actualitzat
 - AI log quan hi haja ús d'IA
@@ -184,6 +192,9 @@ Triar l'stack, crear el projecte base en framework, preparar Docker i demostrar 
 L'equip ha de:
 
 - triar `Laravel`, `Symfony`, `NestJS` o via excepcional autoritzada
+- comparar el framework triat amb almenys una altra opció viable per a este repte
+- justificar per què el framework triat ajuda a separar millor ruta, controlador, vista o resposta i model o equivalents
+- identificar quins avantatges aporta eixa separació respecte a la base funcional heretada de `R2`
 - crear o reorganitzar el projecte base del framework
 - preparar `Docker` i serveis necessaris
 - configurar `.env` i documentar variables mínimes
@@ -198,13 +209,19 @@ Sense una base arrancable i reproduïble, la resta del repte queda convertida en
 
 **CA coberts**
 
+- **RA5.a**
+- **RA5.b**
 - **RA5.c**
 - **RA5.d**
 - **RA5.e**
+- **RA8.c**
 
 **Descripció dels CA en llenguatge docent**
 
+- L'alumnat identifica avantatges concrets de separar presentació, entrada, coordinació i lògica respecte a la base de `R2`.
+- L'alumnat compara mecanismes o frameworks i justifica la tria segons les seues característiques principals.
 - L'alumnat identifica l'estructura del framework triat i les responsabilitats bàsiques.
+- L'alumnat obri una primera entrada real al framework servidor amb ruta i resposta generada.
 - L'alumnat prepara una base tècnica coherent per separar entrada, control, lògica i presentació.
 - L'alumnat justifica un abast viable de migració sense convertir `R3` en una reescriptura total.
 
@@ -215,9 +232,13 @@ La IA pot suggerir comandos d'arrencada, estructura inicial o riscos d'instal·l
 **Evidències obligatòries**
 
 - projecte base del framework al repositori
+- nota comparativa curta del framework triat amb almenys una alternativa
+- esquema abans/després entre la base de `R2` i la nova estructura en framework
+- justificació breu dels avantatges de separar presentació i lògica
 - `Dockerfile`, `compose.yaml` o equivalent funcional
 - `.env.example` o instruccions de configuració
 - ruta inicial o `healthcheck`
+- primera resposta generada pel framework, preferentment HTML o vista mínima quan l'stack ho permeta
 - registre d'arrencada
 - issue principal amb els `2` casos d'ús declarats
 
@@ -269,6 +290,9 @@ L'equip ha de:
 - crear `seeders` o mecanisme equivalent
 - carregar dades de demostració reproduïbles
 - comprovar lectura real des de l'aplicació o consola del framework
+- recuperar un conjunt de dades real des de la BBDD
+- tractar eixe conjunt de dades de manera estructurada dins del framework
+- preparar-lo perquè alimente una vista, llistat, detall, filtre o resposta equivalent
 - documentar com reiniciar BBDD i dades
 
 **Relació amb el producte principal**
@@ -281,6 +305,7 @@ La base del framework ha de treballar amb una BBDD real des del començament. La
 - **RA6.b**
 - **RA6.c**
 - **RA6.d**
+- **RA6.e**
 - **RA5.f**
 
 **Descripció dels CA en llenguatge docent**
@@ -288,6 +313,7 @@ La base del framework ha de treballar amb una BBDD real des del començament. La
 - L'alumnat connecta l'aplicació a un magatzem de dades real.
 - L'alumnat crea i evoluciona l'estructura de dades amb eines del framework.
 - L'alumnat deixa dades inicials que permeten provar els fluxos sense preparació manual.
+- L'alumnat recupera un conjunt de dades i el tracta de manera ordenada perquè alimente un flux funcional.
 
 **Paper de la IA**
 
@@ -300,6 +326,9 @@ La IA pot ajudar a proposar camps, relacions, migracions o seeders, però l'alum
 - BBDD creada des de zero
 - dades inicials carregades
 - comprovació de lectura real
+- consulta real que retorne un conjunt de dades
+- ús del conjunt de dades en un llistat, filtre, detall o resposta equivalent
+- demostració o prova que la informació recuperada arriba correctament al flux funcional
 - instruccions de reset o recàrrega de dades
 
 **Instrument d'avaluació**
@@ -311,6 +340,7 @@ Rúbrica de persistència mínima i dades reproduïbles.
 - l'esquema no és genèric: respon als fluxos de `R3`
 - les dades es poden regenerar
 - l'aplicació llig dades reals, no arrays o valors incrustats
+- el conjunt de dades recuperat arriba a una vista, resposta o flux funcional amb estructura comprensible
 
 **Riscos habituals**
 
@@ -322,7 +352,7 @@ Rúbrica de persistència mínima i dades reproduïbles.
 **Verificació del treball real**
 
 - esborrar o reiniciar BBDD i tornar a executar migracions i seeders
-- mostrar una lectura real des de l'aplicació
+- mostrar una lectura real des de l'aplicació i el seu ús dins d'un flux
 
 **Pes orientatiu dins del repte**
 
@@ -347,8 +377,10 @@ L'equip ha de implementar el flux amb:
 - ruta
 - controlador o equivalent
 - model, servei o capa de dades
-- vista, plantilla o resposta segons l'stack
+- vista o plantilla server-rendered sempre que siga possible; com a mínim una resposta HTML generada pel servidor en un dels casos d'ús de `R3`
 - lectura real des de BBDD
+- dades passades des del controlador a la vista o plantilla
+- formulari, paràmetre o interacció processada pel framework quan el flux ho permeta
 - validació mínima si escau
 - error bàsic controlat
 - prova o verificació mínima del recorregut
@@ -365,11 +397,17 @@ Este microprojecte demostra que el pas al framework no ha trencat el projecte an
 - **RA6.c**
 - **RA6.d**
 - **RA6.f**
+- **RA8.f**
+- **RA8.d**
+- **RA8.e**
+- **RA8.g**
 
 **Descripció dels CA en llenguatge docent**
 
 - L'alumnat separa entrada, coordinació, dades i presentació amb eines del framework.
 - L'alumnat conserva o reconstrueix un flux real de `R2` amb persistència real.
+- L'alumnat genera una pàgina o resposta HTML dinàmica des del framework amb dades reals.
+- L'alumnat processa una interacció d'usuari o formulari i retorna una resposta renderitzada.
 - L'alumnat verifica comportament positiu i error mínim.
 
 **Paper de la IA**
@@ -383,6 +421,9 @@ La IA pot ajudar a generar esquelets de ruta, controlador, servei, DTO, formular
 - controlador o equivalent
 - model/servei/capa de dades implicada
 - vista/plantilla/resposta funcional
+- pàgina renderitzada pel servidor a partir de dades reals
+- dades passades del controlador a la vista o plantilla
+- formulari processat pel framework o interacció equivalent amb resposta HTML
 - lectura de dades reals
 - validació mínima si aplica
 - prova o verificació del cas positiu
@@ -395,6 +436,7 @@ Rúbrica de flux end-to-end migrat.
 **Indicadors d'assoliment**
 
 - el flux s'executa de punta a punta
+- almenys este flux o un altre de `R3` és clarament server-rendered
 - les dades provenen de BBDD
 - les responsabilitats són recognoscibles
 - l'equip pot comparar què aportava `R2` i què aporta ara el framework
@@ -460,6 +502,7 @@ El segon flux evita que `R3` quede reduït a una demo única. Obliga a comprovar
 
 - L'alumnat reutilitza l'estructura del framework per afegir o migrar funcionalitat.
 - L'alumnat comprova que la persistència i les capes creades no serveixen només per a un cas aïllat.
+- L'alumnat modifica dinàmicament el contingut generat segons dades, paràmetres, estat, filtre o formulari.
 - L'alumnat diferencia ampliació funcional real de canvi visual.
 
 **Paper de la IA**
@@ -472,6 +515,8 @@ La IA pot suggerir una ampliació viable i proves associades, però l'alumnat ha
 - justificació de si és migració o ampliació
 - ruta i controlador o equivalents
 - interacció amb BBDD
+- canvi visible en el contingut generat segons dades, paràmetres, estat, filtre o formulari
+- vista, plantilla o resposta HTML si este és el flux triat com a server-rendered
 - validació o error mínim
 - prova o verificació mínima
 - demo end-to-end
@@ -673,10 +718,10 @@ Rúbrica de documentació i defensa tècnica.
 
 | Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
 |---|---|---|---|---|---|---:|
-| MP1 | Infraestructura / decisió tècnica | Projecte en framework arrancable amb Docker | RA5.c, RA5.d, RA5.e | Docker, `.env`, ruta inicial, issue i abast de 2 fluxos | checklist | 15% |
-| MP2 | Persistència mínima | Model de dades inicial amb migrations i seeders | RA6.a, RA6.b, RA6.c, RA6.d, RA5.f | BBDD creada, dades carregades, lectura real | rúbrica | 20% |
-| MP3 | Migració funcional | Primer cas d'ús complet heretat de R2 | RA5.e, RA5.f, RA5.g, RA6.c, RA6.d, RA6.f | ruta, controlador, model/servei, vista/resposta, prova | rúbrica | 20% |
-| MP4 | Ampliació funcional | Segon flux end-to-end o ampliació útil | RA5.e, RA5.f, RA5.g, RA5.h, RA6.c, RA6.d, RA6.f | segon flux, BBDD, validació/error i demo | checklist | 15% |
+| MP1 | Infraestructura / decisió tècnica | Projecte en framework arrancable amb Docker | RA5.a, RA5.b, RA5.c, RA5.d, RA5.e, RA8.c | comparativa de stack, esquema abans/després, Docker, `.env`, ruta inicial, resposta generada, issue i abast de 2 fluxos | checklist | 15% |
+| MP2 | Persistència mínima | Model de dades inicial amb migrations, seeders i conjunt de dades usable | RA6.a, RA6.b, RA6.c, RA6.d, RA6.e, RA5.f | BBDD creada, dades carregades, consulta de conjunt de dades i ús en flux | rúbrica | 20% |
+| MP3 | Migració funcional | Primer cas d'ús complet heretat de R2 | RA5.e, RA5.f, RA5.g, RA6.c, RA6.d, RA6.f, RA8.d, RA8.e, RA8.g | ruta, controlador, model/servei, vista/plantilla server-rendered, formulari o interacció, prova | rúbrica | 20% |
+| MP4 | Ampliació funcional | Segon flux end-to-end o ampliació útil | RA5.e, RA5.f, RA5.g, RA5.h, RA6.c, RA6.d, RA6.f, RA8.f | segon flux, BBDD, canvi dinàmic de resposta, validació/error i demo | checklist | 15% |
 | MP5 | Qualitat | Estabilització, validació, errors i proves | RA5.g, RA5.h, RA6.f, RA6.g | proves, cas positiu/negatiu, errors, neteja | checklist | 15% |
 | MP6 | Tancament | README, decisions, demo i backlog de migració | RA5.f, RA5.g, RA6.g | documentació, demo, mapa del que queda | rúbrica | 15% |
 
@@ -700,6 +745,7 @@ Rúbrica de documentació i defensa tècnica.
 - dades de demostració reproduïbles
 - `2` casos d'ús end-to-end
 - almenys `1` cas d'ús migrat des de `R2`
+- almenys `1` cas d'ús server-rendered amb vista o plantilla
 - validació i errors mínims
 - proves mínimes
 - documentació tècnica curta
@@ -801,6 +847,7 @@ La nomenclatura pot variar, però el criteri no: base arrancable, dades reals, d
 - les dades inicials es carreguen amb `seeders` o equivalent
 - hi ha `2` casos d'ús end-to-end funcionals
 - almenys `1` cas d'ús ve de `R2`
+- almenys `1` cas d'ús genera resposta HTML renderitzada en servidor amb vista o plantilla
 - hi ha validació i errors mínims
 - hi ha proves mínimes o verificacions reproduïbles
 - el README permet arrancar i provar el projecte
