@@ -1,205 +1,200 @@
-# Repte 3. Arquitectura mantenible i persistència segura sobre un cas d’ús real
+# Repte 3. Reconstrucció en framework, persistència real i primers fluxos funcionals
 
 ## 1. Visió general del repte
 
 **Finalitat del repte**
 
-Convertir el backend funcional dels reptes anteriors en una base més mantenible, estructurada i segura, separant responsabilitats i consolidant una persistència suficient sobre un cas d’ús real del producte.
+El `Repte 3` consistix a reconstruir el projecte en un framework amb una base operativa real, persistència mínima real i primers fluxos funcionals verificables.
 
-Este repte no s’entén com una reorganització estètica del codi ni com una simple connexió a base de dades. El seu sentit és professionalitzar una funcionalitat existent i deixar-la preparada per créixer sense deute tècnic crític.
+No es demana migrar tota l'aplicació heretada de `R2`. Sí es demana construir una nova base tècnica en framework i portar-hi almenys `2` casos d'ús end-to-end. Com a mínim `1` d'eixos casos d'ús ha de vindre del projecte anterior. El segon pot ser també heretat o pot ser una ampliació funcional xicoteta si ajuda a fer visible el valor del framework.
 
-És també el punt on s’obri el contrast de frameworks del curs. El mateix projecte que en `R2` s’ha consolidat sobre base comuna en `PHP` continua ara amb `Laravel`, `Symfony` o `NestJS`.
+El repte no és una reflexió abstracta sobre `MVC`, ni una simple separació de presentació i lògica, ni moure fitxers des del projecte antic. El que ha de quedar és una aplicació arrancable, amb Docker, configuració, rutes, controladors, vistes o plantilles, models o capa equivalent de dades, base de dades real, `migrations`, `seeders`, validació, errors mínims, proves bàsiques i documentació d'ús.
 
-No és un repte de tècnica aïllada. Aplicar MVC, afegir carpetes o connectar una base de dades només té valor si professionalitza una funcionalitat real del producte, la fa més mantenible i permet defensar millor el seu comportament.
+És també el punt on s'obri el contrast de frameworks del curs. El mateix problema de producte que en `R2` s'ha treballat sobre base comuna en `PHP` continua ara amb `Laravel`, `Symfony` o `NestJS`. `FastAPI` només s'hauria d'obrir com a via avançada o excepcional quan hi haja marc docent clar per sostenir-la.
 
-Les vies base d’este repte són `Laravel`, `Symfony` i `NestJS`. `FastAPI` només s’hauria d’obrir com a via avançada o excepcional quan hi haja marc docent clar per sostenir-la.
+**Idea central**
+
+Reconstrucció del projecte en framework amb base operativa real, persistència mínima real i primers fluxos funcionals verificables.
 
 **Producte principal del repte**
 
-Una versió refactoritzada d’almenys un cas d’ús real del domini, amb:
+Una aplicació en framework operativa que incloga, com a mínim:
 
-- estructura MVC o equivalent aplicada amb sentit
-- separació visible de responsabilitats
-- capa o mecanisme de persistència dedicat
-- accés segur i coherent a dades
-- validacions d’entrada
-- tractament d’errors
-- proves mínimes o verificacions registrades
-- documentació tècnica actualitzada
+- entorn `Docker` funcional
+- projecte base en framework arrancable
+- configuració mínima i `.env`
+- rutes reals
+- controladors o equivalents
+- vistes, plantilles o mecanisme de resposta segons l'stack
+- models, entitats, esquemes o capa equivalent de dades
+- base de dades real connectada a l'aplicació
+- `migrations` per crear l'estructura de dades
+- `seeders` o mecanisme equivalent per carregar dades inicials reproduïbles
+- almenys `2` casos d'ús end-to-end
+- almenys `1` cas d'ús migrat des de `R2`
+- validació i tractament bàsic d'errors
+- proves mínimes
+- documentació tècnica curta d'arrencada i ús
 
-**Context professional simul·lat o realista**
+**Context professional simulat o realista**
 
-L’equip ja disposa d’una versió inicial funcional, però el codi ha crescut amb dependències acoblades i poca estabilitat per a evolucionar-lo. Abans d’exposar API o integrar tercers, cal reorganitzar la base del producte, assegurar la persistència i demostrar que la funcionalitat clau continua viva després de la refactorització.
+L'equip té una aplicació inicial funcional, però encara no disposa d'una base de framework preparada per créixer amb persistència, proves, `API` i integració. En un context professional, abans d'ampliar funcionalitats o publicar serveis, cal reconstruir una base sòlida: entorn reproduïble, estructura del framework, model de dades inicial, dades de demostració, fluxos troncals funcionant i verificació mínima.
 
 **Relació amb el projecte global del curs**
 
-Este repte reutilitza la funcionalitat construïda fins ara i la transforma en una base més professional. A més, prepara el pas al Repte 4, on la publicació de serveis o API necessitarà una arquitectura interna més clara i una persistència més fiable.
+`R3` és el pont entre la base funcional de `R2` i la publicació d'`API` de `R4`. Si `R3` queda en discurs arquitectònic, `R4` només exposarà rutes sobre una base fràgil. Si `R3` deixa una aplicació en framework amb dades reals i dos fluxos funcionals, `R4` pot centrar-se en contracte, consum i qualitat de servei.
 
 ---
 
-## 2. Relació amb resultats d’aprenentatge
+## 2. Relació amb resultats d'aprenentatge
 
-**Resultat d’aprenentatge principal**
+**Resultat d'aprenentatge principal**
 
 - **RA5**: desenvolupa aplicacions web identificant i aplicant mecanismes per a separar el codi de presentació de la lògica de negoci
 
-**Resultat d’aprenentatge de suport integrat**
+**Resultat d'aprenentatge de suport fort i parcialment activat**
 
-- **RA6**: desenvolupa aplicacions web d’accés a magatzems de dades, aplicant mesures per a mantindre la seguretat i la integritat de la informació
+- **RA6**: desenvolupa aplicacions web d'accés a magatzems de dades, aplicant mesures per a mantindre la seguretat i la integritat de la informació
 
 **Justificació curricular**
 
-La programació vigent situa l’arquitectura MVC com a **SA3** vinculada principalment a **RA5**, i reserva un pes més fort i específic d’**RA6** per a **SA4**. Per això, en este repte la persistència s’integra per consolidar un cas d’ús real, però el nucli avaluable principal continua sent la separació de responsabilitats i la millora de mantenibilitat.
+La programació vigent situa l'arquitectura MVC o equivalent com a **SA3** vinculada principalment a **RA5**, i reserva un pes més fort i específic d'**RA6** per a **SA4**. Per això, en `R3` el nucli continua sent **RA5**: usar el framework per ordenar entrada HTTP, coordinació, lògica, presentació i responsabilitats.
+
+Ara bé, `RA6` queda ja fortament preparada i parcialment activada: no es pot parlar d'una base real en framework sense base de dades, `migrations`, `seeders`, lectura i escriptura mínimes, validació i errors vinculats a dades. No s'inventa normativa nova ni es trasllada tot `RA6` a este repte, però sí es demana una persistència mínima real i verificable perquè el pas a `R4` no siga artificial.
 
 ---
 
-## 3. Canvi metodològic que introdueix la IA
+## 3. Criteri didàctic del repte
 
-**Paper de la IA en este repte**
+La frontera amb `R2` ha de quedar clara:
+
+- en `R2` es construeix una base funcional comuna en `PHP`
+- en `R3` entra el framework com a base principal del projecte
+- en `R3` no es migra tota l'aplicació heretada
+- en `R3` sí es reconstrueix una base real en framework
+- en `R3` sí es migren o implementen almenys `2` fluxos end-to-end
+- almenys `1` flux ha de ser heretat de `R2`
+- el segon flux pot ser heretat o una ampliació funcional xicoteta, però no cosmètica
+
+L'objectiu no és dominar tot el framework. L'objectiu és entendre com el framework aporta estructura, persistència, eines, convencions, mantenibilitat i verificació. Per això cal usar eines pròpies de l'stack: generació de projecte, sistema de rutes, controladors, plantilles, ORM o capa de dades, migracions, seeders, validació, proves i configuració d'entorn.
+
+No es considera suficient:
+
+- parlar d'`MVC` sense producte executable
+- crear carpetes amb noms correctes però sense fluxos reals
+- moure fitxers de `R2` dins del framework sense adaptar responsabilitats
+- usar una base de dades només decorativa
+- carregar dades a mà sense mecanisme reproduïble
+- presentar una demo que no es puga arrancar des de zero
+
+---
+
+## 4. Paper de la IA en este repte
 
 La IA es pot usar per a:
 
-- suggerir estratègies de refactorització per iteracions
-- proposar estructures de capes o patrons equivalents
-- ajudar a detectar acoblaments i duplicacions
-- generar esquelets inicials de proves
-- suggerir millores en control d’errors
+- comparar convencions bàsiques de `Laravel`, `Symfony`, `NestJS` o una via excepcional autoritzada
+- suggerir passos d'arrencada del projecte
+- ajudar a dissenyar un model de dades inicial
+- proposar `migrations`, `seeders`, DTO, formularis, validacions o proves
+- detectar incoherències entre rutes, controladors, models i vistes
 - ajudar a redactar documentació tècnica i decisions
 
-**Què no es delega**
+L'alumnat no pot delegar:
 
-L’alumnat ha de:
+- la decisió de quins `2` casos d'ús entren en `R3`
+- la justificació de quin cas d'ús ve de `R2`
+- la comprovació real de Docker, BBDD, migracions i seeders
+- la defensa de com circula una petició pel framework
+- la verificació que les dades es lliguen i s'escriuen realment
+- la decisió sobre què queda fora de la migració total
 
-- diagnosticar què està mal acoblat
-- justificar per què separa unes responsabilitats i no unes altres
-- demostrar que el cas d’ús continua funcionant després de la migració
-- explicar què fa la capa de dades i què no ha de fer
-- verificar la persistència real
-- defensar els trade-offs adoptats
-
-**Risc principal d’ús inadequat de la IA**
-
-Acceptar una refactorització aparentment elegant però aliena al problema real del producte, o incorporar persistència sense entendre les implicacions de seguretat, integritat o manteniment.
-
-**Mesures de control**
-
-- AI log quan corresponga
-- revisió de commits i issues
-- demostració abans i després
-- execució en directe de proves mínimes
-- preguntes de transferència
-- microcanvis en viu
-- contrast entre documentació, codi i comportament observat
+El risc principal és acceptar una estructura generada que parega professional però que no arranque, no use dades reals o no resolga cap flux complet. Les mesures de control són `AI log` quan corresponga, commits revisables, execució en directe, proves mínimes, preguntes de transferència i contrast entre `README`, codi i comportament observat.
 
 ---
 
-## 4. Estructura del repte
+## 5. Estructura del repte
 
-### 4.1 Nucli del repte
+### 5.1 Nucli del repte
 
 **Objectiu del nucli**
 
-Refactoritzar una funcionalitat real del producte perquè passe d’una implementació inicial més acoblada a una estructura més mantenible, amb persistència segura suficient i evidències verificables de qualitat tècnica.
+Construir una nova base en framework, reproduïble i operativa, amb persistència mínima real i `2` casos d'ús end-to-end verificables.
 
 **Lliurable principal**
 
-Mòdul refactoritzat del producte que incloga:
+Aplicació en framework que incloga:
 
-- cas d’ús real seleccionat i justificat
-- entorn de migració inicialitzat i arrancable
-- estructura MVC o equivalent
-- separació de capes o responsabilitats
-- almenys un cas d’ús prioritari complet migrat
-- persistència real en el cas d’ús seleccionat
-- validacions i errors coherents
-- proves mínimes o verificacions registrades
-- documentació tècnica actualitzada
+- `Docker` i instruccions d'arrencada
+- projecte base del framework arrancable
+- configuració `.env` documentada
+- base de dades creada per `migrations`
+- dades inicials creades per `seeders` o equivalent
+- `2` casos d'ús funcionals de punta a punta
+- almenys `1` cas d'ús migrat de `R2`
+- validació i errors mínims
+- proves mínimes
+- documentació tècnica curta
+- mapa o backlog del que quedaria per migrar després
 
-**Criteris d’avaluació principals del nucli**
+**Criteris d'avaluació principals del nucli**
 
-- CA de **RA5** vinculats a separació de presentació, lògica i estructura de l’aplicació
-- CA de **RA6** vinculats a connexió, recuperació, publicació i seguretat bàsica de dades sobre el cas d’ús prioritzat
+- CA de **RA5** vinculats a estructura del framework, separació de responsabilitats, rutes, controladors, vistes o equivalents i mantenibilitat del flux
+- CA de **RA6** vinculats a connexió, recuperació, persistència, integritat bàsica, verificació i tractament d'errors sobre dades reals
 
 **Evidències obligatòries del nucli**
 
 - repositori actualitzat
-- issue principal del repte i microtasques
+- issue principal de `R3` i microtasques
 - seqüència de commits significativa
-- diagnosi inicial guiada del codi
-- decisió breu de stack
-- prova d’arrencada de l’entorn nou
-- cas d’ús abans i després de la migració
-- persistència funcional i verificable
-- validacions i errors observables
-- proves mínimes
-- documentació tècnica
-- AI log quan hi haja ús d’IA
+- aplicació arrancant amb Docker
+- `.env.example` o instruccions equivalents
+- `migrations` executables
+- `seeders` executables
+- captura o registre d'arrencada i càrrega de dades
+- demo dels `2` casos d'ús end-to-end
+- proves mínimes executades
+- README tècnic actualitzat
+- AI log quan hi haja ús d'IA
 
 ---
 
-## 5. Microprojectes i microtasques del repte
+## 6. Microprojectes i microtasques del repte
 
 > **Norma del repte**
 >
-> - Els microprojectes cobrixen sobretot criteris procedimentals i de qualitat tècnica.
+> - Els microprojectes han de produir software executable, no només diagnosi o discurs.
 > - Cap microprojecte apareix sense el camp **“CA coberts”**.
-> - No es considera suficient una reorganització cosmètica ni una persistència només aparent.
-> - El repte ha de professionalitzar un cas d’ús real del producte, no crear una arquitectura buida.
+> - No es demana migrar tota l'aplicació de `R2`.
+> - Sí es demana una base real en framework i almenys `2` fluxos end-to-end.
+> - El framework s'ha d'usar amb eines pròpies, no com a decorat.
 
-### Microprojecte MP1 — Diagnosi guiada, selecció del cas d’ús i preparació de l’entorn de migració
+### Microprojecte MP1 — Arrencada del nou projecte
 
 **Tipus**
 
-Microtasca d’entrada al repte, diagnosi guiada i preparació tècnica inicial.
-
-**Finalitat**
-
-MP1 ja no és només “analitzar”. És el microprojecte que obri realment `R3`: ha de deixar l’alumnat amb un cas d’ús clarament triat, un pla de migració viable i l’entorn mínim preparat per començar `MP2` sense perdre temps estructural.
-
-Cal tindre en compte que al final de `R2` no tot l’alumnat arriba amb el mateix grau de producte ni amb prou maduresa per fer una diagnosi autònoma útil. Per això, la tria del que es migrarà ha de ser guiada i la instal·lació o inicialització del nou stack forma part del treball planificat del repte, no d’un temps invisible que després absorbisca `MP2`.
+Microprojecte d'infraestructura i decisió tècnica.
 
 **Objectiu**
 
-Diagnosticar el punt de partida real heretat de `R2`, seleccionar un cas d’ús migrable i preparar la infraestructura mínima del nou stack perquè la migració puga començar amb criteri.
+Triar l'stack, crear el projecte base en framework, preparar Docker i demostrar que l'entorn arranca de manera reproduïble.
 
 **Tasca**
 
-Este microprojecte té dues parts.
+L'equip ha de:
 
-**Part A. Diagnosi guiada i selecció del cas d’ús**
-
-L’alumnat revisa el producte real heretat de `R2` i identifica:
-
-- punts de mescla entre presentació i lògica
-- dependències excessives
-- fitxers, pantalles, rutes o fluxos amb excés de càrrega
-- parts del flux massa acoblades o difícils d’explicar
-- punts febles de persistència o traçabilitat
-- un cas d’ús realment migrable, acotat i verificable
-- per què eixe cas d’ús és el millor punt d’entrada a `R3`
-- esquema abans/després de responsabilitats o flux principal
-
-**Part B. Preparació de l’entorn de migració**
-
-L’alumnat prepara la base tècnica mínima:
-
-- tria d’itinerari o stack: `Laravel`, `Symfony` o `NestJS`
-- nota breu de decisions de stack
-- instal·lació o inicialització de la nova infraestructura mínima
-- prova d’arrencada de l’entorn nou
-- estructura inicial del projecte de migració
-- issues, microtasques o roadmap curt per començar `MP2`
-
-**Seqüència de sessions**
-
-MP1 ocupa `2` sessions:
-
-- **Sessió 1**: diagnosi guiada del producte de `R2`, selecció del cas d’ús i defensa breu de la tria.
-- **Sessió 2**: pla de migració, decisió de stack i preparació o instal·lació de l’entorn mínim.
+- triar `Laravel`, `Symfony`, `NestJS` o via excepcional autoritzada
+- crear o reorganitzar el projecte base del framework
+- preparar `Docker` i serveis necessaris
+- configurar `.env` i documentar variables mínimes
+- definir primeres rutes mínimes
+- comprovar arrencada real de l'aplicació
+- obrir issue principal de `R3` amb microtasques
+- declarar quins `2` casos d'ús es treballaran i quin ve de `R2`
 
 **Relació amb el producte principal**
 
-Sense una diagnosi real i una infraestructura mínima arrancable, la refactorització es convertix fàcilment en un canvi superficial o arbitrari. MP1 ha de deixar preparat el terreny perquè `MP2` siga ja treball de migració, no una barreja improvisada de diagnosi tardana i instal·lació.
+Sense una base arrancable i reproduïble, la resta del repte queda convertida en fragments no verificables.
 
 **CA coberts**
 
@@ -209,61 +204,44 @@ Sense una diagnosi real i una infraestructura mínima arrancable, la refactoritz
 
 **Descripció dels CA en llenguatge docent**
 
-- L’alumnat identifica mecanismes reals de separació de responsabilitats.
-- L’alumnat analitza el punt de partida i detecta per què l’estructura actual és poc mantenible.
-- L’alumnat prepara una base tècnica coherent amb el stack triat per començar la migració.
+- L'alumnat identifica l'estructura del framework triat i les responsabilitats bàsiques.
+- L'alumnat prepara una base tècnica coherent per separar entrada, control, lògica i presentació.
+- L'alumnat justifica un abast viable de migració sense convertir `R3` en una reescriptura total.
 
 **Paper de la IA**
 
-La IA pot suggerir patrons, riscos habituals, alternatives de stack o microtasques, però l’alumnat ha de contrastar-ho amb el codi real del projecte i defensar la selecció del cas d’ús.
+La IA pot suggerir comandos d'arrencada, estructura inicial o riscos d'instal·lació, però l'alumnat ha de comprovar l'execució real en el seu entorn.
 
 **Evidències obligatòries**
 
-- diagnosi breu del codi
-- mapa inicial de dependències o responsabilitats
-- cas d’ús seleccionat i justificat
-- esquema abans/després
-- nota breu de decisions de stack
-- prova que el nou entorn arranca
-- estructura inicial del projecte de migració
-- issue principal i microtasques
-- roadmap curt o pla de migració
-- defensa oral breu
+- projecte base del framework al repositori
+- `Dockerfile`, `compose.yaml` o equivalent funcional
+- `.env.example` o instruccions de configuració
+- ruta inicial o `healthcheck`
+- registre d'arrencada
+- issue principal amb els `2` casos d'ús declarats
 
-**Instrument d’avaluació**
+**Instrument d'avaluació**
 
-Rúbrica de diagnosi i pla tècnic, checklist d’arrencada de l’entorn i validació docent del cas d’ús triat.
+Checklist d'arrencada tècnica i revisió de repositori.
 
-**Indicadors d’assoliment**
+**Indicadors d'assoliment**
 
-- diagnosi concreta i no genèrica
-- cas d’ús real, acotat i viable
-- proposta de migració viable
-- connexió clara amb el cas d’ús triat
-- entorn nou arrancable i reproduïble
-- microtasques suficients per començar `MP2`
+- l'aplicació arranca amb instruccions reproduïbles
+- el framework no és un esquelet buit: ja té rutes mínimes
+- l'abast de `R3` està acotat i inclou `2` fluxos
 
 **Riscos habituals**
 
-- diagnosi superficial
-- parlar d’MVC en abstracte sense relació amb el producte
-- triar “tot el projecte” com a cas d’ús
-- triar una funcionalitat que encara no existix mínimament en `R2`
-- pla massa gran o inviable
-- deixar la instal·lació del framework com a feina invisible fora del repte
-- arribar a `MP2` sense entorn arrancable ni tasques concretes
+- perdre sessions en instal·lació sense producte
+- no documentar `.env`
+- no declarar quin cas d'ús ve de `R2`
+- confondre arrencada del framework amb repte complet
 
 **Verificació del treball real**
 
-- defensa breu de la selecció del cas d’ús
-- validació del pla de migració
-- comprovació que l’entorn nou arranca
-- verificació que no s’ha triat un cas d’ús inviable, massa gran o massa vague
-- contrast entre diagnosi i canvis reals fets després
-
-**Relació amb MP2**
-
-MP2 comença amb el terreny preparat: cas d’ús triat, stack decidit, entorn base arrancable i roadmap curt. Això permet que MP2 es dedique a migrar el cas d’ús i separar responsabilitats, no a descobrir tard què es vol migrar ni a consumir temps de classe en instal·lacions no planificades.
+- execució en directe de l'arrencada
+- pregunta oral sobre serveis de Docker i punt d'entrada del framework
 
 **Pes orientatiu dins del repte**
 
@@ -271,175 +249,31 @@ MP2 comença amb el terreny preparat: cas d’ús triat, stack decidit, entorn b
 
 ---
 
-### Microprojecte MP2 — Separació de capes i migració del primer cas d’ús
+### Microprojecte MP2 — Model de dades i persistència mínima
 
 **Tipus**
 
-Microprojecte procedimental.
+Microprojecte procedimental de dades.
 
 **Objectiu**
 
-Migrar el cas d’ús real del domini triat en `MP1` a una estructura més neta, partint de l’entorn ja preparat, i separant almenys la coordinació del flux de la lògica de negoci i de la interfície o presentació.
+Crear l'esquema de dades inicial, connectar-lo amb l'aplicació i deixar dades de prova reproduïbles.
 
 **Tasca**
 
-L’equip reorganitza el cas d’ús validat en `MP1` de manera que quede clar:
+L'equip ha de:
 
-- qui rep la petició o entrada
-- qui coordina el flux
-- on queda la lògica de negoci
-- com es prepara la resposta o eixida
-- quines peces no han de barrejar responsabilitats
-
-**Relació amb el producte principal**
-
-Este microprojecte és el cor de RA5: sense migració real del cas d’ús, no hi ha arquitectura aplicable.
-
-**CA coberts**
-
-- **RA5.e**
-- **RA5.f**
-
-**Descripció dels CA en llenguatge docent**
-
-- L’alumnat aplica mecanismes de separació de capes o rols tècnics.
-- L’alumnat migra una funcionalitat real sense perdre comportament.
-
-**Paper de la IA**
-
-La IA pot suggerir esquelets de classes, carpetes o mòduls, però l’alumnat ha de demostrar que la separació és coherent i no ornamental.
-
-**Evidències obligatòries**
-
-- cas d’ús migrat
-- estructura de carpetes o mòduls revisada
-- demo abans/després
-- commits de migració incremental
-- nota breu de decisions
-
-**Instrument d’avaluació**
-
-Rúbrica de migració arquitectònica.
-
-**Indicadors d’assoliment**
-
-- separació visible i funcional
-- millora real de llegibilitat i mantenibilitat
-- conservació del comportament del cas d’ús
-
-**Riscos habituals**
-
-- crear capes buides
-- moure fitxers sense canviar responsabilitats
-- reescriure massa i perdre control del flux
-
-**Verificació del treball real**
-
-- execució del cas d’ús abans/després
-- pregunta oral sobre què ha canviat i què s’ha mantingut
-
-**Pes orientatiu dins del repte**
-
-20%
-
----
-
-### Microprojecte MP3 — Controladors, serveis i components de presentació o equivalent
-
-**Tipus**
-
-Microprojecte procedimental.
-
-**Objectiu**
-
-Consolidar la separació interna del mòdul refactoritzat i assegurar que els diferents rols tècnics tenen fronteres clares.
-
-**Tasca**
-
-L’equip revisa i ajusta el repartiment de responsabilitats entre:
-
-- controladors o equivalent
-- serveis, casos d’ús o equivalent
-- vistes, plantilles o mecanisme de resposta
-- components auxiliars necessaris
-
-No cal que totes les tecnologies usen exactament la mateixa nomenclatura, però sí una separació clara i defensable.
+- definir l'esquema mínim de dades per als fluxos triats
+- crear `migrations`
+- configurar connexió a la base de dades
+- crear `seeders` o mecanisme equivalent
+- carregar dades de demostració reproduïbles
+- comprovar lectura real des de l'aplicació o consola del framework
+- documentar com reiniciar BBDD i dades
 
 **Relació amb el producte principal**
 
-Este microprojecte evita que la migració es quede a mitges i reforça la mantenibilitat real.
-
-**CA coberts**
-
-- **RA5.g**
-- **RA5.h**
-
-**Descripció dels CA en llenguatge docent**
-
-- L’alumnat consolida l’arquitectura de la funcionalitat migrada.
-- L’alumnat sap justificar per què cada peça viu on viu.
-
-**Paper de la IA**
-
-La IA pot proposar patrons o convencions, però l’alumnat ha de validar la coherència amb l’stack i amb el producte.
-
-**Evidències obligatòries**
-
-- estructura final del mòdul
-- justificació breu de rols tècnics
-- demo del flux complet
-- registre d’ajustos realitzats
-
-**Instrument d’avaluació**
-
-Checklist d’arquitectura i mantenibilitat.
-
-**Indicadors d’assoliment**
-
-- fronteres clares entre responsabilitats
-- coherència interna del mòdul
-- capacitat de defensa tècnica
-
-**Riscos habituals**
-
-- nomenclatura correcta però arquitectura confusa
-- duplicació entre capes
-- serveis o controladors amb massa responsabilitats
-
-**Verificació del treball real**
-
-- pregunta oral sobre què no hauria de fer cada capa
-- microcanvi en viu sobre una part concreta del flux
-
-**Pes orientatiu dins del repte**
-
-15%
-
----
-
-### Microprojecte MP4 — Persistència segura aplicada al cas d’ús prioritari
-
-**Tipus**
-
-Microprojecte procedimental.
-
-**Objectiu**
-
-Consolidar una persistència real i suficient sobre el cas d’ús migrat, evitant accessos improvisats o poc segurs a dades.
-
-**Tasca**
-
-L’equip implementa o reorganitza la persistència del cas d’ús prioritzat, incloent com a mínim:
-
-- connexió o configuració correcta de la capa de dades
-- recuperació d’informació
-- publicació o ús de les dades dins de l’aplicació
-- operació de creació, actualització o equivalent segons el cas d’ús
-- tractament coherent de les dades recuperades
-
-**Relació amb el producte principal**
-
-Este microprojecte dona realitat funcional a la refactorització: el cas d’ús no només està millor estructurat, sinó que treballa amb dades de manera estable.
+La base del framework ha de treballar amb una BBDD real des del començament. La persistència no pot aparéixer al final com un afegit decoratiu.
 
 **CA coberts**
 
@@ -447,45 +281,48 @@ Este microprojecte dona realitat funcional a la refactorització: el cas d’ús
 - **RA6.b**
 - **RA6.c**
 - **RA6.d**
+- **RA5.f**
 
 **Descripció dels CA en llenguatge docent**
 
-- L’alumnat entén la tecnologia d’accés a dades que està usant.
-- L’alumnat connecta, recupera i mostra o utilitza informació persistent.
-- L’alumnat integra l’accés a dades dins del cas d’ús real.
+- L'alumnat connecta l'aplicació a un magatzem de dades real.
+- L'alumnat crea i evoluciona l'estructura de dades amb eines del framework.
+- L'alumnat deixa dades inicials que permeten provar els fluxos sense preparació manual.
 
 **Paper de la IA**
 
-La IA pot suggerir consultes, configuracions o ús d’ORM, però l’alumnat ha de comprovar-ne el funcionament real i la coherència amb el model de dades.
+La IA pot ajudar a proposar camps, relacions, migracions o seeders, però l'alumnat ha de validar que el model serveix als casos d'ús triats i que les dades es creen realment.
 
 **Evidències obligatòries**
 
-- persistència funcional
-- consulta o operació verificable
-- demo de lectura i ús de dades
-- evidència d’una operació d’escriptura o actualització quan siga pertinent
-- commits associats
+- fitxers de `migrations`
+- fitxers de `seeders` o equivalent
+- BBDD creada des de zero
+- dades inicials carregades
+- comprovació de lectura real
+- instruccions de reset o recàrrega de dades
 
-**Instrument d’avaluació**
+**Instrument d'avaluació**
 
-Rúbrica de persistència aplicada.
+Rúbrica de persistència mínima i dades reproduïbles.
 
-**Indicadors d’assoliment**
+**Indicadors d'assoliment**
 
-- l’accés a dades és real
-- la informació persistent forma part del flux del cas d’ús
-- la integració és comprensible i defensable
+- l'esquema no és genèric: respon als fluxos de `R3`
+- les dades es poden regenerar
+- l'aplicació llig dades reals, no arrays o valors incrustats
 
 **Riscos habituals**
 
-- persistència simulada
-- accés directe i desordenat des de múltiples llocs
-- dades sense coherència funcional
+- crear taules que no s'usen en cap flux
+- carregar dades manualment sense seeder
+- usar persistència simulada
+- no saber explicar la relació entre model i cas d'ús
 
 **Verificació del treball real**
 
-- execució en directe d’una lectura i d’una operació d’escriptura o actualització
-- pregunta oral sobre per què esta acció pertany a la capa de dades i no a una altra
+- esborrar o reiniciar BBDD i tornar a executar migracions i seeders
+- mostrar una lectura real des de l'aplicació
 
 **Pes orientatiu dins del repte**
 
@@ -493,71 +330,174 @@ Rúbrica de persistència aplicada.
 
 ---
 
-### Microprojecte MP5 — Validacions, errors i regressió mínima
+### Microprojecte MP3 — Primer cas d'ús complet
 
 **Tipus**
 
-Microprojecte procedimental.
+Microprojecte procedimental de migració funcional.
 
 **Objectiu**
 
-Assegurar que el cas d’ús refactoritzat no sols està més ordenat, sinó també més robust davant dades incorrectes i canvis futurs.
+Migrar o reconstruir dins del framework el primer cas d'ús complet, obligatòriament heretat de `R2`.
 
 **Tasca**
 
-L’equip incorpora:
+L'equip ha de implementar el flux amb:
 
-- validacions d’entrada
-- tractament coherent d’errors
-- proves mínimes o verificacions registrades del flux crític
-- comprovació que la funcionalitat principal continua viva després de la migració
+- ruta
+- controlador o equivalent
+- model, servei o capa de dades
+- vista, plantilla o resposta segons l'stack
+- lectura real des de BBDD
+- validació mínima si escau
+- error bàsic controlat
+- prova o verificació mínima del recorregut
 
 **Relació amb el producte principal**
 
-Sense esta capa, la refactorització pot ser elegant però fràgil i poc fiable.
+Este microprojecte demostra que el pas al framework no ha trencat el projecte anterior i que la migració és funcional, no només estructural.
 
 **CA coberts**
 
+- **RA5.e**
+- **RA5.f**
+- **RA5.g**
+- **RA6.c**
+- **RA6.d**
 - **RA6.f**
-- **RA6.g**
 
 **Descripció dels CA en llenguatge docent**
 
-- L’alumnat prova i documenta el comportament de l’accés a dades i del cas d’ús.
-- L’alumnat reforça la seguretat i la integritat funcional de la informació.
+- L'alumnat separa entrada, coordinació, dades i presentació amb eines del framework.
+- L'alumnat conserva o reconstrueix un flux real de `R2` amb persistència real.
+- L'alumnat verifica comportament positiu i error mínim.
 
 **Paper de la IA**
 
-La IA pot suggerir casos de prova o missatges d’error, però l’alumnat ha de verificar-los amb execució real.
+La IA pot ajudar a generar esquelets de ruta, controlador, servei, DTO, formulari o plantilla, però l'alumnat ha de comprovar que el flux correspon al cas d'ús real de `R2`.
 
 **Evidències obligatòries**
 
-- registre de proves mínimes
-- cas positiu i cas negatiu
-- tractament visible d’errors
-- incidències detectades i corregides
-- demo del flux complet verificat
+- identificació del cas d'ús heretat de `R2`
+- ruta funcional
+- controlador o equivalent
+- model/servei/capa de dades implicada
+- vista/plantilla/resposta funcional
+- lectura de dades reals
+- validació mínima si aplica
+- prova o verificació del cas positiu
+- evidència d'error controlat
 
-**Instrument d’avaluació**
+**Instrument d'avaluació**
 
-Checklist de qualitat mínima + revisió de proves.
+Rúbrica de flux end-to-end migrat.
 
-**Indicadors d’assoliment**
+**Indicadors d'assoliment**
 
-- hi ha prova real del flux
-- els errors són observables i coherents
-- la funcionalitat no s’ha trencat en la migració
+- el flux s'executa de punta a punta
+- les dades provenen de BBDD
+- les responsabilitats són recognoscibles
+- l'equip pot comparar què aportava `R2` i què aporta ara el framework
 
 **Riscos habituals**
 
-- proves fictícies
-- errors no tractats
-- refactorització que trenca el cas d’ús original
+- portar només una pantalla sense lògica real
+- deixar la lectura de dades simulada
+- posar tota la lògica dins del controlador
+- no verificar un error mínim
 
 **Verificació del treball real**
 
-- execució en directe de proves mínimes
-- contrast entre error provocat i resposta del sistema
+- execució en directe del flux
+- pregunta oral sobre el recorregut de la petició pel framework
+
+**Pes orientatiu dins del repte**
+
+20%
+
+---
+
+### Microprojecte MP4 — Segon cas d'ús o ampliació funcional
+
+**Tipus**
+
+Microprojecte procedimental d'ampliació controlada.
+
+**Objectiu**
+
+Construir un segon flux end-to-end que complete el mínim funcional del repte i faça visible el valor del framework.
+
+**Tasca**
+
+L'equip ha de implementar una de les dues opcions:
+
+- segon cas d'ús migrat des de `R2`
+- ampliació funcional xicoteta i útil sobre el primer flux
+
+En qualsevol cas, ha de ser un flux real, amb recorregut end-to-end, i no un canvi cosmètic. Pot incloure, segons el domini:
+
+- alta, edició, canvi d'estat o filtratge d'un recurs
+- vista de detall amb dades relacionades
+- operació protegida del domini
+- validació més significativa
+- ús d'una relació simple entre entitats
+
+**Relació amb el producte principal**
+
+El segon flux evita que `R3` quede reduït a una demo única. Obliga a comprovar que la base del framework suporta creixement mínim.
+
+**CA coberts**
+
+- **RA5.e**
+- **RA5.f**
+- **RA5.g**
+- **RA5.h**
+- **RA6.c**
+- **RA6.d**
+- **RA6.f**
+
+**Descripció dels CA en llenguatge docent**
+
+- L'alumnat reutilitza l'estructura del framework per afegir o migrar funcionalitat.
+- L'alumnat comprova que la persistència i les capes creades no serveixen només per a un cas aïllat.
+- L'alumnat diferencia ampliació funcional real de canvi visual.
+
+**Paper de la IA**
+
+La IA pot suggerir una ampliació viable i proves associades, però l'alumnat ha de justificar per què aporta valor al producte i al framework triat.
+
+**Evidències obligatòries**
+
+- descripció del segon flux
+- justificació de si és migració o ampliació
+- ruta i controlador o equivalents
+- interacció amb BBDD
+- validació o error mínim
+- prova o verificació mínima
+- demo end-to-end
+
+**Instrument d'avaluació**
+
+Checklist de segon flux funcional i revisió de valor.
+
+**Indicadors d'assoliment**
+
+- el segon flux és executable
+- no és només una vista nova o canvi d'estil
+- aprofita estructura, validació, dades o convencions del framework
+- amplia la base sense duplicar codi sense criteri
+
+**Riscos habituals**
+
+- afegir una pàgina estàtica
+- duplicar el primer flux canviant noms
+- obrir una funcionalitat massa gran
+- perdre estabilitat del primer cas d'ús
+
+**Verificació del treball real**
+
+- execució en directe dels dos fluxos
+- pregunta oral sobre què ha fet més fàcil o més ordenat el framework
 
 **Pes orientatiu dins del repte**
 
@@ -565,29 +505,114 @@ Checklist de qualitat mínima + revisió de proves.
 
 ---
 
-### Microprojecte MP6 — Documentació tècnica i preparació del Repte 4
+### Microprojecte MP5 — Qualitat i estabilització
 
 **Tipus**
 
-Microprojecte de tancament i verificació.
+Microprojecte procedimental de qualitat mínima.
 
 **Objectiu**
 
-Deixar el cas d’ús refactoritzat documentat i en condicions de servir de base per a la fase següent del projecte.
+Estabilitzar la base reconstruïda perquè no siga només una demo funcional, sinó un punt de partida mantenible per a `R4`.
 
 **Tasca**
 
-L’equip:
+L'equip ha de:
 
-- actualitza README o documentació equivalent
-- registra decisions arquitectòniques
-- anota punts de deute tècnic encara oberts
-- explica què queda preparat per al Repte 4
-- defensa oralment les decisions adoptades
+- revisar estructura de rutes, controladors, serveis i models o equivalents
+- eliminar duplicacions evidents
+- netejar controladors massa carregats
+- reforçar validació mínima
+- tractar errors bàsics
+- afegir proves bàsiques dels fluxos
+- comprovar dades de demostració reproduïbles
+- revisar que migracions i seeders continuen funcionant
 
 **Relació amb el producte principal**
 
-Este microprojecte fixa l’aprenentatge i connecta el repte amb la següent fase del projecte evolutiu.
+La qualitat mínima és el que separa una reconstrucció productiva d'un prototip fràgil.
+
+**CA coberts**
+
+- **RA5.g**
+- **RA5.h**
+- **RA6.f**
+- **RA6.g**
+
+**Descripció dels CA en llenguatge docent**
+
+- L'alumnat ajusta responsabilitats i evita que el framework s'use de forma desordenada.
+- L'alumnat prova els fluxos principals i controla errors mínims.
+- L'alumnat manté coherència entre estructura, dades i comportament.
+
+**Paper de la IA**
+
+La IA pot suggerir casos de prova, detectar duplicacions o proposar missatges d'error, però les proves i correccions s'han d'executar i entendre.
+
+**Evidències obligatòries**
+
+- proves mínimes executables o verificacions registrades
+- cas positiu i cas negatiu dels fluxos principals
+- tractament visible d'errors
+- revisió de controladors/responsabilitats
+- comprovació de migracions i seeders
+- incidències detectades i corregides
+
+**Instrument d'avaluació**
+
+Checklist de qualitat mínima i proves.
+
+**Indicadors d'assoliment**
+
+- els dos fluxos continuen funcionant després de la neteja
+- les validacions i errors són observables
+- les proves no són fictícies
+- l'estructura és explicable sense recórrer a frases genèriques
+
+**Riscos habituals**
+
+- proves manuals no reproduïbles
+- errors sense tractament
+- controladors que acumulen tota la lògica
+- trencar seeders o migracions en refactoritzar
+
+**Verificació del treball real**
+
+- execució en directe de proves o checklist verificable
+- provocació d'un error i revisió de la resposta del sistema
+
+**Pes orientatiu dins del repte**
+
+15%
+
+---
+
+### Microprojecte MP6 — Tancament tècnic
+
+**Tipus**
+
+Microprojecte de tancament i defensa.
+
+**Objectiu**
+
+Deixar el projecte en framework documentat, reproduïble i preparat per decidir què s'exposarà com a `API` en `R4`.
+
+**Tasca**
+
+L'equip ha de:
+
+- actualitzar `README`
+- explicar instruccions d'arrencada
+- documentar migracions, seeders i dades inicials
+- descriure els `2` casos d'ús implementats
+- registrar decisions tècniques principals
+- preparar una demostració curta
+- deixar backlog o mapa del que quedaria per migrar de `R2`
+- identificar què podria convertir-se en recurs o endpoint de `R4`
+
+**Relació amb el producte principal**
+
+El tancament tècnic fa visible que `R3` no és una migració total, sinó una reconstrucció acotada i verificable que deixa una base de continuïtat.
 
 **CA coberts**
 
@@ -597,41 +622,46 @@ Este microprojecte fixa l’aprenentatge i connecta el repte amb la següent fas
 
 **Descripció dels CA en llenguatge docent**
 
-- L’alumnat sap explicar l’arquitectura adoptada.
-- L’alumnat documenta decisions i estat real del mòdul.
-- L’alumnat deixa traçabilitat i continuïtat d’equip.
+- L'alumnat documenta una arquitectura real i no una intenció.
+- L'alumnat explica com arrancar, provar i continuar el projecte.
+- L'alumnat identifica què queda fora sense ocultar-ho com a deute invisible.
 
 **Paper de la IA**
 
-La IA pot ajudar a polir la redacció, però la documentació ha de correspondre al sistema real i la defensa és responsabilitat directa de l’alumnat.
+La IA pot ajudar a ordenar la documentació, però el contingut ha de correspondre exactament al projecte real i a les decisions preses.
 
 **Evidències obligatòries**
 
-- README tècnic actualitzat
-- registre de decisions
-- llista de deute tècnic pendent
-- defensa tècnica breu
+- `README` tècnic actualitzat
+- instruccions d'arrencada amb Docker
+- instruccions de BBDD, migracions i seeders
+- resum dels `2` casos d'ús
+- decisions tècniques breus
+- backlog del que quedaria per migrar
+- demostració final
 
-**Instrument d’avaluació**
+**Instrument d'avaluació**
 
-Rúbrica de defensa + checklist de documentació.
+Rúbrica de documentació i defensa tècnica.
 
-**Indicadors d’assoliment**
+**Indicadors d'assoliment**
 
-- documentació coherent amb el codi
-- decisions justificades
-- connexió clara amb el pas a API o serveis del repte següent
+- una altra persona pot arrancar el projecte
+- el README coincideix amb el codi
+- queda clar què s'ha migrat, què s'ha ampliat i què queda fora
+- el pas a `R4` està justificat
 
 **Riscos habituals**
 
-- documentació embellida
-- decisions redactades a posteriori sense correspondència real
-- no saber explicar per què l’arquitectura és millor que abans
+- documentació embellida però no executable
+- ocultar que només s'han migrat parts del projecte
+- no explicar decisions tècniques
+- no deixar mapa de continuïtat
 
 **Verificació del treball real**
 
-- contrast entre README, commits i resultat
-- pregunta oral sobre què facilita esta arquitectura de cara al Repte 4
+- seguir el README per arrancar el projecte
+- defensa curta sobre els `2` fluxos, la BBDD i el backlog
 
 **Pes orientatiu dins del repte**
 
@@ -639,185 +669,142 @@ Rúbrica de defensa + checklist de documentació.
 
 ---
 
-## 6. Taula resum de microprojectes i criteris d’avaluació
+## 7. Taula resum de microprojectes i criteris d'avaluació
 
 | Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
-|---|---|---|---|---|---|---|
-| MP1 | Diagnosi / decisió / preparació tècnica | Cas d’ús triat, pla i entorn arrancable | RA5.c, RA5.d, RA5.e | diagnosi, cas justificat, esquema abans/després, prova d’arrencada, issues | rúbrica + checklist | 15% |
-| MP2 | Procedimental | Cas d’ús migrat a arquitectura més neta | RA5.e, RA5.f | migració, demo abans/després, commits | rúbrica | 20% |
-| MP3 | Procedimental | Consolidació de capes i responsabilitats | RA5.g, RA5.h | estructura final, justificació, demo | checklist | 15% |
-| MP4 | Procedimental | Persistència segura aplicada al cas d’ús | RA6.a, RA6.b, RA6.c, RA6.d | lectura/escriptura, demo, commits | rúbrica | 20% |
-| MP5 | Procedimental | Validacions, errors i regressió mínima | RA6.f, RA6.g | proves, incidències, demo | checklist | 15% |
-| MP6 | Tancament / verificació | Documentació i preparació del Repte 4 | RA5.f, RA5.g, RA6.g | README, decisions, defensa | rúbrica + checklist | 15% |
+|---|---|---|---|---|---|---:|
+| MP1 | Infraestructura / decisió tècnica | Projecte en framework arrancable amb Docker | RA5.c, RA5.d, RA5.e | Docker, `.env`, ruta inicial, issue i abast de 2 fluxos | checklist | 15% |
+| MP2 | Persistència mínima | Model de dades inicial amb migrations i seeders | RA6.a, RA6.b, RA6.c, RA6.d, RA5.f | BBDD creada, dades carregades, lectura real | rúbrica | 20% |
+| MP3 | Migració funcional | Primer cas d'ús complet heretat de R2 | RA5.e, RA5.f, RA5.g, RA6.c, RA6.d, RA6.f | ruta, controlador, model/servei, vista/resposta, prova | rúbrica | 20% |
+| MP4 | Ampliació funcional | Segon flux end-to-end o ampliació útil | RA5.e, RA5.f, RA5.g, RA5.h, RA6.c, RA6.d, RA6.f | segon flux, BBDD, validació/error i demo | checklist | 15% |
+| MP5 | Qualitat | Estabilització, validació, errors i proves | RA5.g, RA5.h, RA6.f, RA6.g | proves, cas positiu/negatiu, errors, neteja | checklist | 15% |
+| MP6 | Tancament | README, decisions, demo i backlog de migració | RA5.f, RA5.g, RA6.g | documentació, demo, mapa del que queda | rúbrica | 15% |
 
 ---
 
-## 7. Evidències globals del repte
+## 8. Evidències globals del repte
 
 **Evidències mínimes comunes**
 
+- repositori actualitzat
 - issue principal amb microtasques
 - seqüència de commits significativa
-- diagnosi inicial guiada del codi
-- cas d’ús real seleccionat i justificat
-- esquema abans/després
-- nota breu de decisions de stack
-- prova que el nou entorn arranca
-- estructura inicial del projecte de migració
-- demo abans/després
-- arquitectura més clara i defensable
-- persistència funcional i verificable
-- validacions i errors visibles
-- proves mínimes o verificacions registrades
-- documentació tècnica actualitzada
-- AI log quan hi haja ús d’IA
-
-**Evidències opcionals d’ampliació**
-
-- més d’un cas d’ús migrat
-- major cobertura de proves
-- millor tractament de deute tècnic
-- persistència més rica
-- observabilitat o logging millorats
-- preparació més explícita per a API
-
----
-
-## 8. Instruments d’avaluació del repte
-
-### 8.1 Instruments principals
-
-- rúbrica base del repte adaptada al pes principal de RA5 i suport de RA6
-- checklist de diagnosi guiada, selecció del cas d’ús i arrencada d’entorn
-- rúbriques específiques de migració i persistència
-- checklist d’arquitectura i mantenibilitat
-- checklist de persistència i seguretat bàsica
-- defensa tècnica breu
-
-### 8.2 Instruments de verificació
-
-- demostració del cas d’ús abans i després
-- defensa breu de la selecció del cas d’ús
-- validació del pla de migració
-- comprovació que l’entorn nou arranca
-- execució real de lectura i escriptura o actualització
-- revisió de commits i issues
-- execució en directe de proves mínimes
-- preguntes tècniques breus
-- contrast entre AI log, documentació i resultat observat
-
----
-
-## 9. Riscos d’ús inadequat de la IA
-
-| Risc | Com es manifesta | Impacte | Mesura de control |
-|---|---|---|---|
-| Refactorització superficial | arquitectura aparentment ordenada però sense canvi real | Alt | demo abans/després i revisió de commits |
-| Capes buides o innecessàries | més complexitat i pitjor manteniment | Alt | defensa tècnica i checklist d’arquitectura |
-| Persistència insegura o mal integrada | dades inconsistents o flux fràgil | Alt | demo real i revisió dirigida |
-| Proves fictícies | documentació sense correspondència amb el codi | Alt | execució real |
-| Dependència excessiva de IA | l’alumne no pot explicar trade-offs | Alt | preguntes orals i microcanvis en viu |
-
----
-
-## 10. Mesures de control i verificació
-
-**Per comprovar aprenentatge real**
-
-- demostració del cas d’ús abans i després
-- comprovació inicial que el cas d’ús triat és viable i acotat
-- comprovació que l’entorn de migració arranca abans d’obrir MP2
-- execució real de persistència
-- revisió de commits i issues
-- execució de proves mínimes
-- provocació d’errors controlats
-- preguntes de transferència
-- canvi tècnic menut en directe
-- contrast entre documentació i sistema observat
-
-**Per distingir nivells d’autonomia**
-
-- **treball autònom real**: l’alumne diagnostica, refactoritza, prova i defensa
-- **treball assistit per IA**: l’alumne usa suport, però valida i pren decisions
-- **treball excessivament delegat**: l’alumne no comprén la nova arquitectura ni pot mantindre-la
-
----
-
-## 11. Adaptació realista a l’aula
-
-**Duració orientativa**
-
-6 a 8 sessions, segons la qualitat de partida del codi del Repte 2 i l’stack triat.
-
-MP1 ocupa `2` sessions planificades: una per a diagnosi guiada i selecció del cas d’ús, i una altra per a pla de migració i preparació de l’entorn. Esta reserva evita que la instal·lació del stack i la tria real del que es migrarà queden com a temps ocult dins de MP2.
-
-**Moment del curs**
-
-Després del Repte 2 i abans del Repte 4.
-
-**Prerequisits**
-
-- funcionalitat real heretada del Repte 2
-- repositori operatiu
-- treball mínim amb issues i commits
-- cas d’ús seleccionat i entorn de migració preparat abans de començar MP2
-- base d’accés a dades o necessitat clara d’introduir-la per al cas d’ús
-
-**Possibles variants tecnològiques**
-
-Es pot implementar amb MVC clàssic o arquitectura equivalent, sempre que permeta:
-
-- separació clara de responsabilitats
-- migració d’un cas d’ús real
-- persistència funcional
-- validacions i errors
-- documentació i verificació
-
-**Part comuna del grup**
-
-- diagnosi inicial
-- selecció guiada del cas d’ús
-- preparació mínima de l’entorn de migració
-- migració d’un cas d’ús
-- separació de capes
-- persistència suficient
+- aplicació en framework operativa
+- Docker funcional
+- configuració mínima i `.env.example` o equivalent
+- rutes, controladors i vistes/plantilles/respostes segons l'stack
+- models, entitats, esquemes o capa equivalent de dades
+- BBDD real
+- `migrations`
+- `seeders` o equivalent
+- dades de demostració reproduïbles
+- `2` casos d'ús end-to-end
+- almenys `1` cas d'ús migrat des de `R2`
+- validació i errors mínims
 - proves mínimes
-- documentació i defensa
+- documentació tècnica curta
+- backlog o mapa del que quedaria per migrar
+- AI log quan hi haja ús d'IA
 
-**Ampliacions realistes**
+**Evidències opcionals d'ampliació**
 
-- més d’un cas d’ús migrat
-- millor cobertura de proves
-- major qualitat de persistència
-- major neteja de deute tècnic
-- preparació més avançada del Repte 4
-
-**Recuperació o reforç per CA**
-
-- si fallen CA de **RA5**: nova diagnosi, nova migració parcial i defensa arquitectònica
-- si fallen CA de **RA6**: correcció de connexió, recuperació, publicació o tractament de dades amb nova verificació
-- si fallen proves o documentació: nova execució guiada, registre d’errors i defensa curta
+- més de `2` casos d'ús migrats
+- relacions de dades més riques
+- més cobertura de proves
+- millor gestió d'errors
+- autenticació més integrada amb el framework si el grup ja té base sòlida
+- primer esborrany de contracte d'`API` per a `R4`
 
 ---
 
-## 12. Tancament del repte
+## 9. Duració orientativa i organització
 
-**Pregunta de síntesi per a l’alumnat**
+Duració orientativa:
 
-Què hem fet perquè el producte no sols funcione, sinó que siga més mantenible i fiable, i què deixa esta nova base preparada per al Repte 4?
+- `6` a `8` sessions
+- recomanació preferent: `8` sessions de `3` hores
 
-**Criteri de superació del repte**
+Seqüència recomanada:
 
-El repte es considera superat quan:
+| Tram | Sessions | Microprojectes principals | Sentit docent |
+|---|---:|---|---|
+| Arrencada | `1` | `MP1` | triar stack, Docker, projecte base i rutes mínimes |
+| Persistència inicial | `2` | `MP2` | model de dades, migrations, seeders i BBDD real |
+| Primer flux | `3-4` | `MP3` | migrar el primer cas d'ús heretat de `R2` |
+| Segon flux | `5` | `MP4` | completar un segon flux o ampliació funcional útil |
+| Qualitat | `6-7` | `MP5` | validació, errors, proves i neteja d'estructura |
+| Tancament | `8` | `MP6` | README, demo, decisions i backlog de migració |
 
-- existix almenys un cas d’ús real del producte migrat a una arquitectura més neta
-- la separació de responsabilitats és visible i defensable
-- la persistència és funcional i verificable en el cas d’ús prioritzat
-- hi ha validacions i tractament d’errors coherents
-- existixen proves mínimes o verificacions reals
-- la documentació reflectix l’estat real del sistema
-- l’alumnat pot explicar tècnicament les decisions adoptades
+Si el calendari obliga a compactar, no s'ha de retallar l'exigència dels `2` fluxos, Docker, BBDD, `migrations` i `seeders`. El que es pot reduir és l'abast funcional de cada flux.
 
-**Observacions docents**
+---
 
-Este repte s’ha de llegir principalment com a desplegament de **RA5** amb suport integrat de **RA6**. Si més avant es vol ampliar el pes específic de persistència i seguretat de dades, convindrà fer-ho en el repte o situació equivalent que faça de pont amb l’actual SA4.
+## 10. Orientacions per itinerari
+
+**Laravel**
+
+- rutes en `routes/web.php` o `routes/api.php` si escau
+- controladors amb responsabilitat limitada
+- `Request` o validació pròpia de Laravel
+- models Eloquent
+- migracions i seeders
+- Blade o resposta equivalent
+- proves amb l'eina de testing del projecte
+
+**Symfony**
+
+- rutes amb atributs o configuració
+- controladors
+- serveis
+- entitats i repositoris amb Doctrine
+- migracions
+- fixtures com a equivalent de seeders
+- Twig o resposta equivalent
+- proves bàsiques amb l'eina del projecte
+
+**NestJS**
+
+- mòduls
+- controladors
+- serveis
+- DTO i validació
+- entitats/esquemes segons ORM o ODM triat
+- migracions o mecanisme equivalent de l'eina de dades
+- seeders o script reproduïble de càrrega inicial
+- proves bàsiques amb l'eina del projecte
+
+La nomenclatura pot variar, però el criteri no: base arrancable, dades reals, dos fluxos end-to-end i responsabilitats defensables.
+
+---
+
+## 11. Errors habituals que invaliden o debiliten el repte
+
+- migrar només fitxers sense adaptar-los al framework
+- deixar una base de framework que arranca però no té fluxos
+- fer només un cas d'ús
+- no garantir que almenys un flux ve de `R2`
+- crear BBDD sense `migrations`
+- carregar dades manualment sense `seeders` o equivalent
+- no tractar errors
+- no poder reiniciar l'entorn des de zero
+- escriure documentació que no coincideix amb el projecte
+- confondre ampliació funcional amb canvi visual
+
+---
+
+## 12. Condició de tancament del repte
+
+`R3` es considera tancat quan es pot demostrar:
+
+- l'aplicació en framework arranca amb Docker
+- la BBDD es crea amb `migrations`
+- les dades inicials es carreguen amb `seeders` o equivalent
+- hi ha `2` casos d'ús end-to-end funcionals
+- almenys `1` cas d'ús ve de `R2`
+- hi ha validació i errors mínims
+- hi ha proves mínimes o verificacions reproduïbles
+- el README permet arrancar i provar el projecte
+- queda documentat què s'ha migrat i què queda pendent
+- el projecte està preparat per decidir recursos i contracte d'`API` en `R4`
+
+El repte no queda tancat si només hi ha arquitectura explicada, si només hi ha esquelet del framework o si la persistència no es pot reconstruir des de zero.

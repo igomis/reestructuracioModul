@@ -228,29 +228,32 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - la prova i la depuració no es deixen només per al final, sinó que s'arrepleguen al llarg dels microprojectes
 - la sessió `7` no substituïx el treball d’arquitectura, persistència i frameworks propi de `R3`
 
-## Repte 3. Arquitectura i persistència
+## Repte 3. Reconstrucció en framework i persistència real
 
 ### Finalitat docent
 
-- passar d'un backend funcional a un backend mantenible, amb capes o equivalents i persistència coherent sobre una funcionalitat real ja existent
+- reconstruir el projecte en una base real de framework, amb Docker, BBDD, `migrations`, `seeders` i almenys `2` casos d'ús end-to-end
 
 ### Què no és suficient
 
-- reorganitzar carpetes o fitxers sense millorar un cas d'ús real
-- afegir persistència només aparent o només pensada per a la demo
-- passar a MVC o equivalent sense proves de regressió ni defensa de decisions
+- migrar tota l'aplicació de `R2` sense criteri d'abast
+- moure fitxers al framework sense adaptar responsabilitats
+- quedar-se en una instal·lació o esquelet del framework
+- afegir BBDD sense `migrations`, `seeders` ni fluxos verificables
 
 ### Quin és el mínim funcional no trivial
 
-- almenys un cas d'ús del domini migrat a una estructura més mantenible
-- persistència real de l'entitat principal o equivalent
-- validacions lligades al model i no només al punt d'entrada
-- comprovació que el flux funcional anterior continua viu després de la refactorització
+- projecte en framework arrancable amb Docker i configuració mínima
+- BBDD real creada per `migrations`
+- dades inicials reproduïbles amb `seeders` o equivalent
+- `2` casos d'ús end-to-end
+- almenys `1` cas d'ús migrat de `R2`
+- validació, errors bàsics, proves mínimes i README tècnic curt
 
 ### Què diferencia una resolució superficial d'una professional
 
-- superficial: hi ha capes noves i base de dades, però el flux continua fràgil o opac
-- professional: l'arquitectura és explicable, la persistència és coherent i el cas d'ús es pot verificar de punta a punta
+- superficial: hi ha framework i carpetes, però no BBDD reconstruïble ni dos fluxos reals
+- professional: l'aplicació arranca de zero, crea dades amb eines del framework i demostra dos fluxos funcionals amb responsabilitats explicables
 
 ### Què sap ja l'alumnat
 
@@ -260,28 +263,29 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 ### Què cal recordar breument
 
-- per què no s'ha d'obrir una `API` sobre estat efímer o arquitectura improvisada
-- què és una separació de responsabilitats suficient segons l'itinerari
-- com lligar model de dades, validació i persistència
+- per què no es demana migrar tota l'aplicació de `R2`
+- com triar `2` fluxos viables i indicar quin ve de `R2`
+- com lligar rutes, controladors, vistes o respostes, model de dades, validació i persistència
 
 ### Què ha d'explicar el professorat
 
-- criteris mínims de capes o equivalent
-- model de dades mínim del domini
-- relació entre persistència, regressió i mantenibilitat
+- criteris mínims d'una base real en framework
+- ús d'eines pròpies del framework: rutes, controladors, ORM o equivalent, migracions, seeders, validació i proves
+- relació entre persistència reproduïble, dos fluxos i entrada posterior a `R4`
 
 ### Què ha de modelar en directe
 
-- refactorització curta d'una funcionalitat existent cap a una estructura més clara
-- creació o lectura d'una entitat del domini amb persistència real
-- comprovació bàsica que el canvi no trenca el flux anterior
+- arrencada o revisió d'un projecte en framework amb Docker
+- migració, seeder o equivalent i lectura real de BBDD
+- primer recorregut ruta, controlador, model o servei i vista/resposta
 
 ### Què treballa l'alumnat amb autonomia
 
-- modelat del domini
-- pas a persistència funcional
-- refactorització del projecte per capes o equivalent
-- proves mínimes de regressió i revisió de documentació
+- arrencada del projecte en framework
+- model de dades inicial i dades reproduïbles
+- primer cas d'ús migrat de `R2`
+- segon flux o ampliació funcional útil
+- qualitat mínima, proves i documentació
 
 ### Materials que s'activen
 
@@ -299,22 +303,25 @@ En este punt, l'itinerari base del projecte pot ser:
 
 ### Evidències a arreplegar
 
-- model de dades explicable
-- persistència coherent amb el domini
-- refactorització recognoscible
+- Docker i framework arrancables
+- `.env.example` o instruccions equivalents
+- BBDD creada per `migrations`
+- dades inicials amb `seeders` o equivalent
+- `2` casos d'ús funcionals
 - proves mínimes o verificacions equivalents
-- documentació actualitzada
+- documentació tècnica i backlog del que queda per migrar
 
 ### Errors habituals a anticipar
 
 - deixar tota la lògica en controladors o rutes
 - persistència parcial o només preparada per a demo
-- model de dades desalineat amb el producte real
+- dades carregades a mà i no reproduïbles
+- fer només un flux o un segon flux cosmètic
 - voler passar a `API` sense base persistent estable
 
 ### Checkpoint docent
 
-- el grup només passa a `R4` si pot demostrar persistència real, arquitectura explicable i absència de dependència forta d'estat temporal
+- el grup només passa a `R4` si pot demostrar framework arrancable, BBDD reconstruïble, `2` fluxos funcionals, validació, errors i proves mínimes
 
 ## Organització docent del contrast
 

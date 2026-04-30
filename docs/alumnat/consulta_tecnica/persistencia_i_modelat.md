@@ -28,7 +28,7 @@
 
 ## On ampliar
 
-- Material del curs: [Repte 3. Migració a MVC i persistència segura](../../02_reptes/repte_03_mvc_i_persistencia.md)
+- Material del curs: [Repte 3. Reconstrucció en framework i persistència real](../../02_reptes/repte_03_mvc_i_persistencia.md)
 - Material del curs: [Guia de persistència i modelat de dades](../../04_materials/repte_03/guia_persistencia_i_modelat_dades.md)
 - Laravel Docs: [Eloquent ORM](https://laravel.com/docs/13.x/eloquent)
 - Laravel Docs: [Migrations](https://laravel.com/docs/13.x/migrations)

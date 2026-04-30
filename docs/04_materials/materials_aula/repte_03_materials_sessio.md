@@ -2,99 +2,101 @@
 
 ## Finalitat del document
 
-Contextualitzar les plantilles d'aula del curs per al `R3`, de manera que el professorat puga professionalitzar una funcionalitat real del producte amb arquitectura i persistència, sense reduir el repte a “fer MVC” o “guardar dades”.
+Contextualitzar les plantilles d'aula del curs per al `R3`, de manera que el professorat puga conduir la reconstrucció del projecte en framework amb base operativa real, persistència mínima real i dos fluxos funcionals verificables.
 
 ## Mini-briefings de les sessions clau
 
-### Sessió clau 1. Què s'ha de refactoritzar
+### Sessió clau 1. Arrencada real del framework
 
-- Objectiu de la sessió: detectar quin flux de `R2` mereix passar a una estructura més mantingible
-- Què s'espera al final: mapa bàsic de capes o equivalent i entitats principals
-- Error habitual a evitar: reorganitzar carpetes sense millorar el flux real
-- Evidència mínima del dia: cas d'ús triat i model mínim del domini
-- Pregunta de tancament: quina part del vostre flux actual és la més fràgil o opaca?
+- Objectiu de la sessió: deixar el projecte arrancant amb Docker, `.env` i una ruta mínima
+- Què s'espera al final: framework operatiu i `2` casos d'ús declarats
+- Error habitual a evitar: instal·lar el framework però no tindre cap producte executable
+- Evidència mínima del dia: Docker funcional, ruta inicial i identificació del flux que ve de `R2`
+- Pregunta de tancament: quin flux de `R2` migraràs i quin serà el segon flux?
 
-### Sessió clau 2. Persistència funcional
+### Sessió clau 2. Persistència reproduïble
 
-- Objectiu de la sessió: fer persistent el flux principal del producte
-- Què s'espera al final: primera entitat i operació principal persistides
-- Error habitual a evitar: afegir base de dades però no integrar-la en el cas d'ús real
-- Evidència mínima del dia: lectura o escriptura persistent reproduïble
-- Pregunta de tancament: què passa ara amb les dades del vostre flux quan es torna a executar?
+- Objectiu de la sessió: crear BBDD real amb `migrations` i dades inicials amb `seeders` o equivalent
+- Què s'espera al final: esquema inicial, dades de prova i primera lectura real
+- Error habitual a evitar: carregar dades manualment o simular-les en arrays
+- Evidència mínima del dia: reset de BBDD, migracions, seeders i lectura des de l'aplicació
+- Pregunta de tancament: pots reconstruir les dades de demo des de zero?
 
-### Sessió clau 3. Regressió i tancament de `R3`
+### Sessió clau 3. Dos fluxos i tancament de `R3`
 
-- Objectiu de la sessió: demostrar que la funcionalitat principal continua viva després de la refactorització
-- Què s'espera al final: arquitectura explicable, persistència coherent i prova mínima del flux
-- Error habitual a evitar: canviar estructura i perdre verificació
-- Evidència mínima del dia: flux principal persistent + prova curta + `README` tècnic
-- Pregunta de tancament: què podeu explicar ara millor del vostre producte que abans de `R3`?
+- Objectiu de la sessió: demostrar els `2` casos d'ús end-to-end amb validació, errors i proves mínimes
+- Què s'espera al final: base en framework explicable, persistent i preparada per a `R4`
+- Error habitual a evitar: tancar amb un únic flux o amb un segon flux només visual
+- Evidència mínima del dia: dos fluxos, prova curta, error controlat, README i backlog
+- Pregunta de tancament: què queda migrat, què queda pendent i què podria publicar-se com a `API`?
 
 ## Checkpoints curts específics
 
 - `CP-R3.1`
-  - Què hauria d'estar fet: entitats i responsabilitats principals identificades
-  - Com es verifica en `2-3` minuts: mostrar mapa curt de flux, model i punt d'entrada
-  - Senyal d'alerta: hi ha diagrama o discurs, però no canvis recognoscibles al projecte
-  - Acció correctiva ràpida: refactoritzar una sola operació del flux principal
+  - Què hauria d'estar fet: projecte en framework arrancable amb Docker
+  - Com es verifica en `2-3` minuts: executar arrencada i obrir ruta mínima
+  - Senyal d'alerta: hi ha carpetes del framework però no entorn reproduïble
+  - Acció correctiva ràpida: reduir stack i tancar només arrencada, `.env` i ruta inicial
 - `CP-R3.2`
-  - Què hauria d'estar fet: persistència real del cas d'ús central
-  - Com es verifica en `2-3` minuts: crear o recuperar un registre real del domini
-  - Senyal d'alerta: persistència parcial o només per a demo
-  - Acció correctiva ràpida: tancar només una entitat i una operació completa
+  - Què hauria d'estar fet: BBDD reconstruïble
+  - Com es verifica en `2-3` minuts: executar migracions i seeders o equivalent
+  - Senyal d'alerta: dades creades a mà o no documentades
+  - Acció correctiva ràpida: una entitat central, una migració i un seeder mínim
 - `CP-R3.3`
-  - Què hauria d'estar fet: regressió mínima controlada
-  - Com es verifica en `2-3` minuts: repetir el flux principal i comparar resultat
-  - Senyal d'alerta: el grup diu que “ha millorat”, però no pot provar-ho
-  - Acció correctiva ràpida: afegir prova mínima o pas manual reproduïble abans d'obrir `R4`
+  - Què hauria d'estar fet: `2` fluxos end-to-end
+  - Com es verifica en `2-3` minuts: executar els dos recorreguts i provocar un error
+  - Senyal d'alerta: només funciona un flux o el segon és cosmètic
+  - Acció correctiva ràpida: reduir el segon flux a una operació xicoteta però real
 
 ## Exemples de feedback ràpid
 
-- Vas bé: `La persistència ja està lligada al flux principal i la refactorització es pot explicar. Ara tanca regressió i README tècnic.`
-- Cal corregir abans de seguir: `No pots passar a R4 si la persistència encara és parcial o si el flux principal continua fràgil.`
-- Tens funcionalitat però falta verificació: `La dada es guarda, però encara no has mostrat que el cas d'ús antic continua viu després del canvi.`
-- Tens solució massa superficial: `Has reorganitzat fitxers, però el producte no és més mantingible ni més defensable.`
-- Tens marge per ampliar: `Si R3 ja està tancat, pots reforçar proves, model de dades o claredat d'arquitectura del mateix flux.`
+- Vas bé: `El projecte arranca, la BBDD es reconstrueix i ja tens clar quin flux ve de R2. Ara tanca el primer recorregut complet.`
+- Cal corregir abans de seguir: `No pots passar a R4 si només tens esquelet del framework o dades carregades a mà.`
+- Tens funcionalitat però falta verificació: `Els fluxos es poden veure, però encara falta prova mínima, error controlat o README executable.`
+- Tens solució massa superficial: `El segon flux no és funcional; és només una vista o canvi visual. Redueix-lo, però fes-lo real.`
+- Tens marge per ampliar: `Si R3 ja està tancat, pots reforçar proves, relació de dades o preparació del contracte d'API.`
 
 ## Fulls de treball base contextualitzats
 
-### Full 1. Refactorització dirigida
+### Full 1. Arrencada i dades
 
-- Objectiu: fer més mantenible una funcionalitat ja existent
-- Tasca: identificar flux, separar responsabilitats i tocar només una operació central
-- Evidència a generar: estructura refactoritzada recognoscible
-- Validació mínima: el flux encara es pot executar després del canvi
-- Ajuda si et bloqueges: torna a una sola operació i elimina refactorització lateral
-- Ampliació si acabes prompte: millora noms, proves o claredat d'una capa
+- Objectiu: fer arrancable i reproduïble la base del framework
+- Tasca: Docker, `.env`, ruta mínima, migracions, seeders i lectura real
+- Evidència a generar: projecte arrancable i BBDD reconstruïble
+- Validació mínima: reset de BBDD i lectura de dades des de l'aplicació
+- Ajuda si et bloqueges: una sola entitat, un seeder i una ruta de prova
+- Ampliació si acabes prompte: millora scripts o afegeix relació simple
 
-### Full 2. Persistència del domini
+### Full 2. Fluxos funcionals
 
-- Objectiu: fer persistent el cas d'ús principal
-- Tasca: modelar entitat, guardar-la o recuperar-la i revisar validació lligada al model
-- Evidència a generar: prova persistent + traça de model de dades + nota al `README`
-- Validació mínima: el cas d'ús es pot repetir amb resultat coherent
-- Ajuda si et bloqueges: una sola entitat, una sola relació si cal i una sola operació
-- Ampliació si acabes prompte: afegir relació o prova de regressió millor tancada
+- Objectiu: tancar `2` casos d'ús end-to-end
+- Tasca: migrar un flux de `R2` i implementar un segon flux o ampliació útil
+- Evidència a generar: dos recorreguts funcionals amb BBDD, validació i error mínim
+- Validació mínima: cas positiu i cas negatiu dels fluxos
+- Ajuda si et bloqueges: redueix cada flux al recorregut més curt que continue sent real
+- Ampliació si acabes prompte: reforça proves o prepara recurs d'API
 
 ## Suport per alumnat endarrerit
 
-- forçar una sola funcionalitat persistent de punta a punta
-- no tocar diverses capes si encara no hi ha una primera entitat estable
-- revisar flux principal, model i `README` abans d'afegir noves relacions
-- bloquejar el pas a `R4` si no hi ha arquitectura mínimament explicable
+- mantindre un stack i una configuració mínima
+- una sola entitat central si cal
+- un primer flux heretat de `R2` molt acotat
+- segon flux xicotet però real
+- no eliminar Docker, `migrations`, `seeders`, proves ni README
 
 ## Ampliacions per alumnat avançat
 
-- relació addicional del domini dins del mateix cas d'ús
-- prova de regressió més clara o automatitzada
-- millor separació de capes o servei més robust
+- relació addicional del domini dins dels fluxos
+- prova automatitzada més clara
+- millor tractament d'errors
+- primer esborrany de contracte d'`API`
 
 ## Evidència mínima per tram
 
-- Tram inicial: cas d'ús triat per refactoritzar i model mínim
-- Tram funcional: persistència real de l'operació principal
-- Tram de tancament: arquitectura explicable, prova mínima i documentació actualitzada
+- Tram inicial: framework arrancable, Docker, `.env` i abast dels `2` fluxos
+- Tram funcional: BBDD amb `migrations`, `seeders` i primer flux migrat de `R2`
+- Tram de tancament: segon flux, proves mínimes, README i backlog de migració
 
 ## Connexió amb el repte següent
 
-El `R3` només té sentit si deixa una base prou estable per publicar una `API` amb valor. Si la persistència encara és provisional o el flux no és defensable, `R4` es convertirà en una capa pública d'un backend encara immadur.
+El `R3` només té sentit si deixa una base prou estable per publicar una `API` amb valor. Si el projecte no arranca, la BBDD no es reconstrueix o només hi ha un flux, `R4` es convertirà en una capa pública d'un backend encara immadur.

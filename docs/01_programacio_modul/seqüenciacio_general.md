@@ -12,7 +12,7 @@
 
 1. Kickoff tècnic d’un servei web backend
 2. Mòdul de gestió d’usuaris i sessions
-3. Migració a MVC i persistència segura
+3. Reconstrucció en framework i persistència real
 4. Publicació i consum d’API
 5. Integració híbrida, automatització i manteniment
 
@@ -53,6 +53,6 @@ Tot el curs gira al voltant d’un **servei backend únic** que evoluciona de pr
 
 - Repte 1: equip amb entorn estable i criteri d’arquitectura justificat.
 - Repte 2: funcionalitat backend d’accés d’usuaris operativa i defensable.
-- Repte 3: arquitectura MVC amb persistència segura i qualitat observable.
+- Repte 3: base real en framework amb BBDD, `migrations`, `seeders`, dos fluxos funcionals i qualitat observable.
 - Repte 4: API usable i documentada, amb consum verificat.
 - Repte 5: integració híbrida funcional, mantenible i presentada tècnicament.

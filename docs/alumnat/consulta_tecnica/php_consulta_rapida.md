@@ -29,7 +29,7 @@
 ## On ampliar
 
 - Material del curs: [Repte 1. Kickoff funcional](../../02_reptes/repte_01_kickoff_backend.md)
-- Material del curs: [Repte 3. Migració a MVC i persistència segura](../../02_reptes/repte_03_mvc_i_persistencia.md)
+- Material del curs: [Repte 3. Reconstrucció en framework i persistència real](../../02_reptes/repte_03_mvc_i_persistencia.md)
 - PHP Manual: [Language Reference](https://www.php.net/manual/en/langref.php)
 - PHP Manual: [Superglobals](https://www.php.net/manual/en/language.variables.superglobals.php)
 - PHP Manual: [PDO](https://www.php.net/manual/en/book.pdo.php)

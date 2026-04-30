@@ -26,7 +26,7 @@ Establir l’arquitectura curricular del mòdul DWES en una seqüència de 5 rep
 |---|---|---|---|---|
 | 1 | Kickoff tècnic d’un servei web backend | Preparar base tècnica i decisions inicials del projecte. | RA1, inici de RA5 | Repo base funcional + README tècnic + ADR inicial. |
 | 2 | Mòdul de gestió d’usuaris i sessions | Implementar funcionalitat dinàmica amb autenticació i estat. | RA2, RA3, RA4 | Mòdul d’usuaris/sessions operatiu i testable. |
-| 3 | Migració a MVC i persistència segura | Escalar a arquitectura mantenible amb dades persistents. | RA5, RA6, RA8 | Backend MVC amb capa de dades i proves de regressió. |
+| 3 | Reconstrucció en framework i persistència real | Escalar a una base en framework amb dades persistents i fluxos verificables. | RA5, RA6, RA8 | Backend en framework amb Docker, BBDD, migrations, seeders, 2 fluxos i proves mínimes. |
 | 4 | Publicació i consum d’API | Obrir el producte a integració mitjançant API documentada. | RA7, reforç de RA6 | API REST documentada + client de consum. |
 | 5 | Integració híbrida, automatització i manteniment | Consolidar integracions externes i sostenibilitat del producte. | RA9, reforç de RA7 i RA8 | Integració híbrida (n8n/serveis externs) + pla de manteniment. |
 

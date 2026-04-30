@@ -27,8 +27,8 @@ Esta implantació s'ha calibrat sobre un escenari orientatiu d'unes `20` setmane
 | **Bloc 1** | Avaluació 1 | Fase 0 | posar en marxa el marc de treball, evidències i criteris comuns | repositori usable, primer `README`, criteri de traçabilitat assumit |
 | **Bloc 2** | Avaluació 1 | Fase 1 / Repte 1 | concretar domini, base comuna en `PHP` i primer esquelet defensable del producte | base tècnica executable i primera decisió tècnica documentada |
 | **Bloc 3** | Avaluació 1 | Fase 2 / Repte 2 | construir la base funcional del producte amb auth, sessions o estat equivalent sobre base comuna en `PHP` | flux funcional mínim real i verificable |
-| **Bloc 4** | Avaluació 1 | inici de Fase 3 / Repte 3 | obrir `R3` amb diagnosi guiada, tria del cas d’ús i entorn de migració | cas d’ús validat, pla curt i entorn arrancable |
-| **Bloc 5** | Avaluació 2 | tancament de Fase 3 / Repte 3 | consolidar persistència, capes i mantenibilitat amb entrada de framework | backend persistent i mantenible |
+| **Bloc 4** | Avaluació 1 | inici de Fase 3 / Repte 3 | obrir la reconstrucció en framework abans del canvi d'avaluació | projecte base en framework arrancable, Docker i persistència inicial |
+| **Bloc 5** | Avaluació 2 | tancament de Fase 3 / Repte 3 | consolidar base real en framework, persistència i primers fluxos verificables | aplicació en framework amb BBDD, seeders i 2 casos d'ús funcionals |
 | **Bloc 6** | Avaluació 2 | Fase 4 / Repte 4 | publicar i provar l'API del producte | API documentada i comprovada |
 | **Bloc 7** | Avaluació 2 | Fase 5 / Repte 5 i defensa final | integrar, tancar i defensar el producte del curs | producte final complet, integrat i defensable |
 
@@ -146,11 +146,11 @@ Punt crític de seguiment:
 
 - comprovar que la funcionalitat és real i reproduïble, no una demo puntual o una seqüència només preparada per a presentar
 
-### Bloc 4. Entrada guiada a R3 i preparació de l’entorn
+### Bloc 4. Entrada a framework i persistència real
 
 Objectiu docent:
 
-- obrir `R3` abans del canvi d'avaluació amb una tria guiada del cas d’ús, un pla viable i la infraestructura mínima preparada
+- obrir `R3` abans del canvi d'avaluació perquè la base funcional de `R2` es convertisca en una base real en framework
 
 Repte o fase associada:
 
@@ -158,41 +158,40 @@ Repte o fase associada:
 
 Activitats d'aula:
 
-- revisar el producte real heretat de `R2` i detectar mescles de responsabilitats
-- seleccionar un cas d’ús migrable i justificar per què és el millor punt d’entrada
-- decidir l’itinerari o stack i deixar-ne una nota breu
-- inicialitzar o instal·lar la infraestructura mínima del nou entorn
-- comprovar que l’entorn arranca i preparar issues o microtasques per a `MP2`
+- triar o confirmar l'stack de framework i preparar el projecte base
+- posar en marxa Docker, `.env` i rutes mínimes
+- començar el model de dades inicial amb BBDD real
+- crear `migrations` i `seeders` o equivalents
+- declarar els `2` casos d'ús de `R3`, indicant quin ve de `R2`
 
 Materials activats:
 
 - materials del Repte 3
 - [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
 - materials comuns
-- itinerari triat com a suport directe de la migració
+- itinerari triat com a suport directe de capes i persistència
 
 Evidències esperades:
 
-- diagnosi guiada del punt de partida
-- cas d’ús seleccionat i justificat
-- esquema abans/després
-- nota breu de decisions de stack
-- entorn base arrancable
-- issues o microtasques de migració
+- projecte en framework arrancable
+- Docker funcional i configuració mínima documentada
+- primeres rutes reals
+- BBDD connectada amb `migrations` i dades inicials amb `seeders`
+- abast dels `2` casos d'ús definit i registrat
 
 Instrument principal:
 
-- `rubrica_base_reptes.md` i checklist de diagnosi/arrencada
+- `rubrica_base_reptes.md`
 
 Punt crític de seguiment:
 
-- no tancar la primera avaluació amb `R3` obert només en abstracte: ha d’haver-hi cas d’ús viable, pla curt i entorn preparat
+- no tancar la primera avaluació amb només un esquelet de framework o una persistència manual no reproduïble
 
-### Bloc 5. Tancament de persistència i mantenibilitat
+### Bloc 5. Tancament de base en framework i fluxos verificables
 
 Objectiu docent:
 
-- consolidar el backend com a base persistent, mantenible i preparada per exposar-se com a API
+- consolidar el backend com a aplicació en framework persistent, mantenible i preparada per exposar-se com a API
 
 Repte o fase associada:
 
@@ -200,9 +199,11 @@ Repte o fase associada:
 
 Activitats d'aula:
 
-- completar model de dades, persistència i relacions del domini
-- reforçar refactorització per capes o equivalent
-- comprovar regressió mínima i coherència entre codi, proves i documentació
+- completar els `2` casos d'ús end-to-end
+- assegurar que almenys `1` cas d'ús és migrat de `R2`
+- reforçar rutes, controladors, vistes o respostes, models i serveis o equivalents
+- comprovar validació, errors bàsics i proves mínimes
+- verificar que `migrations` i `seeders` reconstrueixen la BBDD i les dades de demostració
 
 Materials activats:
 
@@ -213,10 +214,13 @@ Materials activats:
 
 Evidències esperades:
 
-- persistència coherent amb el domini
-- arquitectura explicable i mantenible
-- proves mínimes de regressió
-- documentació tècnica actualitzada
+- aplicació en framework operativa
+- BBDD creada per `migrations`
+- dades inicials reproduïbles amb `seeders` o equivalent
+- `2` casos d'ús funcionals de punta a punta
+- validació i errors mínims
+- proves mínimes i documentació tècnica curta
+- backlog o mapa del que quedaria per migrar de `R2`
 
 Instrument principal:
 
@@ -224,7 +228,7 @@ Instrument principal:
 
 Punt crític de seguiment:
 
-- no passar a `R4` si la base persistent encara és feble, improvisada o massa dependent d'estat temporal
+- no passar a `R4` si només hi ha discurs arquitectònic, un únic flux o una BBDD que no es pot reconstruir de zero
 
 ### Bloc 6. Publicació i consum d'API
 
@@ -319,8 +323,8 @@ Punt crític de seguiment:
 | **Bloc 1** | repositori usable i primer `README` | base de treball compartida |
 | **Bloc 2** | entorn funcional i decisió tècnica inicial | esquelet de producte defensable |
 | **Bloc 3** | flux funcional d'autenticació i validacions mínimes | nucli de `R2` complet |
-| **Bloc 4** | cas d’ús validat, pla curt i entorn arrancable | entrada efectiva a `R3` |
-| **Bloc 5** | persistència coherent i arquitectura mantenible | backend preparat per a `R4` |
+| **Bloc 4** | framework arrancable, Docker, BBDD inicial, `migrations` i `seeders` | entrada efectiva a `R3` |
+| **Bloc 5** | base en framework amb `2` casos d'ús, persistència reproduïble i proves mínimes | backend preparat per a `R4` |
 | **Bloc 6** | API publicada, documentada i provada | producte exposat com a servei usable |
 | **Bloc 7** | integració funcional, defensa i documentació final | producte complet del curs |
 
@@ -341,8 +345,8 @@ Lectura docent:
 
 - al final del **Bloc 1**: comprovar criteri de traçabilitat i ús professional del repositori
 - al final del **Bloc 3**: comprovar que `R2` deixa una base funcional real i no una simulació
-- al final del **Bloc 4**: comprovar que l'entrada a `R3` és real abans del canvi d'avaluació, amb cas d’ús viable i entorn arrancable
-- al final del **Bloc 5**: comprovar que el backend és prou persistent i mantenible per publicar API
+- al final del **Bloc 4**: comprovar que l'entrada a `R3` és real abans del canvi d'avaluació
+- al final del **Bloc 5**: comprovar que el backend té base en framework reproduïble, BBDD reconstruïble i `2` fluxos funcionals abans de publicar API
 - al final del **Bloc 6**: comprovar coherència entre contracte API, proves i documentació
 - al final del **Bloc 7**: comprovar valor real de la integració, autoria verificable i defensa tècnica
 

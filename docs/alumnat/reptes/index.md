@@ -10,7 +10,7 @@ Els reptes no són entregues independents. Cada repte aprofita l'anterior i prep
 |---|---|
 | `R1` | una primera entrada funcional real al producte |
 | `R2` | base comuna en `PHP` amb dades, lògica, estat, auth i primera funcionalitat protegida |
-| `R3` | entrada de framework, arquitectura mantenible i persistència segura |
+| `R3` | reconstrucció en framework, BBDD real, migrations, seeders i 2 fluxos funcionals |
 | `R4` | API publicada, documentada i consumida |
 | `R5` | integració híbrida, manteniment i tancament defensable |
 
