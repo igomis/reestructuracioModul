@@ -27,6 +27,11 @@ nav:
       - Centre del curs: curs-executable.md
       - Ajust fi de reptes i instruments: fase-4-ajust-fi-reptes-i-instruments.md
       - Annexos de planificació:
+          - Programació d'aula per reptes:
+              - Inici: 01_programacio_modul/index.md
+              - Programació d'aula del Repte 1: 01_programacio_modul/programacio_aula_repte_01.md
+              - Programació d'aula del Repte 2: 01_programacio_modul/programacio_aula_repte_02.md
+              - Planificació d'aula del Repte 3: 01_programacio_modul/planificacio_aula_r3_mvc_i_persistencia.md
           - Pla d'implantació docent: 01_programacio_modul/pla_implantacio_docent.md
           - Calendarització per avaluacions: 01_programacio_modul/calendaritzacio_per_avaluacions.md
           - Guia 20 setmanes: 01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md
