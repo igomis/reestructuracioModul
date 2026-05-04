@@ -32,15 +32,108 @@ Este document baixa `R1` a una seqüència operativa d'aula perquè el professor
 
 ### Sessió 1. Microrepte 1
 
-**Model client/servidor i elecció guiada de stack**
+# Sessió 1 — Model client/servidor i elecció guiada de stack
 
-- Objectiu: situar el curs, explicar el paper del servidor i acotar la base tècnica del repte.
-- Què explica el professorat: projecte únic del curs, diferència client/servidor, què fa el backend i per què `R1` encara no és un repte de framework complet.
-- Què modela el professorat: lectura curta del briefing inicial, mapa bàsic client/servidor i ús de la [fitxa breu d'exploració tècnica inicial](../08_materials_compartibles/fitxa_exploracio_tecnica_inicial.md) amb un exemple molt breu de decisió tècnica orientativa.
-- Què fa l'alumnat: concreta el producte, ompli la fitxa breu d'exploració tècnica inicial, identifica tecnologies de client i servidor, explora de manera breu possibles stacks o frameworks amb ajuda d'IA si convé i deixa una primera decisió tècnica visible amb dubtes oberts.
-- Producte final de la sessió: fitxa breu d'exploració tècnica inicial, tancada al final de la sessió o entre la sessió `1` i la `2`, i usada com a evidència del microrepte `1`.
-- Evidència esperada: fitxa breu entregada, primera decisió tècnica orientativa i explicació del model client/servidor.
-- Checkpoint: cada alumne pot explicar quin paper jugarà el servidor en el seu producte, quines tecnologies ha identificat, amb què començaria i quins dubtes tècnics manté oberts.
+## Objectiu
+Situar el curs, explicar el paper del servidor i acotar la base tècnica del repte.
+
+## Què explica el professorat
+- projecte únic del curs
+- diferència client/servidor
+- què fa el backend
+- per què R1 encara no és un repte de framework complet
+
+## Què modela el professorat
+- lectura curta del briefing inicial
+- mapa bàsic client/servidor
+- ús de la fitxa breu d'exploració tècnica inicial
+- exemple molt breu de decisió tècnica orientativa
+
+## Què fa l'alumnat
+- concreta el producte
+- ompli la fitxa breu d'exploració tècnica inicial
+- identifica tecnologies de client i servidor
+- explora de manera breu possibles stacks o frameworks amb ajuda d'IA si convé
+- deixa una primera decisió tècnica visible amb dubtes oberts
+
+## Producte final de la sessió
+Fitxa breu d'exploració tècnica inicial, tancada al final de la sessió o entre la sessió 1 i la 2, i usada com a evidència del microrepte 1.
+
+## Evidència esperada
+- fitxa breu entregada
+- primera decisió tècnica orientativa
+- explicació del model client/servidor
+
+## Checkpoint
+Cada alumne pot explicar:
+- quin paper jugarà el servidor en el seu producte
+- quines tecnologies ha identificat
+- amb què començaria
+- quins dubtes tècnics manté oberts
+
+## Seqüència temporal de la sessió (3 hores)
+
+### 0:00–0:25 — Obertura i marc del curs
+- presentació del projecte únic del curs
+- sentit de R1 com a repte d'arrencada, comprensió tècnica i acotació
+- pregunta central: què haurà de fer el servidor en el teu producte?
+
+### 0:25–0:50 — Model client/servidor
+- diferència entre client, servidor i base de dades
+- recorregut bàsic petició-resposta
+- exemples simples: login, consulta de llista, enviament de formulari
+- aclariment: en esta fase importa entendre responsabilitats, no dominar encara un framework
+
+### 0:50–1:10 — Modelatge de la fitxa breu
+- presentació de la fitxa breu d'exploració tècnica inicial
+- exemple molt curt omplit en directe
+- mostra d'una decisió tècnica orientativa provisional
+
+### 1:10–1:55 — Exploració guiada
+- l'alumnat concreta el producte
+- ompli la fitxa
+- identifica tecnologies de client i servidor
+- compara 1 o 2 opcions de stack o framework
+- pot usar IA per aclarir conceptes o comparar opcions
+- deixa una primera decisió orientativa i dubtes oberts
+
+### 1:55–2:20 — Posada en comú i contrast tècnic
+- 3 o 4 exemples ràpids d'alumnes
+- contrast entre opcions
+- aclariments sobre backend, persistència, autenticació i punt de partida tècnic
+
+### 2:20–2:45 — Ajust final de la fitxa
+- revisió de la fitxa després del contrast
+- millor redacció de la decisió orientativa
+- concreció de dubtes tècnics oberts
+- preparació de l'entrega
+
+### 2:45–3:00 — Checkpoint final
+- comprovació oral breu o revisió ràpida
+- entrega de la fitxa al final o entre la sessió 1 i la 2
+
+## Exemple molt breu de decisió tècnica orientativa
+> Començaria amb un client web senzill en HTML/CSS/JS i un servidor en PHP perquè en esta fase em permet entendre millor el flux petició-resposta, el tractament de formularis i la lògica del backend sense afegir encara massa abstracció. El servidor haurà de validar dades, gestionar informació i guardar-la en base de dades. Com a dubtes oberts, encara no tinc clar si més avant em convindrà continuar amb PHP directe o passar a un framework per a ordenar millor la part MVC i la persistència.
+
+## Paper de la IA en esta sessió
+Ús acceptable:
+- aclarir diferències entre tecnologies
+- comparar 2 opcions de stack
+- reformular dubtes tècnics
+- resumir pros i contres
+
+No acceptable:
+- pegar una decisió tècnica prefabricada sense entendre-la
+- entregar una fitxa generada per IA sense contrast personal
+
+## Observacions docents
+Deixa al final un espai curt per a registre post-sessió amb estos tres subtítols:
+
+### Què s'ha fet realment
+
+### Què ha quedat pendent
+
+### Què he de recordar per a la pròxima sessió
 
 ### Sessió 2. Microrepte 2
 
