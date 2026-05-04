@@ -25,6 +25,7 @@ nav:
       - Ús assistit per IA: us-ia-professorat-i-alumnat.md
   - Curs executable:
       - Centre del curs: curs-executable.md
+      - Ampliacions 9 a 10 per repte: ampliacions-9-a-10-per-repte.md
       - Ajust fi de reptes i instruments: fase-4-ajust-fi-reptes-i-instruments.md
       - Annexos de planificació:
           - Programació d'aula per reptes:
@@ -89,6 +90,7 @@ nav:
           - README i ADR: 04_materials/materials_comuns/guia_readme_i_adr.md
           - Testing i debugging: 04_materials/materials_comuns/guia_testing_i_debugging.md
           - Ús verificable de la IA: 04_materials/materials_comuns/guia_ús_verificable_ia.md
+          - Plantilla ampliació 9 a 10: 04_materials/plantilla_ampliacio_9_10.md
       - Presentacions:
           - Visió del curs: 07_presentacions/presentacio_00_visio_curs.md
           - Repte 1: 07_presentacions/presentacio_01_repte_1.md

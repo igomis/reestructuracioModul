@@ -721,3 +721,52 @@ El repte es considera superat quan:
 **Observacions docents**
 
 Este repte s’ha de llegir principalment com a desplegament de **RA7** amb suport concret de **RA6**. No hauria de convertir-se en un nou repte general de persistència ni en una simple col·lecció d’endpoints CRUD sense contracte, consum i documentació.
+
+---
+
+## 13. Ampliació 9→10
+
+**Finalitat**
+
+Aprofundir el repte amb una millora tècnica real sobre contracte, seguretat, robustesa del consum o qualitat de verificació de l'API.
+
+**Condició prèvia**
+
+El nucli obligatori del repte ha d'estar complet, funcional i validat.
+
+**Opcions d’ampliació**
+
+- millorar l'autenticació de l'API, la gestió d'errors o els codis de resposta amb criteri de servei reusable
+- reforçar el client consumidor, la documentació d'API o les comprovacions de contracte amb proves addicionals o verificacions més sòlides
+
+**Ampliació proposada per l’alumne/a**
+
+També es pot proposar una ampliació pròpia si està alineada amb el repte i es valida prèviament amb el professorat.
+
+**Paper de la IA**
+
+La IA es pot usar per proposar alternatives de contracte, casos de prova o revisió de documentació, però l'alumnat ha d'aportar decisió, validació i defensa pròpia.
+
+**Evidències**
+
+- commit o branca identificable
+- justificació tècnica breu
+- comparativa entre contracte previst i comportament final si l'ampliació afecta el servei
+- prova funcional o demo
+- rastre de l'ús de la IA, si n'hi ha hagut
+- mini defensa tècnica o preguntes de contrast
+
+**Instruments de verificació**
+
+- checklist curta d'ampliació
+- revisió de repositori
+- prova funcional guiada
+- mini defensa tècnica
+
+**Perquè compute com a 9→10**
+
+- el nucli està ben resolt
+- l’ampliació aporta robustesa, seguretat o qualitat real de servei
+- es pot explicar i defensar
+- no és ornamental
+- no hi ha delegació excessiva en IA

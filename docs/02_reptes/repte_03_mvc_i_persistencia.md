@@ -884,3 +884,52 @@ La nomenclatura pot variar, però el criteri no: base arrancable, dades reals, d
 - el projecte està preparat per decidir recursos i contracte d'`API` en `R4`
 
 El repte no queda tancat si només hi ha arquitectura explicada, si només hi ha esquelet del framework o si la persistència no es pot reconstruir des de zero.
+
+---
+
+## 13. Ampliació 9→10
+
+**Finalitat**
+
+Aprofundir `R3` amb una millora tècnica real sobre mantenibilitat del flux, qualitat arquitectònica, proves o operativitat del backend en framework.
+
+**Condició prèvia**
+
+El nucli obligatori del repte ha d'estar complet, funcional i validat.
+
+**Opcions d’ampliació**
+
+- afegir paginació, filtrat o cerca amb criteri de mantenibilitat i documentació clara del flux
+- reforçar proves, autorització o refactorització `MVC` amb justificació tècnica breu sobre per què la nova versió és millor
+
+**Ampliació proposada per l’alumne/a**
+
+També es pot proposar una ampliació pròpia si està alineada amb el repte i es valida prèviament amb el professorat.
+
+**Paper de la IA**
+
+La IA es pot usar per contrastar enfocaments d'arquitectura, proves o refactorització, però l'alumnat ha d'aportar decisió, validació i defensa pròpia.
+
+**Evidències**
+
+- commit o branca identificable
+- ADR o justificació tècnica breu
+- prova funcional o demo
+- README tècnic actualitzat si l'ampliació afecta el flux
+- rastre de l'ús de la IA, si n'hi ha hagut
+- mini defensa tècnica o preguntes de contrast
+
+**Instruments de verificació**
+
+- checklist curta d'ampliació
+- revisió de repositori
+- prova funcional guiada
+- mini defensa tècnica als checkpoints o al tancament
+
+**Perquè compute com a 9→10**
+
+- el nucli està ben resolt
+- l’ampliació aporta mantenibilitat, qualitat o robustesa reals
+- es pot explicar i defensar
+- no és ornamental
+- no hi ha delegació excessiva en IA

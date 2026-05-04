@@ -23,6 +23,8 @@ Els documents canònics dels `R1-R5` ja deixen estes quatre funcions explicitade
 
 En `R5`, esta lectura s'aplica explícitament a `RA9`: el repte ha de fer visible quina font externa o repositori heterogeni s'integra, quin valor genera, quin instrument n'avalua el resultat i com es comprova que l'alumnat entén el flux híbrid construït.
 
+La franja `9→10` no s'ha de llegir com a punts extra. És la via per demostrar excel·lència tècnica una vegada el nucli del repte ja està acreditat. Perquè compute, l'ampliació ha d'aportar valor real, integrar-se dins del repte i poder-se defensar amb evidències verificables.
+
 ## Regla comuna d'acreditació
 
 - el repositori es revisa per alumne

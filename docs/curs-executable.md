@@ -73,6 +73,7 @@ Els documents de planificació continuen existint com a annexos o arxiu, però l
 - [Enunciat base del projecte](05_projectes_tecnics/enunciat_projecte_base.md): encàrrec del producte
 - [Projecte backend base](05_projectes_tecnics/projecte_base_backend.md): base tècnica comuna
 - [Reptes 1-5](02_reptes/repte_01_kickoff_backend.md): desplegament del curs per reptes
+- [Ampliacions 9 a 10 per repte](ampliacions-9-a-10-per-repte.md): capa d'excel·lència activable quan el nucli ja està validat
 - [Avaluació i evidències](03_avaluacio/index.md): instruments i criteri d'acreditació
 - [Ús de la IA per a professorat i alumnat](us-ia-professorat-i-alumnat.md): criteri únic sobre ús assistit per IA
 - [Recursos d'aula](04_materials/index.md): peces derivades de suport
@@ -97,6 +98,15 @@ Estos documents aporten detall, però no han de competir amb este centre executa
 - si `R3` no deixa persistència i arquitectura explicables en `CP-R3B`, no s'obri `R4`
 - si `R4` no està documentat ni provat, no s'avança cap a `R5`
 - si `R5` tensiona massa el calendari, es retalla a una sola integració externa verificable que continue cobrint el mínim nuclear de `RA9` abans de la defensa tècnica
+
+## Via d'excel·lència 9→10
+
+Cada repte pot activar una ampliació `9→10`, però amb una regla simple:
+
+- primer, nucli del repte complet i validat
+- després, ampliació tècnica amb valor real
+
+Esta capa no obri una segona programació paral·lela. Servix per donar recorregut a alumnat que acaba prompte o que vol aprofundir fora de classe, reutilitzant instruments ja existents: checklist curta, revisió de repositori, demo funcional i mini defensa tècnica.
 
 ## Criteri de tancament
 

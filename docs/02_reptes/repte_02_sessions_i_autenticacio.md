@@ -1112,3 +1112,52 @@ El repte es considera superat quan:
 Este repte s’ha de llegir com una progressió completa dins de SA2. Per tant, no s’hauria de reduir a un bloc d’autenticació. El seu valor està en connectar fonaments bàsics de programació en servidor amb una primera funcionalitat de producte realment protegida.
 
 La sessió final de refactorització s’ha de llegir com a tancament integrador de mantenibilitat. No és encara una entrada obligatòria a POO completa, a BBDD com a focus principal ni a una reescriptura total del repte.
+
+---
+
+## 13. Ampliació 9→10
+
+**Finalitat**
+
+Aprofundir el repte amb una millora tècnica real sobre robustesa del flux, qualitat de validació, control d'errors o mantenibilitat del codi.
+
+**Condició prèvia**
+
+El nucli obligatori del repte ha d'estar complet, funcional i validat.
+
+**Opcions d’ampliació**
+
+- reforçar la validació, el tractament d'errors i els missatges de retorn perquè el flux siga més robust i defensable
+- fer una refactorització guiada amb justificació tècnica clara o afegir proves dels casos crítics d'autenticació, autorització o processament
+
+**Ampliació proposada per l’alumne/a**
+
+També es pot proposar una ampliació pròpia si està alineada amb el repte i es valida prèviament amb el professorat.
+
+**Paper de la IA**
+
+La IA es pot usar per comparar estratègies de validació, suggerir proves o revisar codi, però l'alumnat ha d'aportar decisió, validació i defensa pròpia.
+
+**Evidències**
+
+- commit o branca identificable
+- justificació tècnica breu
+- comparativa entre solució inicial, suggeriment d'IA i solució final quan corresponga
+- prova funcional o demo
+- rastre de l'ús de la IA, si n'hi ha hagut
+- mini defensa tècnica o preguntes de contrast
+
+**Instruments de verificació**
+
+- checklist curta d'ampliació
+- revisió de repositori
+- prova funcional guiada
+- mini defensa tècnica
+
+**Perquè compute com a 9→10**
+
+- el nucli està ben resolt
+- l’ampliació aporta robustesa, qualitat o mantenibilitat reals
+- es pot explicar i defensar
+- no és ornamental
+- no hi ha delegació excessiva en IA

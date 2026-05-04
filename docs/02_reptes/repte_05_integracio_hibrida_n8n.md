@@ -703,3 +703,52 @@ El repte es considera superat quan:
 Este repte s’ha de llegir principalment com a desplegament de **RA9** dins del tram final del curs. No hauria de convertir-se ni en una repetició del Repte 4 ni en una simple demostració de consum d’APIs externes sense valor de producte.
 
 Si el calendari de l'aula es tensiona, el mínim nuclear de `R5` s'ha de retallar a una sola font externa, un únic cas d'ús híbrid real, un cas positiu, un cas d'error i una defensa breu. Les orquestracions més riques, múltiples fonts o automatitzacions periòdiques s'han de llegir com a ampliació avançada i no com a condició per tancar el mòdul.
+
+---
+
+## 13. Ampliació 9→10
+
+**Finalitat**
+
+Aprofundir `R5` amb una millora tècnica real sobre traçabilitat, observabilitat, robustesa de la integració híbrida o comparació d'estratègies d'integració.
+
+**Condició prèvia**
+
+El nucli obligatori del repte ha d'estar complet, funcional i validat.
+
+**Opcions d’ampliació**
+
+- reforçar la traçabilitat i observabilitat del flux híbrid, amb millor registre d'errors, reintents o mapa d'integració més explícit
+- comparar dues estratègies d'integració, de mapping o d'orquestració i justificar tècnicament per què la solució final és millor per al producte
+
+**Ampliació proposada per l’alumne/a**
+
+També es pot proposar una ampliació pròpia si està alineada amb el repte i es valida prèviament amb el professorat.
+
+**Paper de la IA**
+
+La IA es pot usar per contrastar enfocaments d'integració, suggerir proves o revisar transformacions, però l'alumnat ha d'aportar decisió, validació i defensa pròpia.
+
+**Evidències**
+
+- commit o branca identificable
+- justificació tècnica breu
+- explicació del flux híbrid o mapa d’integració
+- prova funcional o demo
+- rastre de l'ús de la IA, si n'hi ha hagut
+- mini defensa tècnica o preguntes de contrast
+
+**Instruments de verificació**
+
+- checklist curta d'ampliació
+- revisió de repositori
+- prova funcional guiada
+- mini defensa tècnica
+
+**Perquè compute com a 9→10**
+
+- el nucli està ben resolt
+- l’ampliació aporta valor real a la integració híbrida o a la seua robustesa
+- es pot explicar i defensar
+- no és ornamental
+- no hi ha delegació excessiva en IA

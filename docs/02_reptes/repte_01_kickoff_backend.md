@@ -671,3 +671,51 @@ Per mantindre coherència amb la programació actual del mòdul, este repte s’
 El formulari, la validació de dades, el registre d’informació o la persistència poden aparéixer com a extensió puntual, però no haurien de formar part del mínim obligatori del kickoff.
 
 Si es vol fer qualificable també una part de RA5, caldrà ajustar abans la distribució SA → RA i la matriu d’instruments del mòdul.
+
+---
+
+## 13. Ampliació 9→10
+
+**Finalitat**
+
+Aprofundir el kickoff amb una millora tècnica real sobre reproduïbilitat, traçabilitat o criteri d'arrancada, de manera que l'alumnat puga demostrar excel·lència des del primer repte.
+
+**Condició prèvia**
+
+El nucli obligatori del repte ha d'estar complet, funcional i validat.
+
+**Opcions d’ampliació**
+
+- reforçar l'entorn reproductible amb automatització bàsica d'arrancada, comprovació simple d'estat o millor contenidorització
+- convertir la justificació tècnica inicial en una ADR més sòlida, amb alternatives descartades i impacte sobre el projecte base
+
+**Ampliació proposada per l’alumne/a**
+
+També es pot proposar una ampliació pròpia si està alineada amb el repte i es valida prèviament amb el professorat.
+
+**Paper de la IA**
+
+La IA es pot usar per contrastar opcions de contenidorització, documentació d'entorn o estructura d'una ADR, però l'alumnat ha d'aportar decisió, validació i defensa pròpia.
+
+**Evidències**
+
+- commit o branca identificable
+- justificació tècnica breu o ADR
+- prova funcional o demo d'arrancada millorada
+- rastre de l'ús de la IA, si n'hi ha hagut
+- mini defensa tècnica o preguntes de contrast
+
+**Instruments de verificació**
+
+- checklist curta d'ampliació
+- revisió de repositori
+- demo funcional
+- mini defensa tècnica al tancament del repte
+
+**Perquè compute com a 9→10**
+
+- el nucli està ben resolt
+- l’ampliació aporta valor real a l’entorn o a la traçabilitat
+- es pot explicar i defensar
+- no és ornamental
+- no hi ha delegació excessiva en IA

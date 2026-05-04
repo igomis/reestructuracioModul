@@ -99,6 +99,28 @@ Per això:
 - la defensa tècnica ha de permetre distingir treball autònom, ús assistit per IA i delegació excessiva
 - una solució funcional però no defensable no acredita el mateix nivell d'aprenentatge
 
+## IA en ampliacions 9→10
+
+Les ampliacions d'excel·lència també queden dins d'este marc.
+
+La IA es pot usar per:
+
+- contrastar enfocaments
+- proposar alternatives
+- revisar codi
+- suggerir proves
+- ajudar a documentar
+- comparar implementacions
+
+Però no pot substituir:
+
+- la decisió tècnica de l'alumne
+- la validació
+- la prova
+- ni la defensa de l'ampliació
+
+Una ampliació molt ambiciosa però opaca, no verificada o excessivament delegada en IA no ha de computar com a `9→10`.
+
 ## Vocabulari fixat
 
 - `ús assistit per IA`: suport verificable que no substituïx el criteri de l'alumnat
