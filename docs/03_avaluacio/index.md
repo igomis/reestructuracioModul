@@ -21,6 +21,8 @@ Els checkpoints no es llegeixen només com a seguiment de calendari. A partir de
 
 Els documents canònics dels `R1-R5` ja deixen estes quatre funcions explicitades per reduir arbitrarietat docent i fer més viable la verificació real del treball amb IA.
 
+En `R5`, esta lectura s'aplica explícitament a `RA9`: el repte ha de fer visible quina font externa o repositori heterogeni s'integra, quin valor genera, quin instrument n'avalua el resultat i com es comprova que l'alumnat entén el flux híbrid construït.
+
 ## Regla comuna d'acreditació
 
 - el repositori es revisa per alumne

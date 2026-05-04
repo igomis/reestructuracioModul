@@ -41,7 +41,7 @@ Els documents de planificació continuen existint com a annexos o arxiu, però l
 | `R2` | construcció nuclear | flux de dades, lògica bàsica, estat, autenticació i primera funcionalitat protegida | és el nucli funcional compartit; encara no és `MVC` ni persistència com a focus |
 | `R3` | consolidació | framework, separació de responsabilitats, persistència mínima real i flux **server-rendered** | dividir-lo en dues validacions i reduir l'ambició del segon flux si cal |
 | `R4` | integració | contracte d'API, consum real, autenticació i documentació usable | evitar que `RA6` torne a convertir-lo en un repte de persistència |
-| `R5` | síntesi transversal | integració externa amb valor de producte, reutilització de serveis i verificació final | mantindre'l retallable: una integració bona val més que diverses integracions ornamentals |
+| `R5` | síntesi amb nucli obligatori de `RA9` | integració externa amb valor de producte, reutilització de serveis i verificació final | mantindre un mínim nuclear obligatori i deixar múltiples integracions o automatitzacions com a ampliació |
 
 ## Checkpoints com a control pedagògic real
 
@@ -53,7 +53,7 @@ Els documents de planificació continuen existint com a annexos o arxiu, però l
 | `CP-R3A` | framework + Docker + BBDD + `migrations`/`seeders` + primer flux **server-rendered** | defensa del circuit petició -> controlador -> dades -> resposta | revisió d'evidències d'ús assistit sobre estructura i modelat | continuïtat de `R3` |
 | `CP-R3B` | segon flux, proves mínimes, `README` i backlog curt | justificació de decisions d'arquitectura i de què queda fora | contrast entre codi, `AI log` i demo | obertura de `R4` |
 | Tancament de `R4` | contracte d'API, servei funcional i consum real | explicació d'endpoints, autenticació i errors | traçabilitat de contracte, proves i documentació assistida per IA | obertura de `R5` |
-| Tancament de `R5` | integració externa amb cas positiu i cas d'error | explicació del mapping i del valor real al producte | comprovació de la comprensió del contracte extern i de la transformació | pas a defensa tècnica |
+| Tancament de `R5` | integració externa amb cas positiu i cas d'error | explicació del mapping, del valor real al producte i del mapa d'integració | comprovació de la comprensió del contracte extern, de la transformació i del nucli de `RA9` | pas a defensa tècnica |
 | Defensa final | producte coherent i evidències alineades | autoria individual, criteri tècnic i transferència | revisió final de coherència amb el document canònic d'IA | tancament del curs |
 
 ## Checkpoints i moments de revisió
@@ -96,7 +96,7 @@ Estos documents aporten detall, però no han de competir amb este centre executa
 - si `R3` no supera `CP-R3A`, es reduïx l'ambició del segon flux i no s'obri `R4`
 - si `R3` no deixa persistència i arquitectura explicables en `CP-R3B`, no s'obri `R4`
 - si `R4` no està documentat ni provat, no s'avança cap a `R5`
-- si `R5` tensiona massa el calendari, es retalla a una sola integració externa verificable abans de la defensa tècnica
+- si `R5` tensiona massa el calendari, es retalla a una sola integració externa verificable que continue cobrint el mínim nuclear de `RA9` abans de la defensa tècnica
 
 ## Criteri de tancament
 
