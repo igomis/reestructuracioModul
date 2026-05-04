@@ -44,7 +44,7 @@ Pilotar és aplicar el model en un grup real amb calendari, lliurables, checkpoi
 
 ## Documents de suport
 
-- [Pla de pilotatge real](../00_visio_general/pla_pilotatge_real.md)
-- [Pla d'execució del pilotatge](../00_visio_general/pla_execucio_pilotatge_real.md)
-- [Seguiment de l'execució del pilotatge](../00_visio_general/seguiment_execucio_pilotatge.md)
-- [Registre d'incidents i ajustos del pilotatge](../03_avaluacio/registre_incidents_i_ajustos_pilotatge.md)
+- [Pla de pilotatge real](../arxiu/pla_pilotatge_real.md)
+- [Pla d'execució del pilotatge](../arxiu/pla_execucio_pilotatge_real.md)
+- [Seguiment de l'execució del pilotatge](../arxiu/seguiment_execucio_pilotatge.md)
+- [Registre d'incidents i ajustos del pilotatge](../arxiu/registre_incidents_i_ajustos_pilotatge.md)

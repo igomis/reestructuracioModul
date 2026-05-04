@@ -37,15 +37,15 @@ El kit manté el mateix escenari docent de referència:
 - [kit_pilotatge_setmanes_05_08.md](kit_pilotatge_setmanes_05_08.md)
 - [guia_sessio_a_sessio_20_setmanes.md](guia_sessio_a_sessio_20_setmanes.md)
 - [annex_suport_i_ampliacio_ritmes.md](annex_suport_i_ampliacio_ritmes.md)
-- [pla_execucio_pilotatge_real.md](../00_visio_general/pla_execucio_pilotatge_real.md)
+- [pla_execucio_pilotatge_real.md](../arxiu/pla_execucio_pilotatge_real.md)
 - [repte_02_materials_sessio.md](../04_materials/materials_aula/repte_02_materials_sessio.md)
 - [repte_03_materials_sessio.md](../04_materials/materials_aula/repte_03_materials_sessio.md)
 - [mini_briefings_setmanals.md](../04_materials/materials_aula/mini_briefings_setmanals.md)
 - [checkpoints_curts_aula.md](../04_materials/materials_aula/checkpoints_curts_aula.md)
 - [plantilles_feedback_rapid.md](../04_materials/materials_aula/plantilles_feedback_rapid.md)
 - [fulls_treball_base.md](../04_materials/materials_aula/fulls_treball_base.md)
-- [plantilla_recollida_feedback_pilotatge.md](../03_avaluacio/plantilla_recollida_feedback_pilotatge.md)
-- [registre_incidents_i_ajustos_pilotatge.md](../03_avaluacio/registre_incidents_i_ajustos_pilotatge.md)
+- [plantilla_recollida_feedback_pilotatge.md](../arxiu/plantilla_recollida_feedback_pilotatge.md)
+- [registre_incidents_i_ajustos_pilotatge.md](../arxiu/registre_incidents_i_ajustos_pilotatge.md)
 
 ## Planificació operativa per setmanes
 
@@ -98,7 +98,7 @@ El kit manté el mateix escenari docent de referència:
 - Què explica el professorat: què compta com a tancament suficient del primer bloc, quins mínims s'han d'haver assolit per entrar amb sentit a la segona avaluació i com es diferencia un producte viu d'un producte aparent
 - Què modela en directe: lectura de checkpoint amb evidències individuals, revisió d'estat del producte, de traçabilitat i de part defensable del flux persistent
 - Què fa l'alumnat: tanca documentació mínima, prepara evidències individuals, mostra el punt real del producte i deixa registrada la part del treball que pot explicar i defensar
-- Materials concrets que s'activen: [repte_03_materials_sessio.md](../04_materials/materials_aula/repte_03_materials_sessio.md), [plantilla_recollida_feedback_pilotatge.md](../03_avaluacio/plantilla_recollida_feedback_pilotatge.md), [registre_incidents_i_ajustos_pilotatge.md](../03_avaluacio/registre_incidents_i_ajustos_pilotatge.md) i instruments de seguiment docent
+- Materials concrets que s'activen: [repte_03_materials_sessio.md](../04_materials/materials_aula/repte_03_materials_sessio.md), [plantilla_recollida_feedback_pilotatge.md](../arxiu/plantilla_recollida_feedback_pilotatge.md), [registre_incidents_i_ajustos_pilotatge.md](../arxiu/registre_incidents_i_ajustos_pilotatge.md) i instruments de seguiment docent
 - Evidència mínima a arreplegar: flux principal persistent o clarament encaminat a ser-ho, `README` actualitzat, prova mínima i checkpoint individual tancat
 - Checkpoint docent: decidir si cada alumne entra a la 2a avaluació amb base suficient o si necessita reconducció explícita
 - Intervenció per alumnat endarrerit: freeze de noves funcionalitats, consolidació d'una sola operació persistent i pla curt de recuperació per a l'entrada a la 2a avaluació

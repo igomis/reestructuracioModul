@@ -2,7 +2,7 @@
 
 ## Finalitat
 
-Esta guia resumix què ha d'estar decidit i llest abans d'iniciar el curs. No reobri el model: parteix de la [v1 prepilotatge](../00_visio_general/versio_prepilotatge_v1.md) i de la [preparació docent directa](../01_programacio_modul/preparacio_docent_directa_curs_que_ve.md).
+Esta guia resumix què ha d'estar decidit i llest abans d'iniciar el curs. No reobri el model: parteix de la [v1 prepilotatge](../arxiu/versio_prepilotatge_v1.md) i de la [preparació docent directa](../01_programacio_modul/preparacio_docent_directa_curs_que_ve.md).
 
 ## Base que ja ha d'estar fixada
 
@@ -39,7 +39,7 @@ Esta guia resumix què ha d'estar decidit i llest abans d'iniciar el curs. No re
 - materials de `R1` i `R2` visibles i fàcils d'entregar
 - guies comunes de `README`, decisions tècniques i ús verificable de la IA
 - sistema d'evidències, rúbrica base, rúbrica de defensa i instruments de seguiment
-- kits de pilotatge i micro-presentacions docents que s'usaran en aula
+- micro-presentacions docents i, si fan falta, materials de pilotatge ja arxivats com a suport de procés
 
 ## Decisió docent mínima abans d'obrir el curs
 

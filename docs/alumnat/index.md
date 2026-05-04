@@ -52,4 +52,4 @@ Si el dubte que tens és tècnic i no de funcionament general del curs, entra di
 
 ## Si necessites el detall complet
 
-Per a aprofundir, pots anar a l'[índex documental del projecte](../00_visio_general/index_documental.md).
+Per a aprofundir, pots anar a l'[índex documental del projecte](../arxiu/index_documental.md).

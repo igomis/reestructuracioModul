@@ -39,7 +39,7 @@ Lectura editorial:
 ## Documents revisats
 
 - `README.md`
-- `docs/00_visio_general/issues_inicials.md`
+- `docs/arxiu/issues_inicials.md`
 - `docs/00_visio_general/paquet_docent_exportable.md`
 - `docs/00_visio_general/revisio_editorial_final.md`
 - `docs/01_programacio_modul/calendaritzacio_per_avaluacions.md`

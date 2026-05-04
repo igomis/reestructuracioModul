@@ -20,13 +20,92 @@ markdown_extensions:
 
 nav:
   - Portada: index.md
-  - Index documental: 00_visio_general/index_documental.md
+  - Visió del model: visio-model-dwes.md
+  - Curs executable:
+      - Centre del curs: curs-executable.md
+      - Annexos de planificació:
+          - Pla d'implantació docent: 01_programacio_modul/pla_implantacio_docent.md
+          - Calendarització per avaluacions: 01_programacio_modul/calendaritzacio_per_avaluacions.md
+          - Guia 20 setmanes: 01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md
+          - Annex de ritmes: 01_programacio_modul/annex_suport_i_ampliacio_ritmes.md
+          - Preparació docent directa: 01_programacio_modul/preparacio_docent_directa_curs_que_ve.md
+          - Ajustos finals abans d'inici: 01_programacio_modul/ajustos_finals_abans_inici_curs.md
+  - Projecte i reptes:
+      - Projecte base:
+          - Enunciat base: 05_projectes_tecnics/enunciat_projecte_base.md
+          - Projecte backend base: 05_projectes_tecnics/projecte_base_backend.md
+          - Projectes base concretats: 05_projectes_tecnics/projectes_base_concretats.md
+      - Reptes:
+          - Repte 1: 02_reptes/repte_01_kickoff_backend.md
+          - Repte 2: 02_reptes/repte_02_sessions_i_autenticacio.md
+          - Repte 3: 02_reptes/repte_03_mvc_i_persistencia.md
+          - Repte 4: 02_reptes/repte_04_api_i_consum.md
+          - Repte 5: 02_reptes/repte_05_integracio_hibrida_n8n.md
+          - Fase final i defensa: 02_reptes/fase_final_integradora_tancament_i_defensa.md
+      - Ampliacions:
+          - Integració API: 05_projectes_tecnics/integracio_api.md
+          - Integració IA: 05_projectes_tecnics/integracio_ia.md
+          - Integració n8n: 05_projectes_tecnics/integracio_n8n.md
+  - Avaluació i evidències:
+      - Inici: 03_avaluacio/index.md
+      - Sistema d'evidències: 03_avaluacio/sistema_evidencies.md
+      - Rúbrica base: 03_avaluacio/rubrica_base_reptes.md
+      - Rúbrica defensa tècnica: 03_avaluacio/rubrica_defensa_tecnica.md
+      - Instruments de seguiment: 03_avaluacio/instruments_seguiment_docent.md
+      - Criteris de ponderació amb IA: 03_avaluacio/criteris_ponderacio_reptes_amb_ia.md
+      - Instruments i matrius:
+          - Checklist de revisió de repo: 03_avaluacio/checklist_revisio_repo.md
+          - Plantilla AI log: 03_avaluacio/plantilla_ai_log.md
+          - Acta de checkpoint: 03_avaluacio/plantilla_acta_checkpoint.md
+          - Registre de seguiment per equip: 03_avaluacio/plantilla_registre_seguiment_per_equip.md
+          - Matriu evidències i instruments: 03_avaluacio/matriu_evidencies_i_instruments_per_fase.md
+  - Recursos d'aula:
+      - Biblioteca de recursos: 04_materials/index.md
+      - Materials ràpids:
+          - Briefing inicial: 08_materials_compartibles/briefing_inicial_curs.md
+          - Fulls de treball base: 04_materials/materials_aula/fulls_treball_base.md
+          - Mini briefings: 04_materials/materials_aula/mini_briefings_setmanals.md
+          - Checkpoints curts: 04_materials/materials_aula/checkpoints_curts_aula.md
+          - Guió de defensa individual: 08_materials_compartibles/guio_defensa_individual_breu.md
+          - Guió d'ús de la IA: 08_materials_compartibles/guio_ús_ia_per_a_lalumnat.md
+      - Apunts reals:
+          - Repte 1: 04_materials/apunts_reals/repte_01_kickoff_backend.md
+          - Repte 2: 04_materials/apunts_reals/repte_02_sessions_i_autenticacio.md
+          - Repte 3: 04_materials/apunts_reals/repte_03_mvc_i_persistencia.md
+          - Repte 4: 04_materials/apunts_reals/repte_04_api_i_consum.md
+          - Repte 5: 04_materials/apunts_reals/repte_05_integracio_hibrida_n8n.md
+      - Guies comunes:
+          - Git i flux de treball: 04_materials/materials_comuns/guia_git_i_flux_treball.md
+          - README i ADR: 04_materials/materials_comuns/guia_readme_i_adr.md
+          - Testing i debugging: 04_materials/materials_comuns/guia_testing_i_debugging.md
+          - Ús verificable de la IA: 04_materials/materials_comuns/guia_ús_verificable_ia.md
+      - Presentacions:
+          - Visió del curs: 07_presentacions/presentacio_00_visio_curs.md
+          - Repte 1: 07_presentacions/presentacio_01_repte_1.md
+          - Repte 2: 07_presentacions/presentacio_02_repte_2.md
+          - Repte 3: 07_presentacions/presentacio_03_repte_3.md
+          - Repte 4: 07_presentacions/presentacio_04_repte_4.md
+          - Repte 5: 07_presentacions/presentacio_05_repte_5.md
+          - Avaluació i defensa: 07_presentacions/presentacio_06_avaluacio_i_defensa.md
+      - Paquets secundaris:
+          - Inici de curs: 09_paquets_ús_directe/paquet_inici_curs.md
+          - Kickoff del Repte 1: 09_paquets_ús_directe/paquet_repte_01_kickoff.md
+          - Pas a R2: 09_paquets_ús_directe/paquet_pas_a_r2.md
+          - Pas a R3-R4: 09_paquets_ús_directe/paquet_pas_a_r3_r4.md
+          - Tancament i defensa: 09_paquets_ús_directe/paquet_tancament_i_defensa.md
   - Alumnat:
       - Inici alumnat: alumnat/index.md
       - Com funciona el curs: alumnat/com_funciona_el_curs.md
       - Com es valora: alumnat/com_es_valora.md
       - Com fer servir la IA: alumnat/com_fer_servir_la_ia.md
       - Projectes base: alumnat/projectes_base.md
+      - Reptes alumnat:
+          - Inici: alumnat/reptes/index.md
+          - Repte 1: alumnat/reptes/repte_01.md
+          - Repte 2: alumnat/reptes/repte_02.md
+          - Repte 3: alumnat/reptes/repte_03.md
+          - Repte 4: alumnat/reptes/repte_04.md
+          - Repte 5: alumnat/reptes/repte_05.md
       - Consulta tècnica:
           - Inici consulta tècnica: alumnat/consulta_tecnica/index.md
           - Consulta comuna del curs:
@@ -44,7 +123,7 @@ nav:
               - ORM i consulta de dades: alumnat/consulta_tecnica/orm_i_consulta_dades.md
               - Proves i debugging: alumnat/consulta_tecnica/proves_i_debugging.md
               - Webhooks i integracions: alumnat/consulta_tecnica/webhooks_i_integracions.md
-          - Consulta ràpida per itinerari:
+          - Itineraris ràpids:
               - PHP: alumnat/consulta_tecnica/php_consulta_rapida.md
               - Sessions i auth en PHP: alumnat/consulta_tecnica/sessions_i_auth_php.md
               - Laravel: alumnat/consulta_tecnica/laravel_consulta_rapida.md
@@ -52,113 +131,23 @@ nav:
               - NestJS: alumnat/consulta_tecnica/express_nest_consulta_rapida.md
               - FastAPI avançat: alumnat/consulta_tecnica/fastapi_consulta_rapida.md
               - n8n: alumnat/consulta_tecnica/n8n_consulta_rapida.md
-      - Reptes:
-          - Index: alumnat/reptes/index.md
-          - Repte 1: alumnat/reptes/repte_01.md
-          - Repte 2: alumnat/reptes/repte_02.md
-          - Repte 3: alumnat/reptes/repte_03.md
-          - Repte 4: alumnat/reptes/repte_04.md
-          - Repte 5: alumnat/reptes/repte_05.md
-  - Professorat:
-      - Inici professorat: professorat/index.md
-      - Com preparar el curs: professorat/com_preparar_el_curs.md
-      - Com conduir els reptes: professorat/com_conduir_els_reptes.md
-      - Com avaluar i fer seguiment: professorat/com_avaluar_i_fer_seguiment.md
-      - Com gestionar ritmes i suport: professorat/com_gestionar_ritmes_i_suport.md
-      - Com pilotar i ajustar: professorat/com_pilotar_i_ajustar.md
-  - Paquets d'ús directe:
-      - Inici: 09_paquets_ús_directe/index.md
-      - Paquet d'inici de curs: 09_paquets_ús_directe/paquet_inici_curs.md
-      - Paquet docent del Repte 1: 09_paquets_ús_directe/paquet_repte_01_kickoff.md
-      - Paquet de pas a R2: 09_paquets_ús_directe/paquet_pas_a_r2.md
-      - Paquet de pas a R3-R4: 09_paquets_ús_directe/paquet_pas_a_r3_r4.md
-      - Paquet de tancament i defensa: 09_paquets_ús_directe/paquet_tancament_i_defensa.md
-  - Materials compartibles:
-      - Inici: 08_materials_compartibles/index.md
-      - Briefing inicial del curs: 08_materials_compartibles/briefing_inicial_curs.md
-      - Fitxa breu d'exploració tècnica inicial: 08_materials_compartibles/fitxa_exploracio_tecnica_inicial.md
-      - Full de treball del Repte 1: 08_materials_compartibles/full_treball_repte_01.md
-      - Full de treball del Repte 2: 08_materials_compartibles/full_treball_repte_02.md
-      - Full de treball del Repte 3: 08_materials_compartibles/full_treball_repte_03.md
-      - Full de treball del Repte 4: 08_materials_compartibles/full_treball_repte_04.md
-      - Full de treball del Repte 5: 08_materials_compartibles/full_treball_repte_05.md
-      - Checkpoint inicial R1-R2: 08_materials_compartibles/checkpoint_inicial_r1_r2.md
-      - Checkpoint R3-R4: 08_materials_compartibles/checkpoint_r3_r4.md
-      - Checkpoint R5 i tancament: 08_materials_compartibles/checkpoint_r5_i_tancament.md
-      - Guio de defensa individual breu: 08_materials_compartibles/guio_defensa_individual_breu.md
-      - Guio de tancament del producte i defensa final: 08_materials_compartibles/guio_tancament_producte_i_defensa_final.md
-      - Guio d'ús de la IA per a l'alumnat: 08_materials_compartibles/guio_ús_ia_per_a_lalumnat.md
-  - Presentacions:
-      - Visio del curs: 07_presentacions/presentacio_00_visio_curs.md
-      - Repte 1: 07_presentacions/presentacio_01_repte_1.md
-      - Repte 2: 07_presentacions/presentacio_02_repte_2.md
-      - Repte 3: 07_presentacions/presentacio_03_repte_3.md
-      - Repte 4: 07_presentacions/presentacio_04_repte_4.md
-      - Repte 5: 07_presentacions/presentacio_05_repte_5.md
-      - Avaluacio i defensa: 07_presentacions/presentacio_06_avaluacio_i_defensa.md
-  - Visio general:
-      - Presentacio breu: 00_visio_general/presentacio_model_dwes_reptes_ia.md
-      - Resum executiu: 00_visio_general/resum_executiu_paquet_docent.md
-      - Paquet docent exportable: 00_visio_general/paquet_docent_exportable.md
-      - Versio prepilotatge v1: 00_visio_general/versio_prepilotatge_v1.md
-      - Backlog de millores: 00_visio_general/backlog_millores_prepilotatge.md
-      - Estat de produccio: 00_visio_general/issues_inicials.md
-  - Programacio del modul:
-      - Index: 01_programacio_modul/index.md
-      - Pla d'implantacio docent: 01_programacio_modul/pla_implantacio_docent.md
-      - Calendaritzacio per avaluacions: 01_programacio_modul/calendaritzacio_per_avaluacions.md
-      - Curs executable: 01_programacio_modul/curs_executable_dwes_2_avaluacions.md
-      - Guia 20 setmanes: 01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md
-      - Programació d'aula del Repte 1: 01_programacio_modul/programacio_aula_repte_01.md
-      - Programació d'aula del Repte 2: 01_programacio_modul/programacio_aula_repte_02.md
-      - Planificació d'aula del Repte 3: 01_programacio_modul/planificacio_aula_r3_mvc_i_persistencia.md
-      - Annex de ritmes: 01_programacio_modul/annex_suport_i_ampliacio_ritmes.md
-      - Kits de pilotatge:
-          - Setmanes 1-4: 01_programacio_modul/kit_pilotatge_setmanes_01_04.md
-          - Setmanes 5-8: 01_programacio_modul/kit_pilotatge_setmanes_05_08.md
-          - Setmanes 9-12: 01_programacio_modul/kit_pilotatge_setmanes_09_12.md
-          - Setmanes 13-16: 01_programacio_modul/kit_pilotatge_setmanes_13_16.md
-          - Setmanes 17-20: 01_programacio_modul/kit_pilotatge_setmanes_17_20.md
-      - Revisio transversal del bloc 1-20: 01_programacio_modul/revisio_transversal_bloc_pilotable_20_setmanes.md
-      - Preparacio docent directa: 01_programacio_modul/preparacio_docent_directa_curs_que_ve.md
-      - Ajustos finals abans d'inici de curs: 01_programacio_modul/ajustos_finals_abans_inici_curs.md
-  - Materials:
-      - Index: 04_materials/index.md
-      - Pla de materials prioritaris: 04_materials/pla_materials_prioritaris.md
-      - Mapa de materials: 04_materials/mapa_materials_actuals.md
-      - Repte 1:
-          - Mapa de materials del Repte 1: 04_materials/repte_01/mapa_materials_repte_01.md
-          - Orientacions docents del Repte 1: 04_materials/repte_01/orientacions_docents_repte_01.md
-      - Materials d'aula:
-          - Mini briefings: 04_materials/materials_aula/mini_briefings_setmanals.md
-          - Checkpoints curts: 04_materials/materials_aula/checkpoints_curts_aula.md
-          - Fulls de treball base: 04_materials/materials_aula/fulls_treball_base.md
-      - Apunts reals:
-          - Revisio transversal: 04_materials/apunts_reals/revisio_transversal_apunts_reals.md
-          - Repte 1: 04_materials/apunts_reals/repte_01_kickoff_backend.md
-          - Repte 2: 04_materials/apunts_reals/repte_02_sessions_i_autenticacio.md
-          - Repte 3: 04_materials/apunts_reals/repte_03_mvc_i_persistencia.md
-          - Repte 4: 04_materials/apunts_reals/repte_04_api_i_consum.md
-          - Repte 5: 04_materials/apunts_reals/repte_05_integracio_hibrida_n8n.md
-  - Avaluacio:
-      - Index: 03_avaluacio/index.md
-      - Sistema d'evidencies: 03_avaluacio/sistema_evidencies.md
-      - Rubrica base: 03_avaluacio/rubrica_base_reptes.md
-      - Rubrica defensa tecnica: 03_avaluacio/rubrica_defensa_tecnica.md
-      - Instruments de seguiment: 03_avaluacio/instruments_seguiment_docent.md
-      - Criteris de ponderacio amb IA: 03_avaluacio/criteris_ponderacio_reptes_amb_ia.md
-  - Projecte i reptes:
-      - Enunciat base: 05_projectes_tecnics/enunciat_projecte_base.md
-      - Projecte base backend: 05_projectes_tecnics/projecte_base_backend.md
-      - Integracio API: 05_projectes_tecnics/integracio_api.md
-      - Integracio IA: 05_projectes_tecnics/integracio_ia.md
-      - Integracio n8n: 05_projectes_tecnics/integracio_n8n.md
-      - Repte 1: 02_reptes/repte_01_kickoff_backend.md
-      - Repte 2: 02_reptes/repte_02_sessions_i_autenticacio.md
-      - Repte 3: 02_reptes/repte_03_mvc_i_persistencia.md
-      - Repte 4: 02_reptes/repte_04_api_i_consum.md
-      - Repte 5: 02_reptes/repte_05_integracio_hibrida_n8n.md
-  - Pilotatge i seguiment:
-      - Pla de pilotatge real: 00_visio_general/pla_pilotatge_real.md
-      - Pla d'execucio del pilotatge: 00_visio_general/pla_execucio_pilotatge_real.md
-      - Seguiment de l'execucio: 00_visio_general/seguiment_execucio_pilotatge.md
+  - Arxiu:
+      - Inici arxiu: arxiu/index.md
+      - Pilotatge:
+          - Pla de pilotatge real: arxiu/pla_pilotatge_real.md
+          - Pla d'execució del pilotatge: arxiu/pla_execucio_pilotatge_real.md
+          - Seguiment de l'execució: arxiu/seguiment_execucio_pilotatge.md
+          - Backlog de millores: arxiu/backlog_millores_prepilotatge.md
+          - Estat de producció inicial: arxiu/issues_inicials.md
+      - Kits setmanals:
+          - Setmanes 1-4: arxiu/kit_pilotatge_setmanes_01_04.md
+          - Setmanes 5-8: arxiu/kit_pilotatge_setmanes_05_08.md
+          - Setmanes 9-12: arxiu/kit_pilotatge_setmanes_09_12.md
+          - Setmanes 13-16: arxiu/kit_pilotatge_setmanes_13_16.md
+          - Setmanes 17-20: arxiu/kit_pilotatge_setmanes_17_20.md
+      - Versions i procés:
+          - Presentació anterior: arxiu/presentacio_model_dwes_reptes_ia.md
+          - Resum executiu anterior: arxiu/resum_executiu_paquet_docent.md
+          - Paquet exportable anterior: arxiu/paquet_docent_exportable.md
+          - Versió prepilotatge v1: arxiu/versio_prepilotatge_v1.md
+          - Índex documental anterior: arxiu/index_documental.md

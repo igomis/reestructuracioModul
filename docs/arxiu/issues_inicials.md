@@ -109,11 +109,11 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `MA-04` consolidat: apunts reals del Repte 5 publicats a `docs/04_materials/apunts_reals/repte_05_integracio_hibrida_n8n.md`.
 - `MA-05` consolidat: revisió transversal dels apunts reals a `docs/04_materials/apunts_reals/revisio_transversal_apunts_reals.md`.
 - `MA-06` consolidat: tancament operatiu de la fase d'apunts reals a `docs/04_materials/apunts_reals/tancament_fase_apunts_reals.md`.
-- `PR-01` consolidat: pla de pilotatge real a `docs/00_visio_general/pla_pilotatge_real.md`.
-- `PR-02` consolidat: plantilles de feedback i incidències a `docs/03_avaluacio/plantilla_recollida_feedback_pilotatge.md` i `docs/03_avaluacio/registre_incidents_i_ajustos_pilotatge.md`.
-- `PR-03` consolidat: execució del pilotatge real a `docs/00_visio_general/pla_execucio_pilotatge_real.md`.
-- `PR-04` consolidat: seguiment de l'execució real del pilotatge a `docs/00_visio_general/seguiment_execucio_pilotatge.md`.
-- `PP-01` consolidat: versió prepilotatge v1 a `docs/00_visio_general/versio_prepilotatge_v1.md`.
+- `PR-01` consolidat: pla de pilotatge real a `docs/arxiu/pla_pilotatge_real.md`.
+- `PR-02` consolidat: plantilles de feedback i incidències a `docs/arxiu/plantilla_recollida_feedback_pilotatge.md` i `docs/arxiu/registre_incidents_i_ajustos_pilotatge.md`.
+- `PR-03` consolidat: execució del pilotatge real a `docs/arxiu/pla_execucio_pilotatge_real.md`.
+- `PR-04` consolidat: seguiment de l'execució real del pilotatge a `docs/arxiu/seguiment_execucio_pilotatge.md`.
+- `PP-01` consolidat: versió prepilotatge v1 a `docs/arxiu/versio_prepilotatge_v1.md`.
 - `PP-02` en producció: preparació docent directa per al curs que ve a `docs/01_programacio_modul/preparacio_docent_directa_curs_que_ve.md`.
 - `PP-03` consolidat: ajustos finals abans d'inici de curs a `docs/01_programacio_modul/ajustos_finals_abans_inici_curs.md`.
 - `AL-01` consolidat: apunts online per a alumnat a `docs/alumnat/index.md`.
@@ -121,18 +121,18 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `MAT-01` consolidat: materials de classe compartibles inicials a `docs/08_materials_compartibles/index.md`.
 - `MAT-02` consolidat: materials compartibles `R3-R5`, checkpoints finals i tancament breu a `docs/08_materials_compartibles/index.md`.
 - `MAT-03` consolidat: paquets d'ús directe a `docs/09_paquets_ús_directe/index.md`.
-- `RF-01` consolidat: revisió final abans de l'inici de curs sobre `README.md`, `mkdocs.yml`, `docs/09_paquets_ús_directe/index.md`, `docs/01_programacio_modul/ajustos_finals_abans_inici_curs.md` i `docs/00_visio_general/versio_prepilotatge_v1.md`.
+- `RF-01` consolidat: revisió final abans de l'inici de curs sobre `README.md`, `mkdocs.yml`, `docs/09_paquets_ús_directe/index.md`, `docs/01_programacio_modul/ajustos_finals_abans_inici_curs.md` i `docs/arxiu/versio_prepilotatge_v1.md`.
 - `WEB-02` consolidat: navegació alumne/professor a `docs/professorat/index.md`, `docs/alumnat/index.md` i `mkdocs.yml`.
 - `PRS-01` en producció: micro-presentacions docents a `docs/07_presentacions/`.
 - `PD-01` consolidat: guia sessió a sessió de `20` setmanes a `docs/01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md`.
 - `PD-02` consolidat: annex de suport i ampliació segons ritmes a `docs/01_programacio_modul/annex_suport_i_ampliacio_ritmes.md`.
 - `PD-03` consolidat: materials d'acompanyament d'aula a `docs/04_materials/materials_aula/`.
 - `PD-04` consolidat: materials de sessió contextualitzats per als Reptes `1-5` a `docs/04_materials/materials_aula/repte_01_materials_sessio.md`, `repte_02_materials_sessio.md`, `repte_03_materials_sessio.md`, `repte_04_materials_sessio.md` i `repte_05_materials_sessio.md`.
-- `PD-05` consolidat: kit operatiu de pilotatge inicial a `docs/01_programacio_modul/kit_pilotatge_setmanes_01_04.md`.
-- `PD-06` consolidat: kit operatiu del segon tram inicial a `docs/01_programacio_modul/kit_pilotatge_setmanes_05_08.md`.
-- `PD-07` consolidat: kit operatiu del tram `9-12` a `docs/01_programacio_modul/kit_pilotatge_setmanes_09_12.md`.
-- `PD-08` consolidat: kit operatiu del tram `13-16` a `docs/01_programacio_modul/kit_pilotatge_setmanes_13_16.md`.
-- `PD-09` consolidat: kit operatiu del tram `17-20` a `docs/01_programacio_modul/kit_pilotatge_setmanes_17_20.md`.
+- `PD-05` consolidat: kit operatiu de pilotatge inicial a `docs/arxiu/kit_pilotatge_setmanes_01_04.md`.
+- `PD-06` consolidat: kit operatiu del segon tram inicial a `docs/arxiu/kit_pilotatge_setmanes_05_08.md`.
+- `PD-07` consolidat: kit operatiu del tram `9-12` a `docs/arxiu/kit_pilotatge_setmanes_09_12.md`.
+- `PD-08` consolidat: kit operatiu del tram `13-16` a `docs/arxiu/kit_pilotatge_setmanes_13_16.md`.
+- `PD-09` consolidat: kit operatiu del tram `17-20` a `docs/arxiu/kit_pilotatge_setmanes_17_20.md`.
 - `PD-10` consolidat: revisió transversal del bloc pilotable `1-20` a `docs/01_programacio_modul/revisio_transversal_bloc_pilotable_20_setmanes.md`.
 - `AV-02` en producció: revisió de plantilles i instruments per alinear seguiment, verificació, defensa i ús verificable de la IA amb criteri individual.
 - `RC-11` consolidat: revisió del nivell professional dels Reptes `1-5`, del projecte base i de la rúbrica per evitar lectures trivials del model.

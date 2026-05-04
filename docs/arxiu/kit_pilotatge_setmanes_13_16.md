@@ -39,7 +39,7 @@ El kit manté el mateix escenari docent de referència:
 - [kit_pilotatge_setmanes_09_12.md](kit_pilotatge_setmanes_09_12.md)
 - [guia_sessio_a_sessio_20_setmanes.md](guia_sessio_a_sessio_20_setmanes.md)
 - [annex_suport_i_ampliacio_ritmes.md](annex_suport_i_ampliacio_ritmes.md)
-- [pla_execucio_pilotatge_real.md](../00_visio_general/pla_execucio_pilotatge_real.md)
+- [pla_execucio_pilotatge_real.md](../arxiu/pla_execucio_pilotatge_real.md)
 - [repte_03_materials_sessio.md](../04_materials/materials_aula/repte_03_materials_sessio.md)
 - [repte_04_materials_sessio.md](../04_materials/materials_aula/repte_04_materials_sessio.md)
 - [repte_05_materials_sessio.md](../04_materials/materials_aula/repte_05_materials_sessio.md)
@@ -51,8 +51,8 @@ El kit manté el mateix escenari docent de referència:
 - [checkpoints_curts_aula.md](../04_materials/materials_aula/checkpoints_curts_aula.md)
 - [plantilles_feedback_rapid.md](../04_materials/materials_aula/plantilles_feedback_rapid.md)
 - [fulls_treball_base.md](../04_materials/materials_aula/fulls_treball_base.md)
-- [plantilla_recollida_feedback_pilotatge.md](../03_avaluacio/plantilla_recollida_feedback_pilotatge.md)
-- [registre_incidents_i_ajustos_pilotatge.md](../03_avaluacio/registre_incidents_i_ajustos_pilotatge.md)
+- [plantilla_recollida_feedback_pilotatge.md](../arxiu/plantilla_recollida_feedback_pilotatge.md)
+- [registre_incidents_i_ajustos_pilotatge.md](../arxiu/registre_incidents_i_ajustos_pilotatge.md)
 
 ## Planificació operativa per setmanes
 
@@ -105,7 +105,7 @@ El kit manté el mateix escenari docent de referència:
 - Què explica el professorat: què compta com a `R4` realment tancat, quina diferència hi ha entre una `API` que respon i una `API` publicable per a integració, i com seleccionar una necessitat de `R5` sense obrir una integració ornamental
 - Què modela en directe: lectura curta de checkpoint amb contracte, proves, documentació i consum visibles; identificació de l'endpoint o recurs que serà més útil per a una integració externa o un workflow híbrid
 - Què fa l'alumnat: tanca pendents de contracte, proves i `README`, deixa evidències individuals del que pot verificar i defensar, identifica quina necessitat real del producte passarà a `R5` i documenta la decisió d'entrada
-- Materials concrets que s'activen: [repte_04_materials_sessio.md](../04_materials/materials_aula/repte_04_materials_sessio.md), [repte_05_materials_sessio.md](../04_materials/materials_aula/repte_05_materials_sessio.md), [checklist_repte_04.md](../04_materials/repte_04/checklist_repte_04.md), [plantilla_recollida_feedback_pilotatge.md](../03_avaluacio/plantilla_recollida_feedback_pilotatge.md) i [registre_incidents_i_ajustos_pilotatge.md](../03_avaluacio/registre_incidents_i_ajustos_pilotatge.md)
+- Materials concrets que s'activen: [repte_04_materials_sessio.md](../04_materials/materials_aula/repte_04_materials_sessio.md), [repte_05_materials_sessio.md](../04_materials/materials_aula/repte_05_materials_sessio.md), [checklist_repte_04.md](../04_materials/repte_04/checklist_repte_04.md), [plantilla_recollida_feedback_pilotatge.md](../arxiu/plantilla_recollida_feedback_pilotatge.md) i [registre_incidents_i_ajustos_pilotatge.md](../arxiu/registre_incidents_i_ajustos_pilotatge.md)
 - Evidència mínima a arreplegar: `API` usable, documentada i provada; `README` actualitzat; evidència de consum reproduïble; i decisió justificada del flux o integració que entrarà a `R5`
 - Checkpoint docent: decidir si cada alumne té `R4` prou tancat per passar a integració o si encara necessita consolidar contracte, prova o consum abans d'obrir `R5`
 - Intervenció per alumnat endarrerit: freeze total de noves operacions, tancament d'un únic flux d'`API` verificable i definició d'una integració mínima molt curta per al pas següent

@@ -131,7 +131,7 @@ Regla pràctica:
 
 ## Com s'usarà la plantilla de feedback
 
-La [plantilla_recollida_feedback_pilotatge.md](../03_avaluacio/plantilla_recollida_feedback_pilotatge.md) s'ha d'usar:
+La [plantilla_recollida_feedback_pilotatge.md](../arxiu/plantilla_recollida_feedback_pilotatge.md) s'ha d'usar:
 
 - al final de `R1`
 - al tancament de la primera avaluació
@@ -151,7 +151,7 @@ No convé usar-la:
 
 ## Com s'usarà el registre d'incidents i ajustos
 
-El [registre_incidents_i_ajustos_pilotatge.md](../03_avaluacio/registre_incidents_i_ajustos_pilotatge.md) s'ha d'activar des del primer incident rellevant i no esperar al tancament del pilotatge.
+El [registre_incidents_i_ajustos_pilotatge.md](../arxiu/registre_incidents_i_ajustos_pilotatge.md) s'ha d'activar des del primer incident rellevant i no esperar al tancament del pilotatge.
 
 Convé registrar-hi:
 

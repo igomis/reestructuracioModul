@@ -22,8 +22,8 @@ Si ja tens el curs en marxa, entra directament en:
 
 - [Com gestionar ritmes i suport](com_gestionar_ritmes_i_suport.md)
 - [Com pilotar i ajustar](com_pilotar_i_ajustar.md)
-- [Materials de classe compartibles](../08_materials_compartibles/index.md)
-- [Paquets d'ús directe](../09_paquets_ús_directe/index.md)
+- [Recursos d'aula](../04_materials/index.md)
+- [Arxiu del procés](../arxiu/index.md)
 
 ## Documents essencials segons el moment del curs
 
@@ -32,7 +32,7 @@ Si ja tens el curs en marxa, entra directament en:
 - [Com preparar el curs](com_preparar_el_curs.md)
 - [Preparació docent directa per al curs que ve](../01_programacio_modul/preparacio_docent_directa_curs_que_ve.md)
 - [Ajustos finals abans de l'inici de curs](../01_programacio_modul/ajustos_finals_abans_inici_curs.md)
-- [Versió prepilotatge v1](../00_visio_general/versio_prepilotatge_v1.md)
+- [Versió prepilotatge v1](../arxiu/versio_prepilotatge_v1.md)
 
 ### Durant `R1` i `R2`
 
@@ -76,21 +76,20 @@ Lectura curta del tram:
 ### Per pilotar i ajustar
 
 - [Com pilotar i ajustar](com_pilotar_i_ajustar.md)
-- [Pla de pilotatge real](../00_visio_general/pla_pilotatge_real.md)
-- [Pla d'execució del pilotatge](../00_visio_general/pla_execucio_pilotatge_real.md)
-- [Seguiment de l'execució del pilotatge](../00_visio_general/seguiment_execucio_pilotatge.md)
+- [Pla de pilotatge real](../arxiu/pla_pilotatge_real.md)
+- [Pla d'execució del pilotatge](../arxiu/pla_execucio_pilotatge_real.md)
+- [Seguiment de l'execució del pilotatge](../arxiu/seguiment_execucio_pilotatge.md)
 
 ### Per a ús immediat en aula
 
-- [Materials de classe compartibles](../08_materials_compartibles/index.md)
-- [Paquets d'ús directe](../09_paquets_ús_directe/index.md)
+- [Recursos d'aula](../04_materials/index.md)
 - [Micro-presentacions docents](../07_presentacions/presentacio_00_visio_curs.md)
+- [Paquets secundaris per moment docent](../09_paquets_ús_directe/index.md)
 
 ## Quan et cal el detall complet
 
 Si necessites la capa llarga del repositori, entra en:
 
-- [Índex documental del projecte](../00_visio_general/index_documental.md)
-- [Programació del mòdul](../01_programacio_modul/index.md)
+- [Arxiu del procés](../arxiu/index.md)
 - [Avaluació](../03_avaluacio/index.md)
-- [Materials](../04_materials/index.md)
+- [Recursos d'aula](../04_materials/index.md)

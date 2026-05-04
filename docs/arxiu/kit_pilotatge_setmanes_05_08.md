@@ -36,7 +36,7 @@ El kit manté la mateixa base temporal i docent del paquet:
 - [kit_pilotatge_setmanes_01_04.md](kit_pilotatge_setmanes_01_04.md)
 - [guia_sessio_a_sessio_20_setmanes.md](guia_sessio_a_sessio_20_setmanes.md)
 - [annex_suport_i_ampliacio_ritmes.md](annex_suport_i_ampliacio_ritmes.md)
-- [pla_execucio_pilotatge_real.md](../00_visio_general/pla_execucio_pilotatge_real.md)
+- [pla_execucio_pilotatge_real.md](../arxiu/pla_execucio_pilotatge_real.md)
 - [repte_01_materials_sessio.md](../04_materials/materials_aula/repte_01_materials_sessio.md)
 - [repte_02_materials_sessio.md](../04_materials/materials_aula/repte_02_materials_sessio.md)
 - [repte_03_materials_sessio.md](../04_materials/materials_aula/repte_03_materials_sessio.md)
@@ -44,8 +44,8 @@ El kit manté la mateixa base temporal i docent del paquet:
 - [checkpoints_curts_aula.md](../04_materials/materials_aula/checkpoints_curts_aula.md)
 - [plantilles_feedback_rapid.md](../04_materials/materials_aula/plantilles_feedback_rapid.md)
 - [fulls_treball_base.md](../04_materials/materials_aula/fulls_treball_base.md)
-- [plantilla_recollida_feedback_pilotatge.md](../03_avaluacio/plantilla_recollida_feedback_pilotatge.md)
-- [registre_incidents_i_ajustos_pilotatge.md](../03_avaluacio/registre_incidents_i_ajustos_pilotatge.md)
+- [plantilla_recollida_feedback_pilotatge.md](../arxiu/plantilla_recollida_feedback_pilotatge.md)
+- [registre_incidents_i_ajustos_pilotatge.md](../arxiu/registre_incidents_i_ajustos_pilotatge.md)
 
 ## Planificació operativa per setmanes
 
@@ -84,7 +84,7 @@ El kit manté la mateixa base temporal i docent del paquet:
 - Què explica el professorat: diferència entre funcionalitat aparent i funcionalitat verificable, com provar casos correctes i incorrectes i per què el control d'accés ha de poder-se defensar
 - Què modela en directe: un recorregut complet amb dades correctes, dades incorrectes i acció denegada, deixant rastre al `README` i en les evidències
 - Què fa l'alumnat: reforça validacions del servidor, controla errors mínims, prova el flux complet i actualitza documentació operativa
-- Materials concrets que s'activen: [repte_02_materials_sessio.md](../04_materials/materials_aula/repte_02_materials_sessio.md), guia de testing i debugging, [checkpoints_curts_aula.md](../04_materials/materials_aula/checkpoints_curts_aula.md) i [plantilla_recollida_feedback_pilotatge.md](../03_avaluacio/plantilla_recollida_feedback_pilotatge.md)
+- Materials concrets que s'activen: [repte_02_materials_sessio.md](../04_materials/materials_aula/repte_02_materials_sessio.md), guia de testing i debugging, [checkpoints_curts_aula.md](../04_materials/materials_aula/checkpoints_curts_aula.md) i [plantilla_recollida_feedback_pilotatge.md](../arxiu/plantilla_recollida_feedback_pilotatge.md)
 - Evidència mínima a arreplegar: flux complet provat amb cas correcte, cas incorrecte, cas denegat i `README` actualitzat
 - Checkpoint docent: validar que `R2` és ja reproduïble, comprensible i defensable davant d'una revisió curta
 - Intervenció per alumnat endarrerit: congelar qualsevol ampliació, deixar només dos casos clau i fer microcheckpoint obligatori abans de passar de setmana
@@ -98,7 +98,7 @@ El kit manté la mateixa base temporal i docent del paquet:
 - Què explica el professorat: què fa que una funcionalitat autenticada siga prou madura per entrar a `R3`, quina part del flux convé professionalitzar i per què `R3` no és “fer MVC” sinó fer mantingible i persistent una operació real
 - Què modela en directe: lectura tècnica del flux de `R2`, identificació de punts fràgils i mapa mínim de la funcionalitat que es refactoritzarà o persistirà després
 - Què fa l'alumnat: tanca evidències de `R2`, revisa el flux principal, selecciona el cas d'ús que passarà a `R3` i documenta l'estat del producte al final del bloc
-- Materials concrets que s'activen: [repte_02_materials_sessio.md](../04_materials/materials_aula/repte_02_materials_sessio.md), [repte_03_materials_sessio.md](../04_materials/materials_aula/repte_03_materials_sessio.md), [mini_briefings_setmanals.md](../04_materials/materials_aula/mini_briefings_setmanals.md), [registre_incidents_i_ajustos_pilotatge.md](../03_avaluacio/registre_incidents_i_ajustos_pilotatge.md)
+- Materials concrets que s'activen: [repte_02_materials_sessio.md](../04_materials/materials_aula/repte_02_materials_sessio.md), [repte_03_materials_sessio.md](../04_materials/materials_aula/repte_03_materials_sessio.md), [mini_briefings_setmanals.md](../04_materials/materials_aula/mini_briefings_setmanals.md), [registre_incidents_i_ajustos_pilotatge.md](../arxiu/registre_incidents_i_ajustos_pilotatge.md)
 - Evidència mínima a arreplegar: `R2` tancat amb flux defensable i cas d'ús de `R3` triat i justificat
 - Checkpoint docent: decidir si l'equip està en condicions d'obrir `R3` o si ha de continuar consolidant `R2`
 - Intervenció per alumnat endarrerit: mantindre només el flux autenticat principal, ajornar rols secundaris i triar una única operació a professionalitzar en `R3`

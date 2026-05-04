@@ -39,7 +39,7 @@ El kit manté el mateix escenari docent de referència:
 - [kit_pilotatge_setmanes_13_16.md](kit_pilotatge_setmanes_13_16.md)
 - [guia_sessio_a_sessio_20_setmanes.md](guia_sessio_a_sessio_20_setmanes.md)
 - [annex_suport_i_ampliacio_ritmes.md](annex_suport_i_ampliacio_ritmes.md)
-- [pla_execucio_pilotatge_real.md](../00_visio_general/pla_execucio_pilotatge_real.md)
+- [pla_execucio_pilotatge_real.md](../arxiu/pla_execucio_pilotatge_real.md)
 - [repte_05_materials_sessio.md](../04_materials/materials_aula/repte_05_materials_sessio.md)
 - [guia_integracio_externa_i_flux_hibrid.md](../04_materials/repte_05/guia_integracio_externa_i_flux_hibrid.md)
 - [guia_n8n_i_automatitzacio.md](../04_materials/repte_05/guia_n8n_i_automatitzacio.md)
@@ -53,8 +53,8 @@ El kit manté el mateix escenari docent de referència:
 - [checkpoints_curts_aula.md](../04_materials/materials_aula/checkpoints_curts_aula.md)
 - [plantilles_feedback_rapid.md](../04_materials/materials_aula/plantilles_feedback_rapid.md)
 - [fulls_treball_base.md](../04_materials/materials_aula/fulls_treball_base.md)
-- [plantilla_recollida_feedback_pilotatge.md](../03_avaluacio/plantilla_recollida_feedback_pilotatge.md)
-- [registre_incidents_i_ajustos_pilotatge.md](../03_avaluacio/registre_incidents_i_ajustos_pilotatge.md)
+- [plantilla_recollida_feedback_pilotatge.md](../arxiu/plantilla_recollida_feedback_pilotatge.md)
+- [registre_incidents_i_ajustos_pilotatge.md](../arxiu/registre_incidents_i_ajustos_pilotatge.md)
 
 ## Planificació operativa per setmanes
 
@@ -107,7 +107,7 @@ El kit manté el mateix escenari docent de referència:
 - Què explica el professorat: criteri final de revisió, com es resol la defensa individual encara que hi haja cooperació tècnica coordinada, què es considera tancament suficient del curs i com es recull feedback útil per a la iteració següent del paquet docent
 - Què modela en directe: lectura final de repositori, `README`, evidències, AI log i flux complet; també una defensa curta amb justificació de decisions, detecció d'errors i capacitat de modificació o contrast
 - Què fa l'alumnat: presenta i defensa individualment el seu treball real, entrega evidències finals, deixa el repositori en estat coherent de tancament i aporta feedback sobre càrrega, materials, checkpoints i comprensió dels reptes
-- Materials concrets que s'activen: [rubrica_defensa_tecnica.md](../03_avaluacio/rubrica_defensa_tecnica.md), [plantilla_recollida_feedback_pilotatge.md](../03_avaluacio/plantilla_recollida_feedback_pilotatge.md), [registre_incidents_i_ajustos_pilotatge.md](../03_avaluacio/registre_incidents_i_ajustos_pilotatge.md), [instruments_seguiment_docent.md](../03_avaluacio/instruments_seguiment_docent.md), [sistema_evidencies.md](../03_avaluacio/sistema_evidencies.md) i [repte_05_materials_sessio.md](../04_materials/materials_aula/repte_05_materials_sessio.md)
+- Materials concrets que s'activen: [rubrica_defensa_tecnica.md](../03_avaluacio/rubrica_defensa_tecnica.md), [plantilla_recollida_feedback_pilotatge.md](../arxiu/plantilla_recollida_feedback_pilotatge.md), [registre_incidents_i_ajustos_pilotatge.md](../arxiu/registre_incidents_i_ajustos_pilotatge.md), [instruments_seguiment_docent.md](../03_avaluacio/instruments_seguiment_docent.md), [sistema_evidencies.md](../03_avaluacio/sistema_evidencies.md) i [repte_05_materials_sessio.md](../04_materials/materials_aula/repte_05_materials_sessio.md)
 - Evidència mínima a arreplegar: defensa final individual resolta, producte final coherent i reproduïble, feedback recollit i estat final del pilotatge registrat
 - Checkpoint docent: tancar `CP-P6`, decidir si el curs queda pilotable de punta a punta dins de les dues avaluacions i deixar distingits ajustos immediats respecte a canvis reservats per a una `v2`
 - Intervenció per alumnat endarrerit: centrar la defensa en el flux principal realment assolit, evitar discurs compensatori i deixar tancada una evidència final clara del mínim funcional no trivial

@@ -1,35 +1,43 @@
-# Index del bloc d'avaluacio
+# Avaluació i evidències
 
-## Que conté este bloc
+## Funció del bloc
 
-Este bloc concentra les peces que permeten llegir, verificar i defensar el treball de l'alumnat amb criteri individual: sistema d'evidencies, rubriques, instruments de seguiment, plantilles i documents de pilotatge vinculats a l'avaluacio.
+Este és el bloc canònic per valorar el treball del curs. Concentra evidències, rúbriques, seguiment docent, checkpoints i criteris de ponderació amb IA.
 
-## Regla comuna d'acreditacio
+El material específic de pilotatge i feedback històric s'ha mogut a l'[arxiu](../arxiu/index.md).
+
+## Regla comuna d'acreditació
 
 - el repositori es revisa per alumne
-- les evidencies es validen per alumne
+- les evidències es validen per alumne
 - la defensa es resol individualment
-- la cooperacio o el contrast tecnic compartit nomes compten com a context complementari
+- la cooperació o el contrast tècnic compartit només compten com a context complementari
 
-## Documents principals
+## Documents canònics
 
-- [Sistema d'evidencies](sistema_evidencies.md): base del model d'acreditacio.
-- [Rubrica base dels reptes](rubrica_base_reptes.md): lectura principal del producte al llarg del curs.
-- [Rubrica de defensa tecnica](rubrica_defensa_tecnica.md): criteri de defensa final individual.
-- [Instruments de seguiment docent](instruments_seguiment_docent.md): seguiment operatiu del professorat.
-- [Matriu d'evidencies i instruments per fase](matriu_evidencies_i_instruments_per_fase.md): connexio entre fases, evidencies i eines.
+- [Sistema d'evidències](sistema_evidencies.md)
+- [Rúbrica base dels reptes](rubrica_base_reptes.md)
+- [Rúbrica de defensa tècnica](rubrica_defensa_tecnica.md)
+- [Instruments de seguiment docent](instruments_seguiment_docent.md)
+- [Criteris de ponderació dels reptes amb IA](criteris_ponderacio_reptes_amb_ia.md)
 
-## Plantilles i seguiment
+## Instruments de suport
 
-- [Checklist de revisio de repositori](checklist_revisio_repo.md)
+- [Checklist de revisió de repositori](checklist_revisio_repo.md)
 - [Plantilla AI log](plantilla_ai_log.md)
 - [Plantilla acta checkpoint](plantilla_acta_checkpoint.md)
 - [Plantilla de registre de seguiment per equip](plantilla_registre_seguiment_per_equip.md)
-- [Plantilla de recollida de feedback de pilotatge](plantilla_recollida_feedback_pilotatge.md)
-- [Registre d'incidents i ajustos del pilotatge](registre_incidents_i_ajustos_pilotatge.md)
+- [Matriu d'evidències i instruments per fase](matriu_evidencies_i_instruments_per_fase.md)
 
-## Si vull entrar per necessitat
+## Matrius de coherència
 
-- per avaluar reptes: [rubrica base](rubrica_base_reptes.md)
-- per revisar autoria i defensa: [rubrica de defensa tecnica](rubrica_defensa_tecnica.md)
-- per controlar evidencies i checkpoints: [sistema d'evidencies](sistema_evidencies.md) i [instruments de seguiment](instruments_seguiment_docent.md)
+- [Reptes 1-3](matriu_coherencia_vertical_reptes_1_3.md)
+- [Reptes 1-4](matriu_coherencia_vertical_reptes_1_4.md)
+- [Reptes 1-5](matriu_coherencia_vertical_reptes_1_5.md)
+- [Reptes 1-5 i fase final](matriu_coherencia_vertical_reptes_1_5_i_fase_final.md)
+
+## Entrada per necessitat
+
+- per valorar producte i procés: [rúbrica base](rubrica_base_reptes.md)
+- per verificar autoria i defensa: [rúbrica de defensa tècnica](rubrica_defensa_tecnica.md)
+- per controlar evidències i checkpoints: [sistema d'evidències](sistema_evidencies.md) i [instruments de seguiment](instruments_seguiment_docent.md)

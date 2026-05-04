@@ -41,27 +41,26 @@ El model base de cooperació és el de **parelles de contrast tècnic**. Els **t
 
 ## Estructura
 
-- `docs/00_visio_general/` visió global del mòdul
-- `docs/alumnat/` accés web sintètic per a alumnat
-- `docs/professorat/` accés web sintètic per a professorat
-- `docs/01_programacio_modul/` nova programació
+- `docs/index.md` portada curta del lloc
+- `docs/visio-model-dwes.md` document canònic de visió
+- `docs/curs-executable.md` centre operatiu del curs
 - `docs/02_reptes/` fitxes dels reptes
-- `docs/03_avaluacio/` rúbriques, checklists i evidències
-- `docs/04_materials/` mapa i adaptació d’apunts
-- `docs/05_projectes_tecnics/` backend, IA, n8n i integracions
-- `docs/06_plantilles/` plantilles reutilitzables
-- `docs/07_presentacions/` micro-presentacions docents de curs, reptes i avaluació
-- `docs/08_materials_compartibles/` peces breus i donables per a ús real en aula
-- `docs/09_paquets_ús_directe/` agrupació dels materials més útils segons el moment del curs
+- `docs/03_avaluacio/` avaluació i evidències
+- `docs/04_materials/` biblioteca unificada de recursos d’aula
+- `docs/05_projectes_tecnics/` projecte base, arquitectura i ampliacions
+- `docs/alumnat/` accés web sintètic per a alumnat
+- `docs/arxiu/` pilotatge, versions prèvies i procés
 
 ## Navegació documental
 
-- Índex central: [Index documental del projecte](docs/00_visio_general/index_documental.md)
-- Accés d'alumnat: [portal d'apunts online](docs/alumnat/index.md)
-- Accés de professorat: [portal docent de navegació ràpida](docs/professorat/index.md)
-- Paquets d'ús directe: [agrupacions per moment del curs](docs/09_paquets_ús_directe/index.md)
-- Materials de classe compartibles: [peces curtes per a aula](docs/08_materials_compartibles/index.md)
-- Índexs per blocs: [Programació del mòdul](docs/01_programacio_modul/index.md), [Avaluació](docs/03_avaluacio/index.md) i [Materials](docs/04_materials/index.md)
+- Entrada principal: [portada](docs/index.md)
+- Visió del model: [document canònic de visió](docs/visio-model-dwes.md)
+- Conducció del curs: [curs executable](docs/curs-executable.md)
+- Projecte i reptes: [enunciat base](docs/05_projectes_tecnics/enunciat_projecte_base.md) i [fitxes de reptes](docs/02_reptes/)
+- Avaluació: [bloc d'avaluació i evidències](docs/03_avaluacio/index.md)
+- Recursos d'aula: [biblioteca unificada](docs/04_materials/index.md)
+- Alumnat: [portal d'apunts online](docs/alumnat/index.md)
+- Arxiu: [pilotatge, versions i procés](docs/arxiu/index.md)
 - Consulta web: la documentació queda preparada amb [mkdocs.yml](mkdocs.yml) i el workflow [docs.yml](.github/workflows/docs.yml) per publicar-se a GitHub Pages
 - Primer desplegament: cal activar una vegada `Settings > Pages > Build and deployment > Source: GitHub Actions` al repositori `igomis/reestructuracioModul`
 - Previsualització local: quan `mkdocs` estiga instal·lat, es pot llançar amb `mkdocs serve`
@@ -85,15 +84,13 @@ Lectura ràpida de la fase actual:
 
 ## Documents clau de la fase actual
 
-- [Index documental del projecte](docs/00_visio_general/index_documental.md)
-- [Index de programació del mòdul](docs/01_programacio_modul/index.md)
-- [Programació d'aula del Repte 2](docs/01_programacio_modul/programacio_aula_repte_02.md)
-- [Index del bloc d’avaluació](docs/03_avaluacio/index.md)
-- [Index del bloc de materials](docs/04_materials/index.md)
-- [Curs executable DWES en 2 avaluacions](docs/01_programacio_modul/curs_executable_dwes_2_avaluacions.md)
-- [Model d’itineraris tecnològics guiats](docs/01_programacio_modul/model_itineraris_tecnologics.md)
+- [Visió del model](docs/visio-model-dwes.md)
+- [Curs executable](docs/curs-executable.md)
+- [Projecte i reptes](docs/05_projectes_tecnics/enunciat_projecte_base.md)
+- [Avaluació i evidències](docs/03_avaluacio/index.md)
+- [Recursos d'aula](docs/04_materials/index.md)
 - [Projectes base concretats del mòdul](docs/05_projectes_tecnics/projectes_base_concretats.md)
-- [Estat de producció actual del projecte](docs/00_visio_general/issues_inicials.md)
+- [Arxiu del procés](docs/arxiu/index.md)
 
 ## Focus actual
 

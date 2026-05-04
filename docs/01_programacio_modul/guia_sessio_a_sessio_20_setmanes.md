@@ -4,7 +4,7 @@
 
 Convertir la implantació del mòdul en una guia docent setmanal usable, pensada perquè el professorat puga saber què convé explicar, què modelar, què deixar a autonomia i com adaptar el ritme segons el progrés real de l'alumnat.
 
-Esta peça complementa [programacio_aula_per_repte.md](programacio_aula_per_repte.md), [seqüenciacio_sessions_2_avaluacions.md](seqüenciacio_sessions_2_avaluacions.md) i [pla_execucio_pilotatge_real.md](../00_visio_general/pla_execucio_pilotatge_real.md). Aquells documents fixen la lògica global i els checkpoints; esta guia baixa el model a una lectura setmanal o de bloc docent real.
+Esta peça complementa [programacio_aula_per_repte.md](programacio_aula_per_repte.md), [seqüenciacio_sessions_2_avaluacions.md](seqüenciacio_sessions_2_avaluacions.md) i [pla_execucio_pilotatge_real.md](../arxiu/pla_execucio_pilotatge_real.md). Aquells documents fixen la lògica global i els checkpoints; esta guia baixa el model a una lectura setmanal o de bloc docent real.
 
 ## Hipòtesi de treball
 

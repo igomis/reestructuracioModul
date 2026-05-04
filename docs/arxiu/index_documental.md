@@ -68,11 +68,11 @@ Criteri d'us:
 
 ## Si vull preparar el pilotatge
 
-- [Kit de pilotatge de les setmanes 1-4](../01_programacio_modul/kit_pilotatge_setmanes_01_04.md): arrancada del curs.
-- [Kit de pilotatge de les setmanes 5-8](../01_programacio_modul/kit_pilotatge_setmanes_05_08.md): desplegament de `R2`.
-- [Kit de pilotatge de les setmanes 9-12](../01_programacio_modul/kit_pilotatge_setmanes_09_12.md): entrada a `R3` i tancament de la 1a avaluacio.
-- [Kit de pilotatge de les setmanes 13-16](../01_programacio_modul/kit_pilotatge_setmanes_13_16.md): consolidacio de `R3` i obertura de `R4`.
-- [Kit de pilotatge de les setmanes 17-20](../01_programacio_modul/kit_pilotatge_setmanes_17_20.md): `R5`, defensa final i tancament.
+- [Kit de pilotatge de les setmanes 1-4](../arxiu/kit_pilotatge_setmanes_01_04.md): arrancada del curs.
+- [Kit de pilotatge de les setmanes 5-8](../arxiu/kit_pilotatge_setmanes_05_08.md): desplegament de `R2`.
+- [Kit de pilotatge de les setmanes 9-12](../arxiu/kit_pilotatge_setmanes_09_12.md): entrada a `R3` i tancament de la 1a avaluacio.
+- [Kit de pilotatge de les setmanes 13-16](../arxiu/kit_pilotatge_setmanes_13_16.md): consolidacio de `R3` i obertura de `R4`.
+- [Kit de pilotatge de les setmanes 17-20](../arxiu/kit_pilotatge_setmanes_17_20.md): `R5`, defensa final i tancament.
 - [Revisio transversal del bloc pilotable de 20 setmanes](../01_programacio_modul/revisio_transversal_bloc_pilotable_20_setmanes.md): verificacio comuna del bloc `1-20`.
 - [Pla de pilotatge real](pla_pilotatge_real.md), [pla d'execucio](pla_execucio_pilotatge_real.md) i [seguiment](seguiment_execucio_pilotatge.md): capa de pilotatge i feedback.
 
@@ -89,7 +89,7 @@ Criteri d'us:
 
 - [Alumnat](../alumnat/index.md)
 - [Professorat](../professorat/index.md)
-- [Visio general](../00_visio_general/index_documental.md)
+- [Visio general](../arxiu/index_documental.md)
 - [Programacio del modul](../01_programacio_modul/index.md)
 - [Avaluacio](../03_avaluacio/index.md)
 - [Materials](../04_materials/index.md)
