@@ -40,14 +40,14 @@ Permetre al professorat comprovar, d'un colp d'ull, que:
 
 ## Cobertura per repte i pel projecte base
 
-| Peça | RA principals | Evidències principals | Instruments vinculats |
-|---|---|---|---|
-| [Projecte base](05_projectes_tecnics/enunciat_projecte_base.md) | transversal `RA1-RA8` segons fase | README, arquitectura, decisions, proves, traçabilitat, defensa tècnica | revisió de repositori, rúbriques, defensa tècnica |
-| [Repte 1](02_reptes/repte_01_kickoff_backend.md) | `RA1` | comparativa, ADR, Docker, README, arrencada, primera peça funcional | rúbrica, checklist, defensa tècnica breu |
-| [Repte 2](02_reptes/repte_02_sessions_i_autenticacio.md) | `RA2`, `RA3`, `RA4` | formularis, codi embegut, lògica, estat, autenticació, proves, `AI log`, checkpoint | checklist, rúbrica, defensa tècnica breu, revisió de repositori |
-| [Repte 3](02_reptes/repte_03_mvc_i_persistencia.md) | `RA5`, `RA6`, `RA8` | migració d'un cas d'ús, framework, BBDD, migrations, seeders, flux server-rendered, proves, README | rúbrica, checklist, revisió de repositori, defensa tècnica |
-| [Repte 4](02_reptes/repte_04_api_i_consum.md) | `RA7` amb suport de `RA6` | contracte de servei, endpoints, consum real, autenticació d'API, documentació, proves, `AI log` | rúbrica específica, checklist, revisió de repositori, defensa tècnica breu |
-| [Repte 5](02_reptes/repte_05_integracio_hibrida_n8n.md) | tancament transversal amb focus principal en `RA7`, projecció aplicada de `RA8` i suport eventual de `RA6` | connector extern, mapping, transformació, integració híbrida, proves, documentació, defensa | rúbrica, checklist d'integració, revisió de repositori, defensa tècnica |
+| Peça | Funció didàctica | RA principals | Evidències principals | Instruments vinculats |
+|---|---|---|---|---|
+| [Projecte base](05_projectes_tecnics/enunciat_projecte_base.md) | peça transversal | transversal `RA1-RA8` segons fase | README, arquitectura, decisions, proves, traçabilitat, defensa tècnica | revisió de repositori, rúbriques, defensa tècnica |
+| [Repte 1](02_reptes/repte_01_kickoff_backend.md) | iniciació / arranque | `RA1` | comparativa, ADR, Docker, README, arrencada, primera peça funcional, commit comentat i mini defensa | checklist d'arrencada, revisió de repositori, defensa tècnica breu |
+| [Repte 2](02_reptes/repte_02_sessions_i_autenticacio.md) | construcció nuclear | `RA2`, `RA3`, `RA4` | formularis, codi embegut, lògica, estat, autenticació, proves, registre d'errors, checkpoint i comparativa d'ús d'IA quan corresponga | rúbrica del repte, checklist de flux funcional, defensa tècnica breu, revisió de repositori |
+| [Repte 3](02_reptes/repte_03_mvc_i_persistencia.md) | consolidació | `RA5`, `RA6`, `RA8` | migració d'un cas d'ús, framework, BBDD, migrations, seeders, flux server-rendered, ADR breu, README i doble checkpoint | rúbrica de reconstrucció, checklist per checkpoint, revisió de repositori, defensa tècnica |
+| [Repte 4](02_reptes/repte_04_api_i_consum.md) | integració | `RA7` amb suport de `RA6` | contracte de servei, endpoints, consum real, autenticació d'API, comparativa contracte-resposta, documentació, proves i mini defensa | rúbrica específica, checklist de consum, revisió de repositori, defensa tècnica breu |
+| [Repte 5](02_reptes/repte_05_integracio_hibrida_n8n.md) | síntesi transversal | focus principal en `RA7`, projecció aplicada de `RA8` i suport eventual de `RA6` | connector extern, mapping, transformació, integració híbrida, comparativa font-transformació-resultat, proves, documentació i defensa | checklist d'integració, revisió de repositori, defensa tècnica, prova guiada |
 
 ## Relació amb ús assistit per IA
 
@@ -71,11 +71,19 @@ El criteri complet depén de [Ús de la IA per a professorat i alumnat](us-ia-pr
 - `RA6` té risc de desbordar-se i competir massa amb `RA7` en `R4` o amb el caràcter transversal de `R5`.
 - La qualitat de la verificació de l'ús assistit per IA depén molt de la constància real en `AI log`, revisió de repositori i defensa tècnica.
 
-## Decisions de millora proposades per a la Fase 4
+## Línies activades en Fase 4
 
-- Fer més explícita la comprovació de `RA8` en instruments de `R3` si es detecta que el flux renderitzat en servidor queda massa implícit.
-- Revisar si els checklists de `R4` i `R5` diferencien prou bé suport de `RA6` i focus principal de `RA7` en integració.
-- Estudiar si convé derivar una plantilla curta de verificació d'ús assistit per IA lligada als checkpoints principals del curs.
+- S'ha fet més explícita la comprovació de `RA8` en instruments i checkpoints de `R3`.
+- S'ha reforçat la diferenciació entre suport de `RA6` i focus principal de `RA7` en `R4` i `R5`.
+- Queda oberta per a una futura fase la possible derivació d'una plantilla encara més curta de verificació d'ús assistit per IA lligada als checkpoints principals del curs.
+
+## Ajust fi aplicat en Fase 4
+
+- `R1` queda fixat com a iniciació / arranque i no carrega exigències de persistència o arquitectura avançada.
+- `R2` queda com a construcció nuclear del mòdul sobre base comuna.
+- `R3` es desdobla en `CP-R3A` i `CP-R3B` per controlar millor la càrrega i evitar que `RA5`, `RA6` i `RA8` es confonguen.
+- `R4` reforça el contracte i el consum real com a nucli de `RA7`.
+- `R5` queda situat com a síntesi transversal retallable, no com a peça nuclear nova del mòdul.
 
 ## Correcció curricular aplicada
 

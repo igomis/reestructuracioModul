@@ -2,11 +2,17 @@
 
 ## Fitxa canònica del repte
 
+- **Funció didàctica principal**: síntesi transversal.
 - **Objectiu**: integrar fonts o serveis externs dins del projecte base per generar una funcionalitat híbrida amb valor real.
 - **Producte esperat**: integració funcional amb consum extern, transformació de dades, tractament mínim d'errors i documentació tècnica.
-- **Evidències**: demo del flux complet, proves o verificacions d'integració, documentació tècnica, mapping de dades i traçabilitat de treball.
+- **Evidències**: demo del flux complet, proves o verificacions d'integració, documentació tècnica, mapping de dades, comparativa font externa / transformació / resultat final i traçabilitat de treball.
 - **Paper de la IA**: ús assistit per IA permés per explorar fonts, connectors o transformacions; els límits i la delegació excessiva depenen de [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md).
 - **Relació amb el projecte base**: obri el projecte base a l'exterior i tanca la seqüència de construcció abans de la defensa tècnica.
+- **Checkpoint de control**: selecció justificada de la font externa abans de construir la integració i demo final amb cas positiu, cas d'error i mini defensa.
+- **Instrument dominant**: checklist d'integració híbrida amb valor de producte.
+- **Instrument de comprensió**: mini defensa tècnica sobre contracte extern, mapping i aportació real al producte.
+- **Instrument de control de delegació excessiva**: revisió de commit rellevant comentat, contrast amb `AI log` i prova guiada sobre la transformació o l'orquestració.
+- **Instrument de recuperació o millora**: reducció d'abast a una sola font externa, un cas d'ús híbrid i una nova demo completa.
 
 ## 1. Visió general del repte
 
@@ -141,12 +147,15 @@ Mòdul o funcionalitat híbrida integrada en el sistema, amb:
 - issue principal del repte i microtasques
 - seqüència de commits significativa
 - comparativa o justificació de la font externa
+- un commit rellevant comentat sobre connector, mapping o integració
 - connector funcional
 - dades o servei extern recuperat realment
 - transformació o integració observable
 - demo del cas d’ús híbrid
 - tractament mínim d’errors
+- comparativa font externa / transformació / resultat final
 - documentació tècnica
+- mini defensa tècnica del flux híbrid
 - AI log quan hi haja ús d’IA
 
 ---
@@ -689,3 +698,5 @@ El repte es considera superat quan:
 **Observacions docents**
 
 Este repte s’ha de llegir principalment com a tancament transversal amb focus en **RA7**. No hauria de convertir-se ni en una repetició del Repte 4 ni en una simple demostració de consum d’APIs externes sense valor de producte.
+
+Si el calendari de l'aula es tensiona, el mínim nuclear de `R5` s'ha de retallar a una sola font externa, un únic cas d'ús híbrid real, un cas positiu, un cas d'error i una defensa breu. Les orquestracions més riques, múltiples fonts o automatitzacions periòdiques s'han de llegir com a ampliació avançada i no com a condició per tancar el mòdul.

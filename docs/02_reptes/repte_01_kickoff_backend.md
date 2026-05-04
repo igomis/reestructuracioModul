@@ -2,11 +2,17 @@
 
 ## Fitxa canònica del repte
 
+- **Funció didàctica principal**: iniciació / arranque.
 - **Objectiu**: deixar arrencat el projecte base amb entorn executable, traçabilitat, punt d'entrada funcional i decisió tècnica inicial.
 - **Producte esperat**: backend inicial funcional, executable en local, amb Docker, README i primera peça real del producte.
-- **Evidències**: repositori traçable, README executable, issues, commits, execució real i justificació tècnica breu.
+- **Evidències**: repositori traçable, README executable, issue mare, commit rellevant comentat, execució real, ADR o justificació tècnica breu i mini defensa de kickoff.
 - **Paper de la IA**: ús assistit per IA permés per configuració, comparativa i depuració inicial; els límits i la delegació excessiva depenen de [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md).
 - **Relació amb el projecte base**: este repte obri el projecte base i fixa la seua base metodològica, tècnica i documental.
+- **Checkpoint de control**: arrencada reproduïble amb lectura del `README`, justificació del stack triat i microcanvi tècnic simple sobre l'entorn.
+- **Instrument dominant**: checklist d'arrencada i repositori executable.
+- **Instrument de comprensió**: mini defensa tècnica de kickoff.
+- **Instrument de control de delegació excessiva**: revisió de commit rellevant comentat, contrast amb `AI log` i prova en directe.
+- **Instrument de recuperació o millora**: nova demostració d'arrencada amb ajust de `README`, Docker i justificació tècnica.
 
 ## 1. Visió general del repte
 
@@ -136,9 +142,11 @@ Backend inicial funcional amb:
 - Docker Compose o equivalent funcional
 - issue mare de kickoff
 - commits significatius
+- un commit rellevant comentat o referenciat pel mateix alumne
 - demo d’arrancada i execució
 - evidència d’un punt d’entrada funcional
-- justificació tècnica breu
+- ADR o justificació tècnica breu
+- mini defensa tècnica al checkpoint de tancament
 - AI log quan corresponga
 
 ---

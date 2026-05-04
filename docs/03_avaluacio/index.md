@@ -10,6 +10,17 @@ Este és el bloc canònic per valorar el treball del curs. Concentra evidències
 
 El material específic de pilotatge i feedback històric s'ha mogut a l'[arxiu](../arxiu/index.md).
 
+## Ajust fi de Fase 4
+
+Els checkpoints no es llegeixen només com a seguiment de calendari. A partir de l'ajust fi del curs, cada repte ha de fer explícit:
+
+- quin instrument és dominant per valorar el producte del repte
+- quin instrument verifica comprensió real
+- quin instrument ajuda a detectar delegació excessiva
+- quin instrument s'activa per a recuperació o millora
+
+Els documents canònics dels `R1-R5` ja deixen estes quatre funcions explicitades per reduir arbitrarietat docent i fer més viable la verificació real del treball amb IA.
+
 ## Regla comuna d'acreditació
 
 - el repositori es revisa per alumne
@@ -49,3 +60,4 @@ El material específic de pilotatge i feedback històric s'ha mogut a l'[arxiu](
 - per controlar evidències i checkpoints: [sistema d'evidències](sistema_evidencies.md) i [instruments de seguiment](instruments_seguiment_docent.md)
 - per resoldre dubtes sobre ús assistit per IA, delegació excessiva i verificació docent: [document canònic d'IA](../us-ia-professorat-i-alumnat.md)
 - per revisar cobertura real dels resultats d'aprenentatge del mòdul: [matriu curricular](../matriu-coherencia-curricular-dwes.md)
+- per entendre l'ajust global de càrrega, reptes i instruments: [síntesi de la Fase 4](../fase-4-ajust-fi-reptes-i-instruments.md)

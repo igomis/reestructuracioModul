@@ -2,11 +2,17 @@
 
 ## Fitxa canònica del repte
 
+- **Funció didàctica principal**: construcció nuclear.
 - **Objectiu**: construir la primera funcionalitat protegida del projecte base sobre base comuna en `PHP`.
 - **Producte esperat**: flux de dades complet amb estat, autenticació, validació, operació de domini restringida i primera millora de mantenibilitat.
-- **Evidències**: formularis o entrada equivalent, validacions visibles, proves mínimes, documentació actualitzada, checkpoint i traçabilitat de treball.
+- **Evidències**: formularis o entrada equivalent, validacions visibles, proves mínimes, registre breu d'errors corregits, comparativa solució inicial / IA / solució final quan corresponga, documentació actualitzada i checkpoint tècnic.
 - **Paper de la IA**: ús assistit per IA permés per validacions, depuració i documentació; els límits i la delegació excessiva depenen de [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md).
 - **Relació amb el projecte base**: transforma l'arrencada de `R1` en la primera funcionalitat de negoci del projecte base i prepara l'entrada a `R3`.
+- **Checkpoint de control**: flux complet abans de la refactorització final, amb cas autoritzat, cas denegat, revisió d'errors i traçabilitat de l'ús assistit per IA.
+- **Instrument dominant**: rúbrica del repte sobre flux funcional protegit.
+- **Instrument de comprensió**: mini defensa tècnica al checkpoint `MP6`.
+- **Instrument de control de delegació excessiva**: revisió de repositori, `AI log` i microcanvi en viu sobre validació o autenticació.
+- **Instrument de recuperació o millora**: reconstrucció guiada del flux amb prova funcional i nova defensa breu.
 
 ## 1. Visió general del repte
 
@@ -163,6 +169,7 @@ Mòdul funcional integrat en el projecte que incloga:
 - repositori actualitzat
 - issue principal del repte i microtasques
 - seqüència de commits significativa
+- un commit rellevant comentat sobre validació, estat o autenticació
 - formulari funcional o equivalent
 - codi servidor embegut o integrat en una plantilla
 - ús de variables, operadors, sentències simples, directives i àmbits
@@ -175,7 +182,10 @@ Mòdul funcional integrat en el projecte que incloga:
 - flux d’autenticació funcional
 - operació de domini protegida
 - proves mínimes
+- registre breu d'errors detectats i corregits
+- comparativa solució inicial / suggeriment IA / solució final quan hi haja ús assistit rellevant
 - documentació tècnica
+- mini defensa tècnica al checkpoint del repte
 - AI log quan hi haja ús d’IA
 
 ### 4.2 Límit metodològic sobre persistència

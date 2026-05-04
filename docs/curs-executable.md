@@ -33,15 +33,38 @@ Els documents de planificació continuen existint com a annexos o arxiu, però l
 | Repte 5 | integració híbrida | funcionalitat integrada, tractament d'errors i prova de punta a punta |
 | Defensa tècnica | tancament del curs | evidències finals, repositori coherent i defensa tècnica individual |
 
+## Funció didàctica de cada repte
+
+| Repte | Funció principal | Focus real | Decisió d'abast docent |
+|---|---|---|---|
+| `R1` | iniciació / arranque | entorn, repositori, `README`, Docker i primera decisió tècnica | no carregar-lo amb formularis, persistència o arquitectura avançada |
+| `R2` | construcció nuclear | flux de dades, lògica bàsica, estat, autenticació i primera funcionalitat protegida | és el nucli funcional compartit; encara no és `MVC` ni persistència com a focus |
+| `R3` | consolidació | framework, separació de responsabilitats, persistència mínima real i flux **server-rendered** | dividir-lo en dues validacions i reduir l'ambició del segon flux si cal |
+| `R4` | integració | contracte d'API, consum real, autenticació i documentació usable | evitar que `RA6` torne a convertir-lo en un repte de persistència |
+| `R5` | síntesi transversal | integració externa amb valor de producte, reutilització de serveis i verificació final | mantindre'l retallable: una integració bona val més que diverses integracions ornamentals |
+
+## Checkpoints com a control pedagògic real
+
+| Moment | Verificació tècnica mínima | Contrast de comprensió | Traçabilitat de la IA | Decisió docent que habilita |
+|---|---|---|---|---|
+| Inici de curs | repositori, `README` i criteri de treball actius | el grup sap explicar domini, eines i flux de treball | només si hi ha ús assistit inicial | obertura de `R1` |
+| Tancament de `R1` | arrencada reproduïble i punt d'entrada funcional | justificació del stack i microcanvi simple | revisió d'`AI log` si n'hi ha | pas real a `R2` |
+| Tancament de `R2` | flux complet amb cas autoritzat i denegat | explicació de dades, estat i autenticació | contrast entre solució inicial, ajuda d'IA i solució final quan corresponga | pas real a `R3` |
+| `CP-R3A` | framework + Docker + BBDD + `migrations`/`seeders` + primer flux **server-rendered** | defensa del circuit petició -> controlador -> dades -> resposta | revisió d'evidències d'ús assistit sobre estructura i modelat | continuïtat de `R3` |
+| `CP-R3B` | segon flux, proves mínimes, `README` i backlog curt | justificació de decisions d'arquitectura i de què queda fora | contrast entre codi, `AI log` i demo | obertura de `R4` |
+| Tancament de `R4` | contracte d'API, servei funcional i consum real | explicació d'endpoints, autenticació i errors | traçabilitat de contracte, proves i documentació assistida per IA | obertura de `R5` |
+| Tancament de `R5` | integració externa amb cas positiu i cas d'error | explicació del mapping i del valor real al producte | comprovació de la comprensió del contracte extern i de la transformació | pas a defensa tècnica |
+| Defensa final | producte coherent i evidències alineades | autoria individual, criteri tècnic i transferència | revisió final de coherència amb el document canònic d'IA | tancament del curs |
+
 ## Checkpoints i moments de revisió
 
 - inici de curs: activació del repositori i comprovació del marc de treball
-- tancament de `R1`: verificació de base executable
-- pas `R1 -> R2`: comprovació de flux de dades i entrada a funcionalitat protegida
-- tancament de `R2`: funcionalitat protegida reproduïble i codi mínimament ordenat
-- tancament de `R3`: persistència real i dos fluxos end-to-end
-- tancament de `R4`: API usable i consum verificat
-- tancament de `R5`: integració híbrida amb valor funcional
+- tancament de `R1`: verificació de base executable i defensa breu d'arrencada
+- tancament de `R2`: funcionalitat protegida reproduïble, registre d'errors i mini defensa tècnica
+- `CP-R3A`: base de framework, BBDD i primer flux **server-rendered**
+- `CP-R3B`: segon flux, proves mínimes, `README` i decisions d'arquitectura
+- tancament de `R4`: API usable, consum verificat i contrast entre contracte i resposta real
+- tancament de `R5`: integració híbrida amb valor funcional, cas positiu i cas d'error
 - defensa tècnica final: tancament individual del producte i de les evidències
 
 ## Documents operatius que s'activen
@@ -70,9 +93,10 @@ Estos documents aporten detall, però no han de competir amb este centre executa
 
 - si no hi ha repositori traçable, no es dona per estabilitzat l'inici
 - si `R2` no és reproduïble, no s'obri `R3`
-- si `R3` no deixa persistència i arquitectura explicables, no s'obri `R4`
+- si `R3` no supera `CP-R3A`, es reduïx l'ambició del segon flux i no s'obri `R4`
+- si `R3` no deixa persistència i arquitectura explicables en `CP-R3B`, no s'obri `R4`
 - si `R4` no està documentat ni provat, no s'avança cap a `R5`
-- si la integració final no és verificable, es retalla abast abans de la defensa tècnica
+- si `R5` tensiona massa el calendari, es retalla a una sola integració externa verificable abans de la defensa tècnica
 
 ## Criteri de tancament
 

@@ -2,11 +2,17 @@
 
 ## Fitxa canònica del repte
 
+- **Funció didàctica principal**: integració.
 - **Objectiu**: exposar una funcionalitat real del projecte base com a servei reusable, consumible i documentat.
 - **Producte esperat**: API funcional amb contracte clar, endpoints coherents, consum verificat, autenticació adequada i documentació usable.
-- **Evidències**: contracte de servei, proves o verificacions d'endpoints, consum real, documentació d'API i traçabilitat de canvis.
+- **Evidències**: contracte de servei, proves o verificacions d'endpoints, consum real, comparativa entre contracte previst i comportament observat, documentació d'API i traçabilitat de canvis.
 - **Paper de la IA**: ús assistit per IA permés per contractes inicials, proves i documentació; els límits i la delegació excessiva depenen de [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md).
 - **Relació amb el projecte base**: convertix una funcionalitat estabilitzada del projecte base en servei reusable i prepara la integració híbrida de `R5`.
+- **Checkpoint de control**: contracte mínim validat abans d'implementar tots els endpoints i consum real defensat al tancament del repte.
+- **Instrument dominant**: rúbrica específica de servei web.
+- **Instrument de comprensió**: mini defensa tècnica sobre contracte, autenticació i consum.
+- **Instrument de control de delegació excessiva**: revisió de repositori, `AI log`, prova guiada d'endpoints i contrast entre documentació i resposta real.
+- **Instrument de recuperació o millora**: redisseny de contracte, nova execució guiada i documentació corregida.
 
 ## 1. Visió general del repte
 
@@ -137,13 +143,16 @@ Servei web funcional integrat en el projecte, amb:
 - repositori actualitzat
 - issue principal del repte i microtasques
 - seqüència de commits significativa
+- un commit rellevant comentat sobre contracte, autenticació o consum
 - mapa d’endpoints
 - servei funcional
 - dades reals servides
 - autenticació o control d’accés en context d’API
 - consumidor mínim o prova equivalent
+- comparativa entre contracte previst i resposta observada
 - documentació tècnica
 - registre de proves
+- mini defensa tècnica de contracte i consum
 - AI log quan hi haja ús d’IA
 
 ---

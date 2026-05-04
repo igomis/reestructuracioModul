@@ -2,11 +2,17 @@
 
 ## Fitxa canònica del repte
 
+- **Funció didàctica principal**: consolidació.
 - **Objectiu**: reconstruir el projecte en framework i deixar persistència real amb fluxos end-to-end verificables.
 - **Producte esperat**: aplicació arrancable en framework amb Docker, base de dades real, migracions, seeders, validació, proves mínimes i almenys dos fluxos funcionals, amb almenys un flux **server-rendered**.
-- **Evidències**: casos d'ús end-to-end, model de dades, migracions, seeders, README d'arrencada, proves, almenys una resposta HTML renderitzada en servidor i traçabilitat de decisions.
+- **Evidències**: casos d'ús end-to-end, model de dades, migracions, seeders, README d'arrencada, ADR breu de migració, commit rellevant comentat, proves, almenys una resposta HTML renderitzada en servidor i traçabilitat de decisions.
 - **Paper de la IA**: ús assistit per IA permés per modelat, migracions, proves i revisió d'estructura; els límits i la delegació excessiva depenen de [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md).
 - **Relació amb el projecte base**: professionalitza la base comuna de `R2` i obri el contrast d'itineraris sobre el mateix projecte base.
+- **Checkpoint de control**: `CP-R3A` per validar framework + Docker + BBDD + `migrations`/`seeders` + primer flux **server-rendered**; `CP-R3B` per validar segon flux, proves mínimes, README i mini defensa.
+- **Instrument dominant**: rúbrica de reconstrucció en framework.
+- **Instrument de comprensió**: defensa tècnica curta sobre migració i circuit petició -> controlador -> dades -> resposta.
+- **Instrument de control de delegació excessiva**: revisió de commit rellevant comentat, contrast amb `AI log` i prova guiada sobre un flux migrat.
+- **Instrument de recuperació o millora**: reobertura del segon flux o reducció d'abast funcional mantenint Docker, BBDD, `migrations`, `seeders` i un flux **server-rendered** complet.
 
 ## 1. Visió general del repte
 
@@ -100,6 +106,17 @@ No es considera suficient:
 - carregar dades a mà sense mecanisme reproduïble
 - presentar una demo que no es puga arrancar des de zero
 
+## 3.1 Seqüència interna i límit de càrrega
+
+Per evitar que `R3` es convertisca en un repte monstre, la seqüència interna recomanada és:
+
+- primer, base en framework arrancable amb `Docker`, `.env` i rutes mínimes
+- després, persistència mínima real amb `migrations`, `seeders` i conjunt de dades usable
+- després, primer flux heretat de `R2` amb resposta **server-rendered**
+- finalment, segon flux o ampliació curta, proves mínimes, `README` i backlog del que queda fora
+
+Si apareix tensió de calendari, no s'ha de retallar la base tècnica ni el primer flux **server-rendered**. El que es reduïx és l'ambició funcional del segon flux, no la verificabilitat del repte.
+
 ---
 
 ## 4. Paper de la IA en este repte
@@ -162,15 +179,19 @@ Aplicació en framework que incloga:
 - repositori actualitzat
 - issue principal de `R3` i microtasques
 - seqüència de commits significativa
+- un commit rellevant comentat sobre la migració d'un flux o una decisió d'estructura
 - aplicació arrancant amb Docker
 - `.env.example` o instruccions equivalents
 - `migrations` executables
 - `seeders` executables
 - captura o registre d'arrencada i càrrega de dades
 - demo dels `2` casos d'ús end-to-end
+- almenys `1` cas d'ús migrat des de `R2`
 - evidència d'un cas d'ús server-rendered amb vista o plantilla que rep dades reals
 - proves mínimes executades
-- README tècnic actualitzat
+- ADR o justificació breu de migració
+- README tècnic actualitzat i centrat en decisions
+- mini defensa tècnica als checkpoints `CP-R3A` i `CP-R3B`
 - AI log quan hi haja ús d'IA
 
 ---
