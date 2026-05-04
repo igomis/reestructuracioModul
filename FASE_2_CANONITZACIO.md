@@ -2,19 +2,30 @@
 
 ## Nou mapa de documents canònics
 
-- `docs/visio-model-dwes.md`: document marc del model
-- `docs/curs-executable.md`: document operatiu del curs
-- `docs/us-ia-professorat-i-alumnat.md`: referència única sobre ús assistit per IA
-- `docs/05_projectes_tecnics/enunciat_projecte_base.md`: encàrrec del projecte base
-- `docs/05_projectes_tecnics/projecte_base_backend.md`: base tècnica comuna del projecte
+### Documents canònics de govern
+
+- `docs/visio-model-dwes.md`
+- `docs/curs-executable.md`
+- `docs/us-ia-professorat-i-alumnat.md`
+- `docs/03_avaluacio/index.md`
+
+### Família canònica de projecte i reptes
+
+- `docs/05_projectes_tecnics/enunciat_projecte_base.md`
+- `docs/05_projectes_tecnics/projecte_base_backend.md`
 - `docs/02_reptes/repte_01_kickoff_backend.md`
 - `docs/02_reptes/repte_02_sessions_i_autenticacio.md`
 - `docs/02_reptes/repte_03_mvc_i_persistencia.md`
 - `docs/02_reptes/repte_04_api_i_consum.md`
 - `docs/02_reptes/repte_05_integracio_hibrida_n8n.md`
-- `docs/03_avaluacio/index.md`
+
+### Canònics de suport
+
 - `docs/04_materials/index.md`
 - `docs/alumnat/index.md`
+
+### Zona d'arxiu
+
 - `docs/arxiu/index.md`
 
 ## Nou document canònic d'IA
@@ -58,7 +69,7 @@ S'ha creat `docs/us-ia-professorat-i-alumnat.md` com a referència única sobre:
   - paper de la IA
   - relació amb el projecte base
 
-## Duplicidades eliminadas
+## Duplicats eliminats
 
 - IA ja no competix entre `visió`, `curs executable`, `avaluació` i `projecte`.
 - `curs executable` deixa de fer de document marc o de normativa d'avaluació.
@@ -86,3 +97,5 @@ S'han marcat com a **documents derivats** i amb dependència explícita:
 - `docs/09_paquets_ús_directe/index.md`
 
 S'ha reforçat `docs/arxiu/index.md` com a **zona d'arxiu**.
+
+Els documents derivats no fixen criteri propi: remeten als documents canònics corresponents.
