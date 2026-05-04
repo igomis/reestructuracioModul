@@ -1,5 +1,9 @@
 # Projecte backend base del curs
 
+## Classificació documental
+
+Este és un **document canònic**. Regula la base tècnica comuna del projecte: requisits mínims, components compartits, comparabilitat entre itineraris i relació estructural amb els reptes.
+
 ## Finalitat del document
 
 Definir el marc operatiu del projecte backend base del curs perquè funcione com a producte tècnic evolutiu, útil per a la planificació docent i per a la generació d’evidències reals d’aprenentatge.
@@ -13,6 +17,13 @@ La seua funció és:
 - assegurar coherència entre reptes, avaluació i materials
 - facilitar que els Reptes 3, 4 i 5 es redacten sobre un producte comú i no sobre activitats aïllades
 - permetre comparabilitat de resultats entre itineraris tecnològics diferents
+
+## Frontera amb la resta de la família canònica
+
+- [enunciat_projecte_base.md](enunciat_projecte_base.md) regula l'encàrrec funcional del producte
+- este document regula la base tècnica i operativa compartida
+- els [reptes 1-5](../02_reptes/repte_01_kickoff_backend.md) regulen el creixement progressiu del projecte
+- el règim d'ús assistit per IA depén de [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md)
 
 Lectura metodològica vinculada:
 
@@ -103,12 +114,7 @@ La compatibilitat exigida és de resultats i evidències, no d’implementació 
 
 ## Paper de la IA
 
-La IA s’assumeix com a eina habitual de suport (ideació tècnica, prototipat, depuració i documentació), però mai com a substitut de validació.
-
-Condicions docents mínimes:
-
-- tota aportació assistida per IA s’ha de verificar amb execució real, proves i revisió de codi
-- l’equip ha de poder explicar i defensar les decisions tècniques adoptades
+La base tècnica del projecte admet **ús assistit per IA** per ideació, prototipat, depuració o documentació, però la regulació completa de límits, evidències i delegació excessiva depén de [Ús de la IA per a professorat i alumnat](../us-ia-professorat-i-alumnat.md).
 
 ## Línia futura relacionada amb tokenització
 

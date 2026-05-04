@@ -1,5 +1,13 @@
 # Repte 1. Kickoff funcional d’un servei web backend amb microprojectes i criteris d’avaluació explícits
 
+## Fitxa canònica del repte
+
+- **Objectiu**: deixar arrencat el projecte base amb entorn executable, traçabilitat, punt d'entrada funcional i decisió tècnica inicial.
+- **Producte esperat**: backend inicial funcional, executable en local, amb Docker, README i primera peça real del producte.
+- **Evidències**: repositori traçable, README executable, issues, commits, execució real i justificació tècnica breu.
+- **Paper de la IA**: ús assistit per IA permés per configuració, comparativa i depuració inicial; els límits i la delegació excessiva depenen de [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md).
+- **Relació amb el projecte base**: este repte obri el projecte base i fixa la seua base metodològica, tècnica i documental.
+
 ## 1. Visió general del repte
 
 **Finalitat del repte**

@@ -1,5 +1,9 @@
 # Enunciat base del projecte del curs
 
+## Classificació documental
+
+Este és un **document canònic**. Regula l'encàrrec professional del projecte base: què s'ha de construir, en quin marc funcional i amb quins lliurables i criteris de validació.
+
 ## Finalitat del projecte
 
 Desenvolupar durant el curs un producte backend realista, evolutiu i defensable que servisca com a fil conductor dels reptes del mòdul i permeta generar evidències autèntiques d'aprenentatge.
@@ -39,6 +43,13 @@ Criteri transversal d'exigència:
 - cap repte del projecte es pot donar per resolt amb una tècnica aïllada
 - cada tram ha d'aportar una funcionalitat professional mínima, recognoscible i defensable del mateix producte
 - no es validarà un recorregut basat en esquelets, logins aïllats, APIs decoratives o integracions sense valor funcional
+
+## Funció dins de la família canònica de projecte i reptes
+
+- este document fixa **què és** el projecte base i **què s'espera** del producte
+- [projecte_base_backend.md](projecte_base_backend.md) fixa **com ha de ser** la base tècnica comuna
+- els [reptes 1-5](../02_reptes/repte_01_kickoff_backend.md) fixen **com creix** el projecte per fases
+- el criteri sobre ús assistit per IA depén de [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md)
 
 ## Dominis admesos
 
@@ -124,21 +135,7 @@ El projecte base s'ha de poder defensar amb els lliurables mínims següents:
 
 ## Paper de la IA
 
-La IA es considera una eina de suport vàlida dins del projecte per:
-
-- explorar alternatives de disseny
-- proposar estructures inicials o microtasques
-- generar esquelets de proves o documentació
-- ajudar en debugging, refactorització o revisió de contractes
-
-L'ús de IA només és acceptable si complix estes condicions:
-
-- l'equip entén i pot explicar el resultat final
-- tota proposta assistida per IA es verifica amb execució real, proves i revisió tècnica
-- queda rastre de què s'ha acceptat, què s'ha descartat i com s'ha comprovat
-- la IA no substituïx la defensa tècnica ni la validació del comportament del sistema
-
-La regla del repositori es manté: IA com a eina guiada i verificable, mai com a justificació d'evidència no contrastada.
+El projecte admet **ús assistit per IA** sempre que l'alumnat deixe evidència suficient, verifique el comportament i puga defensar el resultat. El criteri complet no es regula ací, sinó en [Ús de la IA per a professorat i alumnat](../us-ia-professorat-i-alumnat.md).
 
 ## Criteris de validació
 

@@ -1,8 +1,12 @@
 # Recursos d'aula
 
+## Classificació documental
+
+Este és un **document canònic**. Centralitza la biblioteca de recursos d'aula i remet al document canònic [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md) quan cal criteri sobre ús assistit per IA.
+
 ## Funció del bloc
 
-Esta és la biblioteca única de recursos del curs. Integra materials compartibles, presentacions, materials d'aula, mini briefings, checkpoints, fulls de treball, guions de defensa, guies d'ús de la IA i apunts reals.
+Esta és la biblioteca única de recursos del curs. Integra materials compartibles, presentacions, materials d'aula, mini briefings, checkpoints, fulls de treball, guions de defensa, guies sobre ús assistit per IA i apunts reals.
 
 Ja no hi ha tres entrades principals paral·leles per a materials. Si una peça s'usa en classe o dona suport directe al curs, es localitza des d'ací.
 
@@ -16,6 +20,7 @@ Ja no hi ha tres entrades principals paral·leles per a materials. Si una peça 
 - [Guió breu de defensa individual](../08_materials_compartibles/guio_defensa_individual_breu.md)
 - [Guió de tancament del producte i defensa final](../08_materials_compartibles/guio_tancament_producte_i_defensa_final.md)
 - [Guió d'ús de la IA per a l'alumnat](../08_materials_compartibles/guio_ús_ia_per_a_lalumnat.md)
+- [Document canònic d'ús assistit per IA](../us-ia-professorat-i-alumnat.md)
 
 ## Concreció docent del Repte 1
 

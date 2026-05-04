@@ -1,5 +1,13 @@
 # Repte 5. Aplicació web híbrida i integració de serveis externs
 
+## Fitxa canònica del repte
+
+- **Objectiu**: integrar fonts o serveis externs dins del projecte base per generar una funcionalitat híbrida amb valor real.
+- **Producte esperat**: integració funcional amb consum extern, transformació de dades, tractament mínim d'errors i documentació tècnica.
+- **Evidències**: demo del flux complet, proves o verificacions d'integració, documentació tècnica, mapping de dades i traçabilitat de treball.
+- **Paper de la IA**: ús assistit per IA permés per explorar fonts, connectors o transformacions; els límits i la delegació excessiva depenen de [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md).
+- **Relació amb el projecte base**: obri el projecte base a l'exterior i tanca la seqüència de construcció abans de la defensa tècnica.
+
 ## 1. Visió general del repte
 
 **Finalitat del repte**

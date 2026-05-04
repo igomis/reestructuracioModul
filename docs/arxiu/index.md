@@ -1,5 +1,11 @@
 # Arxiu
 
+## Classificació documental
+
+Esta és una **zona d'arxiu**. Reuneix material històric, de procés, pilotatge o versions prèvies que ja no regula el funcionament ordinari del model.
+
+Els documents d'esta zona no són documents canònics ni documents derivats d'ús diari.
+
 Esta zona guarda material històric, de procés, pilotatge, versions prèvies i documents que ja no han de competir amb les peces canòniques del curs.
 
 ## Pilotatge i seguiment

@@ -1,5 +1,9 @@
 # Materials de classe compartibles
 
+## Classificació documental
+
+Este és un **document derivat**. Depén de [04_materials/index.md](../04_materials/index.md), [03_avaluacio/index.md](../03_avaluacio/index.md) i [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md).
+
 ## Per a què servix este bloc
 
 Este espai reuneix peces curtes, netes i directament compartibles amb alumnat. No substituïx els apunts reals ni els materials docents llargs: els condensa en formats ràpids d'aula.

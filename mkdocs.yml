@@ -20,7 +20,9 @@ markdown_extensions:
 
 nav:
   - Portada: index.md
-  - Visió del model: visio-model-dwes.md
+  - Visió del model:
+      - Document marc: visio-model-dwes.md
+      - Ús assistit per IA: us-ia-professorat-i-alumnat.md
   - Curs executable:
       - Centre del curs: curs-executable.md
       - Annexos de planificació:
@@ -48,6 +50,7 @@ nav:
           - Integració n8n: 05_projectes_tecnics/integracio_n8n.md
   - Avaluació i evidències:
       - Inici: 03_avaluacio/index.md
+      - Ús assistit per IA: us-ia-professorat-i-alumnat.md
       - Sistema d'evidències: 03_avaluacio/sistema_evidencies.md
       - Rúbrica base: 03_avaluacio/rubrica_base_reptes.md
       - Rúbrica defensa tècnica: 03_avaluacio/rubrica_defensa_tecnica.md

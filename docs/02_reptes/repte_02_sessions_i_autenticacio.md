@@ -1,5 +1,13 @@
 # Repte 2. Processament bàsic, estat, autenticació i primera funcionalitat protegida
 
+## Fitxa canònica del repte
+
+- **Objectiu**: construir la primera funcionalitat protegida del projecte base sobre base comuna en `PHP`.
+- **Producte esperat**: flux de dades complet amb estat, autenticació, validació, operació de domini restringida i primera millora de mantenibilitat.
+- **Evidències**: formularis o entrada equivalent, validacions visibles, proves mínimes, documentació actualitzada, checkpoint i traçabilitat de treball.
+- **Paper de la IA**: ús assistit per IA permés per validacions, depuració i documentació; els límits i la delegació excessiva depenen de [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md).
+- **Relació amb el projecte base**: transforma l'arrencada de `R1` en la primera funcionalitat de negoci del projecte base i prepara l'entrada a `R3`.
+
 ## 1. Visió general del repte
 
 **Finalitat del repte**

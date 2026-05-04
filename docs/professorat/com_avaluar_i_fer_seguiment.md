@@ -1,5 +1,9 @@
 # Com avaluar i fer seguiment
 
+## Classificació documental
+
+Este és un **document derivat**. Depén d'[Avaluació i evidències](../03_avaluacio/index.md) per al règim d'avaluació i d'[Ús de la IA per a professorat i alumnat](../us-ia-professorat-i-alumnat.md) per al criteri sobre ús assistit per IA i delegació excessiva.
+
 ## Principi general
 
 L'avaluació continua sent individual, encara que hi puga haver contextos de projecte compartit o contrast tècnic coordinat. El criteri és si cada alumne pot traçar, reproduir, explicar i defensar la seua part.
@@ -31,15 +35,9 @@ La defensa final no és una presentació ornamental. S'ha de poder revisar:
 - capacitat de fer canvis o localitzar punts crítics
 - comprensió del paper real de la IA en el resultat
 
-## IA verificable
+## Ús assistit per IA
 
-Es pot usar IA per contrastar, desbloquejar, accelerar o explorar opcions. No és acceptable:
-
-- lliurar codi que no es pot explicar
-- presentar com a pròpia una decisió no compresa
-- usar IA per substituir proves, verificació o criteri tècnic
-
-El professorat ha de demanar rastre mínim i preguntes de contrast quan detecte ús rellevant de la IA.
+Quan la IA haja intervingut de manera rellevant, el professorat no ha de reobrir criteri propi ací. Ha d'aplicar el document canònic [Ús de la IA per a professorat i alumnat](../us-ia-professorat-i-alumnat.md) i verificar rastre, comprensió, proves i defensa tècnica.
 
 ## Checkpoints mínims
 

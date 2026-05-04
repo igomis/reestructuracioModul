@@ -1,5 +1,9 @@
 # Portal d'alumnat
 
+## Classificació documental
+
+Este és un **document canònic** per a l'entrada d'alumnat. Remet a [visio-model-dwes.md](../visio-model-dwes.md), a la família [projecte base + reptes](../05_projectes_tecnics/enunciat_projecte_base.md), a [03_avaluacio/index.md](../03_avaluacio/index.md) i a [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md).
+
 ## Què trobaràs ací
 
 Esta secció és la porta d'entrada curta del curs per a alumnat. No substituïx tota la documentació del repositori: la sintetitza i la reorganitza perquè pugues consultar ràpid què has de fer, com es valora i com encaixa cada repte.

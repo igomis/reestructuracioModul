@@ -1,8 +1,12 @@
 # Avaluació i evidències
 
+## Classificació documental
+
+Este és un **document canònic**. Regula l'acreditació del curs, les evidències, els checkpoints, la defensa tècnica i els instruments de seguiment. El criteri sobre ús assistit per IA i delegació excessiva depén del document canònic [Ús de la IA per a professorat i alumnat](../us-ia-professorat-i-alumnat.md).
+
 ## Funció del bloc
 
-Este és el bloc canònic per valorar el treball del curs. Concentra evidències, rúbriques, seguiment docent, checkpoints i criteris de ponderació amb IA.
+Este és el bloc canònic per valorar el treball del curs. Concentra evidències, rúbriques, seguiment docent, checkpoints i criteris de ponderació.
 
 El material específic de pilotatge i feedback històric s'ha mogut a l'[arxiu](../arxiu/index.md).
 
@@ -20,6 +24,7 @@ El material específic de pilotatge i feedback històric s'ha mogut a l'[arxiu](
 - [Rúbrica de defensa tècnica](rubrica_defensa_tecnica.md)
 - [Instruments de seguiment docent](instruments_seguiment_docent.md)
 - [Criteris de ponderació dels reptes amb IA](criteris_ponderacio_reptes_amb_ia.md)
+- [Ús de la IA per a professorat i alumnat](../us-ia-professorat-i-alumnat.md)
 
 ## Instruments de suport
 
@@ -41,3 +46,4 @@ El material específic de pilotatge i feedback històric s'ha mogut a l'[arxiu](
 - per valorar producte i procés: [rúbrica base](rubrica_base_reptes.md)
 - per verificar autoria i defensa: [rúbrica de defensa tècnica](rubrica_defensa_tecnica.md)
 - per controlar evidències i checkpoints: [sistema d'evidències](sistema_evidencies.md) i [instruments de seguiment](instruments_seguiment_docent.md)
+- per resoldre dubtes sobre ús assistit per IA, delegació excessiva i verificació docent: [document canònic d'IA](../us-ia-professorat-i-alumnat.md)

@@ -1,5 +1,9 @@
 # Com fer servir la IA
 
+## Classificació documental
+
+Este és un **document derivat**. Depén del document canònic [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md) i només el traduïx a lectura ràpida per a alumnat.
+
 ## Per a què sí la pots usar
 
 La IA es pot usar com a eina de suport per:
@@ -53,4 +57,6 @@ Si no pots explicar-ho, provar-ho i tocar-ho sense dependre del text generat, en
 
 ## Si vols el detall complet
 
-La guia llarga és [Guia d'ús verificable de la IA](../04_materials/materials_comuns/guia_ús_verificable_ia.md).
+La referència canònica és [Ús de la IA per a professorat i alumnat](../us-ia-professorat-i-alumnat.md).
+
+La guia llarga de suport és [Guia d'ús verificable de la IA](../04_materials/materials_comuns/guia_ús_verificable_ia.md).

@@ -1,5 +1,9 @@
 # Paquets d'ús directe
 
+## Classificació documental
+
+Este és un **document derivat**. Depén de [curs-executable.md](../curs-executable.md), [04_materials/index.md](../04_materials/index.md) i [03_avaluacio/index.md](../03_avaluacio/index.md).
+
 ## Finalitat del bloc
 
 Este espai agrupa els materials més útils segons el moment del curs perquè el professorat no haja d'anar saltant entre massa pàgines. No crea contingut nou llarg: reutilitza i ordena el que ja existix.

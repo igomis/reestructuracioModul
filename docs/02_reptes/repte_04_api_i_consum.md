@@ -1,5 +1,13 @@
 # Repte 4. API i serveis reutilitzables sobre una funcionalitat real del projecte
 
+## Fitxa canònica del repte
+
+- **Objectiu**: exposar una funcionalitat real del projecte base com a servei reusable, consumible i documentat.
+- **Producte esperat**: API funcional amb contracte clar, endpoints coherents, consum verificat, autenticació adequada i documentació usable.
+- **Evidències**: contracte de servei, proves o verificacions d'endpoints, consum real, documentació d'API i traçabilitat de canvis.
+- **Paper de la IA**: ús assistit per IA permés per contractes inicials, proves i documentació; els límits i la delegació excessiva depenen de [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md).
+- **Relació amb el projecte base**: convertix una funcionalitat estabilitzada del projecte base en servei reusable i prepara la integració híbrida de `R5`.
+
 ## 1. Visió general del repte
 
 **Finalitat del repte**

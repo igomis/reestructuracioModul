@@ -1,5 +1,9 @@
 # Professorat
 
+## Classificació documental
+
+Este és un **document derivat**. Depén de [visio-model-dwes.md](../visio-model-dwes.md), [curs-executable.md](../curs-executable.md), [03_avaluacio/index.md](../03_avaluacio/index.md), [04_materials/index.md](../04_materials/index.md) i [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md).
+
 ## Què conté este espai
 
 Esta secció funciona com a porta d'entrada curta per a professorat. No reescriu tot el paquet docent: selecciona els documents que convé obrir segons el moment del curs i els tradueix a ús operatiu.

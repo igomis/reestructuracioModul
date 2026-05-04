@@ -1,39 +1,58 @@
 # Curs executable
 
+## Classificació documental
+
+Este és un **document canònic**. Regula l'execució del curs: seqüència, hitos, checkpoints, ritmes, entregables i moments d'avaluació. No reexplica el marc del model, el règim d'avaluació ni el criteri d'ús assistit per IA, que depenen d'altres documents canònics.
+
 ## Finalitat
 
 Este és el centre canònic per conduir el curs. Substitueix com a entrada principal el pla d'implantació, les calendaritzacions, la guia de 20 setmanes, la preparació docent directa i els kits de pilotatge.
 
 Els documents de planificació continuen existint com a annexos o arxiu, però la decisió docent operativa ha de començar ací.
 
-## Condicions de partida
+## Condicions operatives de partida
 
 - el curs està calibrat sobre unes `20` setmanes i `120` hores lectives aproximades
 - el desenvolupament principal del projecte es tanca en dues avaluacions
 - la tercera avaluació queda com a espai residual, connexió amb empresa o tancament puntual
 - Git/GitHub funciona com a metodologia de treball i traçabilitat
-- la IA s'usa com a suport verificable, no com a substitució de criteri tècnic
-- els itineraris `Laravel`, `Express/Nest` i `FastAPI` són variants homologables del mateix model
+- `R2` es resol sobre base comuna en `PHP`
+- el contrast d'itineraris s'obri a partir de `R3`
+- `Laravel`, `Symfony` i `NestJS` són les vies base del contrast
+- `FastAPI` queda com a via avançada o excepcional
 
-## Seqüència executable
+## Seqüència executable del curs
 
-| Moment | Acció docent | Evidència mínima |
+| Moment | Hito operatiu | Checkpoint o entregable mínim |
 |---|---|---|
-| Inici | presentar model, projecte base, dominis i criteris d'evidència | repositori inicial, README i criteri d'IA |
-| Repte 1 | decidir domini, stack i esquelet tècnic | entorn funcional i primera decisió tècnica |
-| Repte 2 | construir flux amb estat, sessions o autenticació | funcionalitat protegida, validacions i proves bàsiques |
-| Repte 3 | estabilitzar arquitectura i persistència | model de dades, capes o equivalent, regressió mínima |
-| Repte 4 | exposar i consumir API | contracte, endpoints, proves i documentació |
-| Repte 5 | integrar servei extern, n8n o flux híbrid | integració funcional i prova de punta a punta |
-| Defensa | verificar autoria i criteri tècnic | defensa individual, evidències finals i repo coherent |
+| Inici | activació del curs i del projecte base | repositori inicial, README, domini triat i criteri de treball |
+| Repte 1 | arrencada funcional del backend | entorn executable, Docker, punt d'entrada i primera decisió tècnica |
+| Repte 2 | primera funcionalitat protegida | checkpoint `R1 -> R2`, flux autenticat, validacions i proves bàsiques |
+| Repte 3 | reconstrucció en framework i persistència | dos fluxos end-to-end, model de dades, migracions, seeders i proves mínimes |
+| Repte 4 | publicació i consum d'API | contracte, endpoints, consum verificat i documentació d'API |
+| Repte 5 | integració híbrida | funcionalitat integrada, tractament d'errors i prova de punta a punta |
+| Defensa tècnica | tancament del curs | evidències finals, repositori coherent i defensa tècnica individual |
 
-## Materials que s'activen
+## Checkpoints i moments de revisió
 
-- inici: [visió del model](visio-model-dwes.md), [enunciat base](05_projectes_tecnics/enunciat_projecte_base.md), [sistema d'evidències](03_avaluacio/sistema_evidencies.md)
-- conducció: [projecte backend base](05_projectes_tecnics/projecte_base_backend.md) i fitxes dels reptes
-- suport d'aula: [recursos d'aula](04_materials/index.md)
-- seguiment: [instruments de seguiment](03_avaluacio/instruments_seguiment_docent.md), checklists i plantilles
-- tancament: [rúbrica de defensa tècnica](03_avaluacio/rubrica_defensa_tecnica.md)
+- inici de curs: activació del repositori i comprovació del marc de treball
+- tancament de `R1`: verificació de base executable
+- pas `R1 -> R2`: comprovació de flux de dades i entrada a funcionalitat protegida
+- tancament de `R2`: funcionalitat protegida reproduïble i codi mínimament ordenat
+- tancament de `R3`: persistència real i dos fluxos end-to-end
+- tancament de `R4`: API usable i consum verificat
+- tancament de `R5`: integració híbrida amb valor funcional
+- defensa tècnica final: tancament individual del producte i de les evidències
+
+## Documents operatius que s'activen
+
+- [Visió del model](visio-model-dwes.md): només com a marc general
+- [Enunciat base del projecte](05_projectes_tecnics/enunciat_projecte_base.md): encàrrec del producte
+- [Projecte backend base](05_projectes_tecnics/projecte_base_backend.md): base tècnica comuna
+- [Reptes 1-5](02_reptes/repte_01_kickoff_backend.md): desplegament del curs per reptes
+- [Avaluació i evidències](03_avaluacio/index.md): instruments i criteri d'acreditació
+- [Ús de la IA per a professorat i alumnat](us-ia-professorat-i-alumnat.md): criteri únic sobre ús assistit per IA
+- [Recursos d'aula](04_materials/index.md): peces derivades de suport
 
 ## Annexos útils
 
@@ -53,8 +72,8 @@ Estos documents aporten detall, però no han de competir amb este centre executa
 - si `R2` no és reproduïble, no s'obri `R3`
 - si `R3` no deixa persistència i arquitectura explicables, no s'obri `R4`
 - si `R4` no està documentat ni provat, no s'avança cap a `R5`
-- si la integració final no és verificable, es retalla abast abans de la defensa
+- si la integració final no és verificable, es retalla abast abans de la defensa tècnica
 
 ## Criteri de tancament
 
-El curs queda executable quan el producte final és recognoscible, el repositori mostra procés real, les evidències expliquen el treball i l'alumnat pot defensar decisions tècniques pròpies amb ús d'IA verificable.
+El curs queda executable quan el producte final és recognoscible, el calendari permet tancar `R1-R5` dins de dues avaluacions, els checkpoints diferencien pas real de pas aparent i la defensa tècnica es pot preparar sense carregar el tram final amb treball no tancat.

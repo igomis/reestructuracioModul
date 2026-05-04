@@ -1,5 +1,9 @@
 # Index de programacio del modul
 
+## Classificació documental
+
+Este és un **document derivat**. Depén principalment de [curs-executable.md](../curs-executable.md) i de la família canònica [projecte base + reptes](../05_projectes_tecnics/enunciat_projecte_base.md).
+
 ## Que conté este bloc
 
 Este bloc reuneix la capa de planificacio docent del modul: implantacio general, calendaritzacio, sequenciacio de sessions, programacio per reptes, kits de pilotatge i documents de preparacio abans de l'inici de curs.
