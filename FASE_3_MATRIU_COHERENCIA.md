@@ -17,12 +17,13 @@ S'ha creat `docs/matriu-coherencia-curricular-dwes.md` com a **document canònic
 - `RA2`, `RA3`, `RA4` -> `Repte 2`
 - `RA5`, `RA6`, `RA8` -> `Repte 3`
 - `RA7` -> `Repte 4`
-- `RA9` -> `Repte 5`
+- `Repte 5` -> tancament transversal amb focus principal en `RA7`, projecció aplicada de `RA8` i suport eventual de `RA6`
 
 Cobertures de suport:
 
 - `RA6` reapareix com a suport en `Repte 4` i eventualment en `Repte 5`
 - `RA7` es reactiva en `Repte 5` quan el servei propi participa en la integració
+- `RA8` només reapareix en `Repte 5` si la integració impacta en fluxos dinàmics o respostes del backend
 - el projecte base i la defensa tècnica travessen tota la seqüència
 
 ## Evidències principals per repte
@@ -53,7 +54,7 @@ Cobertures de suport:
 ## Buits detectats
 
 - `RA8` queda molt concentrat en `R3`
-- `RA6` pot menjar-se el focus de `RA7` o `RA9` si no es controla
+- `RA6` pot menjar-se el focus de `RA7` en `R4` o el caràcter transversal de `R5` si no es controla
 - la verificació real de l'ús assistit per IA continua depenent molt de l'execució docent dels checkpoints
 
 ## Ajustos mínims fets en documents existents
@@ -62,3 +63,13 @@ Cobertures de suport:
 - s'ha afegit la matriu curricular als documents canònics d'avaluació
 - s'ha afegit la matriu a la navegació principal
 - s'ha reforçat `Repte 3` perquè la cobertura de `RA8` quede més visible a la Fase 3
+
+## Correcció curricular aplicada
+
+- s'ha eliminat el resultat d'aprenentatge inexistent que s'havia atribuït a `Repte 5`; la matriu queda ajustada a `RA1-RA8`
+- s'ha reubicat curricularment `Repte 5` com a tancament transversal, no com a `RA` autònom
+- s'ha justificat `Repte 5` sobretot des de `RA7`, amb projecció aplicada de `RA8` i suport eventual de `RA6`
+
+## Impacte sobre el paper de Repte 5 dins del mòdul
+
+`Repte 5` deixa de llegir-se com una peça nuclear independent i passa a actuar com a comprovació final d'interoperabilitat, integració i criteri tècnic sobre el backend ja construït. Això el fa més rigorós curricularment i evita inventar cobertura que la programació real del mòdul no té.

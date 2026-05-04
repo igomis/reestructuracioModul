@@ -46,13 +46,13 @@ En el Repte 5, el sistema aprén a consumir, integrar, transformar i reaprofitar
 
 ## 2. Relació amb resultats d’aprenentatge
 
-**Resultat d’aprenentatge principal**
+**Lectura curricular principal**
 
-- **RA9**: desenvolupament d’aplicacions web híbrides seleccionant i utilitzant tecnologies, frameworks servidor i repositoris heterogenis d’informació
+- **RA7**: cobertura principal quan el repte reutilitza, orquestra o amplia serveis web propis i externs dins d'una integració real
 
 **Resultats d’aprenentatge de suport integrat**
 
-- **RA7**: només com a base del servei propi ja construït, si el projecte el reutilitza en la integració
+- **RA8**: quan la integració afecta fluxos del backend, respostes generades o comportaments dinàmics visibles dins de l'aplicació
 - **RA6**: només quan calga guardar, transformar o reutilitzar dades procedents de fonts externes dins del sistema
 
 **Justificació curricular**
@@ -62,6 +62,8 @@ Este repte permet passar d’un sistema que ja té lògica pròpia, persistènci
 La dificultat no està sols en connectar-se a una font externa, sinó en decidir què aporta realment, com es transforma i com s’integra dins del producte.
 
 En este punt del curs, el repte reutilitza l'API publicada i consumida al Repte 4, posa a prova la robustesa real del backend més enllà del seu ús intern i permet usar `n8n` o una eina equivalent d'orquestració, automatització o integració si s'ajusta millor al cas d'ús.
+
+Per això, curricularment no s'ha de llegir com un resultat d'aprenentatge nou del mòdul, sinó com una peça de tancament transversal: consolida sobretot `RA7` i només activa `RA8` o `RA6` quan la integració afecta respostes dinàmiques o persistència real.
 
 És compatible amb `Laravel`, `Symfony` i `NestJS` i manté el criteri del repositori: canvien les eines concretes, però no els objectius, les evidències ni la verificació exigida. Quan es treballe `FastAPI`, s'ha d'entendre com a via avançada o excepcional, no com a itinerari base general.
 
@@ -129,7 +131,8 @@ Mòdul o funcionalitat híbrida integrada en el sistema, amb:
 
 **Criteris d’avaluació principals del nucli**
 
-- CA de **RA9** vinculats a reutilització de codi i informació, integració de fonts externes, creació d’aplicacions híbrides, verificació i documentació
+- CA de **RA7** vinculats a consum, orquestració o reutilització crítica de serveis dins d'un flux funcional real
+- CA de suport de **RA8** quan la integració impacta en respostes del backend o fluxos dinàmics visibles
 - CA de suport de **RA6** només si la integració exigix guardar, transformar o reutilitzar dades dins del sistema
 
 **Evidències obligatòries del nucli**
@@ -189,13 +192,13 @@ Sense una selecció crítica de la font externa, el repte corre el risc de conve
 
 **CA coberts**
 
-- **RA9.a**
-- **RA9.b**
+- **RA7** aplicat al consum i integració de serveis
+- **RA8** només si la integració afecta fluxos dinàmics del backend
 
 **Descripció dels CA en llenguatge docent**
 
-- L’alumnat reconeix els avantatges de reutilitzar codi i informació procedent d’altres serveis o repositoris.
-- L’alumnat identifica tecnologies, frameworks o fonts aplicables a una integració híbrida.
+- L’alumnat justifica per què una font o servei extern té sentit dins del producte i no queda com una connexió ornamental.
+- L’alumnat identifica com la integració reutilitza o amplia serveis del backend sense perdre control tècnic del flux.
 
 **Paper de la IA**
 
@@ -260,8 +263,8 @@ Este microprojecte és el punt on la integració deixa de ser disseny i passa a 
 
 **CA coberts**
 
-- **RA9.c**
-- **RA9.f**
+- **RA7** aplicat al consum real de serveis externs
+- **RA6** només si la integració exigix tractament o persistència de dades
 
 **Descripció dels CA en llenguatge docent**
 
@@ -332,8 +335,8 @@ L’equip implementa una capa de transformació, mapping o tractament que permet
 
 **CA coberts**
 
-- **RA9.d**
-- **RA9.e**
+- **RA7** aplicat a l'orquestració i reutilització de serveis
+- **RA8** només si la transformació afecta fluxos o respostes del backend
 
 **Descripció dels CA en llenguatge docent**
 
@@ -403,8 +406,8 @@ Sense esta integració final, el repte podria quedar com una prova aïllada sens
 
 **CA coberts**
 
-- **RA9.e**
-- **RA9.f**
+- **RA7** aplicat a la integració funcional dins del producte
+- **RA8** només si la integració modifica comportaments dinàmics visibles
 
 **Descripció dels CA en llenguatge docent**
 
@@ -476,8 +479,8 @@ Este microprojecte consolida la integració i deixa rastre tècnic suficient per
 
 **CA coberts**
 
-- **RA9.g**
-- **RA9.h**
+- **RA7** aplicat a prova i verificació del flux integrat
+- **RA6** o **RA8** només si apareixen en la persistència o en la resposta generada
 
 **Descripció dels CA en llenguatge docent**
 
@@ -527,11 +530,11 @@ Rúbrica de prova i documentació del flux híbrid.
 
 | Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
 |---|---|---|---|---|---|---|
-| MP1 | Investigació / decisió tècnica | Selecció de fonts externes i disseny del flux | RA9.a, RA9.b | comparativa, esquema, defensa | rúbrica | 15% |
-| MP2 | Procedimental | Connector o consum real de font externa | RA9.c, RA9.f | connector, dades reals, demo, error | rúbrica | 20% |
-| MP3 | Procedimental | Transformació, mapping i valor afegit | RA9.d, RA9.e | transformació observable, mapping, demo | rúbrica | 25% |
-| MP4 | Procedimental | Funcionalitat híbrida integrada | RA9.e, RA9.f | demo completa, integració, commits | rúbrica | 20% |
-| MP5 | Tancament / verificació | Proves i documentació del flux híbrid | RA9.g, RA9.h | proves, errors, documentació, defensa | rúbrica | 20% |
+| MP1 | Investigació / decisió tècnica | Selecció de fonts externes i disseny del flux | focus en `RA7`; suport eventual de `RA8` | comparativa, esquema, defensa | rúbrica | 15% |
+| MP2 | Procedimental | Connector o consum real de font externa | focus en `RA7`; suport eventual de `RA6` | connector, dades reals, demo, error | rúbrica | 20% |
+| MP3 | Procedimental | Transformació, mapping i valor afegit | focus en `RA7`; suport eventual de `RA8` | transformació observable, mapping, demo | rúbrica | 25% |
+| MP4 | Procedimental | Funcionalitat híbrida integrada | focus en `RA7`; suport eventual de `RA8` | demo completa, integració, commits | rúbrica | 20% |
+| MP5 | Tancament / verificació | Proves i documentació del flux híbrid | focus en `RA7`; suport eventual de `RA6/RA8` | proves, errors, documentació, defensa | rúbrica | 20% |
 
 ---
 
@@ -659,10 +662,10 @@ Es pot implementar amb l’stack triat pel projecte o departament, sempre que pe
 
 **Recuperació o reforç per CA**
 
-- si fallen CA de **RA9.a** o **RA9.b**: nova selecció i justificació de la font externa
-- si fallen CA de **RA9.c** o **RA9.f**: correcció del connector i nova demo del consum
-- si fallen CA de **RA9.d** o **RA9.e**: revisió del mapping i de la funcionalitat híbrida integrada
-- si fallen CA de **RA9.g** o **RA9.h**: nova prova guiada, documentació i defensa tècnica
+- si falla la justificació inicial del focus de `RA7`: nova selecció i justificació de la font externa
+- si falla el consum o l'orquestració del servei: correcció del connector i nova demo del flux
+- si falla la transformació o la integració visible: revisió del mapping i de la funcionalitat híbrida integrada
+- si falla la prova o la defensa tècnica: nova prova guiada, documentació i defensa tècnica
 
 ---
 
@@ -685,4 +688,4 @@ El repte es considera superat quan:
 
 **Observacions docents**
 
-Este repte s’ha de llegir principalment com a desplegament de **RA9**. No hauria de convertir-se ni en una repetició del Repte 4 ni en una simple demostració de consum d’APIs externes sense valor de producte.
+Este repte s’ha de llegir principalment com a tancament transversal amb focus en **RA7**. No hauria de convertir-se ni en una repetició del Repte 4 ni en una simple demostració de consum d’APIs externes sense valor de producte.
