@@ -3,8 +3,8 @@
 ## Fitxa canònica del repte
 
 - **Objectiu**: reconstruir el projecte en framework i deixar persistència real amb fluxos end-to-end verificables.
-- **Producte esperat**: aplicació arrancable en framework amb Docker, base de dades real, migracions, seeders, validació, proves mínimes i almenys dos fluxos funcionals.
-- **Evidències**: casos d'ús end-to-end, model de dades, migracions, seeders, README d'arrencada, proves i traçabilitat de decisions.
+- **Producte esperat**: aplicació arrancable en framework amb Docker, base de dades real, migracions, seeders, validació, proves mínimes i almenys dos fluxos funcionals, amb almenys un flux **server-rendered**.
+- **Evidències**: casos d'ús end-to-end, model de dades, migracions, seeders, README d'arrencada, proves, almenys una resposta HTML renderitzada en servidor i traçabilitat de decisions.
 - **Paper de la IA**: ús assistit per IA permés per modelat, migracions, proves i revisió d'estructura; els límits i la delegació excessiva depenen de [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md).
 - **Relació amb el projecte base**: professionalitza la base comuna de `R2` i obri el contrast d'itineraris sobre el mateix projecte base.
 

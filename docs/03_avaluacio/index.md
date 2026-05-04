@@ -19,6 +19,7 @@ El material específic de pilotatge i feedback històric s'ha mogut a l'[arxiu](
 
 ## Documents canònics
 
+- [Matriu de coherència curricular del mòdul](../matriu-coherencia-curricular-dwes.md)
 - [Sistema d'evidències](sistema_evidencies.md)
 - [Rúbrica base dels reptes](rubrica_base_reptes.md)
 - [Rúbrica de defensa tècnica](rubrica_defensa_tecnica.md)
@@ -47,3 +48,4 @@ El material específic de pilotatge i feedback històric s'ha mogut a l'[arxiu](
 - per verificar autoria i defensa: [rúbrica de defensa tècnica](rubrica_defensa_tecnica.md)
 - per controlar evidències i checkpoints: [sistema d'evidències](sistema_evidencies.md) i [instruments de seguiment](instruments_seguiment_docent.md)
 - per resoldre dubtes sobre ús assistit per IA, delegació excessiva i verificació docent: [document canònic d'IA](../us-ia-professorat-i-alumnat.md)
+- per revisar cobertura real dels resultats d'aprenentatge del mòdul: [matriu curricular](../matriu-coherencia-curricular-dwes.md)

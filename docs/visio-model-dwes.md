@@ -41,6 +41,7 @@ El curs avança sobre una seqüència única:
 - [Projecte backend base](05_projectes_tecnics/projecte_base_backend.md): regula la base tècnica comuna i la comparabilitat entre itineraris.
 - [Reptes 1-5](02_reptes/repte_01_kickoff_backend.md): regulen el desplegament progressiu del projecte per reptes.
 - [Avaluació i evidències](03_avaluacio/index.md): regula què s'acredita i amb quins instruments.
+- [Matriu de coherència curricular del mòdul](matriu-coherencia-curricular-dwes.md): relaciona resultats d'aprenentatge, reptes, evidències i instruments.
 - [Ús de la IA per a professorat i alumnat](us-ia-professorat-i-alumnat.md): regula l'ús assistit per IA i la delegació excessiva.
 - [Recursos d'aula](04_materials/index.md): centralitza la biblioteca derivada de suport.
 - [Alumnat](alumnat/index.md): és la porta canònica orientada a l'estudiantat.
