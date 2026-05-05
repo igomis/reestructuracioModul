@@ -4,8 +4,8 @@
 
 - **Funció didàctica principal**: iniciació / arranque.
 - **Objectiu**: deixar arrencat el projecte base amb entorn executable, traçabilitat, punt d'entrada funcional i decisió tècnica inicial.
-- **Producte esperat**: backend inicial funcional, executable en local, amb Docker, README i primera peça real del producte.
-- **Evidències**: repositori traçable, README executable, issue mare, commit rellevant comentat, execució real, ADR o justificació tècnica breu i mini defensa de kickoff.
+- **Producte esperat**: backend inicial funcional, executable en local, amb Docker, README, documentació en repositori i primera peça real del producte.
+- **Evidències**: repositori traçable, README executable, documentació del repte enllaçada, issue mare, commit rellevant comentat, execució real, ADR o justificació tècnica breu i mini defensa de kickoff.
 - **Paper de la IA**: ús assistit per IA permés per configuració, comparativa i depuració inicial; els límits i la delegació excessiva depenen de [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md).
 - **Relació amb el projecte base**: este repte obri el projecte base i fixa la seua base metodològica, tècnica i documental.
 - **Checkpoint de control**: arrencada reproduïble amb lectura del `README`, justificació del stack triat i microcanvi tècnic simple sobre l'entorn.
@@ -35,6 +35,7 @@ Una primera versió funcional i verificable del servei backend, amb:
 - servidor web, servei de base de dades i phpMyAdmin incorporats en l'entorn inicial
 - punt d’entrada funcional simple
 - README tècnic executable
+- documentació del repte dins del repositori i enllaçada des d'un índex o pàgina visible
 - justificació tècnica breu
 - registre d'una decisió tècnica menuda i d'una incidència, dubte o bloqueig real
 - traçabilitat de treball amb issues i commits
@@ -163,7 +164,8 @@ Backend inicial funcional amb:
 > - Cada microprojecte ha de generar almenys una evidència verificable.
 > - El mínim funcional del repte no obliga a incloure formulari, validació ni persistència.
 > - Estos elements poden aparéixer com a ampliació opcional o com a pas natural del Repte 2.
-> - En la concreció docent d’aula, cada microrepte es resol en una sessió base de `3` hores.
+> - Els microreptes són unitats de progrés, no unitats fixes de temps docent.
+> - En la concreció docent d’aula, els `4` microreptes es compacten en `2` sessions principals de treball i una tercera sessió opcional de checkpoint o defensa formal.
 
 ### Microrepte MP1 — Model client/servidor i elecció guiada de stack
 
@@ -446,6 +448,9 @@ L’equip:
 - completa la justificació tècnica o ADR curt
 - registra incidències inicials i com les ha resoltes
 - documenta l’arrancada i la validació mínima fetes
+- crea un directori de documentació dins del repositori
+- penja les fitxes o documents del repte al repositori
+- crea una pàgina o índex visible que enllace eixa documentació
 - prepara una defensa tècnica breu
 
 **Relació amb el producte principal**
@@ -473,6 +478,9 @@ La IA pot ajudar a polir el text del README o de la justificació tècnica, per�
 - justificació tècnica final o ADR curt
 - registre d’incidències inicials i correccions
 - evidència de validació tècnica mínima
+- directori de documentació en el repositori
+- fitxes o documents del repte incorporats al repositori
+- pàgina o índex visible que enllaça la documentació del repte
 - defensa oral
 - AI log si n’hi ha hagut ús
 
@@ -512,16 +520,17 @@ Rúbrica de defensa tècnica + checklist de documentació.
 | MP1 | Investigació / decisió tècnica | Fitxa breu d’exploració tècnica + decisió orientativa | RA1b, RA1c, RA1g | Fitxa, dubtes detectats, posada en comú | Rúbrica | 20% |
 | MP2 | Procedimental | Repositori executable amb Docker i estructura base | RA1c, RA1d, RA1e, RA1f | Repo, Docker, README, issues, commits, prova d’arrancada | Checklist + revisió | 35% |
 | MP3 | Procedimental | Punt d’entrada funcional simple | RA1b, RA1e, RA1f | Demo funcional, logs o captures, evidència d’execució | Rúbrica | 25% |
-| MP4 | Tancament / verificació | README final + justificació tècnica + defensa | RA1d, RA1g | Documentació, validació, defensa, AI log | Rúbrica + checklist | 20% |
+| MP4 | Tancament / verificació | README final + documentació en repositori + justificació tècnica + defensa | RA1d, RA1g | Documentació, validació, defensa, AI log | Rúbrica + checklist | 20% |
 
 ### 6.1 Coordinació docent amb sessions de `3` hores
 
-| Sessió | Duració | Microrepte | Focus docent | Producte o evidència clau |
+El Repte 1 es compon de `4` microreptes, però la seua execució docent es compacta en `2` sessions principals de treball i una tercera sessió opcional de checkpoint o defensa.
+
+| Sessió | Duració | Microreptes | Focus docent | Producte o evidència clau |
 |---|---:|---|---|---|
-| `1` | `3h` | MP1 | model client/servidor i decisió tècnica guiada | fitxa breu + decisió orientativa + dubtes |
-| `2` | `3h` | MP2 | base executable mínima adaptada i completada amb BBDD i phpMyAdmin | projecte arrancant + serveis definits + `README` inicial + decisió/incidència |
-| `3` | `3h` | MP3 | primer punt d’entrada funcional del backend | ruta, vista, `endpoint` o `healthcheck` funcional |
-| `4` | `3h` | MP4 | documentació tècnica, verificació i checkpoint | README executable + defensa breu + pas cap a `R2` |
+| `1` | `3h` | MP1 + inici MP2 | model client/servidor, decisió inicial i arrencada de l'entorn | fitxa breu + decisió orientativa + base mínima iniciada |
+| `2` | `3h` | tancament MP2 + MP3 + MP4 | entorn complet, primer punt d'entrada funcional i documentació | projecte arrancant + punt funcional + README + documentació en repositori |
+| `3` | opcional | checkpoint formal | defensa, execució real i revisió de traçabilitat | defensa tècnica o acta de checkpoint |
 
 ---
 
@@ -538,6 +547,9 @@ Rúbrica de defensa tècnica + checklist de documentació.
 - projecte executable amb Docker
 - base de dades i phpMyAdmin incorporats a l'entorn inicial quan corresponga al `MP2`
 - primera peça funcional simple del producte
+- directori de documentació dins del repositori
+- fitxes o documents del repte incorporats al repositori
+- índex o pàgina visible que enllaça la documentació
 - prova funcional registrada
 - explicació del paper de cada servei, decisió tècnica menuda i incidència o dubte real
 - defensa tècnica breu
@@ -616,7 +628,7 @@ Rúbrica de defensa tècnica + checklist de documentació.
 
 **Duració orientativa**
 
-`12` hores de base, organitzades en `4` sessions de `3` hores.
+`6` hores de base, organitzades en `2` sessions principals de `3` hores. Es pot afegir una tercera sessió opcional de `3` hores si cal una defensa o checkpoint formal més pausat.
 
 **Moment del curs**
 

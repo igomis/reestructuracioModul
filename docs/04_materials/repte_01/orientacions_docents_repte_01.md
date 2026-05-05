@@ -6,9 +6,10 @@ Esta guia reunix els missatges docents que convé remarcar durant `R1` perquè e
 
 ## Marc temporal que convé fer explícit
 
-- `R1` està calibrat com a proposta base de `12` hores.
-- Això equival a `4` sessions de `3` hores.
-- Cada sessió es correspon amb un microrepte docent concret.
+- `R1` manté `4` microreptes com a passos lògics.
+- La proposta base d'aula és de `6` hores: `2` sessions principals de `3` hores.
+- Pot activar-se una tercera sessió opcional si cal defensa, checkpoint formal o revisió forta d'evidències.
+- Els microreptes no equivalen necessàriament a sessions separades.
 
 ## Missatges clau que convé repetir en aula
 
@@ -18,6 +19,7 @@ Esta guia reunix els missatges docents que convé remarcar durant `R1` perquè e
 - La seqüència del repte és curta i tancada: model client/servidor, entorn executable, primer punt d'entrada funcional i checkpoint.
 - Entorn executable vol dir que el projecte arranca de veritat, es pot provar i una altra persona pot reproduir els passos bàsics.
 - El `README` forma part del producte del repte. Si no explica què has posat en marxa i com provar-ho, el repte està incomplet.
+- Les fitxes i documents del repte han de quedar dins del repositori, en un directori de documentació enllaçat des d'un índex o pàgina visible.
 - Una primera funcionalitat real no és una maqueta ni un `hello world`. Ha de tindre relació amb el domini i deixar veure una interacció útil.
 - La IA pot ajudar a explorar, revisar o proposar codi, però no pot substituir la comprensió ni la defensa del flux construït.
 
@@ -44,6 +46,7 @@ Esta guia reunix els missatges docents que convé remarcar durant `R1` perquè e
 - Què aixeca `Docker`, què executa `PHP` i què aporta el servidor web?
 - Quin és el primer punt d'entrada funcional que ja pots ensenyar?
 - Com arranca el projecte una altra persona només amb el `README`?
+- On està la documentació del repte dins del repositori i com s'hi arriba?
 - Quin serà el primer flux que voldràs protegir després en `R2`?
 
 ## Què s'ha de poder defendre al final de `R1`
@@ -52,9 +55,9 @@ Esta guia reunix els missatges docents que convé remarcar durant `R1` perquè e
 - com arranca el projecte i què necessita una altra persona per provar-lo
 - quin és el primer punt d'entrada funcional que ja funciona
 - quin paper juguen `Docker`, `PHP` i el servidor web en l'arrencada
-- com està documentada la base tècnica del repte
+- com està documentada la base tècnica del repte dins del repositori
 - què ha ajudat a resoldre la IA, si s'ha usada, i com s'ha verificat
 
 ## Criteri docent de tancament
 
-Si el grup encara només pot ensenyar infraestructura, encara no ha tancat `R1`. Si pot ensenyar una decisió tècnica guiada, un entorn executable, un primer punt d'entrada funcional del backend i un `README` que permet repetir la prova, el repte ja queda ben encarat per passar a `R2`.
+Si el grup encara només pot ensenyar infraestructura, encara no ha tancat `R1`. Si pot ensenyar una decisió tècnica guiada, un entorn executable, un primer punt d'entrada funcional del backend, un `README` que permet repetir la prova i documentació del repte localitzable dins del repositori, el repte ja queda ben encarat per passar a `R2`.

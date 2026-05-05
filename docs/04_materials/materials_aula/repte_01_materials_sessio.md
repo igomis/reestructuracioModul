@@ -2,50 +2,38 @@
 
 ## Finalitat del document
 
-Contextualitzar les plantilles d'aula del curs per al `R1` amb una seqüència curta i realista de `4` sessions de `3` hores, una per microrepte.
+Contextualitzar les plantilles d'aula del curs per al `R1` amb `4` microreptes com a passos lògics, compactats en `2` sessions principals de `3` hores i una tercera sessió opcional de defensa o checkpoint formal.
 
 ## Seqüència base del repte
 
-- Sessió `1` -> Microrepte `1`: model client/servidor i elecció guiada de stack
-- Sessió `2` -> Microrepte `2`: base executable amb Docker, PHP, servidor web, BBDD i phpMyAdmin
-- Sessió `3` -> Microrepte `3`: primer punt d'entrada funcional del backend
-- Sessió `4` -> Microrepte `4`: documentació tècnica, verificació i checkpoint
+- Sessió `1` -> Microrepte `1` + inici del Microrepte `2`: model client/servidor, decisió inicial i arrencada de l'entorn
+- Sessió `2` -> tancament del Microrepte `2` + Microrepte `3` + Microrepte `4`: entorn complet, punt d'entrada funcional i documentació del repte
+- Sessió `3` opcional -> defensa tècnica, execució seguint README, revisió de traçabilitat o microcanvis en viu
 
 ## Mini-briefings de les sessions clau
 
-### Sessió 1. Microrepte 1
+### Sessió 1. Microrepte 1 + inici del Microrepte 2
 
-- Objectiu de la sessió: entendre què fa el servidor dins del producte i fixar una base tècnica guiada.
-- Què s'espera al final: [fitxa breu d'exploració tècnica inicial](../../08_materials_compartibles/fitxa_exploracio_tecnica_inicial.md), decisió tècnica orientativa i explicació clara del model client/servidor.
+- Objectiu de la sessió: entendre què fa el servidor dins del producte, fixar una base tècnica guiada i iniciar l'entorn executable.
+- Què s'espera al final: [fitxa breu d'exploració tècnica inicial](../../08_materials_compartibles/fitxa_exploracio_tecnica_inicial.md), decisió tècnica orientativa, estructura mínima del projecte i primeres proves d'arrencada.
 - Error habitual a evitar: convertir la sessió en un debat genèric de tecnologies sense impacte real en el producte.
-- Evidència mínima del dia: fitxa breu d'exploració tècnica inicial amb criteri tècnic visible.
-- Tancament possible: al final de la sessió o entre la sessió `1` i la `2`.
-- Pregunta de tancament: quin paper jugarà el servidor en el vostre producte i per què esta base és assumible?
+- Evidència mínima del dia: fitxa breu amb criteri tècnic visible i base mínima de projecte començada.
+- Pregunta de tancament: quin paper jugarà el servidor en el vostre producte, amb quina base començareu i què heu arribat a muntar?
 
-### Sessió 2. Microrepte 2
+### Sessió 2. Tancament del Microrepte 2 + Microreptes 3 i 4
 
-- Obertura possible: posada en comú breu de les fitxes d'exploració tècnica inicial abans d'entrar en l'entorn executable.
-- Objectiu de la sessió: adaptar el model mínim del professorat i completar-lo amb BBDD i phpMyAdmin.
-- Què s'espera al final: projecte arrancant, serveis mínims definits, `README` inicial i una decisió o incidència registrada.
+- Obertura possible: repàs del que falta per tancar l'entorn executable.
+- Objectiu de la sessió: acabar l'entorn, crear el primer punt d'entrada funcional i deixar documentació útil dins del repositori.
+- Què s'espera al final: projecte arrancant, serveis mínims definits, primera funcionalitat mínima, `README`, documentació en repositori i una decisió o incidència registrada.
 - Error habitual a evitar: copiar la demo del professorat sense adaptar-la ni saber explicar què fa cada servei.
-- Evidència mínima del dia: arrencada reproduïble, serveis de BBDD i phpMyAdmin incorporats i instruccions mínimes d'ús.
-- Pregunta de tancament: què has adaptat respecte del model, què aixeca cada servei i com comproves que funciona?
+- Evidència mínima del dia: arrencada reproduïble, BBDD i phpMyAdmin incorporats si cal, punt d'entrada funcional i documentació enllaçada.
+- Pregunta de tancament: què has adaptat, què funciona de veritat, on està documentat i com ho comproves?
 
-### Sessió 3. Microrepte 3
+### Sessió 3 opcional. Defensa / checkpoint formal
 
-- Objectiu de la sessió: deixar un primer punt d'entrada funcional del backend.
-- Què s'espera al final: ruta, vista, `endpoint` o `healthcheck` simple però funcional.
-- Error habitual a evitar: quedar-se en esquelet, plantilla o text estàtic sense comportament de backend.
-- Evidència mínima del dia: resposta real del sistema en execució.
-- Pregunta de tancament: què pot ensenyar ja el backend que no siga només infraestructura?
-
-### Sessió 4. Microrepte 4
-
-- Objectiu de la sessió: tancar `R1` amb documentació usable, verificació i checkpoint.
-- Què s'espera al final: `README` executable, defensa breu i pas justificat cap a `R2`.
-- Error habitual a evitar: tindre el projecte arrancat però no saber explicar-lo ni reproduir-lo.
-- Evidència mínima del dia: demostració seguint el `README` i explicació del flux que s'obrirà en `R2`.
-- Pregunta de tancament: què queda prou sòlid per continuar el projecte sense tornar a començar?
+- S'activa si cal separar la defensa tècnica o la revisió forta d'evidències del treball de construcció.
+- Pot incloure execució real seguint el `README`, revisió de commits, contrast de comprensió i microcanvis en viu.
+- No afegix un cinqué microrepte: només acredita amb més calma el tancament de `R1`.
 
 ## Checkpoints curts específics
 
@@ -110,9 +98,9 @@ Contextualitzar les plantilles d'aula del curs per al `R1` amb una seqüència c
 ### Full 4. Documentació i checkpoint
 
 - Objectiu: deixar `R1` documentat, verificat i preparat per a `R2`.
-- Tasca: revisar `README`, comprovar arrencada, preparar defensa curta i explicar el pas següent.
-- Evidència a generar: demo curta i `README` executable.
-- Validació mínima: el producte es pot arrancar i explicar sense ajuda externa.
+- Tasca: revisar `README`, comprovar arrencada, preparar defensa curta, crear directori de documentació, penjar les fitxes o documents del repte i explicar el pas següent.
+- Evidència a generar: demo curta, `README` executable i documentació del repte enllaçada dins del repositori.
+- Validació mínima: el producte es pot arrancar i explicar sense ajuda externa, i la documentació es pot localitzar des d'un índex o pàgina visible.
 - Ajuda si et bloqueges: retalla text i centra't en els passos reals de reproducció.
 - Ampliació si acabes prompte: afina millor onboarding o checklist de comprovació.
 
@@ -131,10 +119,9 @@ Contextualitzar les plantilles d'aula del curs per al `R1` amb una seqüència c
 
 ## Evidència mínima per sessió
 
-- Sessió `1`: fitxa breu d'exploració tècnica inicial, criteri tècnic i explicació client/servidor.
-- Sessió `2`: projecte arrancant, BBDD i phpMyAdmin incorporats, `README` inicial usable i decisió/incidència registrada.
-- Sessió `3`: punt d'entrada funcional del backend.
-- Sessió `4`: documentació, verificació i checkpoint de pas.
+- Sessió `1`: fitxa breu d'exploració tècnica inicial, criteri tècnic, explicació client/servidor i inici d'entorn executable.
+- Sessió `2`: projecte arrancant, BBDD i phpMyAdmin incorporats si cal, punt d'entrada funcional, `README`, documentació en repositori i decisió/incidència registrada.
+- Sessió `3` opcional: defensa tècnica, execució real seguint `README`, revisió de traçabilitat o microcanvi en viu.
 
 ## Connexió amb el repte següent
 

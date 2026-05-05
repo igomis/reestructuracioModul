@@ -12,6 +12,8 @@ Esta comprovació curta servix per decidir si la base inicial del curs ja és pr
 - adaptació pròpia respecte del model mínim del professorat
 - decisió tècnica curta i incidència, dubte o bloqueig real
 - primer punt d'entrada funcional del backend
+- directori de documentació amb les fitxes o documents del repte
+- pàgina o índex visible que enllaça la documentació
 - idea clara de quina operació del domini protegiràs en `R2`
 
 ## Com es verifica en `2-3` minuts
@@ -21,6 +23,7 @@ Esta comprovació curta servix per decidir si la base inicial del curs ja és pr
 - mostra el punt d'entrada funcional
 - explica què fa cada component tècnic principal
 - explica què has adaptat i com comproves BBDD i phpMyAdmin
+- mostra on està la documentació del repte dins del repositori
 - explica quina serà la primera operació protegida del producte
 
 ## Senyals d'alerta
@@ -30,6 +33,7 @@ Esta comprovació curta servix per decidir si la base inicial del curs ja és pr
 - la base de dades o phpMyAdmin apareixen al fitxer però no es poden comprovar
 - la configuració és una còpia de la demo i no s'ha adaptat al projecte
 - no hi ha cap punt d'entrada funcional real
+- les fitxes del repte estan fora del repositori o no es poden localitzar des d'un índex
 - el grup no sap què passarà en `R2`
 
 ## Acció correctiva ràpida

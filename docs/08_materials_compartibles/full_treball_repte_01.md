@@ -11,6 +11,8 @@ Deixar obert el projecte amb una base executable i un primer punt d'entrada func
 - microrepte `3`: primer punt d'entrada funcional del backend
 - microrepte `4`: documentació tècnica, verificació i checkpoint
 
+Els microreptes són passos lògics del repte. En aula es treballen compactats en `2` sessions principals: la primera combina el microrepte `1` amb l'inici del `2`, i la segona tanca el `2` i resol el `3` i el `4`.
+
 ## Has de fer
 
 - explicar el paper del client i del servidor en el teu producte
@@ -22,6 +24,9 @@ Deixar obert el projecte amb una base executable i un primer punt d'entrada func
 - completar l'entorn amb servei de base de dades i phpMyAdmin
 - registrar una decisió tècnica menuda i una incidència, dubte o bloqueig real
 - crear una ruta, vista, `endpoint` o `healthcheck` simple però funcional
+- crear un directori de documentació dins del repositori
+- penjar les fitxes o documents del repte al repositori
+- crear un índex o pàgina visible que enllace eixa documentació
 - preparar una verificació curta i explicable del que ja funciona
 
 ## Evidència mínima
@@ -33,6 +38,8 @@ Deixar obert el projecte amb una base executable i un primer punt d'entrada func
 - explicació de què fa cada servei i què has adaptat respecte del model inicial
 - decisió tècnica curta i incidència o dubte registrat
 - primer punt d'entrada funcional del backend
+- directori de documentació amb fitxes o documents del repte
+- índex o pàgina que enllaça la documentació
 - justificació tècnica breu i traçabilitat mínima
 
 ## Com ho valides
@@ -43,6 +50,7 @@ Deixar obert el projecte amb una base executable i un primer punt d'entrada func
 - explica què fa `Docker`, què fa `PHP`, què fa el servidor web, què fa la base de dades i per a què uses phpMyAdmin
 - explica què has adaptat respecte del model del professorat
 - ensenya que el `README` permet repetir la prova
+- mostra on està la documentació del repte dins del repositori i com s'hi arriba
 
 ## Errors habituals
 
