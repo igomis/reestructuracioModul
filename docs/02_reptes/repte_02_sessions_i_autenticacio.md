@@ -87,6 +87,29 @@ Este repte no ha de començar directament per l’autenticació com si fora un b
 
 Per això, `R2` cobreix explícitament `RA2`: el flux ha de mostrar codi servidor integrat amb el llenguatge de marques, variables i àmbits, operadors, sentències simples, directives bàsiques i generació del document o resposta resultant des del servidor. Estos elements no són teoria prèvia separada: han d'aparéixer dins del cas d'ús funcional del projecte.
 
+**Progressió curricular del repte**
+
+La lectura docent del repte ha de ser seqüencial:
+
+- **RA2**: el sistema deixa de ser una pàgina estàtica i genera resposta en servidor amb `PHP`, variables, operadors, àmbits, directives i processament elemental.
+- **RA3**: el flux incorpora formularis, recuperació de dades, decisions, estructures i funcions que modifiquen el comportament del producte.
+- **RA4**: el projecte manté estat entre peticions, introdueix sessió o mecanisme equivalent, autentica usuaris i protegix una operació real.
+- **Preparació de RA5**: la refactorització final no avalua encara una arquitectura completa, però deixa visibles responsabilitats, duplicacions i peces que després s'hauran de separar millor en `R3`.
+
+Esta progressió evita dos errors habituals: començar directament pel login sense base de processament i confondre la sessió final amb una migració prematura a `MVC` o POO completa.
+
+**Traçabilitat mínima entre microprojectes, RA i verificació**
+
+| Microprojecte | RA principal | Evidència mínima | Verificació d'aprenentatge real |
+|---|---|---|---|
+| `MP1` | `RA2` + `RA3` | formulari o entrada equivalent amb recuperació de dades, error visible i reintent | execució en directe i explicació del recorregut de cada dada |
+| `MP2` | `RA2` | resposta generada en servidor amb variables, operadors, àmbits i conservació funcional simple | canvi menut en viu sobre processament o directiva i justificació de la persistència funcional |
+| `MP3` | `RA3` | regla de domini amb decisió, array o funció útil | microcanvi sobre una condició o funció i defensa del seu sentit dins del producte |
+| `MP4` | `RA4` | estat, sessió o cookies amb recuperació i invalidació | demo de recuperació i neteja, més pregunta sobre què es guarda i on |
+| `MP5` | `RA4` | autenticació funcional i operació de domini protegida | demo de cas permés i cas denegat amb explicació del punt de control |
+| `MP6` | `RA4` | bateria mínima de proves, incidències i documentació reproduïble | execució d'un cas triat pel professorat i contrast amb `README`, repositori i AI log |
+| `MP7` | `RA3` + `RA4` | refactorització amb fitxer comú, objecte simple, comparativa i prova de no regressió | revisió del diff, execució del flux i defensa de la millora de mantenibilitat |
+
 ---
 
 ## 3. Canvi metodològic que introdueix la IA
@@ -210,6 +233,26 @@ El que importa ací és:
 
 La conservació es pot resoldre amb mecanismes simples i controlats. La base de dades pot aparéixer si el projecte o el professorat ho demanen, però en este punt no és el focus principal del repte. Eixa professionalització metodològica i arquitectònica guanya pes en `R3`.
 
+En termes d'aula, la pregunta clau no és “quina base de dades heu usat?”, sinó “quina informació correcta continua sent útil, com es recupera, com es valida i per què eixe mecanisme és suficient en este moment del curs?”. Si la resposta es desplaça massa prompte cap a model de dades, migracions o arquitectura de persistència, eixe treball s'ha de reservar o reconnectar amb `R3`.
+
+### 4.2.1 Diferència entre identificació, autenticació, autorització, estat i sessió
+
+Per evitar confusions conceptuals, `R2` ha de fer visibles estes fronteres:
+
+- **Identificació**: l'usuari indica qui diu que és, per exemple mitjançant correu, nom d'usuari o identificador.
+- **Autenticació**: el sistema comprova eixa identitat amb un mecanisme verificable i crea o reconeix una sessió autenticada.
+- **Autorització**: el sistema decidix si un usuari autenticat pot executar una operació concreta segons una regla de domini, rol, permís o propietat del recurs.
+- **Estat**: informació temporal que permet continuar un flux entre peticions.
+- **Sessió**: mecanisme habitual per mantindre part d'eixe estat associat a un client des del servidor.
+
+Una operació protegida és defensable quan es pot assenyalar:
+
+- quina identitat s'ha declarat
+- com s'ha autenticat
+- quin estat o sessió queda actiu
+- quina comprovació permet o bloqueja l'operació
+- què passa si l'usuari no està autenticat, si la sessió és invàlida o si no té autorització funcional
+
 ### 4.3 Exemples de lectura del repte segons tipus de projecte
 
 - **Tenda o catàleg**: alta o edició d’un producte amb nom, preu, categoria i imatge; el flux valida, processa, guarda de manera funcional, aplica una regla bàsica i protegix una acció real del catàleg.
@@ -308,7 +351,7 @@ S’ha de veure amb claredat:
 
 **Paper de la IA**
 
-La IA pot suggerir l’estructura inicial del formulari o exemples de tractament bàsic, però l’alumnat ha de comprovar que la recuperació de dades és real i que entén el flux.
+La IA pot suggerir l’estructura inicial del formulari o exemples de tractament bàsic, però l’alumnat ha de comprovar que la recuperació de dades és real i que entén el flux. El control mínim és explicar el recorregut d'un camp concret des del formulari fins a la resposta del servidor i ajustar almenys una validació al cas de domini.
 
 **Evidències obligatòries**
 
@@ -404,7 +447,7 @@ També ha de deixar clar com la informació correcta es conserva de manera funci
 
 **Paper de la IA**
 
-La IA pot proposar fragments inicials, però l’alumnat ha de depurar-los, adaptar-los i explicar-los.
+La IA pot proposar fragments inicials, però l’alumnat ha de depurar-los, adaptar-los i explicar-los. Si proposa un mecanisme de conservació o tractament de fitxer, l'equip ha de justificar per què és suficient per a `R2` i per què no està convertint la persistència en el focus principal abans de `R3`.
 
 **Evidències obligatòries**
 
@@ -484,7 +527,7 @@ Este microprojecte convertix el tractament bàsic en una lògica més rica i mé
 
 **Paper de la IA**
 
-La IA pot suggerir exemples de decisions o funcions, però l’alumnat ha de justificar per què són necessàries dins del flux del repte.
+La IA pot suggerir exemples de decisions o funcions, però l’alumnat ha de justificar per què són necessàries dins del flux del repte. No val una funció generada que només embolcalla codi sense reduir duplicació, expressar una regla o millorar la comprensió del flux.
 
 **Evidències obligatòries**
 
@@ -565,7 +608,7 @@ Sense estat no hi ha base sòlida per entendre després l’autenticació ni per
 
 **Paper de la IA**
 
-La IA pot ajudar a recordar sintaxi o patrons, però l’alumnat ha d’explicar exactament què es guarda i amb quina finalitat.
+La IA pot ajudar a recordar sintaxi o patrons, però l’alumnat ha d’explicar exactament què es guarda i amb quina finalitat. També ha de poder distingir si el suggeriment de la IA parla d'estat, sessió, cookie, autenticació o autorització, perquè no són termes intercanviables.
 
 **Evidències obligatòries**
 
@@ -642,7 +685,7 @@ Este és el centre visible del repte: demostrar que el backend ja no sols rep i 
 
 **Paper de la IA**
 
-La IA pot suggerir esquelets o fluxos d’accés, però l’alumnat ha de validar-los i demostrar-los.
+La IA pot suggerir esquelets o fluxos d’accés, però l’alumnat ha de validar-los i demostrar-los. L'equip ha de separar en la seua explicació identificació, autenticació i autorització, i mostrar què passa quan l'usuari no té sessió vàlida o quan no complix la restricció de l'operació.
 
 **Evidències obligatòries**
 
@@ -653,6 +696,8 @@ La IA pot suggerir esquelets o fluxos d’accés, però l’alumnat ha de valida
 - dada o conjunt de dades reutilitzables dins del flux protegit
 - cas autoritzat
 - cas denegat
+- evidència d'accés no autenticat a l'operació protegida
+- evidència de sessió invàlida, caducada o tancada quan siga aplicable al flux
 - evidència de la restricció aplicada
 - commits associats
 
@@ -725,12 +770,13 @@ Este microprojecte consolida i documenta comprovacions que han d’haver anat ap
 
 **Paper de la IA**
 
-La IA pot ajudar a generar casos de prova o text documental, però l’alumnat ha de verificar que el que documenta és real.
+La IA pot ajudar a generar casos de prova, interpretar errors o redactar text documental, però l’alumnat ha de verificar que el que documenta és real. El registre ha d'indicar quins casos suggerits per la IA s'han acceptat, quins s'han descartat i quin resultat s'ha observat en executar-los.
 
 **Evidències obligatòries**
 
 - registre de proves mínimes
 - casos positius i negatius
+- bateria mínima amb cas vàlid, cas invàlid per validació, cas no autenticat, cas amb sessió caducada o estat invàlid i cas d'accés a operació protegida
 - incidències detectades
 - rastre de l’eina o entorn utilitzat per provar o depurar
 - evidència breu de reutilització de dades
@@ -757,6 +803,7 @@ Checklist de verificació + defensa tècnica.
 **Verificació del treball real**
 
 - execució dels casos documentats
+- execució d'un cas triat pel professorat, no només del cas preparat per l'equip
 - contrast entre documentació, repositori i demo
 - pregunta oral sobre què caldria reorganitzar en el Repte 3
 
@@ -813,7 +860,7 @@ Este microprojecte tanca `R2` amb un guany explícit de claredat i mantenibilita
 
 **Paper de la IA**
 
-La IA pot ajudar a detectar duplicació, suggerir extracció de funcions, proposar quan usar `include` o `require` o esbossar un objecte mínim del domini, però l’alumnat ha de decidir què canvia, verificar que el flux continua funcionant i justificar per què la nova versió és millor.
+La IA pot ajudar a detectar duplicació, suggerir extracció de funcions, proposar quan usar `include` o `require`, esbossar un objecte mínim del domini o millorar documentació tècnica, però l’alumnat ha de decidir què canvia, verificar que el flux continua funcionant i justificar per què la nova versió és millor. La decisió final ha d'estar basada en un problema real del codi inicial: duplicació, responsabilitat confusa, mescla excessiva de presentació i processament, noms poc clars o difícil reutilització.
 
 **Evidències obligatòries**
 
@@ -835,6 +882,7 @@ Rúbrica curta de refactorització i mantenibilitat.
 - la millora és real i no cosmètica
 - el flux continua viu després de la revisió
 - l’equip sap explicar què ha netejat i per què
+- la comparativa abans/després identifica un problema concret i una reducció de risc o complexitat
 - la sessió no s’ha convertit en una reescriptura total fora d’escala ni en un fals `R3`
 
 **Riscos habituals**
@@ -908,7 +956,17 @@ Rúbrica curta de refactorització i mantenibilitat.
 
 En `R2` no és suficient afirmar que el flux funciona. Cal deixar una prova visible i verificable del comportament real del sistema.
 
-La prova mínima hauria d’incloure, com a mínim:
+La prova mínima ha d’incloure, com a mínim, estos cinc casos obligatoris:
+
+| Cas obligatori | Què ha de demostrar |
+|---|---|
+| cas vàlid | el flux accepta dades correctes, processa la petició i executa l'operació prevista |
+| cas invàlid per validació | el servidor rebutja dades absents, mal formades o incoherents i permet corregir-les |
+| cas no autenticat | l'accés sense sessió vàlida a una part protegida queda bloquejat o redirigit de manera coherent |
+| cas amb sessió caducada o estat invàlid | el sistema no continua un flux quan l'estat ja no és vàlid i respon de manera controlada |
+| cas d'accés a operació protegida | l'operació del domini aplica la restricció definida, siga per rol, permís, propietat o regla funcional |
+
+A més d'eixa bateria mínima, la prova hauria d'incloure, quan corresponga:
 
 - enviament correcte del formulari o entrada equivalent
 - error de validació visible

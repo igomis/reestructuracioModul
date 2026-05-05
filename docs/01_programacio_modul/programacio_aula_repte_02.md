@@ -32,6 +32,46 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 | `6` | `3h` | `MP6` | prova, depuració, documentació mínima i checkpoint tècnic | checklist, README i demo reproduïble |
 | `7` | `3h` | `MP7` | refactorització final, organització en fitxers i primer objecte de domini | comparativa abans/després, reutilització en fitxers i justificació de la millora |
 
+## Correspondència curta sessió -> RA -> evidència -> verificació
+
+Esta taula és el mapa mínim de traçabilitat docent del repte. No substituïx la rúbrica ni les checklists, però ajuda a comprovar ràpidament que cada sessió deixa una evidència observable i una forma concreta de verificar aprenentatge real.
+
+| Sessió | RA principal | Què s'aprén | Evidència mínima | Verificació docent |
+|---|---|---|---|---|
+| `1` | `RA2` + `RA3` | entrada de dades, recuperació en servidor i validació visible | formulari o entrada equivalent amb error i reintent corregit | execució en directe i pregunta sobre d'on ix cada dada i com arriba al servidor |
+| `2` | `RA2` | generació de resposta, variables, operadors, àmbits i conservació funcional simple | dada correcta processada, guardada de manera simple i reutilitzada | canvi menut en viu sobre una variable, operador o directiva i justificació del mecanisme de conservació |
+| `3` | `RA3` | decisions, arrays, funcions i regles de domini aplicades | regla amb dos resultats observables i funció o estructura útil | microcanvi en una condició o funció i explicació de per què no és ornamental |
+| `4` | `RA4` | estat temporal, sessió, cookies i invalidació | recuperació d'estat i neteja o caducitat demostrada | execució de recuperació i invalidació, més pregunta sobre què queda en client, servidor o flux funcional |
+| `5` | `RA4` | identificació, autenticació, autorització i protecció d'una operació real | cas autenticat permés i cas no permés sobre una acció del domini | demo dels dos casos i pregunta sobre el punt exacte on es comprova la restricció |
+| `6` | `RA4` | prova, depuració, documentació i reproduïbilitat | taula mínima de proves, incidències i README actualitzat | execució d'un cas triat pel professorat i contrast amb documentació, codi i AI log |
+| `7` | `RA3` + `RA4` | refactorització funcional, mantenibilitat i preparació cap a `RA5` | comparativa abans/després, fitxer comú, objecte simple i prova de no regressió | revisió del diff, execució del flux i defensa de què millora ara i què queda per a `R3` |
+
+## Conceptes que han de quedar diferenciats
+
+Durant el repte convé usar estos termes amb precisió, especialment en les sessions `4`, `5` i `6`:
+
+- **Identificació**: l'usuari declara qui diu que és, per exemple amb un correu, nom d'usuari o identificador.
+- **Autenticació**: el sistema comprova que eixa identitat és vàlida, per exemple amb credencials, i crea o reconeix una sessió autenticada.
+- **Autorització**: el sistema decideix si un usuari ja autenticat pot executar una operació concreta segons rol, permís, propietat del recurs o regla de negoci.
+- **Estat**: informació temporal o contextual que permet continuar un flux entre peticions.
+- **Sessió**: mecanisme habitual per mantindre estat associat a un client des del servidor.
+
+No es considera suficient dir que una operació està “protegida” si només hi ha login. Cal veure quina identitat s'ha declarat, com s'ha autenticat, quin estat o sessió queda activa i quina comprovació d'autorització o restricció funcional bloqueja o permet l'operació.
+
+## Paper operatiu de la IA per fases
+
+La IA pot aparéixer en totes les sessions, però el seu ús només compta com a suport vàlid si queda contrastat amb execució, proves i defensa posterior:
+
+| Sessió | Ús raonable de la IA | Evidència de control |
+|---|---|---|
+| `1` | esborrany de formulari, missatges de validació o estructura inicial | l'alumnat explica el recorregut de cada camp i ajusta almenys una validació pròpia |
+| `2` | exemples de processament, guardat simple o tractament de fitxer | prova real de reutilització de la dada i justificació del mecanisme triat |
+| `3` | suggeriments de funcions, arrays o casos de decisió | defensa de la regla de domini i microcanvi en viu |
+| `4` | interpretació d'errors de sessió, cookies o estat | demostració de què es guarda, on es guarda i quan s'invalida |
+| `5` | esquelet de login, comprovació d'accés o missatges d'error | demo de cas permés i cas bloquejat, amb explicació del punt de control |
+| `6` | generació o ampliació de casos de prova i ajuda en debugging | execució dels casos i registre de què s'ha acceptat, descartat o corregit |
+| `7` | proposta de refactorització, detecció de duplicació o documentació | comparativa abans/després i justificació pròpia de la decisió final |
+
 ## Seqüència recomanada de sessions
 
 ### Sessió 1. Microprojecte 1
@@ -106,6 +146,20 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 - Evidència esperada: proves mínimes, errors controlats, rastre de depuració, documentació actualitzada i demo breu reproduïble.
 - Checkpoint: el professorat valida que la sessió `7` partirà d’un flux real i no d’una demo puntual.
 
+**Bateria mínima obligatòria de prova**
+
+La sessió `6` ha de deixar registrada una taula breu amb estos casos, encara que la forma siga manual, amb peticions guardades o amb proves automatitzades simples:
+
+| Cas | Què comprova | Resultat esperat |
+|---|---|---|
+| cas vàlid | el flux complet accepta dades correctes i executa l'operació prevista | resposta correcta i dada reutilitzable dins del projecte |
+| cas invàlid per validació | el servidor rebutja dades absents, mal formades o incoherents | error interpretable i possibilitat de correcció |
+| cas no autenticat | una persona sense sessió vàlida intenta accedir a una part protegida | bloqueig, redirecció o resposta coherent |
+| cas amb sessió caducada o estat invàlid | el sistema rep un estat que ja no hauria de permetre continuar | invalidació controlada i missatge o resposta coherent |
+| cas d'accés a operació protegida | un usuari autenticat intenta una operació sotmesa a restricció de domini | permís o denegació segons la regla definida, no segons una ruta decorativa |
+
+Cada cas ha d'incloure entrada, resultat esperat, resultat obtingut i incidència si n'hi ha. Si la IA ajuda a proposar proves, l'equip ha d'indicar quines accepta, quines descarta i què ha verificat manualment.
+
 ### Sessió 7. Microprojecte 7
 
 **Refactorització, organització en fitxers i primer objecte del domini**
@@ -117,6 +171,8 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 - Materials necessaris: fitxa del Repte 2, full de treball del Repte 2, checklist del Repte 2, apunts reals del Repte 2, materials comuns i comparativa breu abans/després.
 - Evidència esperada: reducció visible de duplicació o mescla innecessària, almenys un fitxer comú importat amb criteri, una entitat simple del domini recognoscible com a objecte, comparativa abans/després, justificació de la millora i comprovació final del flux.
 - Checkpoint: el professorat valida que la refactorització aporta claredat, reutilització i millor organització sense desplaçar el nucli de `R3`.
+
+La refactorització no s'ha de valorar només per “tindre més fitxers”. Ha de millorar almenys una responsabilitat concreta: validació, tractament de dades, comprovació d'accés, renderitzat, reutilització de missatges o representació d'una entitat del domini. La defensa breu ha d'explicar quin problema del codi inicial s'ha reduït, quin risc de regressió s'ha comprovat i quina part continua pendent per al treball arquitectònic de `R3`.
 
 ## Criteri metodològic de la sessió 7
 
@@ -163,7 +219,7 @@ Si apareixen més classes, més objectes o una persistència més formal, s'han 
 
 - demanar una demo curta del flux complet, no només del login
 - revisar que la informació correcta es recupera o es reutilitza dins del projecte
-- exigir un cas de validació visible, un cas autoritzat i un cas denegat
+- exigir la bateria mínima de proves de la sessió `6`: cas vàlid, cas invàlid per validació, cas no autenticat, cas amb sessió caducada o estat invàlid i cas d'accés a operació protegida
 - comprovar que la documentació mínima permet repetir la prova
 - demanar una refactorització lleu sobre codi que ja funciona i una justificació breu del canvi
 - demanar què haurà de reorganitzar-se en `R3` i què encara continua sent suport funcional de `R2`

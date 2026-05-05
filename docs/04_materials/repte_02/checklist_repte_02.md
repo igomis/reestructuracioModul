@@ -17,6 +17,16 @@ Transició al Repte 3:
 
 La sessió `7` de refactorització ha de servir per netejar i fer més mantenible el que ja funciona, repartir millor responsabilitats entre fitxers i introduir un objecte mínim de domini, no per reconstruir `R2` amb l'arquitectura completa de `R3`.
 
+## Conceptes mínims que s'han de poder defensar
+
+- **Identificació**: com l'usuari declara qui és.
+- **Autenticació**: com el sistema comprova eixa identitat i crea o reconeix sessió vàlida.
+- **Autorització**: com el sistema decidix si una persona autenticada pot executar una operació concreta.
+- **Estat**: quina informació temporal permet continuar el flux entre peticions.
+- **Sessió**: quin mecanisme manté part d'eixe estat associat a un client.
+
+El repte no es considera prou verificat si l'equip usa estos termes com a sinònims o no pot assenyalar en el codi on es comprova cada cosa.
+
 ### Flux de dades i reutilització
 
 - [ ] existix una entrada de dades útil dins del domini
@@ -72,9 +82,21 @@ La sessió `7` de refactorització ha de servir per netejar i fer més mantenibl
 ### Proves mínimes executades
 
 - [ ] s'ha executat almenys un cas correcte complet del flux
-- [ ] s'ha executat almenys un cas d'error rellevant
-- [ ] s'ha comprovat l'accés protegit abans o després del logout
+- [ ] s'ha executat un cas invàlid per validació, amb error interpretable i possibilitat de correcció
+- [ ] s'ha executat un cas no autenticat contra una operació protegida
+- [ ] s'ha executat un cas amb sessió caducada, tancada o estat invàlid
+- [ ] s'ha executat un cas d'accés a operació protegida que comprove la restricció definida
 - [ ] les verificacions deixen rastre al repositori o a la documentació tècnica
+
+Taula mínima recomanada:
+
+| Cas | Entrada o situació | Resultat esperat | Resultat obtingut | Incidència o ajust |
+|---|---|---|---|---|
+| cas vàlid |  |  |  |  |
+| cas invàlid per validació |  |  |  |  |
+| cas no autenticat |  |  |  |  |
+| sessió caducada o estat invàlid |  |  |  |  |
+| accés a operació protegida |  |  |  |  |
 
 ### README actualitzat
 
@@ -85,6 +107,8 @@ La sessió `7` de refactorització ha de servir per netejar i fer més mantenibl
 
 - [ ] existix AI log o registre equivalent si s'ha utilitzat assistència
 - [ ] l'ús de IA queda validat amb execució, prova o contrast tècnic
+- [ ] queda indicat si la IA s'ha usat per esquelets inicials, interpretació d'errors, millora de proves o documentació
+- [ ] l'equip pot explicar què ha acceptat, què ha descartat i què ha modificat del suggeriment de la IA
 
 ### Preparació per al Repte 3
 
