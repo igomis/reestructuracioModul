@@ -4,7 +4,7 @@
 
 El Repte 1 continua tenint `4` microreptes:
 
-- `Microrepte 1`: entendre client/servidor i decisió tècnica inicial
+- `Microrepte 1`: entendre client/servidor, diferenciar execució en client i servidor, i decisió tècnica inicial
 - `Microrepte 2`: muntar l’entorn executable
 - `Microrepte 3`: construir el primer punt d’entrada funcional
 - `Microrepte 4`: documentar, verificar i preparar el checkpoint
@@ -50,3 +50,18 @@ No queda plantejat com a burocràcia. La documentació en repositori servix per 
 - El `Microrepte 3` continua sent el primer punt d’entrada funcional.
 - El `Microrepte 4` continua sent documentació, verificació i checkpoint.
 - Les evidències continuen incloent repositori usable, commits significatius, README executable, primera funcionalitat mínima, justificació tècnica breu, AI log quan pertoque i defensa o checkpoint.
+
+## Nota d'ajust curricular: RA1a
+
+S'ha incorporat explícitament el `RA1a` al Repte 1: “S'han caracteritzat i diferenciat els models d'execució de codi en el servidor i en el client web.”
+
+L'ajust queda visible en:
+
+- `docs/02_reptes/repte_01_kickoff_backend.md`: el `Microrepte 1` incorpora `RA1a`, demana diferenciar què s'executa al client i què al servidor, i afegeix evidència i pregunta oral de verificació.
+- `docs/01_programacio_modul/programacio_aula_repte_01.md`: la sessió 1 incorpora el model d'execució client vs servidor en objectiu, evidència esperada i checkpoint.
+- `docs/matriu-coherencia-curricular-dwes.md`: la fila de `RA1` explicita que `RA1a` es cobreix en `MP1` i sessió 1.
+- `docs/alumnat/reptes/repte_01.md`: la guia curta de l'alumnat queda alineada amb la temporalització compactada, el `RA1a` i les evidències reals del repte.
+
+Evidència associada: explicació breu del model d'execució client vs servidor aplicada al producte propi.
+
+Checkpoint associat: cada alumne ha de poder explicar quina part del seu producte s'executa al client i quina al servidor.

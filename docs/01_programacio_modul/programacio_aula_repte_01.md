@@ -7,6 +7,7 @@ Este document baixa `R1` a una seqüència operativa d'aula perquè el professor
 ## Finalitat del repte
 
 - entendre el model client/servidor aplicat al producte del curs
+- distingir els models d'execució de codi en client web i servidor
 - assumir una base tècnica guiada sobre `Docker`, `PHP` i servidor web
 - posar en marxa una base executable mínima i reproduïble
 - adaptar-la al projecte propi i completar-la amb base de dades i phpMyAdmin
@@ -18,7 +19,7 @@ Este document baixa `R1` a una seqüència operativa d'aula perquè el professor
 
 El Repte 1 manté `4` microreptes com a unitats de progrés:
 
-- `Microrepte 1`: model client/servidor i decisió tècnica inicial
+- `Microrepte 1`: model client/servidor, model d'execució client vs servidor i decisió tècnica inicial
 - `Microrepte 2`: entorn executable
 - `Microrepte 3`: primer punt d'entrada funcional
 - `Microrepte 4`: documentació, verificació i checkpoint
@@ -35,7 +36,7 @@ Estos microreptes no equivalen necessàriament a `4` sessions. En esta programac
 
 | Sessió | Duració | Microreptes implicats | Focus principal | Evidència clau |
 |---|---:|---|---|---|
-| `1` | `3h` | `MP1` + inici de `MP2` | model client/servidor, decisió inicial i arrencada de l'entorn | fitxa inicial, decisió tècnica i base mínima començada |
+| `1` | `3h` | `MP1` + inici de `MP2` | model client/servidor, model d'execució, decisió inicial i arrencada de l'entorn | fitxa inicial, explicació client vs servidor, decisió tècnica i base mínima començada |
 | `2` | `3h` | tancament de `MP2` + `MP3` + `MP4` | entorn complet, primera funcionalitat mínima i documentació del repte | entorn arrancable, punt d'entrada funcional, README i documentació en repositori |
 | `3` | opcional | checkpoint formal | defensa, execució real i revisió de traçabilitat | defensa tècnica o acta de checkpoint |
 
@@ -43,11 +44,12 @@ Estos microreptes no equivalen necessàriament a `4` sessions. En esta programac
 
 ### Objectiu
 
-Treballar el `Microrepte 1` i iniciar el `Microrepte 2`, deixant clara la base conceptual del backend i començant el muntatge de l’entorn executable.
+Treballar el `Microrepte 1` i iniciar el `Microrepte 2`, deixant clara la base conceptual del backend, distingint els models d’execució de codi en client i servidor, i començant el muntatge de l’entorn executable.
 
 ### Què explica el professorat
 
 - model client/servidor
+- què s'executa al client web i què s'executa al servidor
 - paper del backend i del servidor web
 - per què el Repte 1 encara no és un repte de framework complet
 - què és una base tècnica inicial útil
@@ -66,6 +68,7 @@ Treballar el `Microrepte 1` i iniciar el `Microrepte 2`, deixant clara la base c
 - concreta el producte
 - ompli la fitxa inicial
 - identifica tecnologies de client i servidor
+- diferencia quina part del producte s'executarà al client i quina al servidor
 - deixa una primera decisió tècnica visible
 - inicia l’entorn executable
 - comença a adaptar el model mostrat pel professorat al seu projecte
@@ -80,6 +83,7 @@ Treballar el `Microrepte 1` i iniciar el `Microrepte 2`, deixant clara la base c
 ### Evidència esperada
 
 - fitxa entregada
+- explicació breu del model d'execució client vs servidor aplicada al producte propi
 - decisió tècnica inicial
 - estructura mínima del projecte
 - primeres proves d’arrancada de l’entorn
@@ -97,6 +101,7 @@ Treballar el `Microrepte 1` i iniciar el `Microrepte 2`, deixant clara la base c
 Cada alumne ha de poder explicar:
 
 - quin paper jugarà el backend en el seu producte
+- quina part del seu producte s'executa al client i quina al servidor
 - amb quina base tècnica començarà
 - què ha arribat a muntar de l’entorn
 - quins dubtes manté oberts
@@ -186,6 +191,7 @@ No substituïx el treball de les sessions `1` i `2`; només dona temps específi
 ## Evidències globals del Repte 1
 
 - fitxa breu d’exploració tècnica inicial
+- explicació del model d'execució client vs servidor aplicat al producte
 - decisió tècnica inicial
 - repositori usable
 - historial de commits significatiu

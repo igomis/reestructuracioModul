@@ -175,7 +175,7 @@ Microtasca d’investigació i decisió tècnica.
 
 **Objectiu**
 
-Entendre el model client/servidor del producte i fixar una base tècnica guiada que siga coherent amb el recorregut del curs.
+Entendre el model client/servidor del producte, caracteritzar els models d'execució de codi en client i servidor, i fixar una base tècnica guiada que siga coherent amb el recorregut del curs.
 
 **Tasca**
 
@@ -190,10 +190,13 @@ No cal adjuntar captures de totes les converses amb IA.
 La fitxa ha d’incloure:
 
 - paper del client i del servidor dins del producte
+- diferència entre què s'executa al client web i què s'executa al servidor
+- explicació del model d'execució aplicat al producte propi
 - identificació de tecnologies de client i de servidor
 - exploració breu de possibles stacks o frameworks
 - diferències inicials entre exemples com `Laravel`, `Symfony` i `NestJS`
 - primera decisió tècnica orientativa
+- justificació del paper que tindrà el backend dins d'eixe model
 - dubtes tècnics detectats
 
 **Relació amb el producte principal**
@@ -202,12 +205,15 @@ Sense una decisió inicial coherent, el kickoff funcional queda en un esquelet p
 
 **CA coberts**
 
+- **RA1a**: s’han caracteritzat i diferenciat els models d’execució de codi en el servidor i en el client web
 - **RA1b**: s’han reconegut els avantatges que proporciona la generació dinàmica de pàgines
 - **RA1c**: s’han identificat els mecanismes d’execució de codi en els servidors web
 - **RA1g**: s’han reconegut i avaluat les eines i frameworks de programació en entorn servidor
 
 **Descripció dels CA en llenguatge docent**
 
+- L’alumnat diferencia què s’executa al navegador i què s’executa al servidor.
+- L’alumnat relaciona eixa diferència amb el seu producte concret.
 - L’alumnat sap explicar per què un backend dinàmic aporta valor al projecte.
 - L’alumnat distingix on i com s’executa el codi del servidor.
 - L’alumnat compara opcions de manera guiada i evita eleccions arbitràries.
@@ -219,6 +225,7 @@ La IA pot ajudar a localitzar exemples de stack, frameworks, tecnologies de clie
 **Evidències obligatòries**
 
 - fitxa breu d’exploració tècnica inicial
+- explicació breu del model d'execució client vs servidor aplicat al producte
 - primera decisió tècnica orientativa
 - referència breu a alternatives i dubtes oberts
 - posada en comú o defensa oral breu
@@ -245,6 +252,7 @@ Rúbrica d’investigació aplicada.
 
 - revisió de la fitxa breu entregada per la parella o alumne
 - posada en comú oral breu al final de la sessió o a l’inici de la següent
+- pregunta oral: “quina part del teu producte s'executa al client i quina al servidor?”
 - pregunta oral: “per què esta opció és assumible per al curs i quina has descartat?”
 - pregunta oral: “què fa el runtime o servidor triat dins del flux d’execució?”
 
@@ -517,7 +525,7 @@ Rúbrica de defensa tècnica + checklist de documentació.
 
 | Microrepte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
 |---|---|---|---|---|---|---|
-| MP1 | Investigació / decisió tècnica | Fitxa breu d’exploració tècnica + decisió orientativa | RA1b, RA1c, RA1g | Fitxa, dubtes detectats, posada en comú | Rúbrica | 20% |
+| MP1 | Investigació / decisió tècnica | Fitxa breu d’exploració tècnica + model d'execució client/servidor + decisió orientativa | RA1a, RA1b, RA1c, RA1g | Fitxa, model d'execució, dubtes detectats, posada en comú | Rúbrica | 20% |
 | MP2 | Procedimental | Repositori executable amb Docker i estructura base | RA1c, RA1d, RA1e, RA1f | Repo, Docker, README, issues, commits, prova d’arrancada | Checklist + revisió | 35% |
 | MP3 | Procedimental | Punt d’entrada funcional simple | RA1b, RA1e, RA1f | Demo funcional, logs o captures, evidència d’execució | Rúbrica | 25% |
 | MP4 | Tancament / verificació | README final + documentació en repositori + justificació tècnica + defensa | RA1d, RA1g | Documentació, validació, defensa, AI log | Rúbrica + checklist | 20% |

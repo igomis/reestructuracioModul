@@ -6,7 +6,7 @@ Deixar obert el projecte amb una base executable i un primer punt d'entrada func
 
 ## Seqüència base
 
-- microrepte `1`: model client/servidor i elecció guiada de stack
+- microrepte `1`: model client/servidor, model d'execució client vs servidor i elecció guiada de stack
 - microrepte `2`: base executable amb Docker, PHP, servidor web, BBDD i phpMyAdmin
 - microrepte `3`: primer punt d'entrada funcional del backend
 - microrepte `4`: documentació tècnica, verificació i checkpoint
@@ -16,6 +16,7 @@ Els microreptes són passos lògics del repte. En aula es treballen compactats e
 ## Has de fer
 
 - explicar el paper del client i del servidor en el teu producte
+- diferenciar què s'executa al client web i què s'executa al servidor
 - omplir la [fitxa breu d'exploració tècnica inicial](fitxa_exploracio_tecnica_inicial.md) amb tecnologies identificades, opcions explorades i primera decisió orientativa
 - justificar la base tècnica dins del marc del curs
 - deixar repositori usable i `README` inicial
@@ -32,6 +33,7 @@ Els microreptes són passos lògics del repte. En aula es treballen compactats e
 ## Evidència mínima
 
 - fitxa breu d'exploració tècnica inicial
+- explicació del model d'execució client vs servidor aplicada al producte
 - repositori obert i recognoscible
 - `README` amb com arranca el projecte
 - entorn executable amb `Docker`, `PHP`, servidor web, BBDD i phpMyAdmin
@@ -45,6 +47,7 @@ Els microreptes són passos lògics del repte. En aula es treballen compactats e
 ## Com ho valides
 
 - ensenya la fitxa i explica què has investigat, què has entés i amb què començaries
+- explica quina part del teu producte s'executa al client i quina al servidor
 - arranca el projecte davant del professorat
 - mostra el punt d'entrada funcional del backend
 - explica què fa `Docker`, què fa `PHP`, què fa el servidor web, què fa la base de dades i per a què uses phpMyAdmin
