@@ -76,75 +76,478 @@ La IA pot aparéixer en totes les sessions, però el seu ús només compta com a
 
 ### Sessió 1. Microprojecte 1
 
-**Formulari i validació visible**
+**Sessió 1 — Formulari i validació visible**
 
-- Objectiu: obrir el punt d'entrada de dades del projecte i deixar clar què es rep, què es valida i què no pot continuar mentre hi haja errors.
-- Què explica el professorat: quina acció real del domini es treballarà durant `R2`, què diferencia una validació visible d'un missatge genèric i per què encara no toca començar per auth.
-- Què modela el professorat: un exemple curt de recuperació de dades, validació de servidor i feedback útil a l'usuari.
-- Què fa l'alumnat: concreta l'acció del domini, implementa formulari o entrada equivalent, recupera dades, mostra errors i prova un reintent corregit.
-- Materials necessaris: fitxa del Repte 2, base comuna en `PHP`, guia de validació i errors del Repte 2, materials comuns.
-- Evidència esperada: formulari funcional, error visible, reenviament corregit i explicació de com arriba la dada al servidor.
-- Checkpoint: el flux es talla quan hi ha error i l'alumnat pot explicar per què.
+#### Finalitat específica de la sessió
+Obrir el punt d'entrada de dades del producte i deixar clar què arriba al servidor, què es valida i què no pot continuar mentre hi haja errors.
+
+#### RA/focus tècnic
+Focus en `RA2` i `RA3`: recepció de dades de formulari o entrada equivalent, validació de servidor, resposta amb errors visibles i reintent corregit.
+
+#### Producte o microresultat esperat
+Formulari funcional o entrada equivalent del domini, amb almenys una validació de servidor, un missatge d'error útil i un reenviament correcte.
+
+#### Seqüència temporal orientativa dins de les 3 hores
+
+##### 0:00-0:20 — Obertura del flux de `R2`
+- recordar la funcionalitat inicial prevista al final de `R1`
+- concretar quina acció real del domini entrarà per formulari
+- aclarir que esta sessió encara no comença per autenticació
+
+##### 0:20-0:45 — Modelatge docent
+- mostrar un formulari mínim o entrada equivalent
+- recuperar dades en servidor
+- validar un camp obligatori o una regla simple
+- retornar un error comprensible sense perdre el sentit del flux
+
+##### 0:45-1:35 — Implementació guiada
+- l'alumnat crea o adapta el formulari
+- connecta l'acció amb el servidor
+- recupera dades i comprova què arriba realment
+- incorpora la primera validació
+
+##### 1:35-2:10 — Errors i reintent
+- provar entrada buida, incorrecta o incompleta
+- mostrar errors concrets
+- conservar o reconstruir la informació necessària per a corregir
+- repetir l'enviament amb dades vàlides
+
+##### 2:10-2:40 — Revisió per parelles
+- un company executa el formulari d'un altre
+- identifica una dada vàlida i una no vàlida
+- comprova que l'error talla el flux
+
+##### 2:40-3:00 — Checkpoint final
+- revisió ràpida del professorat
+- registre de l'evidència mínima
+- anotació de què es processarà i guardarà en la sessió `2`
+
+#### Intervenció docent prevista
+- acotar l'acció del domini perquè siga realista en una sessió
+- evitar formularis decoratius sense tractament de servidor
+- demanar errors concrets, no missatges genèrics
+- revisar que la validació es fa en servidor encara que hi haja validació visual en client
+
+#### Tasques concretes de l'alumnat
+- concretar l'acció del domini que s'enviarà al servidor
+- crear o adaptar el formulari
+- recuperar dades en `PHP`
+- validar almenys un camp o regla
+- mostrar l'error i provar un reintent correcte
+- deixar una nota breu en el `README` o en el registre de treball sobre el flux provat
+
+#### Evidència verificable de la sessió
+- formulari executable
+- captura o demo curta d'un cas amb error
+- captura o demo curta del mateix cas corregit
+- codi on es veu la recuperació i validació de la dada
+
+#### Checkpoint o pregunta de comprovació
+Què passa exactament quan arriba una dada incorrecta i en quin punt del codi es talla el flux?
+
+#### Ús de la IA permés i forma de control
+Ús permés per aclarir patrons de validació, redactar missatges d'error o revisar si falten casos bàsics. Control: l'alumnat ha d'assenyalar en el seu codi on valida cada dada i ha de poder modificar una regla en directe sense dependre de la resposta generada.
+
+#### Dificultats habituals i resposta docent prevista
+- Si el formulari envia però no es comprova res, el professorat demana un cas incorrecte obligatori abans de continuar.
+- Si només hi ha validació en client, es modela el mateix cas desactivant o saltant el client i es força la validació en servidor.
+- Si l'alumnat vol començar per login, es reconduïx cap al flux de dades del domini i es deixa auth per a la sessió `5`.
 
 ### Sessió 2. Microprojecte 2
 
-**Processament i guardat funcional**
+**Sessió 2 — Processament i guardat funcional**
 
-- Objectiu: fer visible el processament bàsic en servidor i deixar una primera conservació funcional de la informació correcta.
-- Què explica el professorat: com la base comuna en `PHP` genera resposta, quin paper tenen variables, operadors i àmbits, i per què guardar funcionalment no significa encara obrir un bloc fort de persistència.
-- Què modela el professorat: un tram curt de processament amb resposta generada a partir de la dada rebuda i reutilització posterior de la informació correcta.
-- Què fa l'alumnat: processa una entrada ja validada, guarda de manera simple la informació útil i la torna a mostrar o reutilitzar dins del projecte.
-- Materials necessaris: fitxa del Repte 2, materials comuns, suport de guardat triat pel grup, exemples de fitxer o imatge si apliquen.
-- Evidència esperada: tractament executable, dada correcta guardada, primera reutilització visible i justificació del mecanisme triat.
-- Checkpoint: si apareix base de dades, l'alumnat pot explicar per què ací continua sent suport funcional i no el centre del repte.
+#### Finalitat específica de la sessió
+Convertir la dada validada en una resposta útil del servidor i deixar una primera conservació funcional de la informació correcta.
+
+#### RA/focus tècnic
+Focus en `RA2` i `RA3`: tractament de dades en servidor, variables, operadors, estructures bàsiques, guardat funcional i reutilització simple.
+
+#### Producte o microresultat esperat
+Entrada validada, processada, guardada de manera simple i reutilitzada en una resposta visible del producte.
+
+#### Seqüència temporal orientativa dins de les 3 hores
+
+##### 0:00-0:20 — Recuperació de la sessió anterior
+- executar el formulari amb un cas vàlid
+- identificar quina dada correcta passarà a processament
+- recordar què no s'ha de guardar si la validació falla
+
+##### 0:20-0:45 — Modelatge de processament
+- transformar o calcular una resposta a partir de la dada
+- separar dada rebuda, dada neta i resultat generat
+- mostrar la resposta al navegador
+
+##### 0:45-1:30 — Processament de l'alumnat
+- implementar una transformació o decisió simple
+- comprovar que el resultat canvia segons l'entrada
+- afegir una eixida visible coherent amb el domini
+
+##### 1:30-2:10 — Guardat funcional
+- triar un mecanisme simple de conservació segons la base del grup
+- guardar només informació validada
+- recuperar-la després en una pantalla, llista o resposta equivalent
+
+##### 2:10-2:40 — Reutilització i justificació
+- demostrar que la dada guardada torna a usar-se
+- justificar per què el mecanisme triat és suficient en `R2`
+- detectar dades que no cal guardar encara
+
+##### 2:40-3:00 — Checkpoint final
+- comprovació d'un cas complet: enviar, validar, processar, guardar i reutilitzar
+- registre d'incidències pendents
+- preparació de la regla de negoci de la sessió `3`
+
+#### Intervenció docent prevista
+- recordar que la persistència encara és suport funcional, no el centre metodològic del repte
+- orientar mecanismes simples de guardat sense obrir una arquitectura completa
+- demanar que el guardat tinga un ús visible, no només un fitxer o taula creats
+- revisar que no es guarden dades incorrectes
+
+#### Tasques concretes de l'alumnat
+- executar el flux vàlid de la sessió `1`
+- processar la dada amb una transformació, càlcul o normalització simple
+- guardar la informació correcta
+- recuperar o mostrar la dada guardada
+- justificar en una nota breu el mecanisme de guardat triat
+
+#### Evidència verificable de la sessió
+- codi de processament executable
+- dada guardada després d'un cas vàlid
+- reutilització visible de la dada
+- nota breu de justificació del mecanisme de guardat
+
+#### Checkpoint o pregunta de comprovació
+On es veu que la dada validada no només s'ha rebut, sinó que s'ha processat, guardat i reutilitzat?
+
+#### Ús de la IA permés i forma de control
+Ús permés per aclarir sintaxi de `PHP`, proposar una transformació simple o revisar si el guardat és coherent. Control: l'alumnat ha de mostrar una prova amb una dada nova i explicar per què només es guarda després de validar.
+
+#### Dificultats habituals i resposta docent prevista
+- Si el guardat no es reutilitza, el professorat demana una pantalla o resposta on la dada aparega de nou.
+- Si es vol introduir una base de dades completa sense necessitat, es limita a un ús mínim justificat o es posposa el modelatge fort a `R3`.
+- Si el codi mescla massa entrada, procés i eixida, es deixa anotat com a material per a la refactorització de la sessió `7`.
 
 ### Sessió 3. Microprojecte 3
 
-**Lògica del flux i regles del projecte**
+**Sessió 3 — Lògica del flux i regles del projecte**
 
-- Objectiu: fer que el backend prenga decisions amb sentit i aplique almenys una regla recognoscible del projecte.
-- Què explica el professorat: quan convé usar decisions, recorreguts, arrays o funcions i com evitar una lògica ornamental.
-- Què modela el professorat: una regla simple del domini amb una decisió i una funció curta que canvia el comportament del flux.
-- Què fa l'alumnat: incorpora una regla significativa, usa una estructura o funció amb sentit i prova almenys dos casos amb resultat diferent.
-- Materials necessaris: fitxa del Repte 2, materials comuns, esquema del domini i casos de prova breus.
-- Evidència esperada: lògica observable, funció o estructura útil, comportament diferenciat i checkpoint curt del recorregut fins ací.
-- Checkpoint: el professorat pot veure que el sistema ja “pensa” i no només rep i guarda dades.
+#### Finalitat específica de la sessió
+Fer que el backend aplique una regla recognoscible del domini i produïsca resultats diferents segons les dades i l'estat del flux.
+
+#### RA/focus tècnic
+Focus en `RA3`: condicions, recorreguts, arrays, funcions i regles de negoci simples aplicades al producte.
+
+#### Producte o microresultat esperat
+Una regla del domini implementada amb efecte visible i almenys dos casos de prova amb resultat diferent.
+
+#### Seqüència temporal orientativa dins de les 3 hores
+
+##### 0:00-0:25 — Selecció de la regla
+- revisar el flux ja existent
+- triar una regla xicoteta però significativa del producte
+- formular la regla en llenguatge natural abans de programar-la
+
+##### 0:25-0:50 — Modelatge docent
+- convertir una regla en una condició o funció
+- mostrar dos casos amb resultats diferents
+- explicar per què una regla ha de canviar el comportament del sistema
+
+##### 0:50-1:40 — Implementació de la regla
+- l'alumnat implementa una decisió, recorregut o funció
+- connecta la regla amb dades del flux
+- evita dades fixes que només simulen funcionament
+
+##### 1:40-2:15 — Casos de prova
+- definir un cas que complix la regla
+- definir un cas que no la complix
+- executar els dos casos i observar la resposta
+
+##### 2:15-2:40 — Revisió de qualitat mínima
+- comprovar noms de variables i funcions
+- detectar condicions duplicades o poc clares
+- marcar possibles millores per a la sessió `7`
+
+##### 2:40-3:00 — Checkpoint final
+- demo curta de la regla
+- registre dels dos casos provats
+- anticipació de quina informació haurà de mantindre's entre peticions en la sessió `4`
+
+#### Intervenció docent prevista
+- ajudar a convertir regles massa grans en una regla executable en tres hores
+- impedir lògica ornamental que no afecte el flux
+- demanar casos diferents abans de donar per bona la sessió
+- assenyalar duplicacions o responsabilitats confuses per a la refactorització final
+
+#### Tasques concretes de l'alumnat
+- escriure la regla en una frase clara
+- implementar-la amb condició, array, recorregut o funció
+- connectar-la amb dades reals del flux
+- provar dos casos amb resultat diferent
+- registrar quin comportament ha canviat
+
+#### Evidència verificable de la sessió
+- regla implementada en codi
+- dos casos de prova executables
+- resposta diferenciada del sistema
+- nota breu de què decidix el backend i per què
+
+#### Checkpoint o pregunta de comprovació
+Quina decisió pren ara el servidor que abans no prenia, i com es veu en dos casos diferents?
+
+#### Ús de la IA permés i forma de control
+Ús permés per ajudar a expressar la regla, revisar una condició o proposar casos de prova. Control: l'alumnat ha d'explicar la regla sense llegir codi generat i ha de crear almenys un cas de prova propi no suggerit literalment per la IA.
+
+#### Dificultats habituals i resposta docent prevista
+- Si la regla és massa ambiciosa, el professorat la reduïx a una decisió mínima verificable.
+- Si el resultat és sempre el mateix, es demanen dos casos que forcen branques diferents.
+- Si la funció només embolica codi sense aclarir-lo, es revisa el nom, l'entrada i l'eixida esperada.
 
 ### Sessió 4. Microprojecte 4
 
-**Estat, sessió i/o cookies**
+**Sessió 4 — Estat, sessió i cookies sense confondre-ho amb persistència**
 
-- Objectiu: mantindre informació provisional entre peticions i distingir-la de la conservació funcional del domini.
-- Què explica el professorat: diferència entre estat, sessió, cookies i altres mecanismes equivalents; què convé guardar en client, què en servidor i quan toca invalidar-ho.
-- Què modela el professorat: una recuperació breu d'estat després d'un error o d'un pas intermedi i una invalidació controlada.
-- Què fa l'alumnat: implementa estat temporal coherent amb el seu flux, recupera el punt del procés i neteja la informació quan deixa de tindre sentit.
-- Materials necessaris: fitxa del Repte 2, guia de flux d'usuari i sessions, navegador amb eines de desenvolupament, materials comuns.
-- Evidència esperada: recuperació funcional del flux, explicació clara del que queda en client o en servidor i prova d'invalidació.
-- Checkpoint: l'alumnat sap distingir estat temporal, conservació funcional i autenticació.
+#### Finalitat específica de la sessió
+Mantindre informació temporal entre peticions per donar continuïtat al flux i distingir clarament estat, sessió i cookies de la persistència del domini.
+
+#### RA/focus tècnic
+Focus en `RA2`, `RA3` i `RA4`: gestió d'estat temporal, `$_SESSION`, cookies, invalidació i lectura del recorregut petició-resposta.
+
+#### Producte o microresultat esperat
+Flux que recupera una informació temporal necessària, mostra què es guarda en sessió o cookie i permet invalidar-la de manera controlada.
+
+#### Seqüència temporal orientativa dins de les 3 hores
+
+##### 0:00-0:25 — Aclariment conceptual
+- estat: informació que el sistema necessita recordar durant un flux
+- sessió: estat associat a un usuari o navegador i guardat al servidor amb un identificador
+- cookie: dada guardada al navegador, sovint usada per identificar o recordar informació limitada
+- persistència: conservació estable de dades del domini més enllà del flux temporal
+
+##### 0:25-0:50 — Modelatge docent
+- activar sessió i guardar una dada temporal
+- llegir la dada en una petició posterior
+- observar la cookie de sessió en el navegador
+- destruir o netejar la dada quan ja no té sentit
+
+##### 0:50-1:35 — Implementació d'estat temporal
+- l'alumnat tria què necessita recordar temporalment
+- guarda la dada en sessió o cookie segons el cas
+- recupera el flux en una pantalla posterior
+- evita guardar dades sensibles en cookies
+
+##### 1:35-2:10 — Invalidació i comprovació
+- implementar eixida, reinici de flux o neteja de sessió
+- provar què passa abans i després de la invalidació
+- comprovar en eines de navegador què queda en cookies
+
+##### 2:10-2:40 — Contrast amb persistència
+- identificar quines dades són temporals
+- identificar quines dades pertanyen al domini i haurien de persistir
+- revisar errors habituals: usar sessió com si fora base de dades o cookie com si fora magatzem segur
+
+##### 2:40-3:00 — Checkpoint final
+- demo d'un flux recuperat
+- demo d'invalidació
+- explicació oral breu de què està en client, què està en servidor i què no és persistència
+
+#### Intervenció docent prevista
+- fer explícita la diferència entre recordar temporalment i guardar com a dada del producte
+- revisar amb les eines del navegador quines cookies apareixen
+- insistir que la cookie de sessió no conté necessàriament totes les dades de sessió
+- tallar usos insegurs: contrasenyes, rols o dades sensibles en cookies sense criteri
+
+#### Tasques concretes de l'alumnat
+- decidir una dada temporal necessària del seu flux
+- implementar-ne el guardat en sessió o cookie
+- recuperar-la en una petició posterior
+- invalidar-la amb una acció clara
+- documentar en una frase què és estat temporal i què seria persistència del domini
+
+#### Evidència verificable de la sessió
+- codi d'inici, lectura i neteja de sessió o cookie
+- demo abans/després de la invalidació
+- captura o explicació de la cookie observada en el navegador
+- nota breu distingint estat temporal, sessió, cookie i persistència
+
+#### Checkpoint o pregunta de comprovació
+Quina informació recorda el sistema només durant el flux, on està guardada i per què això no és encara persistència del domini?
+
+#### Ús de la IA permés i forma de control
+Ús permés per comparar sessió i cookie, revisar riscos de seguretat bàsics o generar una llista de comprovacions. Control: l'alumnat ha de demostrar en navegador què passa amb la cookie i en codi què passa amb `$_SESSION`, sense confondre-ho amb dades persistides.
+
+#### Dificultats habituals i resposta docent prevista
+- Si es diu que una cookie és “la sessió”, el professorat mostra la diferència entre identificador en client i dades de sessió en servidor.
+- Si es guarda tot en sessió com si fora persistència, es demana separar dades temporals i dades del domini.
+- Si no hi ha invalidació, la sessió no es dona per tancada fins que hi haja una neteja comprovable.
 
 ### Sessió 5. Microprojecte 5
 
-**Autenticació i funcionalitat protegida**
+**Sessió 5 — Identificació, autenticació, autorització i operació protegida**
 
-- Objectiu: connectar tot el flux anterior amb una operació real del domini protegida per autenticació o per una restricció funcional observable.
-- Què explica el professorat: diferència entre autenticació i autorització, quin és el mínim funcional no trivial del repte i per què una ruta decorativa no és una funcionalitat protegida.
-- Què modela el professorat: un accés permés, un accés denegat i el punt exacte on es comprova la restricció.
-- Què fa l'alumnat: implementa autenticació funcional mínima, protegix una acció del projecte i demostra el cas autoritzat i el denegat.
-- Materials necessaris: fitxa del Repte 2, guia de flux d'usuari i sessions, materials comuns, usuaris de prova.
-- Evidència esperada: autenticació funcional, operació protegida lligada al domini, cas positiu i negatiu reproduïbles.
-- Checkpoint: no es tanca `R2` si hi ha auth aparent però no una operació real protegida.
+#### Finalitat específica de la sessió
+Connectar el flux construït amb una operació real del domini que només puga executar-se quan l'usuari està identificat, autenticat i autoritzat.
+
+#### RA/focus tècnic
+Focus en `RA4`: identificació d'usuari, comprovació de credencials, inici de sessió autenticada, autorització bàsica i bloqueig d'una operació protegida.
+
+#### Producte o microresultat esperat
+Login funcional mínim i una operació del domini protegida amb cas autoritzat i cas denegat reproduïbles.
+
+#### Seqüència temporal orientativa dins de les 3 hores
+
+##### 0:00-0:25 — Marc conceptual operatiu
+- identificació: l'usuari diu qui és
+- autenticació: el sistema comprova que pot demostrar-ho
+- autorització: el sistema decidix què pot fer
+- operació protegida: acció real del producte que no pot executar qualsevol visitant
+
+##### 0:25-0:55 — Modelatge docent
+- formulari de login o mecanisme equivalent
+- comprovació de credencials de prova
+- guardat de l'usuari autenticat en sessió
+- protecció d'una operació real del domini
+- resposta denegada quan no hi ha permís
+
+##### 0:55-1:40 — Implementació d'identificació i autenticació
+- l'alumnat crea o adapta el login
+- comprova credencials de prova
+- inicia sessió autenticada
+- mostra una resposta clara d'error quan fallen les credencials
+
+##### 1:40-2:20 — Autorització i operació protegida
+- triar una acció del domini construïda en sessions anteriors
+- impedir l'accés sense autenticació
+- si hi ha rols o propietat, aplicar una restricció bàsica
+- comprovar accés permés i denegat
+
+##### 2:20-2:45 — Prova de casos
+- usuari no autenticat intenta l'operació
+- usuari autenticat executa l'operació
+- usuari autenticat però no autoritzat, si el projecte ho permet
+- tancament de sessió i nou intent
+
+##### 2:45-3:00 — Checkpoint final
+- demo curta del cas autoritzat i denegat
+- identificació del punt exacte de codi on es comprova la restricció
+- registre de casos pendents per al taller de proves de la sessió `6`
+
+#### Intervenció docent prevista
+- impedir que el login siga només una pantalla sense protecció real
+- demanar que la protecció recaiga sobre una operació del domini, no només sobre una pàgina buida
+- diferenciar verbalment i en codi identificació, autenticació i autorització
+- revisar que l'operació protegida no es pot executar cridant directament la URL o el formulari
+
+#### Tasques concretes de l'alumnat
+- implementar o adaptar el formulari de login
+- comprovar credencials amb un mecanisme mínim coherent
+- guardar l'usuari autenticat en sessió
+- protegir una operació real del domini
+- provar accés permés, accés denegat i tancament de sessió
+- documentar usuaris de prova i restriccions aplicades
+
+#### Evidència verificable de la sessió
+- login funcional
+- sessió autenticada comprovable
+- operació protegida del domini
+- cas autoritzat i cas denegat executables
+- nota breu indicant on es fa identificació, autenticació i autorització
+
+#### Checkpoint o pregunta de comprovació
+Quina operació real queda protegida, qui pot executar-la, qui no pot, i en quin punt del codi es decidix?
+
+#### Ús de la IA permés i forma de control
+Ús permés per revisar diferències entre identificació, autenticació i autorització, proposar casos de prova o detectar punts d'accés no protegits. Control: l'alumnat ha de fer una demo sense IA amb tres intents: no autenticat, autenticat permés i denegat o logout.
+
+#### Dificultats habituals i resposta docent prevista
+- Si només hi ha login però cap operació protegida, el professorat no valida la sessió i demana protegir una acció del domini.
+- Si s'equipara autenticació amb autorització, es demana un exemple de “sé qui eres” i un altre de “pots fer açò”.
+- Si la ruta protegida es pot invocar directament, es revisa el control al servidor abans de qualsevol execució de l'operació.
 
 ### Sessió 6. Microprojecte 6
 
-**Prova, depuració, documentació mínima i checkpoint tècnic**
+**Sessió 6 — Taller de proves, depuració i checkpoint tècnic**
 
-- Objectiu: revisar el flux complet, deixar proves mínimes registrades i tancar un checkpoint tècnic abans de la sessió final de refactorització.
-- Què explica el professorat: com usar la checklist de proves, quins casos s'han de poder mostrar i quina documentació mínima ha d'estar viva al `README`.
-- Què modela el professorat: una prova curta del flux complet i una lectura ràpida de com la documentació ajuda a reproduir-lo.
-- Què fa l'alumnat: executa casos correctes i incorrectes, registra incidències, actualitza `README` i deixa clar quines parts del codi es revisaran a la sessió `7`.
-- Materials necessaris: checklist del Repte 2, guia de testing i debugging, fitxa del Repte 2 i materials comuns.
-- Evidència esperada: proves mínimes, errors controlats, rastre de depuració, documentació actualitzada i demo breu reproduïble.
-- Checkpoint: el professorat valida que la sessió `7` partirà d’un flux real i no d’una demo puntual.
+#### Finalitat específica de la sessió
+Convertir la sessió en un taller de proves del flux complet, amb una bateria mínima comuna, registre d'incidències i documentació suficient per reproduir la demo.
+
+#### RA/focus tècnic
+Focus transversal en `RA2`, `RA3` i `RA4`: validació, errors controlats, flux autenticat, operació protegida, depuració i documentació tècnica mínima.
+
+#### Producte o microresultat esperat
+Bateria mínima de proves executada, incidències registrades, correccions prioritzades i `README` actualitzat amb instruccions de reproducció.
+
+#### Seqüència temporal orientativa dins de les 3 hores
+
+##### 0:00-0:25 — Presentació de la bateria mínima comuna
+- cas `1`: formulari amb dades vàlides
+- cas `2`: formulari amb dades invàlides
+- cas `3`: dada validada, processada i reutilitzada
+- cas `4`: estat temporal recuperat i invalidat
+- cas `5`: accés no autenticat a operació protegida
+- cas `6`: accés autenticat permés
+- cas `7`: logout o invalidació i nou intent denegat
+- cas `8`: error previsible documentat amb resposta clara
+
+##### 0:25-0:45 — Modelatge de registre de prova
+- mostrar com anotar entrada, passos, resultat esperat i resultat real
+- diferenciar error funcional, error de validació i error de permisos
+- prioritzar incidències que bloquegen el flux
+
+##### 0:45-1:35 — Execució individual o per parelles
+- l'alumnat executa la bateria mínima
+- registra resultats i captures si cal
+- marca incidències bloquejants i menors
+- evita corregir sense haver reproduït abans el problema
+
+##### 1:35-2:15 — Depuració guiada
+- corregir primer errors que trenquen el flux complet
+- usar missatges, logs o inspecció controlada
+- repetir el cas fallit després de corregir
+- deixar constància de la correcció
+
+##### 2:15-2:40 — Documentació mínima
+- actualitzar `README` amb passos d'arrancada i prova
+- afegir usuaris de prova si aplica
+- indicar l'operació protegida i els casos bàsics
+- deixar pendents clars per a la sessió `7`
+
+##### 2:40-3:00 — Checkpoint tècnic
+- demo curta d'un cas complet
+- revisió ràpida de la bateria mínima
+- decisió docent sobre si el grup pot passar a refactoritzar o ha de reparar abans el flux
+
+#### Intervenció docent prevista
+- conduir la sessió com a taller, no com a explicació llarga
+- exigir la bateria comuna abans de millores voluntàries
+- ajudar a reproduir errors abans de tocar codi
+- prioritzar correccions que afecten validació, estat, autenticació i operació protegida
+
+#### Tasques concretes de l'alumnat
+- executar la bateria mínima comuna
+- registrar resultat esperat i resultat real
+- corregir incidències bloquejants
+- repetir les proves fallides
+- actualitzar `README`
+- marcar una zona concreta del codi que es refactoritzarà en la sessió `7`
+
+#### Evidència verificable de la sessió
+- taula o checklist de proves completada
+- registre d'almenys una incidència o confirmació explícita que no n'hi ha
+- correcció comprovada quan hi havia error
+- `README` actualitzat
+- demo reproduïble del flux complet
+
+#### Checkpoint o pregunta de comprovació
+Quins casos mínims demostren que el flux no és una demo puntual, sinó una funcionalitat reproduïble amb errors i permisos controlats?
+
+#### Ús de la IA permés i forma de control
+Ús permés per generar casos de prova addicionals, ajudar a interpretar un error o revisar el `README`. Control: la bateria mínima comuna és obligatòria i l'alumnat ha de registrar resultats reals executats, no només una llista generada.
+
+#### Dificultats habituals i resposta docent prevista
+- Si l'alumnat corregeix sense reproduir, el professorat demana tornar al cas fallit i registrar-lo.
+- Si només prova el camí feliç, es bloqueja el checkpoint fins provar errors i accés denegat.
+- Si el `README` no permet repetir la demo, es dedica el tram final a documentació abans de refactoritzar.
 
 **Bateria mínima obligatòria de prova**
 
@@ -162,15 +565,84 @@ Cada cas ha d'incloure entrada, resultat esperat, resultat obtingut i incidènci
 
 ### Sessió 7. Microprojecte 7
 
-**Refactorització, organització en fitxers i primer objecte del domini**
+**Sessió 7 — Refactorització com a millora de responsabilitats i mantenibilitat**
 
-- Objectiu: revisar el codi que ja funciona, netejar-lo i justificar una millora de mantenibilitat que incorpore reutilització real, organització simple en fitxers i un primer objecte de domini, sense convertir esta fase en una reescriptura de `R3`.
-- Què explica el professorat: com detectar duplicació, mescla excessiva de `HTML + PHP`, responsabilitats poc clares o noms millorables; per què no convé tindre-ho tot en un únic fitxer; per a què servixen `include` i `require`; diferència bàsica entre `include`, `require`, `include_once` i `require_once`; i per què una entitat mínima del domini dona més valor a la refactorització final.
-- Què modela el professorat: una refactorització curta sobre una part del flux ja validat, extraient funcions comunes a un fitxer, important-les amb `require_once` o equivalent, introduint un objecte simple del domini i comprovant després que no hi ha regressió.
-- Què fa l'alumnat: neteja una part rellevant del codi, extraïx funcions comunes a un fitxer separat, usa `include` / `require` amb sentit, ordena millor dades i renderitzat, representa almenys una entitat del projecte amb un objecte simple i justifica per què la versió revisada és millor.
-- Materials necessaris: fitxa del Repte 2, full de treball del Repte 2, checklist del Repte 2, apunts reals del Repte 2, materials comuns i comparativa breu abans/després.
-- Evidència esperada: reducció visible de duplicació o mescla innecessària, almenys un fitxer comú importat amb criteri, una entitat simple del domini recognoscible com a objecte, comparativa abans/després, justificació de la millora i comprovació final del flux.
-- Checkpoint: el professorat valida que la refactorització aporta claredat, reutilització i millor organització sense desplaçar el nucli de `R3`.
+#### Finalitat específica de la sessió
+Millorar codi que ja funciona perquè tinga responsabilitats més clares, menys duplicació i una estructura més mantenible, sense convertir el tancament de `R2` en una reescriptura arquitectònica.
+
+#### RA/focus tècnic
+Focus transversal en `RA2`, `RA3` i preparació de `R3`: organització de codi, reutilització, responsabilitats, `include` / `require`, funcions comunes i primer objecte simple del domini.
+
+#### Producte o microresultat esperat
+Comparativa abans/després amb una millora concreta de mantenibilitat: menys duplicació, responsabilitats més clares, fitxer comú importat amb criteri i, si és viable, una entitat simple del domini.
+
+#### Seqüència temporal orientativa dins de les 3 hores
+
+##### 0:00-0:25 — Selecció de zona de refactorització
+- partir de la bateria de proves de la sessió `6`
+- triar una part del codi que funciona però és difícil de mantindre
+- identificar duplicació, mescla de responsabilitats o noms confusos
+
+##### 0:25-0:55 — Modelatge docent
+- mostrar un abans/després curt
+- extraure una funció o fitxer comú
+- importar-lo amb `require_once` o equivalent
+- explicar què ha canviat en responsabilitats, no només en ubicació de fitxers
+- repetir una prova per comprovar que no hi ha regressió
+
+##### 0:55-1:45 — Refactorització de l'alumnat
+- netejar una part acotada del flux
+- separar preparació de dades, validació, acció o renderitzat quan siga possible
+- extraure funcions comunes o configuració repetida
+- usar `include`, `require`, `include_once` o `require_once` amb criteri
+
+##### 1:45-2:15 — Primer objecte o entitat mínima del domini
+- representar una entitat simple si aporta claredat
+- evitar POO completa obligatòria
+- justificar què representa l'objecte i quina responsabilitat concentra
+
+##### 2:15-2:40 — Prova de no regressió
+- repetir casos clau de la bateria mínima
+- comprovar operació protegida
+- corregir errors introduïts per la refactorització
+
+##### 2:40-3:00 — Tancament `R2 -> R3`
+- redactar comparativa abans/després
+- justificar la millora de mantenibilitat
+- identificar què quedarà per reorganitzar amb més profunditat en `R3`
+
+#### Intervenció docent prevista
+- insistir que refactoritzar és millorar responsabilitats i mantenibilitat, no moure codi sense criteri
+- limitar l'abast perquè no es trenque el flux complet
+- demanar proves després de cada canvi rellevant
+- frenar reescriptures grans i convertir-les en pendents de `R3`
+
+#### Tasques concretes de l'alumnat
+- triar una zona concreta del codi ja provat
+- identificar quin problema de mantenibilitat vol corregir
+- fer una refactorització xicoteta i verificable
+- extraure o importar almenys un fitxer comú quan tinga sentit
+- introduir una entitat simple del domini si ajuda a aclarir responsabilitats
+- repetir proves mínimes
+- escriure una comparativa abans/després
+
+#### Evidència verificable de la sessió
+- diff o comparativa abans/després
+- fitxer comú importat amb criteri o funcions comunes reutilitzades
+- reducció visible de duplicació, mescla o responsabilitats confuses
+- prova de no regressió del flux complet
+- justificació breu de la millora de mantenibilitat
+
+#### Checkpoint o pregunta de comprovació
+Quina responsabilitat queda ara més clara que abans i com has comprovat que el flux continua funcionant?
+
+#### Ús de la IA permés i forma de control
+Ús permés per detectar duplicacions, proposar noms, suggerir una extracció de funció o revisar una comparativa abans/després. Control: cap canvi proposat per IA es dona per bo sense executar la bateria mínima de no regressió i sense justificació pròpia de la responsabilitat millorada.
+
+#### Dificultats habituals i resposta docent prevista
+- Si només es mou codi a un altre fitxer, el professorat demana explicar quina responsabilitat ha quedat més clara.
+- Si la refactorització trenca el flux, es torna a la prova fallida i es redueix l'abast del canvi.
+- Si l'alumnat intenta fer arquitectura completa, es marca com a pont cap a `R3` i es tanca `R2` amb una millora acotada.
 
 La refactorització no s'ha de valorar només per “tindre més fitxers”. Ha de millorar almenys una responsabilitat concreta: validació, tractament de dades, comprovació d'accés, renderitzat, reutilització de missatges o representació d'una entitat del domini. La defensa breu ha d'explicar quin problema del codi inicial s'ha reduït, quin risc de regressió s'ha comprovat i quina part continua pendent per al treball arquitectònic de `R3`.
 
