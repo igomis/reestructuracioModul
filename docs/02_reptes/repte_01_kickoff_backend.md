@@ -32,9 +32,11 @@ Una primera versió funcional i verificable del servei backend, amb:
 - base comuna en `PHP` assumida dins d’un marc docent acotat
 - projecte executable en local de manera reproductible
 - ús de Docker
+- servidor web, servei de base de dades i phpMyAdmin incorporats en l'entorn inicial
 - punt d’entrada funcional simple
 - README tècnic executable
 - justificació tècnica breu
+- registre d'una decisió tècnica menuda i d'una incidència, dubte o bloqueig real
 - traçabilitat de treball amb issues i commits
 
 **Context professional simul·lat o realista**
@@ -248,7 +250,7 @@ Rúbrica d’investigació aplicada.
 
 20%
 
-### Microrepte MP2 — Entorn executable amb Docker, PHP i servidor web
+### Microrepte MP2 — Base executable en PHP amb Docker i completació de l’entorn
 
 **Tipus**
 
@@ -256,25 +258,30 @@ Microprojecte procedimental.
 
 **Objectiu**
 
-Inicialitzar el projecte perquè es puga arrancar de manera reproductible en local sobre una base clara de `Docker`, `PHP` i servidor web.
+A partir d’un model mínim mostrat pel professorat, configurar una base executable pròpia per al projecte i completar-la afegint persistència i gestió bàsica de l’entorn.
 
 **Tasca**
 
-L’equip:
+El professorat modela una base mínima executable amb `PHP`, servidor web i `Docker`, suficient per veure l'arrencada i entendre el paper de cada peça, però no dona l'entorn complet tancat.
+
+A partir d'eixe model, l'equip:
 
 - crea el repositori
-- configura l’entorn mínim
+- adapta l'entorn mínim al seu projecte
+- ajusta elements propis com nom del projecte, estructura mínima, port o resposta inicial
 - prepara arrencada amb `docker compose up` o equivalent
 - deixa visible el paper de `PHP` i del servidor web
+- completa l'entorn afegint servei de base de dades i phpMyAdmin
 - definix estructura bàsica de carpetes
 - establix convencions inicials
-- prepara README de posada en marxa
+- prepara un README curt de posada en marxa i comprovació
 - crea issue mare i primeres microtasques
 - valida que una altra persona pot arrancar el projecte seguint la documentació
+- registra una incidència, dubte o decisió tècnica real detectada durant la configuració
 
 **Relació amb el producte principal**
 
-Este microprojecte assegura que el servei no és només una idea o una demo local improvisada, sinó una base executable, documentada i reutilitzable.
+Este microprojecte assegura que el servei no és només una idea, una demo local improvisada o una còpia plana d'una configuració docent, sinó una base executable, adaptada, documentada i reutilitzable.
 
 **CA coberts**
 
@@ -286,23 +293,28 @@ Este microprojecte assegura que el servei no és només una idea o una demo loca
 **Descripció dels CA en llenguatge docent**
 
 - L’alumnat comprén quin component executa què i amb quin paper.
-- L’alumnat identifica com s’integra servidor, aplicació, contenidors i punt d’entrada.
+- L’alumnat identifica com s’integra servidor, aplicació, contenidors, base de dades, phpMyAdmin i punt d’entrada.
 - L’alumnat prepara una base tècnica funcional, no un conjunt d’arxius inconnexos.
 - L’alumnat verifica que el projecte es pot executar de manera reproductible.
+- L'alumnat pot explicar què ha adaptat respecte del model del professorat i per què.
 
 **Paper de la IA**
 
-La IA pot suggerir fitxers inicials, estructura base o configuracions de Docker, però l’alumnat ha de comprovar que tot allò realment arranca i és coherent amb la seua decisió tècnica.
+La IA pot suggerir fitxers inicials, estructura base, configuracions de Docker o pistes per depurar errors, però l’alumnat ha de comprovar que tot allò realment arranca, adaptar-ho al seu projecte i poder explicar el paper de cada servei. No és acceptable entregar una configuració completa generada o copiada sense verificació i defensa.
 
 **Evidències obligatòries**
 
 - repositori creat
 - arrencada amb Docker funcional
+- `docker-compose.yml` o equivalent adaptat al projecte
+- serveis mínims de `PHP`, servidor web, base de dades i phpMyAdmin definits i arrancables
 - issue mare de kickoff
 - primers commits significatius
-- README executable
+- README curt i executable
 - estructura base del projecte
 - registre de primera validació d’arrancada
+- justificació curta d'una decisió tècnica
+- incidència, dubte o bloqueig detectat o resolt
 
 **Instrument d’avaluació**
 
@@ -315,6 +327,8 @@ Checklist tècnica de repositori + revisió docent de README.
 - el README és suficient per a tercers
 - l’estructura és coherent
 - hi ha traçabilitat mínima del procés
+- es pot explicar què fa cada servei
+- hi ha una adaptació pròpia respecte del model inicial
 
 **Riscos habituals**
 
@@ -322,13 +336,16 @@ Checklist tècnica de repositori + revisió docent de README.
 - Docker present però no usable
 - configuració copiada sense entendre
 - arrencada només possible en l’ordinador de l’autor
+- phpMyAdmin o la base de dades afegits com a decoració sense saber comprovar-los
 
 **Verificació del treball real**
 
 - prova en directe d’arrancada seguint únicament el README
 - execució real amb Docker
 - revisió de commits i issues
-- pregunta tècnica sobre la funció del servidor o runtime triat
+- pregunta tècnica sobre la funció del servidor, `PHP`, Docker, base de dades i phpMyAdmin
+- explicació de què s'ha adaptat respecte del model del professorat
+- revisió d'una decisió tècnica menuda i d'una incidència o dubte real
 
 **Pes orientatiu dins del repte**
 
@@ -502,7 +519,7 @@ Rúbrica de defensa tècnica + checklist de documentació.
 | Sessió | Duració | Microrepte | Focus docent | Producte o evidència clau |
 |---|---:|---|---|---|
 | `1` | `3h` | MP1 | model client/servidor i decisió tècnica guiada | fitxa breu + decisió orientativa + dubtes |
-| `2` | `3h` | MP2 | entorn executable amb Docker, PHP i servidor web | projecte arrancant + `README` inicial |
+| `2` | `3h` | MP2 | base executable mínima adaptada i completada amb BBDD i phpMyAdmin | projecte arrancant + serveis definits + `README` inicial + decisió/incidència |
 | `3` | `3h` | MP3 | primer punt d’entrada funcional del backend | ruta, vista, `endpoint` o `healthcheck` funcional |
 | `4` | `3h` | MP4 | documentació tècnica, verificació i checkpoint | README executable + defensa breu + pas cap a `R2` |
 
@@ -519,8 +536,10 @@ Rúbrica de defensa tècnica + checklist de documentació.
 - fitxa breu d’exploració tècnica inicial del `MP1`
 - justificació tècnica breu o ADR curt
 - projecte executable amb Docker
+- base de dades i phpMyAdmin incorporats a l'entorn inicial quan corresponga al `MP2`
 - primera peça funcional simple del producte
 - prova funcional registrada
+- explicació del paper de cada servei, decisió tècnica menuda i incidència o dubte real
 - defensa tècnica breu
 - AI log quan hi haja ús d’IA
 

@@ -8,7 +8,8 @@ Este document baixa `R1` a una seqüència operativa d'aula perquè el professor
 
 - entendre el model client/servidor aplicat al producte del curs
 - assumir una base tècnica guiada sobre `Docker`, `PHP` i servidor web
-- posar en marxa un entorn executable i reproduïble
+- posar en marxa una base executable mínima i reproduïble
+- adaptar-la al projecte propi i completar-la amb base de dades i phpMyAdmin
 - deixar un primer punt d'entrada funcional del backend
 - documentar i verificar la base creada
 - preparar un pas net cap a `R2`
@@ -24,7 +25,7 @@ Este document baixa `R1` a una seqüència operativa d'aula perquè el professor
 | Sessió | Duració | Microrepte | Focus principal | Evidència clau |
 |---|---:|---|---|---|
 | `1` | `3h` | Microrepte `1` | model client/servidor i elecció guiada de stack | fitxa breu d'exploració tècnica i explicació del model |
-| `2` | `3h` | Microrepte `2` | entorn executable amb Docker, PHP i servidor web | projecte arrancant i `README` inicial |
+| `2` | `3h` | Microrepte `2` | base executable mínima en PHP amb Docker, adaptació i completació de l'entorn | projecte arrancant, BBDD i phpMyAdmin incorporats, `README` inicial i decisió/incidència |
 | `3` | `3h` | Microrepte `3` | primer punt d'entrada funcional del backend | ruta, vista, endpoint o `healthcheck` funcional |
 | `4` | `3h` | Microrepte `4` | documentació tècnica, verificació i checkpoint | README executable, verificació i pas cap a `R2` |
 
@@ -135,18 +136,130 @@ Deixa al final un espai curt per a registre post-sessió amb estos tres subtíto
 
 ### Què he de recordar per a la pròxima sessió
 
-### Sessió 2. Microrepte 2
+# Sessió 2 — Backend mínim en PHP amb Docker i completació de l’entorn
 
-**Entorn executable amb Docker, PHP i servidor web**
+## Objectiu
+Passar de la comprensió inicial del backend a una base executable real del repte, deixant un entorn mínim en PHP amb Docker i servidor web, i completant-lo amb base de dades i phpMyAdmin.
 
-Abans d'entrar en `MP2`, es pot fer una posada en comú breu de les fitxes d'exploració tècnica inicial tancades entre la sessió `1` i la `2`.
+## Què explica el professorat
+- què és una base executable mínima
+- per què no es dona l’entorn complet tancat
+- quines peces hi ha en l’entorn:
+  - projecte
+  - servidor web
+  - PHP
+  - Docker
+  - base de dades
+  - phpMyAdmin
+- què vol dir que l’entorn “funciona”
+- què s’espera del microrepte 2
 
-- Objectiu: convertir la decisió tècnica en un entorn real que arranca.
-- Què explica el professorat: què posa en marxa `Docker`, quin paper té `PHP`, quin paper té el servidor web i què compta com a entorn executable.
-- Què modela el professorat: arrencada local del projecte, comprovació d'un contenidor o servei, punt d'entrada mínim i actualització del `README` amb instruccions reals.
-- Què fa l'alumnat: prepara el repositori, configura l'entorn, comprova que el projecte arranca i deixa documentats els passos d'arrancada.
-- Evidència esperada: projecte arrancant, estructura recognoscible, `README` inicial i traçabilitat mínima amb issues o commits.
-- Checkpoint: una altra persona pot seguir el `README` i entendre què s'ha d'aixecar.
+## Què modela el professorat
+- un backend mínim en PHP amb Docker i servidor web
+- una estructura mínima del projecte
+- una arrencada bàsica
+- una comprovació simple al navegador
+- un README mínim
+- deixa expressament oberta la completació de l’entorn amb base de dades i phpMyAdmin
+
+## Què fa l’alumnat
+- parteix del model mínim mostrat pel professorat
+- l’adapta al seu projecte
+- decideix elements mínims propis:
+  - nom/identitat del projecte
+  - estructura mínima
+  - port o ajust simple
+  - resposta inicial personalitzada
+- completa l’entorn afegint:
+  - servei de base de dades
+  - servei de phpMyAdmin
+- prova l’arrancada
+- comprova que els serveis funcionen
+- escriu un README curt
+- registra una incidència, dubte o decisió tècnica
+
+## Producte final de la sessió
+- estructura mínima del projecte
+- entorn executable bàsic
+- serveis de BBDD i phpMyAdmin incorporats
+- resposta inicial funcional
+- README curt d’arrancada
+- nota breu de decisió tècnica o incidència
+
+## Evidència esperada
+- `docker-compose.yml` o equivalent adaptat
+- serveis mínims definits i arrancables
+- comprovació de funcionament
+- README executable
+- justificació curta d’una decisió tècnica
+- incidència detectada o resolta
+
+## Checkpoint
+Cada alumne ha de poder explicar:
+- quins serveis té el seu entorn
+- què fa cada peça
+- què ha adaptat respecte del model del professorat
+- com comprova que funciona
+- quina decisió tècnica ha pres
+- quina incidència o dubte ha trobat
+
+## Seqüència temporal de la sessió (3 hores)
+
+### 0:00–0:20 — Marc i modelatge inicial
+- recuperació del sentit del microrepte 2
+- explicació curta del backend mínim executable
+- presentació de les peces de l’entorn
+- idea clau: el professorat modela una base mínima, l’alumnat l’adapta i la completa
+
+### 0:20–0:50 — Demostració guiada del professorat
+- estructura mínima del projecte
+- Docker + PHP + servidor web
+- arrencada bàsica
+- comprovació simple
+- README mínim
+- indicació explícita del que queda perquè l’alumnat ho complete
+
+### 0:50–2:10 — Treball de l’alumnat
+- adaptació del model al projecte propi
+- incorporació de BBDD i phpMyAdmin
+- arrencada i comprovació
+- registre d’incidències
+- redacció del README
+
+### 2:10–2:35 — Posada en comú i desbloqueig
+- revisió d’errors habituals
+- contrast entre decisions
+- aclariment de bloquejos tècnics
+- ajust de l’entorn
+
+### 2:35–3:00 — Checkpoint final
+- comprovació ràpida de funcionament
+- explicació oral breu
+- revisió del README
+- tancament del microrepte o preparació de continuació
+
+## Paper de la IA en esta sessió
+Ús acceptable:
+- interpretar errors de configuració
+- comparar opcions mínimes d’entorn
+- aclarir el paper de cada servei
+- suggerir un README curt
+- ajudar a entendre un bloqueig concret
+
+No acceptable:
+- copiar una configuració completa sense entendre-la
+- pegar una solució sencera no validada
+- donar per funcional un entorn que no es pot explicar ni reproduir
+
+## Observacions docents
+
+### Què s'ha fet realment
+
+### Què ha quedat pendent
+
+### Què he de recordar per a la pròxima sessió
+
+## Continuació de la seqüència recomanada
 
 ### Sessió 3. Microrepte 3
 
@@ -173,14 +286,14 @@ Abans d'entrar en `MP2`, es pot fer una posada en comú breu de les fitxes d'exp
 ## Evidències esperades per sessió
 
 - Sessió `1`: fitxa breu d'exploració tècnica inicial, explicació client/servidor i decisió tècnica orientativa.
-- Sessió `2`: entorn executable amb `Docker`, `PHP`, servidor web i `README` inicial.
+- Sessió `2`: base executable amb `Docker`, `PHP`, servidor web, BBDD, phpMyAdmin, `README` inicial, decisió tècnica i incidència o dubte registrat.
 - Sessió `3`: punt d'entrada funcional del backend en execució real.
 - Sessió `4`: documentació, verificació i checkpoint de pas a `R2`.
 
 ## Moments de checkpoint
 
 - Checkpoint curt `1`: al final de la sessió `1` o a l'inici de la sessió `2`, per validar que hi ha criteri tècnic i no només intuïció.
-- Checkpoint curt `2`: al final de la sessió `2`, per comprovar que el projecte arranca de veritat.
+- Checkpoint curt `2`: al final de la sessió `2`, per comprovar que el projecte arranca de veritat, que els serveis mínims estan definits i que l'alumnat pot explicar què ha adaptat i completat.
 - Checkpoint curt `3`: al final de la sessió `3`, per confirmar que existix un punt d'entrada funcional.
 - Checkpoint de pas `R1 -> R2`: al final de la sessió `4`, per decidir si el grup entra a `R2` sobre una base real.
 
@@ -195,4 +308,4 @@ Abans d'entrar en `MP2`, es pot fer una posada en comú breu de les fitxes d'exp
 
 ## Criteri pràctic de tancament
 
-`R1` queda preparat quan el professorat pot veure una decisió tècnica guiada, un entorn executable, un primer punt d'entrada funcional del backend i una documentació suficient per continuar cap a `R2` sense tornar a començar.
+`R1` queda preparat quan el professorat pot veure una decisió tècnica guiada, una base executable adaptada i completada, un primer punt d'entrada funcional del backend i una documentació suficient per continuar cap a `R2` sense tornar a començar.

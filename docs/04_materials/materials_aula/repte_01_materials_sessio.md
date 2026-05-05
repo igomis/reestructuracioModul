@@ -7,7 +7,7 @@ Contextualitzar les plantilles d'aula del curs per al `R1` amb una seqüència c
 ## Seqüència base del repte
 
 - Sessió `1` -> Microrepte `1`: model client/servidor i elecció guiada de stack
-- Sessió `2` -> Microrepte `2`: entorn executable amb Docker, PHP i servidor web
+- Sessió `2` -> Microrepte `2`: base executable amb Docker, PHP, servidor web, BBDD i phpMyAdmin
 - Sessió `3` -> Microrepte `3`: primer punt d'entrada funcional del backend
 - Sessió `4` -> Microrepte `4`: documentació tècnica, verificació i checkpoint
 
@@ -25,11 +25,11 @@ Contextualitzar les plantilles d'aula del curs per al `R1` amb una seqüència c
 ### Sessió 2. Microrepte 2
 
 - Obertura possible: posada en comú breu de les fitxes d'exploració tècnica inicial abans d'entrar en l'entorn executable.
-- Objectiu de la sessió: posar en marxa un entorn executable amb `Docker`, `PHP` i servidor web.
-- Què s'espera al final: projecte arrancant i `README` inicial prou clar per repetir l'arrencada.
-- Error habitual a evitar: tindre configuració aparent però no un entorn realment executable.
-- Evidència mínima del dia: arrencada reproduïble i instruccions mínimes d'ús.
-- Pregunta de tancament: què aixeca `Docker`, què executa `PHP` i què aporta el servidor web?
+- Objectiu de la sessió: adaptar el model mínim del professorat i completar-lo amb BBDD i phpMyAdmin.
+- Què s'espera al final: projecte arrancant, serveis mínims definits, `README` inicial i una decisió o incidència registrada.
+- Error habitual a evitar: copiar la demo del professorat sense adaptar-la ni saber explicar què fa cada servei.
+- Evidència mínima del dia: arrencada reproduïble, serveis de BBDD i phpMyAdmin incorporats i instruccions mínimes d'ús.
+- Pregunta de tancament: què has adaptat respecte del model, què aixeca cada servei i com comproves que funciona?
 
 ### Sessió 3. Microrepte 3
 
@@ -55,10 +55,10 @@ Contextualitzar les plantilles d'aula del curs per al `R1` amb una seqüència c
   - Senyal d'alerta: hi ha noms d'eines, però no hi ha criteri de producte ni comprensió del flux.
   - Acció correctiva ràpida: reduir la fitxa, tancar una sola decisió tècnica defensable i deixar visibles els dubtes oberts.
 - `CP-R1.2`
-  - Què hauria d'estar fet: entorn executable amb `Docker`, `PHP` i servidor web.
-  - Com es verifica en `2-3` minuts: arrancar projecte i llegir els passos des del `README`.
-  - Senyal d'alerta: existixen fitxers de configuració, però ningú sap què aixequen ni com provar-los.
-  - Acció correctiva ràpida: congelar canvis laterals i tancar només arrencada i documentació mínima.
+  - Què hauria d'estar fet: entorn executable amb `Docker`, `PHP`, servidor web, BBDD i phpMyAdmin.
+  - Com es verifica en `2-3` minuts: arrancar projecte, llegir els passos des del `README` i explicar què s'ha adaptat respecte del model docent.
+  - Senyal d'alerta: existixen fitxers de configuració, però ningú sap què aixequen, com provar-los o quina part ha completat.
+  - Acció correctiva ràpida: congelar canvis laterals i tancar només arrencada, serveis mínims, documentació i una incidència o decisió real.
 - `CP-R1.3`
   - Què hauria d'estar fet: punt d'entrada funcional del backend.
   - Com es verifica en `2-3` minuts: mostrar la ruta, vista, `endpoint` o `healthcheck` en execució.
@@ -91,12 +91,12 @@ Contextualitzar les plantilles d'aula del curs per al `R1` amb una seqüència c
 
 ### Full 2. Entorn executable
 
-- Objectiu: deixar el projecte arrancant amb `Docker`, `PHP` i servidor web.
-- Tasca: preparar entorn, documentar passos i comprovar l'arrencada.
-- Evidència a generar: `README` inicial i prova d'arrencada reproduïble.
-- Validació mínima: una altra persona pot seguir els passos essencials.
-- Ajuda si et bloqueges: simplifica l'entorn i tanca només el mínim que realment arranca.
-- Ampliació si acabes prompte: millora scripts o organització de carpetes.
+- Objectiu: deixar el projecte arrancant amb `Docker`, `PHP`, servidor web, BBDD i phpMyAdmin.
+- Tasca: partir del model mínim mostrat pel professorat, adaptar-lo al projecte propi, completar l'entorn amb persistència i documentar passos.
+- Evidència a generar: `README` inicial, prova d'arrencada reproduïble, decisió tècnica curta i incidència o dubte registrat.
+- Validació mínima: una altra persona pot seguir els passos essencials i entendre què fa cada servei.
+- Ajuda si et bloqueges: simplifica l'entorn i tanca només el mínim que realment arranca amb serveis comprovables.
+- Ampliació si acabes prompte: millora scripts, organització de carpetes o comprovació dels serveis.
 
 ### Full 3. Punt d'entrada funcional
 
@@ -132,7 +132,7 @@ Contextualitzar les plantilles d'aula del curs per al `R1` amb una seqüència c
 ## Evidència mínima per sessió
 
 - Sessió `1`: fitxa breu d'exploració tècnica inicial, criteri tècnic i explicació client/servidor.
-- Sessió `2`: projecte arrancant i `README` inicial usable.
+- Sessió `2`: projecte arrancant, BBDD i phpMyAdmin incorporats, `README` inicial usable i decisió/incidència registrada.
 - Sessió `3`: punt d'entrada funcional del backend.
 - Sessió `4`: documentació, verificació i checkpoint de pas.
 

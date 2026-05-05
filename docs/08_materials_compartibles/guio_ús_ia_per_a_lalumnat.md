@@ -4,6 +4,7 @@
 
 - explorar alternatives
 - desbloquejar errors o problemes tècnics
+- interpretar errors de configuració d'entorn i comparar opcions mínimes de serveis
 - proposar proves o casos límit
 - revisar contractes d'`API`, validacions o documentació
 - generar un primer esquelet que després contrastes i adaptes
@@ -11,6 +12,7 @@
 ## La IA no és acceptable per a
 
 - copiar codi sense entendre'l
+- copiar una configuració completa de Docker, BBDD o serveis sense adaptar-la ni provar-la
 - donar per bona una resposta sense provar-la
 - inventar proves o resultats no executats
 - ocultar que l'has usada

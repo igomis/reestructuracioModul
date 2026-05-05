@@ -7,7 +7,7 @@ Deixar obert el projecte amb una base executable i un primer punt d'entrada func
 ## Seqüència base
 
 - microrepte `1`: model client/servidor i elecció guiada de stack
-- microrepte `2`: entorn executable amb Docker, PHP i servidor web
+- microrepte `2`: base executable amb Docker, PHP, servidor web, BBDD i phpMyAdmin
 - microrepte `3`: primer punt d'entrada funcional del backend
 - microrepte `4`: documentació tècnica, verificació i checkpoint
 
@@ -18,6 +18,9 @@ Deixar obert el projecte amb una base executable i un primer punt d'entrada func
 - justificar la base tècnica dins del marc del curs
 - deixar repositori usable i `README` inicial
 - arrancar l'entorn amb Docker, PHP i servidor web
+- adaptar el model mínim del professorat al teu projecte
+- completar l'entorn amb servei de base de dades i phpMyAdmin
+- registrar una decisió tècnica menuda i una incidència, dubte o bloqueig real
 - crear una ruta, vista, `endpoint` o `healthcheck` simple però funcional
 - preparar una verificació curta i explicable del que ja funciona
 
@@ -26,7 +29,9 @@ Deixar obert el projecte amb una base executable i un primer punt d'entrada func
 - fitxa breu d'exploració tècnica inicial
 - repositori obert i recognoscible
 - `README` amb com arranca el projecte
-- entorn executable amb `Docker`, `PHP` i servidor web
+- entorn executable amb `Docker`, `PHP`, servidor web, BBDD i phpMyAdmin
+- explicació de què fa cada servei i què has adaptat respecte del model inicial
+- decisió tècnica curta i incidència o dubte registrat
 - primer punt d'entrada funcional del backend
 - justificació tècnica breu i traçabilitat mínima
 
@@ -35,7 +40,8 @@ Deixar obert el projecte amb una base executable i un primer punt d'entrada func
 - ensenya la fitxa i explica què has investigat, què has entés i amb què començaries
 - arranca el projecte davant del professorat
 - mostra el punt d'entrada funcional del backend
-- explica què fa `Docker`, què fa `PHP` i què fa el servidor web
+- explica què fa `Docker`, què fa `PHP`, què fa el servidor web, què fa la base de dades i per a què uses phpMyAdmin
+- explica què has adaptat respecte del model del professorat
 - ensenya que el `README` permet repetir la prova
 
 ## Errors habituals
@@ -45,6 +51,7 @@ Deixar obert el projecte amb una base executable i un primer punt d'entrada func
 - quedar-se en l'esquelet del framework
 - justificar tecnologia però no el producte
 - no saber què fa cada component tècnic
+- copiar una configuració completa sense adaptar-la ni comprovar-la
 - no tindre cap punt d'entrada funcional real
 - no actualitzar el `README`
 

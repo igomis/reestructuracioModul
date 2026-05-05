@@ -8,7 +8,9 @@ Esta comprovació curta servix per decidir si la base inicial del curs ja és pr
 
 - repositori usable
 - `README` mínim i actualitzat
-- entorn executable amb `Docker`, `PHP` i servidor web
+- entorn executable amb `Docker`, `PHP`, servidor web, BBDD i phpMyAdmin
+- adaptació pròpia respecte del model mínim del professorat
+- decisió tècnica curta i incidència, dubte o bloqueig real
 - primer punt d'entrada funcional del backend
 - idea clara de quina operació del domini protegiràs en `R2`
 
@@ -18,12 +20,15 @@ Esta comprovació curta servix per decidir si la base inicial del curs ja és pr
 - arranca el projecte
 - mostra el punt d'entrada funcional
 - explica què fa cada component tècnic principal
+- explica què has adaptat i com comproves BBDD i phpMyAdmin
 - explica quina serà la primera operació protegida del producte
 
 ## Senyals d'alerta
 
 - només hi ha esquelet o configuració
 - ningú sap explicar què aixeca `Docker` ni què executa `PHP`
+- la base de dades o phpMyAdmin apareixen al fitxer però no es poden comprovar
+- la configuració és una còpia de la demo i no s'ha adaptat al projecte
 - no hi ha cap punt d'entrada funcional real
 - el grup no sap què passarà en `R2`
 
