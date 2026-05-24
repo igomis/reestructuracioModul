@@ -21,6 +21,14 @@ Publicar una part rellevant del producte com a `API` usable, provada i documenta
 - consum real des d'una eina o client simple
 - documentació breu alineada amb el comportament real
 
+## Targeta fixa de traçabilitat
+
+- **Criteri/objectiu**: `RA7`, servei reusable i consumible.
+- **Descriptor de rúbrica**: contracte real, verificació d'API i documentació operativa.
+- **Moment d'avaluació**: revisió de contracte i tancament del repte.
+- **Agent d'avaluació**: professorat amb prova de consum de l'alumne.
+- **Tipus d'evidència**: contracte, endpoint, peticions, consumidor i documentació.
+
 ## Validació mínima
 
 - llança una petició correcta i una incorrecta

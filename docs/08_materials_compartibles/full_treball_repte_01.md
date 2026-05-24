@@ -44,6 +44,14 @@ Els microreptes són passos lògics del repte. En aula es treballen compactats e
 - índex o pàgina que enllaça la documentació
 - justificació tècnica breu i traçabilitat mínima
 
+## Targeta fixa de traçabilitat
+
+- **Criteri/objectiu**: `RA1`, arrencada backend executable i justificable.
+- **Descriptor de rúbrica**: resolució funcional mínima, traçabilitat i documentació operativa.
+- **Moment d'avaluació**: checkpoint de kickoff.
+- **Agent d'avaluació**: professorat amb defensa breu de l'alumne.
+- **Tipus d'evidència**: repositori, `README`, demo, fitxa i commit comentat.
+
 ## Com ho valides
 
 - ensenya la fitxa i explica què has investigat, què has entés i amb què començaries

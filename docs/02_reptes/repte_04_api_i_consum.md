@@ -14,6 +14,13 @@
 - **Instrument de control de delegació excessiva**: revisió de repositori, `AI log`, prova guiada d'endpoints i contrast entre documentació i resposta real.
 - **Instrument de recuperació o millora**: redisseny de contracte, nova execució guiada i documentació corregida.
 
+## Justificació docent
+
+- **Evidència principal**: contracte d'API aplicat a un cas d'ús real, amb endpoint funcional i consum verificat.
+- **Evidències secundàries**: proves de petició correcta i incorrecta, autenticació si cal, documentació alineada i traçabilitat de canvis.
+- **Mínim suficient**: una ruta solta o un `CRUD` ornamental no és suficient; el servei s'ha de poder consumir i contrastar.
+- **Feedback previst**: revisió del contracte abans de tancar endpoints i prova final de consum amb contrast documentació-resposta.
+
 ## 1. Visió general del repte
 
 **Finalitat del repte**

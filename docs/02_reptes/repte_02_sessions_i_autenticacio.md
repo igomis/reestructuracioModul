@@ -14,6 +14,13 @@
 - **Instrument de control de delegació excessiva**: revisió de repositori, `AI log` i microcanvi en viu sobre validació o autenticació.
 - **Instrument de recuperació o millora**: reconstrucció guiada del flux amb prova funcional i nova defensa breu.
 
+## Justificació docent
+
+- **Evidència principal**: flux de negoci protegit amb estat, validació, cas autoritzat i cas denegat.
+- **Evidències secundàries**: errors visibles, dada conservada, `README`, revisió final del codi, `AI log` quan corresponga i mini defensa.
+- **Mínim suficient**: no n'hi ha prou amb login; ha d'existir una operació real protegida, reproduïble i explicable.
+- **Feedback previst**: checkpoint funcional abans de la revisió final i retorn breu després de provar cas correcte, cas denegat i error.
+
 ## 1. Visió general del repte
 
 **Finalitat del repte**

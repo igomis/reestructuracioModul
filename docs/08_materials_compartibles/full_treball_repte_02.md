@@ -54,6 +54,14 @@ Si apareixen més classes, més objectes o una persistència més formal, han de
 - comparativa breu abans/després o justificació equivalent de la revisió final
 - almenys un fitxer comú importat amb criteri i un objecte simple del domini
 
+## Targeta fixa de traçabilitat
+
+- **Criteri/objectiu**: `RA2`, `RA3` i `RA4`, flux funcional protegit.
+- **Descriptor de rúbrica**: cas d'ús no trivial, verificació tècnica i defensa d'autoria.
+- **Moment d'avaluació**: checkpoint funcional i revisió final del codi.
+- **Agent d'avaluació**: professorat amb prova guiada de l'alumne.
+- **Tipus d'evidència**: flux, proves, errors, `README` i justificació abans/després.
+
 ## Com ho valides
 
 - crea o autentica un usuari de prova

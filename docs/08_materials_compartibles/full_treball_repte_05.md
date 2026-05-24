@@ -21,6 +21,14 @@ Tancar el producte amb una integració o flux híbrid útil, provat i defensable
 - prova d'almenys un error o incidència
 - documentació final i `README` actualitzat
 
+## Targeta fixa de traçabilitat
+
+- **Criteri/objectiu**: `RA9`, integració híbrida amb valor de producte.
+- **Descriptor de rúbrica**: flux complet, prova de punta a punta, traçabilitat i defensa.
+- **Moment d'avaluació**: validació de font i demo final.
+- **Agent d'avaluació**: professorat amb mini defensa de l'alumne.
+- **Tipus d'evidència**: workflow o connector, mapping, demo, error i documentació.
+
 ## Validació mínima
 
 - mostra què inicia el flux

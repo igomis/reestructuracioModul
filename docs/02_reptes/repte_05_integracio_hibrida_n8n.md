@@ -14,6 +14,13 @@
 - **Instrument de control de delegació excessiva**: revisió de commit rellevant comentat, contrast amb `AI log` i prova guiada sobre la transformació o l'orquestració.
 - **Instrument de recuperació o millora**: reducció d'abast a una sola font externa, un cas d'ús híbrid i una nova demo completa.
 
+## Justificació docent
+
+- **Evidència principal**: flux híbrid complet amb font externa, transformació i valor observable dins del producte.
+- **Evidències secundàries**: mapping de dades, prova d'error, documentació final, traçabilitat de treball i mini defensa.
+- **Mínim suficient**: una connexió vistosa o un workflow aïllat no compta; cal integració útil, reproduïble i defensable.
+- **Feedback previst**: validació de la font abans de construir i demo final amb cas positiu, fallada rellevant i defensa curta.
+
 ## 1. Visió general del repte
 
 **Finalitat del repte**

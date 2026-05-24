@@ -30,6 +30,14 @@ Reconstruir el projecte en un framework amb base operativa real, persistència m
 - proves o verificacions registrades
 - `README` tècnic actualitzat
 
+## Targeta fixa de traçabilitat
+
+- **Criteri/objectiu**: `RA5` amb suport de `RA6` i `RA8`, reconstrucció en framework.
+- **Descriptor de rúbrica**: funcionalitat verificable, persistència real i explicació tècnica.
+- **Moment d'avaluació**: `CP-R3A` i `CP-R3B`.
+- **Agent d'avaluació**: professorat amb defensa curta de l'alumne.
+- **Tipus d'evidència**: demo, migracions, seeders, proves, README i mapa de migració.
+
 ## Validació mínima
 
 - arranca el projecte des de zero

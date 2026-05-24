@@ -14,6 +14,13 @@
 - **Instrument de control de delegació excessiva**: revisió de commit rellevant comentat, contrast amb `AI log` i prova guiada sobre un flux migrat.
 - **Instrument de recuperació o millora**: reobertura del segon flux o reducció d'abast funcional mantenint Docker, BBDD, `migrations`, `seeders` i un flux **server-rendered** complet.
 
+## Justificació docent
+
+- **Evidència principal**: aplicació en framework amb persistència real i dos fluxos end-to-end, almenys un migrat de `R2`.
+- **Evidències secundàries**: Docker, `.env`, `migrations`, `seeders`, proves, README, ADR breu i defensa del circuit petició -> resposta.
+- **Mínim suficient**: no és migrar fitxers; ha d'arrancar des de zero, crear dades reproduïbles i executar dos fluxos verificables.
+- **Feedback previst**: `CP-R3A` sobre base tècnica i `CP-R3B` sobre segon flux, proves i explicació de responsabilitats.
+
 ## 1. Visió general del repte
 
 **Finalitat del repte**

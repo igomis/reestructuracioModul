@@ -14,6 +14,13 @@
 - **Instrument de control de delegació excessiva**: revisió de commit rellevant comentat, contrast amb `AI log` i prova en directe.
 - **Instrument de recuperació o millora**: nova demostració d'arrencada amb ajust de `README`, Docker i justificació tècnica.
 
+## Justificació docent
+
+- **Evidència principal**: repositori executable amb `README`, punt d'entrada funcional i justificació tècnica breu.
+- **Evidències secundàries**: fitxa d'exploració, issue mare, commit rellevant comentat, incidència o dubte registrat i mini defensa.
+- **Mínim suficient**: el projecte arranca des del `README`, mostra un backend mínim real i l'alumnat explica client/servidor, serveis i decisió tècnica.
+- **Feedback previst**: checkpoint de kickoff amb prova d'arrencada, revisió ràpida del repositori i pregunta de transferència.
+
 ## 1. Visió general del repte
 
 **Finalitat del repte**
