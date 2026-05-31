@@ -76,6 +76,6 @@ Per verificar una ampliació, el professorat ha de poder reutilitzar instruments
 - [Repte 2](02_reptes/repte_02_sessions_i_autenticacio.md#13-ampliacio-910)
 - [Repte 3](02_reptes/repte_03_mvc_i_persistencia.md#13-ampliacio-910)
 - [Repte 4](02_reptes/repte_04_api_i_consum.md#13-ampliacio-910)
-- [Repte 5](02_reptes/repte_05_integracio_hibrida_n8n.md#13-ampliacio-910)
+- [Repte 5](02_reptes/repte_05_integracio_hibrida.md#13-ampliacio-910)
 
 Per a futures variants o adaptacions, es pot reutilitzar la [plantilla docent d'ampliació 9→10](04_materials/plantilla_ampliacio_9_10.md).

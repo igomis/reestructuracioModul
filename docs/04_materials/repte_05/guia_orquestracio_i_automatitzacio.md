@@ -1,4 +1,4 @@
-# Guia de n8n i automatització
+# Guia d'orquestració i automatització
 
 ## Finalitat
 

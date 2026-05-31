@@ -29,7 +29,7 @@ En este curs, un token és un mecanisme funcional del backend per confirmar, can
 ## On ampliar
 
 - Material del curs: [Integració API](../../05_projectes_tecnics/integracio_api.md)
-- Material del curs: [Repte 5. Integració híbrida i tancament](../../02_reptes/repte_05_integracio_hibrida_n8n.md)
+- Material del curs: [Repte 5. Integració híbrida i tancament](../../02_reptes/repte_05_integracio_hibrida.md)
 - MDN: [Authorization header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization)
 - RFC Editor: [RFC 7519 JSON Web Token](https://www.rfc-editor.org/rfc/rfc7519)
 - Laravel Docs: [Sanctum](https://laravel.com/docs/13.x/sanctum)

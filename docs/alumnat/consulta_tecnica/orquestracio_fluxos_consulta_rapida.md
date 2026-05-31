@@ -1,8 +1,8 @@
-# n8n: consulta ràpida
+# Orquestració de fluxos: consulta ràpida
 
 ## Què és
 
-És una guia curta per situar `n8n` dins del curs. `n8n` ací no és un fi en si mateix: és una possible eina de `R5` per orquestrar un flux híbrid útil sobre l'`API` del teu producte.
+Guia curta per situar eines d'orquestració dins del curs. Aquestes eines no són un fi en si mateixes: són possibles implementacions de `R5` per orquestrar un flux híbrid útil sobre l'`API` del teu producte.
 
 ## Quan la necessites en el curs
 
@@ -20,7 +20,7 @@
 
 ## Errors habituals
 
-- usar `n8n` només perquè es veu bé
+- usar una eina d'orquestració només perquè es veu bé
 - construir un `workflow` decoratiu que no tanca cap problema del producte
 - copiar nodes, credencials o `mappings` sense entendre'ls
 - no controlar què passa quan falla l'`API` o el servei extern
@@ -28,9 +28,6 @@
 
 ## On ampliar
 
-- Material del curs: [Repte 5. Integració híbrida i tancament](../../02_reptes/repte_05_integracio_hibrida_n8n.md)
-- Material del curs: [Guia `n8n` i automatització](../../04_materials/repte_05/guia_n8n_i_automatitzacio.md)
-- n8n Docs: [Webhook node](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/)
-- n8n Docs: [Handling API rate limits](https://docs.n8n.io/integrations/builtin/rate-limits/)
-- n8n Docs: [Error handling](https://docs.n8n.io/flow-logic/error-handling/)
-- MDN: [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS)
+- Material del curs: [Repte 5. Integració híbrida i tancament](../../02_reptes/repte_05_integracio_hibrida.md)
+- Material del curs: [Guia d'orquestració i automatització](../../04_materials/repte_05/guia_orquestracio_i_automatitzacio.md)
+- Docs d'eines d'orquestració (ex.: n8n) i recursos externs

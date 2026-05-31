@@ -74,6 +74,8 @@ Els documents de planificació continuen existint com a annexos o arxiu, però l
 - [Projecte backend base](05_projectes_tecnics/projecte_base_backend.md): base tècnica comuna
 - [Reptes 1-5](02_reptes/repte_01_kickoff_backend.md): desplegament del curs per reptes
 - [Ampliacions 9 a 10 per repte](ampliacions-9-a-10-per-repte.md): capa d'excel·lència activable quan el nucli ja està validat
+
+Nota: les integracions externes (p. ex. WordPress) s'entenen com ampliacions o integracions possibles dins de `R5`, no com a vies principals del curs.
 - [Avaluació i evidències](03_avaluacio/index.md): instruments i criteri d'acreditació
 - [Ús de la IA per a professorat i alumnat](us-ia-professorat-i-alumnat.md): criteri únic sobre ús assistit per IA
 - [Recursos d'aula](04_materials/index.md): peces derivades de suport

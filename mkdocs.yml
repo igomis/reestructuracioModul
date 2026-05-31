@@ -49,12 +49,13 @@ nav:
           - Repte 2: 02_reptes/repte_02_sessions_i_autenticacio.md
           - Repte 3: 02_reptes/repte_03_mvc_i_persistencia.md
           - Repte 4: 02_reptes/repte_04_api_i_consum.md
-          - Repte 5: 02_reptes/repte_05_integracio_hibrida_n8n.md
+          - Repte 5: 02_reptes/repte_05_integracio_hibrida.md
           - Fase final i defensa: 02_reptes/fase_final_integradora_tancament_i_defensa.md
       - Ampliacions:
           - Integració API: 05_projectes_tecnics/integracio_api.md
           - Integració IA: 05_projectes_tecnics/integracio_ia.md
-          - Integració n8n: 05_projectes_tecnics/integracio_n8n.md
+        - Automatització i orquestració de fluxos: 05_projectes_tecnics/integracio_n8n.md
+        - Integració WordPress: 05_projectes_tecnics/integracio_wordpress.md
   - Avaluació i evidències:
       - Inici: 03_avaluacio/index.md
       - Matriu de coherència curricular: matriu-coherencia-curricular-dwes.md
@@ -84,7 +85,7 @@ nav:
           - Repte 2: 04_materials/apunts_reals/repte_02_sessions_i_autenticacio.md
           - Repte 3: 04_materials/apunts_reals/repte_03_mvc_i_persistencia.md
           - Repte 4: 04_materials/apunts_reals/repte_04_api_i_consum.md
-          - Repte 5: 04_materials/apunts_reals/repte_05_integracio_hibrida_n8n.md
+          - Repte 5: 04_materials/apunts_reals/repte_05_integracio_hibrida.md
       - Guies comunes:
           - Git i flux de treball: 04_materials/materials_comuns/guia_git_i_flux_treball.md
           - README i ADR: 04_materials/materials_comuns/guia_readme_i_adr.md
@@ -142,7 +143,7 @@ nav:
               - Symfony: alumnat/consulta_tecnica/symfony_consulta_rapida.md
               - NestJS: alumnat/consulta_tecnica/express_nest_consulta_rapida.md
               - FastAPI avançat: alumnat/consulta_tecnica/fastapi_consulta_rapida.md
-              - n8n: alumnat/consulta_tecnica/n8n_consulta_rapida.md
+              - Orquestració de fluxos: alumnat/consulta_tecnica/orquestracio_fluxos_consulta_rapida.md
   - Arxiu:
       - Inici arxiu: arxiu/index.md
       - Pilotatge:

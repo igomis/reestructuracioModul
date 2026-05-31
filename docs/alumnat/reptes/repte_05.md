@@ -46,4 +46,4 @@ Després de `R5` ja no hi ha un nou repte: el següent pas és la defensa final 
 
 ## Si vols el detall complet
 
-Consulta [Repte 5. Integració híbrida, automatització i manteniment](../../02_reptes/repte_05_integracio_hibrida_n8n.md).
+Consulta [Repte 5. Integració híbrida, automatització i manteniment](../../02_reptes/repte_05_integracio_hibrida.md).

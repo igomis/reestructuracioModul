@@ -36,36 +36,13 @@ El kit manté el mateix escenari docent de referència:
 
 ## Peces que s'activen en este tram
 
-- [kit_pilotatge_setmanes_13_16.md](kit_pilotatge_setmanes_13_16.md)
-- [guia_sessio_a_sessio_20_setmanes.md](guia_sessio_a_sessio_20_setmanes.md)
-- [annex_suport_i_ampliacio_ritmes.md](annex_suport_i_ampliacio_ritmes.md)
-- [pla_execucio_pilotatge_real.md](../arxiu/pla_execucio_pilotatge_real.md)
-- [repte_05_materials_sessio.md](../04_materials/materials_aula/repte_05_materials_sessio.md)
-- [guia_integracio_externa_i_flux_hibrid.md](../04_materials/repte_05/guia_integracio_externa_i_flux_hibrid.md)
-- [guia_n8n_i_automatitzacio.md](../04_materials/repte_05/guia_n8n_i_automatitzacio.md)
-- [checklist_repte_05.md](../04_materials/repte_05/checklist_repte_05.md)
-- [repte_05_integracio_hibrida_n8n.md](../04_materials/apunts_reals/repte_05_integracio_hibrida_n8n.md)
-- [rubrica_base_reptes.md](../03_avaluacio/rubrica_base_reptes.md)
-- [rubrica_defensa_tecnica.md](../03_avaluacio/rubrica_defensa_tecnica.md)
-- [instruments_seguiment_docent.md](../03_avaluacio/instruments_seguiment_docent.md)
-- [sistema_evidencies.md](../03_avaluacio/sistema_evidencies.md)
-- [mini_briefings_setmanals.md](../04_materials/materials_aula/mini_briefings_setmanals.md)
-- [checkpoints_curts_aula.md](../04_materials/materials_aula/checkpoints_curts_aula.md)
-- [plantilles_feedback_rapid.md](../04_materials/materials_aula/plantilles_feedback_rapid.md)
-- [fulls_treball_base.md](../04_materials/materials_aula/fulls_treball_base.md)
-- [plantilla_recollida_feedback_pilotatge.md](../arxiu/plantilla_recollida_feedback_pilotatge.md)
-- [registre_incidents_i_ajustos_pilotatge.md](../arxiu/registre_incidents_i_ajustos_pilotatge.md)
-
-## Planificació operativa per setmanes
-
-### Setmana 17
 
 - Objectiu docent: obrir `R5` de manera explícita i validar que la integració triada respon a una necessitat real del producte
 - Focus o repte: entrada explícita a `R5` i definició final de la necessitat real d'integració
 - Què explica el professorat: què compta com a integració amb valor real, per què no n'hi ha prou amb un workflow visible i com reconnectar `R5` amb el contracte d'`API`, el domini i el tancament professional del producte
 - Què modela en directe: selecció d'un esdeveniment real del domini, mapatge d'entrada, consum d'`API`, transformació mínima i eixida observable, deixant clar també quin error rellevant convé controlar des del principi
 - Què fa l'alumnat: valida individualment la necessitat real que resoldrà, defineix el flux d'entrada i eixida, identifica l'endpoint o recurs d'`API` que reutilitzarà i deixa documentada la decisió d'integració amb criteri defensable
-- Materials concrets que s'activen: [kit_pilotatge_setmanes_13_16.md](kit_pilotatge_setmanes_13_16.md), [repte_05_materials_sessio.md](../04_materials/materials_aula/repte_05_materials_sessio.md), [guia_integracio_externa_i_flux_hibrid.md](../04_materials/repte_05/guia_integracio_externa_i_flux_hibrid.md), [guia_n8n_i_automatitzacio.md](../04_materials/repte_05/guia_n8n_i_automatitzacio.md), [rubrica_base_reptes.md](../03_avaluacio/rubrica_base_reptes.md) i [instruments_seguiment_docent.md](../03_avaluacio/instruments_seguiment_docent.md)
+ - Materials concrets que s'activen: [kit_pilotatge_setmanes_13_16.md](kit_pilotatge_setmanes_13_16.md), [repte_05_materials_sessio.md](../04_materials/materials_aula/repte_05_materials_sessio.md), [guia_integracio_externa_i_flux_hibrid.md](../04_materials/repte_05/guia_integracio_externa_i_flux_hibrid.md), [guia_orquestracio_i_automatitzacio.md](../04_materials/repte_05/guia_orquestracio_i_automatitzacio.md), [rubrica_base_reptes.md](../03_avaluacio/rubrica_base_reptes.md) i [instruments_seguiment_docent.md](../03_avaluacio/instruments_seguiment_docent.md)
 - Evidència mínima a arreplegar: necessitat d'integració justificada, flux híbrid dissenyat amb entrada i eixida clares, i identificació individual del contracte d'`API` que sostindrà `R5`
 - Checkpoint docent: validar si cada alumne pot explicar quin problema real del producte tanca amb `R5`, quin flux usarà i per què no és una integració ornamental
 - Intervenció per alumnat endarrerit: reduir el repte a un únic recorregut de punta a punta amb un sol desencadenant, una sola crida a l'`API` i una sola eixida observable
@@ -79,7 +56,7 @@ El kit manté el mateix escenari docent de referència:
 - Què explica el professorat: com mantindre la lògica de negoci al backend i usar el workflow només com a orquestració, quins punts crítics s'han de controlar en el camí correcte i en el camí de fallada, i com evitar que la implementació perda traçabilitat
 - Què modela en directe: un recorregut mínim amb trigger recognoscible, consum d'`API`, transformació o validació curta, eixida final i un punt de control d'error o diagnòstic
 - Què fa l'alumnat: implementa el recorregut principal de la integració, connecta l'`API` pròpia amb el servei extern o workflow, estabilitza el flux nuclear i deixa una primera execució reproduïble del cas principal
-- Materials concrets que s'activen: [repte_05_materials_sessio.md](../04_materials/materials_aula/repte_05_materials_sessio.md), [guia_integracio_externa_i_flux_hibrid.md](../04_materials/repte_05/guia_integracio_externa_i_flux_hibrid.md), [guia_n8n_i_automatitzacio.md](../04_materials/repte_05/guia_n8n_i_automatitzacio.md), [repte_05_integracio_hibrida_n8n.md](../04_materials/apunts_reals/repte_05_integracio_hibrida_n8n.md), [plantilles_feedback_rapid.md](../04_materials/materials_aula/plantilles_feedback_rapid.md) i [checkpoints_curts_aula.md](../04_materials/materials_aula/checkpoints_curts_aula.md)
+- Materials concrets que s'activen: [repte_05_materials_sessio.md](../04_materials/materials_aula/repte_05_materials_sessio.md), [guia_integracio_externa_i_flux_hibrid.md](../04_materials/repte_05/guia_integracio_externa_i_flux_hibrid.md), [guia_orquestracio_i_automatitzacio.md](../04_materials/repte_05/guia_orquestracio_i_automatitzacio.md), [repte_05_integracio_hibrida.md](../04_materials/apunts_reals/repte_05_integracio_hibrida.md), [plantilles_feedback_rapid.md](../04_materials/materials_aula/plantilles_feedback_rapid.md) i [checkpoints_curts_aula.md](../04_materials/materials_aula/checkpoints_curts_aula.md)
 - Evidència mínima a arreplegar: flux híbrid parcial o complet ja executable, consum real de l'`API` dins del workflow i primera eixida observable del procés
 - Checkpoint docent: comprovar que la integració ja fa alguna cosa útil, que reutilitza l'`API` com a contracte central i que cada alumne pot localitzar la seua part del flux dins del mateix projecte funcional si compartix encàrrec amb altres alumnes
 - Intervenció per alumnat endarrerit: congelar passos no nuclears, estabilitzar només el recorregut principal i ajornar qualsevol refinament que no siga imprescindible per executar el flux
@@ -93,7 +70,7 @@ El kit manté el mateix escenari docent de referència:
 - Què explica el professorat: per què el repte no queda tancat fins que hi ha prova de punta a punta, documentació usable i capacitat d'explicar tant el cas correcte com la fallada rellevant, i com s'ha de llegir la defensa final des de la rúbrica i el sistema d'evidències
 - Què modela en directe: una prova completa del flux híbrid amb cas correcte i cas de fallada, una anotació curta al `README` o documentació tècnica i una defensa breu centrada en autoria, decisions, errors i ús verificable de la IA
 - Què fa l'alumnat: executa proves completes, registra incidències, actualitza `README`, AI log i documentació del workflow, i prepara la seua narrativa tècnica individual a partir d'evidències reproduïbles
-- Materials concrets que s'activen: [checklist_repte_05.md](../04_materials/repte_05/checklist_repte_05.md), [rubrica_defensa_tecnica.md](../03_avaluacio/rubrica_defensa_tecnica.md), [instruments_seguiment_docent.md](../03_avaluacio/instruments_seguiment_docent.md), [sistema_evidencies.md](../03_avaluacio/sistema_evidencies.md), [repte_05_materials_sessio.md](../04_materials/materials_aula/repte_05_materials_sessio.md) i [repte_05_integracio_hibrida_n8n.md](../04_materials/apunts_reals/repte_05_integracio_hibrida_n8n.md)
+- Materials concrets que s'activen: [checklist_repte_05.md](../04_materials/repte_05/checklist_repte_05.md), [rubrica_defensa_tecnica.md](../03_avaluacio/rubrica_defensa_tecnica.md), [instruments_seguiment_docent.md](../03_avaluacio/instruments_seguiment_docent.md), [sistema_evidencies.md](../03_avaluacio/sistema_evidencies.md), [repte_05_materials_sessio.md](../04_materials/materials_aula/repte_05_materials_sessio.md) i [repte_05_integracio_hibrida.md](../04_materials/apunts_reals/repte_05_integracio_hibrida.md)
 - Evidència mínima a arreplegar: prova reproduïble de punta a punta amb cas correcte i fallada rellevant, documentació final del flux, `README` actualitzat i preparació individual de defensa basada en evidències
 - Checkpoint docent: validar si cada alumne pot reproduir el flux, explicar què falla quan hi ha incidència, justificar decisions tècniques i defensar l'ús de la IA si n'hi ha hagut
 - Intervenció per alumnat endarrerit: renunciar a ampliacions, consolidar un únic flux complet provat, documentar només el nucli imprescindible i preparar una defensa ajustada al mínim funcional no trivial realment assolit

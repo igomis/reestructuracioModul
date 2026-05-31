@@ -1,46 +1,8 @@
 # Estat de producció actual
 
 Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara resumeix l'estat real de producció del repositori i el punt exacte en què es troba la implantació docent del mòdul.
-
-## Actualització operativa immediata
-
-- `RF-01` consolidat.
-- `AUL-01` consolidat: guió docent complet de setmana 1 a `docs/01_programacio_modul/setmana_01_guio_docent.md`.
-- `AUL-02` en producció: guió docent complet de setmana 2 a `docs/01_programacio_modul/setmana_02_guio_docent.md`.
-- següent focus: concretar setmana 3 amb el mateix nivell.
-
-## Situació actual
-
-- la base curricular, el projecte base del curs i els documents centrals de planificació ja existixen i són visibles a `master`
-- els materials comuns del mòdul i els paquets nuclears dels Reptes `2`, `3`, `4` i `5` ja estan publicats com a base usable
-- `R2` queda ja definit com a base comuna en `PHP`
-- `Laravel`, `Symfony` i `NestJS` queden com a vies base de contrast des de `R3`
-- `FastAPI` queda reservat com a via avançada o excepcional
-- la implantació docent ja està descrita en clau de fases, avaluacions, blocs d'aula i sessions
-- el marc temporal de referència queda fixat en unes `20` setmanes aproximades amb `6` hores setmanals, és a dir, unes `120` hores lectives dins de les dues primeres avaluacions
-- el model docent assumit és clar: el projecte s'ha de desenvolupar i tancar dins de les dues primeres avaluacions lectives
-- la tercera avaluació no es considera període central de desenvolupament, sinó espai residual o de connexió amb empresa o `FCT`
-- Git/GitHub es manté com a metodologia de treball i criteri de traçabilitat, no com a bloc d'iniciació bàsica
-- poden existir moments de col·laboració limitada o contextos de producte parcialment compartits, però l'acreditació, el seguiment i la defensa del treball es resolen individualment
-
-## Fase actual
-
-- paquet docent en versió `1` funcional
-- fase principal del paquet docent tancada a nivell de model, materials, implantació i seguiment
-- fase d'apunts reals consolidada com a capa de materials d'ús directe
-- `MA-01` queda consolidat amb el primer apunt real del Repte 2 ja publicat
-- `MA-02` queda consolidat amb els apunts reals del Repte 3 ja rematats
-- `MA-03` queda consolidat amb els apunts reals del Repte 4 ja publicats
-- `MA-04` queda consolidat amb els apunts reals del Repte 5 ja publicats
-- `MA-05` queda consolidat amb la revisió transversal de la sèrie d'apunts reals
-- `MA-06` consolidat: tancament operatiu de la fase d'apunts reals
-- `PR-01` consolidat: pla de pilotatge real
-- `PR-02` consolidat: plantilles de recollida de feedback i incidències
-- `PR-03` consolidat: execució del pilotatge real
-- `PR-04` consolidat: seguiment de l'execució real del pilotatge
-- `PP-01` consolidat: versió prepilotatge v1
 - `PP-02` en producció: preparació docent directa per al curs que ve
-- `PP-03` consolidat: ajustos finals abans d'inici de curs
+ `MA-04` queda consolidat amb els apunts reals del Repte 5 publicats a `docs/04_materials/apunts_reals/repte_05_integracio_hibrida.md`.
 - `PJ-01` consolidat: projectes base concretats
 - `AL-01` consolidat: apunts online per a alumnat
 - `AL-02` consolidat: consulta tècnica per a alumnat
@@ -173,7 +135,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 - `repte_02_sessions_i_autenticacio.md`: primer apunt real de repte, orientat a ús docent i treball autònom
 - `repte_03_mvc_i_persistencia.md`: segon apunt real de repte, orientat a arquitectura, persistència i verificació tècnica
 - `repte_04_api_i_consum.md`: tercer apunt real de repte, orientat a publicar i consumir com a API una part usable del producte
-- `repte_05_integracio_hibrida_n8n.md`: quart apunt real de repte, orientat a integració útil, automatització i tancament defensable del producte
+- `repte_05_integracio_hibrida.md`: quart apunt real de repte, orientat a integració útil, automatització i tancament defensable del producte
 - `revisio_transversal_apunts_reals.md`: registre de consolidació comuna, progressió didàctica i coherència editorial de la sèrie d'apunts reals
 - `pla_pilotatge_real.md`: marc del pilotatge real, hipòtesi de treball, evidències i punts de decisió
 - `pla_execucio_pilotatge_real.md`: peça operativa del pilotatge, amb escenari, checkpoints, ús dels instruments i criteri de canvi

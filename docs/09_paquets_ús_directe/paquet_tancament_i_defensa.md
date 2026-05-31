@@ -13,7 +13,7 @@ La regla metodològica continua sent la mateixa:
 ## Materials que ha d'obrir el professorat
 
 - [Materials de sessió del Repte 5](../04_materials/materials_aula/repte_05_materials_sessio.md)
-- [Apunts reals del Repte 5](../04_materials/apunts_reals/repte_05_integracio_hibrida_n8n.md)
+- [Apunts reals del Repte 5](../04_materials/apunts_reals/repte_05_integracio_hibrida.md)
 - [Full de treball del Repte 5](../08_materials_compartibles/full_treball_repte_05.md)
 - [Checkpoint `R5` i tancament](../08_materials_compartibles/checkpoint_r5_i_tancament.md)
 - [Guió de tancament del producte i defensa final](../08_materials_compartibles/guio_tancament_producte_i_defensa_final.md)

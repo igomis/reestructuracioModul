@@ -8,6 +8,7 @@
 - proves o verificacions reproduïbles
 - `AI log` quan toque
 - defensa tècnica individual
+ - integracions externes: repositori o traça, commits, contracte i proves reproduïbles
 
 ## Criteri general
 

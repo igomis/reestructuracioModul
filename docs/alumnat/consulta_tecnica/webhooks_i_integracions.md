@@ -28,7 +28,7 @@
 
 ## On ampliar
 
-- Material del curs: [Repte 5. Integració híbrida i tancament](../../02_reptes/repte_05_integracio_hibrida_n8n.md)
+- Material del curs: [Repte 5. Integració híbrida i tancament](../../02_reptes/repte_05_integracio_hibrida.md)
 - Material del curs: [Guia d'integració externa i flux híbrid](../../04_materials/repte_05/guia_integracio_externa_i_flux_hibrid.md)
 - n8n Docs: [Webhook node](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/)
 - n8n Docs: [Error handling](https://docs.n8n.io/flow-logic/error-handling/)

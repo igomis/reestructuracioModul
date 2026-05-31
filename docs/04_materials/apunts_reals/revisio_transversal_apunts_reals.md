@@ -9,7 +9,7 @@ Deixar constància de la revisió transversal aplicada a la sèrie d'apunts real
 - `repte_02_sessions_i_autenticacio.md`
 - `repte_03_mvc_i_persistencia.md`
 - `repte_04_api_i_consum.md`
-- `repte_05_integracio_hibrida_n8n.md`
+- `repte_05_integracio_hibrida.md`
 
 ## Estructura comuna exigida
 

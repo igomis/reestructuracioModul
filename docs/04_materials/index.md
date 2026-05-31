@@ -53,7 +53,7 @@ Ja no hi ha tres entrades principals paral·leles per a materials. Si una peça 
 - [Apunts del Repte 2](apunts_reals/repte_02_sessions_i_autenticacio.md)
 - [Apunts del Repte 3](apunts_reals/repte_03_mvc_i_persistencia.md)
 - [Apunts del Repte 4](apunts_reals/repte_04_api_i_consum.md)
-- [Apunts del Repte 5](apunts_reals/repte_05_integracio_hibrida_n8n.md)
+- [Apunts del Repte 5](apunts_reals/repte_05_integracio_hibrida.md)
 - [Guies i checklist del Repte 2](repte_02/checklist_repte_02.md)
 - [Guies i checklist del Repte 3](repte_03/checklist_repte_03.md)
 - [Guies i checklist del Repte 4](repte_04/checklist_repte_04.md)
