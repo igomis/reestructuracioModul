@@ -19,11 +19,11 @@ La programació manté els `4` microreptes com a unitats de progrés, però cada
 
 ## Relació entre microreptes i sessions
 
-| Sessió base | Duració | Microreptes implicats | Focus principal | Evidència clau |
-|---|---:|---|---|---|
-| `1` | `3h` | `R1M1` + inici de `R1M2` | model client/servidor, decisió inicial i arrencada de l'entorn | fitxa inicial, explicació client vs servidor, decisió tècnica i base mínima començada |
-| `2` | `3h` | tancament de `R1M2` + `R1M3` + `R1M4` | entorn complet, primera funcionalitat mínima i documentació del repte | entorn arrancable, punt d'entrada funcional, README i documentació en repositori |
-| `3` | opcional | reforç de `R1M4` | defensa, execució real i revisió de traçabilitat | defensa tècnica o acta de checkpoint |
+| Sessió base | Duració | Microreptes implicats | Pes dins del repte | Focus principal | Evidència clau |
+|---|---:|---|---:|---|---|
+| `1` | `3h` | `R1M1` + inici de `R1M2` | `25%` | model client/servidor, decisió inicial i arrencada de l'entorn | fitxa inicial, explicació client vs servidor, decisió tècnica i base mínima començada |
+| `2` | `3h` | tancament de `R1M2` + `R1M3` + `R1M4` | `75%` | entorn complet, primera funcionalitat mínima i documentació del repte | entorn arrancable, punt d'entrada funcional, README i documentació en repositori |
+| `3` | opcional | reforç de `R1M4` | sense pes propi | defensa, execució real i revisió de traçabilitat | defensa tècnica o acta de checkpoint |
 
 ## Mapa de criteris d'avaluació per microrepte
 
