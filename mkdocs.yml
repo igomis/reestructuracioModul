@@ -32,6 +32,7 @@ nav:
               - Inici: 01_programacio_modul/index.md
               - Programació d'aula del Repte 1: 01_programacio_modul/programacio_aula_repte_01.md
               - Programació d'aula del Repte 2: 01_programacio_modul/programacio_aula_repte_02.md
+              - R2-MP1 formulari i validació: 01_programacio_modul/programacio_aula_r2_mp1_formulari_validacio.md
               - Planificació d'aula del Repte 3: 01_programacio_modul/planificacio_aula_r3_mvc_i_persistencia.md
           - Pla d'implantació docent: 01_programacio_modul/pla_implantacio_docent.md
           - Calendarització per avaluacions: 01_programacio_modul/calendaritzacio_per_avaluacions.md
@@ -54,8 +55,8 @@ nav:
       - Ampliacions:
           - Integració API: 05_projectes_tecnics/integracio_api.md
           - Integració IA: 05_projectes_tecnics/integracio_ia.md
-        - Automatització i orquestració de fluxos: 05_projectes_tecnics/integracio_n8n.md
-        - Integració WordPress: 05_projectes_tecnics/integracio_wordpress.md
+          - Automatització i orquestració de fluxos: 05_projectes_tecnics/automatitzacio_orquestracio_fluxos.md
+          - Integració WordPress: 05_projectes_tecnics/integracio_wordpress.md
   - Avaluació i evidències:
       - Inici: 03_avaluacio/index.md
       - Matriu de coherència curricular: matriu-coherencia-curricular-dwes.md
