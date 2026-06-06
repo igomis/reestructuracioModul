@@ -266,7 +266,7 @@ Si el mínim ja està tancat, l'alumnat pot:
 - afegir validació de fitxer amb mida i MIME;
 - separar funcions simples de validació;
 - afegir proves manuals més precises al `README`;
-- preparar quines dades es processaran i guardaran en `R2M2`.
+- preparar quines dades convé conservar en el formulari quan hi haja error en `R2M2`.
 
 L'ampliació no ha d'obrir encara autenticació, rols ni arquitectura completa.
 
@@ -288,4 +288,4 @@ L'ampliació no ha d'obrir encara autenticació, rols ni arquitectura completa.
 
 `R2M2` només té sentit si `R2M1` deixa almenys una dada correcta i validada de manera bàsica. La pregunta de pas és:
 
-Quines dades validades del teu formulari es poden processar, guardar de manera simple i tornar a mostrar en la pròxima sessió?
+Quines dades del teu formulari convé tornar a mostrar perquè l'usuari no haja de repetir-ho tot quan hi haja un error?

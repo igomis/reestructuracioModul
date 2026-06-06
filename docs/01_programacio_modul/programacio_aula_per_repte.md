@@ -118,7 +118,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 ### Coordinació mínima entre microprojectes
 
 - `R2M1`: entrada variada i validació de servidor
-- `R2M2`: processament i guardat funcional
+- `R2M2`: processament, reintent i guardat funcional
 - `R2M3`: lògica del flux i regles del projecte
 - `R2M4`: estat, sessió i/o cookies
 - `R2M5`: autenticació i funcionalitat protegida

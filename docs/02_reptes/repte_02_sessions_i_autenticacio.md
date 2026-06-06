@@ -110,7 +110,7 @@ Esta progressió evita dos errors habituals: començar directament pel login sen
 | Microprojecte | RA principal | Evidència mínima | Verificació d'aprenentatge real |
 |---|---|---|---|
 | `R2M1` | `RA2` + `RA3` | formulari o entrada equivalent amb text, llista i checkbox, recuperació de dades, una validació bàsica, error visible i reenviament corregit | execució en directe i explicació del recorregut de cada dada mínima |
-| `R2M2` | `RA2` | resposta generada en servidor amb variables, operadors, àmbits i conservació funcional simple | canvi menut en viu sobre processament o directiva i justificació de la persistència funcional |
+| `R2M2` | `RA2` + `RA3` | resposta generada en servidor amb variables, operadors, formulari regenerat després d'un error i guardat funcional del cas correcte | canvi menut en viu sobre un valor conservat o guardat i explicació de com es rep, es tracta i es torna a usar |
 | `R2M3` | `RA3` | regla de domini amb decisió, array o funció útil | microcanvi sobre una condició o funció i defensa del seu sentit dins del producte |
 | `R2M4` | `RA4` | estat, sessió o cookies amb recuperació i invalidació | demo de recuperació i neteja, més pregunta sobre què es guarda i on |
 | `R2M5` | `RA4` | autenticació funcional i operació de domini protegida | demo de cas permés i cas denegat amb explicació del punt de control |
@@ -414,7 +414,7 @@ Checklist de formulari i recuperació de dades.
 
 ---
 
-### Microrepte R2M2 — Processament bàsic de la petició i conservació funcional simple
+### Microrepte R2M2 — Processament, reintent i guardat funcional
 
 **Tipus**
 
@@ -422,7 +422,7 @@ Microprojecte procedimental.
 
 **Objectiu**
 
-Fer visible el treball elemental de programació en servidor que permet processar dades ja recuperades i validades inicialment en `R2M1`, modificar el comportament del sistema i deixar la informació correcta en un estat reutilitzable.
+Fer visible el treball elemental de programació en servidor que permet recuperar dades enviades, tractar-les, tornar a generar el formulari amb dades aprofitables quan hi ha un error i guardar funcionalment la informació quan l'entrada ja és correcta.
 
 **Tasca**
 
@@ -437,14 +437,18 @@ L’equip implementa tractament bàsic de la petició, incloent:
 - variables
 - operadors
 - àmbits de variables quan siga rellevant
-- primera reutilització funcional de la informació correcta dins del projecte
-- si `R2M1` ha validat un fitxer o imatge, reutilització del resultat validat sense convertir la pujada de fitxers en el centre del microrepte
-- si apareix base de dades, ús justificat com a suport funcional del flux i no com a centre metodològic del repte
+- error visible generat en servidor
+- formulari recarregat amb dades aprofitables conservades
+- correcció només de la dada errònia i reenviament correcte
+- processament i guardat funcional simple del cas correcte
+- reutilització mínima de la informació correcta
+- revisió del comportament del checkbox simple
+- persistència formal, base de dades obligatòria, sessió, cookies, login, arrays d'errors i fitxers només com a ampliació o per a microreptes posteriors
 
 **Relació amb el producte principal**
 
-Este microprojecte dona la base de processament necessari perquè el sistema puga prendre decisions i actuar sobre dades ja acceptades en el primer punt d'entrada.
-També ha de deixar clar com la informació correcta es conserva de manera funcional sense convertir encara el repte en un exercici centrat en accés a dades.
+Este microprojecte dona la base de processament necessari perquè el sistema puga ajudar l'usuari a corregir errors sense repetir tot el formulari i, quan l'entrada és correcta, conservar la informació amb sentit funcional.
+També ha de deixar clar que conservar dades dins del reintent i guardar funcionalment un cas correcte són dues decisions diferents, cap de les quals obliga encara a una arquitectura de persistència.
 
 **CA coberts**
 
@@ -931,7 +935,7 @@ Rúbrica curta de refactorització i mantenibilitat.
 | Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
 |---|---|---|---|---|---|---|
 | R2M1 | Procedimental | Entrada variada, codi servidor integrat i recuperació de dades | RA2.a, RA2.b, RA2.c, RA2.d, RA3.e, RA3.f, RA3.g | formulari amb text, llista i checkbox, codi embegut, variables simples, validació bàsica, error visible i demo | checklist | 15% |
-| R2M2 | Procedimental | Processament bàsic de la petició | RA2.a, RA2.b, RA2.c, RA2.d, RA2.e, RA2.f, RA2.g, RA2.h | codi executable, codi embegut, variables, directiva, demo | rúbrica breu | 15% |
+| R2M2 | Procedimental | Processament, reintent i guardat funcional | RA2.a, RA2.b, RA2.c, RA2.d, RA2.e, RA2.f, RA2.g, RA2.h, RA3.e, RA3.f, RA3.g | formulari amb error, dades conservades, reenviament corregit, cas correcte guardat funcionalment, codi embegut, variables i demo | rúbrica breu | 15% |
 | R2M3 | Procedimental | Decisions, arrays i funcions aplicades | RA3.a, RA3.b, RA3.c, RA3.d | lògica observable, funcions, demo | rúbrica | 15% |
 | R2M4 | Procedimental | Estat, sessió i/o cookies | RA4.a, RA4.b, RA4.c | demo d’estat, recuperació i invalidació | checklist | 15% |
 | R2M5 | Procedimental | Autenticació i operació protegida | RA4.d, RA4.e | login, operació protegida, cas autoritzat i denegat | rúbrica | 20% |

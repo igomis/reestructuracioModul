@@ -25,7 +25,7 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 | Sessió | Duració | Microprojecte | Focus principal | Evidència clau |
 |---|---:|---|---|---|
 | `1` | `3h` | `R2M1` | entrada variada i validació de servidor | dades recuperades de controls diversos, errors clars i reintent |
-| `2` | `3h` | `R2M2` | processament i guardat funcional | dada correcta tractada, guardada i reutilitzada |
+| `2` | `3h` | `R2M2` | processament, reintent i guardat funcional | formulari amb error que conserva dades i cas correcte guardat funcionalment |
 | `3` | `3h` | `R2M3` | lògica del flux i regles del projecte | decisió, estructura o funció amb efecte visible |
 | `4` | `3h` | `R2M4` | estat, sessió i/o cookies | recuperació del flux i invalidació controlada |
 | `5` | `3h` | `R2M5` | autenticació i funcionalitat protegida | cas autoritzat i cas denegat d'una operació real |
@@ -39,7 +39,7 @@ Esta taula és el mapa mínim de traçabilitat docent del repte. No substituïx 
 | Sessió | RA principal | CA associats | Què s'aprén | Evidència mínima | Verificació docent |
 |---|---|---|---|---|---|
 | `1` | `RA2` + `RA3` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d`, `RA3.e`, `RA3.f`, `RA3.g` | entrada de dades variades, recuperació en servidor i validació visible | formulari amb text, llista, checkbox i, si escau, fitxer, amb error i reintent corregit | execució en directe i pregunta sobre d'on ix cada dada, com arriba al servidor i com es valida |
-| `2` | `RA2` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d`, `RA2.e`, `RA2.f`, `RA2.g`, `RA2.h` | generació de resposta, variables, operadors, àmbits i conservació funcional simple | dada correcta processada, guardada de manera simple i reutilitzada | canvi menut en viu sobre una variable, operador o directiva i justificació del mecanisme de conservació |
+| `2` | `RA2` + `RA3` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d`, `RA2.e`, `RA2.f`, `RA2.g`, `RA2.h`, `RA3.e`, `RA3.f`, `RA3.g` | generació de resposta, variables, operadors, àmbits, reintent amb dades conservades i guardat funcional simple | formulari regenerat amb dades aprofitables després d'un error, reenviament corregit i cas correcte guardat | canvi menut en viu sobre un valor conservat o guardat i explicació d'on es rep, es tracta i es torna a usar |
 | `3` | `RA3` | `RA3.a`, `RA3.b`, `RA3.c`, `RA3.d` | decisions, arrays, funcions i regles de domini aplicades | regla amb dos resultats observables i funció o estructura útil | microcanvi en una condició o funció i explicació de per què no és ornamental |
 | `4` | `RA4` | `RA4.a`, `RA4.b`, `RA4.c` | estat temporal, sessió, cookies i invalidació | recuperació d'estat i neteja o caducitat demostrada | execució de recuperació i invalidació, més pregunta sobre què queda en client, servidor o flux funcional |
 | `5` | `RA4` | `RA4.d`, `RA4.e` | identificació, autenticació, autorització i protecció d'una operació real | cas autenticat permés i cas no permés sobre una acció del domini | demo dels dos casos i pregunta sobre el punt exacte on es comprova la restricció |
@@ -155,77 +155,86 @@ Què passa exactament quan falta una dada, arriba una opció no permesa o un che
 
 ### Sessió 2. Microprojecte 2
 
-**Sessió 2 — Processament i guardat funcional**
+**Sessió 2 — Processament, reintent i guardat funcional**
 
 #### Finalitat específica de la sessió
-Convertir la dada validada en una resposta útil del servidor i deixar una primera conservació funcional de la informació correcta.
+Millorar el flux d'error del formulari i completar el cas correcte: si hi ha error, el servidor conserva dades aprofitables per al reintent; si l'entrada és correcta, la processa i la guarda funcionalment amb un mecanisme simple.
 
 #### RA/focus tècnic
-Focus en `RA2` i `RA3`: tractament de dades en servidor, variables, operadors, estructures bàsiques, guardat funcional i reutilització simple.
+Focus en `RA2` i `RA3`: tractament de dades en servidor, variables, operadors, resposta generada, conservació funcional de valors dins del reintent i guardat simple de l'entrada correcta.
 
 #### Producte o microresultat esperat
-Entrada validada, processada, guardada de manera simple i reutilitzada en una resposta visible del producte.
+Formulari que, davant un error, torna a carregar dades aprofitables; i que, davant un cas correcte, processa i guarda funcionalment la informació.
 
 #### Seqüència temporal orientativa dins de les 3 hores
 
 ##### 0:00-0:20 — Recuperació de la sessió anterior
-- executar el formulari amb un cas vàlid
-- identificar quina dada correcta passarà a processament
-- recordar què no s'ha de guardar si la validació falla
+- executar el formulari amb un cas incorrecte
+- identificar quines dades arriben al servidor
+- observar quines dades es perden quan apareix l'error
 
-##### 0:20-0:45 — Modelatge de processament
-- transformar o calcular una resposta a partir de la dada
-- separar dada rebuda, dada neta i resultat generat
-- mostrar la resposta al navegador
+##### 0:20-0:45 — Modelatge de reintent
+- preparar valors rebuts per tornar-los al formulari
+- usar `value`, `selected` i `checked` o equivalents
+- mostrar error sense buidar les dades aprofitables
 
-##### 0:45-1:30 — Processament de l'alumnat
-- implementar una transformació o decisió simple
-- comprovar que el resultat canvia segons l'entrada
-- afegir una eixida visible coherent amb el domini
+##### 0:45-1:30 — Conservació de dades de formulari
+- conservar un camp de text o textarea
+- conservar una opció de select o radio
+- revisar què passa amb un checkbox simple
+- comprovar que el formulari torna carregat després de l'error
 
-##### 1:30-2:10 — Guardat funcional
-- triar un mecanisme simple de conservació segons la base del grup
-- guardar només informació validada
-- recuperar-la després en una pantalla, llista o resposta equivalent
+##### 1:30-2:10 — Correcció i reenviament
+- corregir només la dada errònia
+- reenviar el formulari
+- comprovar que la resposta correcta es genera
+- verificar que les dades conservades venien de l'enviament real
+- guardar funcionalment el cas correcte amb un mecanisme simple
 
-##### 2:10-2:40 — Reutilització i justificació
-- demostrar que la dada guardada torna a usar-se
-- justificar per què el mecanisme triat és suficient en `R2`
-- detectar dades que no cal guardar encara
+##### 2:10-2:40 — Revisió per parelles
+- una altra persona força l'error
+- comprova quins valors es conserven
+- identifica on es tornen a pintar en el codi
+- comprova on es guarda el cas correcte
+- detecta valors fixos o dades no tractades
 
 ##### 2:40-3:00 — Checkpoint final
-- comprovació d'un cas complet: enviar, validar, processar, guardar i reutilitzar
-- registre d'incidències pendents
+- comprovació d'un cas complet: enviar amb error, conservar dades, corregir, reenviar i guardar el cas correcte
+- registre de com provar el reintent
 - preparació de la regla de negoci de la sessió `3`
 
 #### Intervenció docent prevista
-- recordar que la persistència encara és suport funcional, no el centre metodològic del repte
-- orientar mecanismes simples de guardat sense obrir una arquitectura completa
-- demanar que el guardat tinga un ús visible, no només un fitxer o taula creats
-- revisar que no es guarden dades incorrectes
+- recordar que hi ha dues conservacions diferents: valors del reintent i guardat funcional del cas correcte
+- orientar com tornar a pintar valors sense obrir arquitectura completa
+- demanar que el formulari no torne buit després de l'error
+- revisar que no s'usen valors fixos que no venen de l'enviament
 
 #### Tasques concretes de l'alumnat
-- executar el flux vàlid de la sessió `1`
-- processar la dada amb una transformació, càlcul o normalització simple
-- guardar la informació correcta
-- recuperar o mostrar la dada guardada
-- justificar en una nota breu el mecanisme de guardat triat
+- executar un cas incorrecte de la sessió `1`
+- preparar les dades rebudes per tornar-les al formulari
+- conservar almenys text i opció tancada després de l'error
+- revisar el comportament del checkbox simple
+- corregir només la dada errònia i reenviar
+- guardar funcionalment la informació correcta
+- documentar com provar el reintent
 
 #### Evidència verificable de la sessió
-- codi de processament executable
-- dada guardada després d'un cas vàlid
-- reutilització visible de la dada
-- nota breu de justificació del mecanisme de guardat
+- codi de reintent executable
+- error visible amb formulari recarregat
+- dades aprofitables conservades
+- reenviament corregit
+- dada correcta guardada funcionalment
+- nota breu de com provar el flux
 
 #### Checkpoint o pregunta de comprovació
-On es veu que la dada validada no només s'ha rebut, sinó que s'ha processat, guardat i reutilitzat?
+On es veu que la dada rebuda no només s'ha llegit, sinó que s'ha preparat i tornat a pintar en el formulari després de l'error?
 
 #### Ús de la IA permés i forma de control
-Ús permés per aclarir sintaxi de `PHP`, proposar una transformació simple o revisar si el guardat és coherent. Control: l'alumnat ha de mostrar una prova amb una dada nova i explicar per què només es guarda després de validar.
+Ús permés per aclarir sintaxi de `PHP`, revisar com conservar `value`, `selected` o `checked`, proposar un guardat simple o millorar missatges d'error. Control: l'alumnat ha de mostrar una prova amb una dada nova i explicar la diferència entre conservar en el reintent i guardar funcionalment un cas correcte.
 
 #### Dificultats habituals i resposta docent prevista
-- Si el guardat no es reutilitza, el professorat demana una pantalla o resposta on la dada aparega de nou.
-- Si es vol introduir una base de dades completa sense necessitat, es limita a un ús mínim justificat o es posposa el modelatge fort a `R3`.
+- Si el formulari torna buit, el professorat demana conservar primer text i select abans d'afegir més controls.
+- Si es vol introduir una base de dades completa, es limita a un ús mínim justificat o es deixa la persistència formal per a més avant.
 - Si el codi mescla massa entrada, procés i eixida, es deixa anotat com a material per a la refactorització de la sessió `7`.
 
 ### Sessió 3. Microprojecte 3
@@ -672,7 +681,7 @@ Si apareixen més classes, més objectes o una persistència més formal, s'han 
 ## Evidències esperades per sessió
 
 - Sessió `1`: formulari o entrada equivalent, recuperació real de dades i errors visibles.
-- Sessió `2`: tractament executable, guardat funcional i primera reutilització de la informació correcta.
+- Sessió `2`: tractament executable del formulari, conservació de dades en el reintent i guardat funcional del cas correcte.
 - Sessió `3`: decisió, regla o funció amb efecte real sobre el flux.
 - Sessió `4`: estat recuperable, demostració d'invalidació i frontera clara entre estat i conservació funcional.
 - Sessió `5`: operació del domini protegida amb cas autoritzat i cas denegat.

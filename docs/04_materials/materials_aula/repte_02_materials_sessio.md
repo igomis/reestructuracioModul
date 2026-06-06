@@ -14,13 +14,13 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 - Evidència mínima del dia: enviament incorrecte amb errors per control, error visible i reenviament corregit.
 - Pregunta de tancament: quines dades entren al sistema, com arriba cada una al servidor i per què alguna encara no pot continuar el flux?
 
-### Sessió clau 2. Processament i guardat funcional
+### Sessió clau 2. Processament, reintent i guardat funcional
 
-- Objectiu de la sessió: tractar la petició correcta en servidor i deixar una primera reutilització funcional de la informació.
-- Què s'espera al final: dada correcta processada, guardada amb un mecanisme simple i tornada a mostrar o reutilitzar.
-- Error habitual a evitar: convertir el repte en un exercici de persistència abans d'hora.
-- Evidència mínima del dia: flux correcte de processament i conservació funcional de la dada.
-- Pregunta de tancament: com reapareix la informació correcta dins del projecte?
+- Objectiu de la sessió: tractar la petició amb error i el cas correcte: reintent amb dades conservades i guardat funcional simple quan l'entrada és vàlida.
+- Què s'espera al final: error visible, formulari recarregat amb dades conservades, reenviament corregit i dada correcta guardada.
+- Error habitual a evitar: convertir el repte en un exercici de persistència abans d'hora o tornar sempre el formulari buit.
+- Evidència mínima del dia: flux d'error amb dades conservades i flux correcte amb guardat funcional.
+- Pregunta de tancament: quines dades conserva el servidor per al reintent i quines guarda quan el cas és correcte?
 
 ### Sessió clau 3. Lògica del flux i regles del projecte
 
@@ -70,10 +70,10 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
   - Senyal d'alerta: el grup diu què passaria, però no ho pot ensenyar.
   - Acció correctiva ràpida: tancar primer tres casos d'error clars, un per tipus de control bàsic, i el seu reintent.
 - `CP-R2.2`
-  - Què hauria d'estar fet: informació correcta processada, guardada funcionalment i reutilitzable.
-  - Com es verifica en `2-3` minuts: crear una dada i tornar-la a mostrar en el mateix projecte.
-  - Senyal d'alerta: la dada s'accepta, però després no reapareix enlloc.
-  - Acció correctiva ràpida: congelar noves opcions i tornar a un únic cas d'ús complet.
+  - Què hauria d'estar fet: formulari amb error que conserva dades aprofitables i cas correcte guardat funcionalment.
+  - Com es verifica en `2-3` minuts: provocar un error, comprovar que text i opció tancada es mantenen, corregir, reenviar i veure la dada guardada.
+  - Senyal d'alerta: el formulari torna buit o conserva valors fixos que no venen de l'enviament.
+  - Acció correctiva ràpida: conservar primer un text i un select abans d'afegir més controls.
 - `CP-R2.3`
   - Què hauria d'estar fet: regla del projecte i estat temporal recognoscibles.
   - Com es verifica en `2-3` minuts: mostrar dos comportaments diferents i recuperar un pas del flux.
