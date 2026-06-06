@@ -2,9 +2,9 @@
 
 ## Finalitat de la sessió
 
-Esta sessió obri el `Repte 2` i treballa el microrepte `R2M1` amb una primera entrada real de dades del producte. L'objectiu no és practicar un camp solt, sinó treballar el recorregut complet d'un formulari amb controls diversos: textos, opcions, llistes, checkbox i, quan tinga sentit, fitxers.
+Esta sessió obri el `Repte 2` i treballa el microrepte `R2M1` amb una primera entrada real de dades del producte. L'objectiu no és practicar un camp solt ni fer tots els controls possibles, sinó entendre bé el recorregut mínim d'un formulari: text, llista o opció tancada, checkbox, recepció en servidor, validació, errors visibles i reintent.
 
-Al final de la sessió, cada alumne o parella ha de poder explicar quines dades envia cada control, com arriben al servidor, quines validacions s'apliquen i què passa quan alguna dada no és acceptable.
+Al final de la sessió, cada alumne o parella ha de poder explicar quines dades envia cada control mínim, com arriben al servidor, quines validacions s'apliquen i què passa quan alguna dada no és acceptable.
 
 ## Encaix dins del Repte 2
 
@@ -12,7 +12,7 @@ Al final de la sessió, cada alumne o parella ha de poder explicar quines dades 
 - **Microrepte**: `R2M1`
 - **Sessió**: `R2S1`
 - **Duració orientativa**: `3 hores`
-- **Focus**: formularis amb controls variats, recuperació de dades en `PHP`, validació de servidor, errors visibles i reintent
+- **Focus**: formulari mínim amb text, llista/opció i checkbox; recuperació de dades en `PHP`; validació de servidor; errors visibles i reintent
 - **No entra encara**: login, rols, sessió persistent, base de dades com a centre del treball o arquitectura completa
 
 ## Relació amb RA i criteris de treball
@@ -21,7 +21,7 @@ Al final de la sessió, cada alumne o parella ha de poder explicar quines dades 
 |---|---|
 | `RA2` | codi servidor integrat amb resposta web, recepció de dades, variables, arrays i generació de resposta |
 | `RA3` | formularis amb diferents tipus d'entrada, comprovació de dades i bifurcació entre cas vàlid i cas amb error |
-| Evidència central | enviament incorrecte, errors visibles per control, correcció i reenviament correcte |
+| Evidència central | enviament incorrecte, errors visibles, correcció i reenviament correcte |
 | Verificació docent | execució en directe i pregunta sobre el recorregut de cada dada |
 
 ## Producte esperat
@@ -31,42 +31,45 @@ Un primer flux executable del producte amb un formulari o entrada equivalent que
 - una acció concreta del domini;
 - un camp de text o àrea de text;
 - una llista desplegable o selecció equivalent;
-- un grup de checkbox o opcions múltiples;
+- un checkbox simple amb sentit dins del flux;
 - una validació específica per a cada tipus de dada;
-- un fitxer opcional si el cas d'ús ho justifica, com imatge, document o adjunt;
 - missatges d'error clars i associats al control afectat;
 - un reintent corregit que deixe continuar el flux;
 - una nota breu al `README`, issue o registre de treball indicant com provar el cas correcte i els casos incorrectes.
 
-El fitxer no és obligatori en tots els projectes, però el professorat ha de modelar-lo o activar-lo en almenys una variant perquè l'alumnat veja com canvia el tractament amb `enctype`, `$_FILES`, tipus MIME, mida i error de pujada.
+Queden com a ampliació o modelatge docent:
+
+- checkbox múltiple amb catàleg de valors permesos;
+- conservació més còmoda dels valors introduïts en el reintent;
+- fitxer opcional si el cas d'ús ho justifica, amb `enctype`, `$_FILES`, error de pujada, mida i tipus permés.
 
 ## Preparació prèvia del professorat
 
 Abans de la sessió convé tindre preparat:
 
 - un exemple mínim de formulari amb `method="post"` i controls diversos;
-- una variant amb `enctype="multipart/form-data"` per mostrar fitxers;
-- un error controlat per a text buit, llista sense selecció, checkbox no marcat i fitxer massa gran o de tipus no permés;
+- una variant curta amb `enctype="multipart/form-data"` només per mostrar fitxers si el grup va ràpid;
+- un error controlat per a text buit, llista sense selecció o valor no permés i checkbox no marcat;
 - una pauta curta per ajudar l'alumnat a triar una acció real del seu producte;
 - el criteri de tancament: no es passa a processament ni guardat si no hi ha validació visible en servidor.
 
 Exemples d'accions assumibles:
 
-- registrar una incidència amb títol, prioritat, categories i captura opcional;
-- sol·licitar una reserva amb nom, franja horària, serveis seleccionats i document opcional;
-- afegir un producte provisional amb nom, categoria, etiquetes i imatge opcional;
+- registrar una incidència amb títol, prioritat i acceptació de condicions;
+- sol·licitar una reserva amb nom, franja horària i confirmació;
+- afegir un producte provisional amb nom, categoria i opció de visibilitat;
 - demanar una cita amb dades de contacte, preferències i acceptació de condicions;
-- crear una proposta amb descripció, tipus, requisits marcats i adjunt justificatiu.
+- crear una proposta amb descripció, tipus i confirmació de requisits.
 
-## Controls mínims que cal treballar
+## Controls mínims i ampliacions
 
 | Control | Què ha de veure l'alumnat | Validació mínima de servidor |
 |---|---|---|
 | Text o textarea | arriba com a cadena i cal normalitzar-la | obligatori, longitud mínima o màxima |
 | Select o radio | arriba com a valor triat d'un conjunt | el valor ha d'estar dins de la llista permesa |
 | Checkbox simple | pot no aparéixer en la petició si no està marcat | comprovar presència quan siga obligatori |
-| Checkbox múltiple | arriba com a array si el `name` està ben definit | almenys una opció i opcions dins del catàleg permés |
-| Fitxer | arriba per `$_FILES` i pot fallar abans de validar contingut | error de pujada, mida, extensió o MIME permés |
+| Checkbox múltiple | ampliació: arriba com a array si el `name` està ben definit | almenys una opció i opcions dins del catàleg permés |
+| Fitxer | ampliació/modelatge: arriba per `$_FILES` i pot fallar abans de validar contingut | error de pujada, mida, extensió o MIME permés |
 
 ## Seqüència d'aula de 3 hores
 
@@ -78,7 +81,7 @@ Tasques:
 
 - recuperar el punt d'entrada creat en `R1`;
 - triar una acció concreta del producte;
-- decidir quins controls tenen sentit: text, llista, checkbox, opcions múltiples i fitxer opcional;
+- decidir els controls mínims: text, llista o opció tancada i checkbox;
 - escriure quina dada aporta cada control al flux.
 
 Resultat del tram: cada equip té una acció i un conjunt mínim de controls identificats.
@@ -93,7 +96,7 @@ El professorat mostra un flux mínim:
 - validació contra una llista de valors permesos;
 - resposta d'error o resposta correcta.
 
-Si el grup està preparat, el modelatge inclou una pujada de fitxer:
+Si el grup està preparat o el docent vol deixar-ho vist com a ampliació, el modelatge inclou una pujada de fitxer:
 
 - `enctype="multipart/form-data"`;
 - lectura de `$_FILES`;
@@ -113,7 +116,7 @@ Tasques:
 - recuperar text, llista i checkbox en `PHP`;
 - mostrar temporalment les dades rebudes per verificar què arriba;
 - afegir validacions específiques per a cada control;
-- incorporar fitxer només si el cas d'ús ho justifica o si el docent l'ha marcat com a pràctica del grup.
+- deixar checkbox múltiple o fitxer per a ampliació si el mínim encara no està tancat.
 
 Resultat del tram: hi ha dades variades recuperades i validacions inicials executant-se.
 
@@ -126,8 +129,7 @@ Tasques:
 - provar text buit o massa curt;
 - provar valor manipulat o no permés en la llista;
 - provar checkbox obligatori sense marcar;
-- provar checkbox múltiple sense opcions o amb valor no permés;
-- provar fitxer absent, massa gran o de tipus no acceptat si el flux en té;
+- provar checkbox múltiple o fitxer només si s'han implementat com a ampliació;
 - mostrar missatges d'error concrets;
 - conservar o reconstruir la informació necessària perquè el reintent siga possible.
 
@@ -170,17 +172,16 @@ Cada equip mostra:
 - reenviament corregit;
 - fragment de codi on es recupera text, llista i checkbox;
 - fragment de codi on es valida contra valors permesos;
-- fragment de codi de fitxer si el formulari en té.
+- fragment de codi de fitxer només si s'ha treballat com a ampliació.
 
-Pregunta de tancament: què passa exactament quan falta una dada, quan arriba una opció no permesa o quan un fitxer no compleix les condicions?
+Pregunta de tancament: què passa exactament quan falta una dada, quan arriba una opció no permesa o quan el checkbox no s'ha marcat?
 
 ## Tasques concretes de l'alumnat
 
 - Triar una acció real del seu producte.
 - Crear o adaptar un formulari amb controls diversos.
 - Recuperar dades de text, llista i checkbox en `PHP`.
-- Tractar arrays quan hi haja selecció múltiple.
-- Validar en servidor cada tipus de dada.
+- Validar en servidor els controls mínims.
 - Mostrar errors útils i comprensibles.
 - Provar casos incorrectes i un cas correcte.
 - Documentar com repetir les proves.
@@ -191,11 +192,10 @@ Pregunta de tancament: què passa exactament quan falta una dada, quan arriba un
 |---|---|
 | Formulari o entrada | envia una petició real amb controls diversos |
 | Recuperació de dades | el codi mostra on es llig text, select/radio i checkbox |
-| Arrays d'opcions | si hi ha checkbox múltiple, es comprova que arriba com a array |
-| Validació | cada tipus de dada té una regla en servidor |
+| Validació | text, llista/opció i checkbox tenen una regla en servidor |
 | Error visible | el cas incorrecte queda bloquejat amb missatge concret |
 | Reintent | la persona pot corregir i enviar de nou |
-| Fitxer | si s'usa, es valida error, mida i tipus |
+| Ampliació | checkbox múltiple o fitxer només si el mínim ja està aconseguit |
 | Documentació | el repositori explica com provar cas correcte i errors |
 
 ## Criteris d'èxit
@@ -218,7 +218,7 @@ El microrepte està aconseguit si:
 - Fer un formulari amb un únic camp de text.
 - Usar només `required` o validació de client.
 - Acceptar qualsevol valor d'un select o d'un checkbox manipulat.
-- Fer una pujada de fitxer sense validar error, mida o tipus.
+- Afegir fitxers abans de tindre validats text, llista i checkbox.
 - Mostrar un missatge d'error sense condició real.
 - Fer login o registre d'usuaris sense haver validat abans dades del domini.
 - Copiar codi generat per IA sense poder modificar una regla de validació.
@@ -273,7 +273,7 @@ L'ampliació no ha d'obrir encara autenticació, rols ni arquitectura completa.
 - [ ] El formulari envia dades al servidor.
 - [ ] He usat almenys text, llista i checkbox.
 - [ ] Puc assenyalar on recupere cada dada en `PHP`.
-- [ ] Valide cada tipus de dada en servidor.
+- [ ] Valide text, llista/opció i checkbox en servidor.
 - [ ] Comprove opcions contra valors permesos.
 - [ ] He provat almenys tres casos incorrectes.
 - [ ] Els errors indiquen què cal corregir.

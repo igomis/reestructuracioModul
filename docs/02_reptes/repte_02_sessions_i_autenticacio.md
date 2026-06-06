@@ -316,11 +316,13 @@ Microprojecte procedimental.
 
 **Objectiu**
 
-Construir un punt d’entrada de dades usable amb controls diversos i demostrar que el sistema és capaç de recuperar la informació aportada per l’usuari, validar-la i mostrar errors interpretables.
+Construir un punt d’entrada de dades usable i realista amb controls bàsics diversos, i demostrar que el sistema és capaç de recuperar la informació aportada per l’usuari, validar-la en servidor, mostrar errors interpretables i permetre un reintent.
 
 **Tasca**
 
-L’equip crea un formulari funcional, o una entrada equivalent coherent amb la base comuna en `PHP`, i implementa la recuperació de les dades enviades per l’usuari des de text, llistes, checkbox i fitxers quan el cas d'ús ho justifique.
+L’equip crea un formulari funcional, o una entrada equivalent coherent amb la base comuna en `PHP`, i implementa la recuperació de les dades enviades per l’usuari des d’un text, una llista o opció tancada i un checkbox. La sessió no busca cobrir tots els tipus de control possibles, sinó entendre bé el recorregut mínim: entrada, recepció, validació, error visible i reintent.
+
+Els fitxers, checkbox múltiples i validacions més fines queden com a modelatge docent o ampliació quan el mínim ja està tancat.
 
 S’ha de veure amb claredat:
 
@@ -329,12 +331,17 @@ S’ha de veure amb claredat:
 - com es mostren els errors quan alguna dada no és vàlida
 - com es validen opcions contra valors permesos
 - com es tracta una dada absent, com un checkbox no marcat
-- com es valida un fitxer si forma part del flux
-- quin tractament inicial se’ls dona
+- quin tractament inicial reben les dades correctes
 - quina resposta bàsica retorna el sistema
 - com s'integra el codi servidor amb el llenguatge de marques o plantilla
 - quines variables inicials i àmbits intervenen en la resposta generada
 - quins comentaris breus ajuden a entendre el flux quan el codi ho necessita
+
+Com a ampliació es pot veure:
+
+- com arriba un checkbox múltiple com a array
+- com es valida un fitxer si forma part real del flux
+- com es conserven valors introduïts per fer el reintent més còmode
 
 **Relació amb el producte principal**
 
@@ -369,7 +376,7 @@ La IA pot suggerir l’estructura inicial del formulari o exemples de tractament
 - codi `PHP` integrat amb `HTML` o plantilla equivalent
 - ús visible de variables i sentències simples en la resposta
 - recuperació correcta de dades de text, llista i checkbox
-- error de validació visible i possibilitat de reintent
+- almenys tres errors de validació visibles i possibilitat de reintent
 - comprovació del document resultant generat pel servidor
 - captura o demo del cas correcte
 - codi comentat mínimament
@@ -382,7 +389,7 @@ Checklist de formulari i recuperació de dades.
 **Indicadors d’assoliment**
 
 - les dades es reben realment
-- el document resultant canvia segons les dades rebudes o l'error detectat
+- el document resultant mostra errors quan la dada no és acceptable i resposta correcta quan passa la validació
 - el codi és comprensible
 - hi ha correspondència entre camps, recuperació i resposta
 
@@ -390,6 +397,8 @@ Checklist de formulari i recuperació de dades.
 
 - formulari només decoratiu
 - recuperació aparent però no verificable
+- validació només en navegador
+- missatges d'error sense condició real de servidor
 - comentaris inexistents o inútils
 
 **Verificació del treball real**
@@ -411,7 +420,7 @@ Microprojecte procedimental.
 
 **Objectiu**
 
-Fer visible el treball elemental de programació en servidor que permet processar les dades rebudes, modificar el comportament del sistema i deixar la informació correcta en un estat reutilitzable.
+Fer visible el treball elemental de programació en servidor que permet processar dades ja recuperades i validades inicialment en `R2M1`, modificar el comportament del sistema i deixar la informació correcta en un estat reutilitzable.
 
 **Tasca**
 
@@ -427,12 +436,12 @@ L’equip implementa tractament bàsic de la petició, incloent:
 - operadors
 - àmbits de variables quan siga rellevant
 - primera reutilització funcional de la informació correcta dins del projecte
-- si hi ha fitxer o imatge, control bàsic de tipus i grandària
+- si `R2M1` ha validat un fitxer o imatge, reutilització del resultat validat sense convertir la pujada de fitxers en el centre del microrepte
 - si apareix base de dades, ús justificat com a suport funcional del flux i no com a centre metodològic del repte
 
 **Relació amb el producte principal**
 
-Este microprojecte dona la base de processament necessari perquè després el sistema puga prendre decisions, validar i actuar sobre l’estat de l’usuari.
+Este microprojecte dona la base de processament necessari perquè el sistema puga prendre decisions i actuar sobre dades ja acceptades en el primer punt d'entrada.
 També ha de deixar clar com la informació correcta es conserva de manera funcional sense convertir encara el repte en un exercici centrat en accés a dades.
 
 **CA coberts**
