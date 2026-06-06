@@ -38,6 +38,7 @@ La franja `9→10` no s'ha de llegir com a punts extra. És la via per demostrar
 - [Sistema d'evidències](sistema_evidencies.md)
 - [Rúbrica base dels reptes](rubrica_base_reptes.md)
 - [Rúbrica de defensa tècnica](rubrica_defensa_tecnica.md)
+- [Microdefenses tècniques de criteris aplicats al projecte](microdefenses_tecniques_criteris.md)
 - [Instruments de seguiment docent](instruments_seguiment_docent.md)
 - [Criteris de ponderació dels reptes amb IA](criteris_ponderacio_reptes_amb_ia.md)
 - [Ús de la IA per a professorat i alumnat](../us-ia-professorat-i-alumnat.md)
@@ -60,7 +61,7 @@ La franja `9→10` no s'ha de llegir com a punts extra. És la via per demostrar
 ## Entrada per necessitat
 
 - per valorar producte i procés: [rúbrica base](rubrica_base_reptes.md)
-- per verificar autoria i defensa: [rúbrica de defensa tècnica](rubrica_defensa_tecnica.md)
+- per verificar autoria i defensa: [rúbrica de defensa tècnica](rubrica_defensa_tecnica.md) i [microdefenses tècniques de criteris](microdefenses_tecniques_criteris.md)
 - per controlar evidències i checkpoints: [sistema d'evidències](sistema_evidencies.md) i [instruments de seguiment](instruments_seguiment_docent.md)
 - per resoldre dubtes sobre ús assistit per IA, delegació excessiva i verificació docent: [document canònic d'IA](../us-ia-professorat-i-alumnat.md)
 - per revisar cobertura real dels resultats d'aprenentatge del mòdul: [matriu curricular](../matriu-coherencia-curricular-dwes.md)

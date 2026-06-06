@@ -33,6 +33,10 @@ nav:
               - R1S1. Programació d'aula — Kickoff backend: 01_programacio_modul/programacio_aula_repte_01.md
               - R1S2. Programació d'aula — Processament, estat i autenticació: 01_programacio_modul/programacio_aula_repte_02.md
               - R2S1. Entrada variada i validació de servidor: 01_programacio_modul/programacio_aula_r2s1_entrada_variada_validacio_servidor.md
+              - R2SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r2sx_microdefenses_tecniques_criteris.md
+              - R3SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r3sx_microdefenses_tecniques_criteris.md
+              - R4SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r4sx_microdefenses_tecniques_criteris.md
+              - R5SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r5sx_microdefenses_tecniques_criteris.md
           - Pla d'implantació docent: 01_programacio_modul/pla_implantacio_docent.md
           - Calendarització per avaluacions: 01_programacio_modul/calendaritzacio_per_avaluacions.md
           - Guia 20 setmanes: 01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md
@@ -63,6 +67,7 @@ nav:
       - Sistema d'evidències: 03_avaluacio/sistema_evidencies.md
       - Rúbrica base: 03_avaluacio/rubrica_base_reptes.md
       - Rúbrica defensa tècnica: 03_avaluacio/rubrica_defensa_tecnica.md
+      - Microdefenses tècniques de criteris: 03_avaluacio/microdefenses_tecniques_criteris.md
       - Instruments de seguiment: 03_avaluacio/instruments_seguiment_docent.md
       - Criteris de ponderació amb IA: 03_avaluacio/criteris_ponderacio_reptes_amb_ia.md
       - Instruments i matrius:

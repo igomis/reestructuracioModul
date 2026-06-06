@@ -23,13 +23,27 @@ La guia està calibrada sobre l'escenari següent:
 - cada bloc combina explicació docent, modelatge en directe, treball guiat i autonomia supervisada
 - poden existir moments de treball cooperatiu o sincronitzat, però l'evidència acreditativa, la verificació i l'avaluació s'han de recollir amb criteri individual
 - si una evidència mínima no apareix, no s'ha d'obrir el bloc següent com si el pas estiguera assolit
+- les microdefenses tècniques de `R2`, `R3`, `R4` i `R5` són punts de verificació d'autoria, comprensió real i ús verificable de la IA
 - el criteri principal no és “arribar a tot”, sinó mantindre la progressió real del producte i la seua defensa tècnica dins de les dues primeres avaluacions
 
 ## Estructura general del curs
 
-- `Avaluació 1` (`setmanes 1-10 / ~60h`): marc comú, `R1`, `R2` i entrada real a `R3`
-- `Avaluació 2` (`setmanes 11-20 / ~60h`): tancament de `R3`, `R4`, `R5` i defensa final
+- `Avaluació 1` (`setmanes 1-10 / ~60h`): marc comú, `R1`, `R2`, microdefensa de `R2` i entrada real a `R3`
+- `Avaluació 2` (`setmanes 11-20 / ~60h`): tancament de `R3`, microdefenses de `R3`, `R4` i `R5`, i defensa final
 - `Avaluació 3`: sense desenvolupament central del projecte; només seguiment residual, connexió amb empresa o `FCT`
+
+## Mapa reestructurat de reptes, setmanes i verificacions
+
+| Bloc | Setmanes | Tancament verificable | Imprescindible | Recuperable | Ampliació |
+|---|---:|---|---|---|---|
+| Arrancada i `R1` | `1-4` | checkpoint `R1 -> R2` | repo, base en `PHP`, primer punt d'entrada i `README` executable | documentació, incidències i defensa curta | millora d'onboarding o scripts |
+| `R2` | `5-8` | [R2SX. Microdefenses tècniques](programacio_aula_r2sx_microdefenses_tecniques_criteris.md) | formulari variat, validació de servidor, estat inicial, funcionalitat protegida i traçabilitat | refactorització mínima, proves i `AI log` incomplet | fitxers, millor tractament d'errors o proves negatives |
+| `R3` | `9-12` | [R3SX. Microdefenses tècniques](programacio_aula_r3sx_microdefenses_tecniques_criteris.md) | framework arrancable, separació de responsabilitats, persistència inicial i flux end-to-end | segon flux reduït, documentació de migracions o proves | relació de dades, serveis o validació reforçada |
+| `R4` | `13-16` | [R4SX. Microdefenses tècniques](programacio_aula_r4sx_microdefenses_tecniques_criteris.md) | contracte d'API, endpoints, protecció o control d'accés, consum/prova i documentació | col·lecció de proves, cas denegat o documentació incompleta | permisos més fins, consumidor més complet o millor contracte |
+| `R5` | `17-19` | [R5SX. Microdefenses tècniques](programacio_aula_r5sx_microdefenses_tecniques_criteris.md) | integració amb valor real, transformació, prova, errors i documentació | estabilització del flux i registre d'incidències | observabilitat, desplegament o integració més robusta |
+| Defensa final | `20` | defensa final i tancament del curs | producte defensat, repo coherent i evidències finals | defensa ajustada al mínim funcional no trivial | proposta `v2` acotada |
+
+Les microdefenses diferencien tres situacions que la revisió ordinària del repositori no sempre detecta: treball autònom comprés, treball assistit per IA però validat, i delegació excessiva en IA. Per això sempre combinen demo, codi o configuració, traçabilitat, `AI log` i preguntes de contrast.
 
 ## Estratègia general de suport a alumnat endarrerit
 
@@ -143,14 +157,15 @@ Regla pràctica:
 
 #### Setmana 8
 
-- Focus o repte: sessió final de `R2` amb refactorització, organització en fitxers amb `include` / `require`, primer objecte de domini i primer mapa de pas a `R3`
-- Què fa el professorat: modela una refactorització curta del codi ja funcional, mostra com separar funcions comunes en fitxers, explica la diferència bàsica entre `include`, `require`, `include_once` i `require_once`, introduïx un objecte simple del domini i delimita què encara queda reservat a `R3`
-- Què fa l'alumnat: implementa `R2M7`, reorganitza una part del codi en fitxers, usa `include` / `require` amb sentit, incorpora una entitat mínima del domini com a objecte simple, compara abans/després, justifica la millora i identifica el primer punt de pas a arquitectura
-- Materials per a l'alumnat: full de treball del Repte 2, checklist del Repte 2, materials del Repte 3 com a lectura de transició
-- Evidència mínima del bloc: comparativa breu abans/després, almenys un fitxer comú importat amb criteri, objecte simple del domini, justificació de mantenibilitat i primer mapa de pas a `R3`
-- Checkpoint docent: validar que el pas a `R3` es fa sobre un flux real i una revisió final explicable
-- Pla per a alumnat endarrerit: centrar-se en una sola entitat i un sol cas d'ús
-- Pla per a alumnat avançat: reforçar la separació de responsabilitats sense saltar encara a capes completes ni a persistència com a focus central
+- Focus o repte: tancament de `R2`, refactorització mínima i [microdefensa tècnica de criteris](programacio_aula_r2sx_microdefenses_tecniques_criteris.md)
+- Què fa el professorat: reserva una primera franja per tancar `R2M7` i una segona per defensar evidències; força demo amb cas correcte i cas incorrecte, revisa `AI log`, commits i pregunta de contrast
+- Què fa l'alumnat: reorganitza una part del codi amb `include` / `require`, justifica la millora, prepara `3-5` diapositives i defensa formularis, validació, estat o funcionalitat protegida sobre el seu projecte
+- Materials per a l'alumnat: full de treball del Repte 2, checklist del Repte 2, [microdefensa de R2](programacio_aula_r2sx_microdefenses_tecniques_criteris.md), [instrument comú de microdefenses](../03_avaluacio/microdefenses_tecniques_criteris.md)
+- Producte mínim: flux de `R2` funcional, refactorització mínima explicable i primer mapa de pas a `R3`
+- Evidència mínima del bloc: demo, codi rellevant, traçabilitat, `AI log`, mini justificació i resposta a preguntes sobre entrada, validació, estat o protecció
+- Checkpoint docent: validar autoria i comprensió real abans d'entrar a `R3`; si la defensa no acredita, es planifica recuperació curta
+- Pla per a alumnat endarrerit: defensar un únic formulari complet amb validació de servidor, error visible i commit identificable
+- Pla per a alumnat avançat: afegir prova negativa, fitxer controlat o comparativa abans/després més sòlida
 
 #### Setmana 9
 
@@ -189,14 +204,15 @@ Regla pràctica:
 
 #### Setmana 12
 
-- Focus o repte: segon cas d'ús, estabilització i tancament formal de `R3`
-- Què fa el professorat: revisa els dos fluxos, força prova de `migrations` i `seeders`, demana errors controlats, comprova que almenys un flux genera `HTML` en servidor i acota què farà de nucli d'`API`
-- Què fa l'alumnat: implementa el segon flux o ampliació funcional útil, estabilitza validació i errors, executa proves mínimes, documenta el cas server-rendered i actualitza `README`
-- Materials per a l'alumnat: checklist del Repte 3, itinerari triat, [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
-- Evidència mínima del bloc: aplicació en framework amb Docker, BBDD per `migrations`, dades amb `seeders`, `2` casos d'ús funcionals, almenys `1` cas server-rendered, proves mínimes i documentació curta
-- Checkpoint docent: validació formal d'entrada a `R4`
-- Pla per a alumnat endarrerit: reduir el segon flux al mínim funcional real, però no eliminar-lo
-- Pla per a alumnat avançat: preparar ja contracte preliminar d'`API`
+- Focus o repte: segon cas d'ús, estabilització i [microdefensa tècnica de `R3`](programacio_aula_r3sx_microdefenses_tecniques_criteris.md)
+- Què fa el professorat: revisa fluxos, força prova de `migrations` i `seeders`, demana seguir una petició ruta-controlador-model/vista i activa defenses breus d'arquitectura aplicada
+- Què fa l'alumnat: tanca el segon flux o ampliació útil, actualitza `README`, prepara defensa de separació de responsabilitats, persistència inicial o flux end-to-end
+- Materials per a l'alumnat: checklist del Repte 3, itinerari triat, [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md), [microdefensa de R3](programacio_aula_r3sx_microdefenses_tecniques_criteris.md)
+- Producte mínim: aplicació en framework amb Docker, BBDD reconstruïble, dades inicials i almenys un flux complet server-rendered o equivalent
+- Evidència mínima del bloc: demo end-to-end, codi de ruta/controlador/model/vista o servei, prova de dades, commits, `AI log` i justificació tècnica
+- Checkpoint docent: validació formal d'entrada a `R4` només si l'alumne pot explicar el recorregut del flux
+- Pla per a alumnat endarrerit: reduir el segon flux al mínim i defensar un únic recorregut complet
+- Pla per a alumnat avançat: preparar contracte preliminar d'`API` o prova de regressió sense ampliar l'abast nuclear
 
 #### Setmana 13
 
@@ -222,67 +238,69 @@ Regla pràctica:
 
 #### Setmana 15
 
-- Focus o repte: documentació i consum de l'`API`
-- Què fa el professorat: modela col·lecció mínima de proves o client de consum i una documentació curta però usable
-- Què fa l'alumnat: documenta, prova i consuma la seua `API`
-- Materials per a l'alumnat: guia de proves i documentació `API`, apunt real del Repte 4
-- Evidència mínima del bloc: documentació coherent i consum verificat
-- Checkpoint docent: tancament de `R4` només si hi ha contracte usable per tercers
+- Focus o repte: documentació, consum i protecció verificable de l'`API`
+- Què fa el professorat: modela col·lecció mínima de proves, client de consum, documentació curta i cas denegat o d'error
+- Què fa l'alumnat: documenta, prova, consuma i ajusta el servei perquè el contracte siga usable i comprovable
+- Materials per a l'alumnat: guia de proves i documentació `API`, apunt real del Repte 4, checklist del Repte 4
+- Evidència mínima del bloc: documentació coherent, consum verificat, cas correcte, cas d'error i cas denegat si hi ha protecció
+- Checkpoint docent: no reservar la microdefensa per arreglar l'API; la sessió següent és de verificació, no de construcció principal
 - Pla per a alumnat endarrerit: documentació mínima i una prova clara del flux principal
-- Pla per a alumnat avançat: millorar col·lecció de proves o qualitat del consumidor
+- Pla per a alumnat avançat: millorar col·lecció de proves, permisos o qualitat del consumidor
 
 #### Setmana 16
 
-- Focus o repte: entrada a `R5`, decisió d'integració
-- Què fa el professorat: explica què és una integració amb valor real i modela un flux híbrid mínim
-- Què fa l'alumnat: tria integració externa o workflow `n8n` amb sentit per al producte
-- Materials per a l'alumnat: materials del Repte 5, guia d'integració i automatització
-- Evidència mínima del bloc: flux híbrid dissenyat i justificat
-- Checkpoint docent: evitar una integració ornamental o forçada
-- Pla per a alumnat endarrerit: una integració mínima però real amb una sola entrada i eixida
-- Pla per a alumnat avançat: tractar també errors de flux i traçabilitat més fina
+- Focus o repte: [microdefensa tècnica de `R4`](programacio_aula_r4sx_microdefenses_tecniques_criteris.md) i decisió inicial de pas a `R5`
+- Què fa el professorat: verifica contracte, endpoint, autenticació o autorització, consum i documentació amb preguntes de contrast; al final mostra què és una integració amb valor real
+- Què fa l'alumnat: defensa un servei real amb demo, prova correcta i prova d'error o denegació; després tria una possible integració externa o workflow `n8n` per a `R5`
+- Materials per a l'alumnat: [microdefensa de R4](programacio_aula_r4sx_microdefenses_tecniques_criteris.md), guia de contracte i disseny `API`, guia de proves i documentació `API`, materials del Repte 5
+- Producte mínim: API o servei usable, documentat, provat i amb control d'accés quan siga necessari
+- Evidència mínima del bloc: contracte, demo de petició, codi d'endpoint o control d'accés, prova, commits, `AI log` i justificació
+- Checkpoint docent: validació formal d'entrada a `R5`; si el servei no és consumible, la integració queda reduïda fins que el contracte siga estable
+- Pla per a alumnat endarrerit: defensar un endpoint crític amb prova positiva i negativa
+- Pla per a alumnat avançat: preparar integració amb millor control d'errors o consumidor més complet
 
 #### Setmana 17
 
-- Focus o repte: implementació del flux híbrid
-- Què fa el professorat: modela un workflow bàsic i recorda criteri d'incident i mantenibilitat
-- Què fa l'alumnat: implementa el flux híbrid, automatització o integració triada
-- Materials per a l'alumnat: apunt real del Repte 5, guia `n8n` i automatització
-- Evidència mínima del bloc: flux híbrid parcial ja executable
-- Checkpoint docent: revisar que la integració aporta valor funcional real
-- Pla per a alumnat endarrerit: tancar un únic recorregut de punta a punta
-- Pla per a alumnat avançat: afegir control d'errors o pas addicional justificat
+- Focus o repte: entrada a `R5`, selecció de font externa i disseny de la integració
+- Què fa el professorat: modela criteris per triar una font o servei, un mapa origen-transformació-destí i un flux híbrid mínim
+- Què fa l'alumnat: tria integració externa o workflow `n8n` amb sentit per al producte, defineix valor funcional i prepara la primera connexió
+- Materials per a l'alumnat: materials del Repte 5, guia d'integració i automatització, guia d'ús verificable de la IA
+- Evidència mínima del bloc: font triada, justificació, mapa d'integració, riscos i primer commit de preparació
+- Checkpoint docent: evitar una integració ornamental o forçada
+- Pla per a alumnat endarrerit: una integració mínima però real amb una sola entrada i eixida
+- Pla per a alumnat avançat: definir també errors de flux i traçabilitat més fina
 
 #### Setmana 18
 
-- Focus o repte: proves, incidències i tancament de `R5`
-- Què fa el professorat: guia revisió de punta a punta, demana registre d'errors i ajusta tancament
-- Què fa l'alumnat: prova el flux complet, documenta errors i tanca documentació final
-- Materials per a l'alumnat: checklist del Repte 5, instruments de seguiment docent
-- Evidència mínima del bloc: integració provada i documentada
-- Checkpoint docent: validar que el producte és ja defensable
-- Pla per a alumnat endarrerit: renunciar a extensions i estabilitzar el flux complet
-- Pla per a alumnat avançat: reforçar proves, observabilitat o defensa tècnica
+- Focus o repte: implementació, transformació i prova del flux híbrid de `R5`
+- Què fa el professorat: modela connexió, transformació de resposta, registre d'incidència i fallback quan el servei extern falla
+- Què fa l'alumnat: implementa el flux híbrid, automatització o integració triada, transforma dades i registra proves
+- Materials per a l'alumnat: apunt real del Repte 5, guies d'integració, automatització i testing
+- Evidència mínima del bloc: flux híbrid executable, mapping o transformació, prova correcta, cas de fallada i traçabilitat
+- Checkpoint docent: revisar que la integració aporta valor funcional real i no trenca el producte
+- Pla per a alumnat endarrerit: tancar un únic recorregut de punta a punta
+- Pla per a alumnat avançat: afegir observabilitat, control d'errors o pas addicional justificat
 
 #### Setmana 19
 
-- Focus o repte: preparació de defensa final
-- Què fa el professorat: modela defensa curta, recorregut del repositori i ús verificable de la IA
-- Què fa l'alumnat: prepara narrativa tècnica, revisa `README`, `AI log` i evidències finals
-- Materials per a l'alumnat: rúbrica de defensa tècnica, sistema d'evidències
-- Evidència mínima del bloc: defensa assajada i repositori final coherent
-- Checkpoint docent: detectar punts dèbils abans del tancament definitiu
-- Pla per a alumnat endarrerit: centrar-se en el flux principal i en la defensa del que realment funciona
-- Pla per a alumnat avançat: millorar narrativa de trade-offs i justificació de decisions
+- Focus o repte: proves, documentació i [microdefensa tècnica de `R5`](programacio_aula_r5sx_microdefenses_tecniques_criteris.md)
+- Què fa el professorat: guia revisió de punta a punta, demana registre d'errors, verifica `README`, `AI log` i activa defenses breus de la integració
+- Què fa l'alumnat: prova el flux complet, documenta errors, defensa integració, interoperabilitat, transformació, proves o preparació de defensa final
+- Materials per a l'alumnat: checklist del Repte 5, [microdefensa de R5](programacio_aula_r5sx_microdefenses_tecniques_criteris.md), instruments de seguiment docent, guió de defensa final
+- Producte mínim: integració provada, documentada i connectada amb valor real del producte
+- Evidència mínima del bloc: demo del flux complet, codi o workflow rellevant, prova o registre d'incidència, commits, `AI log` i justificació tècnica
+- Checkpoint docent: validar que el producte és ja defensable i separar incidències de recuperació de millores opcionals
+- Pla per a alumnat endarrerit: renunciar a extensions i estabilitzar el flux complet que realment funciona
+- Pla per a alumnat avançat: reforçar proves, observabilitat, desplegament o narrativa de trade-offs
 
 #### Setmana 20
 
 - Focus o repte: tancament del producte i del curs
-- Què fa el professorat: fa la revisió final, activa recollida de feedback i tanca pilotatge docent del grup
-- Què fa l'alumnat: presenta, defensa, entrega evidències finals i aporta feedback del curs
-- Materials per a l'alumnat: rúbrica de defensa, plantilla de feedback de pilotatge, documents finals del curs
+- Què fa el professorat: fa la defensa final, revisa coherència del repositori, activa recollida de feedback i tanca pilotatge docent del grup
+- Què fa l'alumnat: presenta, defensa, entrega evidències finals, declara ús d'IA i aporta feedback del curs
+- Materials per a l'alumnat: rúbrica de defensa, sistema d'evidències, plantilla de feedback de pilotatge, documents finals del curs
 - Evidència mínima del bloc: producte final defensat, feedback recollit i estat final registrat
-- Checkpoint docent: tancament del curs dins de les dues primeres avaluacions
+- Checkpoint docent: tancament del curs dins de les dues primeres avaluacions, amb microdefenses prèvies ja resoltes o registrades com a recuperació
 - Pla per a alumnat endarrerit: defensa ajustada al mínim funcional no trivial assolit
 - Pla per a alumnat avançat: proposta de millora o `v2` ben acotada, sense confondre-la amb el lliurable nuclear
 

@@ -26,6 +26,10 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - [R1. Programació d'aula — Kickoff backend](programacio_aula_repte_01.md): baixada operativa de `R1` a sessions, checkpoints i tancament.
 - [R2. Programació d'aula — Processament, estat i autenticació](programacio_aula_repte_02.md): baixada operativa de `R2` a sessions, microprojectes, checkpoints i pas cap a `R3`.
 - [R2S1. Entrada variada i validació de servidor](programacio_aula_r2s1_entrada_variada_validacio_servidor.md): fitxa d'aula executable per a la primera sessió de `R2`, associada al microrepte `R2M1`.
+- [R2SX. Microdefenses tècniques de criteris](programacio_aula_r2sx_microdefenses_tecniques_criteris.md): verificació d'autoria, comprensió i ús d'IA al tancament de `R2`.
+- [R3SX. Microdefenses tècniques de criteris](programacio_aula_r3sx_microdefenses_tecniques_criteris.md): defensa breu d'arquitectura, persistència i flux end-to-end al tancament de `R3`.
+- [R4SX. Microdefenses tècniques de criteris](programacio_aula_r4sx_microdefenses_tecniques_criteris.md): verificació de contracte, protecció, consum i documentació de servei al tancament de `R4`.
+- [R5SX. Microdefenses tècniques de criteris](programacio_aula_r5sx_microdefenses_tecniques_criteris.md): predefensa de la integració final, proves, interoperabilitat i traçabilitat al tancament de `R5`.
 
 ## Pilotatge i preparacio
 
@@ -45,5 +49,6 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - per conduir `R1` sense reconstruir-lo a mà: [R1. Programació d'aula — Kickoff backend](programacio_aula_repte_01.md)
 - per conduir `R2` sense reduir-lo a auth: [R2. Programació d'aula — Processament, estat i autenticació](programacio_aula_repte_02.md)
 - per impartir la primera sessió de `R2`: [R2S1. Entrada variada i validació de servidor](programacio_aula_r2s1_entrada_variada_validacio_servidor.md)
+- per verificar autoria després dels reptes: [R2SX](programacio_aula_r2sx_microdefenses_tecniques_criteris.md), [R3SX](programacio_aula_r3sx_microdefenses_tecniques_criteris.md), [R4SX](programacio_aula_r4sx_microdefenses_tecniques_criteris.md) i [R5SX](programacio_aula_r5sx_microdefenses_tecniques_criteris.md)
 - per activar una via d'excellencia sense improvisar: [ampliacions 9 a 10 per repte](../ampliacions-9-a-10-per-repte.md)
 - per obrir el curs sense improvisar: [preparacio docent directa](preparacio_docent_directa_curs_que_ve.md) i [ajustos finals](ajustos_finals_abans_inici_curs.md)
