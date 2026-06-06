@@ -24,13 +24,13 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 
 | Sessió | Duració | Microprojecte | Focus principal | Evidència clau |
 |---|---:|---|---|---|
-| `1` | `3h` | `MP1` | entrada variada i validació de servidor | dades recuperades de controls diversos, errors clars i reintent |
-| `2` | `3h` | `MP2` | processament i guardat funcional | dada correcta tractada, guardada i reutilitzada |
-| `3` | `3h` | `MP3` | lògica del flux i regles del projecte | decisió, estructura o funció amb efecte visible |
-| `4` | `3h` | `MP4` | estat, sessió i/o cookies | recuperació del flux i invalidació controlada |
-| `5` | `3h` | `MP5` | autenticació i funcionalitat protegida | cas autoritzat i cas denegat d'una operació real |
-| `6` | `3h` | `MP6` | prova, depuració, documentació mínima i checkpoint tècnic | checklist, README i demo reproduïble |
-| `7` | `3h` | `MP7` | refactorització final, organització en fitxers i primer objecte de domini | comparativa abans/després, reutilització en fitxers i justificació de la millora |
+| `1` | `3h` | `R2M1` | entrada variada i validació de servidor | dades recuperades de controls diversos, errors clars i reintent |
+| `2` | `3h` | `R2M2` | processament i guardat funcional | dada correcta tractada, guardada i reutilitzada |
+| `3` | `3h` | `R2M3` | lògica del flux i regles del projecte | decisió, estructura o funció amb efecte visible |
+| `4` | `3h` | `R2M4` | estat, sessió i/o cookies | recuperació del flux i invalidació controlada |
+| `5` | `3h` | `R2M5` | autenticació i funcionalitat protegida | cas autoritzat i cas denegat d'una operació real |
+| `6` | `3h` | `R2M6` | prova, depuració, documentació mínima i checkpoint tècnic | checklist, README i demo reproduïble |
+| `7` | `3h` | `R2M7` | refactorització final, organització en fitxers i primer objecte de domini | comparativa abans/després, reutilització en fitxers i justificació de la millora |
 
 ## Correspondència curta sessió -> RA -> evidència -> verificació
 

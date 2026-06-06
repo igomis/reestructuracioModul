@@ -66,14 +66,14 @@ Si cal reduir abast, es redueix la mida dels fluxos, no els mínims: Docker, pro
 
 | Microprojecte | Sessions | CA associats | Producte parcial esperat | Evidència mínima | Checkpoint docent |
 |---|---|---|---|---|---|
-| `MP1` Arrencada del nou projecte | `1` | `RA5.a`, `RA5.b`, `RA5.c`, `RA5.d`, `RA5.e`, `RA8.c` | stack triat, Docker, projecte base, `.env` i rutes mínimes | projecte arrancable, ruta o vista inicial, issue de `R3` i declaració dels `2` fluxos | no és només esquelet: arranca i té abast funcional definit |
-| `MP2` Model de dades i persistència mínima | `2-3` | `RA6.a`, `RA6.b`, `RA6.c`, `RA6.d`, `RA6.e`, `RA5.f` | BBDD real amb esquema inicial i dades de prova | `migrations`, `seeders`, connexió i lectura real | la BBDD es pot reconstruir sense càrrega manual |
-| `MP3` Primer cas d'ús complet | `3-4` | `RA5.e`, `RA5.f`, `RA5.g`, `RA6.c`, `RA6.d`, `RA6.f`, `RA8.d`, `RA8.e`, `RA8.g` | primer flux end-to-end migrat de `R2` | ruta, controlador, model/servei, vista o plantilla, BBDD, resposta `HTML` si és el flux server-rendered i validació mínima | el flux ve de `R2` i funciona amb dades reals |
-| `MP4` Segon cas d'ús o ampliació funcional | `5-6` | `RA5.e`, `RA5.f`, `RA5.g`, `RA5.h`, `RA6.c`, `RA6.d`, `RA6.f`, `RA8.f` | segon flux end-to-end o ampliació útil | recorregut funcional, BBDD, validació/error, canvi dinàmic de resposta i demo | no és canvi cosmètic ni duplicació buida |
-| `MP5` Qualitat i estabilització | `6-7` | `RA5.g`, `RA5.h`, `RA6.f`, `RA6.g` | validació, errors, proves i neteja d'estructura | proves mínimes, cas positiu/negatiu, revisió de responsabilitats | els dos fluxos continuen funcionant després de la neteja |
-| `MP6` Tancament tècnic | `8` | `RA5.f`, `RA5.g`, `RA6.g` | README, decisions, demo i backlog de migració | instruccions d'arrencada, fluxos documentats i mapa del que queda | només s'obri `R4` si la base és reproduïble i defensable |
+| `R3M1` Arrencada del nou projecte | `1` | `RA5.a`, `RA5.b`, `RA5.c`, `RA5.d`, `RA5.e`, `RA8.c` | stack triat, Docker, projecte base, `.env` i rutes mínimes | projecte arrancable, ruta o vista inicial, issue de `R3` i declaració dels `2` fluxos | no és només esquelet: arranca i té abast funcional definit |
+| `R3M2` Model de dades i persistència mínima | `2-3` | `RA6.a`, `RA6.b`, `RA6.c`, `RA6.d`, `RA6.e`, `RA5.f` | BBDD real amb esquema inicial i dades de prova | `migrations`, `seeders`, connexió i lectura real | la BBDD es pot reconstruir sense càrrega manual |
+| `R3M3` Primer cas d'ús complet | `3-4` | `RA5.e`, `RA5.f`, `RA5.g`, `RA6.c`, `RA6.d`, `RA6.f`, `RA8.d`, `RA8.e`, `RA8.g` | primer flux end-to-end migrat de `R2` | ruta, controlador, model/servei, vista o plantilla, BBDD, resposta `HTML` si és el flux server-rendered i validació mínima | el flux ve de `R2` i funciona amb dades reals |
+| `R3M4` Segon cas d'ús o ampliació funcional | `5-6` | `RA5.e`, `RA5.f`, `RA5.g`, `RA5.h`, `RA6.c`, `RA6.d`, `RA6.f`, `RA8.f` | segon flux end-to-end o ampliació útil | recorregut funcional, BBDD, validació/error, canvi dinàmic de resposta i demo | no és canvi cosmètic ni duplicació buida |
+| `R3M5` Qualitat i estabilització | `6-7` | `RA5.g`, `RA5.h`, `RA6.f`, `RA6.g` | validació, errors, proves i neteja d'estructura | proves mínimes, cas positiu/negatiu, revisió de responsabilitats | els dos fluxos continuen funcionant després de la neteja |
+| `R3M6` Tancament tècnic | `8` | `RA5.f`, `RA5.g`, `RA6.g` | README, decisions, demo i backlog de migració | instruccions d'arrencada, fluxos documentats i mapa del que queda | només s'obri `R4` si la base és reproduïble i defensable |
 
-El solapament entre microprojectes és intencionat. `MP2` pot començar mentre encara es tanca `MP1`, i `MP5` pot actuar sobre `MP3` i `MP4` a mesura que apareixen errors. El criteri és mantindre un producte executable en tot moment.
+El solapament entre microprojectes és intencionat. `R3M2` pot començar mentre encara es tanca `R3M1`, i `R3M5` pot actuar sobre `R3M3` i `R3M4` a mesura que apareixen errors. El criteri és mantindre un producte executable en tot moment.
 
 ## Seqüència detallada de 8 sessions de 3 hores
 
@@ -81,7 +81,7 @@ El solapament entre microprojectes és intencionat. `MP2` pot començar mentre e
 
 **Microprojecte principal**
 
-- `MP1 — Arrencada del nou projecte`
+- `R3M1 — Arrencada del nou projecte`
 
 **Objectiu**
 
@@ -134,7 +134,7 @@ L'aplicació ha d'arrancar i la tria del framework ha d'estar justificada amb av
 
 **Microprojecte principal**
 
-- `MP2 — Model de dades i persistència mínima`
+- `R3M2 — Model de dades i persistència mínima`
 
 **Objectiu**
 
@@ -179,11 +179,11 @@ La BBDD ha de poder crear-se de zero. Si l'esquema només existeix manualment en
 
 **Microprojecte principal**
 
-- `MP2 — Model de dades i persistència mínima`
+- `R3M2 — Model de dades i persistència mínima`
 
 **Microprojecte secundari**
 
-- inici de `MP3 — Primer cas d'ús complet`
+- inici de `R3M3 — Primer cas d'ús complet`
 
 **Objectiu**
 
@@ -223,7 +223,7 @@ Les dades han de poder aparéixer després d'un reset i alimentar un flux real. 
 
 **Microprojecte principal**
 
-- `MP3 — Primer cas d'ús complet`
+- `R3M3 — Primer cas d'ús complet`
 
 **Objectiu**
 
@@ -263,13 +263,13 @@ Portar al framework un cas d'ús real heretat de `R2` amb recorregut complet.
 
 **Checkpoint docent**
 
-El cas d'ús ha de ser funcional de punta a punta. Una pantalla que només mostra dades estàtiques no tanca `MP3`.
+El cas d'ús ha de ser funcional de punta a punta. Una pantalla que només mostra dades estàtiques no tanca `R3M3`.
 
 ### Sessió 5. Segon flux o ampliació funcional
 
 **Microprojecte principal**
 
-- `MP4 — Segon cas d'ús o ampliació funcional`
+- `R3M4 — Segon cas d'ús o ampliació funcional`
 
 **Objectiu**
 
@@ -311,7 +311,7 @@ No compta com a segon flux una pàgina estàtica, una còpia del primer canviant
 
 **Microprojecte principal**
 
-- `MP5 — Qualitat i estabilització`
+- `R3M5 — Qualitat i estabilització`
 
 **Objectiu**
 
@@ -350,11 +350,11 @@ No es considera qualitat mínima si només hi ha una demo feliç sense cap entra
 
 **Microprojecte principal**
 
-- `MP5 — Qualitat i estabilització`
+- `R3M5 — Qualitat i estabilització`
 
 **Microprojecte secundari**
 
-- inici de `MP6 — Tancament tècnic`
+- inici de `R3M6 — Tancament tècnic`
 
 **Objectiu**
 
@@ -394,7 +394,7 @@ La neteja només és vàlida si el sistema continua arrancant i els dos fluxos c
 
 **Microprojecte principal**
 
-- `MP6 — Tancament tècnic`
+- `R3M6 — Tancament tècnic`
 
 **Objectiu**
 
@@ -436,12 +436,12 @@ Només s'obri `R4` si el projecte arranca, la BBDD es reconstrueix, les dades es
 
 | Moment | Pregunta docent | Evidència exigible |
 |---|---|---|
-| Després de `MP1` | El projecte en framework arranca de veritat? | Docker, `.env`, ruta mínima i issue amb `2` fluxos |
-| Després de `MP2` | La persistència es pot reconstruir de zero? | `migrations`, `seeders`, BBDD i lectura real |
-| Després de `MP3` | Hi ha un flux de `R2` migrat i funcional? | ruta, controlador, dades reals, vista/resposta i validació |
-| Després de `MP4` | Hi ha un segon flux real? | segon recorregut end-to-end, no cosmètic |
-| Després de `MP5` | El projecte aguanta errors i proves mínimes? | cas positiu, cas negatiu, errors i neteja |
-| Després de `MP6` | Una altra persona podria arrancar i entendre el projecte? | README, demo, decisions i backlog |
+| Després de `R3M1` | El projecte en framework arranca de veritat? | Docker, `.env`, ruta mínima i issue amb `2` fluxos |
+| Després de `R3M2` | La persistència es pot reconstruir de zero? | `migrations`, `seeders`, BBDD i lectura real |
+| Després de `R3M3` | Hi ha un flux de `R2` migrat i funcional? | ruta, controlador, dades reals, vista/resposta i validació |
+| Després de `R3M4` | Hi ha un segon flux real? | segon recorregut end-to-end, no cosmètic |
+| Després de `R3M5` | El projecte aguanta errors i proves mínimes? | cas positiu, cas negatiu, errors i neteja |
+| Després de `R3M6` | Una altra persona podria arrancar i entendre el projecte? | README, demo, decisions i backlog |
 
 ## Adaptacions de ritme
 

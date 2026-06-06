@@ -86,7 +86,7 @@ Els criteris de `RA7`, `RA8` i `RA6` només apareixen com a suport quan fan falt
 > - El mínim obligatori és una sola integració híbrida completa, útil i defensable.
 > - Les integracions múltiples o orquestracions avançades són ampliació, no substitució del nucli.
 
-### Microprojecte MP1 — Selecció de font externa i disseny de la integració
+### Microrepte R5M1 — Selecció de font externa i disseny de la integració
 
 **Tipus**
 
@@ -134,7 +134,7 @@ Checklist de selecció i viabilitat.
 
 15%
 
-### Microprojecte MP2 — Connexió amb la font externa i recuperació real
+### Microrepte R5M2 — Connexió amb la font externa i recuperació real
 
 **Tipus**
 
@@ -181,7 +181,7 @@ Rúbrica de connexió i robustesa mínima.
 
 20%
 
-### Microprojecte MP3 — Transformació, mapping i valor afegit
+### Microrepte R5M3 — Transformació, mapping i valor afegit
 
 **Tipus**
 
@@ -228,7 +228,7 @@ Rúbrica de transformació i valor funcional.
 
 20%
 
-### Microprojecte MP4 — Integració de la funcionalitat híbrida en el producte
+### Microrepte R5M4 — Integració de la funcionalitat híbrida en el producte
 
 **Tipus**
 
@@ -275,7 +275,7 @@ Rúbrica d'integració híbrida.
 
 25%
 
-### Microprojecte MP5 — Prova, documentació i defensa de la integració
+### Microrepte R5M5 — Prova, documentació i defensa de la integració
 
 **Tipus**
 
@@ -329,11 +329,11 @@ Checklist de tancament i defensa.
 
 | Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
 |---|---|---|---|---|---|---:|
-| MP1 | Investigació / decisió | Font externa triada i mapa d'integració | RA9.a, RA9.b, RA7.a | comparativa, justificació, mapa inicial, riscos | checklist | 15% |
-| MP2 | Procedimental | Connexió funcional amb font externa | RA9.c, RA9.f, RA7.d, RA7.e | connector, resposta real, cas d'error | rúbrica | 20% |
-| MP3 | Procedimental | Mapping i transformació útil | RA9.d, RA9.e, RA6.c, RA6.d | esquema de mapping, transformació, comparativa | rúbrica | 20% |
-| MP4 | Integració | Funcionalitat híbrida integrada | RA9.e, RA9.f, RA8.f, RA7.f | demo completa, abans/després, commit comentat | rúbrica | 25% |
-| MP5 | Tancament / verificació | Proves, documentació i defensa | RA9.g, RA9.h, RA7.h | registre de proves, documentació, mapa final, defensa | checklist | 20% |
+| R5M1 | Investigació / decisió | Font externa triada i mapa d'integració | RA9.a, RA9.b, RA7.a | comparativa, justificació, mapa inicial, riscos | checklist | 15% |
+| R5M2 | Procedimental | Connexió funcional amb font externa | RA9.c, RA9.f, RA7.d, RA7.e | connector, resposta real, cas d'error | rúbrica | 20% |
+| R5M3 | Procedimental | Mapping i transformació útil | RA9.d, RA9.e, RA6.c, RA6.d | esquema de mapping, transformació, comparativa | rúbrica | 20% |
+| R5M4 | Integració | Funcionalitat híbrida integrada | RA9.e, RA9.f, RA8.f, RA7.f | demo completa, abans/després, commit comentat | rúbrica | 25% |
+| R5M5 | Tancament / verificació | Proves, documentació i defensa | RA9.g, RA9.h, RA7.h | registre de proves, documentació, mapa final, defensa | checklist | 20% |
 
 ---
 

@@ -4,7 +4,7 @@
 
 Este document baixa `R1` a una seqüència operativa d'aula perquè el professorat puga conduir l'arrancada del backend sense inflar el repte ni confondre infraestructura amb producte.
 
-La programació manté els `4` microreptes com a unitats de progrés, però cada microrepte queda redactat com una unitat d'aula executable. Si el centre compacta el repte en `2` sessions de `3` hores, el docent pot executar `MP1` i l'inici de `MP2` en la primera sessió, i el tancament de `MP2`, `MP3` i `MP4` en la segona. Si el grup necessita més temps, `MP4` pot convertir-se en una tercera sessió formal de defensa i checkpoint.
+La programació manté els `4` microreptes com a unitats de progrés, però cada microrepte queda redactat com una unitat d'aula executable. Si el centre compacta el repte en `2` sessions de `3` hores, el docent pot executar `R1M1` i l'inici de `R1M2` en la primera sessió, i el tancament de `R1M2`, `R1M3` i `R1M4` en la segona. Si el grup necessita més temps, `R1M4` pot convertir-se en una tercera sessió formal de defensa i checkpoint.
 
 ## Finalitat del repte
 
@@ -21,20 +21,20 @@ La programació manté els `4` microreptes com a unitats de progrés, però cada
 
 | Sessió base | Duració | Microreptes implicats | Focus principal | Evidència clau |
 |---|---:|---|---|---|
-| `1` | `3h` | `MP1` + inici de `MP2` | model client/servidor, decisió inicial i arrencada de l'entorn | fitxa inicial, explicació client vs servidor, decisió tècnica i base mínima començada |
-| `2` | `3h` | tancament de `MP2` + `MP3` + `MP4` | entorn complet, primera funcionalitat mínima i documentació del repte | entorn arrancable, punt d'entrada funcional, README i documentació en repositori |
-| `3` | opcional | reforç de `MP4` | defensa, execució real i revisió de traçabilitat | defensa tècnica o acta de checkpoint |
+| `1` | `3h` | `R1M1` + inici de `R1M2` | model client/servidor, decisió inicial i arrencada de l'entorn | fitxa inicial, explicació client vs servidor, decisió tècnica i base mínima començada |
+| `2` | `3h` | tancament de `R1M2` + `R1M3` + `R1M4` | entorn complet, primera funcionalitat mínima i documentació del repte | entorn arrancable, punt d'entrada funcional, README i documentació en repositori |
+| `3` | opcional | reforç de `R1M4` | defensa, execució real i revisió de traçabilitat | defensa tècnica o acta de checkpoint |
 
 ## Mapa de criteris d'avaluació per microrepte
 
 | Microrepte | Focus | CA associats |
 |---|---|---|
-| `MP1` | model client/servidor i decisió tècnica inicial | `RA1a`, `RA1b`, `RA1c`, `RA1g` |
-| `MP2` | base executable amb Docker, PHP, servidor web, BBDD i phpMyAdmin | `RA1c`, `RA1d`, `RA1e`, `RA1f` |
-| `MP3` | primer punt d'entrada funcional del backend | `RA1b`, `RA1e`, `RA1f` |
-| `MP4` | documentació tècnica, verificació i checkpoint | `RA1d`, `RA1g` |
+| `R1M1` | model client/servidor i decisió tècnica inicial | `RA1a`, `RA1b`, `RA1c`, `RA1g` |
+| `R1M2` | base executable amb Docker, PHP, servidor web, BBDD i phpMyAdmin | `RA1c`, `RA1d`, `RA1e`, `RA1f` |
+| `R1M3` | primer punt d'entrada funcional del backend | `RA1b`, `RA1e`, `RA1f` |
+| `R1M4` | documentació tècnica, verificació i checkpoint | `RA1d`, `RA1g` |
 
-## MP1 — Model client/servidor i decisió tècnica inicial
+## R1M1 — Model client/servidor i decisió tècnica inicial
 
 ### Objectiu operatiu
 
@@ -64,9 +64,9 @@ Al final de la unitat, cada alumne o parella ha de poder explicar, sobre el seu 
 - `1:30-1:55`: exploració guiada d'opcions. L'alumnat consulta materials del curs i, si usa IA, demana diferències bàsiques entre opcions com `PHP`, `Laravel`, `Symfony` o `NestJS` dins del marc docent.
 - `1:55-2:20`: decisió tècnica inicial. Cada parella tanca una opció de partida i una alternativa descartada amb un motiu curt.
 - `2:20-2:45`: posada en comú curta. Tres o quatre equips expliquen el repartiment client/servidor i el professorat corregeix confusions.
-- `2:45-3:00`: checkpoint `CP-R1.1`. El professorat revisa fitxes, fa una pregunta oral i marca qui pot passar a iniciar `MP2`.
+- `2:45-3:00`: checkpoint `CP-R1.1`. El professorat revisa fitxes, fa una pregunta oral i marca qui pot passar a iniciar `R1M2`.
 
-Si esta unitat es compacta dins de la sessió `1`, el docent pot reduir la posada en comú a `10` minuts i iniciar `MP2` immediatament després.
+Si esta unitat es compacta dins de la sessió `1`, el docent pot reduir la posada en comú a `10` minuts i iniciar `R1M2` immediatament després.
 
 ### Modelatge docent
 
@@ -123,7 +123,7 @@ No s'accepta substituir la fitxa per captures de conversa. El control es fa amb 
 - Dificultat: decisió per moda o preferència. Pla B: demanar que la decisió responga a tres criteris: arranca en local, es pot explicar i prepara `R2`.
 - Dificultat: ús d'IA massa abstracte. Pla B: demanar una reformulació manual de `5` línies sense IA i una pregunta oral immediata.
 
-## MP2 — Base executable amb Docker, PHP, servidor web, BBDD i phpMyAdmin
+## R1M2 — Base executable amb Docker, PHP, servidor web, BBDD i phpMyAdmin
 
 ### Objectiu operatiu
 
@@ -146,7 +146,7 @@ Al final de la unitat, el projecte ha d'arrancar en local amb un entorn reprodu�
 
 ### Seqüència temporal de la unitat
 
-- `0:00-0:15`: recuperació de `MP1`. Cada equip obri la fitxa i diu amb quina base començarà.
+- `0:00-0:15`: recuperació de `R1M1`. Cada equip obri la fitxa i diu amb quina base començarà.
 - `0:15-0:35`: modelatge docent d'un entorn mínim. El professorat mostra fitxers, serveis i ordre d'arrencada sense entregar una solució final tancada.
 - `0:35-0:55`: creació o revisió del repositori. L'alumnat crea issue mare de kickoff, estructura bàsica i primer commit.
 - `0:55-1:35`: adaptació de l'entorn mínim. Cada equip ajusta nom del projecte, carpeta pública, port, servei web i resposta inicial.
@@ -155,7 +155,7 @@ Al final de la unitat, el projecte ha d'arrancar en local amb un entorn reprodu�
 - `2:25-2:45`: prova creuada. Una altra parella intenta seguir el `README` o llig els passos i detecta omissions.
 - `2:45-3:00`: checkpoint `CP-R1.2`. El professorat comprova arrencada o, si no és possible per temps, revisa error, log i pla de correcció.
 
-Si `MP2` queda partit entre sessions, la primera sessió tanca com a mínim repositori, estructura i entorn començat; la segona comença amb arrencada real i completació de BBDD/phpMyAdmin.
+Si `R1M2` queda partit entre sessions, la primera sessió tanca com a mínim repositori, estructura i entorn començat; la segona comença amb arrencada real i completació de BBDD/phpMyAdmin.
 
 ### Modelatge docent
 
@@ -173,7 +173,7 @@ El modelatge inclou un error controlat, per exemple un port ocupat o una variabl
 ### Tasques concretes de l'alumnat
 
 - Crear o netejar el repositori del projecte.
-- Obrir issue mare de `R1` amb microtasques de MP2, MP3 i MP4.
+- Obrir issue mare de `R1` amb microtasques de R1M2, R1M3 i R1M4.
 - Crear o adaptar `docker-compose.yml` o configuració equivalent.
 - Definir servei web, execució de `PHP`, base de dades i phpMyAdmin.
 - Fer una primera prova d'arrencada i registrar resultat.
@@ -224,7 +224,7 @@ Control docent:
 - Dificultat: base de dades i phpMyAdmin apareixen però no es comproven. Pla B: exigir una prova visible d'accés o un log de servei correcte.
 - Dificultat: massa temps en estructura perfecta. Pla B: congelar carpetes i tancar només arrencada, comprovació i documentació.
 
-## MP3 — Primer punt d'entrada funcional del backend
+## R1M3 — Primer punt d'entrada funcional del backend
 
 ### Objectiu operatiu
 
@@ -255,7 +255,7 @@ Al final de la unitat, el backend ha de respondre amb una primera peça funciona
 - `2:10-2:35`: documentació. S'afegeix al `README` la ruta, què mostra i com provar-la.
 - `2:35-3:00`: checkpoint `CP-R1.3`. El docent revisa una demo curta i fa una pregunta sobre el flux servidor.
 
-Si esta unitat es compacta amb `MP2` i `MP4`, el docent pot reduir la implementació a una única ruta i reservar `20` minuts finals per documentar i verificar.
+Si esta unitat es compacta amb `R1M2` i `R1M4`, el docent pot reduir la implementació a una única ruta i reservar `20` minuts finals per documentar i verificar.
 
 ### Modelatge docent
 
@@ -311,7 +311,7 @@ La IA pot suggerir l'esquelet de la ruta o ajudar amb errors sintàctics. El con
 - Dificultat: la ruta funciona però no està documentada. Pla B: parar implementació i escriure tres línies al `README`: URL, què mostra i com comprovar-la.
 - Dificultat: error tècnic bloquejant. Pla B: fer `/health` amb resposta mínima i registrar el bloqueig del punt més ambiciós.
 
-## MP4 — Documentació, verificació i checkpoint de pas a R2
+## R1M4 — Documentació, verificació i checkpoint de pas a R2
 
 ### Objectiu operatiu
 
@@ -335,7 +335,7 @@ Al final de la unitat, el repte ha de quedar verificat i defensable: una altra p
 
 - `0:00-0:15`: llistat de tancament. El professorat mostra la checklist final: arrencada, punt d'entrada, README, docs, decisió i defensa.
 - `0:15-0:40`: revisió del `README`. L'alumnat comprova requisits, arrencada, parada, serveis i ruta funcional.
-- `0:40-1:05`: organització documental. Es crea directori de documentació, s'incorpora la fitxa de `MP1`, la decisió tècnica i les incidències.
+- `0:40-1:05`: organització documental. Es crea directori de documentació, s'incorpora la fitxa de `R1M1`, la decisió tècnica i les incidències.
 - `1:05-1:25`: índex o pàgina visible. L'equip enllaça els documents perquè el professorat els puga trobar sense buscar manualment.
 - `1:25-1:50`: preparació de defensa. Cada alumne prepara una explicació de `2` minuts: decisió, entorn, punt d'entrada, verificació i pas a `R2`.
 - `1:50-2:25`: checkpoint per mostreig o per torns curts. El docent executa README, obri ruta i fa preguntes de transferència.

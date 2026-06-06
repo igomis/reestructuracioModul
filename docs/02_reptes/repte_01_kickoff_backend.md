@@ -174,7 +174,7 @@ Backend inicial funcional amb:
 > - Els microreptes són unitats de progrés, no unitats fixes de temps docent.
 > - En la concreció docent d’aula, els `4` microreptes es compacten en `2` sessions principals de treball i una tercera sessió opcional de checkpoint o defensa formal.
 
-### Microrepte MP1 — Model client/servidor i elecció guiada de stack
+### Microrepte R1M1 — Model client/servidor i elecció guiada de stack
 
 **Tipus**
 
@@ -267,7 +267,7 @@ Rúbrica d’investigació aplicada.
 
 20%
 
-### Microrepte MP2 — Base executable en PHP amb Docker i completació de l’entorn
+### Microrepte R1M2 — Base executable en PHP amb Docker i completació de l’entorn
 
 **Tipus**
 
@@ -368,7 +368,7 @@ Checklist tècnica de repositori + revisió docent de README.
 
 35%
 
-### Microrepte MP3 — Primer punt d’entrada funcional del backend
+### Microrepte R1M3 — Primer punt d’entrada funcional del backend
 
 **Tipus**
 
@@ -445,7 +445,7 @@ Rúbrica de microprojecte funcional.
 
 25%
 
-### Microrepte MP4 — Documentació tècnica, verificació i checkpoint
+### Microrepte R1M4 — Documentació tècnica, verificació i checkpoint
 
 **Tipus**
 
@@ -532,10 +532,10 @@ Rúbrica de defensa tècnica + checklist de documentació.
 
 | Microrepte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
 |---|---|---|---|---|---|---|
-| MP1 | Investigació / decisió tècnica | Fitxa breu d’exploració tècnica + model d'execució client/servidor + decisió orientativa | RA1a, RA1b, RA1c, RA1g | Fitxa, model d'execució, dubtes detectats, posada en comú | Rúbrica | 20% |
-| MP2 | Procedimental | Repositori executable amb Docker i estructura base | RA1c, RA1d, RA1e, RA1f | Repo, Docker, README, issues, commits, prova d’arrancada | Checklist + revisió | 35% |
-| MP3 | Procedimental | Punt d’entrada funcional simple | RA1b, RA1e, RA1f | Demo funcional, logs o captures, evidència d’execució | Rúbrica | 25% |
-| MP4 | Tancament / verificació | README final + documentació en repositori + justificació tècnica + defensa | RA1d, RA1g | Documentació, validació, defensa, AI log | Rúbrica + checklist | 20% |
+| R1M1 | Investigació / decisió tècnica | Fitxa breu d’exploració tècnica + model d'execució client/servidor + decisió orientativa | RA1a, RA1b, RA1c, RA1g | Fitxa, model d'execució, dubtes detectats, posada en comú | Rúbrica | 20% |
+| R1M2 | Procedimental | Repositori executable amb Docker i estructura base | RA1c, RA1d, RA1e, RA1f | Repo, Docker, README, issues, commits, prova d’arrancada | Checklist + revisió | 35% |
+| R1M3 | Procedimental | Punt d’entrada funcional simple | RA1b, RA1e, RA1f | Demo funcional, logs o captures, evidència d’execució | Rúbrica | 25% |
+| R1M4 | Tancament / verificació | README final + documentació en repositori + justificació tècnica + defensa | RA1d, RA1g | Documentació, validació, defensa, AI log | Rúbrica + checklist | 20% |
 
 ### 6.1 Coordinació docent amb sessions de `3` hores
 
@@ -543,8 +543,8 @@ El Repte 1 es compon de `4` microreptes, però la seua execució docent es compa
 
 | Sessió | Duració | Microreptes | Focus docent | Producte o evidència clau |
 |---|---:|---|---|---|
-| `1` | `3h` | MP1 + inici MP2 | model client/servidor, decisió inicial i arrencada de l'entorn | fitxa breu + decisió orientativa + base mínima iniciada |
-| `2` | `3h` | tancament MP2 + MP3 + MP4 | entorn complet, primer punt d'entrada funcional i documentació | projecte arrancant + punt funcional + README + documentació en repositori |
+| `1` | `3h` | R1M1 + inici R1M2 | model client/servidor, decisió inicial i arrencada de l'entorn | fitxa breu + decisió orientativa + base mínima iniciada |
+| `2` | `3h` | tancament R1M2 + R1M3 + R1M4 | entorn complet, primer punt d'entrada funcional i documentació | projecte arrancant + punt funcional + README + documentació en repositori |
 | `3` | opcional | checkpoint formal | defensa, execució real i revisió de traçabilitat | defensa tècnica o acta de checkpoint |
 
 ---
@@ -557,10 +557,10 @@ El Repte 1 es compon de `4` microreptes, però la seua execució docent es compa
 - issue mare de kickoff
 - historial de commits significatiu
 - README executable per tercers
-- fitxa breu d’exploració tècnica inicial del `MP1`
+- fitxa breu d’exploració tècnica inicial del `R1M1`
 - justificació tècnica breu o ADR curt
 - projecte executable amb Docker
-- base de dades i phpMyAdmin incorporats a l'entorn inicial quan corresponga al `MP2`
+- base de dades i phpMyAdmin incorporats a l'entorn inicial quan corresponga al `R1M2`
 - primera peça funcional simple del producte
 - directori de documentació dins del repositori
 - fitxes o documents del repte incorporats al repositori

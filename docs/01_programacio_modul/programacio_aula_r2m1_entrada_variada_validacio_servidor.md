@@ -1,4 +1,4 @@
-# R2-MP1. Entrada variada i validació de servidor
+# R2M1. Entrada variada i validació de servidor
 
 ## Finalitat del microrepte
 
@@ -9,7 +9,7 @@ Al final de la sessió, cada alumne o parella ha de poder explicar quines dades 
 ## Encaix dins del Repte 2
 
 - **Repte**: `R2. Processament bàsic, estat, autenticació i primera funcionalitat protegida`
-- **Microrepte**: `MP1`
+- **Microrepte**: `R2M1`
 - **Sessió base**: `1`
 - **Duració orientativa**: `3 hores`
 - **Focus**: formularis amb controls variats, recuperació de dades en `PHP`, validació de servidor, errors visibles i reintent
@@ -263,7 +263,7 @@ Si el mínim ja està tancat, l'alumnat pot:
 - afegir validació de fitxer amb mida i MIME;
 - separar funcions simples de validació;
 - afegir proves manuals més precises al `README`;
-- preparar quines dades es processaran i guardaran en `MP2`.
+- preparar quines dades es processaran i guardaran en `R2M2`.
 
 L'ampliació no ha d'obrir encara autenticació, rols ni arquitectura completa.
 
@@ -282,8 +282,8 @@ L'ampliació no ha d'obrir encara autenticació, rols ni arquitectura completa.
 - [ ] El `README`, issue o registre explica com repetir les proves.
 - [ ] Si he usat IA, he registrat què m'ha aportat i què he verificat.
 
-## Connexió amb MP2
+## Connexió amb R2M2
 
-`MP2` només té sentit si `MP1` deixa dades correctes i validades. La pregunta de pas és:
+`R2M2` només té sentit si `R2M1` deixa dades correctes i validades. La pregunta de pas és:
 
 Quines dades validades del teu formulari es poden processar, guardar de manera simple i tornar a mostrar en la pròxima sessió?

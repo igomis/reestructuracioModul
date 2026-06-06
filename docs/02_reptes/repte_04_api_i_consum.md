@@ -173,7 +173,7 @@ Servei web funcional integrat en el projecte, amb:
 > - No es considera suficient una col·lecció d’endpoints sense contracte clar, consum real i documentació usable.
 > - El repte ha d’exposar una funcionalitat real del projecte, no una API de joguet desconnectada del domini.
 
-### Microprojecte MP1 — Disseny del contracte del servei
+### Microrepte R4M1 — Disseny del contracte del servei
 
 **Tipus**
 
@@ -250,7 +250,7 @@ Rúbrica de contracte de servei.
 
 ---
 
-### Microprojecte MP2 — Implementació del primer endpoint funcional
+### Microrepte R4M2 — Implementació del primer endpoint funcional
 
 **Tipus**
 
@@ -325,7 +325,7 @@ Rúbrica d’endpoint funcional.
 
 ---
 
-### Microprojecte MP3 — Autenticació i control d’accés de l’API
+### Microrepte R4M3 — Autenticació i control d’accés de l’API
 
 **Tipus**
 
@@ -403,7 +403,7 @@ Rúbrica de servei protegit.
 
 ---
 
-### Microprojecte MP4 — Consum del servei
+### Microrepte R4M4 — Consum del servei
 
 **Tipus**
 
@@ -482,7 +482,7 @@ Checklist de consum del servei.
 
 ---
 
-### Microprojecte MP5 — Documentació i prova del servei
+### Microrepte R4M5 — Documentació i prova del servei
 
 **Tipus**
 
@@ -565,11 +565,11 @@ Rúbrica de documentació i verificació del servei.
 
 | Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
 |---|---|---|---|---|---|---|
-| MP1 | Investigació / decisió tècnica | Contracte inicial del servei | RA7.a, RA7.b, RA7.c, RA7.d | mapa d’endpoints, taula request/response, defensa | rúbrica | 15% |
-| MP2 | Procedimental | Primer endpoint funcional | RA7.d, RA7.e, RA6.c, RA6.d | endpoint, resposta, demo, dades reals | rúbrica | 20% |
-| MP3 | Procedimental | Servei protegit | RA7.e, RA7.f | autenticació, cas autoritzat i denegat | rúbrica | 20% |
-| MP4 | Procedimental | Consum real del servei | RA7.f, RA7.g | consumidor, demo, prova d’error | checklist | 20% |
-| MP5 | Tancament / verificació | Documentació i prova del servei | RA7.f, RA7.h, RA6.g | documentació, proves, incidències, defensa | rúbrica | 25% |
+| R4M1 | Investigació / decisió tècnica | Contracte inicial del servei | RA7.a, RA7.b, RA7.c, RA7.d | mapa d’endpoints, taula request/response, defensa | rúbrica | 15% |
+| R4M2 | Procedimental | Primer endpoint funcional | RA7.d, RA7.e, RA6.c, RA6.d | endpoint, resposta, demo, dades reals | rúbrica | 20% |
+| R4M3 | Procedimental | Servei protegit | RA7.e, RA7.f | autenticació, cas autoritzat i denegat | rúbrica | 20% |
+| R4M4 | Procedimental | Consum real del servei | RA7.f, RA7.g | consumidor, demo, prova d’error | checklist | 20% |
+| R4M5 | Tancament / verificació | Documentació i prova del servei | RA7.f, RA7.h, RA6.g | documentació, proves, incidències, defensa | rúbrica | 25% |
 
 ---
 

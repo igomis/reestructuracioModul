@@ -10,7 +10,7 @@
 - **Relació amb el projecte base**: transforma l'arrencada de `R1` en la primera funcionalitat de negoci del projecte base i prepara l'entrada a `R3`.
 - **Checkpoint de control**: flux complet abans de la refactorització final, amb cas autoritzat, cas denegat, revisió d'errors i traçabilitat de l'ús assistit per IA.
 - **Instrument dominant**: rúbrica del repte sobre flux funcional protegit.
-- **Instrument de comprensió**: mini defensa tècnica al checkpoint `MP6`.
+- **Instrument de comprensió**: mini defensa tècnica al checkpoint `R2M6`.
 - **Instrument de control de delegació excessiva**: revisió de repositori, `AI log` i microcanvi en viu sobre validació o autenticació.
 - **Instrument de recuperació o millora**: reconstrucció guiada del flux amb prova funcional i nova defensa breu.
 
@@ -109,13 +109,13 @@ Esta progressió evita dos errors habituals: començar directament pel login sen
 
 | Microprojecte | RA principal | Evidència mínima | Verificació d'aprenentatge real |
 |---|---|---|---|
-| `MP1` | `RA2` + `RA3` | formulari o entrada equivalent amb text, llista, checkbox i fitxer si escau, recuperació de dades, error visible i reintent | execució en directe i explicació del recorregut de cada tipus de dada |
-| `MP2` | `RA2` | resposta generada en servidor amb variables, operadors, àmbits i conservació funcional simple | canvi menut en viu sobre processament o directiva i justificació de la persistència funcional |
-| `MP3` | `RA3` | regla de domini amb decisió, array o funció útil | microcanvi sobre una condició o funció i defensa del seu sentit dins del producte |
-| `MP4` | `RA4` | estat, sessió o cookies amb recuperació i invalidació | demo de recuperació i neteja, més pregunta sobre què es guarda i on |
-| `MP5` | `RA4` | autenticació funcional i operació de domini protegida | demo de cas permés i cas denegat amb explicació del punt de control |
-| `MP6` | `RA4` | bateria mínima de proves, incidències i documentació reproduïble | execució d'un cas triat pel professorat i contrast amb `README`, repositori i AI log |
-| `MP7` | `RA3` + `RA4` | refactorització amb fitxer comú, objecte simple, comparativa i prova de no regressió | revisió del diff, execució del flux i defensa de la millora de mantenibilitat |
+| `R2M1` | `RA2` + `RA3` | formulari o entrada equivalent amb text, llista, checkbox i fitxer si escau, recuperació de dades, error visible i reintent | execució en directe i explicació del recorregut de cada tipus de dada |
+| `R2M2` | `RA2` | resposta generada en servidor amb variables, operadors, àmbits i conservació funcional simple | canvi menut en viu sobre processament o directiva i justificació de la persistència funcional |
+| `R2M3` | `RA3` | regla de domini amb decisió, array o funció útil | microcanvi sobre una condició o funció i defensa del seu sentit dins del producte |
+| `R2M4` | `RA4` | estat, sessió o cookies amb recuperació i invalidació | demo de recuperació i neteja, més pregunta sobre què es guarda i on |
+| `R2M5` | `RA4` | autenticació funcional i operació de domini protegida | demo de cas permés i cas denegat amb explicació del punt de control |
+| `R2M6` | `RA4` | bateria mínima de proves, incidències i documentació reproduïble | execució d'un cas triat pel professorat i contrast amb `README`, repositori i AI log |
+| `R2M7` | `RA3` + `RA4` | refactorització amb fitxer comú, objecte simple, comparativa i prova de no regressió | revisió del diff, execució del flux i defensa de la millora de mantenibilitat |
 
 ---
 
@@ -270,7 +270,7 @@ Una operació protegida és defensable quan es pot assenyalar:
 
 La seqüència base del repte queda en `7` microprojectes obligatoris.
 
-La sessió `7` s’activa després del checkpoint tècnic del microprojecte `MP6` i servix per revisar el codi que ja funciona, netejar-lo i deixar-lo més clar i més mantenible com a fase final de refactorització i preparació del pas a `RA5`, sense avançar encara el nucli metodològic de `R3`.
+La sessió `7` s’activa després del checkpoint tècnic del microprojecte `R2M6` i servix per revisar el codi que ja funciona, netejar-lo i deixar-lo més clar i més mantenible com a fase final de refactorització i preparació del pas a `RA5`, sense avançar encara el nucli metodològic de `R3`.
 
 Esta fase final ha d’incloure com a mínim treball com:
 
@@ -308,7 +308,7 @@ Si apareixen més classes, més objectes o alguna persistència més formal, s�
 > - La prova i la depuració comencen des del primer microprojecte i no només al tancament.
 > - La sessió `7` és una fase real del repte i no un marge ornamental.
 
-### Microprojecte MP1 — Entrada variada, validació visible i recuperació de dades
+### Microrepte R2M1 — Entrada variada, validació visible i recuperació de dades
 
 **Tipus**
 
@@ -403,7 +403,7 @@ Checklist de formulari i recuperació de dades.
 
 ---
 
-### Microprojecte MP2 — Processament bàsic de la petició i conservació funcional simple
+### Microrepte R2M2 — Processament bàsic de la petició i conservació funcional simple
 
 **Tipus**
 
@@ -497,7 +497,7 @@ Rúbrica breu de processament bàsic en servidor.
 
 ---
 
-### Microprojecte MP3 — Decisions, arrays i funcions aplicades al flux
+### Microrepte R2M3 — Decisions, arrays i funcions aplicades al flux
 
 **Tipus**
 
@@ -573,7 +573,7 @@ Rúbrica de lògica bàsica aplicada.
 
 ---
 
-### Microprojecte MP4 — Estat, sessió i/o cookies
+### Microrepte R2M4 — Estat, sessió i/o cookies
 
 **Tipus**
 
@@ -656,7 +656,7 @@ Checklist de manteniment d’estat.
 
 ---
 
-### Microprojecte MP5 — Autenticació i primera operació protegida
+### Microrepte R2M5 — Autenticació i primera operació protegida
 
 **Tipus**
 
@@ -740,7 +740,7 @@ Rúbrica de funcionalitat autenticada i protegida.
 
 ---
 
-### Microprojecte MP6 — Prova, depuració, documentació mínima i checkpoint tècnic
+### Microrepte R2M6 — Prova, depuració, documentació mínima i checkpoint tècnic
 
 **Tipus**
 
@@ -823,7 +823,7 @@ Checklist de verificació + defensa tècnica.
 
 ---
 
-### Microprojecte MP7 — Refactorització i millora de mantenibilitat
+### Microrepte R2M7 — Refactorització i millora de mantenibilitat
 
 **Tipus**
 
@@ -919,13 +919,13 @@ Rúbrica curta de refactorització i mantenibilitat.
 
 | Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
 |---|---|---|---|---|---|---|
-| MP1 | Procedimental | Entrada variada, codi servidor integrat i recuperació de dades | RA2.a, RA2.b, RA2.c, RA2.d, RA3.e, RA3.f, RA3.g | formulari amb controls diversos, codi embegut, variables inicials, arrays, document generat, recuperació, demo | checklist | 15% |
-| MP2 | Procedimental | Processament bàsic de la petició | RA2.a, RA2.b, RA2.c, RA2.d, RA2.e, RA2.f, RA2.g, RA2.h | codi executable, codi embegut, variables, directiva, demo | rúbrica breu | 15% |
-| MP3 | Procedimental | Decisions, arrays i funcions aplicades | RA3.a, RA3.b, RA3.c, RA3.d | lògica observable, funcions, demo | rúbrica | 15% |
-| MP4 | Procedimental | Estat, sessió i/o cookies | RA4.a, RA4.b, RA4.c | demo d’estat, recuperació i invalidació | checklist | 15% |
-| MP5 | Procedimental | Autenticació i operació protegida | RA4.d, RA4.e | login, operació protegida, cas autoritzat i denegat | rúbrica | 20% |
-| MP6 | Tancament / verificació | Proves, documentació mínima i checkpoint tècnic | RA4.f | proves, incidències, documentació, defensa | checklist + defensa | 10% |
-| MP7 | Integrador | Refactorització, organització en fitxers i objecte mínim del domini | RA3.d, RA3.g, RA4.f | comparativa abans/després, fitxer comú, objecte simple, comprovació final | rúbrica curta | 10% |
+| R2M1 | Procedimental | Entrada variada, codi servidor integrat i recuperació de dades | RA2.a, RA2.b, RA2.c, RA2.d, RA3.e, RA3.f, RA3.g | formulari amb controls diversos, codi embegut, variables inicials, arrays, document generat, recuperació, demo | checklist | 15% |
+| R2M2 | Procedimental | Processament bàsic de la petició | RA2.a, RA2.b, RA2.c, RA2.d, RA2.e, RA2.f, RA2.g, RA2.h | codi executable, codi embegut, variables, directiva, demo | rúbrica breu | 15% |
+| R2M3 | Procedimental | Decisions, arrays i funcions aplicades | RA3.a, RA3.b, RA3.c, RA3.d | lògica observable, funcions, demo | rúbrica | 15% |
+| R2M4 | Procedimental | Estat, sessió i/o cookies | RA4.a, RA4.b, RA4.c | demo d’estat, recuperació i invalidació | checklist | 15% |
+| R2M5 | Procedimental | Autenticació i operació protegida | RA4.d, RA4.e | login, operació protegida, cas autoritzat i denegat | rúbrica | 20% |
+| R2M6 | Tancament / verificació | Proves, documentació mínima i checkpoint tècnic | RA4.f | proves, incidències, documentació, defensa | checklist + defensa | 10% |
+| R2M7 | Integrador | Refactorització, organització en fitxers i objecte mínim del domini | RA3.d, RA3.g, RA4.f | comparativa abans/després, fitxer comú, objecte simple, comprovació final | rúbrica curta | 10% |
 
 ---
 

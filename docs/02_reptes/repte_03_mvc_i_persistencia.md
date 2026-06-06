@@ -86,7 +86,7 @@ Ara bé, `RA6` queda ja fortament preparada i parcialment activada: no es pot pa
 
 `RA8` queda integrat explícitament en `R3` perquè el repte construeix pàgines dinàmiques amb framework servidor: s'usen vistes o plantilles, es processen formularis o interaccions en el servidor i el framework participa en la generació de la resposta HTML. Per això, almenys un dels `2` casos d'ús de `R3` ha de ser **server-rendered** i no només una resposta d'API o una consulta de dades.
 
-En `MP1`, l'alumnat no sols posa en marxa un framework: compara opcions, justifica la tria i identifica per què separar ruta, controlador, vista o resposta i model millora la base funcional heretada de `R2`. En `MP2`, la informació recuperada des de la BBDD no queda com una consulta aïllada: es tracta com a conjunt de dades útil per alimentar llistats, detalls, filtres o respostes reals del projecte.
+En `R3M1`, l'alumnat no sols posa en marxa un framework: compara opcions, justifica la tria i identifica per què separar ruta, controlador, vista o resposta i model millora la base funcional heretada de `R2`. En `R3M2`, la informació recuperada des de la BBDD no queda com una consulta aïllada: es tracta com a conjunt de dades útil per alimentar llistats, detalls, filtres o respostes reals del projecte.
 
 ---
 
@@ -213,7 +213,7 @@ Aplicació en framework que incloga:
 > - Sí es demana una base real en framework i almenys `2` fluxos end-to-end.
 > - El framework s'ha d'usar amb eines pròpies, no com a decorat.
 
-### Microprojecte MP1 — Arrencada del nou projecte
+### Microrepte R3M1 — Arrencada del nou projecte
 
 **Tipus**
 
@@ -306,7 +306,7 @@ Checklist d'arrencada tècnica i revisió de repositori.
 
 ---
 
-### Microprojecte MP2 — Model de dades i persistència mínima
+### Microrepte R3M2 — Model de dades i persistència mínima
 
 **Tipus**
 
@@ -396,7 +396,7 @@ Rúbrica de persistència mínima i dades reproduïbles.
 
 ---
 
-### Microprojecte MP3 — Primer cas d'ús complet
+### Microrepte R3M3 — Primer cas d'ús complet
 
 **Tipus**
 
@@ -495,7 +495,7 @@ Rúbrica de flux end-to-end migrat.
 
 ---
 
-### Microprojecte MP4 — Segon cas d'ús o ampliació funcional
+### Microrepte R3M4 — Segon cas d'ús o ampliació funcional
 
 **Tipus**
 
@@ -586,7 +586,7 @@ Checklist de segon flux funcional i revisió de valor.
 
 ---
 
-### Microprojecte MP5 — Qualitat i estabilització
+### Microrepte R3M5 — Qualitat i estabilització
 
 **Tipus**
 
@@ -668,7 +668,7 @@ Checklist de qualitat mínima i proves.
 
 ---
 
-### Microprojecte MP6 — Tancament tècnic
+### Microrepte R3M6 — Tancament tècnic
 
 **Tipus**
 
@@ -754,12 +754,12 @@ Rúbrica de documentació i defensa tècnica.
 
 | Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
 |---|---|---|---|---|---|---:|
-| MP1 | Infraestructura / decisió tècnica | Projecte en framework arrancable amb Docker | RA5.a, RA5.b, RA5.c, RA5.d, RA5.e, RA8.c | comparativa de stack, esquema abans/després, Docker, `.env`, ruta inicial, resposta generada, issue i abast de 2 fluxos | checklist | 15% |
-| MP2 | Persistència mínima | Model de dades inicial amb migrations, seeders i conjunt de dades usable | RA6.a, RA6.b, RA6.c, RA6.d, RA6.e, RA5.f | BBDD creada, dades carregades, consulta de conjunt de dades i ús en flux | rúbrica | 20% |
-| MP3 | Migració funcional | Primer cas d'ús complet heretat de R2 | RA5.e, RA5.f, RA5.g, RA6.c, RA6.d, RA6.f, RA8.d, RA8.e, RA8.g | ruta, controlador, model/servei, vista/plantilla server-rendered, formulari o interacció, prova | rúbrica | 20% |
-| MP4 | Ampliació funcional | Segon flux end-to-end o ampliació útil | RA5.e, RA5.f, RA5.g, RA5.h, RA6.c, RA6.d, RA6.f, RA8.f | segon flux, BBDD, canvi dinàmic de resposta, validació/error i demo | checklist | 15% |
-| MP5 | Qualitat | Estabilització, validació, errors i proves | RA5.g, RA5.h, RA6.f, RA6.g | proves, cas positiu/negatiu, errors, neteja | checklist | 15% |
-| MP6 | Tancament | README, decisions, demo i backlog de migració | RA5.f, RA5.g, RA6.g | documentació, demo, mapa del que queda | rúbrica | 15% |
+| R3M1 | Infraestructura / decisió tècnica | Projecte en framework arrancable amb Docker | RA5.a, RA5.b, RA5.c, RA5.d, RA5.e, RA8.c | comparativa de stack, esquema abans/després, Docker, `.env`, ruta inicial, resposta generada, issue i abast de 2 fluxos | checklist | 15% |
+| R3M2 | Persistència mínima | Model de dades inicial amb migrations, seeders i conjunt de dades usable | RA6.a, RA6.b, RA6.c, RA6.d, RA6.e, RA5.f | BBDD creada, dades carregades, consulta de conjunt de dades i ús en flux | rúbrica | 20% |
+| R3M3 | Migració funcional | Primer cas d'ús complet heretat de R2 | RA5.e, RA5.f, RA5.g, RA6.c, RA6.d, RA6.f, RA8.d, RA8.e, RA8.g | ruta, controlador, model/servei, vista/plantilla server-rendered, formulari o interacció, prova | rúbrica | 20% |
+| R3M4 | Ampliació funcional | Segon flux end-to-end o ampliació útil | RA5.e, RA5.f, RA5.g, RA5.h, RA6.c, RA6.d, RA6.f, RA8.f | segon flux, BBDD, canvi dinàmic de resposta, validació/error i demo | checklist | 15% |
+| R3M5 | Qualitat | Estabilització, validació, errors i proves | RA5.g, RA5.h, RA6.f, RA6.g | proves, cas positiu/negatiu, errors, neteja | checklist | 15% |
+| R3M6 | Tancament | README, decisions, demo i backlog de migració | RA5.f, RA5.g, RA6.g | documentació, demo, mapa del que queda | rúbrica | 15% |
 
 ---
 
@@ -810,12 +810,12 @@ Seqüència recomanada:
 
 | Tram | Sessions | Microprojectes principals | Sentit docent |
 |---|---:|---|---|
-| Arrencada | `1` | `MP1` | triar stack, Docker, projecte base i rutes mínimes |
-| Persistència inicial | `2` | `MP2` | model de dades, migrations, seeders i BBDD real |
-| Primer flux | `3-4` | `MP3` | migrar el primer cas d'ús heretat de `R2` |
-| Segon flux | `5` | `MP4` | completar un segon flux o ampliació funcional útil |
-| Qualitat | `6-7` | `MP5` | validació, errors, proves i neteja d'estructura |
-| Tancament | `8` | `MP6` | README, demo, decisions i backlog de migració |
+| Arrencada | `1` | `R3M1` | triar stack, Docker, projecte base i rutes mínimes |
+| Persistència inicial | `2` | `R3M2` | model de dades, migrations, seeders i BBDD real |
+| Primer flux | `3-4` | `R3M3` | migrar el primer cas d'ús heretat de `R2` |
+| Segon flux | `5` | `R3M4` | completar un segon flux o ampliació funcional útil |
+| Qualitat | `6-7` | `R3M5` | validació, errors, proves i neteja d'estructura |
+| Tancament | `8` | `R3M6` | README, demo, decisions i backlog de migració |
 
 Si el calendari obliga a compactar, no s'ha de retallar l'exigència dels `2` fluxos, Docker, BBDD, `migrations` i `seeders`. El que es pot reduir és l'abast funcional de cada flux.
 

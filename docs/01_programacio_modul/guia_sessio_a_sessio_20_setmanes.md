@@ -112,7 +112,7 @@ Regla pràctica:
 
 - Focus o repte: arranque de `R2` com a flux de dades i processament, no com a simple infraestructura d'auth
 - Què fa el professorat: modela formulari, validació visible, codi servidor integrat amb `HTML` o plantilla i primer tram de processament amb reutilització funcional de la dada correcta
-- Què fa l'alumnat: tanca `MP1` i `MP2`, prepara l'acció del domini, usa variables i sentències simples en el flux i deixa la informació correcta disponible dins del projecte
+- Què fa l'alumnat: tanca `R2M1` i `R2M2`, prepara l'acció del domini, usa variables i sentències simples en el flux i deixa la informació correcta disponible dins del projecte
 - Materials per a l'alumnat: materials del Repte 2, apunt real del Repte 2, base comuna en `PHP`, guia de validació i errors
 - Evidència mínima del bloc: dades recuperades, codi servidor integrat amb marques, variables o operadors aplicats, errors visibles, tractament correcte i primera reutilització funcional
 - Checkpoint docent: evitar que `R2` es reduïsca a formularis d'accés o a persistència ornamental
@@ -123,7 +123,7 @@ Regla pràctica:
 
 - Focus o repte: lògica del flux i estat temporal del `R2`
 - Què fa el professorat: modela una regla recognoscible del domini, l'ús de variables, operadors i àmbits en eixa regla, i un ús d'estat, sessió o cookies amb sentit funcional
-- Què fa l'alumnat: implementa `MP3` i `MP4`, deixa una decisió observable, recupera un pas o dada temporal del flux i comprova el document resultant generat pel servidor
+- Què fa l'alumnat: implementa `R2M3` i `R2M4`, deixa una decisió observable, recupera un pas o dada temporal del flux i comprova el document resultant generat pel servidor
 - Materials per a l'alumnat: apunt real del Repte 2, guia de flux d'usuari i sessions, materials comuns
 - Evidència mínima del bloc: regla del projecte aplicada, variables i operadors usats amb sentit, resposta servidor comprovada, estat recuperable i frontera clara entre estat i conservació funcional
 - Checkpoint docent: comprovar que el producte ja resol comportament de domini, no només recepció de dades
@@ -134,7 +134,7 @@ Regla pràctica:
 
 - Focus o repte: autenticació, funcionalitat protegida, prova mínima i checkpoint tècnic de `R2`
 - Què fa el professorat: modela una operació protegida amb valor real del domini, un cas denegat i una prova curta del flux complet
-- Què fa l'alumnat: implementa `MP5` i `MP6`, protegix una acció real, prova casos correctes i incorrectes i actualitza `README`
+- Què fa l'alumnat: implementa `R2M5` i `R2M6`, protegix una acció real, prova casos correctes i incorrectes i actualitza `README`
 - Materials per a l'alumnat: guia de validació i errors del Repte 2, guia de testing i debugging, checklist del Repte 2
 - Evidència mínima del bloc: operació del domini protegida, cas autoritzat, cas denegat, prova mínima i documentació reproduïble
 - Checkpoint docent: no obrir la sessió final de `R2` sense evidència reproduïble del flux complet
@@ -145,7 +145,7 @@ Regla pràctica:
 
 - Focus o repte: sessió final de `R2` amb refactorització, organització en fitxers amb `include` / `require`, primer objecte de domini i primer mapa de pas a `R3`
 - Què fa el professorat: modela una refactorització curta del codi ja funcional, mostra com separar funcions comunes en fitxers, explica la diferència bàsica entre `include`, `require`, `include_once` i `require_once`, introduïx un objecte simple del domini i delimita què encara queda reservat a `R3`
-- Què fa l'alumnat: implementa `MP7`, reorganitza una part del codi en fitxers, usa `include` / `require` amb sentit, incorpora una entitat mínima del domini com a objecte simple, compara abans/després, justifica la millora i identifica el primer punt de pas a arquitectura
+- Què fa l'alumnat: implementa `R2M7`, reorganitza una part del codi en fitxers, usa `include` / `require` amb sentit, incorpora una entitat mínima del domini com a objecte simple, compara abans/després, justifica la millora i identifica el primer punt de pas a arquitectura
 - Materials per a l'alumnat: full de treball del Repte 2, checklist del Repte 2, materials del Repte 3 com a lectura de transició
 - Evidència mínima del bloc: comparativa breu abans/després, almenys un fitxer comú importat amb criteri, objecte simple del domini, justificació de mantenibilitat i primer mapa de pas a `R3`
 - Checkpoint docent: validar que el pas a `R3` es fa sobre un flux real i una revisió final explicable

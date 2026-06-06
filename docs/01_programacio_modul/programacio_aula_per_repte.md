@@ -117,13 +117,13 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 ### Coordinació mínima entre microprojectes
 
-- `MP1`: entrada variada i validació de servidor
-- `MP2`: processament i guardat funcional
-- `MP3`: lògica del flux i regles del projecte
-- `MP4`: estat, sessió i/o cookies
-- `MP5`: autenticació i funcionalitat protegida
-- `MP6`: prova, depuració, documentació mínima i checkpoint tècnic
-- `MP7`: refactorització, organització en fitxers i primer objecte de domini
+- `R2M1`: entrada variada i validació de servidor
+- `R2M2`: processament i guardat funcional
+- `R2M3`: lògica del flux i regles del projecte
+- `R2M4`: estat, sessió i/o cookies
+- `R2M5`: autenticació i funcionalitat protegida
+- `R2M6`: prova, depuració, documentació mínima i checkpoint tècnic
+- `R2M7`: refactorització, organització en fitxers i primer objecte de domini
 
 ### Què no és suficient
 
