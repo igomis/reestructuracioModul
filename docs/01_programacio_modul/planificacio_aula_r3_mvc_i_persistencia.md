@@ -1,4 +1,4 @@
-# Planificació d'aula del Repte 3
+# R3. Planificació d'aula — MVC i persistència
 
 ## Finalitat del bloc
 

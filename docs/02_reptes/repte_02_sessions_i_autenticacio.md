@@ -109,7 +109,7 @@ Esta progressió evita dos errors habituals: començar directament pel login sen
 
 | Microprojecte | RA principal | Evidència mínima | Verificació d'aprenentatge real |
 |---|---|---|---|
-| `MP1` | `RA2` + `RA3` | formulari o entrada equivalent amb recuperació de dades, error visible i reintent | execució en directe i explicació del recorregut de cada dada |
+| `MP1` | `RA2` + `RA3` | formulari o entrada equivalent amb text, llista, checkbox i fitxer si escau, recuperació de dades, error visible i reintent | execució en directe i explicació del recorregut de cada tipus de dada |
 | `MP2` | `RA2` | resposta generada en servidor amb variables, operadors, àmbits i conservació funcional simple | canvi menut en viu sobre processament o directiva i justificació de la persistència funcional |
 | `MP3` | `RA3` | regla de domini amb decisió, array o funció útil | microcanvi sobre una condició o funció i defensa del seu sentit dins del producte |
 | `MP4` | `RA4` | estat, sessió o cookies amb recuperació i invalidació | demo de recuperació i neteja, més pregunta sobre què es guarda i on |
@@ -308,7 +308,7 @@ Si apareixen més classes, més objectes o alguna persistència més formal, s�
 > - La prova i la depuració comencen des del primer microprojecte i no només al tancament.
 > - La sessió `7` és una fase real del repte i no un marge ornamental.
 
-### Microprojecte MP1 — Formulari base, validació visible i recuperació de dades
+### Microprojecte MP1 — Entrada variada, validació visible i recuperació de dades
 
 **Tipus**
 
@@ -316,17 +316,20 @@ Microprojecte procedimental.
 
 **Objectiu**
 
-Construir un punt d’entrada de dades usable i demostrar que el sistema és capaç de recuperar la informació aportada per l’usuari, validar-la i mostrar errors interpretables.
+Construir un punt d’entrada de dades usable amb controls diversos i demostrar que el sistema és capaç de recuperar la informació aportada per l’usuari, validar-la i mostrar errors interpretables.
 
 **Tasca**
 
-L’equip crea un formulari funcional, o una entrada equivalent coherent amb la base comuna en `PHP`, i implementa la recuperació de les dades enviades per l’usuari.
+L’equip crea un formulari funcional, o una entrada equivalent coherent amb la base comuna en `PHP`, i implementa la recuperació de les dades enviades per l’usuari des de text, llistes, checkbox i fitxers quan el cas d'ús ho justifique.
 
 S’ha de veure amb claredat:
 
-- quins camps es reben
+- quins controls es reben
 - com es recuperen
 - com es mostren els errors quan alguna dada no és vàlida
+- com es validen opcions contra valors permesos
+- com es tracta una dada absent, com un checkbox no marcat
+- com es valida un fitxer si forma part del flux
 - quin tractament inicial se’ls dona
 - quina resposta bàsica retorna el sistema
 - com s'integra el codi servidor amb el llenguatge de marques o plantilla
@@ -358,14 +361,14 @@ S’ha de veure amb claredat:
 
 **Paper de la IA**
 
-La IA pot suggerir l’estructura inicial del formulari o exemples de tractament bàsic, però l’alumnat ha de comprovar que la recuperació de dades és real i que entén el flux. El control mínim és explicar el recorregut d'un camp concret des del formulari fins a la resposta del servidor i ajustar almenys una validació al cas de domini.
+La IA pot suggerir l’estructura inicial del formulari o exemples de tractament bàsic, però l’alumnat ha de comprovar que la recuperació de dades és real i que entén el flux. El control mínim és explicar el recorregut de text, llista i checkbox des del formulari fins a la resposta del servidor, i ajustar almenys una validació al cas de domini.
 
 **Evidències obligatòries**
 
-- formulari funcional o entrada equivalent
+- formulari funcional o entrada equivalent amb controls diversos
 - codi `PHP` integrat amb `HTML` o plantilla equivalent
 - ús visible de variables i sentències simples en la resposta
-- recuperació correcta de dades
+- recuperació correcta de dades de text, llista i checkbox
 - error de validació visible i possibilitat de reintent
 - comprovació del document resultant generat pel servidor
 - captura o demo del cas correcte
@@ -916,7 +919,7 @@ Rúbrica curta de refactorització i mantenibilitat.
 
 | Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
 |---|---|---|---|---|---|---|
-| MP1 | Procedimental | Formulari base, codi servidor integrat i recuperació de dades | RA2.a, RA2.b, RA2.c, RA2.d, RA3.e, RA3.f, RA3.g | formulari, codi embegut, variables inicials, document generat, recuperació, demo | checklist | 15% |
+| MP1 | Procedimental | Entrada variada, codi servidor integrat i recuperació de dades | RA2.a, RA2.b, RA2.c, RA2.d, RA3.e, RA3.f, RA3.g | formulari amb controls diversos, codi embegut, variables inicials, arrays, document generat, recuperació, demo | checklist | 15% |
 | MP2 | Procedimental | Processament bàsic de la petició | RA2.a, RA2.b, RA2.c, RA2.d, RA2.e, RA2.f, RA2.g, RA2.h | codi executable, codi embegut, variables, directiva, demo | rúbrica breu | 15% |
 | MP3 | Procedimental | Decisions, arrays i funcions aplicades | RA3.a, RA3.b, RA3.c, RA3.d | lògica observable, funcions, demo | rúbrica | 15% |
 | MP4 | Procedimental | Estat, sessió i/o cookies | RA4.a, RA4.b, RA4.c | demo d’estat, recuperació i invalidació | checklist | 15% |

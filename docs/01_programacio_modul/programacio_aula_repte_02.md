@@ -1,4 +1,4 @@
-# Programació d'aula del Repte 2
+# R2. Programació d'aula — Processament, estat i autenticació
 
 ## Finalitat del document
 
@@ -24,7 +24,7 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 
 | Sessió | Duració | Microprojecte | Focus principal | Evidència clau |
 |---|---:|---|---|---|
-| `1` | `3h` | `MP1` | formulari i validació visible | dades recuperades, errors clars i reintent |
+| `1` | `3h` | `MP1` | entrada variada i validació de servidor | dades recuperades de controls diversos, errors clars i reintent |
 | `2` | `3h` | `MP2` | processament i guardat funcional | dada correcta tractada, guardada i reutilitzada |
 | `3` | `3h` | `MP3` | lògica del flux i regles del projecte | decisió, estructura o funció amb efecte visible |
 | `4` | `3h` | `MP4` | estat, sessió i/o cookies | recuperació del flux i invalidació controlada |
@@ -38,7 +38,7 @@ Esta taula és el mapa mínim de traçabilitat docent del repte. No substituïx 
 
 | Sessió | RA principal | Què s'aprén | Evidència mínima | Verificació docent |
 |---|---|---|---|---|
-| `1` | `RA2` + `RA3` | entrada de dades, recuperació en servidor i validació visible | formulari o entrada equivalent amb error i reintent corregit | execució en directe i pregunta sobre d'on ix cada dada i com arriba al servidor |
+| `1` | `RA2` + `RA3` | entrada de dades variades, recuperació en servidor i validació visible | formulari amb text, llista, checkbox i, si escau, fitxer, amb error i reintent corregit | execució en directe i pregunta sobre d'on ix cada dada, com arriba al servidor i com es valida |
 | `2` | `RA2` | generació de resposta, variables, operadors, àmbits i conservació funcional simple | dada correcta processada, guardada de manera simple i reutilitzada | canvi menut en viu sobre una variable, operador o directiva i justificació del mecanisme de conservació |
 | `3` | `RA3` | decisions, arrays, funcions i regles de domini aplicades | regla amb dos resultats observables i funció o estructura útil | microcanvi en una condició o funció i explicació de per què no és ornamental |
 | `4` | `RA4` | estat temporal, sessió, cookies i invalidació | recuperació d'estat i neteja o caducitat demostrada | execució de recuperació i invalidació, més pregunta sobre què queda en client, servidor o flux funcional |
@@ -64,7 +64,7 @@ La IA pot aparéixer en totes les sessions, però el seu ús només compta com a
 
 | Sessió | Ús raonable de la IA | Evidència de control |
 |---|---|---|
-| `1` | esborrany de formulari, missatges de validació o estructura inicial | l'alumnat explica el recorregut de cada camp i ajusta almenys una validació pròpia |
+| `1` | esborrany de formulari amb controls diversos, missatges de validació o estructura inicial | l'alumnat explica el recorregut de text, llista, checkbox i fitxer si n'hi ha, i ajusta almenys una validació pròpia |
 | `2` | exemples de processament, guardat simple o tractament de fitxer | prova real de reutilització de la dada i justificació del mecanisme triat |
 | `3` | suggeriments de funcions, arrays o casos de decisió | defensa de la regla de domini i microcanvi en viu |
 | `4` | interpretació d'errors de sessió, cookies o estat | demostració de què es guarda, on es guarda i quan s'invalida |
@@ -76,16 +76,16 @@ La IA pot aparéixer en totes les sessions, però el seu ús només compta com a
 
 ### Sessió 1. Microprojecte 1
 
-**Sessió 1 — Formulari i validació visible**
+**Sessió 1 — Entrada variada i validació de servidor**
 
 #### Finalitat específica de la sessió
-Obrir el punt d'entrada de dades del producte i deixar clar què arriba al servidor, què es valida i què no pot continuar mentre hi haja errors.
+Obrir el punt d'entrada de dades del producte i deixar clar què arriba al servidor des de cada tipus de control, què es valida i què no pot continuar mentre hi haja errors.
 
 #### RA/focus tècnic
-Focus en `RA2` i `RA3`: recepció de dades de formulari o entrada equivalent, validació de servidor, resposta amb errors visibles i reintent corregit.
+Focus en `RA2` i `RA3`: recepció de dades de formulari o entrada equivalent amb text, llistes, checkbox i fitxers quan tinga sentit, validació de servidor, resposta amb errors visibles i reintent corregit.
 
 #### Producte o microresultat esperat
-Formulari funcional o entrada equivalent del domini, amb almenys una validació de servidor, un missatge d'error útil i un reenviament correcte.
+Formulari funcional o entrada equivalent del domini, amb controls diversos, validació de servidor per tipus de dada, missatges d'error útils i un reenviament correcte.
 
 #### Seqüència temporal orientativa dins de les 3 hores
 
@@ -97,24 +97,24 @@ Formulari funcional o entrada equivalent del domini, amb almenys una validació 
 ##### 0:20-0:45 — Modelatge docent
 - mostrar un formulari mínim o entrada equivalent
 - recuperar dades en servidor
-- validar un camp obligatori o una regla simple
+- validar dades de controls diferents, com text, llista, checkbox o fitxer quan tinga sentit
 - retornar un error comprensible sense perdre el sentit del flux
 
 ##### 0:45-1:35 — Implementació guiada
 - l'alumnat crea o adapta el formulari
 - connecta l'acció amb el servidor
-- recupera dades i comprova què arriba realment
-- incorpora la primera validació
+- recupera dades de text, llistes i checkbox i comprova què arriba realment
+- incorpora les primeres validacions per tipus de dada
 
 ##### 1:35-2:10 — Errors i reintent
-- provar entrada buida, incorrecta o incompleta
-- mostrar errors concrets
+- provar entrada buida, opció no permesa, checkbox absent o fitxer no vàlid si n'hi ha
+- mostrar errors concrets associats al control afectat
 - conservar o reconstruir la informació necessària per a corregir
 - repetir l'enviament amb dades vàlides
 
 ##### 2:10-2:40 — Revisió per parelles
 - un company executa el formulari d'un altre
-- identifica una dada vàlida i una no vàlida
+- identifica dades vàlides i no vàlides de controls diferents
 - comprova que l'error talla el flux
 
 ##### 2:40-3:00 — Checkpoint final
@@ -131,8 +131,8 @@ Formulari funcional o entrada equivalent del domini, amb almenys una validació 
 #### Tasques concretes de l'alumnat
 - concretar l'acció del domini que s'enviarà al servidor
 - crear o adaptar el formulari
-- recuperar dades en `PHP`
-- validar almenys un camp o regla
+- recuperar dades de text, llista i checkbox en `PHP`
+- validar cada tipus de dada en servidor
 - mostrar l'error i provar un reintent correcte
 - deixar una nota breu en el `README` o en el registre de treball sobre el flux provat
 
@@ -140,16 +140,16 @@ Formulari funcional o entrada equivalent del domini, amb almenys una validació 
 - formulari executable
 - captura o demo curta d'un cas amb error
 - captura o demo curta del mateix cas corregit
-- codi on es veu la recuperació i validació de la dada
+- codi on es veu la recuperació i validació de les dades de controls diferents
 
 #### Checkpoint o pregunta de comprovació
-Què passa exactament quan arriba una dada incorrecta i en quin punt del codi es talla el flux?
+Què passa exactament quan falta una dada, arriba una opció no permesa o un checkbox no està marcat quan és obligatori?
 
 #### Ús de la IA permés i forma de control
-Ús permés per aclarir patrons de validació, redactar missatges d'error o revisar si falten casos bàsics. Control: l'alumnat ha d'assenyalar en el seu codi on valida cada dada i ha de poder modificar una regla en directe sense dependre de la resposta generada.
+Ús permés per aclarir patrons de validació, redactar missatges d'error o revisar si falten casos bàsics. Control: l'alumnat ha d'assenyalar en el seu codi on valida cada tipus de dada i ha de poder modificar una regla en directe sense dependre de la resposta generada.
 
 #### Dificultats habituals i resposta docent prevista
-- Si el formulari envia però no es comprova res, el professorat demana un cas incorrecte obligatori abans de continuar.
+- Si el formulari envia però no es comprova res, el professorat demana un cas incorrecte per a text, llista o checkbox abans de continuar.
 - Si només hi ha validació en client, es modela el mateix cas desactivant o saltant el client i es força la validació en servidor.
 - Si l'alumnat vol començar per login, es reconduïx cap al flux de dades del domini i es deixa auth per a la sessió `5`.
 

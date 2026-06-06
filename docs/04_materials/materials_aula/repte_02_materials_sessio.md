@@ -6,13 +6,13 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 
 ## Mini-briefings de les sessions clau
 
-### Sessió clau 1. Formulari i validació visible
+### Sessió clau 1. Entrada variada i validació de servidor
 
-- Objectiu de la sessió: obrir l'entrada de dades del projecte i fer visibles errors, correcció i reintent.
-- Què s'espera al final: dades recuperades en servidor i error interpretable quan una dada no és vàlida.
-- Error habitual a evitar: quedar-se en un formulari decoratiu o en missatges genèrics.
-- Evidència mínima del dia: enviament incorrecte, error visible i reenviament corregit.
-- Pregunta de tancament: quina dada entra al sistema i per què encara no pot continuar el flux?
+- Objectiu de la sessió: obrir l'entrada de dades del projecte amb controls diversos i fer visibles errors, correcció i reintent.
+- Què s'espera al final: dades de text, llista i checkbox recuperades en servidor, amb error interpretable quan alguna dada no és vàlida.
+- Error habitual a evitar: quedar-se en un formulari decoratiu, amb un únic camp o amb missatges genèrics.
+- Evidència mínima del dia: enviament incorrecte amb errors per control, error visible i reenviament corregit.
+- Pregunta de tancament: quines dades entren al sistema, com arriba cada una al servidor i per què alguna encara no pot continuar el flux?
 
 ### Sessió clau 2. Processament i guardat funcional
 
@@ -65,10 +65,10 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 ## Checkpoints curts específics
 
 - `CP-R2.1`
-  - Què hauria d'estar fet: entrada de dades, validació visible i tractament inicial tancats.
-  - Com es verifica en `2-3` minuts: provocar un error de validació, corregir-lo i mostrar la dada recuperada.
+  - Què hauria d'estar fet: entrada de dades amb controls diversos, validació visible i tractament inicial tancats.
+  - Com es verifica en `2-3` minuts: provocar un error de text, llista o checkbox, corregir-lo i mostrar les dades recuperades.
   - Senyal d'alerta: el grup diu què passaria, però no ho pot ensenyar.
-  - Acció correctiva ràpida: tancar primer un únic cas d'error clar i el seu reintent.
+  - Acció correctiva ràpida: tancar primer tres casos d'error clars, un per tipus de control bàsic, i el seu reintent.
 - `CP-R2.2`
   - Què hauria d'estar fet: informació correcta processada, guardada funcionalment i reutilitzable.
   - Com es verifica en `2-3` minuts: crear una dada i tornar-la a mostrar en el mateix projecte.

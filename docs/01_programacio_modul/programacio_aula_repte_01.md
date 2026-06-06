@@ -1,4 +1,4 @@
-# Programació d'aula del Repte 1
+# R1. Programació d'aula — Kickoff backend
 
 ## Finalitat del document
 

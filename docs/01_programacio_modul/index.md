@@ -23,10 +23,10 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - [Curs executable DWES en 2 avaluacions](curs_executable_dwes_2_avaluacions.md): vista unificada del curs.
 - [Guia sessio a sessio del curs en 20 setmanes](guia_sessio_a_sessio_20_setmanes.md): detall operatiu per setmanes.
 - [Programacio d'aula per repte](programacio_aula_per_repte.md): lectura docent per `R1-R5`.
-- [Programació d'aula del Repte 1](programacio_aula_repte_01.md): baixada operativa de `R1` a sessions, checkpoints i tancament.
-- [Programació d'aula del Repte 2](programacio_aula_repte_02.md): baixada operativa de `R2` a sessions, microprojectes, checkpoints i pas cap a `R3`.
-- [R2-MP1. Formulari i validació visible](programacio_aula_r2_mp1_formulari_validacio.md): fitxa d'aula executable per al primer microrepte de `R2`.
-- [Planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md): conducció comuna de `R3` en 8 sessions orientatives, amb variants de stack `Laravel`, `Symfony` i `NestJS`, persistència verificable i criteri d'entrada a `R4`.
+- [R1. Programació d'aula — Kickoff backend](programacio_aula_repte_01.md): baixada operativa de `R1` a sessions, checkpoints i tancament.
+- [R2. Programació d'aula — Processament, estat i autenticació](programacio_aula_repte_02.md): baixada operativa de `R2` a sessions, microprojectes, checkpoints i pas cap a `R3`.
+- [R2-MP1. Entrada variada i validació de servidor](programacio_aula_r2_mp1_entrada_variada_validacio_servidor.md): fitxa d'aula executable per al primer microrepte de `R2`.
+- [R3. Planificació d'aula — MVC i persistència](planificacio_aula_r3_mvc_i_persistencia.md): conducció comuna de `R3` en 8 sessions orientatives, amb variants de stack `Laravel`, `Symfony` i `NestJS`, persistència verificable i criteri d'entrada a `R4`.
 
 ## Pilotatge i preparacio
 
@@ -43,9 +43,9 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 
 - per entendre el recorregut complet: [curs executable](curs_executable_dwes_2_avaluacions.md)
 - per preparar classe a classe: [guia 20 setmanes](guia_sessio_a_sessio_20_setmanes.md)
-- per conduir `R1` sense reconstruir-lo a mà: [programació d'aula del Repte 1](programacio_aula_repte_01.md)
-- per conduir `R2` sense reduir-lo a auth: [programació d'aula del Repte 2](programacio_aula_repte_02.md)
-- per impartir el primer microrepte de `R2`: [R2-MP1 formulari i validació visible](programacio_aula_r2_mp1_formulari_validacio.md)
-- per conduir `R3` sense fragmentar-lo per frameworks: [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
+- per conduir `R1` sense reconstruir-lo a mà: [R1. Programació d'aula — Kickoff backend](programacio_aula_repte_01.md)
+- per conduir `R2` sense reduir-lo a auth: [R2. Programació d'aula — Processament, estat i autenticació](programacio_aula_repte_02.md)
+- per impartir el primer microrepte de `R2`: [R2-MP1. Entrada variada i validació de servidor](programacio_aula_r2_mp1_entrada_variada_validacio_servidor.md)
+- per conduir `R3` sense fragmentar-lo per frameworks: [R3. Planificació d'aula — MVC i persistència](planificacio_aula_r3_mvc_i_persistencia.md)
 - per activar una via d'excellencia sense improvisar: [ampliacions 9 a 10 per repte](../ampliacions-9-a-10-per-repte.md)
 - per obrir el curs sense improvisar: [preparacio docent directa](preparacio_docent_directa_curs_que_ve.md) i [ajustos finals](ajustos_finals_abans_inici_curs.md)

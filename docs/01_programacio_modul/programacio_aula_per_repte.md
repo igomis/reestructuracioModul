@@ -117,7 +117,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 ### Coordinació mínima entre microprojectes
 
-- `MP1`: formulari i validació visible
+- `MP1`: entrada variada i validació de servidor
 - `MP2`: processament i guardat funcional
 - `MP3`: lògica del flux i regles del projecte
 - `MP4`: estat, sessió i/o cookies
