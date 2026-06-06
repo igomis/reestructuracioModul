@@ -25,6 +25,15 @@ La programació manté els `4` microreptes com a unitats de progrés, però cada
 | `2` | `3h` | tancament de `MP2` + `MP3` + `MP4` | entorn complet, primera funcionalitat mínima i documentació del repte | entorn arrancable, punt d'entrada funcional, README i documentació en repositori |
 | `3` | opcional | reforç de `MP4` | defensa, execució real i revisió de traçabilitat | defensa tècnica o acta de checkpoint |
 
+## Mapa de criteris d'avaluació per microrepte
+
+| Microrepte | Focus | CA associats |
+|---|---|---|
+| `MP1` | model client/servidor i decisió tècnica inicial | `RA1a`, `RA1b`, `RA1c`, `RA1g` |
+| `MP2` | base executable amb Docker, PHP, servidor web, BBDD i phpMyAdmin | `RA1c`, `RA1d`, `RA1e`, `RA1f` |
+| `MP3` | primer punt d'entrada funcional del backend | `RA1b`, `RA1e`, `RA1f` |
+| `MP4` | documentació tècnica, verificació i checkpoint | `RA1d`, `RA1g` |
+
 ## MP1 — Model client/servidor i decisió tècnica inicial
 
 ### Objectiu operatiu

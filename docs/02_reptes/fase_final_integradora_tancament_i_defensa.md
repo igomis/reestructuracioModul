@@ -168,6 +168,14 @@ L’equip analitza el producte i confecciona una taula prioritzada amb:
 
 Sense una auditoria real, la fase pot quedar reduïda a una “neteja final” arbitrària.
 
+**CA reactivats**
+
+- **RA5.g**
+- **RA5.h**
+- **RA6.g**
+- **RA7.h**
+- **RA9.h**
+
 **Evidències obligatòries**
 
 - informe breu d’auditoria
@@ -224,6 +232,13 @@ L’equip definix un pla curt de tancament amb:
 **Relació amb el producte principal**
 
 Esta microfase evita que el tancament siga caòtic o desproporcionat.
+
+**CA reactivats**
+
+- **RA5.f**
+- **RA5.g**
+- **RA6.g**
+- **RA9.h**
 
 **Evidències obligatòries**
 
@@ -282,6 +297,15 @@ L’equip implementa millores prioritzades, per exemple:
 **Relació amb el producte principal**
 
 És la part on la fase final deixa de ser planificació i passa a ser millora real del producte.
+
+**CA reactivats**
+
+- **RA5.g**
+- **RA5.h**
+- **RA6.f**
+- **RA6.g**
+- **RA7.f**
+- **RA9.g**
 
 **Evidències obligatòries**
 
@@ -342,6 +366,14 @@ L’equip prepara i executa una bateria mínima de verificació que incloga:
 
 Sense prova real, la millora aplicada no queda prou acreditada.
 
+**CA reactivats**
+
+- **RA6.f**
+- **RA6.g**
+- **RA7.f**
+- **RA7.h**
+- **RA9.g**
+
 **Evidències obligatòries**
 
 - registre de proves
@@ -400,6 +432,14 @@ L’equip actualitza:
 **Relació amb el producte principal**
 
 Sense esta capa, el producte pot funcionar però no queda preparat per a ús o revisió per tercers.
+
+**CA reactivats**
+
+- **RA5.f**
+- **RA5.g**
+- **RA6.g**
+- **RA7.h**
+- **RA9.h**
 
 **Evidències obligatòries**
 
@@ -460,6 +500,13 @@ L’equip incorpora una automatització o procediment útil, per exemple:
 **Relació amb el producte principal**
 
 Esta microfase aporta una capa professional de manteniment i operació.
+
+**CA reactivats**
+
+- **RA5.g**
+- **RA6.g**
+- **RA7.f**
+- **RA9.g**
 
 **Evidències obligatòries**
 
@@ -527,6 +574,14 @@ A més, es pot incorporar una:
 
 És la microfase que fa visible l’autoria i la comprensió real del treball acumulat.
 
+**CA reactivats**
+
+- **RA5.f**
+- **RA5.g**
+- **RA6.g**
+- **RA7.h**
+- **RA9.h**
+
 **Evidències obligatòries**
 
 - presentació tècnica breu
@@ -566,15 +621,15 @@ Rúbrica de defensa tècnica final.
 
 ## 6. Taula resum de microfases i evidències
 
-| Microfase | Tipus | Producte o lliurable | Evidències principals | Instrument | Pes orientatiu |
-|---|---|---|---|---|---|
-| MF1 | Anàlisi | Auditoria final | informe, taula d’incidències, issues | rúbrica | 15% |
-| MF2 | Decisió | Pla de tancament | pla, justificació, mapa de decisions | checklist | 10% |
-| MF3 | Procedimental | Correccions i estabilització | commits, issues tancades, demo abans/després | rúbrica | 20% |
-| MF4 | Procedimental | Prova final del sistema | registre de proves, casos positius i negatius | checklist | 15% |
-| MF5 | Procedimental | Documentació i operació mínima | README, documentació final, checklist d’ús | rúbrica | 15% |
-| MF6 | Procedimental | Automatització o procediment útil | script, demo, documentació d’execució | checklist | 10% |
-| MF7 | Tancament / verificació | Defensa tècnica final | presentació, demo, AI log, traçabilitat | rúbrica | 15% |
+| Microfase | Tipus | Producte o lliurable | CA reactivats | Evidències principals | Instrument | Pes orientatiu |
+|---|---|---|---|---|---|---:|
+| MF1 | Anàlisi | Auditoria final | RA5.g, RA5.h, RA6.g, RA7.h, RA9.h | informe, taula d’incidències, issues | rúbrica | 15% |
+| MF2 | Decisió | Pla de tancament | RA5.f, RA5.g, RA6.g, RA9.h | pla, justificació, mapa de decisions | checklist | 10% |
+| MF3 | Procedimental | Correccions i estabilització | RA5.g, RA5.h, RA6.f, RA6.g, RA7.f, RA9.g | commits, issues tancades, demo abans/després | rúbrica | 20% |
+| MF4 | Procedimental | Prova final del sistema | RA6.f, RA6.g, RA7.f, RA7.h, RA9.g | registre de proves, casos positius i negatius | checklist | 15% |
+| MF5 | Procedimental | Documentació i operació mínima | RA5.f, RA5.g, RA6.g, RA7.h, RA9.h | README, documentació final, checklist d’ús | rúbrica | 15% |
+| MF6 | Procedimental | Automatització o procediment útil | RA5.g, RA6.g, RA7.f, RA9.g | script, demo, documentació d’execució | checklist | 10% |
+| MF7 | Tancament / verificació | Defensa tècnica final | RA5.f, RA5.g, RA6.g, RA7.h, RA9.h | presentació, demo, AI log, traçabilitat | rúbrica | 15% |
 
 ---
 

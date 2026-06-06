@@ -36,15 +36,15 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 
 Esta taula és el mapa mínim de traçabilitat docent del repte. No substituïx la rúbrica ni les checklists, però ajuda a comprovar ràpidament que cada sessió deixa una evidència observable i una forma concreta de verificar aprenentatge real.
 
-| Sessió | RA principal | Què s'aprén | Evidència mínima | Verificació docent |
-|---|---|---|---|---|
-| `1` | `RA2` + `RA3` | entrada de dades variades, recuperació en servidor i validació visible | formulari amb text, llista, checkbox i, si escau, fitxer, amb error i reintent corregit | execució en directe i pregunta sobre d'on ix cada dada, com arriba al servidor i com es valida |
-| `2` | `RA2` | generació de resposta, variables, operadors, àmbits i conservació funcional simple | dada correcta processada, guardada de manera simple i reutilitzada | canvi menut en viu sobre una variable, operador o directiva i justificació del mecanisme de conservació |
-| `3` | `RA3` | decisions, arrays, funcions i regles de domini aplicades | regla amb dos resultats observables i funció o estructura útil | microcanvi en una condició o funció i explicació de per què no és ornamental |
-| `4` | `RA4` | estat temporal, sessió, cookies i invalidació | recuperació d'estat i neteja o caducitat demostrada | execució de recuperació i invalidació, més pregunta sobre què queda en client, servidor o flux funcional |
-| `5` | `RA4` | identificació, autenticació, autorització i protecció d'una operació real | cas autenticat permés i cas no permés sobre una acció del domini | demo dels dos casos i pregunta sobre el punt exacte on es comprova la restricció |
-| `6` | `RA4` | prova, depuració, documentació i reproduïbilitat | taula mínima de proves, incidències i README actualitzat | execució d'un cas triat pel professorat i contrast amb documentació, codi i AI log |
-| `7` | `RA3` + `RA4` | refactorització funcional, mantenibilitat i preparació cap a `RA5` | comparativa abans/després, fitxer comú, objecte simple i prova de no regressió | revisió del diff, execució del flux i defensa de què millora ara i què queda per a `R3` |
+| Sessió | RA principal | CA associats | Què s'aprén | Evidència mínima | Verificació docent |
+|---|---|---|---|---|---|
+| `1` | `RA2` + `RA3` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d`, `RA3.e`, `RA3.f`, `RA3.g` | entrada de dades variades, recuperació en servidor i validació visible | formulari amb text, llista, checkbox i, si escau, fitxer, amb error i reintent corregit | execució en directe i pregunta sobre d'on ix cada dada, com arriba al servidor i com es valida |
+| `2` | `RA2` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d`, `RA2.e`, `RA2.f`, `RA2.g`, `RA2.h` | generació de resposta, variables, operadors, àmbits i conservació funcional simple | dada correcta processada, guardada de manera simple i reutilitzada | canvi menut en viu sobre una variable, operador o directiva i justificació del mecanisme de conservació |
+| `3` | `RA3` | `RA3.a`, `RA3.b`, `RA3.c`, `RA3.d` | decisions, arrays, funcions i regles de domini aplicades | regla amb dos resultats observables i funció o estructura útil | microcanvi en una condició o funció i explicació de per què no és ornamental |
+| `4` | `RA4` | `RA4.a`, `RA4.b`, `RA4.c` | estat temporal, sessió, cookies i invalidació | recuperació d'estat i neteja o caducitat demostrada | execució de recuperació i invalidació, més pregunta sobre què queda en client, servidor o flux funcional |
+| `5` | `RA4` | `RA4.d`, `RA4.e` | identificació, autenticació, autorització i protecció d'una operació real | cas autenticat permés i cas no permés sobre una acció del domini | demo dels dos casos i pregunta sobre el punt exacte on es comprova la restricció |
+| `6` | `RA4` | `RA4.f` | prova, depuració, documentació i reproduïbilitat | taula mínima de proves, incidències i README actualitzat | execució d'un cas triat pel professorat i contrast amb documentació, codi i AI log |
+| `7` | `RA3` + `RA4` | `RA3.d`, `RA3.g`, `RA4.f` | refactorització funcional, mantenibilitat i preparació cap a `RA5` | comparativa abans/després, fitxer comú, objecte simple i prova de no regressió | revisió del diff, execució del flux i defensa de què millora ara i què queda per a `R3` |
 
 ## Conceptes que han de quedar diferenciats
 

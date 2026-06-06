@@ -55,4 +55,296 @@ En el Repte 4, el sistema aprenia a exposar serveis propis.
 
 En el Repte 5, el sistema aprén a consumir, integrar, transformar i reaprofitar informació o serveis externs per generar una aplicació híbrida amb sentit.
 
-***
+---
+
+## 2. Relació amb resultats d'aprenentatge
+
+**Resultat d'aprenentatge principal**
+
+- **RA9**: desenvolupa aplicacions web híbrides seleccionant, integrant i transformant fonts o serveis externs de manera útil i verificable.
+
+**Resultats d'aprenentatge de suport**
+
+- **RA7**: només quan la integració reutilitza, consumeix o orquestra serveis web propis o externs.
+- **RA8**: quan la integració modifica una resposta dinàmica, una vista o un flux renderitzat en servidor.
+- **RA6**: només si la integració requereix persistir, consultar o protegir dades pròpies vinculades al flux híbrid.
+
+**Justificació curricular**
+
+`R5` ha de mantindre `RA9` com a centre. El valor del repte no està en cridar una API externa, sinó en seleccionar una font adequada, entendre'n el contracte, transformar la resposta i integrar-la dins d'una funcionalitat real del projecte.
+
+Els criteris de `RA7`, `RA8` i `RA6` només apareixen com a suport quan fan falta per demostrar la integració. No han de substituir el nucli del repte ni convertir `R5` en una repetició de l'API de `R4` o de la persistència de `R3`.
+
+---
+
+## 3. Microprojectes i criteris d'avaluació
+
+> **Norma del repte**
+>
+> - Cap microprojecte apareix sense el camp **CA coberts**.
+> - Cada microprojecte ha de deixar una evidència verificable de la integració.
+> - El mínim obligatori és una sola integració híbrida completa, útil i defensable.
+> - Les integracions múltiples o orquestracions avançades són ampliació, no substitució del nucli.
+
+### Microprojecte MP1 — Selecció de font externa i disseny de la integració
+
+**Tipus**
+
+Microtasca d'investigació i decisió tècnica.
+
+**Objectiu**
+
+Triar una font, servei extern o repositori heterogeni que aporte valor real al producte i definir com s'integrarà.
+
+**Tasca**
+
+L'equip concreta:
+
+- quina font o servei extern usarà
+- quin problema del producte resol o millora
+- quin contracte, format o mecanisme d'accés té
+- quines dades es necessiten i quines es descarten
+- quins riscos hi ha: límits, errors, permisos, dependència externa o qualitat de dades
+- quin flux híbrid es construirà
+
+**CA coberts**
+
+- **RA9.a**
+- **RA9.b**
+- **RA7.a** quan la font siga un servei web documentable
+
+**Descripció dels CA en llenguatge docent**
+
+- L'alumnat identifica fonts externes o repositoris heterogenis útils per al projecte.
+- L'alumnat compara opcions i justifica la tria segons valor funcional, viabilitat i risc.
+- L'alumnat entén el contracte extern abans de construir la integració.
+
+**Evidències obligatòries**
+
+- comparativa curta de fonts o serveis
+- mapa inicial d'integració
+- justificació de la font triada
+- llista de riscos i límits
+
+**Instrument d'avaluació**
+
+Checklist de selecció i viabilitat.
+
+**Pes orientatiu dins del repte**
+
+15%
+
+### Microprojecte MP2 — Connexió amb la font externa i recuperació real
+
+**Tipus**
+
+Microprojecte procedimental.
+
+**Objectiu**
+
+Implementar una connexió funcional amb la font externa i demostrar que es recuperen dades reals o resposta real del servei.
+
+**Tasca**
+
+L'equip implementa:
+
+- connector, client HTTP, consulta, webhook o mecanisme equivalent
+- configuració mínima necessària
+- cas positiu de recuperació
+- cas d'error o indisponibilitat
+- registre de què s'ha rebut realment
+
+**CA coberts**
+
+- **RA9.c**
+- **RA9.f**
+- **RA7.d** i **RA7.e** si la connexió és a un servei web amb peticions i respostes
+
+**Descripció dels CA en llenguatge docent**
+
+- L'alumnat accedeix a una font externa de manera funcional i verificable.
+- L'alumnat tracta errors bàsics de connexió, resposta buida o resposta inesperada.
+- L'alumnat pot explicar què ve de fora i què pertany al sistema propi.
+
+**Evidències obligatòries**
+
+- codi del connector o integració
+- demo de recuperació real
+- registre o captura de resposta
+- prova d'error controlat
+
+**Instrument d'avaluació**
+
+Rúbrica de connexió i robustesa mínima.
+
+**Pes orientatiu dins del repte**
+
+20%
+
+### Microprojecte MP3 — Transformació, mapping i valor afegit
+
+**Tipus**
+
+Microprojecte procedimental.
+
+**Objectiu**
+
+Transformar la informació externa perquè tinga sentit dins del domini del projecte.
+
+**Tasca**
+
+L'equip defineix i implementa:
+
+- mapping entre dades externes i dades internes
+- filtrat, normalització o enriquiment
+- criteris per descartar dades no útils
+- comparativa entre resposta externa i resultat integrat
+- justificació del valor afegit
+
+**CA coberts**
+
+- **RA9.d**
+- **RA9.e**
+- **RA6.c** i **RA6.d** només si el mapping es persisteix o es combina amb dades pròpies
+
+**Descripció dels CA en llenguatge docent**
+
+- L'alumnat no es limita a mostrar dades externes: les adapta al producte.
+- L'alumnat justifica quines transformacions fa i per què.
+- L'alumnat manté coherència entre font externa, model intern i ús final.
+
+**Evidències obligatòries**
+
+- taula o esquema de mapping
+- codi de transformació
+- comparativa font externa / resultat final
+- demo del valor generat
+
+**Instrument d'avaluació**
+
+Rúbrica de transformació i valor funcional.
+
+**Pes orientatiu dins del repte**
+
+20%
+
+### Microprojecte MP4 — Integració de la funcionalitat híbrida en el producte
+
+**Tipus**
+
+Microprojecte procedimental.
+
+**Objectiu**
+
+Integrar el resultat transformat en una funcionalitat real del projecte.
+
+**Tasca**
+
+L'equip connecta la integració amb:
+
+- una pantalla, flux, endpoint, procés o automatització del producte
+- dades pròpies quan siga pertinent
+- resposta visible o efecte funcional observable
+- restriccions bàsiques d'ús o control d'accés si cal
+
+**CA coberts**
+
+- **RA9.e**
+- **RA9.f**
+- **RA8.f** si la integració modifica una resposta dinàmica o vista server-rendered
+- **RA7.f** si la integració consumeix o combina serveis
+
+**Descripció dels CA en llenguatge docent**
+
+- L'alumnat integra la font externa dins del producte i no com a demo aïllada.
+- L'alumnat mostra un resultat funcional nou o millor respecte a l'estat anterior.
+- L'alumnat pot demostrar el flux complet de punta a punta.
+
+**Evidències obligatòries**
+
+- funcionalitat híbrida integrada
+- demo completa
+- comparativa abans/després
+- commit rellevant comentat
+
+**Instrument d'avaluació**
+
+Rúbrica d'integració híbrida.
+
+**Pes orientatiu dins del repte**
+
+25%
+
+### Microprojecte MP5 — Prova, documentació i defensa de la integració
+
+**Tipus**
+
+Microprojecte de tancament i verificació.
+
+**Objectiu**
+
+Fer reproduïble, verificable i defensable la integració construïda.
+
+**Tasca**
+
+L'equip prepara:
+
+- proves o verificacions del cas positiu
+- proves o verificacions d'error
+- documentació tècnica de la font, configuració i flux
+- límits coneguts
+- mini defensa del contracte extern, mapping i valor aportat
+
+**CA coberts**
+
+- **RA9.g**
+- **RA9.h**
+- **RA7.h** si hi ha documentació de servei o contracte
+
+**Descripció dels CA en llenguatge docent**
+
+- L'alumnat prova i documenta la integració amb criteri professional.
+- L'alumnat identifica limitacions reals i dependències externes.
+- L'alumnat defensa l'autoria i les decisions preses, especialment si ha usat IA.
+
+**Evidències obligatòries**
+
+- registre de proves
+- documentació tècnica
+- mapa final d'integració
+- AI log quan corresponga
+- mini defensa tècnica
+
+**Instrument d'avaluació**
+
+Checklist de tancament i defensa.
+
+**Pes orientatiu dins del repte**
+
+20%
+
+---
+
+## 4. Taula resum de microprojectes i criteris d'avaluació
+
+| Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
+|---|---|---|---|---|---|---:|
+| MP1 | Investigació / decisió | Font externa triada i mapa d'integració | RA9.a, RA9.b, RA7.a | comparativa, justificació, mapa inicial, riscos | checklist | 15% |
+| MP2 | Procedimental | Connexió funcional amb font externa | RA9.c, RA9.f, RA7.d, RA7.e | connector, resposta real, cas d'error | rúbrica | 20% |
+| MP3 | Procedimental | Mapping i transformació útil | RA9.d, RA9.e, RA6.c, RA6.d | esquema de mapping, transformació, comparativa | rúbrica | 20% |
+| MP4 | Integració | Funcionalitat híbrida integrada | RA9.e, RA9.f, RA8.f, RA7.f | demo completa, abans/després, commit comentat | rúbrica | 25% |
+| MP5 | Tancament / verificació | Proves, documentació i defensa | RA9.g, RA9.h, RA7.h | registre de proves, documentació, mapa final, defensa | checklist | 20% |
+
+---
+
+## 5. Criteri de superació
+
+El repte es considera superat quan:
+
+- hi ha una font externa triada amb criteri;
+- la connexió o integració recupera resposta real;
+- la informació externa es transforma o adapta al domini;
+- el resultat queda integrat en una funcionalitat real del producte;
+- hi ha prova positiva i prova d'error;
+- la documentació permet entendre la font, la configuració i el flux;
+- l'alumnat pot defensar què ve de fora, què transforma el sistema i quin valor nou aporta.
