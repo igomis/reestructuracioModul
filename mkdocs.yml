@@ -30,10 +30,9 @@ nav:
       - Annexos de planificació:
           - Programació d'aula per reptes:
               - Inici: 01_programacio_modul/index.md
-              - R1. Programació d'aula — Kickoff backend: 01_programacio_modul/programacio_aula_repte_01.md
-              - R2. Programació d'aula — Processament, estat i autenticació: 01_programacio_modul/programacio_aula_repte_02.md
-              - R2M1. Entrada variada i validació de servidor: 01_programacio_modul/programacio_aula_r2m1_entrada_variada_validacio_servidor.md
-              - R3. Planificació d'aula — MVC i persistència: 01_programacio_modul/planificacio_aula_r3_mvc_i_persistencia.md
+              - R1S1. Programació d'aula — Kickoff backend: 01_programacio_modul/programacio_aula_repte_01.md
+              - R1S2. Programació d'aula — Processament, estat i autenticació: 01_programacio_modul/programacio_aula_repte_02.md
+              - R2S1. Entrada variada i validació de servidor: 01_programacio_modul/programacio_aula_r2s1_entrada_variada_validacio_servidor.md
           - Pla d'implantació docent: 01_programacio_modul/pla_implantacio_docent.md
           - Calendarització per avaluacions: 01_programacio_modul/calendaritzacio_per_avaluacions.md
           - Guia 20 setmanes: 01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md

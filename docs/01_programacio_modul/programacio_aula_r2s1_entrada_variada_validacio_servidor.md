@@ -1,8 +1,8 @@
-# R2M1. Entrada variada i validació de servidor
+# R2S1. Entrada variada i validació de servidor
 
-## Finalitat del microrepte
+## Finalitat de la sessió
 
-Este microrepte obri el `Repte 2` amb una primera entrada real de dades del producte. L'objectiu no és practicar un camp solt, sinó treballar el recorregut complet d'un formulari amb controls diversos: textos, opcions, llistes, checkbox i, quan tinga sentit, fitxers.
+Esta sessió obri el `Repte 2` i treballa el microrepte `R2M1` amb una primera entrada real de dades del producte. L'objectiu no és practicar un camp solt, sinó treballar el recorregut complet d'un formulari amb controls diversos: textos, opcions, llistes, checkbox i, quan tinga sentit, fitxers.
 
 Al final de la sessió, cada alumne o parella ha de poder explicar quines dades envia cada control, com arriben al servidor, quines validacions s'apliquen i què passa quan alguna dada no és acceptable.
 
@@ -10,7 +10,7 @@ Al final de la sessió, cada alumne o parella ha de poder explicar quines dades 
 
 - **Repte**: `R2. Processament bàsic, estat, autenticació i primera funcionalitat protegida`
 - **Microrepte**: `R2M1`
-- **Sessió base**: `1`
+- **Sessió**: `R2S1`
 - **Duració orientativa**: `3 hores`
 - **Focus**: formularis amb controls variats, recuperació de dades en `PHP`, validació de servidor, errors visibles i reintent
 - **No entra encara**: login, rols, sessió persistent, base de dades com a centre del treball o arquitectura completa
