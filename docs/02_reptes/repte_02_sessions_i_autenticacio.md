@@ -109,7 +109,7 @@ Esta progressió evita dos errors habituals: començar directament pel login sen
 
 | Microprojecte | RA principal | Evidència mínima | Verificació d'aprenentatge real |
 |---|---|---|---|
-| `R2M1` | `RA2` + `RA3` | formulari o entrada equivalent amb text, llista, checkbox i fitxer si escau, recuperació de dades, error visible i reintent | execució en directe i explicació del recorregut de cada tipus de dada |
+| `R2M1` | `RA2` + `RA3` | formulari o entrada equivalent amb text, llista i checkbox, recuperació de dades, una validació bàsica, error visible i reenviament corregit | execució en directe i explicació del recorregut de cada dada mínima |
 | `R2M2` | `RA2` | resposta generada en servidor amb variables, operadors, àmbits i conservació funcional simple | canvi menut en viu sobre processament o directiva i justificació de la persistència funcional |
 | `R2M3` | `RA3` | regla de domini amb decisió, array o funció útil | microcanvi sobre una condició o funció i defensa del seu sentit dins del producte |
 | `R2M4` | `RA4` | estat, sessió o cookies amb recuperació i invalidació | demo de recuperació i neteja, més pregunta sobre què es guarda i on |
@@ -316,20 +316,20 @@ Microprojecte procedimental.
 
 **Objectiu**
 
-Construir un punt d’entrada de dades usable i realista amb controls bàsics diversos, i demostrar que el sistema és capaç de recuperar la informació aportada per l’usuari, validar-la en servidor, mostrar errors interpretables i permetre un reintent.
+Construir un punt d’entrada de dades usable i realista amb controls bàsics diversos, i demostrar que el sistema és capaç de recuperar la informació aportada per l’usuari, aplicar una validació bàsica en servidor, mostrar un error interpretable i permetre un reenviament corregit.
 
 **Tasca**
 
-L’equip crea un formulari funcional, o una entrada equivalent coherent amb la base comuna en `PHP`, i implementa la recuperació de les dades enviades per l’usuari des d’un text, una llista o opció tancada i un checkbox. La sessió no busca cobrir tots els tipus de control possibles, sinó entendre bé el recorregut mínim: entrada, recepció, validació, error visible i reintent.
+L’equip crea un formulari funcional, o una entrada equivalent coherent amb la base comuna en `PHP`, i implementa la recuperació de les dades enviades per l’usuari des d’un text, una llista o opció tancada i un checkbox. La sessió no busca cobrir tots els tipus de control possibles, sinó entendre bé el recorregut mínim: entrada, recepció, una condició simple de validació, error visible i reenviament corregit.
 
-Els fitxers, checkbox múltiples i validacions més fines queden com a modelatge docent o ampliació quan el mínim ja està tancat.
+Els fitxers, checkbox múltiples, arrays d'errors, conservació còmoda de valors i validacions més fines queden com a modelatge docent o ampliació quan el mínim ja està tancat.
 
 S’ha de veure amb claredat:
 
 - quins controls es reben
 - com es recuperen
-- com es mostren els errors quan alguna dada no és vàlida
-- com es validen opcions contra valors permesos
+- com es mostra un error quan una dada clau no és vàlida
+- com es formula una condició simple de servidor
 - com es tracta una dada absent, com un checkbox no marcat
 - quin tractament inicial reben les dades correctes
 - quina resposta bàsica retorna el sistema
@@ -340,6 +340,7 @@ S’ha de veure amb claredat:
 Com a ampliació es pot veure:
 
 - com arriba un checkbox múltiple com a array
+- com s'acumulen diversos errors en un array o llista
 - com es valida un fitxer si forma part real del flux
 - com es conserven valors introduïts per fer el reintent més còmode
 
@@ -376,7 +377,7 @@ La IA pot suggerir l’estructura inicial del formulari o exemples de tractament
 - codi `PHP` integrat amb `HTML` o plantilla equivalent
 - ús visible de variables i sentències simples en la resposta
 - recuperació correcta de dades de text, llista i checkbox
-- almenys tres errors de validació visibles i possibilitat de reintent
+- una validació bàsica de servidor amb error visible i possibilitat de reenviament corregit
 - comprovació del document resultant generat pel servidor
 - captura o demo del cas correcte
 - codi comentat mínimament
@@ -389,7 +390,7 @@ Checklist de formulari i recuperació de dades.
 **Indicadors d’assoliment**
 
 - les dades es reben realment
-- el document resultant mostra errors quan la dada no és acceptable i resposta correcta quan passa la validació
+- el document resultant mostra un error quan la dada triada no és acceptable i resposta correcta quan passa la validació
 - el codi és comprensible
 - hi ha correspondència entre camps, recuperació i resposta
 
@@ -399,6 +400,7 @@ Checklist de formulari i recuperació de dades.
 - recuperació aparent però no verificable
 - validació només en navegador
 - missatges d'error sense condició real de servidor
+- arrays d'errors copiats abans d'entendre la condició que els ompli
 - comentaris inexistents o inútils
 
 **Verificació del treball real**
@@ -928,7 +930,7 @@ Rúbrica curta de refactorització i mantenibilitat.
 
 | Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
 |---|---|---|---|---|---|---|
-| R2M1 | Procedimental | Entrada variada, codi servidor integrat i recuperació de dades | RA2.a, RA2.b, RA2.c, RA2.d, RA3.e, RA3.f, RA3.g | formulari amb controls diversos, codi embegut, variables inicials, arrays, document generat, recuperació, demo | checklist | 15% |
+| R2M1 | Procedimental | Entrada variada, codi servidor integrat i recuperació de dades | RA2.a, RA2.b, RA2.c, RA2.d, RA3.e, RA3.f, RA3.g | formulari amb text, llista i checkbox, codi embegut, variables simples, validació bàsica, error visible i demo | checklist | 15% |
 | R2M2 | Procedimental | Processament bàsic de la petició | RA2.a, RA2.b, RA2.c, RA2.d, RA2.e, RA2.f, RA2.g, RA2.h | codi executable, codi embegut, variables, directiva, demo | rúbrica breu | 15% |
 | R2M3 | Procedimental | Decisions, arrays i funcions aplicades | RA3.a, RA3.b, RA3.c, RA3.d | lògica observable, funcions, demo | rúbrica | 15% |
 | R2M4 | Procedimental | Estat, sessió i/o cookies | RA4.a, RA4.b, RA4.c | demo d’estat, recuperació i invalidació | checklist | 15% |
