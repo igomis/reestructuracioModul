@@ -171,8 +171,8 @@ Backend inicial funcional amb:
 > - Cada microprojecte ha de generar almenys una evidència verificable.
 > - El mínim funcional del repte no obliga a incloure formulari, validació ni persistència.
 > - Estos elements poden aparéixer com a ampliació opcional o com a pas natural del Repte 2.
-> - Els microreptes són unitats de progrés, no unitats fixes de temps docent.
-> - En la concreció docent d’aula, els `4` microreptes es compacten en `2` sessions principals de treball i una tercera sessió opcional de checkpoint o defensa formal.
+> - Cada microrepte equival a una sessió ordinària de treball.
+> - En la concreció docent d'aula, `R1` queda en `2` microreptes de `3` hores: `R1M1` i `R1M2`.
 
 ### Microrepte R1M1 — Model client/servidor i elecció guiada de stack
 
@@ -265,9 +265,11 @@ Rúbrica d’investigació aplicada.
 
 **Pes orientatiu dins del repte**
 
-20%
+25%
 
-### Microrepte R1M2 — Base executable en PHP amb Docker i completació de l’entorn
+### Microrepte R1M2 — Entorn executable, punt d'entrada i tancament de R1
+
+Este microrepte integra l'entorn executable, la primera resposta funcional del backend i la documentació de tancament. No es divideix en més microreptes: eixos blocs són parts internes de la segona sessió.
 
 **Tipus**
 
@@ -366,9 +368,9 @@ Checklist tècnica de repositori + revisió docent de README.
 
 **Pes orientatiu dins del repte**
 
-35%
+75%
 
-### Microrepte R1M3 — Primer punt d’entrada funcional del backend
+#### Bloc intern de R1M2 — Primer punt d'entrada funcional del backend
 
 **Tipus**
 
@@ -445,7 +447,7 @@ Rúbrica de microprojecte funcional.
 
 25%
 
-### Microrepte R1M4 — Documentació tècnica, verificació i checkpoint
+#### Bloc intern de R1M2 — Documentació tècnica, verificació i checkpoint
 
 **Tipus**
 
@@ -532,20 +534,17 @@ Rúbrica de defensa tècnica + checklist de documentació.
 
 | Microrepte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
 |---|---|---|---|---|---|---|
-| R1M1 | Investigació / decisió tècnica | Fitxa breu d’exploració tècnica + model d'execució client/servidor + decisió orientativa | RA1a, RA1b, RA1c, RA1g | Fitxa, model d'execució, dubtes detectats, posada en comú | Rúbrica | 20% |
-| R1M2 | Procedimental | Repositori executable amb Docker i estructura base | RA1c, RA1d, RA1e, RA1f | Repo, Docker, README, issues, commits, prova d’arrancada | Checklist + revisió | 35% |
-| R1M3 | Procedimental | Punt d’entrada funcional simple | RA1b, RA1e, RA1f | Demo funcional, logs o captures, evidència d’execució | Rúbrica | 25% |
-| R1M4 | Tancament / verificació | README final + documentació en repositori + justificació tècnica + defensa | RA1d, RA1g | Documentació, validació, defensa, AI log | Rúbrica + checklist | 20% |
+| R1M1 | Investigació / decisió tècnica | Fitxa breu d'exploració tècnica + model d'execució client/servidor + decisió orientativa | RA1a, RA1b, RA1c, RA1g | Fitxa, model d'execució, dubtes detectats, posada en comú | Rúbrica | 25% |
+| R1M2 | Procedimental / tancament | Repositori executable amb Docker, primer punt d'entrada funcional, README, documentació i checkpoint | RA1b, RA1c, RA1d, RA1e, RA1f, RA1g | Repo, Docker, punt d'entrada, README, documentació, issues, commits, prova d'arrancada i defensa | Checklist + rúbrica | 75% |
 
 ### 6.1 Coordinació docent amb sessions de `3` hores
 
-El Repte 1 es compon de `4` microreptes, però la seua execució docent es compacta en `2` sessions principals de treball i una tercera sessió opcional de checkpoint o defensa.
+El Repte 1 es compon de `2` microreptes, un per cada sessió ordinària de `3` hores.
 
 | Sessió | Duració | Microreptes | Focus docent | Producte o evidència clau |
 |---|---:|---|---|---|
-| `1` | `3h` | R1M1 + inici R1M2 | model client/servidor, decisió inicial i arrencada de l'entorn | fitxa breu + decisió orientativa + base mínima iniciada |
-| `2` | `3h` | tancament R1M2 + R1M3 + R1M4 | entorn complet, primer punt d'entrada funcional i documentació | projecte arrancant + punt funcional + README + documentació en repositori |
-| `3` | opcional | checkpoint formal | defensa, execució real i revisió de traçabilitat | defensa tècnica o acta de checkpoint |
+| `1` | `3h` | R1M1 | model client/servidor i decisió inicial | fitxa breu + decisió orientativa |
+| `2` | `3h` | R1M2 | entorn complet, primer punt d'entrada funcional i documentació | projecte arrancant + punt funcional + README + documentació en repositori |
 
 ---
 
@@ -643,7 +642,7 @@ El Repte 1 es compon de `4` microreptes, però la seua execució docent es compa
 
 **Duració orientativa**
 
-`6` hores de base, organitzades en `2` sessions principals de `3` hores. Es pot afegir una tercera sessió opcional de `3` hores si cal una defensa o checkpoint formal més pausat.
+`6` hores de base, organitzades en `2` sessions principals de `3` hores.
 
 **Moment del curs**
 

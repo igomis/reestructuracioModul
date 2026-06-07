@@ -8,14 +8,12 @@ Este mapa indica quines peces convé obrir per conduir `R1` en aula i en quin es
 
 - proposta base de `6` hores
 - `2` sessions principals de `3` hores
-- una tercera sessió opcional per defensa o checkpoint formal
-- `4` microreptes com a passos lògics, no com a `4` sessions obligatòries
+- `2` microreptes, un per sessió ordinària
 
 ## Mapa curt per sessions
 
-- Sessió `1` / `MP1` + inici de `MP2`: [fitxa general del repte](../../02_reptes/repte_01_kickoff_backend.md), [presentació 01](../../07_presentacions/presentacio_01_repte_1.md), [orientacions docents](orientacions_docents_repte_01.md), [briefing inicial](../../08_materials_compartibles/briefing_inicial_curs.md) i [PHP consulta ràpida](../../alumnat/consulta_tecnica/php_consulta_rapida.md)
-- Sessió `2` / tancament de `MP2` + `MP3` + `MP4`: [programació d'aula del Repte 1](../../01_programacio_modul/programacio_aula_repte_01.md), [materials de sessió](../materials_aula/repte_01_materials_sessio.md), [full de treball del Repte 1](../../08_materials_compartibles/full_treball_repte_01.md), [guia README i ADR](../materials_comuns/guia_readme_i_adr.md) i [checkpoint inicial `R1 -> R2`](../../08_materials_compartibles/checkpoint_inicial_r1_r2.md)
-- Sessió `3` opcional / defensa o checkpoint formal: [guia testing i debugging](../materials_comuns/guia_testing_i_debugging.md), [guió breu de defensa individual](../../08_materials_compartibles/guio_defensa_individual_breu.md) i [paquet docent del Repte 1](../../09_paquets_ús_directe/paquet_repte_01_kickoff.md)
+- Sessió `1` / `R1M1`: [fitxa general del repte](../../02_reptes/repte_01_kickoff_backend.md), [presentació 01](../../07_presentacions/presentacio_01_repte_1.md), [orientacions docents](orientacions_docents_repte_01.md), [briefing inicial](../../08_materials_compartibles/briefing_inicial_curs.md) i [PHP consulta ràpida](../../alumnat/consulta_tecnica/php_consulta_rapida.md)
+- Sessió `2` / `R1M2`: [programació d'aula del Repte 1](../../01_programacio_modul/programacio_aula_repte_01.md), [materials de sessió](../materials_aula/repte_01_materials_sessio.md), [full de treball del Repte 1](../../08_materials_compartibles/full_treball_repte_01.md), [guia README i ADR](../materials_comuns/guia_readme_i_adr.md), [guia testing i debugging](../materials_comuns/guia_testing_i_debugging.md), [guió breu de defensa individual](../../08_materials_compartibles/guio_defensa_individual_breu.md) i [checkpoint inicial `R1 -> R2`](../../08_materials_compartibles/checkpoint_inicial_r1_r2.md)
 
 ## Materials imprescindibles
 
@@ -37,7 +35,7 @@ Este mapa indica quines peces convé obrir per conduir `R1` en aula i en quin es
 
 ## Materials breus projectables
 
-- [Presentació 01 del Repte 1](../../07_presentacions/presentacio_01_repte_1.md): `refosa en esta passada` i queda preparada com a micropresentació d'obertura.
+- [Presentació 01 del Repte 1](../../07_presentacions/presentacio_01_repte_1.md): `refosa` i queda preparada com a micropresentació d'obertura.
 - [Briefing inicial del curs](../../08_materials_compartibles/briefing_inicial_curs.md): `ja existix` i servix per obrir el marc general abans d'entrar en `R1`.
 - [Full de treball del Repte 1](../../08_materials_compartibles/full_treball_repte_01.md): `ja existix` i es pot projectar com a pauta de treball del dia.
 
@@ -50,7 +48,7 @@ Este mapa indica quines peces convé obrir per conduir `R1` en aula i en quin es
 ## Suport de checkpoint
 
 - [Checkpoint inicial `R1 -> R2`](../../08_materials_compartibles/checkpoint_inicial_r1_r2.md): `ja existix` i és la peça base de comprovació.
-- [Materials de sessió del Repte 1](../materials_aula/repte_01_materials_sessio.md): `ja existix` i aporta checkpoints curts `CP-R1.1`, `CP-R1.2` i `CP-R1.3`.
+- [Materials de sessió del Repte 1](../materials_aula/repte_01_materials_sessio.md): `ja existix` i aporta checkpoints curts `CP-R1.1` i `CP-R1.2`.
 - [Plantilles de feedback ràpid](../materials_aula/plantilles_feedback_rapid.md): `ja existix` i convé reutilitzar-les quan el grup no arriba al mínim funcional.
 
 ## Materials de defensa breu
@@ -65,7 +63,7 @@ Este mapa indica quines peces convé obrir per conduir `R1` en aula i en quin es
 
 ## Materials projectables i de checkpoint que convé tindre a mà
 
-- [Presentació 01 del Repte 1](../../07_presentacions/presentacio_01_repte_1.md): `refosa` per explicar els `4` microreptes i la compactació en `2` sessions principals.
+- [Presentació 01 del Repte 1](../../07_presentacions/presentacio_01_repte_1.md): `refosa` per explicar els `2` microreptes i les `2` sessions principals.
 - [Full de treball del Repte 1](../../08_materials_compartibles/full_treball_repte_01.md): `refós` per orientar alumnat sense carregar `R1` amb tasques de `R2`.
 - [Checkpoint inicial `R1 -> R2`](../../08_materials_compartibles/checkpoint_inicial_r1_r2.md): `refós` per comprovar arrencada, punt d'entrada i pas al repte següent.
 
@@ -78,4 +76,4 @@ Este mapa indica quines peces convé obrir per conduir `R1` en aula i en quin es
 
 ## Materials que falten o queden pendents
 
-No es detecta cap buit crític per pilotar `R1` amb coherència. El paquet queda executable en `2` sessions principals de `3` hores i una tercera sessió opcional de defensa o checkpoint formal.
+No es detecta cap buit crític per pilotar `R1` amb coherència. El paquet queda executable en `2` sessions principals de `3` hores.

@@ -8,7 +8,7 @@ Esta guia reunix els missatges docents que convé remarcar durant `R1` perquè e
 
 - `R1` manté `4` microreptes com a passos lògics.
 - La proposta base d'aula és de `6` hores: `2` sessions principals de `3` hores.
-- Pot activar-se una tercera sessió opcional si cal defensa, checkpoint formal o revisió forta d'evidències.
+- La defensa i la revisió forta d'evidències formen part del tancament de `R1M2`.
 - Els microreptes no equivalen necessàriament a sessions separades.
 
 ## Missatges clau que convé repetir en aula

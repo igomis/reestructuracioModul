@@ -30,8 +30,8 @@ nav:
       - Annexos de planificació:
           - Programació d'aula per reptes:
               - Inici: 01_programacio_modul/index.md
-              - R1S1. Programació d'aula — Kickoff backend: 01_programacio_modul/programacio_aula_repte_01.md
-              - R1S2. Programació d'aula — Processament, estat i autenticació: 01_programacio_modul/programacio_aula_repte_02.md
+              - R1. Programació d'aula — Kickoff backend: 01_programacio_modul/programacio_aula_repte_01.md
+              - R2. Programació d'aula — Processament, estat i autenticació: 01_programacio_modul/programacio_aula_repte_02.md
               - R2S1. Entrada variada i validació de servidor: 01_programacio_modul/programacio_aula_r2s1_entrada_variada_validacio_servidor.md
               - R2S2. Processament, reintent i guardat funcional: 01_programacio_modul/programacio_aula_r2s2_processament_reintent_conservacio_dades.md
               - R2SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r2sx_microdefenses_tecniques_criteris.md

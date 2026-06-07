@@ -6,12 +6,10 @@ Deixar obert el projecte amb una base executable i un primer punt d'entrada func
 
 ## Seqüència base
 
-- microrepte `1`: model client/servidor, model d'execució client vs servidor i elecció guiada de stack
-- microrepte `2`: base executable amb Docker, PHP, servidor web, BBDD i phpMyAdmin
-- microrepte `3`: primer punt d'entrada funcional del backend
-- microrepte `4`: documentació tècnica, verificació i checkpoint
+- `R1M1`: model client/servidor, model d'execució client vs servidor i elecció guiada de stack
+- `R1M2`: base executable amb Docker, PHP, servidor web, BBDD i phpMyAdmin, primer punt d'entrada funcional, documentació tècnica, verificació i checkpoint
 
-Els microreptes són passos lògics del repte. En aula es treballen compactats en `2` sessions principals: la primera combina el microrepte `1` amb l'inici del `2`, i la segona tanca el `2` i resol el `3` i el `4`.
+Cada microrepte equival a una sessió ordinària de `3` hores. `R1M1` té un pes del `25%` dins del repte i `R1M2` concentra el `75%` restant perquè tanca la base executable, la primera resposta funcional i el checkpoint de pas a `R2`.
 
 ## Has de fer
 

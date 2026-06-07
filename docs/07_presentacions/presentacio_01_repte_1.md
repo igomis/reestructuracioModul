@@ -17,17 +17,15 @@ Micro-presentació docent breu. Equival aproximadament a `8-9` diapositives i es
 
 ## Diapositiva 3. Com es treballarà en aula
 
-- `12` hores de base
-- `4` sessions de `3` hores
-- `1` microrepte per sessió
+- `6` hores de base
+- `2` sessions de `3` hores
+- `1` microrepte per sessió ordinària
 - seqüència curta i tancada perquè `R1` no quede inflat
 
 ## Diapositiva 4. Microreptes del repte
 
-- microrepte `1`: model client/servidor i stack guiat
-- microrepte `2`: entorn executable amb `Docker`, `PHP` i servidor web
-- microrepte `3`: primer punt d'entrada funcional del backend
-- microrepte `4`: documentació tècnica, verificació i checkpoint
+- `R1M1`: model client/servidor i stack guiat
+- `R1M2`: entorn executable amb `Docker`, `PHP` i servidor web, primer punt d'entrada funcional, documentació i checkpoint
 
 ## Diapositiva 5. Què no és suficient
 
