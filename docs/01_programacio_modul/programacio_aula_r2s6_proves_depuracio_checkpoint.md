@@ -6,22 +6,26 @@ Esta sessio comprova el flux complet de `R2`: entrada, validacio, reintent, guar
 
 L'objectiu no és afegir funcionalitats noves, sinó demostrar que el que ja existeix funciona amb casos positius, negatius i d'invalidacio.
 
+En este punt encara no es demanen proves unitàries ni `PHPUnit` com a mínim. Sense classes ni separacio forta de responsabilitats, forçar unit testing seria prematur. El que sí s'introdueix és una **prova automàtica lleugera de flux**, de caixa negra, que comprove una resposta observable del sistema amb una eina simple.
+
 ## Encaix dins del Repte 2
 
 - **Repte**: `R2. Processament bàsic, estat, autenticació i primera funcionalitat protegida`
 - **Microrepte**: `R2M6`
 - **Sessio**: `R2S6`
 - **Duracio orientativa**: `3 hores`
-- **Focus**: checklist de proves, depuracio, documentacio i demo reproduïble
-- **No entra encara**: refactoritzacio profunda, noves pantalles grans o migracio a framework
+- **Focus**: checklist de proves, primera prova automàtica lleugera de flux, depuracio, documentacio i demo reproduïble
+- **No entra encara**: proves unitàries obligatòries, `PHPUnit` com a mínim, mocks, refactoritzacio profunda, noves pantalles grans o migracio a framework
 
 ## Relacio amb RA i criteris de treball
 
 | Element | Concrecio en el microrepte |
 |---|---|
 | `RA4.f` | prova, depuracio i documentacio del comportament real |
-| Evidencia central | taula de proves executada i README actualitzat |
-| Verificacio docent | execucio d'un cas triat pel professorat i contrast amb documentacio |
+| Prova manual | taula de proves executada amb resultats reals |
+| Prova automàtica lleugera | script, comanda o col·leccio que comprove almenys un cas observable del flux |
+| Evidencia central | taula de proves, prova automàtica simple i README actualitzat |
+| Verificacio docent | execucio d'un cas triat pel professorat i execucio o revisio de la prova automàtica |
 
 ## Producte esperat
 
@@ -35,8 +39,24 @@ Una bateria mínima de proves amb:
 - accés no autenticat denegat;
 - accés autenticat permés;
 - logout o invalidacio i nou intent denegat;
+- almenys una prova automàtica lleugera de flux, per exemple `curl`, script `.sh`, script PHP senzill o col·leccio de peticions documentada;
 - incidencies detectades o confirmacio explícita que no n'hi ha;
 - README o guia de reproduccio actualitzada.
+
+La prova automàtica pot ser molt simple. Per exemple:
+
+```bash
+curl -i http://localhost:8000/protegida.php
+```
+
+o, si cal provar sessio:
+
+```bash
+curl -c cookies.txt -d "email=a@a.com&password=secret" http://localhost:8000/login.php
+curl -b cookies.txt http://localhost:8000/protegida.php
+```
+
+El criteri no és tindre una suite formal, sinó començar a convertir una comprovacio manual repetitiva en una comprovacio executable.
 
 ## Preparacio previa del professorat
 
@@ -44,6 +64,8 @@ Convé preparar:
 
 - plantilla de taula amb entrada, passos, resultat esperat, resultat real i incidencia;
 - exemple d'ús de navegador, terminal, logs, `curl` o eina equivalent;
+- exemple de script `tests/flux-r2.sh` o `tests/check-protegida.sh`;
+- exemple de comprovacio automàtica simple: codi HTTP, text esperat o redireccio;
 - criteri de prioritzacio d'incidencies bloquejants;
 - recordatori que primer es reprodueix l'error i després es corregeix.
 
@@ -55,7 +77,7 @@ Presentar la bateria i els camps de registre.
 
 Resultat: cada equip té una taula o checklist preparada.
 
-### 0:25-0:45. Modelatge de registre i depuracio
+### 0:25-0:50. Modelatge de registre, depuracio i prova automàtica mínima
 
 Mostrar com anotar:
 
@@ -66,9 +88,16 @@ Mostrar com anotar:
 - incidencia;
 - correccio i nova prova.
 
+Mostrar també una prova automàtica mínima:
+
+- una comanda `curl`;
+- un script curt en `tests/`;
+- una comprovacio de text, codi HTTP o redireccio;
+- ús de cookies si es prova login o accés protegit.
+
 Resultat: l'alumnat sap què vol dir provar de manera reproduïble.
 
-### 0:45-1:35. Execucio de proves
+### 0:50-1:30. Execucio de proves manuals
 
 Tasques:
 
@@ -79,7 +108,19 @@ Tasques:
 
 Resultat: hi ha una primera bateria executada.
 
-### 1:35-2:15. Depuracio guiada
+### 1:30-1:55. Primera prova automàtica lleugera
+
+Tasques:
+
+- triar un cas observable i estable;
+- escriure una comanda o script simple;
+- comprovar una resposta esperada;
+- documentar com executar-lo;
+- evitar convertir-ho en una suite complexa.
+
+Resultat: hi ha almenys una comprovacio executable del flux.
+
+### 1:55-2:20. Depuracio guiada
 
 Tasques:
 
@@ -90,7 +131,7 @@ Tasques:
 
 Resultat: els bloquejos principals queden resolts o documentats.
 
-### 2:15-2:40. Documentacio mínima
+### 2:20-2:40. Documentacio mínima
 
 Tasques:
 
@@ -98,6 +139,7 @@ Tasques:
 - afegir usuaris de prova;
 - indicar operacio protegida;
 - indicar com provocar error, cas correcte i denegacio;
+- indicar com executar la prova automàtica lleugera;
 - marcar zona candidata a refactoritzar en `R2M7`.
 
 Resultat: la demo és reproduïble.
@@ -106,12 +148,15 @@ Resultat: la demo és reproduïble.
 
 El professorat tria un cas de la taula i demana executar-lo.
 
-Pregunta: quins casos demostren que el flux complet és reproduïble amb errors, estat i permisos controlats?
+També pot demanar executar o llegir la prova automàtica lleugera.
+
+Pregunta: quins casos demostren que el flux complet és reproduïble amb errors, estat i permisos controlats, i quin cas has començat a automatitzar?
 
 ## Tasques concretes de l'alumnat
 
 - Preparar checklist o taula de proves.
 - Executar casos positius i negatius.
+- Crear almenys una prova automàtica lleugera de flux.
 - Registrar incidencies.
 - Depurar bloquejos.
 - Repetir proves fallides.
@@ -123,6 +168,7 @@ Pregunta: quins casos demostren que el flux complet és reproduïble amb errors,
 | Evidencia | Minim acceptable |
 |---|---|
 | Taula | casos amb entrada, passos i resultats |
+| Prova automàtica | script, comanda o col·leccio que execute almenys un cas observable |
 | Cas vàlid | flux accepta dades correctes |
 | Cas invàlid | error interpretable i correccio |
 | Estat | recuperacio i invalidacio provades |
@@ -134,6 +180,8 @@ Pregunta: quins casos demostren que el flux complet és reproduïble amb errors,
 
 - No es prova només el camí feliç.
 - La documentacio permet repetir la demo.
+- Hi ha almenys una comprovacio executable del flux.
+- La prova automàtica és de caixa negra o flux, no unitària.
 - Els casos registrats coincideixen amb el comportament real.
 - Els errors bloquejants estan corregits o identificats.
 - Hi ha una zona concreta per refactoritzar.
@@ -141,6 +189,8 @@ Pregunta: quins casos demostren que el flux complet és reproduïble amb errors,
 ## Que no és suficient
 
 - Llista de proves sense executar.
+- Dir que hi ha prova automàtica però no indicar com executar-la.
+- Confondre este mínim amb proves unitàries obligatòries.
 - Captures sense passos.
 - README desactualitzat.
 - Corregir sense reproduir.
@@ -148,15 +198,16 @@ Pregunta: quins casos demostren que el flux complet és reproduïble amb errors,
 
 ## Us de la IA
 
-La IA pot ajudar a generar casos addicionals o interpretar errors. Control: la bateria mínima comuna ha d'estar executada i els resultats han de ser reals, no només generats.
+La IA pot ajudar a generar casos addicionals, interpretar errors o proposar una comanda `curl`. Control: la bateria mínima comuna ha d'estar executada, els resultats han de ser reals i la prova automàtica ha de poder executar-se o revisar-se.
 
 ## Suport per alumnat amb més dificultat
 
-Reduir a cinc casos: vàlid, invàlid, estat invalidat, no autenticat i autenticat. Exigir passos clars i resultat real.
+Reduir a cinc casos manuals: vàlid, invàlid, estat invalidat, no autenticat i autenticat. Per a la part automàtica, una sola comanda `curl` contra una ruta protegida o una resposta d'error és suficient.
 
 ## Ampliacio per alumnat avançat
 
-- Proves automatitzades simples.
+- Més proves automatitzades simples.
+- Script amb diverses peticions i cookies.
 - Col·leccio de peticions.
 - Logs o captures comparatives.
 - Matriu d'incidencies prioritzades.
@@ -169,6 +220,8 @@ Reduir a cinc casos: vàlid, invàlid, estat invalidat, no autenticat i autentic
 - [ ] He provat estat i invalidacio.
 - [ ] He provat accés denegat.
 - [ ] He provat accés permés.
+- [ ] He creat almenys una prova automàtica lleugera de flux.
+- [ ] He documentat com executar-la.
 - [ ] He registrat incidencies.
 - [ ] He actualitzat README.
 - [ ] He triat zona per a refactoritzar.
@@ -178,4 +231,3 @@ Reduir a cinc casos: vàlid, invàlid, estat invalidat, no autenticat i autentic
 `R2M7` parteix d'un flux provat. La pregunta de pas és:
 
 Quina part del codi funciona però és més difícil de mantindre del que hauria?
-
