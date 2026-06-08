@@ -27,6 +27,7 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - [R2. Programació d'aula — Processament, estat i autenticació](programacio_aula_repte_02.md): baixada operativa de `R2` a sessions, microprojectes, checkpoints i pas cap a `R3`.
 - [R2S1. Entrada variada i validació de servidor](programacio_aula_r2s1_entrada_variada_validacio_servidor.md): fitxa d'aula executable per a la primera sessió de `R2`, associada al microrepte `R2M1`.
 - [R2S2. Processament, reintent i guardat funcional](programacio_aula_r2s2_processament_reintent_conservacio_dades.md): fitxa d'aula executable per a la segona sessió de `R2`, associada al microrepte `R2M2`.
+- [R2S3. Lògica del flux i regles del projecte](programacio_aula_r2s3_logica_flux_regles_projecte.md): fitxa d'aula executable per a la tercera sessió de `R2`, associada al microrepte `R2M3`.
 - [R2SX. Microdefenses tècniques de criteris](programacio_aula_r2sx_microdefenses_tecniques_criteris.md): verificació d'autoria, comprensió i ús d'IA al tancament de `R2`.
 - [R3SX. Microdefenses tècniques de criteris](programacio_aula_r3sx_microdefenses_tecniques_criteris.md): defensa breu d'arquitectura, persistència i flux end-to-end al tancament de `R3`.
 - [R4SX. Microdefenses tècniques de criteris](programacio_aula_r4sx_microdefenses_tecniques_criteris.md): verificació de contracte, protecció, consum i documentació de servei al tancament de `R4`.
@@ -51,6 +52,7 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - per conduir `R2` sense reduir-lo a auth: [R2. Programació d'aula — Processament, estat i autenticació](programacio_aula_repte_02.md)
 - per impartir la primera sessió de `R2`: [R2S1. Entrada variada i validació de servidor](programacio_aula_r2s1_entrada_variada_validacio_servidor.md)
 - per impartir la segona sessió de `R2`: [R2S2. Processament, reintent i guardat funcional](programacio_aula_r2s2_processament_reintent_conservacio_dades.md)
+- per impartir la tercera sessió de `R2`: [R2S3. Lògica del flux i regles del projecte](programacio_aula_r2s3_logica_flux_regles_projecte.md)
 - per verificar autoria després dels reptes: [R2SX](programacio_aula_r2sx_microdefenses_tecniques_criteris.md), [R3SX](programacio_aula_r3sx_microdefenses_tecniques_criteris.md), [R4SX](programacio_aula_r4sx_microdefenses_tecniques_criteris.md) i [R5SX](programacio_aula_r5sx_microdefenses_tecniques_criteris.md)
 - per activar una via d'excellencia sense improvisar: [ampliacions 9 a 10 per repte](../ampliacions-9-a-10-per-repte.md)
 - per obrir el curs sense improvisar: [preparacio docent directa](preparacio_docent_directa_curs_que_ve.md) i [ajustos finals](ajustos_finals_abans_inici_curs.md)

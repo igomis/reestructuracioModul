@@ -1,0 +1,268 @@
+# R2S3. Logica del flux i regles del projecte
+
+## Finalitat de la sessio
+
+Esta sessio transforma el flux construït en `R2M1` i `R2M2` en una funcionalitat amb decisio real. Fins ara el servidor rebia dades, validava, reconstruia el formulari i guardava funcionalment el cas correcte. Ara ha d'aplicar una regla recognoscible del projecte i produir resultats diferents segons les dades rebudes o ja guardades.
+
+L'objectiu no és afegir condicions, arrays o funcions perquè sí. El criteri és que la logica tinga efecte visible dins del producte: una decisio, classificacio, calcul, estat funcional o missatge diferent que l'alumnat puga explicar i provar amb dos casos.
+
+Al final de la sessio, cada alumne o parella ha de poder dir quina regla aplica el backend, quines dades utilitza, on està implementada i com es veu que el resultat canvia.
+
+## Encaix dins del Repte 2
+
+- **Repte**: `R2. Processament bàsic, estat, autenticació i primera funcionalitat protegida`
+- **Microrepte**: `R2M3`
+- **Sessio**: `R2S3`
+- **Duracio orientativa**: `3 hores`
+- **Focus**: decisio significativa, arrays o estructures equivalents, funcions útils, regla de domini i dos casos amb resultat diferent
+- **No entra encara**: sessio, cookies, login, rols, autoritzacio, arquitectura MVC, persistencia formal com a centre del treball o refactoritzacio general
+
+## Relacio amb RA i criteris de treball
+
+| Element | Concrecio en el microrepte |
+|---|---|
+| `RA3.a` | ús de condicions i bifurcacions per decidir el comportament del servidor |
+| `RA3.b` | ús de recorreguts o repeticions quan el flux treballe amb llistes, etiquetes, opcions o elements guardats |
+| `RA3.c` | ús d'arrays o estructures equivalents per representar catalegs, regles o dades del flux |
+| `RA3.d` | ús de funcions amb entrada, eixida i responsabilitat recognoscible |
+| Evidencia central | regla del projecte amb dos resultats observables i codi localitzable |
+| Verificacio docent | execucio de dos casos, microcanvi sobre una condicio o funcio i explicacio del seu sentit funcional |
+
+## Producte esperat
+
+Una evolucio del flux de `R2M2` que incloga, com a minim:
+
+- una regla escrita en llenguatge natural abans o junt amb el codi;
+- una decisio significativa connectada a dades reals del formulari o del guardat funcional;
+- almenys dos casos de prova amb resultat diferent;
+- un array o estructura equivalent usada amb sentit, per exemple cataleg de valors permesos, llista d'elements, etiquetes, regles, prioritats o missatges;
+- una funcio útil amb nom clar, parametres comprensibles i valor retornat o efecte explicable;
+- resposta visible del sistema que canvie segons la regla;
+- nota breu al `README`, issue o registre indicant la regla, els dos casos provats i on es veu el resultat.
+
+La regla pot ser molt xicoteta, però ha de modificar el comportament del flux. És millor una regla curta, executada i defensable que una logica gran copiada i difícil d'explicar.
+
+## Preparacio previa del professorat
+
+Abans de la sessio convé tindre preparat:
+
+- dos exemples de regles simples aplicables a dominis diferents;
+- una mostra curta de conversio de regla natural a funcio o condicio;
+- un exemple d'array de valors permesos o cataleg;
+- un exemple de dos casos de prova amb resultats diferents;
+- una pauta per reduir regles massa grans a una decisio verificable;
+- el criteri de tancament: no es valida el microrepte si la logica no afecta cap resposta visible.
+
+Exemples de regles assumibles:
+
+- en una tenda, marcar un producte com a `visible`, `pendent` o `revisar` segons categoria i confirmacio;
+- en reserves, decidir si una sol·licitud queda `acceptada` o `pendent` segons places o franja;
+- en incidencies, calcular prioritat final segons urgencia i impacte;
+- en publicacions, deixar un recurs en `esborrany` o `publicat` segons camps obligatoris i confirmacio;
+- en activitats, generar un missatge diferent segons tipus, edat, places o estat.
+
+## Seqüencia d'aula de 3 hores
+
+### 0:00-0:20. Recuperacio del flux i tria de la regla
+
+El professorat demana executar el cas correcte de `R2M2` i observar quines dades ja arriben i quines es guarden funcionalment.
+
+Tasques:
+
+- identificar una dada del formulari que puga condicionar el comportament;
+- identificar una dada guardada o reutilitzada que puga participar en la decisio;
+- escriure una regla en una frase clara;
+- acotar la regla a dos resultats comprovables.
+
+Resultat del tram: cada equip té una regla mínima i dos casos previstos.
+
+### 0:20-0:45. Modelatge docent
+
+El professorat mostra un exemple curt:
+
+- regla en llenguatge natural;
+- array de valors o cataleg;
+- funcio amb nom clar;
+- condicio que retorna o prepara un resultat;
+- dos enviaments amb resultats diferents;
+- canvi menut en una condicio per observar l'efecte.
+
+Resultat del tram: l'alumnat veu que arrays, funcions i condicions no són decoracio, sinó peces que fan explícita una regla del producte.
+
+### 0:45-1:30. Implementacio de la regla
+
+L'alumnat implementa la regla sobre el seu flux.
+
+Tasques:
+
+- connectar la regla amb dades reals de `$_POST`, del mecanisme equivalent o del guardat funcional;
+- crear o adaptar un array de valors, opcions, regles o elements;
+- implementar una funcio útil;
+- usar una condicio o recorregut que genere el resultat;
+- mostrar el resultat en la resposta del servidor.
+
+Resultat del tram: hi ha codi executable que pren una decisio i mostra una resposta diferenciada.
+
+### 1:30-2:05. Dos casos de prova
+
+L'alumnat prova la regla.
+
+Tasques:
+
+- executar un cas que active el primer resultat;
+- executar un cas que active el segon resultat;
+- comprovar que el resultat no ix d'un literal fix sense relacio amb les dades;
+- revisar que el cas incorrecte de validacio continua bloquejant el flux si toca;
+- ajustar missatges perquè el canvi siga visible.
+
+Resultat del tram: la regla queda demostrada amb dos casos reproduïbles.
+
+### 2:05-2:30. Revisio de qualitat minima
+
+El professorat o una parella revisa la logica.
+
+Pauta de revisio:
+
+- la funcio té un nom que explica la seua responsabilitat?
+- els parametres són dades del flux i no valors inventats?
+- l'array representa un cataleg, llista o regla útil?
+- la decisio canvia una resposta visible?
+- hi ha duplicacio o confusio que convé reservar per a `R2M7`?
+
+Resultat del tram: cada equip fa almenys un ajust de claredat o deixa anotada una millora futura.
+
+### 2:30-2:50. Traçabilitat i documentacio minima
+
+L'alumnat deixa rastre del que ha fet.
+
+Tasques:
+
+- actualitzar el `README`, issue o registre de treball;
+- escriure la regla en una frase;
+- indicar els dos casos provats i els resultats esperats;
+- indicar quin array o estructura s'ha usat;
+- indicar quina funcio concentra la regla o part de la logica;
+- registrar ús d'IA si ha generat o transformat codi rellevant.
+
+Resultat del tram: la regla es pot revisar sense dependre d'una explicacio improvisada.
+
+### 2:50-3:00. Checkpoint docent
+
+Cada equip mostra:
+
+- la regla escrita;
+- els dos casos amb resultats diferents;
+- fragment de codi amb l'array o estructura equivalent;
+- fragment de codi amb la funcio;
+- punt de la resposta on es veu l'efecte.
+
+Pregunta de tancament: quina decisio pren ara el servidor que abans no prenia, i com ho demostres amb dos casos?
+
+## Tasques concretes de l'alumnat
+
+- Recuperar el flux funcional de `R2M2`.
+- Triar una regla xicoteta però significativa del projecte.
+- Escriure la regla en llenguatge natural.
+- Implementar una decisio connectada a dades reals.
+- Usar un array o estructura equivalent amb sentit.
+- Crear una funcio útil per expressar o reutilitzar part de la logica.
+- Provar dos casos amb resultat diferent.
+- Documentar la regla, els casos i el codi principal.
+
+## Evidencies minimes
+
+| Evidencia | Minim acceptable |
+|---|---|
+| Regla del projecte | està escrita en una frase clara i connectada al domini |
+| Dades reals | la decisio usa dades del formulari, del flux o del guardat funcional |
+| Array o estructura | representa opcions, cataleg, llista, regles o elements del producte |
+| Funcio | té nom clar i encapsula una comprovacio, calcul, classificacio o preparacio útil |
+| Dos casos | hi ha dos enviaments o situacions amb resultats diferents |
+| Resultat visible | la resposta del servidor mostra la decisio presa |
+| Documentacio | el repositori explica la regla i com repetir els dos casos |
+
+## Criteris d'exit
+
+El microrepte està aconseguit si:
+
+- la logica no és ornamental;
+- la regla té sentit dins del producte;
+- el resultat canvia segons dades reals;
+- l'array o estructura ajuda a representar una part del domini;
+- la funcio no és només un embolcall buit;
+- hi ha dos casos de prova reproduïbles;
+- el codi continua respectant la validacio bàsica anterior;
+- l'alumnat pot modificar una condicio o valor del cataleg i explicar l'efecte.
+
+## Que no és suficient
+
+- Afegir un `if` que sempre dona el mateix resultat.
+- Crear una funcio que només crida una altra línia sense aportar claredat.
+- Usar un array sense llegir-lo, recórrer-lo o consultar-lo.
+- Fer que el resultat depenga de literals fixos i no de dades del flux.
+- Escriure una regla al `README` que no està implementada.
+- Afegir sessio, login o rols per evitar resoldre la logica del flux.
+- Copiar una solucio gran amb classes o patrons que l'alumnat no pot explicar.
+- Trencar el reintent o el guardat funcional de `R2M2`.
+
+## Us de la IA
+
+La IA es pot usar per:
+
+- proposar exemples de regles segons el domini;
+- ajudar a convertir una regla natural en condicio o funcio;
+- revisar noms de funcions;
+- suggerir casos de prova;
+- detectar si una condicio no cobreix els dos camins.
+
+Control obligatori:
+
+- l'alumnat ha d'explicar la regla sense llegir codi generat;
+- ha de crear almenys un cas de prova propi;
+- ha de poder canviar una condicio, valor de l'array o retorn de la funcio i predir l'efecte;
+- si la IA ha generat codi rellevant, s'ha de registrar breument al `AI log` o registre equivalent.
+
+## Suport per alumnat amb més dificultat
+
+Reduir el flux a:
+
+- una regla amb dos resultats;
+- un array de tres valors permesos;
+- una funcio que rep una dada i retorna una etiqueta o missatge;
+- una resposta visible amb el resultat;
+- dos casos manuals documentats.
+
+Frase guia: "No afegis més pantalles; fes que el servidor decidisca una cosa clara amb les dades que ja tens."
+
+## Ampliacio per alumnat avançat
+
+Si el minim ja està tancat, l'alumnat pot:
+
+- afegir més casos de decisio sense perdre claredat;
+- usar recorreguts sobre una llista guardada funcionalment;
+- separar diverses funcions petites amb responsabilitats diferents;
+- acumular missatges o avisos en un array;
+- documentar una taula de casos amb entrada, resultat esperat i resultat real;
+- preparar quina dada temporal caldrà mantindre entre peticions en `R2M4`.
+
+L'ampliacio no ha d'obrir encara autenticacio, autoritzacio ni refactoritzacio arquitectonica.
+
+## Checklist de tancament
+
+- [ ] He recuperat el flux funcional de `R2M2`.
+- [ ] He escrit una regla del projecte en una frase clara.
+- [ ] La regla usa dades reals del flux.
+- [ ] He implementat una decisio amb efecte visible.
+- [ ] He usat un array o estructura equivalent amb sentit.
+- [ ] He creat una funcio útil amb nom clar.
+- [ ] He provat dos casos amb resultats diferents.
+- [ ] Puc assenyalar en el codi on es pren la decisio.
+- [ ] El reintent i el guardat funcional anterior continuen funcionant.
+- [ ] El `README`, issue o registre explica la regla i els casos.
+- [ ] Si he usat IA, he registrat què m'ha aportat i què he verificat.
+
+## Connexio amb R2M4
+
+`R2M4` només té sentit si `R2M3` deixa una decisio o resultat que puga formar part d'un flux continuat. La pregunta de pas és:
+
+Quina informació temporal del teu flux o de la regla aplicada necessita recordar el sistema en la peticio següent?
