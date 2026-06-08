@@ -6,6 +6,8 @@ Esta sessio transforma el flux construït en `R2M1` i `R2M2` en una funcionalita
 
 L'objectiu no és afegir condicions, arrays o funcions perquè sí. El criteri és que la logica tinga efecte visible dins del producte: una decisio, classificacio, calcul, estat funcional o missatge diferent que l'alumnat puga explicar i provar amb dos casos.
 
+Per evitar que el microrepte quede massa ambigu, `R2M3` demana una forma concreta de treball: crear una **llibreria pròpia mínima** del projecte, per exemple `src/regles.php`, `includes/regles.php`, `lib/funcions.php` o equivalent, carregar-la amb `require_once` o `include_once`, i posar allí almenys una funcio pròpia que aplique una regla del domini. No és encara arquitectura completa, però sí una primera separacio clara entre la pàgina que rep la peticio i el codi que decideix.
+
 Al final de la sessio, cada alumne o parella ha de poder dir quina regla aplica el backend, quines dades utilitza, on està implementada i com es veu que el resultat canvia.
 
 ## Encaix dins del Repte 2
@@ -14,7 +16,7 @@ Al final de la sessio, cada alumne o parella ha de poder dir quina regla aplica 
 - **Microrepte**: `R2M3`
 - **Sessio**: `R2S3`
 - **Duracio orientativa**: `3 hores`
-- **Focus**: decisio significativa, arrays o estructures equivalents, funcions útils, regla de domini i dos casos amb resultat diferent
+- **Focus**: decisio significativa, array o estructura equivalent, funcio pròpia en fitxer separat, import amb `require_once` o equivalent, regla de domini i dos casos amb resultat diferent
 - **No entra encara**: sessio, cookies, login, rols, autoritzacio, arquitectura MVC, persistencia formal com a centre del treball o refactoritzacio general
 
 ## Relacio amb RA i criteris de treball
@@ -25,7 +27,8 @@ Al final de la sessio, cada alumne o parella ha de poder dir quina regla aplica 
 | `RA3.b` | ús de recorreguts o repeticions quan el flux treballe amb llistes, etiquetes, opcions o elements guardats |
 | `RA3.c` | ús d'arrays o estructures equivalents per representar catalegs, regles o dades del flux |
 | `RA3.d` | ús de funcions amb entrada, eixida i responsabilitat recognoscible |
-| Evidencia central | regla del projecte amb dos resultats observables i codi localitzable |
+| Organitzacio mínima | primera llibreria pròpia importada amb `require_once`, `include_once` o equivalent |
+| Evidencia central | regla del projecte implementada en una funcio pròpia separada, amb dos resultats observables |
 | Verificacio docent | execucio de dos casos, microcanvi sobre una condicio o funcio i explicacio del seu sentit funcional |
 
 ## Producte esperat
@@ -37,6 +40,7 @@ Una evolucio del flux de `R2M2` que incloga, com a minim:
 - almenys dos casos de prova amb resultat diferent;
 - un array o estructura equivalent usada amb sentit, per exemple cataleg de valors permesos, llista d'elements, etiquetes, regles, prioritats o missatges;
 - una funcio útil amb nom clar, parametres comprensibles i valor retornat o efecte explicable;
+- un fitxer separat de funcions o regles pròpies del projecte carregat des del flux amb `require_once`, `include_once` o equivalent;
 - resposta visible del sistema que canvie segons la regla;
 - nota breu al `README`, issue o registre indicant la regla, els dos casos provats i on es veu el resultat.
 
@@ -48,6 +52,7 @@ Abans de la sessio convé tindre preparat:
 
 - dos exemples de regles simples aplicables a dominis diferents;
 - una mostra curta de conversio de regla natural a funcio o condicio;
+- una mostra de fitxer `regles.php` o `funcions.php` importat amb `require_once`;
 - un exemple d'array de valors permesos o cataleg;
 - un exemple de dos casos de prova amb resultats diferents;
 - una pauta per reduir regles massa grans a una decisio verificable;
@@ -55,11 +60,34 @@ Abans de la sessio convé tindre preparat:
 
 Exemples de regles assumibles:
 
-- en una tenda, marcar un producte com a `visible`, `pendent` o `revisar` segons categoria i confirmacio;
-- en reserves, decidir si una sol·licitud queda `acceptada` o `pendent` segons places o franja;
-- en incidencies, calcular prioritat final segons urgencia i impacte;
-- en publicacions, deixar un recurs en `esborrany` o `publicat` segons camps obligatoris i confirmacio;
-- en activitats, generar un missatge diferent segons tipus, edat, places o estat.
+- en una tenda, `calcularEstatProducte($categoria, $confirmat)` retorna `visible`, `pendent` o `revisar`;
+- en reserves, `calcularEstatReserva($placesDisponibles, $placesDemanades)` retorna `acceptada` o `pendent`;
+- en incidencies, `calcularPrioritat($urgencia, $impacte)` retorna `baixa`, `mitjana` o `alta`;
+- en publicacions, `calcularEstatPublicacio($teTitol, $teCos, $confirmada)` retorna `esborrany` o `publicada`;
+- en activitats, `generarMissatgeActivitat($tipus, $edat, $places)` retorna un missatge diferent segons la regla.
+
+### Forma mínima recomanada
+
+La forma mínima recomanada és:
+
+```text
+public/
+  formulari.php
+src/
+  regles.php
+```
+
+En `src/regles.php` o equivalent:
+
+- un array de cataleg o valors permesos;
+- una funcio pròpia amb nom de domini;
+- una decisio que retorne un resultat.
+
+En la pàgina del flux:
+
+- `require_once __DIR__ . '/../src/regles.php';` o equivalent;
+- crida a la funcio amb dades reals;
+- mostra del resultat en la resposta.
 
 ## Seqüencia d'aula de 3 hores
 
@@ -81,6 +109,7 @@ Resultat del tram: cada equip té una regla mínima i dos casos previstos.
 El professorat mostra un exemple curt:
 
 - regla en llenguatge natural;
+- fitxer separat importat amb `require_once`;
 - array de valors o cataleg;
 - funcio amb nom clar;
 - condicio que retorna o prepara un resultat;
@@ -97,7 +126,9 @@ Tasques:
 
 - connectar la regla amb dades reals de `$_POST`, del mecanisme equivalent o del guardat funcional;
 - crear o adaptar un array de valors, opcions, regles o elements;
-- implementar una funcio útil;
+- crear un fitxer separat per a regles o funcions pròpies del projecte;
+- importar-lo amb `require_once`, `include_once` o equivalent;
+- implementar una funcio útil dins d'eixe fitxer;
 - usar una condicio o recorregut que genere el resultat;
 - mostrar el resultat en la resposta del servidor.
 
@@ -124,6 +155,7 @@ El professorat o una parella revisa la logica.
 Pauta de revisio:
 
 - la funcio té un nom que explica la seua responsabilitat?
+- la funcio està en un fitxer separat de llibreria pròpia i s'importa des del flux?
 - els parametres són dades del flux i no valors inventats?
 - l'array representa un cataleg, llista o regla útil?
 - la decisio canvia una resposta visible?
@@ -141,6 +173,7 @@ Tasques:
 - escriure la regla en una frase;
 - indicar els dos casos provats i els resultats esperats;
 - indicar quin array o estructura s'ha usat;
+- indicar quin fitxer de llibreria pròpia s'ha creat o reutilitzat;
 - indicar quina funcio concentra la regla o part de la logica;
 - registrar ús d'IA si ha generat o transformat codi rellevant.
 
@@ -153,6 +186,7 @@ Cada equip mostra:
 - la regla escrita;
 - els dos casos amb resultats diferents;
 - fragment de codi amb l'array o estructura equivalent;
+- fragment de codi on s'importa la llibreria pròpia;
 - fragment de codi amb la funcio;
 - punt de la resposta on es veu l'efecte.
 
@@ -165,6 +199,8 @@ Pregunta de tancament: quina decisio pren ara el servidor que abans no prenia, i
 - Escriure la regla en llenguatge natural.
 - Implementar una decisio connectada a dades reals.
 - Usar un array o estructura equivalent amb sentit.
+- Crear una llibreria pròpia mínima en un fitxer separat.
+- Importar-la amb `require_once`, `include_once` o equivalent.
 - Crear una funcio útil per expressar o reutilitzar part de la logica.
 - Provar dos casos amb resultat diferent.
 - Documentar la regla, els casos i el codi principal.
@@ -176,7 +212,8 @@ Pregunta de tancament: quina decisio pren ara el servidor que abans no prenia, i
 | Regla del projecte | està escrita en una frase clara i connectada al domini |
 | Dades reals | la decisio usa dades del formulari, del flux o del guardat funcional |
 | Array o estructura | representa opcions, cataleg, llista, regles o elements del producte |
-| Funcio | té nom clar i encapsula una comprovacio, calcul, classificacio o preparacio útil |
+| Llibreria pròpia | hi ha un fitxer separat de regles o funcions importat pel flux |
+| Funcio | està en la llibreria pròpia, té nom clar i encapsula una comprovacio, calcul, classificacio o preparacio útil |
 | Dos casos | hi ha dos enviaments o situacions amb resultats diferents |
 | Resultat visible | la resposta del servidor mostra la decisio presa |
 | Documentacio | el repositori explica la regla i com repetir els dos casos |
@@ -189,7 +226,9 @@ El microrepte està aconseguit si:
 - la regla té sentit dins del producte;
 - el resultat canvia segons dades reals;
 - l'array o estructura ajuda a representar una part del domini;
+- la funcio està separada del fitxer que rep la peticio o renderitza la resposta;
 - la funcio no és només un embolcall buit;
+- l'import de la llibreria pròpia és necessari i s'usa realment;
 - hi ha dos casos de prova reproduïbles;
 - el codi continua respectant la validacio bàsica anterior;
 - l'alumnat pot modificar una condicio o valor del cataleg i explicar l'efecte.
@@ -198,6 +237,8 @@ El microrepte està aconseguit si:
 
 - Afegir un `if` que sempre dona el mateix resultat.
 - Crear una funcio que només crida una altra línia sense aportar claredat.
+- Posar la funcio en el mateix fitxer del formulari sense cap separacio quan no hi ha cap justificacio.
+- Fer `include` o `require` d'un fitxer que després no s'usa.
 - Usar un array sense llegir-lo, recórrer-lo o consultar-lo.
 - Fer que el resultat depenga de literals fixos i no de dades del flux.
 - Escriure una regla al `README` que no està implementada.
@@ -212,6 +253,7 @@ La IA es pot usar per:
 - proposar exemples de regles segons el domini;
 - ajudar a convertir una regla natural en condicio o funcio;
 - revisar noms de funcions;
+- revisar si la separacio en fitxer de llibreria és comprensible;
 - suggerir casos de prova;
 - detectar si una condicio no cobreix els dos camins.
 
@@ -220,6 +262,7 @@ Control obligatori:
 - l'alumnat ha d'explicar la regla sense llegir codi generat;
 - ha de crear almenys un cas de prova propi;
 - ha de poder canviar una condicio, valor de l'array o retorn de la funcio i predir l'efecte;
+- ha de poder explicar per què la funcio està en un fitxer separat i on s'importa;
 - si la IA ha generat codi rellevant, s'ha de registrar breument al `AI log` o registre equivalent.
 
 ## Suport per alumnat amb més dificultat
@@ -228,7 +271,9 @@ Reduir el flux a:
 
 - una regla amb dos resultats;
 - un array de tres valors permesos;
+- un fitxer `regles.php` o equivalent;
 - una funcio que rep una dada i retorna una etiqueta o missatge;
+- un `require_once` des del fitxer principal;
 - una resposta visible amb el resultat;
 - dos casos manuals documentats.
 
@@ -241,6 +286,7 @@ Si el minim ja està tancat, l'alumnat pot:
 - afegir més casos de decisio sense perdre claredat;
 - usar recorreguts sobre una llista guardada funcionalment;
 - separar diverses funcions petites amb responsabilitats diferents;
+- organitzar una llibreria pròpia amb més d'una funcio relacionada;
 - acumular missatges o avisos en un array;
 - documentar una taula de casos amb entrada, resultat esperat i resultat real;
 - preparar quina dada temporal caldrà mantindre entre peticions en `R2M4`.
@@ -254,7 +300,9 @@ L'ampliacio no ha d'obrir encara autenticacio, autoritzacio ni refactoritzacio a
 - [ ] La regla usa dades reals del flux.
 - [ ] He implementat una decisio amb efecte visible.
 - [ ] He usat un array o estructura equivalent amb sentit.
-- [ ] He creat una funcio útil amb nom clar.
+- [ ] He creat un fitxer separat de regles o funcions pròpies.
+- [ ] He importat eixe fitxer amb `require_once`, `include_once` o equivalent.
+- [ ] He creat una funcio útil amb nom clar dins de la llibreria pròpia.
 - [ ] He provat dos casos amb resultats diferents.
 - [ ] Puc assenyalar en el codi on es pren la decisio.
 - [ ] El reintent i el guardat funcional anterior continuen funcionant.
