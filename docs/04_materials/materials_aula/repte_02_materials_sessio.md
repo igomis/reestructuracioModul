@@ -54,13 +54,13 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 - Evidència mínima del dia: flux complet provat, cas autoritzat, cas denegat i un cas d'error registrat.
 - Pregunta de tancament: què has demostrat de punta a punta i quines parts del codi revisaràs després?
 
-### Sessió clau 7. Refactorització i millora de mantenibilitat
+### Sessió clau 7. Primera peça testable amb POO i Composer
 
-- Objectiu de la sessió: netejar una part del codi que ja funciona perquè el flux quede més clar, menys duplicat, millor repartit en fitxers i més fàcil de mantindre.
-- Què s'espera al final: millora visible en noms, funcions, separació de preparació de dades i renderitzat o reducció de barreja `HTML + PHP`, amb almenys un fitxer comú importat amb `include` / `require` i una entitat mínima del domini expressada com a objecte simple.
-- Error habitual a evitar: convertir este tram en una reescriptura completa, en “ara tot a objectes” o en una entrada obligatòria a POO i BBDD com a focus del repte.
-- Evidència mínima del dia: comparativa breu abans/després, fitxer comú reutilitzat, objecte simple del domini i justificació clara de per què la versió revisada és millor.
-- Pregunta de tancament: què has separat en fitxers, quin `include` o `require` uses, quin objecte mínim has introduït i per què això prepara millor el pas a `R3` sense substituir-lo?
+- Objectiu de la sessió: convertir una regla o comprovació del flux ja provat en una classe simple carregada amb Composer i provada sense navegador.
+- Què s'espera al final: `composer.json` o equivalent, autoload, classe simple en `src/`, prova unitària mínima i prova de no regressió del flux.
+- Error habitual a evitar: convertir este tram en una reescriptura completa, en `MVC`, en `ORM`, en consum d'API externa obligatori o en “ara tot a objectes”.
+- Evidència mínima del dia: classe real del domini o servei, prova unitària executada, resultat documentat i comprovació que el flux web continua viu.
+- Pregunta de tancament: què fa la classe, com la carrega Composer, què comprova el test i què encara queda per a `R3`?
 
 ## Checkpoints curts específics
 
@@ -90,10 +90,10 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
   - Senyal d'alerta: el grup ensenya una demo memòria però no una prova repetible.
   - Acció correctiva ràpida: documentar només tres casos clau abans d'obrir la sessió `7`.
 - `CP-R2.6`
-  - Què hauria d'estar fet: refactorització final amb millora clara de mantenibilitat i flux encara viu.
-  - Com es verifica en `2-3` minuts: comparar un fragment abans/després i repetir una prova curta del flux.
-  - Senyal d'alerta: hi ha canvi visual de fitxers, però no una millora explicable del codi.
-  - Acció correctiva ràpida: tornar a una sola millora clara de noms, funcions o separació de responsabilitats.
+  - Què hauria d'estar fet: Composer/autoload, classe simple, prova unitària mínima i flux encara viu.
+  - Com es verifica en `2-3` minuts: executar el test i repetir una prova curta del flux.
+  - Senyal d'alerta: hi ha classe o Composer, però no es carrega, no es prova o no té una regla real.
+  - Acció correctiva ràpida: reduir-ho a una sola regla del domini i un test automàtic mínim.
 
 ## Exemples de feedback ràpid
 
@@ -101,7 +101,7 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 - Cal corregir abans de seguir: `No pots obrir R3 si encara no hi ha una operació de negoci protegida i reproduïble.`
 - Tens funcionalitat però falta coherència: `La sessió funciona, però encara no queda clara la diferència entre estat temporal i informació del domini.`
 - Tens solució massa superficial: `El login funciona, però el producte encara no resol res rellevant amb eixa auth.`
-- Tens la base preparada per a la sessió 7: Ara que el flux ja passa la prova mínima, toca netejar duplicació, separar funcions comunes en fitxers, usar `require_once` amb sentit i donar forma a una entitat mínima del domini.
+- Tens la base preparada per a la sessió 7: Ara que el flux ja passa la prova mínima, toca triar una regla, fer-ne una classe simple, carregar-la amb Composer i provar-la sense navegador.
 - Tens marge per ampliar: `Si el flux principal ja està tancat, pots afegir una segona regla del projecte o millorar el tractament d'errors.`
 
 ## Fulls de treball base contextualitzats
@@ -124,14 +124,14 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 - Ajuda si et bloqueges: tanca només una operació central i elimina funcionalitat lateral.
 - Ampliació si acabes prompte: afegeix una segona restricció o una prova més sistemàtica del mateix flux.
 
-### Full 3. Refactorització i mantenibilitat
+### Full 3. Primera peça testable
 
-- Objectiu: revisar el flux ja tancat i deixar-lo una mica més clar, reutilitzable i mantenible.
-- Tasca: reduir duplicació, millorar noms, extraure funcions útils a un fitxer separat, importar-les amb `include` / `require` i representar almenys una entitat del domini amb un objecte simple.
-- Evidència a generar: comparativa breu abans/després, fitxer comú reutilitzat, objecte simple recognoscible i justificació clara de la millora.
-- Validació mínima: el flux continua funcionant després dels canvis.
-- Ajuda si et bloqueges: tria una sola part del codi que estiga repetida o massa mesclada i neteja només eixa peça.
-- Ampliació si acabes prompte: prova una separació lleu d'arxius amb `require_once` o reforça l'objecte mínim del domini només si realment millora el flux i sense obrir encara `R3`.
+- Objectiu: convertir una regla del flux ja tancat en una peça que es puga provar automàticament.
+- Tasca: configurar Composer/autoload, crear una classe simple i escriure una prova unitària mínima.
+- Evidència a generar: `composer.json`, classe, test executat, resultat documentat i prova de no regressió del flux.
+- Validació mínima: el test s'executa i el flux continua funcionant després dels canvis.
+- Ajuda si et bloqueges: tria una sola regla del domini que reba valors simples i torne un resultat simple.
+- Ampliació si acabes prompte: afegeix una llibreria externa menuda o una API només si té sentit real i queda documentat com a ampliació.
 
 ## Suport per alumnat endarrerit
 
@@ -146,7 +146,7 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 - millor tractament de fitxer o imatge quan forme part del cas d'ús
 - proves més sistemàtiques del cas correcte i incorrecte
 - millor registre d'incidències i preparació de `R3`
-- revisió final de mantenibilitat sobre codi ja funcional amb millora de noms, funcions, separació en fitxers o un objecte mínim del domini
+- llibreria externa menuda via Composer o una API externa amb sentit real dins del projecte
 
 ## Evidència mínima per tram
 
@@ -154,10 +154,10 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 - Tram funcional: reutilització de la informació correcta, regla del projecte i estat temporal
 - Tram protegit: autenticació funcional i operació de negoci protegida
 - Tram de checkpoint tècnic: errors mínims controlats, prova reproduïble i `README` actualitzat
-- Tram final de mantenibilitat: codi revisat, fitxer comú reutilitzat, objecte simple del domini, comparativa abans/després i justificació de la millora
+- Tram final testable: Composer/autoload, classe simple, prova unitària mínima i prova de no regressió del flux
 
 ## Connexió amb el repte següent
 
 El `R2` ha de deixar un flux prou real per justificar `R3`. Si només hi ha auth aparent, o si la dada correcta encara no es reutilitza dins del producte, la refactorització i la persistència no tindran una base funcional seriosa sobre la qual treballar.
 
-La sessió `7` ha de servir per netejar i fer més mantenible el que ja funciona, introduir organització bàsica en fitxers i un objecte mínim del domini, no per avançar tota l'arquitectura del repte següent.
+La sessió `7` ha de servir per crear una primera peça testable amb POO, Composer i prova unitària, no per avançar tota l'arquitectura del repte següent.

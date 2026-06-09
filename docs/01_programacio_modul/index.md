@@ -31,7 +31,7 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - [R2S4. Estat, sessió i cookies](programacio_aula_r2s4_estat_sessio_cookies.md): fitxa d'aula executable per a la quarta sessió de `R2`, associada al microrepte `R2M4`.
 - [R2S5. Autenticació i funcionalitat protegida](programacio_aula_r2s5_autenticacio_funcionalitat_protegida.md): fitxa d'aula executable per a la cinquena sessió de `R2`, associada al microrepte `R2M5`.
 - [R2S6. Proves, depuració i checkpoint tècnic](programacio_aula_r2s6_proves_depuracio_checkpoint.md): fitxa d'aula executable per a la sisena sessió de `R2`, associada al microrepte `R2M6`.
-- [R2S7. Refactorització i mantenibilitat](programacio_aula_r2s7_refactoritzacio_mantenibilitat.md): fitxa d'aula executable per a la setena sessió de `R2`, associada al microrepte `R2M7`.
+- [R2S7. Primera peça testable amb POO i Composer](programacio_aula_r2s7_primera_peca_testable_poo_composer.md): fitxa d'aula executable per a la setena sessió de `R2`, associada al microrepte `R2M7`.
 - [R2SX. Microdefenses tècniques de criteris](programacio_aula_r2sx_microdefenses_tecniques_criteris.md): verificació d'autoria, comprensió i ús d'IA al tancament de `R2`.
 - [R3SX. Microdefenses tècniques de criteris](programacio_aula_r3sx_microdefenses_tecniques_criteris.md): defensa breu d'arquitectura, persistència i flux end-to-end al tancament de `R3`.
 - [R4SX. Microdefenses tècniques de criteris](programacio_aula_r4sx_microdefenses_tecniques_criteris.md): verificació de contracte, protecció, consum i documentació de servei al tancament de `R4`.
@@ -57,7 +57,7 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - per impartir la primera sessió de `R2`: [R2S1. Entrada variada i validació de servidor](programacio_aula_r2s1_entrada_variada_validacio_servidor.md)
 - per impartir la segona sessió de `R2`: [R2S2. Processament, reintent i guardat funcional](programacio_aula_r2s2_processament_reintent_conservacio_dades.md)
 - per impartir la tercera sessió de `R2`: [R2S3. Lògica del flux i regles del projecte](programacio_aula_r2s3_logica_flux_regles_projecte.md)
-- per impartir les sessions finals de `R2`: [R2S4](programacio_aula_r2s4_estat_sessio_cookies.md), [R2S5](programacio_aula_r2s5_autenticacio_funcionalitat_protegida.md), [R2S6](programacio_aula_r2s6_proves_depuracio_checkpoint.md) i [R2S7](programacio_aula_r2s7_refactoritzacio_mantenibilitat.md)
+- per impartir les sessions finals de `R2`: [R2S4](programacio_aula_r2s4_estat_sessio_cookies.md), [R2S5](programacio_aula_r2s5_autenticacio_funcionalitat_protegida.md), [R2S6](programacio_aula_r2s6_proves_depuracio_checkpoint.md) i [R2S7](programacio_aula_r2s7_primera_peca_testable_poo_composer.md)
 - per verificar autoria després dels reptes: [R2SX](programacio_aula_r2sx_microdefenses_tecniques_criteris.md), [R3SX](programacio_aula_r3sx_microdefenses_tecniques_criteris.md), [R4SX](programacio_aula_r4sx_microdefenses_tecniques_criteris.md) i [R5SX](programacio_aula_r5sx_microdefenses_tecniques_criteris.md)
 - per activar una via d'excellencia sense improvisar: [ampliacions 9 a 10 per repte](../ampliacions-9-a-10-per-repte.md)
 - per obrir el curs sense improvisar: [preparacio docent directa](preparacio_docent_directa_curs_que_ve.md) i [ajustos finals](ajustos_finals_abans_inici_curs.md)

@@ -4,11 +4,11 @@
 
 - **Funció didàctica principal**: construcció nuclear.
 - **Objectiu**: construir la primera funcionalitat protegida del projecte base sobre base comuna en `PHP`.
-- **Producte esperat**: flux de dades complet amb estat, autenticació, validació, operació de domini restringida i primera millora de mantenibilitat.
+- **Producte esperat**: flux de dades complet amb estat, autenticació, validació, operació de domini restringida i primera peça testable amb POO i Composer.
 - **Evidències**: formularis o entrada equivalent, validacions visibles, proves mínimes, registre breu d'errors corregits, comparativa solució inicial / IA / solució final quan corresponga, documentació actualitzada i checkpoint tècnic.
 - **Paper de la IA**: ús assistit per IA permés per validacions, depuració i documentació; els límits i la delegació excessiva depenen de [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md).
 - **Relació amb el projecte base**: transforma l'arrencada de `R1` en la primera funcionalitat de negoci del projecte base i prepara l'entrada a `R3`.
-- **Checkpoint de control**: flux complet abans de la refactorització final, amb cas autoritzat, cas denegat, revisió d'errors i traçabilitat de l'ús assistit per IA.
+- **Checkpoint de control**: flux complet abans de crear la peça testable final, amb cas autoritzat, cas denegat, revisió d'errors i traçabilitat de l'ús assistit per IA.
 - **Instrument dominant**: rúbrica del repte sobre flux funcional protegit.
 - **Instrument de comprensió**: mini defensa tècnica al checkpoint `R2M6`.
 - **Instrument de control de delegació excessiva**: revisió de repositori, `AI log` i microcanvi en viu sobre validació o autenticació.
@@ -50,7 +50,7 @@ Una primera funcionalitat de domini protegida, construïda sobre una seqüència
 - validació i tractament d’errors
 - proves mínimes o verificacions registrades
 - documentació tècnica actualitzada
-- revisió final del codi orientada a mantenibilitat, organització en fitxers i justificació de la millora, amb una primera entitat simple del domini
+- primera peça testable: classe simple del domini o servei, Composer, autoload, prova unitària inicial i prova de no regressió del flux
 
 **Context professional simul·lat o realista**
 
@@ -74,9 +74,9 @@ La baixada operativa d’este repte es concreta en la [Programació d'aula del R
 
 La base recomanada del repte és de `21` hores, organitzades en `7` sessions de `3` hores, una per cada microprojecte docent principal.
 
-La sessió `7` està dedicada específicament a refactorització i millora de mantenibilitat sobre codi que ja funciona i que ja ha passat per prova, depuració i checkpoint tècnic, incorporant organització simple en fitxers amb `include` / `require` i una primera entitat de domini com a objecte simple.
+La sessió `7` està dedicada específicament a convertir una regla o comprovació del flux ja provat en una classe simple carregada amb Composer i verificada amb una primera prova unitària.
 
-Açò reforça el valor integrador de `R2` com a fase final de preparació del pas a `RA5`, però no el convertix en una entrada obligatòria a POO completa, BBDD com a focus principal ni reescriptura arquitectònica total del repte següent.
+Açò reforça el valor integrador de `R2` com a fase final de preparació del pas a `RA5`, però no el convertix en una entrada obligatòria a POO completa, BBDD com a focus principal, consum d'API externa ni reescriptura arquitectònica total del repte següent.
 
 ---
 
@@ -101,9 +101,9 @@ La lectura docent del repte ha de ser seqüencial:
 - **RA2**: el sistema deixa de ser una pàgina estàtica i genera resposta en servidor amb `PHP`, variables, operadors, àmbits, directives i processament elemental.
 - **RA3**: el flux incorpora formularis, recuperació de dades, decisions, estructures i funcions que modifiquen el comportament del producte.
 - **RA4**: el projecte manté estat entre peticions, introdueix sessió o mecanisme equivalent, autentica usuaris i protegix una operació real.
-- **Preparació de RA5**: la refactorització final no avalua encara una arquitectura completa, però deixa visibles responsabilitats, duplicacions i peces que després s'hauran de separar millor en `R3`.
+- **Preparació de RA5**: la peça testable final no avalua encara una arquitectura completa, però deixa visible com una regla pot separar-se, carregar-se amb autoload i provar-se sense navegador abans de `R3`.
 
-Esta progressió evita dos errors habituals: començar directament pel login sense base de processament i confondre la sessió final amb una migració prematura a `MVC` o POO completa.
+Esta progressió evita dos errors habituals: començar directament pel login sense base de processament i confondre la sessió final amb una migració prematura a `MVC`, ORM o POO completa.
 
 **Traçabilitat mínima entre microprojectes, RA i verificació**
 
@@ -115,7 +115,7 @@ Esta progressió evita dos errors habituals: començar directament pel login sen
 | `R2M4` | `RA4` | estat, sessió o cookies amb recuperació i invalidació | demo de recuperació i neteja, més pregunta sobre què es guarda i on |
 | `R2M5` | `RA4` | autenticació funcional i operació de domini protegida | demo de cas permés i cas denegat amb explicació del punt de control |
 | `R2M6` | `RA4` | bateria mínima de proves, incidències i documentació reproduïble | execució d'un cas triat pel professorat i contrast amb `README`, repositori i AI log |
-| `R2M7` | `RA3` + `RA4` | refactorització amb fitxer comú, objecte simple, comparativa i prova de no regressió | revisió del diff, execució del flux i defensa de la millora de mantenibilitat |
+| `R2M7` | `RA3` + `RA4` | Composer/autoload, classe simple, prova unitària inicial i prova de no regressió | execució del test, revisió de la classe, execució del flux i defensa de què queda ara més testable |
 
 ---
 
@@ -186,7 +186,7 @@ Mòdul funcional integrat en el projecte que incloga:
 - tractament d’errors
 - proves mínimes o verificacions registrades
 - documentació tècnica actualitzada
-- revisió final del codi amb una millora de mantenibilitat justificable
+- primera peça testable amb Composer, classe simple i prova unitària justificable
 
 **Criteris d’avaluació principals del nucli**
 
@@ -266,32 +266,31 @@ Una operació protegida és defensable quan es pot assenyalar:
 - **Activitats, reserves o esdeveniments**: creació o gestió d’una reserva o activitat amb data, places i possibles adjunts; el sistema valida, recupera estat temporal del flux i restringix una operació de confirmació, edició o gestió.
 - **Recursos, publicacions o continguts**: alta d’un recurs, notícia o publicació amb text i, quan toque, fitxer o imatge; el servidor tracta dades, conserva el recurs, l’autenticació protegix una acció del domini i la prova documenta els casos correcte i denegat.
 
-### 4.4 Setena fase del repte: refactorització i millora de mantenibilitat
+### 4.4 Setena fase del repte: primera peça testable amb POO i Composer
 
 La seqüència base del repte queda en `7` microprojectes obligatoris.
 
-La sessió `7` s’activa després del checkpoint tècnic del microprojecte `R2M6` i servix per revisar el codi que ja funciona, netejar-lo i deixar-lo més clar i més mantenible com a fase final de refactorització i preparació del pas a `RA5`, sense avançar encara el nucli metodològic de `R3`.
+La sessió `7` s’activa després del checkpoint tècnic del microprojecte `R2M6` i servix per convertir una regla o comprovació del flux que ja funciona en una classe simple, carregada amb Composer i verificada amb una prova unitària mínima.
 
 Esta fase final ha d’incloure com a mínim treball com:
 
-- reducció de la mescla excessiva de `HTML + PHP`
-- extracció de funcions comunes a un fitxer separat
-- ús amb sentit de `include` / `require` i, quan convinga, de `include_once` / `require_once`
-- millor ordenació del codi
-- millora de noms
-- reducció de duplicació
-- separació més clara entre preparació de dades i renderitzat
-- primera representació d’una entitat del domini com a objecte simple
-- justificació breu de per què la nova versió és millor
+- `composer.json` amb autoload configurat o alternativa equivalent justificada
+- una classe simple en `src/` o carpeta equivalent
+- una regla, comprovació o càlcul real dins de la classe
+- independència de la classe respecte de `$_POST`, `$_SESSION`, `$_COOKIE` i `HTML`
+- prova unitària mínima amb `PHPUnit`, `Pest` o script automàtic equivalent
+- execució documentada de la prova
+- prova de no regressió d’un cas clau del flux web
 
 Esta fase final no ha de convertir-se en:
 
 - migració completa del projecte a POO
 - entrada obligatòria a BBDD com a focus central
 - arquitectura completa tipus `MVC`
+- consum d'API externa com a mínim obligatori
 - substitució del treball propi de `R3`
 
-Si apareixen més classes, més objectes o alguna persistència més formal, s’han de llegir com a millora de mantenibilitat, tast introductori o pont cap a `R3`, no com a exigència nuclear de `R2`.
+Si apareixen més classes, una llibreria externa via Composer o alguna crida a API, s’han de llegir com a millora opcional o pont cap als reptes següents, no com a exigència nuclear de `R2`.
 
 ---
 
@@ -838,37 +837,34 @@ Checklist de verificació + defensa tècnica.
 
 ---
 
-### Microrepte R2M7 — Refactorització i millora de mantenibilitat
+### Microrepte R2M7 — Primera peça testable amb POO i Composer
 
 **Tipus**
 
-Microprojecte integrador de revisió, reutilització i reorganització lleu del codi.
+Microprojecte integrador d’introducció acotada a POO, Composer, autoload i proves unitàries.
 
 **Objectiu**
 
-Revisar el codi ja funcional del repte, netejar-lo i justificar una millora real de mantenibilitat que incorpore reutilització en fitxers, `include` / `require` amb sentit i una primera entitat simple del domini, sense convertir encara `R2` en una reescriptura arquitectònica completa.
+Convertir una regla, comprovació o càlcul del flux ja funcional en una classe simple carregada amb Composer i verificada amb una prova unitària mínima, sense convertir encara `R2` en una reescriptura arquitectònica completa.
 
 **Tasca**
 
-L’equip revisa el flux que ja ha sigut provat i documentat i aplica una millora clara de mantenibilitat, que ha d’incloure com a mínim:
+L’equip revisa el flux que ja ha sigut provat i documentat i crea una peça testable, que ha d’incloure com a mínim:
 
-- reducció de duplicació
-- extracció de funcions útils a un fitxer separat
-- ús amb sentit de `include` / `require` o, quan toque, de `include_once` / `require_once`
-- millora de noms
-- separació més clara entre preparació de dades i renderitzat
-- reducció de la mescla excessiva de `HTML + PHP`
-- reorganització lleu d’arxius o peces del flux quan tinga sentit
-- una entitat mínima del domini expressada com a objecte simple
-- comprovació final que el flux continua viu després del canvi
+- `composer.json` amb autoload configurat
+- ús de `vendor/autoload.php` o mecanisme equivalent
+- una classe simple en `src/` o carpeta equivalent
+- una regla, comprovació o càlcul real del projecte dins de la classe
+- una prova unitària mínima que s’execute sense navegador
+- comprovació final que el flux web continua viu després del canvi
 
-Esta fase no ha de convertir-se en POO completa, en una arquitectura `MVC` ja tancada ni en una entrada obligatòria a BBDD com a focus principal.
+Esta fase no ha de convertir-se en POO completa, en una arquitectura `MVC` ja tancada, en una entrada obligatòria a BBDD com a focus principal ni en consum d'API externa obligatori.
 
-Si apareixen més classes, més objectes o una persistència un poc més formal, han de quedar com a tast introductori, millora puntual o pont cap a `R3`, no com a exigència de reescriptura total.
+Si apareixen més classes, una llibreria externa o una API, han de quedar com a tast introductori, millora puntual o pont cap als reptes següents, no com a exigència de reescriptura total.
 
 **Relació amb el producte principal**
 
-Este microprojecte tanca `R2` amb un guany explícit de claredat i mantenibilitat i deixa el pas a `R3` millor preparat, però sense anticipar encara l’arquitectura gran del repte següent.
+Este microprojecte tanca `R2` amb una primera peça que es pot provar automàticament i deixa el pas a `R3` millor preparat, però sense anticipar encara l’arquitectura gran del repte següent.
 
 **CA coberts**
 
@@ -878,51 +874,50 @@ Este microprojecte tanca `R2` amb un guany explícit de claredat i mantenibilita
 
 **Descripció dels CA en llenguatge docent**
 
-- L’alumnat reorganitza parts del flux en funcions o peces més clares, repartides en fitxers quan això millora el manteniment.
-- L’alumnat deixa el codi més llegible i millor justificat.
-- L’alumnat fa visible una primera entitat del domini com a objecte simple sense convertir tot el repte en POO completa.
-- L’alumnat comprova que la revisió final no ha trencat el comportament funcional del sistema.
+- L’alumnat encapsula una regla o comprovació en una classe simple.
+- L’alumnat configura Composer/autoload o justifica una alternativa equivalent.
+- L’alumnat executa una prova unitària mínima.
+- L’alumnat comprova que el canvi no ha trencat el comportament funcional del sistema.
 
 **Paper de la IA**
 
-La IA pot ajudar a detectar duplicació, suggerir extracció de funcions, proposar quan usar `include` o `require`, esbossar un objecte mínim del domini o millorar documentació tècnica, però l’alumnat ha de decidir què canvia, verificar que el flux continua funcionant i justificar per què la nova versió és millor. La decisió final ha d'estar basada en un problema real del codi inicial: duplicació, responsabilitat confusa, mescla excessiva de presentació i processament, noms poc clars o difícil reutilització.
+La IA pot ajudar a esbossar `composer.json`, proposar una classe mínima, preparar una prova unitària o millorar documentació tècnica, però l’alumnat ha de decidir quina regla encapsula, executar la prova, verificar que el flux continua funcionant i explicar per què la peça és testable.
 
 **Evidències obligatòries**
 
-- comparativa breu abans/després
-- reducció visible d’algun problema de claredat, duplicació o mescla innecessària
-- almenys un fitxer comú importat amb criteri
-- almenys una entitat simple del domini expressada com a objecte
-- justificació de la millora de mantenibilitat
+- `composer.json` amb autoload o alternativa equivalent justificada
+- classe simple del domini o servei
+- prova unitària mínima
+- resultat documentat de la prova
 - comprovació que el flux continua funcionant després del canvi
 - documentació tècnica o nota breu actualitzada sobre la revisió final
 - defensa tècnica breu
 
 **Instrument d’avaluació**
 
-Rúbrica curta de refactorització i mantenibilitat.
+Rúbrica curta de POO, Composer i prova unitària inicial.
 
 **Indicadors d’assoliment**
 
-- la millora és real i no cosmètica
-- el flux continua viu després de la revisió
-- l’equip sap explicar què ha netejat i per què
-- la comparativa abans/després identifica un problema concret i una reducció de risc o complexitat
+- la classe conté una regla real i no és decorativa
+- el flux continua viu després del canvi
+- l’equip sap explicar què prova la prova unitària i què prova el flux web
+- Composer/autoload carrega la classe
 - la sessió no s’ha convertit en una reescriptura total fora d’escala ni en un fals `R3`
 
 **Riscos habituals**
 
-- canviar massa coses sense necessitat
-- obrir POO o persistència com a focus central abans d’hora
-- deixar el codi més dispers o menys clar que abans
-- usar `include` / `require` sense poder justificar per què s’ha separat cada peça
-- no poder justificar el valor real del canvi
+- crear una classe buida o només decorativa
+- posar `HTML` o superglobals dins de la classe
+- configurar Composer però no usar l'autoload
+- fer una prova que no s'executa
+- obrir MVC, ORM, framework o API externa com si fora obligatori
 
 **Verificació del treball real**
 
-- comparació entre versió inicial i revisada
-- execució breu del flux després de la revisió
-- pregunta oral sobre què s’ha millorat, per què s’ha separat en fitxers, què aporta l’objecte mínim i què encara es reserva per a `R3`
+- execució de la prova unitària
+- execució breu del flux després del canvi
+- pregunta oral sobre què fa la classe, com la carrega Composer, què comprova el test i què encara es reserva per a `R3`
 
 **Pes orientatiu dins del repte**
 
@@ -940,7 +935,7 @@ Rúbrica curta de refactorització i mantenibilitat.
 | R2M4 | Procedimental | Estat, sessió i/o cookies | RA4.a, RA4.b, RA4.c | demo d’estat, recuperació i invalidació | checklist | 15% |
 | R2M5 | Procedimental | Autenticació i operació protegida | RA4.d, RA4.e | login, operació protegida, cas autoritzat i denegat | rúbrica | 20% |
 | R2M6 | Tancament / verificació | Proves, documentació mínima i checkpoint tècnic | RA4.f | proves, incidències, documentació, defensa | checklist + defensa | 10% |
-| R2M7 | Integrador | Refactorització, organització en fitxers i objecte mínim del domini | RA3.d, RA3.g, RA4.f | comparativa abans/després, fitxer comú, objecte simple, comprovació final | rúbrica curta | 10% |
+| R2M7 | Integrador | Primera peça testable amb POO i Composer | RA3.d, RA3.g, RA4.f | composer.json/autoload, classe simple, prova unitària i comprovació final | rúbrica curta | 10% |
 
 ---
 
@@ -963,8 +958,8 @@ Rúbrica curta de refactorització i mantenibilitat.
 - cas positiu i cas negatiu
 - registre de proves mínimes
 - documentació tècnica actualitzada
-- evidència de revisió final del codi i justificació de la millora de mantenibilitat
-- almenys un fitxer comú importat amb criteri i una entitat simple del domini expressada com a objecte
+- composer.json/autoload o alternativa equivalent justificada
+- classe simple del domini o servei i prova unitària mínima
 - AI log quan hi haja ús d’IA
 
 **Evidències opcionals d’ampliació**
@@ -972,7 +967,8 @@ Rúbrica curta de refactorització i mantenibilitat.
 - més d’una operació protegida
 - millora dels missatges d’error
 - rols addicionals
-- test automatitzat mínim
+- llibreria externa menuda via Composer
+- crida a API externa si té sentit dins del projecte
 - millor observabilitat del flux
 - més classes, més objectes o alguna millora puntual de persistència com a tast introductori
 - preparació més detallada del Repte 3
@@ -1003,7 +999,7 @@ A més d'eixa bateria mínima, la prova hauria d'incloure, quan corresponga:
 - conservació funcional o reutilització posterior de la informació correcta
 - cas autoritzat de la funcionalitat protegida
 - cas denegat de la funcionalitat protegida
-- comprovació que el flux continua viu després de la sessió final de refactorització
+- comprovació que el flux continua viu després de la peça testable final
 - tractament d’imatge o fitxer, si forma part del flux
 
 ### 7.2 Presentació de proves
@@ -1116,7 +1112,7 @@ No es demana:
 
 - base recomanada: `21` hores
 - organització base: `7` sessions de `3` hores
-- la sessió `7` es reserva a refactorització i millora de mantenibilitat del flux ja funcional
+- la sessió `7` es reserva a crear una primera peça testable amb POO, Composer i prova unitària
 
 **Moment del curs**
 
@@ -1150,7 +1146,7 @@ Es pot implementar sobre la base comuna en `PHP` fixada pel curs o pel departame
 - autenticació funcional
 - una operació protegida
 - proves mínimes
-- refactorització final orientada a mantenibilitat
+- primera peça testable amb POO i Composer
 - documentació i defensa
 
 **Ampliacions realistes**
@@ -1174,7 +1170,7 @@ Es pot implementar sobre la base comuna en `PHP` fixada pel curs o pel departame
 
 **Pregunta de síntesi per a l’alumnat**
 
-Com hem passat d’un simple punt d’entrada de dades a una funcionalitat de producte real protegida, què hem netejat o millorat en la sessió final i què necessitarem reorganitzar de manera més profunda en el Repte 3?
+Com hem passat d’un simple punt d’entrada de dades a una funcionalitat de producte real protegida, quina regla hem convertit en una peça testable en la sessió final i què necessitarem reorganitzar de manera més profunda en el Repte 3?
 
 **Criteri de superació del repte**
 
@@ -1187,14 +1183,14 @@ El repte es considera superat quan:
 - l’autenticació és funcional
 - almenys una operació del domini queda protegida i es pot demostrar tant en cas autoritzat com en cas denegat
 - les proves mínimes i la documentació són coherents amb el comportament observat
-- la sessió final deixa una millora de mantenibilitat real i justificable
+- la sessió final deixa una classe simple carregada amb Composer i provada amb una prova unitària mínima
 - l’alumnat pot defensar tècnicament allò construït
 
 **Observacions docents**
 
 Este repte s’ha de llegir com una progressió completa dins de SA2. Per tant, no s’hauria de reduir a un bloc d’autenticació. El seu valor està en connectar fonaments bàsics de programació en servidor amb una primera funcionalitat de producte realment protegida.
 
-La sessió final de refactorització s’ha de llegir com a tancament integrador de mantenibilitat. No és encara una entrada obligatòria a POO completa, a BBDD com a focus principal ni a una reescriptura total del repte.
+La sessió final s’ha de llegir com a tancament integrador cap a codi testable. No és encara una entrada obligatòria a POO completa, a BBDD com a focus principal, a API externa ni a una reescriptura total del repte.
 
 ---
 

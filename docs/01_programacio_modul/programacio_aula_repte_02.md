@@ -18,7 +18,7 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 - `7` sessions de `3` hores
 - cada sessió es correspon amb un microprojecte docent concret
 
-`R2` queda fixat amb estes `7` sessions com a base. La sessió `7` està dedicada específicament a refactorització i millora de mantenibilitat sobre un flux ja verificat.
+`R2` queda fixat amb estes `7` sessions com a base. La sessió `7` està dedicada específicament a convertir una part del flux ja verificat en una primera peça testable amb POO, Composer i una prova unitària inicial.
 
 ## Coordinació explícita entre sessions i microprojectes
 
@@ -30,7 +30,7 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 | `4` | `3h` | `R2M4` | estat, sessió i/o cookies | recuperació del flux i invalidació controlada |
 | `5` | `3h` | `R2M5` | autenticació i funcionalitat protegida | cas autoritzat i cas denegat d'una operació real |
 | `6` | `3h` | `R2M6` | prova, depuració, documentació mínima i checkpoint tècnic | checklist, README i demo reproduïble |
-| `7` | `3h` | `R2M7` | refactorització final, organització en fitxers i primer objecte de domini | comparativa abans/després, reutilització en fitxers i justificació de la millora |
+| `7` | `3h` | `R2M7` | primera peça testable amb POO i Composer | classe mínima, autoload de Composer i prova unitària inicial |
 
 ## Correspondència curta sessió -> RA -> evidència -> verificació
 
@@ -44,7 +44,7 @@ Esta taula és el mapa mínim de traçabilitat docent del repte. No substituïx 
 | `4` | `RA4` | `RA4.a`, `RA4.b`, `RA4.c` | estat temporal, sessió, cookies i invalidació | recuperació d'estat i neteja o caducitat demostrada | execució de recuperació i invalidació, més pregunta sobre què queda en client, servidor o flux funcional |
 | `5` | `RA4` | `RA4.d`, `RA4.e` | identificació, autenticació, autorització i protecció d'una operació real | cas autenticat permés i cas no permés sobre una acció del domini | demo dels dos casos i pregunta sobre el punt exacte on es comprova la restricció |
 | `6` | `RA4` | `RA4.f` | prova, depuració, documentació i reproduïbilitat | taula mínima de proves, incidències i README actualitzat | execució d'un cas triat pel professorat i contrast amb documentació, codi i AI log |
-| `7` | `RA3` + `RA4` | `RA3.d`, `RA3.g`, `RA4.f` | refactorització funcional, mantenibilitat i preparació cap a `RA5` | comparativa abans/després, fitxer comú, objecte simple i prova de no regressió | revisió del diff, execució del flux i defensa de què millora ara i què queda per a `R3` |
+| `7` | `RA3` + `RA4` | `RA3.d`, `RA3.g`, `RA4.f` | POO mínima, Composer, autoload i primera prova unitària | classe simple del domini o servei, `composer.json`, test unitari i prova de no regressió | execució del test, revisió de la classe i defensa de què queda ara més testable |
 
 ## Conceptes que han de quedar diferenciats
 
@@ -70,7 +70,7 @@ La IA pot aparéixer en totes les sessions, però el seu ús només compta com a
 | `4` | interpretació d'errors de sessió, cookies o estat | demostració de què es guarda, on es guarda i quan s'invalida |
 | `5` | esquelet de login, comprovació d'accés o missatges d'error | demo de cas permés i cas bloquejat, amb explicació del punt de control |
 | `6` | generació o ampliació de casos de prova i ajuda en debugging | execució dels casos i registre de què s'ha acceptat, descartat o corregit |
-| `7` | proposta de refactorització, detecció de duplicació o documentació | comparativa abans/després i justificació pròpia de la decisió final |
+| `7` | suport per crear classe mínima, `composer.json` o test inicial | execució del test i justificació pròpia de la peça testable |
 
 ## Seqüència recomanada de sessions
 
@@ -286,7 +286,7 @@ Una regla del domini implementada amb efecte visible i almenys dos casos de prov
 - ajudar a convertir regles massa grans en una regla executable en tres hores
 - impedir lògica ornamental que no afecte el flux
 - demanar casos diferents abans de donar per bona la sessió
-- assenyalar duplicacions o responsabilitats confuses per a la refactorització final
+- assenyalar una regla o comprovació candidata a convertir-se en classe testable en la sessió final
 
 #### Tasques concretes de l'alumnat
 - escriure la regla en una frase clara
@@ -574,109 +574,85 @@ Cada cas ha d'incloure entrada, resultat esperat, resultat obtingut i incidènci
 
 ### Sessió 7. Microprojecte 7
 
-**Sessió 7 — Refactorització com a millora de responsabilitats i mantenibilitat**
+**Sessió 7 — Primera peça testable amb POO i Composer**
 
 #### Finalitat específica de la sessió
-Millorar codi que ja funciona perquè tinga responsabilitats més clares, menys duplicació i una estructura més mantenible, sense convertir el tancament de `R2` en una reescriptura arquitectònica.
+Convertir una regla o comprovació xicoteta del flux ja provat en una classe simple carregada amb Composer i verificada amb una primera prova unitària.
 
 #### RA/focus tècnic
-Focus transversal en `RA2`, `RA3` i preparació de `R3`: organització de codi, reutilització, responsabilitats, `include` / `require`, funcions comunes i primer objecte simple del domini.
+Focus transversal en `RA3` i `RA4`: encapsulació mínima, autoload, prova unitària inicial i no regressió del flux complet.
 
 #### Producte o microresultat esperat
-Comparativa abans/després amb una millora concreta de mantenibilitat: menys duplicació, responsabilitats més clares, fitxer comú importat amb criteri i, si és viable, una entitat simple del domini.
+Classe simple del domini o servei, `composer.json`, autoload funcional, prova unitària mínima i comprovació que el flux web continua funcionant.
 
 #### Seqüència temporal orientativa dins de les 3 hores
 
-##### 0:00-0:25 — Selecció de zona de refactorització
+##### 0:00-0:20 — Selecció de peça testable
 - partir de la bateria de proves de la sessió `6`
-- triar una part del codi que funciona però és difícil de mantindre
-- identificar duplicació, mescla de responsabilitats o noms confusos
+- triar una regla, comprovació o càlcul estable
+- evitar triar una pantalla completa
 
-##### 0:25-0:55 — Modelatge docent
-- mostrar un abans/després curt
-- extraure una funció o fitxer comú
-- importar-lo amb `require_once` o equivalent
-- explicar què ha canviat en responsabilitats, no només en ubicació de fitxers
-- repetir una prova per comprovar que no hi ha regressió
+##### 0:20-0:50 — Modelatge docent
+- mostrar una classe mínima en `src/`
+- configurar `composer.json`
+- carregar amb `vendor/autoload.php`
+- executar una prova unitària amb cas positiu i negatiu
 
-##### 0:55-1:45 — Refactorització de l'alumnat
-- netejar una part acotada del flux
-- separar preparació de dades, validació, acció o renderitzat quan siga possible
-- extraure funcions comunes o configuració repetida
-- usar `include`, `require`, `include_once` o `require_once` amb criteri
+##### 0:50-1:30 — Composer i classe
+- crear `composer.json`
+- configurar autoload
+- crear una classe simple
+- moure o reimplementar una regla acotada en un mètode
 
-##### 1:45-2:15 — Primer objecte o entitat mínima del domini
-- representar una entitat simple si aporta claredat
-- evitar POO completa obligatòria
-- justificar què representa l'objecte i quina responsabilitat concentra
+##### 1:30-2:10 — Prova unitària inicial
+- crear un test en `tests/`
+- comprovar un cas positiu
+- comprovar un cas negatiu o límit
+- executar i documentar el resultat
 
-##### 2:15-2:40 — Prova de no regressió
-- repetir casos clau de la bateria mínima
-- comprovar operació protegida
-- corregir errors introduïts per la refactorització
+##### 2:10-2:35 — No regressió del flux
+- repetir un cas clau de `R2M6`
+- comprovar que la peça nova no trenca login, estat o regla afectada
 
-##### 2:40-3:00 — Tancament `R2 -> R3`
-- redactar comparativa abans/després
-- justificar la millora de mantenibilitat
-- identificar què quedarà per reorganitzar amb més profunditat en `R3`
+##### 2:35-3:00 — Tancament `R2 -> R3`
+- explicar què és unitari i què és prova de flux
+- documentar com executar el test
+- indicar què queda per a arquitectura i persistència en `R3`
 
 #### Intervenció docent prevista
-- insistir que refactoritzar és millorar responsabilitats i mantenibilitat, no moure codi sense criteri
-- limitar l'abast perquè no es trenque el flux complet
-- demanar proves després de cada canvi rellevant
-- frenar reescriptures grans i convertir-les en pendents de `R3`
+- evitar que la sessió es convertisca en MVC complet
+- reduir l'abast a una classe i una prova mínima
+- revisar que la classe no depén directament de `$_POST`, `$_SESSION`, `$_COOKIE` o HTML
+- demanar execució real del test
 
 #### Tasques concretes de l'alumnat
-- triar una zona concreta del codi ja provat
-- identificar quin problema de mantenibilitat vol corregir
-- fer una refactorització xicoteta i verificable
-- extraure o importar almenys un fitxer comú quan tinga sentit
-- introduir una entitat simple del domini si ajuda a aclarir responsabilitats
-- repetir proves mínimes
-- escriure una comparativa abans/després
+- triar una regla o comprovació del flux
+- crear `composer.json`
+- configurar autoload
+- crear una classe simple
+- escriure una prova unitària mínima
+- repetir una prova de flux
+- documentar què queda més testable
 
 #### Evidència verificable de la sessió
-- diff o comparativa abans/després
-- fitxer comú importat amb criteri o funcions comunes reutilitzades
-- reducció visible de duplicació, mescla o responsabilitats confuses
-- prova de no regressió del flux complet
-- justificació breu de la millora de mantenibilitat
+- `composer.json`
+- classe en `src/` o equivalent
+- test en `tests/` o equivalent
+- execució documentada del test
+- prova de no regressió del flux
+- nota de pas cap a `R3`
 
 #### Checkpoint o pregunta de comprovació
-Quina responsabilitat queda ara més clara que abans i com has comprovat que el flux continua funcionant?
+Quina part del teu backend pots provar ara sense passar pel formulari ni pel navegador?
 
 #### Ús de la IA permés i forma de control
-Ús permés per detectar duplicacions, proposar noms, suggerir una extracció de funció o revisar una comparativa abans/després. Control: cap canvi proposat per IA es dona per bo sense executar la bateria mínima de no regressió i sense justificació pròpia de la responsabilitat millorada.
+Ús permés per proposar noms de classe, un `composer.json` mínim o casos de test. Control: l'alumnat ha d'executar el test i explicar què comprova amb dades pròpies.
 
 #### Dificultats habituals i resposta docent prevista
-- Si només es mou codi a un altre fitxer, el professorat demana explicar quina responsabilitat ha quedat més clara.
-- Si la refactorització trenca el flux, es torna a la prova fallida i es redueix l'abast del canvi.
-- Si l'alumnat intenta fer arquitectura completa, es marca com a pont cap a `R3` i es tanca `R2` amb una millora acotada.
-
-La refactorització no s'ha de valorar només per “tindre més fitxers”. Ha de millorar almenys una responsabilitat concreta: validació, tractament de dades, comprovació d'accés, renderitzat, reutilització de missatges o representació d'una entitat del domini. La defensa breu ha d'explicar quin problema del codi inicial s'ha reduït, quin risc de regressió s'ha comprovat i quina part continua pendent per al treball arquitectònic de `R3`.
-
-## Criteri metodològic de la sessió 7
-
-Què sí pot incloure:
-
-- netejar barreja excessiva de `HTML + PHP`
-- extraure funcions útils a un fitxer separat
-- usar `include` / `require` o, millor encara quan toque, `include_once` / `require_once`
-- ordenar millor el codi
-- millorar noms
-- reduir duplicació
-- separar millor preparació de dades i renderitzat
-- incorporar una entitat mínima del domini com a objecte simple
-- justificar per què la nova versió és més clara i mantenible
-
-Què no ha de convertir-se en:
-
-- entrada obligatòria a POO completa
-- entrada obligatòria a BBDD com a focus central
-- reescriptura arquitectònica total del repte
-- arquitectura completa tipus `MVC`
-
-Si apareixen més classes, més objectes o una persistència més formal, s'han de plantejar com a tast introductori, ampliació opcional o pont cap a `R3`.
+- Si la classe només imprimeix HTML, es demana extraure una regla que retorne un valor.
+- Si Composer existeix però no carrega res, es revisa l'autoload.
+- Si només hi ha prova de flux, es demana una comprovació unitària mínima.
+- Si l'alumnat intenta consumir una API externa, es deixa com a ampliació o pont cap a `R4`.
 
 ## Evidències esperades per sessió
 
@@ -686,7 +662,7 @@ Si apareixen més classes, més objectes o una persistència més formal, s'han 
 - Sessió `4`: estat recuperable, demostració d'invalidació i frontera clara entre estat i conservació funcional.
 - Sessió `5`: operació del domini protegida amb cas autoritzat i cas denegat.
 - Sessió `6`: checklist de prova, documentació mínima i checkpoint tècnic.
-- Sessió `7`: comparativa breu abans/després, fitxer comú importat amb criteri, objecte simple del domini i comprovació final del flux.
+- Sessió `7`: classe mínima carregada amb Composer, prova unitària inicial i comprovació final del flux.
 
 ## Moments de checkpoint
 
@@ -694,7 +670,7 @@ Si apareixen més classes, més objectes o una persistència més formal, s'han 
 - Checkpoint curt `2`: al final de la sessió `4`, per validar que estat, sessió o cookies no s'estan confonent amb persistència del domini.
 - Checkpoint curt `3`: al final de la sessió `5`, per confirmar que hi ha una operació real protegida.
 - Checkpoint tècnic `4`: al final de la sessió `6`, per confirmar que el flux és reproduïble, provat i documentat.
-- Checkpoint de pas `R2 -> R3`: al final de la sessió `7`, per decidir si el grup entra al contrast de frameworks amb una base funcional i una primera millora de mantenibilitat defensable.
+- Checkpoint de pas `R2 -> R3`: al final de la sessió `7`, per decidir si el grup entra al contrast de frameworks amb una base funcional i una primera peça testable defensable.
 
 ## Preparació del tancament del repte
 
@@ -702,11 +678,11 @@ Si apareixen més classes, més objectes o una persistència més formal, s'han 
 - revisar que la informació correcta es recupera o es reutilitza dins del projecte
 - exigir la bateria mínima de proves de la sessió `6`: cas vàlid, cas invàlid per validació, cas no autenticat, cas amb sessió caducada o estat invàlid i cas d'accés a operació protegida
 - comprovar que la documentació mínima permet repetir la prova
-- demanar una refactorització lleu sobre codi que ja funciona i una justificació breu del canvi
+- demanar una classe mínima amb Composer i una prova unitària inicial sobre codi que ja funciona
 - demanar què haurà de reorganitzar-se en `R3` i què encara continua sent suport funcional de `R2`
 
 ## Criteri pràctic de tancament
 
-`R2` queda preparat quan el professorat pot veure un flux complet de dades, lògica, estat i autenticació sobre la base comuna en `PHP`, amb una operació real protegida, proves mínimes reproduïbles, una sessió final de refactorització amb millora de mantenibilitat justificable i un pas net cap a `R3`.
+`R2` queda preparat quan el professorat pot veure un flux complet de dades, lògica, estat i autenticació sobre la base comuna en `PHP`, amb una operació real protegida, proves mínimes reproduïbles, una classe mínima carregada amb Composer i una primera prova unitària que faça net el pas cap a `R3`.
 
-La sessió `7` ha de demostrar que el codi queda una mica més clar i mantenible sense convertir el repte en una reescriptura arquitectònica completa.
+La sessió `7` ha de demostrar que una part del backend ja es pot provar sense passar pel navegador, sense convertir el repte en una reescriptura arquitectònica completa.

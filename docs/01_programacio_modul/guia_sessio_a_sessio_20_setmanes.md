@@ -37,7 +37,7 @@ La guia està calibrada sobre l'escenari següent:
 | Bloc | Setmanes | Tancament verificable | Imprescindible | Recuperable | Ampliació |
 |---|---:|---|---|---|---|
 | Arrancada i `R1` | `1-4` | checkpoint `R1 -> R2` | repo, base en `PHP`, primer punt d'entrada i `README` executable | documentació, incidències i defensa curta | millora d'onboarding o scripts |
-| `R2` | `5-8` | [R2SX. Microdefenses tècniques](programacio_aula_r2sx_microdefenses_tecniques_criteris.md) | formulari variat, validació de servidor, estat inicial, funcionalitat protegida i traçabilitat | refactorització mínima, proves i `AI log` incomplet | fitxers, millor tractament d'errors o proves negatives |
+| `R2` | `5-8` | [R2SX. Microdefenses tècniques](programacio_aula_r2sx_microdefenses_tecniques_criteris.md) | formulari variat, validació de servidor, estat inicial, funcionalitat protegida i traçabilitat | prova unitària mínima, proves de flux i `AI log` incomplet | llibreria externa menuda, millor tractament d'errors o proves negatives |
 | `R3` | `9-12` | [R3SX. Microdefenses tècniques](programacio_aula_r3sx_microdefenses_tecniques_criteris.md) | framework arrancable, separació de responsabilitats, persistència inicial i flux end-to-end | segon flux reduït, documentació de migracions o proves | relació de dades, serveis o validació reforçada |
 | `R4` | `13-16` | [R4SX. Microdefenses tècniques](programacio_aula_r4sx_microdefenses_tecniques_criteris.md) | contracte d'API, endpoints, protecció o control d'accés, consum/prova i documentació | col·lecció de proves, cas denegat o documentació incompleta | permisos més fins, consumidor més complet o millor contracte |
 | `R5` | `17-19` | [R5SX. Microdefenses tècniques](programacio_aula_r5sx_microdefenses_tecniques_criteris.md) | integració amb valor real, transformació, prova, errors i documentació | estabilització del flux i registre d'incidències | observabilitat, desplegament o integració més robusta |
@@ -157,11 +157,11 @@ Regla pràctica:
 
 #### Setmana 8
 
-- Focus o repte: tancament de `R2`, refactorització mínima i [microdefensa tècnica de criteris](programacio_aula_r2sx_microdefenses_tecniques_criteris.md)
+- Focus o repte: tancament de `R2`, primera peça testable i [microdefensa tècnica de criteris](programacio_aula_r2sx_microdefenses_tecniques_criteris.md)
 - Què fa el professorat: reserva una primera franja per tancar `R2M7` i una segona per defensar evidències; força demo amb cas correcte i cas incorrecte, revisa `AI log`, commits i pregunta de contrast
-- Què fa l'alumnat: reorganitza una part del codi amb `include` / `require`, justifica la millora, prepara `3-5` diapositives i defensa formularis, validació, estat o funcionalitat protegida sobre el seu projecte
+- Què fa l'alumnat: crea una classe simple carregada amb Composer, executa una prova unitària mínima, prepara `3-5` diapositives i defensa formularis, validació, estat o funcionalitat protegida sobre el seu projecte
 - Materials per a l'alumnat: full de treball del Repte 2, checklist del Repte 2, [microdefensa de R2](programacio_aula_r2sx_microdefenses_tecniques_criteris.md), [instrument comú de microdefenses](../03_avaluacio/microdefenses_tecniques_criteris.md)
-- Producte mínim: flux de `R2` funcional, refactorització mínima explicable i primer mapa de pas a `R3`
+- Producte mínim: flux de `R2` funcional, peça testable explicable i primer mapa de pas a `R3`
 - Evidència mínima del bloc: demo, codi rellevant, traçabilitat, `AI log`, mini justificació i resposta a preguntes sobre entrada, validació, estat o protecció
 - Checkpoint docent: validar autoria i comprensió real abans d'entrar a `R3`; si la defensa no acredita, es planifica recuperació curta
 - Pla per a alumnat endarrerit: defensar un únic formulari complet amb validació de servidor, error visible i commit identificable

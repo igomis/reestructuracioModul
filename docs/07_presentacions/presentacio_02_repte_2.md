@@ -40,7 +40,7 @@ Micro-presentació docent breu. Equival aproximadament a `8` diapositives.
 - conservació funcional simple o controlada
 - una restricció de negoci o de rol
 - documentació i verificació del flux
-- revisió final amb fitxer comú, `include` / `require` i un objecte simple del domini
+- primera peça testable amb Composer, classe simple i prova unitària
 
 ## Diapositiva 6. Evidència mínima
 
@@ -48,9 +48,9 @@ Micro-presentació docent breu. Equival aproximadament a `8` diapositives.
 - prova d'un cas permés i un cas denegat
 - commits i `README` actualitzats
 - verificació de validacions i errors
-- comparativa breu abans/després de la sessió `7`
-- evidència d'organització en fitxers amb `include` / `require_once`
-- primera entitat mínima del domini expressada com a objecte simple
+- `composer.json` o equivalent amb autoload
+- classe simple del domini o servei
+- prova unitària mínima executada
 
 ## Diapositiva 7. Errors habituals
 
@@ -64,6 +64,6 @@ Micro-presentació docent breu. Equival aproximadament a `8` diapositives.
 
 - el flux que naix ací ha de continuar viu en `R3`
 - `R3` no és començar de zero, sinó professionalitzar esta funcionalitat i la seua persistència
-- l'objecte mínim que apareix en `R2` és un pont, no encara una arquitectura completa
+- la classe simple que apareix en `R2` és un pont testable, no encara una arquitectura completa
 - en `R2` la persistència pot aparéixer com a suport funcional, però no és encara el focus principal
 - si `R2` és superficial, `R3` no tindrà un cas d'ús seriós per mantindre

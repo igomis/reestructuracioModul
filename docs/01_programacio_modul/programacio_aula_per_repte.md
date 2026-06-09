@@ -123,7 +123,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - `R2M4`: estat, sessió i/o cookies
 - `R2M5`: autenticació i funcionalitat protegida
 - `R2M6`: prova, depuració, documentació mínima i checkpoint tècnic
-- `R2M7`: refactorització, organització en fitxers i primer objecte de domini
+- `R2M7`: primera peça testable amb POO, Composer i prova unitària
 
 ### Què no és suficient
 
@@ -131,7 +131,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - protegir una ruta decorativa o sense valor funcional real
 - convertir la persistència en el centre del repte mentre el flux principal continua dèbil
 - deixar la prova només com a frase final sense verificació real del recorregut
-- convertir la sessió `7` en una reescriptura arquitectònica gran o en una entrada obligatòria a POO completa i BBDD
+- convertir la sessió `7` en una reescriptura arquitectònica gran, en MVC complet, ORM, framework o API externa obligatòria
 
 ### Quin és el mínim funcional no trivial
 
@@ -141,7 +141,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - evidència d'estat, sessió i/o cookies quan el flux ho necessita
 - una funcionalitat de negoci autenticada del domini
 - una prova autoritzada, una prova denegada i un cas d'error o validació visible
-- una revisió final del codi amb millora de mantenibilitat justificable, `include` / `require` amb sentit i un objecte mínim de domini
+- una classe simple carregada amb Composer, una prova unitària mínima i una comprovació final del flux
 
 ### Què diferencia una resolució superficial d'una professional
 
@@ -160,12 +160,12 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - que la persistència pot aparéixer, però encara no és el focus principal
 - la diferència entre autenticació, autorització i funcionalitat protegida
 - que el contrast de frameworks encara no és el centre del repte
-- que la sessió `7` millora mantenibilitat, però no substituïx `R3`
-- que la sessió `7` ha d'incorporar organització simple en fitxers i un objecte mínim del domini sense convertir el repte en POO completa
+- que la sessió `7` introdueix una peça testable, però no substituïx `R3`
+- que la sessió `7` ha d'incorporar Composer/autoload, una classe simple i una prova unitària sense convertir el repte en POO completa
 
 ### Què ha d'explicar el professorat
 
-- la seqüència real del repte: dades, processament, lògica, estat, auth, prova i revisió final de mantenibilitat
+- la seqüència real del repte: dades, processament, lògica, estat, auth, prova i primera peça testable
 - quins criteris de `RA2`, `RA3` i `RA4` es fan visibles en cada tram
 - com es validen entrades, com es documenten errors i quina prova mínima s'exigirà
 
@@ -175,7 +175,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - un tram curt de processament en servidor amb resposta generada
 - una regla bàsica del domini o un ús d'estat recognoscible
 - una comprovació tècnica del cas autoritzat i del cas denegat
-- una revisió curta de codi amb comparativa abans/després, extracció a fitxer comú amb `require_once` o equivalent, primer objecte simple del domini i comprovació final del flux
+- una classe simple carregada amb Composer, una prova unitària mínima i una comprovació final del flux
 
 ### Què treballa l'alumnat amb autonomia
 
@@ -183,7 +183,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - processament, lògica i conservació funcional de dades
 - estat, sessió o mecanisme equivalent
 - control d'accés, validacions i primeres proves
-- revisió final del codi, organització en fitxers i primer objecte del domini
+- primera peça testable amb POO, Composer i prova unitària
 - actualització de documentació operativa
 
 ### Materials que s'activen
@@ -201,8 +201,8 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - estat o sessió verificables
 - operació real protegida
 - proves bàsiques o comprovacions equivalents
-- comparativa breu abans/després de la revisió final
-- almenys un fitxer comú reutilitzat amb `include` / `require` i una entitat simple del domini
+- `composer.json` o equivalent amb autoload
+- classe simple del domini o servei i prova unitària mínima
 - `README` actualitzat
 - `AI log` si aplica
 
@@ -217,13 +217,13 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 ### Checkpoint docent
 
-- no s'obri `R3` fins que el flux funcional siga real, reproduïble, mínimament verificat i la sessió `7` haja deixat una primera millora de mantenibilitat explicable
+- no s'obri `R3` fins que el flux funcional siga real, reproduïble, mínimament verificat i la sessió `7` haja deixat una primera peça testable explicable
 
 ### Regla metodològica del repte
 
 - `R2` manté una base comuna més controlada
-- `R2` incorpora una sessió final real de refactorització i millora de mantenibilitat
-- la sessió `7` ha d'introduir reutilització en fitxers i un objecte mínim del domini sense convertir-se en un bloc de POO completa
+- `R2` incorpora una sessió final real d'introducció a POO, Composer i prova unitària
+- la sessió `7` ha d'introduir una classe simple testable sense convertir-se en un bloc de POO completa
 - el contrast de `Laravel`, `Symfony` i `NestJS` entra després
 - la prova i la depuració no es deixen només per al final, sinó que s'arrepleguen al llarg dels microprojectes
 - la sessió `7` no substituïx el treball d’arquitectura, persistència i frameworks propi de `R3`
