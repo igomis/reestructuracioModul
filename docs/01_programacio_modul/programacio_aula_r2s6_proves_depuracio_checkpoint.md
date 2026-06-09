@@ -2,7 +2,7 @@
 
 ## Finalitat de la sessio
 
-Esta sessio comprova el flux complet de `R2`: entrada, validacio, reintent, guardat funcional, regla del projecte, estat i operacio protegida. El focus és provar, depurar, documentar i deixar una demo reproduïble abans de refactoritzar.
+Esta sessio comprova el flux complet de `R2`: entrada, validacio, reintent, guardat funcional, regla del projecte, estat i operacio protegida. El focus és provar, depurar, documentar i deixar una demo reproduïble abans de crear la primera peça testable amb POO i Composer.
 
 L'objectiu no és afegir funcionalitats noves, sinó demostrar que el que ja existeix funciona amb casos positius, negatius i d'invalidacio.
 
@@ -140,7 +140,7 @@ Tasques:
 - indicar operacio protegida;
 - indicar com provocar error, cas correcte i denegacio;
 - indicar com executar la prova automàtica lleugera;
-- marcar zona candidata a refactoritzar en `R2M7`.
+- marcar una regla o comprovació candidata a convertir-se en classe testable en `R2M7`.
 
 Resultat: la demo és reproduïble.
 
@@ -161,7 +161,7 @@ Pregunta: quins casos demostren que el flux complet és reproduïble amb errors,
 - Depurar bloquejos.
 - Repetir proves fallides.
 - Actualitzar README.
-- Marcar una zona per a `R2M7`.
+- Marcar una regla o comprovació candidata per a `R2M7`.
 
 ## Evidencies minimes
 
@@ -184,7 +184,7 @@ Pregunta: quins casos demostren que el flux complet és reproduïble amb errors,
 - La prova automàtica és de caixa negra o flux, no unitària.
 - Els casos registrats coincideixen amb el comportament real.
 - Els errors bloquejants estan corregits o identificats.
-- Hi ha una zona concreta per refactoritzar.
+- Hi ha una regla o comprovació concreta candidata a classe testable.
 
 ## Que no és suficient
 
@@ -224,10 +224,10 @@ Reduir a cinc casos manuals: vàlid, invàlid, estat invalidat, no autenticat i 
 - [ ] He documentat com executar-la.
 - [ ] He registrat incidencies.
 - [ ] He actualitzat README.
-- [ ] He triat zona per a refactoritzar.
+- [ ] He triat una regla o comprovació candidata a classe testable.
 
 ## Connexio amb R2M7
 
 `R2M7` parteix d'un flux provat. La pregunta de pas és:
 
-Quina part del codi funciona però és més difícil de mantindre del que hauria?
+Quina regla o comprovació del flux funciona ja i es podria provar millor si la convertim en una classe simple?

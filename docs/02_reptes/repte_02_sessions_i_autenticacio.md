@@ -1204,6 +1204,10 @@ Aprofundir el repte amb una millora tècnica real sobre robustesa del flux, qual
 
 El nucli obligatori del repte ha d'estar complet, funcional i validat.
 
+L'ampliació no compensa mancances del nucli. Si el flux base, les proves mínimes, l'autenticació o la defensa tècnica encara fallen, l'equip ha de reparar primer el repte obligatori.
+
+La via `9→10` tampoc és requisit d'autocorrecció ni de superació del repte. Només s'activa quan el mínim ja està acreditat.
+
 **Opcions d’ampliació**
 
 - reforçar la validació, el tractament d'errors i els missatges de retorn perquè el flux siga més robust i defensable
@@ -1240,3 +1244,4 @@ La IA es pot usar per comparar estratègies de validació, suggerir proves o rev
 - es pot explicar i defensar
 - no és ornamental
 - no hi ha delegació excessiva en IA
+- està separada i traçada com a ampliació, no barrejada per ocultar mancances del treball base

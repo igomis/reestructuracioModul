@@ -524,7 +524,7 @@ Bateria mínima de proves executada, incidències registrades, correccions prior
 ##### 2:40-3:00 — Checkpoint tècnic
 - demo curta d'un cas complet
 - revisió ràpida de la bateria mínima
-- decisió docent sobre si el grup pot passar a refactoritzar o ha de reparar abans el flux
+- decisió docent sobre si el grup pot passar a crear la peça testable final o ha de reparar abans el flux
 
 #### Intervenció docent prevista
 - conduir la sessió com a taller, no com a explicació llarga
@@ -538,7 +538,7 @@ Bateria mínima de proves executada, incidències registrades, correccions prior
 - corregir incidències bloquejants
 - repetir les proves fallides
 - actualitzar `README`
-- marcar una zona concreta del codi que es refactoritzarà en la sessió `7`
+- marcar una regla o comprovació concreta que es convertirà en classe testable en la sessió `7`
 
 #### Evidència verificable de la sessió
 - taula o checklist de proves completada
@@ -556,7 +556,7 @@ Quins casos mínims demostren que el flux no és una demo puntual, sinó una fun
 #### Dificultats habituals i resposta docent prevista
 - Si l'alumnat corregeix sense reproduir, el professorat demana tornar al cas fallit i registrar-lo.
 - Si només prova el camí feliç, es bloqueja el checkpoint fins provar errors i accés denegat.
-- Si el `README` no permet repetir la demo, es dedica el tram final a documentació abans de refactoritzar.
+- Si el `README` no permet repetir la demo, es dedica el tram final a documentació abans de crear la peça testable.
 
 **Bateria mínima obligatòria de prova**
 
