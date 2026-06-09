@@ -199,6 +199,8 @@ Mòdul funcional integrat en el projecte que incloga:
 - repositori actualitzat
 - issue principal del repte i microtasques
 - seqüència de commits significativa
+- mínim orientatiu de tres commits útils per microrepte: inici, progrés i prova o tancament
+- registre breu de temps aproximat per microrepte en issue, `README` o document equivalent
 - un commit rellevant comentat sobre validació, estat o autenticació
 - formulari funcional o equivalent
 - codi servidor embegut o integrat en una plantilla
@@ -947,6 +949,7 @@ Estos pesos calculen la `nota_nucli_R2`. No són una mitjana plana: responen al 
 
 - issue principal amb microtasques
 - seqüència de commits significativa
+- registre de temps aproximat per microrepte, contrastable amb commits i proves
 - formulari funcional o entrada equivalent
 - integració de codi servidor amb llenguatge de marques o plantilla
 - ús de variables, operadors, sentències simples, directives i àmbits
@@ -1067,6 +1070,7 @@ No es demana:
 - execució en directe del flux
 - casos positius i negatius
 - revisió de commits i issues
+- revisió de coherència entre temps declarat, commits, proves i defensa
 - preguntes tècniques breus
 - microcanvis en viu
 - contrast entre documentació, AI log i comportament observat
@@ -1096,6 +1100,7 @@ No es demana:
 - execució real de l’autenticació
 - demo de cas autoritzat i denegat
 - revisió de commits i issues
+- revisió del patró temporal de treball: commits distribuïts, registre de temps aproximat i correspondència amb evidències
 - contrast entre proves descrites i comportament real
 - pregunta de transferència
 - canvi tècnic menut en directe
