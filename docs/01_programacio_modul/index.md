@@ -24,6 +24,8 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - [Guia sessio a sessio del curs en 20 setmanes](guia_sessio_a_sessio_20_setmanes.md): detall operatiu per setmanes.
 - [Programacio d'aula per repte](programacio_aula_per_repte.md): lectura docent per `R1-R5`.
 - [R1. Programació d'aula — Kickoff backend](programacio_aula_repte_01.md): baixada operativa de `R1` a sessions, checkpoints i tancament.
+- [R1S1. Model client/servidor i elecció guiada de stack](programacio_aula_r1s1_model_client_servidor_eleccio_stack.md): fitxa d'aula executable per a la primera sessió de `R1`, associada al microrepte `R1M1`.
+- [R1S2. Entorn executable, punt d'entrada i tancament de R1](programacio_aula_r1s2_entorn_executable_punt_entrada.md): fitxa d'aula executable per a la segona sessió de `R1`, associada al microrepte `R1M2`.
 - [R2. Programació d'aula — Processament, estat i autenticació](programacio_aula_repte_02.md): baixada operativa de `R2` a sessions, microprojectes, checkpoints i pas cap a `R3`.
 - [R2S1. Entrada variada i validació de servidor](programacio_aula_r2s1_entrada_variada_validacio_servidor.md): fitxa d'aula executable per a la primera sessió de `R2`, associada al microrepte `R2M1`.
 - [R2S2. Processament, reintent i guardat funcional](programacio_aula_r2s2_processament_reintent_conservacio_dades.md): fitxa d'aula executable per a la segona sessió de `R2`, associada al microrepte `R2M2`.
@@ -59,6 +61,7 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - per entendre el recorregut complet: [curs executable](curs_executable_dwes_2_avaluacions.md)
 - per preparar classe a classe: [guia 20 setmanes](guia_sessio_a_sessio_20_setmanes.md)
 - per conduir `R1` sense reconstruir-lo a mà: [R1. Programació d'aula — Kickoff backend](programacio_aula_repte_01.md)
+- per impartir `R1`: [R1S1](programacio_aula_r1s1_model_client_servidor_eleccio_stack.md) i [R1S2](programacio_aula_r1s2_entorn_executable_punt_entrada.md)
 - per conduir `R2` sense reduir-lo a auth: [R2. Programació d'aula — Processament, estat i autenticació](programacio_aula_repte_02.md)
 - per impartir la primera sessió de `R2`: [R2S1. Entrada variada i validació de servidor](programacio_aula_r2s1_entrada_variada_validacio_servidor.md)
 - per impartir la segona sessió de `R2`: [R2S2. Processament, reintent i guardat funcional](programacio_aula_r2s2_processament_reintent_conservacio_dades.md)
