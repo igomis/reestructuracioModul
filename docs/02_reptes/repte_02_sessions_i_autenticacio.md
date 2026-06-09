@@ -927,6 +927,8 @@ Rúbrica curta de POO, Composer i prova unitària inicial.
 
 ## 6. Taula resum de microprojectes i criteris d’avaluació
 
+Estos pesos calculen la `nota_nucli_R2`. No són una mitjana plana: responen al pes curricular dels CA treballats i al paper de cada microrepte dins del flux complet. `R2M5` té més pes perquè concentra autenticació i protecció d'una operació real. `R2M6` i `R2M7` pesen menys per separat, però actuen com a evidència de verificació, depuració i testabilitat del conjunt.
+
 | Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
 |---|---|---|---|---|---|---|
 | R2M1 | Procedimental | Entrada variada, codi servidor integrat i recuperació de dades | RA2.a, RA2.b, RA2.c, RA2.d, RA3.e, RA3.f, RA3.g | formulari amb text, llista i checkbox, codi embegut, variables simples, validació bàsica, error visible i demo | checklist | 15% |
@@ -1214,7 +1216,7 @@ Les autocorreccions dels microreptes `R2M1` a `R2M7` valoren el nucli obligatori
 nota_final_R2 = min(nota_nucli_R2, 9) + ampliacio_9_10
 ```
 
-Sense ampliació validada, la nota final del repte queda limitada a `9`, encara que la mitjana dels microreptes siga `10`. L'ampliació `9→10` pot sumar entre `0` i `1` punt segons valor tècnic, integració, verificació, traçabilitat i defensa.
+`nota_nucli_R2` és la nota ponderada dels microreptes obligatoris segons la taula de pesos del repte. Sense ampliació validada, la nota final del repte queda limitada a `9`, encara que la mitjana ponderada dels microreptes siga `10`. L'ampliació `9→10` pot sumar entre `0` i `1` punt segons valor tècnic, integració, verificació, traçabilitat i defensa.
 
 **Condició prèvia**
 
