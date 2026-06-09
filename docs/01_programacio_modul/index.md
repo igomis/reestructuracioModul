@@ -33,6 +33,12 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - [R2S6. Proves, depuració i checkpoint tècnic](programacio_aula_r2s6_proves_depuracio_checkpoint.md): fitxa d'aula executable per a la sisena sessió de `R2`, associada al microrepte `R2M6`.
 - [R2S7. Primera peça testable amb POO i Composer](programacio_aula_r2s7_primera_peca_testable_poo_composer.md): fitxa d'aula executable per a la setena sessió de `R2`, associada al microrepte `R2M7`.
 - [R2SX. Microdefenses tècniques de criteris](programacio_aula_r2sx_microdefenses_tecniques_criteris.md): verificació d'autoria, comprensió i ús d'IA al tancament de `R2`.
+- [R3S1. Arrencada del nou projecte](programacio_aula_r3s1_arrencada_nou_projecte.md): fitxa d'aula executable per a la primera sessió de `R3`, associada al microrepte `R3M1`.
+- [R3S2. Persistència mínima amb migrations i seeders](programacio_aula_r3s2_persistencia_minima_migrations_seeders.md): fitxa d'aula executable per a la segona sessió de `R3`, associada al microrepte `R3M2`.
+- [R3S3. Primer cas d'ús complet](programacio_aula_r3s3_primer_cas_us_complet.md): fitxa d'aula executable per al primer flux end-to-end de `R3`, associada al microrepte `R3M3`.
+- [R3S4. Segon cas d'ús o ampliació funcional](programacio_aula_r3s4_segon_cas_us_ampliacio_funcional.md): fitxa d'aula executable per al segon flux de `R3`, associada al microrepte `R3M4`.
+- [R3S5. Qualitat i estabilització](programacio_aula_r3s5_qualitat_estabilitzacio.md): fitxa d'aula executable per a proves, errors i estabilització de `R3`, associada al microrepte `R3M5`.
+- [R3S6. Tancament tècnic](programacio_aula_r3s6_tancament_tecnic.md): fitxa d'aula executable per al tancament de `R3`, associada al microrepte `R3M6`.
 - [R3SX. Microdefenses tècniques de criteris](programacio_aula_r3sx_microdefenses_tecniques_criteris.md): defensa breu d'arquitectura, persistència i flux end-to-end al tancament de `R3`.
 - [R4SX. Microdefenses tècniques de criteris](programacio_aula_r4sx_microdefenses_tecniques_criteris.md): verificació de contracte, protecció, consum i documentació de servei al tancament de `R4`.
 - [R5SX. Microdefenses tècniques de criteris](programacio_aula_r5sx_microdefenses_tecniques_criteris.md): predefensa de la integració final, proves, interoperabilitat i traçabilitat al tancament de `R5`.
@@ -58,6 +64,7 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - per impartir la segona sessió de `R2`: [R2S2. Processament, reintent i guardat funcional](programacio_aula_r2s2_processament_reintent_conservacio_dades.md)
 - per impartir la tercera sessió de `R2`: [R2S3. Lògica del flux i regles del projecte](programacio_aula_r2s3_logica_flux_regles_projecte.md)
 - per impartir les sessions finals de `R2`: [R2S4](programacio_aula_r2s4_estat_sessio_cookies.md), [R2S5](programacio_aula_r2s5_autenticacio_funcionalitat_protegida.md), [R2S6](programacio_aula_r2s6_proves_depuracio_checkpoint.md) i [R2S7](programacio_aula_r2s7_primera_peca_testable_poo_composer.md)
+- per impartir `R3`: [R3S1](programacio_aula_r3s1_arrencada_nou_projecte.md), [R3S2](programacio_aula_r3s2_persistencia_minima_migrations_seeders.md), [R3S3](programacio_aula_r3s3_primer_cas_us_complet.md), [R3S4](programacio_aula_r3s4_segon_cas_us_ampliacio_funcional.md), [R3S5](programacio_aula_r3s5_qualitat_estabilitzacio.md) i [R3S6](programacio_aula_r3s6_tancament_tecnic.md)
 - per verificar autoria després dels reptes: [R2SX](programacio_aula_r2sx_microdefenses_tecniques_criteris.md), [R3SX](programacio_aula_r3sx_microdefenses_tecniques_criteris.md), [R4SX](programacio_aula_r4sx_microdefenses_tecniques_criteris.md) i [R5SX](programacio_aula_r5sx_microdefenses_tecniques_criteris.md)
 - per activar una via d'excellencia sense improvisar: [ampliacions 9 a 10 per repte](../ampliacions-9-a-10-per-repte.md)
 - per obrir el curs sense improvisar: [preparacio docent directa](preparacio_docent_directa_curs_que_ve.md) i [ajustos finals](ajustos_finals_abans_inici_curs.md)

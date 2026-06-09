@@ -40,6 +40,12 @@ nav:
               - R2S6. Proves, depuració i checkpoint tècnic: 01_programacio_modul/programacio_aula_r2s6_proves_depuracio_checkpoint.md
               - R2S7. Primera peça testable amb POO i Composer: 01_programacio_modul/programacio_aula_r2s7_primera_peca_testable_poo_composer.md
               - R2SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r2sx_microdefenses_tecniques_criteris.md
+              - R3S1. Arrencada del nou projecte: 01_programacio_modul/programacio_aula_r3s1_arrencada_nou_projecte.md
+              - R3S2. Persistència mínima amb migrations i seeders: 01_programacio_modul/programacio_aula_r3s2_persistencia_minima_migrations_seeders.md
+              - R3S3. Primer cas d'ús complet: 01_programacio_modul/programacio_aula_r3s3_primer_cas_us_complet.md
+              - R3S4. Segon cas d'ús o ampliació funcional: 01_programacio_modul/programacio_aula_r3s4_segon_cas_us_ampliacio_funcional.md
+              - R3S5. Qualitat i estabilització: 01_programacio_modul/programacio_aula_r3s5_qualitat_estabilitzacio.md
+              - R3S6. Tancament tècnic: 01_programacio_modul/programacio_aula_r3s6_tancament_tecnic.md
               - R3SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r3sx_microdefenses_tecniques_criteris.md
               - R4SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r4sx_microdefenses_tecniques_criteris.md
               - R5SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r5sx_microdefenses_tecniques_criteris.md
