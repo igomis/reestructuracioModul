@@ -38,6 +38,19 @@ AI log mínim recomanat:
 - proposta acceptada o rebutjada
 - verificació aplicada
 - resultat final o canvi introduït
+- fitxer, commit, prova o evidència relacionada
+
+El registre d'ús d'IA no acredita autoria per si sol. Pot haver estat redactat posteriorment o amb ajuda d'una altra IA. Per això s'ha de contrastar amb el repositori real: commits, fitxers, proves, incidències, decisions tècniques i microdefensa.
+
+En una revisió, el professorat pot triar una entrada de l'AI log i demanar:
+
+- on està aplicat el canvi;
+- quin commit o fitxer el conté;
+- què s'ha acceptat, modificat o rebutjat;
+- quina prova s'ha executat;
+- què passaria amb un cas nou o una modificació menuda.
+
+Si l'AI log és genèric, no coincideix amb el codi o l'alumnat no pot defensar-lo, no compta com a evidència suficient d'ús responsable.
 
 Situacions en què convé exigir AI log de manera especialment clara:
 
@@ -60,6 +73,7 @@ Situacions en què convé exigir AI log de manera especialment clara:
 - l'equip pot explicar el codi, la prova o la decisió assistida per IA
 - hi ha execució real o contrast tècnic del que s'ha incorporat
 - el registre d'ús permet saber què ha aportat la IA
+- el registre es pot relacionar amb commits, fitxers, proves o decisions concretes
 - la resposta de la IA s'ha adaptat al repte i al repositori reals
 - la IA s'ha usat com a suport, no com a substitut de treball tècnic
 - si la IA ha fallat o s'ha descartat una proposta, això també queda reflectit quan aporta context útil
