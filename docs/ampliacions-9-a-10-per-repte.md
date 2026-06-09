@@ -27,6 +27,18 @@ L'ampliació només computa si:
 
 No servix per compensar mancances del repte base.
 
+## Fórmula comuna de qualificació
+
+La qualificació final de cada repte ha de separar el nucli obligatori de la via d'excel·lència:
+
+```text
+nota_final_repte = min(nota_nucli_repte, 9) + ampliacio_9_10
+```
+
+La nota del nucli pot estar excel·lentment resolta, però sense ampliació validada la nota final del repte queda limitada a `9`. La franja `9→10` requerix una ampliació integrada, verificada, traçable i defensable.
+
+L'ampliació pot sumar entre `0` i `1` punt. No s'ha d'aplicar si el nucli obligatori no està complet i validat.
+
 ## Sentit de la franja 9→10
 
 La franja `9→10` no són punts extra arbitraris. És la via per demostrar excel·lència tècnica:

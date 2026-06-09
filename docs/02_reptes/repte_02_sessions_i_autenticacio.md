@@ -1200,6 +1200,22 @@ La sessió final s’ha de llegir com a tancament integrador cap a codi testable
 
 Aprofundir el repte amb una millora tècnica real sobre robustesa del flux, qualitat de validació, control d'errors o mantenibilitat del codi.
 
+**Autocorrecció de candidatura**
+
+`r2-ampliacio-9-10`
+
+Esta autocorrecció no assigna directament la nota final. Filtra si l'ampliació pot optar a la franja `9→10`, si no pot optar o si necessita revisió docent.
+
+**Criteri de nota final**
+
+Les autocorreccions dels microreptes `R2M1` a `R2M7` valoren el nucli obligatori. La qualificació final del repte ha de separar nucli i via d'excel·lència:
+
+```text
+nota_final_R2 = min(nota_nucli_R2, 9) + ampliacio_9_10
+```
+
+Sense ampliació validada, la nota final del repte queda limitada a `9`, encara que la mitjana dels microreptes siga `10`. L'ampliació `9→10` pot sumar entre `0` i `1` punt segons valor tècnic, integració, verificació, traçabilitat i defensa.
+
 **Condició prèvia**
 
 El nucli obligatori del repte ha d'estar complet, funcional i validat.
