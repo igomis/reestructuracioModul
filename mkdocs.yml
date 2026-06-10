@@ -55,6 +55,11 @@ nav:
               - R4S4. Consum real del servei: 01_programacio_modul/programacio_aula_r4s4_consum_servei.md
               - R4S5. Documentació i prova del servei: 01_programacio_modul/programacio_aula_r4s5_documentacio_prova_servei.md
               - R4SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r4sx_microdefenses_tecniques_criteris.md
+              - R5S1. Selecció de font externa i disseny de la integració: 01_programacio_modul/programacio_aula_r5s1_font_externa_i_disseny_integracio.md
+              - R5S2. Connexió amb la font externa i recuperació real: 01_programacio_modul/programacio_aula_r5s2_connexio_font_externa.md
+              - R5S3. Transformació, mapping i valor afegit: 01_programacio_modul/programacio_aula_r5s3_mapping_transformacio_valor.md
+              - R5S4. Integració de la funcionalitat híbrida en el producte: 01_programacio_modul/programacio_aula_r5s4_funcionalitat_hibrida_producte.md
+              - R5S5. Prova, documentació i defensa de la integració: 01_programacio_modul/programacio_aula_r5s5_prova_documentacio_defensa_integracio.md
               - R5SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r5sx_microdefenses_tecniques_criteris.md
           - Pla d'implantació docent: 01_programacio_modul/pla_implantacio_docent.md
           - Calendarització per avaluacions: 01_programacio_modul/calendaritzacio_per_avaluacions.md
