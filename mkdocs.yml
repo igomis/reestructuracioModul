@@ -49,6 +49,11 @@ nav:
               - R3S5. Qualitat i estabilització: 01_programacio_modul/programacio_aula_r3s5_qualitat_estabilitzacio.md
               - R3S6. Tancament tècnic: 01_programacio_modul/programacio_aula_r3s6_tancament_tecnic.md
               - R3SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r3sx_microdefenses_tecniques_criteris.md
+              - R4S1. Disseny del contracte del servei: 01_programacio_modul/programacio_aula_r4s1_contracte_servei_api.md
+              - R4S2. Implementació del primer endpoint funcional: 01_programacio_modul/programacio_aula_r4s2_primer_endpoint_funcional.md
+              - R4S3. Autenticació i control d'accés de l'API: 01_programacio_modul/programacio_aula_r4s3_proteccio_api.md
+              - R4S4. Consum real del servei: 01_programacio_modul/programacio_aula_r4s4_consum_servei.md
+              - R4S5. Documentació i prova del servei: 01_programacio_modul/programacio_aula_r4s5_documentacio_prova_servei.md
               - R4SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r4sx_microdefenses_tecniques_criteris.md
               - R5SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r5sx_microdefenses_tecniques_criteris.md
           - Pla d'implantació docent: 01_programacio_modul/pla_implantacio_docent.md
