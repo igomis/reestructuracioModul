@@ -222,30 +222,30 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 ### Regla metodològica del repte
 
 - `R2` manté una base comuna més controlada
-- `R2` incorpora una sessió final real d'introducció a POO, Composer i prova unitària
-- la sessió `7` ha d'introduir una classe simple testable sense convertir-se en un bloc de POO completa
+- `R2` incorpora mini API d'autenticació per a client, POO/Composer i persistència mínima amb BBDD
+- la sessió `8` ha d'introduir una classe simple testable sense convertir-se en un bloc de POO completa
 - el contrast de `Laravel`, `Symfony` i `NestJS` entra després
 - la prova i la depuració no es deixen només per al final, sinó que s'arrepleguen al llarg dels microprojectes
-- la sessió `7` no substituïx el treball d’arquitectura, persistència i frameworks propi de `R3`
+- la sessió `9` no substituïx el treball d’arquitectura, persistència i frameworks propi de `R3`
 
 ## Repte 3. Reconstrucció en framework i persistència real
 
 ### Finalitat docent
 
-- reconstruir el projecte en una base real de framework, amb Docker, BBDD, `migrations`, `seeders` i almenys `2` casos d'ús end-to-end
+- reconstruir el projecte en una base real de framework, amb Docker, BBDD, migracions o equivalent, dades inicials reproduïbles i almenys `2` casos d'ús end-to-end
 
 ### Què no és suficient
 
 - migrar tota l'aplicació de `R2` sense criteri d'abast
 - moure fitxers al framework sense adaptar responsabilitats
 - quedar-se en una instal·lació o esquelet del framework
-- afegir BBDD sense `migrations`, `seeders` ni fluxos verificables
+- afegir BBDD sense migracions o equivalent, sense dades inicials reproduïbles ni fluxos verificables
 
 ### Quin és el mínim funcional no trivial
 
 - projecte en framework arrancable amb Docker i configuració mínima
-- BBDD real creada per `migrations`
-- dades inicials reproduïbles amb `seeders` o equivalent
+- BBDD real creada per migracions o mecanisme equivalent
+- dades inicials reproduïbles amb fixtures/seeders o script equivalent
 - `2` casos d'ús end-to-end
 - almenys `1` cas d'ús migrat de `R2`
 - validació, errors bàsics, proves mínimes i README tècnic curt
@@ -270,19 +270,21 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 ### Què ha d'explicar el professorat
 
 - criteris mínims d'una base real en framework
-- ús d'eines pròpies del framework: rutes, controladors, ORM o equivalent, migracions, seeders, validació i proves
+- ús d'eines pròpies del framework: rutes, controladors, ORM o equivalent, migracions o equivalent, càrrega inicial reproduïble, validació i proves
+- equivalències entre `Laravel`, `Symfony` i `NestJS` abans del primer flux complet
 - relació entre persistència reproduïble, dos fluxos i entrada posterior a `R4`
 
 ### Què ha de modelar en directe
 
 - arrencada o revisió d'un projecte en framework amb Docker
-- migració, seeder o equivalent i lectura real de BBDD
+- migració o equivalent, càrrega inicial reproduïble i lectura real de BBDD
 - primer recorregut ruta, controlador, model o servei i vista/resposta
 
 ### Què treballa l'alumnat amb autonomia
 
 - arrencada del projecte en framework
 - model de dades inicial i dades reproduïbles
+- taller de portabilitat entre frameworks abans del primer flux complet
 - primer cas d'ús migrat de `R2`
 - segon flux o ampliació funcional útil
 - qualitat mínima, proves i documentació
@@ -305,8 +307,8 @@ En este punt, l'itinerari base del projecte pot ser:
 
 - Docker i framework arrancables
 - `.env.example` o instruccions equivalents
-- BBDD creada per `migrations`
-- dades inicials amb `seeders` o equivalent
+- BBDD creada per migracions o equivalent
+- dades inicials amb fixtures/seeders o script equivalent
 - `2` casos d'ús funcionals
 - proves mínimes o verificacions equivalents
 - documentació tècnica i backlog del que queda per migrar

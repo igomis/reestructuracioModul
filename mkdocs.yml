@@ -41,16 +41,21 @@ nav:
               - R2S3. Lògica del flux i regles del projecte: 01_programacio_modul/programacio_aula_r2s3_logica_flux_regles_projecte.md
               - R2S4. Estat, sessió i cookies: 01_programacio_modul/programacio_aula_r2s4_estat_sessio_cookies.md
               - R2S5. Autenticació i funcionalitat protegida: 01_programacio_modul/programacio_aula_r2s5_autenticacio_funcionalitat_protegida.md
-              - R2S6. Proves, depuració i checkpoint tècnic: 01_programacio_modul/programacio_aula_r2s6_proves_depuracio_checkpoint.md
-              - R2S7. Primera peça testable amb POO i Composer: 01_programacio_modul/programacio_aula_r2s7_primera_peca_testable_poo_composer.md
+              - R2S6. Mini API d'autenticació per a client: 01_programacio_modul/programacio_aula_r2s6_mini_api_autenticacio_client.md
+              - R2S10. Taller de contracte d'autenticació per a DWEC: 01_programacio_modul/programacio_aula_r2s10_taller_contracte_autenticacio_dwec.md
+              - R2S7. Proves, depuració i checkpoint tècnic: 01_programacio_modul/programacio_aula_r2s7_proves_depuracio_checkpoint.md
+              - R2S8. Primera peça testable amb POO i Composer: 01_programacio_modul/programacio_aula_r2s8_primera_peca_testable_poo_composer.md
+              - R2S9. Persistència mínima amb BBDD en PHP: 01_programacio_modul/programacio_aula_r2s9_persistencia_minima_bbdd_php.md
               - R2SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r2sx_microdefenses_tecniques_criteris.md
               - R3S0. Transició al Repte 3: 01_programacio_modul/programacio_aula_r3s0_transicio_repte_3.md
               - R3S1. Arrencada del nou projecte: 01_programacio_modul/programacio_aula_r3s1_arrencada_nou_projecte.md
-              - R3S2. Persistència mínima amb migrations i seeders: 01_programacio_modul/programacio_aula_r3s2_persistencia_minima_migrations_seeders.md
+              - R3S2. Persistència mínima amb migracions, fixtures/seeders o equivalent: 01_programacio_modul/programacio_aula_r3s2_persistencia_minima_migrations_seeders.md
+              - R3S2B. Taller de portabilitat entre frameworks: 01_programacio_modul/programacio_aula_r3s2b_taller_portabilitat_frameworks.md
               - R3S3. Primer cas d'ús complet: 01_programacio_modul/programacio_aula_r3s3_primer_cas_us_complet.md
               - R3S4. Segon cas d'ús o ampliació funcional: 01_programacio_modul/programacio_aula_r3s4_segon_cas_us_ampliacio_funcional.md
-              - R3S5. Qualitat i estabilització: 01_programacio_modul/programacio_aula_r3s5_qualitat_estabilitzacio.md
-              - R3S6. Tancament tècnic: 01_programacio_modul/programacio_aula_r3s6_tancament_tecnic.md
+              - R3S5. Autenticació, autorització i middleware: 01_programacio_modul/programacio_aula_r3s5_autenticacio_autoritzacio_middleware.md
+              - R3S6. Qualitat i estabilització: 01_programacio_modul/programacio_aula_r3s6_qualitat_estabilitzacio.md
+              - R3S7. Tancament tècnic: 01_programacio_modul/programacio_aula_r3s7_tancament_tecnic.md
               - R3SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r3sx_microdefenses_tecniques_criteris.md
               - R4S0. Transició al Repte 4: 01_programacio_modul/programacio_aula_r4s0_transicio_repte_4.md
               - R4S1. Disseny del contracte del servei: 01_programacio_modul/programacio_aula_r4s1_contracte_servei_api.md

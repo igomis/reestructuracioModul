@@ -169,7 +169,7 @@ Servei web funcional integrat en el projecte, amb:
 > **Norma del repte**
 >
 > - Els microprojectes cobrixen sobretot criteris procedimentals i d’interoperabilitat.
-> - Cap microprojecte apareix sense el camp **“CA coberts”**.
+> - Cap microprojecte apareix sense el camp **“RA avaluat, CA avaluats i RA de context”**.
 > - No es considera suficient una col·lecció d’endpoints sense contracte clar, consum real i documentació usable.
 > - El repte ha d’exposar una funcionalitat real del projecte, no una API de joguet desconnectada del domini.
 
@@ -198,12 +198,12 @@ L’equip concreta:
 
 Sense un contracte clar, l’API queda reduïda a una implementació tècnica sense sentit d’interoperabilitat.
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA7.a**
-- **RA7.b**
-- **RA7.c**
-- **RA7.d**
+- **RA avaluat**: **RA7**
+- **CA avaluats**: **RA7.a**, **RA7.b**, **RA7.c**, **RA7.d**
+- **RA de context**: cap
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -273,12 +273,12 @@ L’equip implementa un primer endpoint que:
 
 Este microprojecte és el pas en què el producte deixa de ser només backend intern i passa a oferir funcionalitat reusable.
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA7.d**
-- **RA7.e**
-- **RA6.c**
-- **RA6.d**
+- **RA avaluat**: **RA7**
+- **CA avaluats**: **RA7.d**, **RA7.e**
+- **RA de context**: **RA6.c**, **RA6.d**
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -354,10 +354,12 @@ També ha de demostrar:
 
 Este microprojecte diferencia una API usable i mínimament professional d’un servei obert sense control.
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA7.e**
-- **RA7.f**
+- **RA avaluat**: **RA7**
+- **CA avaluats**: **RA7.e**, **RA7.f**
+- **RA de context**: cap
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -433,10 +435,12 @@ El consum ha de mostrar:
 
 Sense consum verificat, l’API queda definida però no validada com a servei reutilitzable.
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA7.f**
-- **RA7.g**
+- **RA avaluat**: **RA7**
+- **CA avaluats**: **RA7.f**, **RA7.g**
+- **RA de context**: cap
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -509,11 +513,12 @@ També registra incidències detectades i correccions aplicades.
 
 Este microprojecte consolida el valor professional del servei i el deixa preparat per a reutilització real.
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA7.f**
-- **RA7.h**
-- **RA6.g**
+- **RA avaluat**: **RA7**
+- **CA avaluats**: **RA7.f**, **RA7.h**
+- **RA de context**: **RA6.g**
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -563,13 +568,13 @@ Rúbrica de documentació i verificació del servei.
 
 ## 6. Taula resum de microprojectes i criteris d’avaluació
 
-| Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
-|---|---|---|---|---|---|---|
-| R4M1 | Investigació / decisió tècnica | Contracte inicial del servei | RA7.a, RA7.b, RA7.c, RA7.d | mapa d’endpoints, taula request/response, defensa | rúbrica | 15% |
-| R4M2 | Procedimental | Primer endpoint funcional | RA7.d, RA7.e, RA6.c, RA6.d | endpoint, resposta, demo, dades reals | rúbrica | 20% |
-| R4M3 | Procedimental | Servei protegit | RA7.e, RA7.f | autenticació, cas autoritzat i denegat | rúbrica | 20% |
-| R4M4 | Procedimental | Consum real del servei | RA7.f, RA7.g | consumidor, demo, prova d’error | checklist | 20% |
-| R4M5 | Tancament / verificació | Documentació i prova del servei | RA7.f, RA7.h, RA6.g | documentació, proves, incidències, defensa | rúbrica | 25% |
+| Microprojecte | Tipus | Producte o lliurable | RA avaluat | CA avaluats | RA de context | Evidències principals | Instrument | Pes orientatiu |
+|---|---|---|---|---|---|---|---|---|
+| R4M1 | Investigació / decisió tècnica | Contracte inicial del servei | RA7 | RA7.a, RA7.b, RA7.c, RA7.d | - | mapa d’endpoints, taula request/response, defensa | rúbrica | 15% |
+| R4M2 | Procedimental | Primer endpoint funcional | RA7 | RA7.d, RA7.e | RA6.c, RA6.d | endpoint, resposta, demo, dades reals | rúbrica | 20% |
+| R4M3 | Procedimental | Servei protegit | RA7 | RA7.e, RA7.f | - | autenticació, cas autoritzat i denegat | rúbrica | 20% |
+| R4M4 | Procedimental | Consum real del servei | RA7 | RA7.f, RA7.g | - | consumidor, demo, prova d’error | checklist | 20% |
+| R4M5 | Tancament / verificació | Documentació i prova del servei | RA7 | RA7.f, RA7.h | RA6.g | documentació, proves, incidències, defensa | rúbrica | 25% |
 
 ---
 

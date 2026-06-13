@@ -1,8 +1,8 @@
-# R3S2. Persistencia minima amb migrations i seeders
+# R3S2. Persistencia minima amb migracions, fixtures/seeders o equivalent
 
 ## Finalitat de la sessio
 
-Esta sessio converteix la base arrancable de `R3M1` en una aplicacio amb BBDD real i dades reproduïbles. El centre no és dissenyar tot el model final, sinó crear un esquema minim que servisca als `2` fluxos declarats i que es puga reconstruir amb `migrations` i `seeders` o equivalents.
+Esta sessio converteix la base arrancable de `R3M1` en una aplicacio amb BBDD real i dades reproduïbles. El centre no és dissenyar tot el model final, sinó crear un esquema minim que servisca als `2` fluxos declarats i que es puga reconstruir amb migracions o mecanisme equivalent i amb una càrrega inicial reproduïble.
 
 ## Encaix dins del Repte 3
 
@@ -10,7 +10,7 @@ Esta sessio converteix la base arrancable de `R3M1` en una aplicacio amb BBDD re
 - **Microrepte**: `R3M2`
 - **Sessio**: `R3S2`
 - **Duracio orientativa**: `3 hores`
-- **Focus**: connexio a BBDD, esquema minim, migracions, seeders, lectura real i conjunt de dades usable
+- **Focus**: connexio a BBDD, esquema minim, migracions o equivalent, fixtures/seeders o script de càrrega, lectura real i conjunt de dades usable
 - **No entra encara**: model complet de tot el producte, relacions complexes, optimitzacio, API o permisos avançats
 
 ## Relacio amb RA i criteris de treball
@@ -28,8 +28,8 @@ Esta sessio converteix la base arrancable de `R3M1` en una aplicacio amb BBDD re
 ## Producte esperat
 
 - Connexio de BBDD configurada.
-- Migracions executables.
-- Seeders, fixtures o script equivalent.
+- Migracions o mecanisme equivalent executable.
+- Fixtures/seeders o script equivalent.
 - Dades de prova vinculades als fluxos.
 - Lectura real des de l'aplicacio o consola.
 - Conjunt de dades preparat per a llistat, detall, filtre o resposta.
@@ -37,8 +37,8 @@ Esta sessio converteix la base arrancable de `R3M1` en una aplicacio amb BBDD re
 
 ## Preparacio previa del professorat
 
-- Preparar exemple de migracio simple.
-- Preparar exemple de seeder o fixture.
+- Preparar exemple de migracio simple o mecanisme equivalent de l'stack.
+- Preparar exemple de fixture, seeder o script de càrrega.
 - Tindre pauta de model minim: camps necessaris, no inventari complet.
 - Preparar comprovacio de reset de BBDD.
 - Definir exemples de dades suficients per a llistat/detall.
@@ -46,10 +46,10 @@ Esta sessio converteix la base arrancable de `R3M1` en una aplicacio amb BBDD re
 ## Continguts a explicar
 
 - Diferencia entre persistencia real i arrays de prova.
-- Relacio entre flux, entitat, migracio, model i seeder.
+- Relacio entre flux, entitat, esquema, model/capa de dades i càrrega inicial.
 - Per que les dades manuals no són evidència suficient.
 - Com recuperar un conjunt de dades i preparar-lo per a una resposta.
-- Com documentar comandes de migracio i seed.
+- Com documentar comandes de migracio i càrrega de dades.
 
 ## Sequencia d'aula de 3 hores
 
@@ -66,9 +66,9 @@ Tasques:
 
 El professorat mostra:
 
-- una migracio simple;
+- una migracio simple o mecanisme equivalent;
 - un model o entitat;
-- un seeder;
+- un fixture, seeder o script de càrrega;
 - una lectura real;
 - reset complet de BBDD.
 
@@ -77,7 +77,7 @@ El professorat mostra:
 Tasques:
 
 - configurar connexio;
-- crear migracions;
+- crear migracions o mecanisme equivalent;
 - executar-les;
 - revisar estructura creada;
 - registrar decisions de camps.
@@ -86,7 +86,7 @@ Tasques:
 
 Tasques:
 
-- crear seeders o fixtures;
+- crear fixtures/seeders o script equivalent;
 - carregar dades;
 - recuperar un conjunt de dades;
 - preparar-lo per a vista, llistat, filtre, detall o resposta.
@@ -96,7 +96,7 @@ Tasques:
 Tasques:
 
 - reiniciar BBDD;
-- executar migracions i seeders;
+- executar migracions i càrrega inicial;
 - documentar comandes;
 - registrar evidencies i temps.
 
@@ -104,8 +104,8 @@ Tasques:
 
 Cada equip mostra:
 
-- migracions;
-- seeders;
+- migracions o equivalent;
+- fixtures/seeders o script equivalent;
 - dades carregades;
 - lectura real;
 - instruccions de reset.
@@ -114,8 +114,8 @@ Cada equip mostra:
 
 - Definir esquema minim.
 - Configurar connexio.
-- Crear i executar migracions.
-- Crear seeders o equivalents.
+- Crear i executar migracions o mecanisme equivalent.
+- Crear fixtures/seeders o script equivalents.
 - Recuperar conjunt de dades.
 - Preparar eixe conjunt per alimentar un flux.
 - Documentar reset i carrega.
@@ -124,11 +124,11 @@ Cada equip mostra:
 
 | Evidencia | Minim acceptable |
 |---|---|
-| BBDD | creada des de migracions |
-| Dades | carregades amb seeder o equivalent |
+| BBDD | creada des de migracions o mecanisme equivalent |
+| Dades | carregades amb fixtures/seeders o script equivalent |
 | Lectura | consulta real que retorna conjunt de dades |
 | Us | dades preparades per a un flux |
-| Documentacio | comandes de migracio i seed |
+| Documentacio | comandes de migracio i càrrega de dades |
 | Traçabilitat | commits i registre de temps aproximat |
 
 ## Criteris d'exit
@@ -149,7 +149,7 @@ Cada equip mostra:
 
 ## Us de la IA
 
-La IA pot ajudar amb camps, migracions, seeders i errors de connexio. L'alumnat ha de validar que el model respon al seu domini i que la BBDD es pot reconstruir.
+La IA pot ajudar amb camps, migracions, fixtures/seeders, scripts de càrrega i errors de connexio. L'alumnat ha de validar que el model respon al seu domini i que la BBDD es pot reconstruir.
 
 ## Suport per a alumnat amb dificultats
 
@@ -162,13 +162,13 @@ La IA pot ajudar amb camps, migracions, seeders i errors de connexio. L'alumnat 
 
 - Afegir una relacio simple si aporta valor al flux.
 - Crear factory o fixture més completa.
-- Afegir comprovacio automatica de migracio i seed.
+- Afegir comprovacio automatica de migracio i càrrega inicial.
 
 ## Checklist de tancament
 
 - [ ] Connexio configurada.
 - [ ] Migracions executades.
-- [ ] Seeders o equivalents funcionen.
+- [ ] Fixtures/seeders o càrrega equivalent funcionen.
 - [ ] Hi ha lectura real.
 - [ ] Les dades alimenten o preparen un flux.
 - [ ] Hi ha instruccions de reset.
@@ -177,4 +177,3 @@ La IA pot ajudar amb camps, migracions, seeders i errors de connexio. L'alumnat 
 ## Connexio amb el microrepte posterior
 
 `R3M3` utilitzara esta persistencia per reconstruir un primer cas d'us complet heretat de `R2`. Sense dades reals, el flux quedara com una pantalla o demo ficticia.
-

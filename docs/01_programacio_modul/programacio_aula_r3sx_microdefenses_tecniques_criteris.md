@@ -13,7 +13,7 @@ Verificar que el pas a framework, arquitectura o patró, separació de responsab
 ## Criteris d'avaluació que es poden treballar
 
 - `RA5.a` a `RA5.h`: estructura del framework, rutes, controladors, vistes, serveis i mantenibilitat.
-- `RA6.a` a `RA6.g`: model de dades, `migrations`, `seeders`, consultes, persistència i errors.
+- `RA6.a` a `RA6.g`: model de dades, migracions o mecanisme equivalent, dades inicials reproduïbles, consultes, persistència i errors.
 - `RA8.c` a `RA8.g`: ús del framework per generar resposta web i gestionar interaccions.
 
 Cada defensa ha de connectar `1-2` criteris amb un flux concret, no amb una descripció general del framework.
@@ -24,7 +24,7 @@ Cada defensa ha de connectar `1-2` criteris amb un flux concret, no amb una desc
 - Diagrama mínim o recorregut ruta-controlador-model/vista o equivalent.
 - Fragment de codi rellevant.
 - Demo end-to-end amb dades reals.
-- Prova de `migrations`, `seeders` o reconstrucció de dades quan siga aplicable.
+- Prova de migracions o mecanisme equivalent i reconstrucció de dades quan siga aplicable.
 - Commits o traçabilitat.
 - `AI log` i mini justificació tècnica.
 
@@ -59,7 +59,7 @@ La IA pot ajudar a comparar patrons, revisar una migració, detectar duplicació
 ## Riscos d'ús inadequat de la IA
 
 - Projecte de framework generat sense entendre rutes ni cicle de petició.
-- Models, migracions o seeders copiats sense prova de reconstrucció.
+- Models, migracions o càrrega inicial copiats sense prova de reconstrucció.
 - Explicació genèrica de MVC sense mostrar flux propi.
 - Persistència carregada manualment i no reproduïble.
 

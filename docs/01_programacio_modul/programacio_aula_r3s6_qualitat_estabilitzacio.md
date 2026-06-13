@@ -1,4 +1,4 @@
-# R3S5. Qualitat i estabilitzacio
+# R3S6. Qualitat i estabilitzacio
 
 ## Finalitat de la sessio
 
@@ -7,8 +7,8 @@ Esta sessio converteix els fluxos de `R3` en una base minima mantenible. El rept
 ## Encaix dins del Repte 3
 
 - **Repte**: `R3. Reconstruccio en framework, persistencia real i primers fluxos funcionals`
-- **Microrepte**: `R3M5`
-- **Sessio**: `R3S5`
+- **Microrepte**: `R3M6`
+- **Sessio**: `R3S6`
 - **Duracio orientativa**: `3 hores`
 - **Focus**: proves, errors, validacio, neteja de responsabilitats, regressio i estabilitat
 - **No entra encara**: noves funcionalitats grans, API, desplegament o refactoritzacio total
@@ -30,7 +30,7 @@ Esta sessio converteix els fluxos de `R3` en una base minima mantenible. El rept
 - Tractament d'errors basic.
 - Validacio reforçada quan calga.
 - Revisio de controladors, serveis, models o equivalents.
-- Comprovacio de migracions i seeders.
+- Comprovacio de migracions/fixtures/seeders o mecanisme equivalent.
 - Incidencies detectades i corregides.
 
 ## Preparacio previa del professorat
@@ -47,7 +47,7 @@ Esta sessio converteix els fluxos de `R3` en una base minima mantenible. El rept
 - Diferencia entre prova manual, checklist i test automatitzat.
 - Com detectar responsabilitats barrejades.
 - Com documentar errors corregits.
-- Com evitar que la neteja trenque migracions o seeders.
+- Com evitar que la neteja trenque migracions o càrrega inicial.
 
 ## Sequencia d'aula de 3 hores
 
@@ -57,7 +57,7 @@ Tasques:
 
 - executar els dos fluxos;
 - anotar què falla;
-- comprovar migracions i seeders;
+- comprovar migracions i càrrega inicial;
 - prioritzar correccions.
 
 ### 0:25-0:55. Modelatge docent
@@ -122,7 +122,7 @@ Cada equip mostra:
 | Proves | checklist o proves executades |
 | Casos | positiu i negatiu |
 | Errors | tractament visible |
-| BBDD | migracions i seeders continuen funcionant |
+| BBDD | migracions i fixtures/seeders o equivalent continuen funcionant |
 | Qualitat | revisio de responsabilitats |
 | Traçabilitat | incidencies, commits i temps aproximat |
 
@@ -139,7 +139,7 @@ Cada equip mostra:
 - Fer proves només del cami feliç.
 - Afegir funcionalitat nova en lloc d'estabilitzar.
 - Documentar proves que no s'han executat.
-- Trencar seeders o migracions.
+- Trencar migracions o càrrega inicial.
 - Amagar errors sense tractar-los.
 
 ## Us de la IA
@@ -165,11 +165,10 @@ La IA pot ajudar a interpretar errors, proposar proves o suggerir separacio de r
 - [ ] Segon flux funciona.
 - [ ] Hi ha cas positiu i negatiu.
 - [ ] Hi ha error controlat.
-- [ ] Migracions i seeders funcionen.
+- [ ] Migracions i càrrega inicial funcionen.
 - [ ] Hi ha registre d'incidencies.
 - [ ] Hi ha commits i temps aproximat.
 
 ## Connexio amb el microrepte posterior
 
-`R3M6` tancara documentacio, demo i backlog. Esta sessio ha de deixar el projecte prou estable perquè el tancament no siga una llista d'intencions.
-
+`R3M7` tancara documentacio, demo i backlog. Esta sessio ha de deixar el projecte prou estable perquè el tancament no siga una llista d'intencions.

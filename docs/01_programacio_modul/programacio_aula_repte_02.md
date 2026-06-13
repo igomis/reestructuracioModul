@@ -9,16 +9,17 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 - consolidar una base comuna en `PHP` per a tot l'alumnat
 - construir una primera funcionalitat real del producte a partir d'un flux complet de servidor
 - fer visible la relació entre formulari, processament, lògica, estat, autenticació i funcionalitat protegida
-- mantindre la persistència com a suport funcional del flux, no encara com a centre metodològic del repte
+- obrir una mini API d'autenticació perquè DWEC puga consumir el backend abans de `R4`
+- introduir persistència mínima amb BBDD com a pont cap a `R3`, sense convertir-la encara en arquitectura completa
 - preparar un pas net cap a `R3`, que serà el punt d'entrada dels itineraris diferenciats
 
 ## Duració base
 
-- `21 hores`
-- `7` sessions de `3` hores
-- cada sessió es correspon amb un microprojecte docent concret
+- `27 hores` de nucli
+- `9` sessions de `3` hores, una per cada microprojecte docent concret
+- `3 hores` addicionals de taller intermodular associat a `R2M6`
 
-`R2` queda fixat amb estes `7` sessions com a base. La sessió `7` està dedicada específicament a convertir una part del flux ja verificat en una primera peça testable amb POO, Composer i una prova unitària inicial.
+`R2` queda fixat amb estes `9` sessions de nucli i un taller associat. La sessió `6` obri una mini API d'autenticació per a client, el taller `R2S10` estabilitza el contracte per a `DWEC`, la sessió `8` està dedicada a convertir una part del flux ja verificat en una primera peça testable amb POO, Composer i una prova unitària inicial, i la sessió `9` introdueix BBDD mínima en PHP.
 
 ## Coordinació explícita entre sessions i microprojectes
 
@@ -29,22 +30,27 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 | `3` | `3h` | `R2M3` | lògica del flux i regles del projecte | decisió, estructura o funció amb efecte visible |
 | `4` | `3h` | `R2M4` | estat, sessió i/o cookies | recuperació del flux i invalidació controlada |
 | `5` | `3h` | `R2M5` | autenticació i funcionalitat protegida | cas autoritzat i cas denegat d'una operació real |
-| `6` | `3h` | `R2M6` | prova, depuració, documentació mínima i checkpoint tècnic | checklist, README i demo reproduïble |
-| `7` | `3h` | `R2M7` | primera peça testable amb POO i Composer | classe mínima, autoload de Composer i prova unitària inicial |
+| `6` | `3h` | `R2M6` | mini API d'autenticació per a client | `POST /api/login`, ruta protegida, `JSON`, `200` i `401` |
+| `10` | `3h` | Taller associat a `R2M6` | contracte d'autenticació per a `DWEC` | `docs/api-auth-contract.md`, usuari demo i prova creuada |
+| `7` | `3h` | `R2M7` | prova, depuració, documentació mínima i checkpoint tècnic | checklist, README i demo reproduïble |
+| `8` | `3h` | `R2M8` | primera peça testable amb POO i Composer | classe mínima, autoload de Composer i prova unitària inicial |
+| `9` | `3h` | `R2M9` | persistència mínima amb BBDD en PHP | connexió, taula, alta, lectura i consulta preparada |
 
 ## Correspondència curta sessió -> RA -> evidència -> verificació
 
 Esta taula és el mapa mínim de traçabilitat docent del repte. No substituïx la rúbrica ni les checklists, però ajuda a comprovar ràpidament que cada sessió deixa una evidència observable i una forma concreta de verificar aprenentatge real.
 
-| Sessió | RA principal | CA associats | Què s'aprén | Evidència mínima | Verificació docent |
-|---|---|---|---|---|---|
-| `1` | `RA2` + `RA3` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d`, `RA3.e`, `RA3.f`, `RA3.g` | entrada de dades variades, recuperació en servidor i validació visible | formulari amb text, llista, checkbox i, si escau, fitxer, amb error i reintent corregit | execució en directe i pregunta sobre d'on ix cada dada, com arriba al servidor i com es valida |
-| `2` | `RA2` + `RA3` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d`, `RA2.e`, `RA2.f`, `RA2.g`, `RA2.h`, `RA3.e`, `RA3.f`, `RA3.g` | generació de resposta, variables, operadors, àmbits, reintent amb dades conservades i guardat funcional simple | formulari regenerat amb dades aprofitables després d'un error, reenviament corregit i cas correcte guardat | canvi menut en viu sobre un valor conservat o guardat i explicació d'on es rep, es tracta i es torna a usar |
-| `3` | `RA3` | `RA3.a`, `RA3.b`, `RA3.c`, `RA3.d` | decisions, arrays, funcions i regles de domini aplicades | regla amb dos resultats observables i funció o estructura útil | microcanvi en una condició o funció i explicació de per què no és ornamental |
-| `4` | `RA4` | `RA4.a`, `RA4.b`, `RA4.c` | estat temporal, sessió, cookies i invalidació | recuperació d'estat i neteja o caducitat demostrada | execució de recuperació i invalidació, més pregunta sobre què queda en client, servidor o flux funcional |
-| `5` | `RA4` | `RA4.d`, `RA4.e` | identificació, autenticació, autorització i protecció d'una operació real | cas autenticat permés i cas no permés sobre una acció del domini | demo dels dos casos i pregunta sobre el punt exacte on es comprova la restricció |
-| `6` | `RA4` | `RA4.f` | prova, depuració, documentació i reproduïbilitat | taula mínima de proves, incidències i README actualitzat | execució d'un cas triat pel professorat i contrast amb documentació, codi i AI log |
-| `7` | `RA3` + `RA4` | `RA3.d`, `RA3.g`, `RA4.f` | POO mínima, Composer, autoload i primera prova unitària | classe simple del domini o servei, `composer.json`, test unitari i prova de no regressió | execució del test, revisió de la classe i defensa de què queda ara més testable |
+| Sessió | RA avaluat | CA avaluats | RA de context | Què s'aprén | Evidència mínima | Verificació docent |
+|---|---|---|---|---|---|---|
+| `1` | `RA2` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d` | `RA3.e`, `RA3.f`, `RA3.g` | entrada de dades variades, recuperació en servidor i validació visible | formulari amb text, llista, checkbox i, si escau, fitxer, amb error i reintent corregit | execució en directe i pregunta sobre d'on ix cada dada, com arriba al servidor i com es valida |
+| `2` | `RA2` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d`, `RA2.e`, `RA2.f`, `RA2.g`, `RA2.h` | `RA3.e`, `RA3.f`, `RA3.g` | generació de resposta, variables, operadors, àmbits, reintent amb dades conservades i guardat funcional simple | formulari regenerat amb dades aprofitables després d'un error, reenviament corregit i cas correcte guardat | canvi menut en viu sobre un valor conservat o guardat i explicació d'on es rep, es tracta i es torna a usar |
+| `3` | `RA3` | `RA3.a`, `RA3.b`, `RA3.c`, `RA3.d` | - | decisions, arrays, funcions i regles de domini aplicades | regla amb dos resultats observables i funció o estructura útil | microcanvi en una condició o funció i explicació de per què no és ornamental |
+| `4` | `RA4` | `RA4.a`, `RA4.b`, `RA4.c` | - | estat temporal, sessió, cookies i invalidació | recuperació d'estat i neteja o caducitat demostrada | execució de recuperació i invalidació, més pregunta sobre què queda en client, servidor o flux funcional |
+| `5` | `RA4` | `RA4.d`, `RA4.e` | - | identificació, autenticació, autorització i protecció d'una operació real | cas autenticat permés i cas no permés sobre una acció del domini | demo dels dos casos i pregunta sobre el punt exacte on es comprova la restricció |
+| `6` | `RA4` | `RA4.d`, `RA4.e` | pont DWEC | mini API d'autenticació consumible des de client | login API, ruta protegida, `JSON`, `200`, `401` i prova externa | execució de `POST /api/login`, `GET /api/me` i cas `401` |
+| `7` | `RA4` | `RA4.f` | - | prova, depuració, documentació i reproduïbilitat | taula mínima de proves, incidències i README actualitzat | execució d'un cas triat pel professorat i contrast amb documentació, codi i AI log |
+| `8` | `RA3` | `RA3.d`, `RA3.g` | `RA4.f` | POO mínima, Composer, autoload i primera prova unitària | classe simple del domini o servei, `composer.json`, test unitari i prova de no regressió | execució del test, revisió de la classe i defensa de què queda ara més testable |
+| `9` | `RA6` | `RA6.a`, `RA6.b`, `RA6.c`, `RA6.d`, `RA6.f` | `RA3`, `RA4` | persistència mínima amb BBDD en PHP | connexió, taula, alta, lectura, consulta preparada i README de reproducció | demo d'inserció, consulta posterior i revisió de configuració sense secrets |
 
 ## Conceptes que han de quedar diferenciats
 
@@ -286,7 +292,7 @@ Una regla del domini implementada amb efecte visible i almenys dos casos de prov
 - ajudar a convertir regles massa grans en una regla executable en tres hores
 - impedir lògica ornamental que no afecte el flux
 - demanar casos diferents abans de donar per bona la sessió
-- assenyalar una regla o comprovació candidata a convertir-se en classe testable en la sessió final
+- assenyalar una regla o comprovació candidata a convertir-se en classe testable en la sessió `8`
 
 #### Tasques concretes de l'alumnat
 - escriure la regla en una frase clara

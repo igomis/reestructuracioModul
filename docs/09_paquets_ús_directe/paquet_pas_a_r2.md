@@ -6,7 +6,7 @@ Entrar en `R2` amb una base funcional real i activar el primer flux autenticat s
 
 Este paquet servix per a mantindre `R2` com a base comuna en `PHP`, abans d'obrir el contrast de frameworks.
 
-El mateix paquet també ha de permetre tancar `R2` en `7` sessions amb una sessió final específica de primera peça testable amb POO, Composer, autoload i prova unitària abans d'obrir `R3`.
+El mateix paquet també ha de permetre tancar `R2` en `9` sessions amb mini API d'autenticació per a client, primera peça testable amb POO/Composer/autoload i persistència mínima amb BBDD abans d'obrir `R3`.
 
 ## Materials que ha d'obrir el professorat
 

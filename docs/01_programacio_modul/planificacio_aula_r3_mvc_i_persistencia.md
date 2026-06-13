@@ -15,7 +15,7 @@ No redefineix el repte. La referència conceptual i avaluable continua sent [rep
 En la seqüència de `20` setmanes del repositori, això correspon a:
 
 - `Setmana 9`: arrencada del projecte en framework, Docker i rutes mínimes.
-- `Setmana 10`: model de dades, BBDD real, `migrations` i `seeders`.
+- `Setmana 10`: model de dades, BBDD real, migracions o equivalent, càrrega inicial reproduïble i taller de portabilitat entre frameworks.
 - `Setmana 11`: primer cas d'ús complet migrat de `R2`.
 - `Setmana 12`: segon cas d'ús o ampliació funcional, estabilització i tancament tècnic.
 
@@ -45,11 +45,11 @@ Lectura docent:
 
 ## Duració recomanada
 
-El document del repte situa `R3` en una duració orientativa de `6` a `8` sessions.
+El document del repte situa `R3` en una duració orientativa de `7` a `9` sessions.
 
 Opció docent preferent:
 
-- `8` sessions de `3` hores
+- `9` sessions de `3` hores, incloent el taller `R3S2B`
 - `24` hores aproximades
 - `4` setmanes de treball en el model de `6` hores setmanals
 - inici al final de l'avaluació 1
@@ -57,25 +57,26 @@ Opció docent preferent:
 
 Compactació possible:
 
-- `6` sessions si el grup arriba amb `R2` molt sòlid i l'stack no introdueix fricció significativa.
-- no convé compactar per davall de `6` sessions perquè desapareix la verificació real de Docker, BBDD, `migrations`, `seeders`, dos fluxos i proves.
+- `8` sessions si el grup arriba amb `R2` molt sòlid i l'stack no introdueix fricció significativa.
+- no convé compactar per davall de `8` sessions perquè desapareix la verificació real de Docker, BBDD, migracions o equivalent, càrrega inicial, dos fluxos, protecció d'accessos i proves.
 
-Si cal reduir abast, es redueix la mida dels fluxos, no els mínims: Docker, projecte arrancable, BBDD real, `migrations`, `seeders`, `2` casos d'ús, validació, errors, proves i README.
+Si cal reduir abast, es redueix la mida dels fluxos, no els mínims: Docker, projecte arrancable, BBDD real, migracions o equivalent, dades inicials reproduïbles, `2` casos d'ús, autenticació/autorització mínima, validació, errors, proves i README.
 
 ## Correspondència entre microprojectes i sessions
 
-| Microprojecte | Sessions | CA associats | Producte parcial esperat | Evidència mínima | Checkpoint docent |
-|---|---|---|---|---|---|
-| `R3M1` Arrencada del nou projecte | `1` | `RA5.a`, `RA5.b`, `RA5.c`, `RA5.d`, `RA5.e`, `RA8.c` | stack triat, Docker, projecte base, `.env` i rutes mínimes | projecte arrancable, ruta o vista inicial, issue de `R3` i declaració dels `2` fluxos | no és només esquelet: arranca i té abast funcional definit |
-| `R3M2` Model de dades i persistència mínima | `2-3` | `RA6.a`, `RA6.b`, `RA6.c`, `RA6.d`, `RA6.e`, `RA5.f` | BBDD real amb esquema inicial i dades de prova | `migrations`, `seeders`, connexió i lectura real | la BBDD es pot reconstruir sense càrrega manual |
-| `R3M3` Primer cas d'ús complet | `3-4` | `RA5.e`, `RA5.f`, `RA5.g`, `RA6.c`, `RA6.d`, `RA6.f`, `RA8.d`, `RA8.e`, `RA8.g` | primer flux end-to-end migrat de `R2` | ruta, controlador, model/servei, vista o plantilla, BBDD, resposta `HTML` si és el flux server-rendered i validació mínima | el flux ve de `R2` i funciona amb dades reals |
-| `R3M4` Segon cas d'ús o ampliació funcional | `5-6` | `RA5.e`, `RA5.f`, `RA5.g`, `RA5.h`, `RA6.c`, `RA6.d`, `RA6.f`, `RA8.f` | segon flux end-to-end o ampliació útil | recorregut funcional, BBDD, validació/error, canvi dinàmic de resposta i demo | no és canvi cosmètic ni duplicació buida |
-| `R3M5` Qualitat i estabilització | `6-7` | `RA5.g`, `RA5.h`, `RA6.f`, `RA6.g` | validació, errors, proves i neteja d'estructura | proves mínimes, cas positiu/negatiu, revisió de responsabilitats | els dos fluxos continuen funcionant després de la neteja |
-| `R3M6` Tancament tècnic | `8` | `RA5.f`, `RA5.g`, `RA6.g` | README, decisions, demo i backlog de migració | instruccions d'arrencada, fluxos documentats i mapa del que queda | només s'obri `R4` si la base és reproduïble i defensable |
+| Microprojecte | Sessions | RA avaluat | CA avaluats | RA de context | Producte parcial esperat | Evidència mínima | Checkpoint docent |
+|---|---|---|---|---|---|---|---|
+| `R3M1` Arrencada del nou projecte | `1` | `RA5` | `RA5.a`, `RA5.b`, `RA5.c`, `RA5.d`, `RA5.e` | `RA8.c` | stack triat, Docker, projecte base, `.env` i rutes mínimes | projecte arrancable, ruta o vista inicial, issue de `R3` i declaració dels `2` fluxos | no és només esquelet: arranca i té abast funcional definit |
+| `R3M2` Model de dades i persistència mínima | `2-3` | `RA6` | `RA6.a`, `RA6.b`, `RA6.c`, `RA6.d`, `RA6.e` | `RA5.f` | BBDD real amb esquema inicial i dades de prova | migracions o equivalent, càrrega inicial, connexió i lectura real | la BBDD es pot reconstruir sense càrrega manual |
+| `R3M3` Primer cas d'ús complet | `3-4` | `RA8` | `RA8.d`, `RA8.e`, `RA8.g` | `RA5.e`, `RA5.f`, `RA5.g`, `RA6.c`, `RA6.d`, `RA6.f` | primer flux end-to-end migrat de `R2` | ruta, controlador, model/servei, vista o plantilla, BBDD, resposta `HTML` si és el flux server-rendered i validació mínima | el flux ve de `R2` i funciona amb dades reals |
+| `R3M4` Segon cas d'ús o ampliació funcional | `5-6` | `RA8` | `RA8.f`, `RA8.g` | `RA5.e`, `RA5.f`, `RA5.g`, `RA5.h`, `RA6.c`, `RA6.d`, `RA6.f` | segon flux end-to-end o ampliació útil | recorregut funcional, BBDD, validació/error, canvi dinàmic de resposta i demo | no és canvi cosmètic ni duplicació buida |
+| `R3M5` Autenticació, autorització i middleware | `6` | `RA5` | `RA5.f`, `RA5.g`, `RA5.h` | `RA6.f`, `RA8.g` | acció significativa protegida | login, middleware/guard/voter/policy o equivalent, cas autoritzat i denegat | la protecció està en servidor i no només en la vista |
+| `R3M6` Qualitat i estabilització | `7-8` | `RA5` | `RA5.g`, `RA5.h` | `RA6.f`, `RA6.g` | validació, errors, proves i neteja d'estructura | proves mínimes, cas positiu/negatiu, revisió de responsabilitats i protecció intacta | els fluxos continuen funcionant després de la neteja |
+| `R3M7` Tancament tècnic | `9` | `RA5` | `RA5.f`, `RA5.g` | `RA6.g` | README, decisions, demo i backlog de migració | instruccions d'arrencada, fluxos documentats, acció protegida i mapa del que queda | només s'obri `R4` si la base és reproduïble i defensable |
 
-El solapament entre microprojectes és intencionat. `R3M2` pot començar mentre encara es tanca `R3M1`, i `R3M5` pot actuar sobre `R3M3` i `R3M4` a mesura que apareixen errors. El criteri és mantindre un producte executable en tot moment.
+El solapament entre microprojectes és intencionat. `R3M2` pot començar mentre encara es tanca `R3M1`, `R3M5` aprofita els fluxos ja construïts per protegir una acció real, i `R3M6` pot actuar sobre `R3M3-R3M5` a mesura que apareixen errors. El criteri és mantindre un producte executable en tot moment.
 
-## Seqüència detallada de 8 sessions de 3 hores
+## Seqüència detallada de 10 sessions de 3 hores
 
 ### Sessió 1. Arrencada del nou projecte
 
@@ -158,7 +159,7 @@ Definir l'esquema mínim de dades i crear la primera migració vinculada als flu
 **Tasques**
 
 - definir les entitats o taules mínimes
-- crear `migrations`
+- crear migracions o mecanisme equivalent
 - configurar connexió de BBDD
 - executar migracions
 - preparar una consulta o recuperació de conjunt de dades per a un llistat, detall, filtre o resposta
@@ -166,7 +167,7 @@ Definir l'esquema mínim de dades i crear la primera migració vinculada als flu
 
 **Evidència mínima**
 
-- BBDD creada per `migrations`
+- BBDD creada per migracions o mecanisme equivalent
 - esquema inicial coherent amb els fluxos
 - primera recuperació de conjunt de dades prevista per alimentar un flux
 - comprovació de connexió i estructura
@@ -175,7 +176,7 @@ Definir l'esquema mínim de dades i crear la primera migració vinculada als flu
 
 La BBDD ha de poder crear-se de zero. Si l'esquema només existeix manualment en una eina gràfica o local, no és suficient.
 
-### Sessió 3. Seeders i primera lectura real
+### Sessió 3. Dades inicials i primera lectura real
 
 **Microprojecte principal**
 
@@ -191,19 +192,19 @@ Carregar dades inicials reproduïbles i preparar la primera lectura real de conj
 
 **Què explica el professorat**
 
-- per què els seeders eviten demos irreproduïbles
+- per què una càrrega inicial reproduïble evita demos irreproduïbles
 - com comprovar dades sense dependre de l'estat local d'una màquina
 - com un conjunt de dades recuperat prepara el primer flux
 
 **Què modela el professorat**
 
-- seeder, fixture o script equivalent
+- fixture, seeder o script equivalent
 - reset de BBDD i recàrrega de dades
 - lectura d'un conjunt de dades des d'un controlador, servei o consola del framework i ús en una vista, llistat o resposta
 
 **Tasques**
 
-- crear seeders o equivalent
+- crear fixtures/seeders o script equivalent
 - carregar dades de demostració
 - verificar lectura real d'un conjunt de dades
 - usar eixe conjunt de dades en un llistat, detall, filtre o resposta equivalent
@@ -218,6 +219,31 @@ Carregar dades inicials reproduïbles i preparar la primera lectura real de conj
 **Checkpoint docent**
 
 Les dades han de poder aparéixer després d'un reset i alimentar un flux real. Si cal inserir-les a mà, el repte encara no té persistència reproduïble.
+
+### Sessió 3B. Taller de portabilitat entre frameworks
+
+**Sessió formativa sense microrepte propi**
+
+- reforç de `R3M1` i `R3M2`
+- preparació de `R3M3`
+
+**Objectiu**
+
+Comprovar que l'alumnat entén les equivalències entre `Laravel`, `Symfony` i `NestJS` abans de construir el primer flux complet.
+
+**Tasques**
+
+- completar una taula d'equivalències del seu stack respecte a un altre;
+- localitzar en el repositori ruta, controlador, capa de dades, model, migració o equivalent, càrrega inicial, vista/resposta i prova;
+- explicar com es reconstrueix la BBDD i com es carreguen dades inicials;
+- preparar una mini defensa del recorregut petició -> resposta;
+- registrar una microtasca de correcció.
+
+**Evidència mínima**
+
+- taula d'equivalències;
+- auditoria curta del projecte;
+- microtasca registrada abans d'entrar a `R3M3`.
 
 ### Sessió 4. Primer cas d'ús complet migrat de `R2`
 
@@ -307,15 +333,55 @@ Construir un segon recorregut end-to-end que demostre que la base del framework 
 
 No compta com a segon flux una pàgina estàtica, una còpia del primer canviant noms o una millora només visual.
 
-### Sessió 6. Validació, errors i primera bateria de proves
+### Sessió 6. Autenticació, autorització i middleware
 
 **Microprojecte principal**
 
-- `R3M5 — Qualitat i estabilització`
+- `R3M5 — Autenticació, autorització i middleware`
 
 **Objectiu**
 
-Fer que els dos fluxos tinguen validació, errors bàsics i proves mínimes o verificacions reproduïbles.
+Protegir una acció significativa amb autenticació del framework, autorització mínima i cas denegat verificable.
+
+**Què explica el professorat**
+
+- diferència entre autenticació i autorització
+- per què ocultar una vista no protegeix el servidor
+- equivalències entre middleware, guard, voter i policy
+
+**Què modela el professorat**
+
+- login i logout o invalidació
+- ruta protegida
+- cas autoritzat i cas denegat
+
+**Tasques**
+
+- preparar usuari demo
+- protegir una acció real
+- aplicar middleware, guard, voter, policy o equivalent
+- documentar regla d'autorització
+- verificar cas sense autenticar, autoritzat i denegat
+
+**Evidència mínima**
+
+- acció protegida en servidor
+- cas autoritzat i cas denegat
+- instruccions de prova
+
+**Checkpoint docent**
+
+No es considera protecció si només s'oculta un botó o enllaç però la ruta continua accessible.
+
+### Sessió 7. Validació, errors i primera bateria de proves
+
+**Microprojecte principal**
+
+- `R3M6 — Qualitat i estabilització`
+
+**Objectiu**
+
+Fer que els fluxos principals tinguen validació, errors bàsics i proves mínimes o verificacions reproduïbles.
 
 **Què explica el professorat**
 
@@ -335,30 +401,32 @@ Fer que els dos fluxos tinguen validació, errors bàsics i proves mínimes o ve
 - tractar errors bàsics
 - preparar proves mínimes o checklist executable
 - verificar cas positiu i cas negatiu dels fluxos
+- verificar que l'acció protegida continua funcionant
 
 **Evidència mínima**
 
 - proves o verificacions registrades
 - errors controlats visibles
-- dos fluxos encara funcionant
+- fluxos encara funcionant
+- protecció d'accessos intacta
 
 **Checkpoint docent**
 
 No es considera qualitat mínima si només hi ha una demo feliç sense cap entrada incorrecta o situació d'error.
 
-### Sessió 7. Estabilització d'estructura
+### Sessió 8. Estabilització d'estructura
 
 **Microprojecte principal**
 
-- `R3M5 — Qualitat i estabilització`
+- `R3M6 — Qualitat i estabilització`
 
 **Microprojecte secundari**
 
-- inici de `R3M6 — Tancament tècnic`
+- inici de `R3M7 — Tancament tècnic`
 
 **Objectiu**
 
-Revisar responsabilitats, netejar duplicacions i assegurar que migracions, seeders i fluxos continuen funcionant.
+Revisar responsabilitats, netejar duplicacions i assegurar que migracions o equivalent, càrrega inicial i fluxos continuen funcionant.
 
 **Què explica el professorat**
 
@@ -369,32 +437,32 @@ Revisar responsabilitats, netejar duplicacions i assegurar que migracions, seede
 **Què modela el professorat**
 
 - refactorització mínima d'un controlador o servei
-- reexecució de migracions i seeders
+- reexecució de migracions o equivalent i càrrega inicial
 - prova ràpida dels dos fluxos després de la neteja
 
 **Tasques**
 
 - revisar rutes, controladors, serveis i models o equivalents
 - eliminar duplicacions evidents
-- comprovar migracions i seeders
+- comprovar migracions o equivalent i càrrega inicial
 - repetir proves dels dos fluxos
 - començar README tècnic
 
 **Evidència mínima**
 
 - estructura revisada
-- migracions i seeders encara funcionant
+- migracions o equivalent i càrrega inicial encara funcionant
 - proves repetides després de la neteja
 
 **Checkpoint docent**
 
 La neteja només és vàlida si el sistema continua arrancant i els dos fluxos continuen vius.
 
-### Sessió 8. Tancament tècnic i pas a `R4`
+### Sessió 9. Tancament tècnic i pas a `R4`
 
 **Microprojecte principal**
 
-- `R3M6 — Tancament tècnic`
+- `R3M7 — Tancament tècnic`
 
 **Objectiu**
 
@@ -410,12 +478,12 @@ Tancar `R3` amb documentació executable, demostració curta, decisions tècniqu
 
 - estructura curta de README
 - backlog de migració
-- demo de tancament amb arrencada, BBDD, seeders i dos fluxos
+- demo de tancament amb arrencada, BBDD, càrrega inicial i dos fluxos
 
 **Tasques**
 
 - actualitzar README
-- documentar arrencada, `.env`, migracions i seeders
+- documentar arrencada, `.env`, migracions o equivalent i càrrega inicial
 - descriure els `2` casos d'ús
 - registrar decisions tècniques
 - deixar backlog o mapa del que queda per migrar de `R2`
@@ -437,11 +505,12 @@ Només s'obri `R4` si el projecte arranca, la BBDD es reconstrueix, les dades es
 | Moment | Pregunta docent | Evidència exigible |
 |---|---|---|
 | Després de `R3M1` | El projecte en framework arranca de veritat? | Docker, `.env`, ruta mínima i issue amb `2` fluxos |
-| Després de `R3M2` | La persistència es pot reconstruir de zero? | `migrations`, `seeders`, BBDD i lectura real |
+| Després de `R3M2` | La persistència es pot reconstruir de zero? | migracions o equivalent, càrrega inicial, BBDD i lectura real |
 | Després de `R3M3` | Hi ha un flux de `R2` migrat i funcional? | ruta, controlador, dades reals, vista/resposta i validació |
 | Després de `R3M4` | Hi ha un segon flux real? | segon recorregut end-to-end, no cosmètic |
-| Després de `R3M5` | El projecte aguanta errors i proves mínimes? | cas positiu, cas negatiu, errors i neteja |
-| Després de `R3M6` | Una altra persona podria arrancar i entendre el projecte? | README, demo, decisions i backlog |
+| Després de `R3M5` | Hi ha una acció protegida real? | login, logout, cas autoritzat, cas denegat i middleware/guard/voter/policy o equivalent |
+| Després de `R3M6` | El projecte aguanta errors i proves mínimes? | cas positiu, cas negatiu, errors, acció protegida i neteja |
+| Després de `R3M7` | Una altra persona podria arrancar i entendre el projecte? | README, demo, decisions i backlog |
 
 ## Adaptacions de ritme
 
@@ -449,7 +518,7 @@ Només s'obri `R4` si el projecte arranca, la BBDD es reconstrueix, les dades es
 
 - limitar el domini a una entitat central i una relació opcional
 - triar dos fluxos molt xicotets però reals
-- prioritzar arrencada, BBDD, migracions, seeders i proves mínimes
+- prioritzar arrencada, BBDD, migracions o equivalent, càrrega inicial i proves mínimes
 - ajornar millores visuals, funcionalitats secundàries i relacions complexes
 - no eliminar el segon flux: reduir-lo al mínim funcional
 
@@ -467,7 +536,7 @@ Només s'obri `R4` si el projecte arranca, la BBDD es reconstrueix, les dades es
 - convertir `R3` en una comparativa teòrica de frameworks
 - fer només instal·lació i captures
 - migrar fitxers de `R2` sense adaptar-los al framework
-- no usar `migrations` o `seeders`
+- no usar migracions o equivalent ni càrrega inicial reproduïble
 - simular dades en arrays quan ja toca BBDD
 - implementar només un flux
 - no poder explicar quin flux ve de `R2`
@@ -481,8 +550,8 @@ L'equip pot passar a `R4` quan pot demostrar:
 
 - aplicació en framework operativa
 - Docker funcional
-- BBDD creada per `migrations`
-- dades inicials amb `seeders` o equivalent
+- BBDD creada per migracions o equivalent
+- dades inicials amb fixtures/seeders o script equivalent
 - `2` casos d'ús end-to-end
 - almenys `1` flux heretat de `R2`
 - almenys `1` flux server-rendered amb vista o plantilla i resposta `HTML` generada en servidor

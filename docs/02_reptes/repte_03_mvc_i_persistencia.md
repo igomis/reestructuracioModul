@@ -4,20 +4,20 @@
 
 - **Funció didàctica principal**: consolidació.
 - **Objectiu**: reconstruir el projecte en framework i deixar persistència real amb fluxos end-to-end verificables.
-- **Producte esperat**: aplicació arrancable en framework amb Docker, base de dades real, migracions, seeders, validació, proves mínimes i almenys dos fluxos funcionals, amb almenys un flux **server-rendered**.
-- **Evidències**: casos d'ús end-to-end, model de dades, migracions, seeders, README d'arrencada, ADR breu de migració, commit rellevant comentat, proves, almenys una resposta HTML renderitzada en servidor i traçabilitat de decisions.
+- **Producte esperat**: aplicació arrancable en framework amb Docker, base de dades real, migracions o mecanisme equivalent, fixtures/seeders o càrrega reproduïble, validació, proves mínimes i almenys dos fluxos funcionals, amb almenys un flux **server-rendered**.
+- **Evidències**: casos d'ús end-to-end, model de dades, migracions o mecanisme equivalent, fixtures/seeders o càrrega reproduïble, README d'arrencada, ADR breu de migració, commit rellevant comentat, proves, almenys una resposta HTML renderitzada en servidor i traçabilitat de decisions.
 - **Paper de la IA**: ús assistit per IA permés per modelat, migracions, proves i revisió d'estructura; els límits i la delegació excessiva depenen de [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md).
 - **Relació amb el projecte base**: professionalitza la base comuna de `R2` i obri el contrast d'itineraris sobre el mateix projecte base.
-- **Checkpoint de control**: `CP-R3A` per validar framework + Docker + BBDD + `migrations`/`seeders` + primer flux **server-rendered**; `CP-R3B` per validar segon flux, proves mínimes, README i mini defensa.
+- **Checkpoint de control**: `CP-R3A` per validar framework + Docker + BBDD + migracions/fixtures/seeders o script equivalent + primer flux **server-rendered**; `CP-R3B` per validar segon flux, proves mínimes, README i mini defensa.
 - **Instrument dominant**: rúbrica de reconstrucció en framework.
 - **Instrument de comprensió**: defensa tècnica curta sobre migració i circuit petició -> controlador -> dades -> resposta.
 - **Instrument de control de delegació excessiva**: revisió de commit rellevant comentat, contrast amb `AI log` i prova guiada sobre un flux migrat.
-- **Instrument de recuperació o millora**: reobertura del segon flux o reducció d'abast funcional mantenint Docker, BBDD, `migrations`, `seeders` i un flux **server-rendered** complet.
+- **Instrument de recuperació o millora**: reobertura del segon flux o reducció d'abast funcional mantenint Docker, BBDD, migracions/fixtures/seeders o script equivalent i un flux **server-rendered** complet.
 
 ## Justificació docent
 
 - **Evidència principal**: aplicació en framework amb persistència real i dos fluxos end-to-end, almenys un migrat de `R2`.
-- **Evidències secundàries**: Docker, `.env`, `migrations`, `seeders`, proves, README, ADR breu i defensa del circuit petició -> resposta.
+- **Evidències secundàries**: Docker, `.env`, migracions o equivalent, fixtures/seeders o càrrega reproduïble, proves, README, ADR breu i defensa del circuit petició -> resposta.
 - **Mínim suficient**: no és migrar fitxers; ha d'arrancar des de zero, crear dades reproduïbles i executar dos fluxos verificables.
 - **Feedback previst**: `CP-R3A` sobre base tècnica i `CP-R3B` sobre segon flux, proves i explicació de responsabilitats.
 
@@ -29,7 +29,7 @@ El `Repte 3` consistix a reconstruir el projecte en un framework amb una base op
 
 No es demana migrar tota l'aplicació heretada de `R2`. Sí es demana construir una nova base tècnica en framework i portar-hi almenys `2` casos d'ús end-to-end. Com a mínim `1` d'eixos casos d'ús ha de vindre del projecte anterior. El segon pot ser també heretat o pot ser una ampliació funcional xicoteta si ajuda a fer visible el valor del framework.
 
-El repte no és una reflexió abstracta sobre `MVC`, ni una simple separació de presentació i lògica, ni moure fitxers des del projecte antic. El que ha de quedar és una aplicació arrancable, amb Docker, configuració, rutes, controladors, vistes o plantilles, models o capa equivalent de dades, base de dades real, `migrations`, `seeders`, validació, errors mínims, proves bàsiques i documentació d'ús.
+El repte no és una reflexió abstracta sobre `MVC`, ni una simple separació de presentació i lògica, ni moure fitxers des del projecte antic. El que ha de quedar és una aplicació arrancable, amb Docker, configuració, rutes, controladors, vistes o plantilles, models o capa equivalent de dades, base de dades real, migracions o mecanisme equivalent, fixtures/seeders o càrrega reproduïble, validació, errors mínims, proves bàsiques i documentació d'ús.
 
 És també el punt on s'obri el contrast de frameworks del curs. El mateix problema de producte que en `R2` s'ha treballat sobre base comuna en `PHP` continua ara amb `Laravel`, `Symfony` o `NestJS`. `FastAPI` només s'hauria d'obrir com a via avançada o excepcional quan hi haja marc docent clar per sostenir-la.
 
@@ -49,8 +49,8 @@ Una aplicació en framework operativa que incloga, com a mínim:
 - vistes, plantilles o mecanisme de resposta segons l'stack
 - models, entitats, esquemes o capa equivalent de dades
 - base de dades real connectada a l'aplicació
-- `migrations` per crear l'estructura de dades
-- `seeders` o mecanisme equivalent per carregar dades inicials reproduïbles
+- migracions o mecanisme equivalent de l'stack per crear l'estructura de dades
+- fixtures/seeders o script equivalent per carregar dades inicials reproduïbles
 - almenys `2` casos d'ús end-to-end
 - almenys `1` cas d'ús migrat des de `R2`
 - validació i tractament bàsic d'errors
@@ -82,7 +82,7 @@ L'equip té una aplicació inicial funcional, però encara no disposa d'una base
 
 La programació vigent situa l'arquitectura MVC o equivalent com a **SA3** vinculada principalment a **RA5**, i reserva un pes més fort i específic d'**RA6** per a **SA4**. Per això, en `R3` el nucli continua sent **RA5**: usar el framework per ordenar entrada HTTP, coordinació, lògica, presentació i responsabilitats.
 
-Ara bé, `RA6` queda ja fortament preparada i parcialment activada: no es pot parlar d'una base real en framework sense base de dades, `migrations`, `seeders`, lectura i escriptura mínimes, validació i errors vinculats a dades. No s'inventa normativa nova ni es trasllada tot `RA6` a este repte, però sí es demana una persistència mínima real i verificable perquè el pas a `R4` no siga artificial.
+Ara bé, `RA6` queda ja fortament preparada i parcialment activada: no es pot parlar d'una base real en framework sense base de dades, migracions o mecanisme equivalent, fixtures/seeders o càrrega reproduïble, lectura i escriptura mínimes, validació i errors vinculats a dades. No s'inventa normativa nova ni es trasllada tot `RA6` a este repte, però sí es demana una persistència mínima real i verificable perquè el pas a `R4` no siga artificial.
 
 `RA8` queda integrat explícitament en `R3` perquè el repte construeix pàgines dinàmiques amb framework servidor: s'usen vistes o plantilles, es processen formularis o interaccions en el servidor i el framework participa en la generació de la resposta HTML. Per això, almenys un dels `2` casos d'ús de `R3` ha de ser **server-rendered** i no només una resposta d'API o una consulta de dades.
 
@@ -102,7 +102,20 @@ La frontera amb `R2` ha de quedar clara:
 - almenys `1` flux ha de ser heretat de `R2`
 - el segon flux pot ser heretat o una ampliació funcional xicoteta, però no cosmètica
 
-L'objectiu no és dominar tot el framework. L'objectiu és entendre com el framework aporta estructura, persistència, eines, convencions, mantenibilitat i verificació. Per això cal usar eines pròpies de l'stack: generació de projecte, sistema de rutes, controladors, plantilles, ORM o capa de dades, migracions, seeders, validació, proves i configuració d'entorn.
+L'objectiu no és dominar tot el framework. L'objectiu és entendre com el framework aporta estructura, persistència, eines, convencions, mantenibilitat i verificació. Per això cal usar eines pròpies de l'stack: generació de projecte, sistema de rutes, controladors, plantilles, ORM o capa de dades, migracions o equivalent, fixtures/seeders o càrrega reproduïble, validació, proves i configuració d'entorn.
+
+La nomenclatura concreta depén de l'stack. En este repte es valoren criteris comuns, no noms Laravel:
+
+| Criteri comú | Laravel | Symfony | NestJS |
+|---|---|---|---|
+| Ruta | route | route | controller route |
+| Controlador | controller | controller | controller |
+| Vista/resposta | Blade/view | Twig/Response | template/response o resposta server-rendered equivalent |
+| Model/capa de dades | Eloquent model | Doctrine entity/repository | Prisma/TypeORM entity, schema o service |
+| Migració d'esquema | migration | Doctrine migration | Prisma/TypeORM migration o equivalent |
+| Dades inicials | seeder | fixture | seed script o seeder |
+| Validació | Form Request/validator | Validator/Form | DTO + class-validator o equivalent |
+| Configuració | `.env` | `.env` | `.env` |
 
 No es considera suficient:
 
@@ -118,7 +131,7 @@ No es considera suficient:
 Per evitar que `R3` es convertisca en un repte monstre, la seqüència interna recomanada és:
 
 - primer, base en framework arrancable amb `Docker`, `.env` i rutes mínimes
-- després, persistència mínima real amb `migrations`, `seeders` i conjunt de dades usable
+- després, persistència mínima real amb migracions/fixtures/seeders o script equivalent i conjunt de dades usable
 - després, primer flux heretat de `R2` amb resposta **server-rendered**
 - finalment, segon flux o ampliació curta, proves mínimes, `README` i backlog del que queda fora
 
@@ -133,7 +146,7 @@ La IA es pot usar per a:
 - comparar convencions bàsiques de `Laravel`, `Symfony`, `NestJS` o una via excepcional autoritzada
 - suggerir passos d'arrencada del projecte
 - ajudar a dissenyar un model de dades inicial
-- proposar `migrations`, `seeders`, DTO, formularis, validacions o proves
+- proposar migracions, fixtures/seeders o scripts equivalents, DTO, formularis, validacions o proves segons l'stack
 - detectar incoherències entre rutes, controladors, models i vistes
 - ajudar a redactar documentació tècnica i decisions
 
@@ -141,7 +154,7 @@ L'alumnat no pot delegar:
 
 - la decisió de quins `2` casos d'ús entren en `R3`
 - la justificació de quin cas d'ús ve de `R2`
-- la comprovació real de Docker, BBDD, migracions i seeders
+- la comprovació real de Docker, BBDD, migracions o equivalent i càrrega reproduïble de dades
 - la defensa de com circula una petició pel framework
 - la verificació que les dades es lliguen i s'escriuen realment
 - la decisió sobre què queda fora de la migració total
@@ -165,8 +178,8 @@ Aplicació en framework que incloga:
 - `Docker` i instruccions d'arrencada
 - projecte base del framework arrancable
 - configuració `.env` documentada
-- base de dades creada per `migrations`
-- dades inicials creades per `seeders` o equivalent
+- base de dades creada per migracions o mecanisme equivalent de l'stack
+- dades inicials creades per fixtures/seeders o script equivalent
 - `2` casos d'ús funcionals de punta a punta
 - almenys `1` cas d'ús migrat de `R2`
 - almenys `1` cas d'ús renderitzat en servidor amb vista o plantilla
@@ -189,8 +202,8 @@ Aplicació en framework que incloga:
 - un commit rellevant comentat sobre la migració d'un flux o una decisió d'estructura
 - aplicació arrancant amb Docker
 - `.env.example` o instruccions equivalents
-- `migrations` executables
-- `seeders` executables
+- migracions o mecanisme equivalent executable
+- fixtures/seeders o script de càrrega executable
 - captura o registre d'arrencada i càrrega de dades
 - demo dels `2` casos d'ús end-to-end
 - almenys `1` cas d'ús migrat des de `R2`
@@ -208,7 +221,7 @@ Aplicació en framework que incloga:
 > **Norma del repte**
 >
 > - Els microprojectes han de produir software executable, no només diagnosi o discurs.
-> - Cap microprojecte apareix sense el camp **“CA coberts”**.
+> - Cap microprojecte apareix sense el camp **“RA avaluat, CA avaluats i RA de context”**.
 > - No es demana migrar tota l'aplicació de `R2`.
 > - Sí es demana una base real en framework i almenys `2` fluxos end-to-end.
 > - El framework s'ha d'usar amb eines pròpies, no com a decorat.
@@ -243,14 +256,12 @@ L'equip ha de:
 
 Sense una base arrancable i reproduïble, la resta del repte queda convertida en fragments no verificables.
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA5.a**
-- **RA5.b**
-- **RA5.c**
-- **RA5.d**
-- **RA5.e**
-- **RA8.c**
+- **RA avaluat**: **RA5**
+- **CA avaluats**: **RA5.a**, **RA5.b**, **RA5.c**, **RA5.d**, **RA5.e**
+- **RA de context**: **RA8.c**
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -302,7 +313,7 @@ Checklist d'arrencada tècnica i revisió de repositori.
 
 **Pes orientatiu dins del repte**
 
-15%
+12%
 
 ---
 
@@ -321,9 +332,9 @@ Crear l'esquema de dades inicial, connectar-lo amb l'aplicació i deixar dades d
 L'equip ha de:
 
 - definir l'esquema mínim de dades per als fluxos triats
-- crear `migrations`
+- crear migracions o mecanisme equivalent
 - configurar connexió a la base de dades
-- crear `seeders` o mecanisme equivalent
+- crear fixtures/seeders o script equivalent
 - carregar dades de demostració reproduïbles
 - comprovar lectura real des de l'aplicació o consola del framework
 - recuperar un conjunt de dades real des de la BBDD
@@ -335,14 +346,12 @@ L'equip ha de:
 
 La base del framework ha de treballar amb una BBDD real des del començament. La persistència no pot aparéixer al final com un afegit decoratiu.
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA6.a**
-- **RA6.b**
-- **RA6.c**
-- **RA6.d**
-- **RA6.e**
-- **RA5.f**
+- **RA avaluat**: **RA6**
+- **CA avaluats**: **RA6.a**, **RA6.b**, **RA6.c**, **RA6.d**, **RA6.e**
+- **RA de context**: **RA5.f**
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -353,12 +362,12 @@ La base del framework ha de treballar amb una BBDD real des del començament. La
 
 **Paper de la IA**
 
-La IA pot ajudar a proposar camps, relacions, migracions o seeders, però l'alumnat ha de validar que el model serveix als casos d'ús triats i que les dades es creen realment.
+La IA pot ajudar a proposar camps, relacions, migracions, fixtures/seeders o scripts equivalents, però l'alumnat ha de validar que el model serveix als casos d'ús triats i que les dades es creen realment.
 
 **Evidències obligatòries**
 
-- fitxers de `migrations`
-- fitxers de `seeders` o equivalent
+- fitxers de migració o mecanisme equivalent
+- fitxers de fixtures/seeders o script equivalent
 - BBDD creada des de zero
 - dades inicials carregades
 - comprovació de lectura real
@@ -381,18 +390,18 @@ Rúbrica de persistència mínima i dades reproduïbles.
 **Riscos habituals**
 
 - crear taules que no s'usen en cap flux
-- carregar dades manualment sense seeder
+- carregar dades manualment sense mecanisme reproduïble
 - usar persistència simulada
 - no saber explicar la relació entre model i cas d'ús
 
 **Verificació del treball real**
 
-- esborrar o reiniciar BBDD i tornar a executar migracions i seeders
+- esborrar o reiniciar BBDD i tornar a executar migracions i càrrega inicial reproduïble
 - mostrar una lectura real des de l'aplicació i el seu ús dins d'un flux
 
 **Pes orientatiu dins del repte**
 
-20%
+18%
 
 ---
 
@@ -425,18 +434,12 @@ L'equip ha de implementar el flux amb:
 
 Este microprojecte demostra que el pas al framework no ha trencat el projecte anterior i que la migració és funcional, no només estructural.
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA5.e**
-- **RA5.f**
-- **RA5.g**
-- **RA6.c**
-- **RA6.d**
-- **RA6.f**
-- **RA8.f**
-- **RA8.d**
-- **RA8.e**
-- **RA8.g**
+- **RA avaluat**: **RA8**
+- **CA avaluats**: **RA8.d**, **RA8.e**, **RA8.g**
+- **RA de context**: **RA5.e**, **RA5.f**, **RA5.g**, **RA6.c**, **RA6.d**, **RA6.f**
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -491,7 +494,7 @@ Rúbrica de flux end-to-end migrat.
 
 **Pes orientatiu dins del repte**
 
-20%
+18%
 
 ---
 
@@ -524,15 +527,12 @@ En qualsevol cas, ha de ser un flux real, amb recorregut end-to-end, i no un can
 
 El segon flux evita que `R3` quede reduït a una demo única. Obliga a comprovar que la base del framework suporta creixement mínim.
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA5.e**
-- **RA5.f**
-- **RA5.g**
-- **RA5.h**
-- **RA6.c**
-- **RA6.d**
-- **RA6.f**
+- **RA avaluat**: **RA8**
+- **CA avaluats**: **RA8.f**, **RA8.g**
+- **RA de context**: **RA5.e**, **RA5.f**, **RA5.g**, **RA5.h**, **RA6.c**, **RA6.d**, **RA6.f**
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -582,11 +582,104 @@ Checklist de segon flux funcional i revisió de valor.
 
 **Pes orientatiu dins del repte**
 
+12%
+
+---
+
+### Microrepte R3M5 — Autenticació, autorització i middleware
+
+**Tipus**
+
+Microprojecte procedimental de seguretat aplicada al framework.
+
+**Objectiu**
+
+Traslladar l'autenticació treballada en `R2` a les eines pròpies del framework i protegir una acció significativa amb autorització mínima.
+
+**Tasca**
+
+L'equip ha de:
+
+- implementar login o mecanisme d'autenticació amb eines del framework
+- implementar logout o invalidació de sessió/token
+- crear o documentar un usuari demo reproduïble
+- protegir una ruta o acció significativa del domini
+- usar middleware, guard, voter, policy o equivalent segons l'stack
+- definir una regla d'autorització mínima: rol, propietari del recurs, estat o permís simple
+- provar accés sense autenticar
+- provar accés autoritzat
+- provar accés denegat
+- documentar com verificar la protecció
+
+**Relació amb el producte principal**
+
+`R3` no pot quedar com una reconstrucció pública de fluxos que en `R2` ja eren protegits. El valor del framework és usar les seues peces de seguretat per fer explícita la diferència entre autenticació, autorització i protecció de ruta.
+
+**RA avaluat, CA avaluats i RA de context**
+
+- **RA avaluat**: **RA5**
+- **CA avaluats**: **RA5.f**, **RA5.g**, **RA5.h**
+- **RA de context**: **RA6.f**, **RA8.g**
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
+
+**Descripció dels CA en llenguatge docent**
+
+- L'alumnat usa mecanismes del framework per controlar accés.
+- L'alumnat diferencia estar autenticat de tindre permís.
+- L'alumnat verifica comportament autoritzat i denegat.
+- L'alumnat evita proteccions només visuals.
+
+**Paper de la IA**
+
+La IA pot ajudar a comparar middleware, guard, voter o policy, però l'alumnat ha de decidir quina acció protegir i demostrar que el control està en servidor.
+
+**Evidències obligatòries**
+
+- login o mecanisme d'autenticació funcional
+- logout o invalidació
+- usuari demo reproduïble
+- ruta o acció protegida
+- middleware, guard, voter, policy o equivalent
+- regla d'autorització mínima vinculada al domini
+- cas autoritzat i cas denegat
+- error o resposta controlada quan no hi ha permisos
+- instruccions de prova
+
+**Instrument d'avaluació**
+
+Rúbrica d'autenticació, autorització i middleware.
+
+**Indicadors d'assoliment**
+
+- la protecció està en servidor
+- l'acció protegida té valor real dins del projecte
+- hi ha diferència observable entre usuari autoritzat i no autoritzat
+- les credencials demo no exposen secrets reals
+- la solució usa convencions del framework triat
+
+**Riscos habituals**
+
+- ocultar botons però deixar la ruta accessible
+- fer login sense autorització
+- crear rols que no protegeixen cap acció
+- no provar el cas denegat
+- versionar secrets o contrasenyes personals
+
+**Verificació del treball real**
+
+- accedir a la ruta protegida sense autenticar
+- fer login amb usuari autoritzat
+- provar l'acció protegida
+- provar denegació amb usuari sense permís o estat no vàlid
+- fer logout i repetir l'accés
+
+**Pes orientatiu dins del repte**
+
 15%
 
 ---
 
-### Microrepte R3M5 — Qualitat i estabilització
+### Microrepte R3M6 — Qualitat i estabilització
 
 **Tipus**
 
@@ -607,18 +700,18 @@ L'equip ha de:
 - tractar errors bàsics
 - afegir proves bàsiques dels fluxos
 - comprovar dades de demostració reproduïbles
-- revisar que migracions i seeders continuen funcionant
+- revisar que migracions i fixtures/seeders o equivalent continuen funcionant
 
 **Relació amb el producte principal**
 
 La qualitat mínima és el que separa una reconstrucció productiva d'un prototip fràgil.
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA5.g**
-- **RA5.h**
-- **RA6.f**
-- **RA6.g**
+- **RA avaluat**: **RA5**
+- **CA avaluats**: **RA5.g**, **RA5.h**
+- **RA de context**: **RA6.f**, **RA6.g**
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -636,7 +729,7 @@ La IA pot suggerir casos de prova, detectar duplicacions o proposar missatges d'
 - cas positiu i cas negatiu dels fluxos principals
 - tractament visible d'errors
 - revisió de controladors/responsabilitats
-- comprovació de migracions i seeders
+- comprovació de migracions/fixtures/seeders o script equivalent
 - incidències detectades i corregides
 
 **Instrument d'avaluació**
@@ -655,7 +748,7 @@ Checklist de qualitat mínima i proves.
 - proves manuals no reproduïbles
 - errors sense tractament
 - controladors que acumulen tota la lògica
-- trencar seeders o migracions en refactoritzar
+- trencar migracions o càrrega inicial en refactoritzar
 
 **Verificació del treball real**
 
@@ -664,11 +757,11 @@ Checklist de qualitat mínima i proves.
 
 **Pes orientatiu dins del repte**
 
-15%
+12%
 
 ---
 
-### Microrepte R3M6 — Tancament tècnic
+### Microrepte R3M7 — Tancament tècnic
 
 **Tipus**
 
@@ -684,8 +777,9 @@ L'equip ha de:
 
 - actualitzar `README`
 - explicar instruccions d'arrencada
-- documentar migracions, seeders i dades inicials
+- documentar migracions/fixtures/seeders o mecanisme equivalent i dades inicials
 - descriure els `2` casos d'ús implementats
+- documentar la ruta o acció protegida i la regla d'autorització
 - registrar decisions tècniques principals
 - preparar una demostració curta
 - deixar backlog o mapa del que quedaria per migrar de `R2`
@@ -695,11 +789,12 @@ L'equip ha de:
 
 El tancament tècnic fa visible que `R3` no és una migració total, sinó una reconstrucció acotada i verificable que deixa una base de continuïtat.
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA5.f**
-- **RA5.g**
-- **RA6.g**
+- **RA avaluat**: **RA5**
+- **CA avaluats**: **RA5.f**, **RA5.g**
+- **RA de context**: **RA6.g**
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -715,7 +810,7 @@ La IA pot ajudar a ordenar la documentació, però el contingut ha de correspond
 
 - `README` tècnic actualitzat
 - instruccions d'arrencada amb Docker
-- instruccions de BBDD, migracions i seeders
+- instruccions de BBDD, migracions/fixtures/seeders o mecanisme equivalent
 - resum dels `2` casos d'ús
 - decisions tècniques breus
 - backlog del que quedaria per migrar
@@ -746,20 +841,21 @@ Rúbrica de documentació i defensa tècnica.
 
 **Pes orientatiu dins del repte**
 
-15%
+13%
 
 ---
 
 ## 7. Taula resum de microprojectes i criteris d'avaluació
 
-| Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
-|---|---|---|---|---|---|---:|
-| R3M1 | Infraestructura / decisió tècnica | Projecte en framework arrancable amb Docker | RA5.a, RA5.b, RA5.c, RA5.d, RA5.e, RA8.c | comparativa de stack, esquema abans/després, Docker, `.env`, ruta inicial, resposta generada, issue i abast de 2 fluxos | checklist | 15% |
-| R3M2 | Persistència mínima | Model de dades inicial amb migrations, seeders i conjunt de dades usable | RA6.a, RA6.b, RA6.c, RA6.d, RA6.e, RA5.f | BBDD creada, dades carregades, consulta de conjunt de dades i ús en flux | rúbrica | 20% |
-| R3M3 | Migració funcional | Primer cas d'ús complet heretat de R2 | RA5.e, RA5.f, RA5.g, RA6.c, RA6.d, RA6.f, RA8.d, RA8.e, RA8.g | ruta, controlador, model/servei, vista/plantilla server-rendered, formulari o interacció, prova | rúbrica | 20% |
-| R3M4 | Ampliació funcional | Segon flux end-to-end o ampliació útil | RA5.e, RA5.f, RA5.g, RA5.h, RA6.c, RA6.d, RA6.f, RA8.f | segon flux, BBDD, canvi dinàmic de resposta, validació/error i demo | checklist | 15% |
-| R3M5 | Qualitat | Estabilització, validació, errors i proves | RA5.g, RA5.h, RA6.f, RA6.g | proves, cas positiu/negatiu, errors, neteja | checklist | 15% |
-| R3M6 | Tancament | README, decisions, demo i backlog de migració | RA5.f, RA5.g, RA6.g | documentació, demo, mapa del que queda | rúbrica | 15% |
+| Microprojecte | Tipus | Producte o lliurable | RA avaluat | CA avaluats | RA de context | Evidències principals | Instrument | Pes orientatiu |
+|---|---|---|---|---|---|---|---|---:|
+| R3M1 | Infraestructura / decisió tècnica | Projecte en framework arrancable amb Docker | RA5 | RA5.a, RA5.b, RA5.c, RA5.d, RA5.e | RA8.c | comparativa de stack, esquema abans/després, Docker, `.env`, ruta inicial, resposta generada, issue i abast de 2 fluxos | checklist | 12% |
+| R3M2 | Persistència mínima | Model de dades inicial amb migracions/fixtures/seeders o mecanisme equivalent i conjunt de dades usable | RA6 | RA6.a, RA6.b, RA6.c, RA6.d, RA6.e | RA5.f | BBDD creada, dades carregades, consulta de conjunt de dades i ús en flux | rúbrica | 18% |
+| R3M3 | Migració funcional | Primer cas d'ús complet heretat de R2 | RA8 | RA8.d, RA8.e, RA8.g | RA5.e, RA5.f, RA5.g, RA6.c, RA6.d, RA6.f | ruta, controlador, model/servei, vista/plantilla server-rendered, formulari o interacció, prova | rúbrica | 18% |
+| R3M4 | Ampliació funcional | Segon flux end-to-end o ampliació útil | RA8 | RA8.f, RA8.g | RA5.e, RA5.f, RA5.g, RA5.h, RA6.c, RA6.d, RA6.f | segon flux, BBDD, canvi dinàmic de resposta, validació/error i demo | checklist | 12% |
+| R3M5 | Seguretat de framework | Autenticació, autorització i middleware | RA5 | RA5.f, RA5.g, RA5.h | RA6.f, RA8.g | login, acció protegida, cas autoritzat i denegat | rúbrica | 15% |
+| R3M6 | Qualitat | Estabilització, validació, errors i proves | RA5 | RA5.g, RA5.h | RA6.f, RA6.g | proves, cas positiu/negatiu, errors, neteja i protecció intacta | checklist | 12% |
+| R3M7 | Tancament | README, decisions, demo i backlog de migració | RA5 | RA5.f, RA5.g | RA6.g | documentació, demo, mapa del que queda i acció protegida | rúbrica | 13% |
 
 ---
 
@@ -776,12 +872,15 @@ Rúbrica de documentació i defensa tècnica.
 - rutes, controladors i vistes/plantilles/respostes segons l'stack
 - models, entitats, esquemes o capa equivalent de dades
 - BBDD real
-- `migrations`
-- `seeders` o equivalent
+- migracions o mecanisme equivalent
+- fixtures/seeders o script equivalent
 - dades de demostració reproduïbles
 - `2` casos d'ús end-to-end
 - almenys `1` cas d'ús migrat des de `R2`
 - almenys `1` cas d'ús server-rendered amb vista o plantilla
+- autenticació amb eines del framework
+- acció protegida amb middleware, guard, voter, policy o equivalent
+- cas autoritzat i cas denegat
 - validació i errors mínims
 - proves mínimes
 - documentació tècnica curta
@@ -803,21 +902,23 @@ Rúbrica de documentació i defensa tècnica.
 
 Duració orientativa:
 
-- `6` a `8` sessions
-- recomanació preferent: `8` sessions de `3` hores
+- `8` a `10` sessions
+- recomanació preferent: `10` sessions de `3` hores, incloent el taller de portabilitat entre frameworks
 
 Seqüència recomanada:
 
 | Tram | Sessions | Microprojectes principals | Sentit docent |
 |---|---:|---|---|
 | Arrencada | `1` | `R3M1` | triar stack, Docker, projecte base i rutes mínimes |
-| Persistència inicial | `2` | `R3M2` | model de dades, migrations, seeders i BBDD real |
+| Persistència inicial | `2` | `R3M2` | model de dades, migracions/fixtures/seeders o mecanisme equivalent i BBDD real |
+| Taller de portabilitat | `2B` | reforç `R3M1-R3M2` | equivalències entre frameworks i auditoria abans del primer flux |
 | Primer flux | `3-4` | `R3M3` | migrar el primer cas d'ús heretat de `R2` |
 | Segon flux | `5` | `R3M4` | completar un segon flux o ampliació funcional útil |
-| Qualitat | `6-7` | `R3M5` | validació, errors, proves i neteja d'estructura |
-| Tancament | `8` | `R3M6` | README, demo, decisions i backlog de migració |
+| Seguretat de framework | `6` | `R3M5` | autenticació, autorització i middleware |
+| Qualitat | `7-8` | `R3M6` | validació, errors, proves i neteja d'estructura |
+| Tancament | `9` | `R3M7` | README, demo, decisions i backlog de migració |
 
-Si el calendari obliga a compactar, no s'ha de retallar l'exigència dels `2` fluxos, Docker, BBDD, `migrations` i `seeders`. El que es pot reduir és l'abast funcional de cada flux.
+Si el calendari obliga a compactar, no s'ha de retallar l'exigència dels `2` fluxos, Docker, BBDD, migracions o equivalent i dades inicials reproduïbles. El que es pot reduir és l'abast funcional de cada flux.
 
 ---
 
@@ -829,7 +930,7 @@ Si el calendari obliga a compactar, no s'ha de retallar l'exigència dels `2` fl
 - controladors amb responsabilitat limitada
 - `Request` o validació pròpia de Laravel
 - models Eloquent
-- migracions i seeders
+- migracions/fixtures/seeders o mecanisme equivalent
 - Blade o resposta equivalent
 - proves amb l'eina de testing del projecte
 
@@ -840,7 +941,7 @@ Si el calendari obliga a compactar, no s'ha de retallar l'exigència dels `2` fl
 - serveis
 - entitats i repositoris amb Doctrine
 - migracions
-- fixtures com a equivalent de seeders
+- fixtures com a mecanisme de dades inicials en Symfony
 - Twig o resposta equivalent
 - proves bàsiques amb l'eina del projecte
 
@@ -865,8 +966,8 @@ La nomenclatura pot variar, però el criteri no: base arrancable, dades reals, d
 - deixar una base de framework que arranca però no té fluxos
 - fer només un cas d'ús
 - no garantir que almenys un flux ve de `R2`
-- crear BBDD sense `migrations`
-- carregar dades manualment sense `seeders` o equivalent
+- crear BBDD sense migracions o mecanisme equivalent
+- carregar dades manualment sense fixtures/seeders o script equivalent
 - no tractar errors
 - no poder reiniciar l'entorn des de zero
 - escriure documentació que no coincideix amb el projecte
@@ -879,8 +980,8 @@ La nomenclatura pot variar, però el criteri no: base arrancable, dades reals, d
 `R3` es considera tancat quan es pot demostrar:
 
 - l'aplicació en framework arranca amb Docker
-- la BBDD es crea amb `migrations`
-- les dades inicials es carreguen amb `seeders` o equivalent
+- la BBDD es crea amb migracions o mecanisme equivalent
+- les dades inicials es carreguen amb fixtures/seeders o script equivalent
 - hi ha `2` casos d'ús end-to-end funcionals
 - almenys `1` cas d'ús ve de `R2`
 - almenys `1` cas d'ús genera resposta HTML renderitzada en servidor amb vista o plantilla

@@ -1,6 +1,6 @@
 # R2S1. Entrada variada i validació de servidor
 
-## Finalitat de la sessió
+## Finalitat de la sessió 
 
 Esta sessió obri el `Repte 2` i treballa el microrepte `R2M1` amb una primera entrada real de dades del producte. L'objectiu no és practicar un camp solt ni fer tots els controls possibles, sinó entendre bé el recorregut mínim d'un formulari: text, llista o opció tancada, checkbox, recepció en servidor, una validació bàsica amb `if/else`, error visible i reenviament corregit.
 

@@ -99,7 +99,7 @@ Lectura acumulativa:
 - frenar el pas a API quan persistència i arquitectura no siguen prou estables
 - exigir contrast explícit quan l'ús de la IA augmente o afecte parts nuclears del producte
 - usar els itineraris com a suport de resolució i no com a justificació per relaxar exigències
-- reforçar defensa, documentació i proves abans de la sessió final, no només al tancament
+- reforçar defensa, documentació i proves abans de les fases finals, no només al tancament
 
 ## Marges d'adaptació
 

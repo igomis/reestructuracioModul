@@ -1,16 +1,16 @@
-# R2S7. Primera peça testable amb POO i Composer
+# R2S8. Primera peça testable amb POO i Composer
 
 ## Finalitat de la sessio
 
-Esta sessio tanca `R2` convertint una part xicoteta del flux ja provat en una peça testable. Les funcions, els `include` i el bootstrap de rutes ja han aparegut en `R2M3`, `R2M4` i `R2M5`; ací el pas nou és introduir una classe mínima, carregar-la amb Composer i verificar-ne el comportament amb una primera prova unitària.
+Esta sessio continua el tancament tècnic de `R2` convertint una part xicoteta del flux ja provat en una peça testable. Les funcions, els `include`, el bootstrap de rutes, l'autenticació i la mini API ja han aparegut abans; ací el pas nou és introduir una classe mínima, carregar-la amb Composer i verificar-ne el comportament amb una primera prova unitària.
 
 L'objectiu no és reescriure el projecte ni construir arquitectura MVC. L'objectiu és entendre per què una part de la lògica és més fàcil de provar quan està separada del formulari, de la sessio i de la resposta HTML.
 
 ## Encaix dins del Repte 2
 
 - **Repte**: `R2. Processament bàsic, estat, autenticació i primera funcionalitat protegida`
-- **Microrepte**: `R2M7`
-- **Sessio**: `R2S7`
+- **Microrepte**: `R2M8`
+- **Sessio**: `R2S8`
 - **Duracio orientativa**: `3 hores`
 - **Focus**: classe mínima del domini o servei, Composer, autoload, prova unitària inicial i comprovació que el flux continua funcionant
 - **No entra encara**: MVC complet, ORM, base de dades com a focus, canvi de framework, API externa com a mínim o POO extensa obligatoria

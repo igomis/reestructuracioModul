@@ -189,5 +189,4 @@ La IA pot ajudar amb errors d'instal·lacio, Docker, comparativa i passos d'arre
 
 ## Connexio amb el microrepte posterior
 
-`R3M2` necessita esta base per crear BBDD real, migracions, seeders i primera lectura de dades. Si `R3M1` no arranca, la persistencia quedara desconnectada.
-
+`R3M2` necessita esta base per crear BBDD real, migracions o mecanisme equivalent, càrrega inicial reproduïble i primera lectura de dades. Si `R3M1` no arranca, la persistencia quedara desconnectada.

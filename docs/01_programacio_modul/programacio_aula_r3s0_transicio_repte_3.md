@@ -17,7 +17,7 @@ Esta sessió obri `R3` sense crear un microrepte nou. La seua funció és fer el
 
 - Per què es passa de `PHP` base a framework.
 - Diferència entre ruta, controlador, model, vista/resposta i servei.
-- Què significa persistència reproduïble: migrations, seeders i `.env`.
+- Què significa persistència reproduïble: migracions/fixtures/seeders i `.env`.
 - Com triar quin flux de `R2` es migrarà primer.
 
 ## Seqüència d'aula de 3 hores

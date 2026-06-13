@@ -22,7 +22,7 @@ El model del repositori queda fixat així:
 
 - `R1` obri el projecte i deixa una primera peça funcional real.
 - `R2` es resol sobre una **base comuna en PHP** per a tot l’alumnat.
-- `R2` es desplega en `7` sessions de `3` hores i incorpora una sessió final específica de primera peça testable amb POO, Composer i prova unitària.
+- `R2` es desplega en `9` sessions de nucli de `3` hores i un taller intermodular associat a la mini API d'autenticació per a client; incorpora primera peça testable amb POO/Composer i persistència mínima amb BBDD.
 - el contrast fort de frameworks **no entra com a norma general en `R2`**
 - a partir de `R3` el mateix projecte pot continuar-se amb itineraris diferents
 - els frameworks base del tram de contrast són `Laravel`, `Symfony` i `NestJS`
@@ -95,6 +95,6 @@ Lectura ràpida de la fase actual:
 ## Focus actual
 
 1. Mantindre la `v1` prepilotatge preparada com a base estable i reusable del paquet docent.
-2. Deixar explícita i coherent la seqüència `R2` comú en PHP en `7` sessions, amb sessió final de POO mínima, Composer, autoload i prova unitària, -> contrast de frameworks des de `R3`.
+2. Deixar explícita i coherent la seqüència `R2` comú en PHP en `9` sessions, amb mini API d'autenticació per a client, POO mínima, Composer, autoload, prova unitària i persistència mínima, -> contrast de frameworks des de `R3`.
 3. Fixar el model preferent de cooperació com a implementació individual amb contrast tècnic compartit.
 4. Mantindre visible i usable el doble accés web per a alumnat i professorat sense duplicar la documentació llarga.

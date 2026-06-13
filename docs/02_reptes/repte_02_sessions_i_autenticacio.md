@@ -4,13 +4,13 @@
 
 - **Funció didàctica principal**: construcció nuclear.
 - **Objectiu**: construir la primera funcionalitat protegida del projecte base sobre base comuna en `PHP`.
-- **Producte esperat**: flux de dades complet amb estat, autenticació, validació, operació de domini restringida i primera peça testable amb POO i Composer.
+- **Producte esperat**: flux de dades complet amb estat, autenticació, validació, operació de domini restringida, primera peça testable amb POO i Composer i persistència mínima amb BBDD.
 - **Evidències**: formularis o entrada equivalent, validacions visibles, proves mínimes, registre breu d'errors corregits, comparativa solució inicial / IA / solució final quan corresponga, documentació actualitzada i checkpoint tècnic.
 - **Paper de la IA**: ús assistit per IA permés per validacions, depuració i documentació; els límits i la delegació excessiva depenen de [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md).
 - **Relació amb el projecte base**: transforma l'arrencada de `R1` en la primera funcionalitat de negoci del projecte base i prepara l'entrada a `R3`.
-- **Checkpoint de control**: flux complet abans de crear la peça testable final, amb cas autoritzat, cas denegat, revisió d'errors i traçabilitat de l'ús assistit per IA.
+- **Checkpoint de control**: flux complet abans de crear la peça testable final i la persistència mínima, amb cas autoritzat, cas denegat, revisió d'errors i traçabilitat de l'ús assistit per IA.
 - **Instrument dominant**: rúbrica del repte sobre flux funcional protegit.
-- **Instrument de comprensió**: mini defensa tècnica al checkpoint `R2M6`.
+- **Instrument de comprensió**: mini defensa tècnica al checkpoint `R2M7`.
 - **Instrument de control de delegació excessiva**: revisió de repositori, `AI log` i microcanvi en viu sobre validació o autenticació.
 - **Instrument de recuperació o millora**: reconstrucció guiada del flux amb prova funcional i nova defensa breu.
 
@@ -51,6 +51,7 @@ Una primera funcionalitat de domini protegida, construïda sobre una seqüència
 - proves mínimes o verificacions registrades
 - documentació tècnica actualitzada
 - primera peça testable: classe simple del domini o servei, Composer, autoload, prova unitària inicial i prova de no regressió del flux
+- persistència mínima amb BBDD, connexió controlada, alta i lectura de dades reals del projecte
 
 **Context professional simul·lat o realista**
 
@@ -72,11 +73,15 @@ El canvi metodològic del curs es concreta així:
 
 La baixada operativa d’este repte es concreta en la [Programació d'aula del Repte 2](../01_programacio_modul/programacio_aula_repte_02.md).
 
-La base recomanada del repte és de `21` hores, organitzades en `7` sessions de `3` hores, una per cada microprojecte docent principal.
+La base recomanada del repte és de `27` hores, organitzades en `9` sessions de `3` hores, una per cada microprojecte docent principal.
 
-La sessió `7` està dedicada específicament a convertir una regla o comprovació del flux ja provat en una classe simple carregada amb Composer i verificada amb una primera prova unitària.
+La sessió `6` està dedicada a exposar una mini API d'autenticació perquè DWEC puga començar a consumir un backend autenticat sense esperar a `R4`.
 
-Açò reforça el valor integrador de `R2` com a fase final de preparació del pas a `RA5`, però no el convertix en una entrada obligatòria a POO completa, BBDD com a focus principal, consum d'API externa ni reescriptura arquitectònica total del repte següent.
+La sessió `8` està dedicada específicament a convertir una regla o comprovació del flux ja provat en una classe simple carregada amb Composer i verificada amb una primera prova unitària.
+
+La sessió `9` introdueix una persistència mínima amb BBDD des de `PHP` pur, com a pont cap a `R3`: connexió, taula, alta, lectura i consultes preparades. No és encara `ORM`, migrations, seeders ni arquitectura completa.
+
+Açò reforça el valor integrador de `R2` com a fase final de preparació del pas a `RA5`, com a pont intermodular amb DWEC i com a primer tast de `RA6`, però no el convertix en una entrada obligatòria a POO completa, ORM, API completa ni reescriptura arquitectònica total del repte següent.
 
 ---
 
@@ -100,22 +105,27 @@ La lectura docent del repte ha de ser seqüencial:
 
 - **RA2**: el sistema deixa de ser una pàgina estàtica i genera resposta en servidor amb `PHP`, variables, operadors, àmbits, directives i processament elemental.
 - **RA3**: el flux incorpora formularis, recuperació de dades, decisions, estructures i funcions que modifiquen el comportament del producte.
-- **RA4**: el projecte manté estat entre peticions, introdueix sessió o mecanisme equivalent, autentica usuaris i protegix una operació real.
+- **RA4**: el projecte manté estat entre peticions, introdueix sessió o mecanisme equivalent, autentica usuaris, protegix una operació real i exposa una mini API d'autenticació per a client.
 - **Preparació de RA5**: la peça testable final no avalua encara una arquitectura completa, però deixa visible com una regla pot separar-se, carregar-se amb autoload i provar-se sense navegador abans de `R3`.
+- **Introducció de RA6**: la persistència mínima permet veure connexió a BBDD, alta, lectura i consultes preparades abans d'entrar en migrations, seeders, models i ORM.
 
-Esta progressió evita dos errors habituals: començar directament pel login sense base de processament i confondre la sessió final amb una migració prematura a `MVC`, ORM o POO completa.
+Esta progressió evita tres errors habituals: començar directament pel login sense base de processament, confondre la peça testable amb una migració prematura a `MVC` o POO completa, i arribar a `R3` sense haver vist abans què significa guardar i recuperar dades reals.
 
 **Traçabilitat mínima entre microprojectes, RA i verificació**
 
-| Microprojecte | RA principal | Evidència mínima | Verificació d'aprenentatge real |
-|---|---|---|---|
-| `R2M1` | `RA2` + `RA3` | formulari o entrada equivalent amb text, llista i checkbox, recuperació de dades, una validació bàsica, error visible i reenviament corregit | execució en directe i explicació del recorregut de cada dada mínima |
-| `R2M2` | `RA2` + `RA3` | resposta generada en servidor amb variables, operadors, formulari regenerat després d'un error i guardat funcional del cas correcte | canvi menut en viu sobre un valor conservat o guardat i explicació de com es rep, es tracta i es torna a usar |
-| `R2M3` | `RA3` | regla de domini amb decisió, array o funció útil | microcanvi sobre una condició o funció i defensa del seu sentit dins del producte |
-| `R2M4` | `RA4` | estat, sessió o cookies amb recuperació i invalidació | demo de recuperació i neteja, més pregunta sobre què es guarda i on |
-| `R2M5` | `RA4` | autenticació funcional i operació de domini protegida | demo de cas permés i cas denegat amb explicació del punt de control |
-| `R2M6` | `RA4` | bateria mínima de proves, incidències i documentació reproduïble | execució d'un cas triat pel professorat i contrast amb `README`, repositori i AI log |
-| `R2M7` | `RA3` + `RA4` | Composer/autoload, classe simple, prova unitària inicial i prova de no regressió | execució del test, revisió de la classe, execució del flux i defensa de què queda ara més testable |
+Cada microprojecte té un únic **RA avaluat**. Els RA de context ajuden a entendre el producte, però no generen nota en eixe microrepte.
+
+| Microprojecte | RA avaluat | CA avaluats | RA de context | Evidència mínima | Verificació d'aprenentatge real |
+|---|---|---|---|---|---|
+| `R2M1` | `RA2` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d` | `RA3.e`, `RA3.f`, `RA3.g` | formulari o entrada equivalent amb text, llista i checkbox, recuperació de dades, una validació bàsica, error visible i reenviament corregit | execució en directe i explicació del recorregut de cada dada mínima |
+| `R2M2` | `RA2` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d`, `RA2.e`, `RA2.f`, `RA2.g`, `RA2.h` | `RA3.e`, `RA3.f`, `RA3.g` | resposta generada en servidor amb variables, operadors, formulari regenerat després d'un error i guardat funcional del cas correcte | canvi menut en viu sobre un valor conservat o guardat i explicació de com es rep, es tracta i es torna a usar |
+| `R2M3` | `RA3` | `RA3.a`, `RA3.b`, `RA3.c`, `RA3.d` | - | regla de domini amb decisió, array o funció útil | microcanvi sobre una condició o funció i defensa del seu sentit dins del producte |
+| `R2M4` | `RA4` | `RA4.a`, `RA4.b`, `RA4.c` | - | estat, sessió o cookies amb recuperació i invalidació | demo de recuperació i neteja, més pregunta sobre què es guarda i on |
+| `R2M5` | `RA4` | `RA4.d`, `RA4.e` | - | autenticació funcional i operació de domini protegida | demo de cas permés i cas denegat amb explicació del punt de control |
+| `R2M6` | `RA4` | `RA4.d`, `RA4.e` | pont DWEC | login API, resposta `JSON`, token simple i ruta protegida | execució de `POST /api/login`, `GET /api/me` i cas `401` |
+| `R2M7` | `RA4` | `RA4.f` | - | bateria mínima de proves, incidències i documentació reproduïble | execució d'un cas triat pel professorat i contrast amb `README`, repositori i AI log |
+| `R2M8` | `RA3` | `RA3.d`, `RA3.g` | `RA4.f` | Composer/autoload, classe simple, prova unitària inicial i prova de no regressió | execució del test, revisió de la classe, execució del flux i defensa de què queda ara més testable |
+| `R2M9` | `RA6` | `RA6.a`, `RA6.b`, `RA6.c`, `RA6.d`, `RA6.f` | `RA3`, `RA4` | BBDD mínima amb connexió, taula, alta, lectura i consultes preparades | demo d'inserció, consulta posterior i revisió de configuració sense secrets |
 
 ---
 
@@ -213,6 +223,7 @@ Mòdul funcional integrat en el projecte que incloga:
 - evidència d’estat, sessió o cookies
 - flux d’autenticació funcional
 - operació de domini protegida
+- mini API d'autenticació consumible per a client
 - proves mínimes
 - registre breu d'errors detectats i corregits
 - comparativa solució inicial / suggeriment IA / solució final quan hi haja ús assistit rellevant
@@ -268,11 +279,11 @@ Una operació protegida és defensable quan es pot assenyalar:
 - **Activitats, reserves o esdeveniments**: creació o gestió d’una reserva o activitat amb data, places i possibles adjunts; el sistema valida, recupera estat temporal del flux i restringix una operació de confirmació, edició o gestió.
 - **Recursos, publicacions o continguts**: alta d’un recurs, notícia o publicació amb text i, quan toque, fitxer o imatge; el servidor tracta dades, conserva el recurs, l’autenticació protegix una acció del domini i la prova documenta els casos correcte i denegat.
 
-### 4.4 Setena fase del repte: primera peça testable amb POO i Composer
+### 4.4 Huitena fase del repte: primera peça testable amb POO i Composer
 
-La seqüència base del repte queda en `7` microprojectes obligatoris.
+La seqüència base del repte queda en `9` microprojectes obligatoris.
 
-La sessió `7` s’activa després del checkpoint tècnic del microprojecte `R2M6` i servix per convertir una regla o comprovació del flux que ja funciona en una classe simple, carregada amb Composer i verificada amb una prova unitària mínima.
+La sessió `8` s’activa després del checkpoint tècnic del microprojecte `R2M7` i servix per convertir una regla o comprovació del flux que ja funciona en una classe simple, carregada amb Composer i verificada amb una prova unitària mínima.
 
 Esta fase final ha d’incloure com a mínim treball com:
 
@@ -302,12 +313,14 @@ Si apareixen més classes, una llibreria externa via Composer o alguna crida a A
 >
 > - Els microprojectes cobrixen la progressió real de `SA2` i no només el tram final d’autenticació.
 > - Les microtasques d’investigació o decisió cobrixen sobretot criteris conceptuals o de modelització.
-> - Cap microprojecte apareix sense el camp **“CA coberts”**.
+> - Cap microprojecte apareix sense el camp **“RA avaluat, CA avaluats i RA de context”**.
 > - El repte no es considera suficient si només hi ha login/logout sense un recorregut previ de processament i sense una operació real protegida.
 > - El pas al Repte 3 només té sentit si el flux actual ja funciona de manera reproduïble i mínimament explicable.
 > - El contrast de frameworks encara no és el centre del repte.
 > - La prova i la depuració comencen des del primer microprojecte i no només al tancament.
-> - La sessió `7` és una fase real del repte i no un marge ornamental.
+> - La sessió `6` és el pont mínim amb DWEC per a autenticació consumible.
+> - La sessió `8` és una fase real del repte i no un marge ornamental.
+> - La sessió `9` introdueix BBDD de manera acotada abans de `R3`.
 
 ### Microrepte R2M1 — Entrada variada, validació visible i recuperació de dades
 
@@ -349,15 +362,12 @@ Com a ampliació es pot veure:
 
 És el primer pas del flux real de la funcionalitat. Sense esta capa, la resta del repte queda desconnectada de l’entrada d’informació.
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA2.a**
-- **RA2.b**
-- **RA2.c**
-- **RA2.d**
-- **RA3.e**
-- **RA3.f**
-- **RA3.g**
+- **RA avaluat**: **RA2**
+- **CA avaluats**: **RA2.a**, **RA2.b**, **RA2.c**, **RA2.d**
+- **RA de context**: **RA3.e**, **RA3.f**, **RA3.g**
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -411,7 +421,7 @@ Checklist de formulari i recuperació de dades.
 
 **Pes orientatiu dins del repte**
 
-15%
+12%
 
 ---
 
@@ -451,16 +461,12 @@ L’equip implementa tractament bàsic de la petició, incloent:
 Este microprojecte dona la base de processament necessari perquè el sistema puga ajudar l'usuari a corregir errors sense repetir tot el formulari i, quan l'entrada és correcta, conservar la informació amb sentit funcional.
 També ha de deixar clar que conservar dades dins del reintent i guardar funcionalment un cas correcte són dues decisions diferents, cap de les quals obliga encara a una arquitectura de persistència.
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA2.a**
-- **RA2.b**
-- **RA2.c**
-- **RA2.d**
-- **RA2.e**
-- **RA2.f**
-- **RA2.g**
-- **RA2.h**
+- **RA avaluat**: **RA2**
+- **CA avaluats**: **RA2.a**, **RA2.b**, **RA2.c**, **RA2.d**, **RA2.e**, **RA2.f**, **RA2.g**, **RA2.h**
+- **RA de context**: **RA3.e**, **RA3.f**, **RA3.g**
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -509,7 +515,7 @@ Rúbrica breu de processament bàsic en servidor.
 
 **Pes orientatiu dins del repte**
 
-15%
+12%
 
 ---
 
@@ -538,12 +544,12 @@ No es tracta d’afegir estos elements de manera artificial, sinó d’utilitzar
 
 Este microprojecte convertix el tractament bàsic en una lògica més rica i més pròxima a una funcionalitat real.
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA3.a**
-- **RA3.b**
-- **RA3.c**
-- **RA3.d**
+- **RA avaluat**: **RA3**
+- **CA avaluats**: **RA3.a**, **RA3.b**, **RA3.c**, **RA3.d**
+- **RA de context**: cap
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -585,7 +591,7 @@ Rúbrica de lògica bàsica aplicada.
 
 **Pes orientatiu dins del repte**
 
-15%
+12%
 
 ---
 
@@ -620,11 +626,12 @@ S’ha de veure:
 
 Sense estat no hi ha base sòlida per entendre després l’autenticació ni per protegir una operació de domini.
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA4.a**
-- **RA4.b**
-- **RA4.c**
+- **RA avaluat**: **RA4**
+- **CA avaluats**: **RA4.a**, **RA4.b**, **RA4.c**
+- **RA de context**: cap
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -668,7 +675,7 @@ Checklist de manteniment d’estat.
 
 **Pes orientatiu dins del repte**
 
-15%
+12%
 
 ---
 
@@ -698,10 +705,12 @@ La funcionalitat protegida ha de tindre valor real dins del producte del curs i 
 
 Este és el centre visible del repte: demostrar que el backend ja no sols rep i processa dades, sinó que gestiona identitat i protegix accions amb sentit.
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA4.d**
-- **RA4.e**
+- **RA avaluat**: **RA4**
+- **CA avaluats**: **RA4.d**, **RA4.e**
+- **RA de context**: cap
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -752,11 +761,103 @@ Rúbrica de funcionalitat autenticada i protegida.
 
 **Pes orientatiu dins del repte**
 
-20%
+16%
 
 ---
 
-### Microrepte R2M6 — Prova, depuració, documentació mínima i checkpoint tècnic
+### Microrepte R2M6 — Mini API d'autenticació per a client
+
+**Tipus**
+
+Microprojecte intermodular d'autenticació consumible des de client.
+
+**Objectiu**
+
+Exposar l'autenticació creada en `R2M5` mitjançant una mini API `JSON` que permeta a `Desenvolupament Web en Entorn Client` practicar autenticació contra un backend real abans d'arribar a `R4`.
+
+**Tasca**
+
+L'equip crea un contracte mínim amb:
+
+- `POST /api/login` o equivalent
+- validació contra el sistema d'usuaris de `R2M5`
+- resposta `JSON` amb codi `200` si les credencials són correctes
+- resposta `JSON` amb codi `401` si són incorrectes o falta autenticació
+- token simple o mecanisme equivalent documentat
+- `GET /api/me`, `GET /api/protected` o equivalent
+- lectura de `Authorization: Bearer ...` o mecanisme documentat
+- comprovació real del token en la ruta protegida
+- prova externa amb `curl`, Postman/Insomnia o `fetch`
+
+Esta fase no és encara `R4`: no cal API completa, CRUD, OpenAPI, OAuth, JWT professional, refresh tokens ni documentació extensa d'API.
+
+**Relació amb el producte principal**
+
+El microrepte convertix l'autenticació web en un contracte mínim que un altre client pot consumir. Açò dona continuïtat intermodular amb DWEC i deixa un primer antecedent per al treball formal d'API en `R4`.
+
+**RA avaluat, CA avaluats i RA de context**
+
+- **RA avaluat**: **RA4**
+- **CA avaluats**: **RA4.d**, **RA4.e**
+- **RA de context**: **pont DWEC**
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
+
+**Descripció dels CA en llenguatge docent**
+
+- L'alumnat reutilitza el mecanisme d'autenticació.
+- L'alumnat restringix una ruta que no està pensada per renderitzar HTML.
+- L'alumnat usa codis HTTP i `JSON` per comunicar-se amb un client.
+- L'alumnat sap explicar què queda com a solució provisional fins a `R4`.
+
+**Paper de la IA**
+
+La IA pot ajudar a escriure exemples de `json_encode`, llegir `Authorization` o preparar peticions `curl`, però l'alumnat ha de demostrar el cas `200`, el cas `401` i la comprovació real del token.
+
+**Evidències obligatòries**
+
+- endpoint de login API
+- resposta `JSON`
+- codi `200` i codi `401`
+- token simple o mecanisme equivalent
+- ruta protegida
+- prova externa documentada
+- contracte mínim per a DWEC
+- defensa tècnica breu
+
+**Instrument d’avaluació**
+
+Rúbrica curta de mini API d'autenticació.
+
+**Indicadors d’assoliment**
+
+- el login API reutilitza el treball de `R2M5`
+- la ruta protegida comprova realment el token
+- no es retornen contrasenyes ni hashes
+- DWEC pot entendre mètode, URL, headers i resposta
+
+**Riscos habituals**
+
+- retornar HTML en lloc de `JSON`
+- retornar sempre `200`
+- generar un token però no comprovar-lo
+- exposar contrasenyes o hashes
+- intentar construir una API completa fora d'escala
+
+**Verificació del treball real**
+
+- execució de login correcte
+- execució de login incorrecte
+- execució de ruta protegida sense token
+- execució de ruta protegida amb token vàlid
+- pregunta oral sobre què ha de fer el client quan rep `401`
+
+**Pes orientatiu dins del repte**
+
+10%
+
+---
+
+### Microrepte R2M7 — Prova, depuració, documentació mínima i checkpoint tècnic
 
 **Tipus**
 
@@ -764,7 +865,7 @@ Microprojecte de tancament i verificació.
 
 **Objectiu**
 
-Comprovar que el flux complet funciona, que els errors són observables i que l’equip deixa una base tècnica verificable abans d’entrar en la sessió final de refactorització.
+Comprovar que el flux complet funciona, que els errors són observables i que l’equip deixa una base tècnica verificable abans d’entrar en la peça testable de `R2M8`.
 
 **Tasca**
 
@@ -777,7 +878,7 @@ L’equip:
 - documenta instruccions de prova
 - registra incidències detectades
 - actualitza la documentació tècnica
-- deixa identificats punts de deute tècnic o necessitat de reorganització que es treballaran a la sessió `7`
+- deixa identificats punts de deute tècnic o necessitat de reorganització que es treballaran a la sessió `8`
 
 **Relació amb el producte principal**
 
@@ -785,9 +886,12 @@ Sense esta capa, el repte podria funcionar aparentment, però no quedaria prou v
 
 Este microprojecte consolida i documenta comprovacions que han d’haver anat apareixent des dels microprojectes anteriors.
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA4.f**
+- **RA avaluat**: **RA4**
+- **CA avaluats**: **RA4.f**
+- **RA de context**: cap
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -835,11 +939,11 @@ Checklist de verificació + defensa tècnica.
 
 **Pes orientatiu dins del repte**
 
-10%
+8%
 
 ---
 
-### Microrepte R2M7 — Primera peça testable amb POO i Composer
+### Microrepte R2M8 — Primera peça testable amb POO i Composer
 
 **Tipus**
 
@@ -868,11 +972,12 @@ Si apareixen més classes, una llibreria externa o una API, han de quedar com a 
 
 Este microprojecte tanca `R2` amb una primera peça que es pot provar automàticament i deixa el pas a `R3` millor preparat, però sense anticipar encara l’arquitectura gran del repte següent.
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA3.d**
-- **RA3.g**
-- **RA4.f**
+- **RA avaluat**: **RA3**
+- **CA avaluats**: **RA3.d**, **RA3.g**
+- **RA de context**: **RA4.f**
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -923,23 +1028,119 @@ Rúbrica curta de POO, Composer i prova unitària inicial.
 
 **Pes orientatiu dins del repte**
 
+8%
+
+---
+
+### Microrepte R2M9 — Persistència mínima amb BBDD en PHP
+
+**Tipus**
+
+Microprojecte integrador d'introducció acotada a BBDD amb `PHP` pur.
+
+**Objectiu**
+
+Substituir una persistència provisional per una persistència mínima real en BBDD, amb connexió controlada, taula vinculada al domini, alta, lectura i consultes preparades, sense entrar encara en `ORM`, migrations ni framework.
+
+**Tasca**
+
+L'equip tria una dada significativa del flux de `R2` i la fa persistent en una BBDD. El mínim ha d'incloure:
+
+- taula o script SQL reproduïble
+- configuració de connexió separada del codi principal
+- cap secret real pujat al repositori
+- connexió amb `PDO` o mecanisme equivalent justificat
+- una alta amb dades ja validades pel flux
+- una lectura posterior, llistat o detall
+- consultes preparades quan entren dades d'usuari
+- tractament bàsic d'errors de connexió o consulta
+- instruccions de reproducció en `README`
+
+Esta fase no ha de convertir-se en una migració prematura a `R3`: no cal `ORM`, no cal framework, no cal sistema complet d'administració de BBDD i no cal modelatge relacional extens.
+
+**Relació amb el producte principal**
+
+El microrepte fa que una part del producte deixe de dependre d'arrays, fitxers provisionals o estat de sessió per conservar informació. Això prepara el pas a `R3`, on la persistència es reorganitzarà amb eines més professionals.
+
+**RA avaluat, CA avaluats i RA de context**
+
+- **RA avaluat**: **RA6**
+- **CA avaluats**: **RA6.a**, **RA6.b**, **RA6.c**, **RA6.d**, **RA6.f**
+- **RA de context**: **RA3**, **RA4**
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
+
+**Descripció dels CA en llenguatge docent**
+
+- L'alumnat reutilitza dades validades del flux.
+- L'alumnat entén que una BBDD conserva informació més enllà de la sessió.
+- L'alumnat configura una connexió sense exposar secrets.
+- L'alumnat escriu i llig dades amb consultes preparades.
+- L'alumnat explica què es professionalitzarà en `R3`.
+
+**Paper de la IA**
+
+La IA pot ajudar a proposar un `schema.sql`, escriure un exemple de `PDO` o revisar una consulta preparada. L'alumnat ha d'adaptar taula i camps al seu projecte, executar alta i lectura, i explicar què passa si falla la connexió o la taula no existix.
+
+**Evidències obligatòries**
+
+- taula o script SQL relacionat amb el domini
+- configuració de connexió separada i sense secrets reals
+- alta funcional amb dades del flux
+- lectura funcional de dades persistides
+- ús de consulta preparada amb dades d'usuari
+- instruccions de reproducció
+- comprovació que el flux principal continua funcionant
+- defensa tècnica breu
+
+**Instrument d'avaluació**
+
+Rúbrica curta de persistència mínima amb BBDD.
+
+**Indicadors d'assoliment**
+
+- la dada persistida té valor dins del projecte
+- la BBDD complementa validació, estat i autenticació, no els substituïx
+- la connexió està centralitzada o clarament localitzable
+- no hi ha credencials reals al repositori
+- es pot demostrar alta i lectura
+- l'equip sap distingir sessió, cookie, fitxer provisional i BBDD
+
+**Riscos habituals**
+
+- fer només connexió sense cap `INSERT` ni `SELECT`
+- inserir valors fixos que no venen del flux
+- concatenar dades d'usuari dins de l'SQL
+- pujar secrets reals
+- voler resoldre ja migrations, ORM o arquitectura de `R3`
+
+**Verificació del treball real**
+
+- execució d'una alta
+- consulta posterior de la dada
+- revisió de configuració sense secrets
+- pregunta oral sobre consulta preparada i diferència entre sessió i BBDD
+
+**Pes orientatiu dins del repte**
+
 10%
 
 ---
 
 ## 6. Taula resum de microprojectes i criteris d’avaluació
 
-Estos pesos calculen la `nota_nucli_R2`. No són una mitjana plana: responen al pes curricular dels CA treballats i al paper de cada microrepte dins del flux complet. `R2M5` té més pes perquè concentra autenticació i protecció d'una operació real. `R2M6` i `R2M7` pesen menys per separat, però actuen com a evidència de verificació, depuració i testabilitat del conjunt.
+Estos pesos calculen la `nota_nucli_R2`. No són una mitjana plana: responen al pes curricular dels CA treballats i al paper de cada microrepte dins del flux complet. `R2M5` continua tenint més pes perquè concentra autenticació i protecció d'una operació real. `R2M6` té pes propi com a pont intermodular amb DWEC. `R2M9` introdueix persistència real, però queda acotat com a pont cap a `R3`, no com a repte complet de BBDD.
 
-| Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
-|---|---|---|---|---|---|---|
-| R2M1 | Procedimental | Entrada variada, codi servidor integrat i recuperació de dades | RA2.a, RA2.b, RA2.c, RA2.d, RA3.e, RA3.f, RA3.g | formulari amb text, llista i checkbox, codi embegut, variables simples, validació bàsica, error visible i demo | checklist | 15% |
-| R2M2 | Procedimental | Processament, reintent i guardat funcional | RA2.a, RA2.b, RA2.c, RA2.d, RA2.e, RA2.f, RA2.g, RA2.h, RA3.e, RA3.f, RA3.g | formulari amb error, dades conservades, reenviament corregit, cas correcte guardat funcionalment, codi embegut, variables i demo | rúbrica breu | 15% |
-| R2M3 | Procedimental | Decisions, arrays i funcions aplicades | RA3.a, RA3.b, RA3.c, RA3.d | lògica observable, funcions, demo | rúbrica | 15% |
-| R2M4 | Procedimental | Estat, sessió i/o cookies | RA4.a, RA4.b, RA4.c | demo d’estat, recuperació i invalidació | checklist | 15% |
-| R2M5 | Procedimental | Autenticació i operació protegida | RA4.d, RA4.e | login, operació protegida, cas autoritzat i denegat | rúbrica | 20% |
-| R2M6 | Tancament / verificació | Proves, documentació mínima i checkpoint tècnic | RA4.f | proves, incidències, documentació, defensa | checklist + defensa | 10% |
-| R2M7 | Integrador | Primera peça testable amb POO i Composer | RA3.d, RA3.g, RA4.f | composer.json/autoload, classe simple, prova unitària i comprovació final | rúbrica curta | 10% |
+| Microprojecte | Tipus | Producte o lliurable | RA avaluat | CA avaluats | RA de context | Evidències principals | Instrument | Pes orientatiu |
+|---|---|---|---|---|---|---|---|---|
+| R2M1 | Procedimental | Entrada variada, codi servidor integrat i recuperació de dades | RA2 | RA2.a, RA2.b, RA2.c, RA2.d | RA3.e, RA3.f, RA3.g | formulari amb text, llista i checkbox, codi embegut, variables simples, validació bàsica, error visible i demo | checklist | 12% |
+| R2M2 | Procedimental | Processament, reintent i guardat funcional | RA2 | RA2.a, RA2.b, RA2.c, RA2.d, RA2.e, RA2.f, RA2.g, RA2.h | RA3.e, RA3.f, RA3.g | formulari amb error, dades conservades, reenviament corregit, cas correcte guardat funcionalment, codi embegut, variables i demo | rúbrica breu | 12% |
+| R2M3 | Procedimental | Decisions, arrays i funcions aplicades | RA3 | RA3.a, RA3.b, RA3.c, RA3.d | - | lògica observable, funcions, demo | rúbrica | 12% |
+| R2M4 | Procedimental | Estat, sessió i/o cookies | RA4 | RA4.a, RA4.b, RA4.c | - | demo d’estat, recuperació i invalidació | checklist | 12% |
+| R2M5 | Procedimental | Autenticació i operació protegida | RA4 | RA4.d, RA4.e | - | login, operació protegida, cas autoritzat i denegat | rúbrica | 16% |
+| R2M6 | Intermodular | Mini API d'autenticació per a client | RA4 | RA4.d, RA4.e | pont DWEC | login API, ruta protegida, `JSON`, `200`, `401` i prova externa | rúbrica curta | 10% |
+| R2M7 | Tancament / verificació | Proves, documentació mínima i checkpoint tècnic | RA4 | RA4.f | - | proves, incidències, documentació, defensa | checklist + defensa | 8% |
+| R2M8 | Integrador | Primera peça testable amb POO i Composer | RA3 | RA3.d, RA3.g | RA4.f | composer.json/autoload, classe simple, prova unitària i comprovació final | rúbrica curta | 8% |
+| R2M9 | Integrador | Persistència mínima amb BBDD en PHP | RA6 | RA6.a, RA6.b, RA6.c, RA6.d, RA6.f | RA3, RA4 | connexió, taula, alta, lectura, consulta preparada i README de reproducció | rúbrica curta | 10% |
 
 ---
 
@@ -965,6 +1166,7 @@ Estos pesos calculen la `nota_nucli_R2`. No són una mitjana plana: responen al 
 - documentació tècnica actualitzada
 - composer.json/autoload o alternativa equivalent justificada
 - classe simple del domini o servei i prova unitària mínima
+- persistència mínima en BBDD amb alta, lectura i consultes preparades
 - AI log quan hi haja ús d’IA
 
 **Evidències opcionals d’ampliació**
@@ -1117,9 +1319,11 @@ No es demana:
 
 **Duració orientativa**
 
-- base recomanada: `21` hores
-- organització base: `7` sessions de `3` hores
-- la sessió `7` es reserva a crear una primera peça testable amb POO, Composer i prova unitària
+- base recomanada: `27` hores
+- organització base: `9` sessions de `3` hores
+- la sessió `6` obri una mini API d'autenticació per a client
+- la sessió `8` es reserva a crear una primera peça testable amb POO, Composer i prova unitària
+- la sessió `9` introdueix persistència mínima amb BBDD
 
 **Moment del curs**
 
@@ -1152,8 +1356,10 @@ Es pot implementar sobre la base comuna en `PHP` fixada pel curs o pel departame
 - estat o sessió
 - autenticació funcional
 - una operació protegida
+- mini API d'autenticació consumible per a client
 - proves mínimes
 - primera peça testable amb POO i Composer
+- persistència mínima amb BBDD
 - documentació i defensa
 
 **Ampliacions realistes**
@@ -1177,7 +1383,7 @@ Es pot implementar sobre la base comuna en `PHP` fixada pel curs o pel departame
 
 **Pregunta de síntesi per a l’alumnat**
 
-Com hem passat d’un simple punt d’entrada de dades a una funcionalitat de producte real protegida, quina regla hem convertit en una peça testable en la sessió final i què necessitarem reorganitzar de manera més profunda en el Repte 3?
+Com hem passat d’un simple punt d’entrada de dades a una funcionalitat de producte real protegida, com hem exposat una autenticació mínima per a client, quina regla hem convertit en una peça testable i què necessitarem reorganitzar de manera més profunda en el Repte 3?
 
 **Criteri de superació del repte**
 
@@ -1189,15 +1395,17 @@ El repte es considera superat quan:
 - hi ha evidència real de manteniment d’estat
 - l’autenticació és funcional
 - almenys una operació del domini queda protegida i es pot demostrar tant en cas autoritzat com en cas denegat
+- la mini API d'autenticació es pot consumir des de fora del navegador
 - les proves mínimes i la documentació són coherents amb el comportament observat
-- la sessió final deixa una classe simple carregada amb Composer i provada amb una prova unitària mínima
+- la sessió `8` deixa una classe simple carregada amb Composer i provada amb una prova unitària mínima
+- la sessió `9` deixa una persistència mínima reproduïble
 - l’alumnat pot defensar tècnicament allò construït
 
 **Observacions docents**
 
 Este repte s’ha de llegir com una progressió completa dins de SA2. Per tant, no s’hauria de reduir a un bloc d’autenticació. El seu valor està en connectar fonaments bàsics de programació en servidor amb una primera funcionalitat de producte realment protegida.
 
-La sessió final s’ha de llegir com a tancament integrador cap a codi testable. No és encara una entrada obligatòria a POO completa, a BBDD com a focus principal, a API externa ni a una reescriptura total del repte.
+Les sessions finals s’han de llegir com a tancament integrador cap a codi testable i persistència mínima. No són encara una entrada obligatòria a POO completa, a BBDD com a focus principal, a API completa ni a una reescriptura total del repte.
 
 ---
 
@@ -1215,7 +1423,7 @@ Esta autocorrecció no assigna directament la nota final. Filtra si l'ampliació
 
 **Criteri de nota final**
 
-Les autocorreccions dels microreptes `R2M1` a `R2M7` valoren el nucli obligatori. La qualificació final del repte ha de separar nucli i via d'excel·lència:
+Les autocorreccions dels microreptes `R2M1` a `R2M9` valoren el nucli obligatori. La qualificació final del repte ha de separar nucli i via d'excel·lència:
 
 ```text
 nota_final_R2 = min(nota_nucli_R2, 9) + ampliacio_9_10

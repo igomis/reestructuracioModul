@@ -173,5 +173,4 @@ La IA pot suggerir idees de segon flux i casos de prova. L'alumnat ha de justifi
 
 ## Connexio amb el microrepte posterior
 
-`R3M5` estabilitzara els dos fluxos, revisara responsabilitats, validacio, errors i proves. Per això el segon flux ha de quedar funcional, encara que siga menut.
-
+`R3M5` protegira una accio significativa amb autenticacio, autoritzacio i middleware o equivalent. Per això el segon flux ha de quedar funcional i prou clar per poder decidir què té sentit protegir.

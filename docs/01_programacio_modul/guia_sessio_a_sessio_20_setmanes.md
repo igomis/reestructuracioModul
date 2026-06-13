@@ -151,7 +151,7 @@ Regla pràctica:
 - Què fa l'alumnat: implementa `R2M5` i `R2M6`, protegix una acció real, prova casos correctes i incorrectes i actualitza `README`
 - Materials per a l'alumnat: guia de validació i errors del Repte 2, guia de testing i debugging, checklist del Repte 2
 - Evidència mínima del bloc: operació del domini protegida, cas autoritzat, cas denegat, prova mínima i documentació reproduïble
-- Checkpoint docent: no obrir la sessió final de `R2` sense evidència reproduïble del flux complet
+- Checkpoint docent: no obrir les fases finals de `R2` sense evidència reproduïble del flux complet
 - Pla per a alumnat endarrerit: tancar només el cas d'ús principal i els errors crítics
 - Pla per a alumnat avançat: afegir proves més sistemàtiques o millor missatge d'error
 
@@ -180,11 +180,11 @@ Regla pràctica:
 
 #### Setmana 10
 
-- Focus o repte: model de dades, `migrations` i `seeders`
-- Què fa el professorat: modela una migració, un seeder o equivalent, una consulta que retorna un conjunt de dades i la comprovació que eixes dades alimenten una vista, llistat o resposta
-- Què fa l'alumnat: defineix l'esquema mínim de dades, executa migracions, carrega dades inicials, recupera un conjunt de dades real i documenta com reconstruir la BBDD
+- Focus o repte: model de dades, migracions o equivalent, dades inicials reproduïbles i taller de portabilitat entre frameworks
+- Què fa el professorat: modela una migració o equivalent, una càrrega inicial reproduïble, una consulta que retorna un conjunt de dades i la comprovació que eixes dades alimenten una vista, llistat o resposta; després guia el taller `R3S2B` de comparació `Laravel`/`Symfony`/`NestJS`
+- Què fa l'alumnat: defineix l'esquema mínim de dades, executa migracions o equivalent, carrega dades inicials, recupera un conjunt de dades real, documenta com reconstruir la BBDD i completa una auditoria d'equivalències abans del primer flux complet
 - Materials per a l'alumnat: checklist del Repte 3, programació per repte, [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
-- Evidència mínima del bloc: BBDD real creada amb `migrations`, dades de demostració carregades amb `seeders` o equivalent, consulta de conjunt de dades i ús verificable en un flux
+- Evidència mínima del bloc: BBDD real creada amb migracions o equivalent, dades de demostració carregades amb fixtures/seeders o script equivalent, consulta de conjunt de dades, ús verificable en un flux i taula d'equivalències del taller `R3S2B`
 - Checkpoint docent: decidir si l'equip entra a l'avaluació 2 amb una base reproduïble, no amb dades carregades a mà
 - Pla per a alumnat endarrerit: una sola entitat central, seeder mínim i lectura verificable
 - Pla per a alumnat avançat: afegir relació simple o una segona migració controlada si no trenca l'abast
@@ -205,7 +205,7 @@ Regla pràctica:
 #### Setmana 12
 
 - Focus o repte: segon cas d'ús, estabilització i [microdefensa tècnica de `R3`](programacio_aula_r3sx_microdefenses_tecniques_criteris.md)
-- Què fa el professorat: revisa fluxos, força prova de `migrations` i `seeders`, demana seguir una petició ruta-controlador-model/vista i activa defenses breus d'arquitectura aplicada
+- Què fa el professorat: revisa fluxos, força prova de migracions o equivalent i càrrega inicial, demana seguir una petició ruta-controlador-model/vista i activa defenses breus d'arquitectura aplicada
 - Què fa l'alumnat: tanca el segon flux o ampliació útil, actualitza `README`, prepara defensa de separació de responsabilitats, persistència inicial o flux end-to-end
 - Materials per a l'alumnat: checklist del Repte 3, itinerari triat, [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md), [microdefensa de R3](programacio_aula_r3sx_microdefenses_tecniques_criteris.md)
 - Producte mínim: aplicació en framework amb Docker, BBDD reconstruïble, dades inicials i almenys un flux complet server-rendered o equivalent

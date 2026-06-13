@@ -28,7 +28,7 @@ Esta implantació s'ha calibrat sobre un escenari orientatiu d'unes `20` setmane
 | **Bloc 2** | Avaluació 1 | Fase 1 / Repte 1 | concretar domini, base comuna en `PHP` i primer esquelet defensable del producte | base tècnica executable i primera decisió tècnica documentada |
 | **Bloc 3** | Avaluació 1 | Fase 2 / Repte 2 | construir la base funcional del producte amb auth, sessions o estat equivalent sobre base comuna en `PHP`, codi servidor integrat amb marques i resposta generada en servidor | flux funcional mínim real i verificable amb tractament de dades i document resultant |
 | **Bloc 4** | Avaluació 1 | inici de Fase 3 / Repte 3 | obrir la reconstrucció en framework abans del canvi d'avaluació | projecte base en framework arrancable, Docker, persistència inicial i primera resposta dinàmica |
-| **Bloc 5** | Avaluació 2 | tancament de Fase 3 / Repte 3 | consolidar base real en framework, persistència, primers fluxos verificables i renderitzat servidor | aplicació en framework amb BBDD, seeders, 2 casos d'ús funcionals i almenys 1 cas server-rendered |
+| **Bloc 5** | Avaluació 2 | tancament de Fase 3 / Repte 3 | consolidar base real en framework, persistència, primers fluxos verificables i renderitzat servidor | aplicació en framework amb BBDD, càrrega inicial reproduïble, 2 casos d'ús funcionals i almenys 1 cas server-rendered |
 | **Bloc 6** | Avaluació 2 | Fase 4 / Repte 4 | publicar i provar l'API del producte | API documentada i comprovada |
 | **Bloc 7** | Avaluació 2 | Fase 5 / Repte 5 i defensa final | integrar, tancar i defensar el producte del curs | producte final complet, integrat i defensable |
 
@@ -169,7 +169,7 @@ Activitats d'aula:
 - identificar quins avantatges aporta separar ruta, controlador, vista o resposta i model respecte a la base de `R2`
 - posar en marxa Docker, `.env` i rutes mínimes
 - començar el model de dades inicial amb BBDD real
-- crear `migrations` i `seeders` o equivalents
+- crear migracions o equivalent i càrrega inicial reproduïble
 - recuperar un conjunt de dades real i preparar-lo perquè alimente un llistat, detall, filtre o resposta
 - declarar els `2` casos d'ús de `R3`, indicant quin ve de `R2`
 
@@ -186,7 +186,7 @@ Evidències esperades:
 - nota comparativa curta de stack i esquema abans/després de responsabilitats
 - Docker funcional i configuració mínima documentada
 - primeres rutes reals
-- BBDD connectada amb `migrations` i dades inicials amb `seeders`
+- BBDD connectada amb migracions o equivalent i dades inicials reproduïbles
 - consulta o lectura d'un conjunt de dades usable en un flux funcional
 - abast dels `2` casos d'ús definit i registrat
 
@@ -216,7 +216,7 @@ Activitats d'aula:
 - reforçar rutes, controladors, vistes o respostes, models i serveis o equivalents
 - processar formularis, filtres, detalls o interaccions perquè el contingut generat canvie segons dades, paràmetres o estat
 - comprovar validació, errors bàsics i proves mínimes
-- verificar que `migrations` i `seeders` reconstrueixen la BBDD i les dades de demostració
+- verificar que migracions o equivalent i càrrega inicial reconstrueixen la BBDD i les dades de demostració
 
 Materials activats:
 
@@ -228,8 +228,8 @@ Materials activats:
 Evidències esperades:
 
 - aplicació en framework operativa
-- BBDD creada per `migrations`
-- dades inicials reproduïbles amb `seeders` o equivalent
+- BBDD creada per migracions o equivalent
+- dades inicials reproduïbles amb fixtures/seeders o script equivalent
 - `2` casos d'ús funcionals de punta a punta
 - almenys `1` cas d'ús amb vista o plantilla server-rendered i resposta `HTML` verificable
 - validació i errors mínims
@@ -337,7 +337,7 @@ Punt crític de seguiment:
 | **Bloc 1** | repositori usable i primer `README` | base de treball compartida |
 | **Bloc 2** | entorn funcional i decisió tècnica inicial | esquelet de producte defensable |
 | **Bloc 3** | flux funcional d'autenticació i validacions mínimes | nucli de `R2` complet |
-| **Bloc 4** | framework arrancable, Docker, BBDD inicial, `migrations` i `seeders` | entrada efectiva a `R3` |
+| **Bloc 4** | framework arrancable, Docker, BBDD inicial, migracions o equivalent i càrrega inicial reproduïble | entrada efectiva a `R3` |
 | **Bloc 5** | base en framework amb `2` casos d'ús, persistència reproduïble i proves mínimes | backend preparat per a `R4` |
 | **Bloc 6** | API publicada, documentada i provada | producte exposat com a servei usable |
 | **Bloc 7** | integració funcional, defensa i documentació final | producte complet del curs |

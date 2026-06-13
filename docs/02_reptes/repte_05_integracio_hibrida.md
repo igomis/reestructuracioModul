@@ -81,7 +81,7 @@ Els criteris de `RA7`, `RA8` i `RA6` només apareixen com a suport quan fan falt
 
 > **Norma del repte**
 >
-> - Cap microprojecte apareix sense el camp **CA coberts**.
+> - Cap microprojecte apareix sense el camp **RA avaluat, CA avaluats i RA de context**.
 > - Cada microprojecte ha de deixar una evidència verificable de la integració.
 > - El mínim obligatori és una sola integració híbrida completa, útil i defensable.
 > - Les integracions múltiples o orquestracions avançades són ampliació, no substitució del nucli.
@@ -107,11 +107,12 @@ L'equip concreta:
 - quins riscos hi ha: límits, errors, permisos, dependència externa o qualitat de dades
 - quin flux híbrid es construirà
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA9.a**
-- **RA9.b**
-- **RA7.a** quan la font siga un servei web documentable
+- **RA avaluat**: **RA9**
+- **CA avaluats**: **RA9.a**, **RA9.b**
+- **RA de context**: **RA7.a**
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -154,11 +155,12 @@ L'equip implementa:
 - cas d'error o indisponibilitat
 - registre de què s'ha rebut realment
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA9.c**
-- **RA9.f**
-- **RA7.d** i **RA7.e** si la connexió és a un servei web amb peticions i respostes
+- **RA avaluat**: **RA9**
+- **CA avaluats**: **RA9.c**, **RA9.f**
+- **RA de context**: **RA7.d**, **RA7.e**
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -201,11 +203,12 @@ L'equip defineix i implementa:
 - comparativa entre resposta externa i resultat integrat
 - justificació del valor afegit
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA9.d**
-- **RA9.e**
-- **RA6.c** i **RA6.d** només si el mapping es persisteix o es combina amb dades pròpies
+- **RA avaluat**: **RA9**
+- **CA avaluats**: **RA9.d**, **RA9.e**
+- **RA de context**: **RA6.c**, **RA6.d**
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -247,12 +250,12 @@ L'equip connecta la integració amb:
 - resposta visible o efecte funcional observable
 - restriccions bàsiques d'ús o control d'accés si cal
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA9.e**
-- **RA9.f**
-- **RA8.f** si la integració modifica una resposta dinàmica o vista server-rendered
-- **RA7.f** si la integració consumeix o combina serveis
+- **RA avaluat**: **RA9**
+- **CA avaluats**: **RA9.e**, **RA9.f**
+- **RA de context**: **RA8.f**, **RA7.f**
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -295,11 +298,12 @@ L'equip prepara:
 - límits coneguts
 - mini defensa del contracte extern, mapping i valor aportat
 
-**CA coberts**
+**RA avaluat, CA avaluats i RA de context**
 
-- **RA9.g**
-- **RA9.h**
-- **RA7.h** si hi ha documentació de servei o contracte
+- **RA avaluat**: **RA9**
+- **CA avaluats**: **RA9.g**, **RA9.h**
+- **RA de context**: **RA7.h**
+- **Criteri de qualificació**: només els CA avaluats generen nota en este microrepte; el context no es pondera ací.
 
 **Descripció dels CA en llenguatge docent**
 
@@ -327,13 +331,13 @@ Checklist de tancament i defensa.
 
 ## 4. Taula resum de microprojectes i criteris d'avaluació
 
-| Microprojecte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
-|---|---|---|---|---|---|---:|
-| R5M1 | Investigació / decisió | Font externa triada i mapa d'integració | RA9.a, RA9.b, RA7.a | comparativa, justificació, mapa inicial, riscos | checklist | 15% |
-| R5M2 | Procedimental | Connexió funcional amb font externa | RA9.c, RA9.f, RA7.d, RA7.e | connector, resposta real, cas d'error | rúbrica | 20% |
-| R5M3 | Procedimental | Mapping i transformació útil | RA9.d, RA9.e, RA6.c, RA6.d | esquema de mapping, transformació, comparativa | rúbrica | 20% |
-| R5M4 | Integració | Funcionalitat híbrida integrada | RA9.e, RA9.f, RA8.f, RA7.f | demo completa, abans/després, commit comentat | rúbrica | 25% |
-| R5M5 | Tancament / verificació | Proves, documentació i defensa | RA9.g, RA9.h, RA7.h | registre de proves, documentació, mapa final, defensa | checklist | 20% |
+| Microprojecte | Tipus | Producte o lliurable | RA avaluat | CA avaluats | RA de context | Evidències principals | Instrument | Pes orientatiu |
+|---|---|---|---|---|---|---|---|---:|
+| R5M1 | Investigació / decisió | Font externa triada i mapa d'integració | RA9 | RA9.a, RA9.b | RA7.a | comparativa, justificació, mapa inicial, riscos | checklist | 15% |
+| R5M2 | Procedimental | Connexió funcional amb font externa | RA9 | RA9.c, RA9.f | RA7.d, RA7.e | connector, resposta real, cas d'error | rúbrica | 20% |
+| R5M3 | Procedimental | Mapping i transformació útil | RA9 | RA9.d, RA9.e | RA6.c, RA6.d | esquema de mapping, transformació, comparativa | rúbrica | 20% |
+| R5M4 | Integració | Funcionalitat híbrida integrada | RA9 | RA9.e, RA9.f | RA8.f, RA7.f | demo completa, abans/després, commit comentat | rúbrica | 25% |
+| R5M5 | Tancament / verificació | Proves, documentació i defensa | RA9 | RA9.g, RA9.h | RA7.h | registre de proves, documentació, mapa final, defensa | checklist | 20% |
 
 ---
 

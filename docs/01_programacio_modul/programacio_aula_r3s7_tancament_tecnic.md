@@ -1,4 +1,4 @@
-# R3S6. Tancament tecnic
+# R3S7. Tancament tecnic
 
 ## Finalitat de la sessio
 
@@ -7,8 +7,8 @@ Esta sessio tanca `R3` deixant el projecte en framework documentat, reproduïble
 ## Encaix dins del Repte 3
 
 - **Repte**: `R3. Reconstruccio en framework, persistencia real i primers fluxos funcionals`
-- **Microrepte**: `R3M6`
-- **Sessio**: `R3S6`
+- **Microrepte**: `R3M7`
+- **Sessio**: `R3S7`
 - **Duracio orientativa**: `3 hores`
 - **Focus**: README, demo, decisions, backlog, reproduïbilitat i pas a `R4`
 - **No entra encara**: desenvolupar API, integrar serveis externs o obrir noves funcionalitats grans
@@ -19,14 +19,14 @@ Esta sessio tanca `R3` deixant el projecte en framework documentat, reproduïble
 |---|---|
 | `RA5.f` | documenta estructura i decisions de framework |
 | `RA5.g` | explica mantenibilitat i responsabilitats |
-| `RA6.g` | documenta persistencia, migracions, seeders i dades |
+| `RA6.g` | documenta persistencia, migracions o equivalent, càrrega inicial i dades |
 | Evidencia central | projecte reproduïble i defensable amb backlog cap a `R4` |
 
 ## Producte esperat
 
 - `README` tecnic actualitzat.
 - Instruccions d'arrencada.
-- Instruccions de BBDD, migracions i seeders.
+- Instruccions de BBDD, migracions/fixtures/seeders o mecanisme equivalent.
 - Resum dels `2` casos d'us.
 - Decisions tecniques breus.
 - Demo curta preparada.
@@ -74,7 +74,7 @@ Tasques:
 
 - actualitzar README;
 - documentar Docker i `.env`;
-- documentar migracions i seeders;
+- documentar migracions i càrrega inicial;
 - descriure dos fluxos;
 - indicar proves o checklist.
 
@@ -103,7 +103,7 @@ Cada equip mostra:
 - README;
 - arrencada o instruccions;
 - dos fluxos;
-- migracions/seeders;
+- migracions/fixtures/seeders o mecanisme equivalent;
 - backlog cap a `R4`.
 
 ## Tasques concretes de l'alumnat
@@ -122,7 +122,7 @@ Cada equip mostra:
 | Evidencia | Minim acceptable |
 |---|---|
 | README | permet arrancar i entendre el projecte |
-| BBDD | migracions i seeders documentats |
+| BBDD | migracions o equivalent i càrrega inicial documentades |
 | Fluxos | dos casos d'us descrits i demostrables |
 | Decisions | registre breu i concret |
 | Backlog | què queda fora i per què |
@@ -174,5 +174,4 @@ La IA pot ajudar a ordenar README, demo o backlog. L'alumnat ha de verificar que
 
 ## Connexio amb el microrepte posterior
 
-Després de `R3M6`, l'equip pot entrar a `R4`: contracte d'API i exposicio de funcionalitats. Si `R3` no queda reproduïble, `R4` començara sobre una base fragil.
-
+Després de `R3M7`, l'equip pot entrar a `R4`: contracte d'API i exposicio de funcionalitats. Si `R3` no queda reproduïble, `R4` començara sobre una base fragil.

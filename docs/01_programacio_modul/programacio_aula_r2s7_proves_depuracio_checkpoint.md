@@ -1,4 +1,4 @@
-# R2S6. Proves, depuracio i checkpoint tecnic
+# R2S7. Proves, depuracio i checkpoint tecnic
 
 ## Finalitat de la sessio
 
@@ -11,8 +11,8 @@ En este punt encara no es demanen proves unitàries ni `PHPUnit` com a mínim. S
 ## Encaix dins del Repte 2
 
 - **Repte**: `R2. Processament bàsic, estat, autenticació i primera funcionalitat protegida`
-- **Microrepte**: `R2M6`
-- **Sessio**: `R2S6`
+- **Microrepte**: `R2M7`
+- **Sessio**: `R2S7`
 - **Duracio orientativa**: `3 hores`
 - **Focus**: checklist de proves, primera prova automàtica lleugera de flux, depuracio, documentacio i demo reproduïble
 - **No entra encara**: proves unitàries obligatòries, `PHPUnit` com a mínim, mocks, refactoritzacio profunda, noves pantalles grans o migracio a framework
