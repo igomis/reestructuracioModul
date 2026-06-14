@@ -56,7 +56,18 @@ No és un CRUD de tickets. Ha d'haver-hi un flux real de seguiment i resolució.
 - tria un projecte que pugues imaginar viu fins a `R5`
 - evita el que et semble "més fàcil" si en realitat no et suggerix casos d'ús clars
 - pensa si el mateix projecte et permet auth, persistència, API i integració sense forçar-lo
+- si vols explorar actius digitals tokenitzats, pensa primer quin recurs, dret o evidència del teu projecte representen i quin valor aporten
 - pensa també en la defensa: has de poder explicar actors, regles i decisions
+
+## Actius digitals tokenitzats en el projecte
+
+Els actius digitals tokenitzats poden aparéixer en `R5` com a via avançada si ajuden al teu projecte. Per exemple:
+
+- inventari: certificat digital d'un recurs, propietat o transferència verificable
+- reserves: dret d'ús temporal, entrada, abonament o reserva verificable
+- incidències: certificat de resolució, evidència de servei o registre auditable
+
+Perquè siga vàlid, has de demostrar quin actiu representes, què queda en el backend, què quedaria en el token o registre extern, cas positiu, cas d'error i riscos. No s'usen diners reals, inversió, especulació ni desplegaments en xarxes de producció.
 
 ## Com es treballa amb altres companys
 

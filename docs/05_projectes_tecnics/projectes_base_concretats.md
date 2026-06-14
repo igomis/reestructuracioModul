@@ -14,6 +14,7 @@ La tokenització s'entén ací en sentit funcional útil per al backend: tokens 
 - ha de tindre actors recognoscibles, rols clars i una primera funcionalitat de negoci usable des del primer tram del curs
 - ha de permetre model de dades no trivial, persistència, API, validacions de negoci, proves i manteniment real
 - ha d'admetre una tokenització funcional útil del domini sense convertir-se en un projecte especialitzat en criptografia
+- ha de permetre una integració externa en `R5`; com a via avançada, pot explorar actius digitals tokenitzats si representen un actiu, dret, certificat o evidència real del domini
 - ha de ser compatible amb acreditació individual: cada alumne ha de poder implementar, explicar, provar i defensar la seua solució
 - ha de ser comparable entre itineraris: canvia l'stack, no el nivell d'exigència ni el tipus d'evidència
 - ha de cabre en un recorregut docent realista d'unes `20` setmanes i unes `120` hores lectives dins de les dues primeres avaluacions
@@ -73,7 +74,7 @@ No és suficient una aplicació que només cree recursos i els llista. Ha d'exis
 - `R2`: autenticació, rols i primera funcionalitat autenticada de sol·licitud o aprovació
 - `R3`: persistència del model d'inventari, operacions i historial, amb proves mínimes
 - `R4`: API per consultar recursos, crear operacions, validar tokens i documentar contractes
-- `R5`: integració amb notificacions, lector de codis, webhook o automatització de tancament i manteniment
+- `R5`: integració amb notificacions, lector de codis, webhook, automatització de tancament o actiu digital que represente propietat, certificat o traçabilitat d'un recurs
 
 ### Evidències autèntiques esperades
 
@@ -96,6 +97,10 @@ No és suficient una aplicació que només cree recursos i els llista. Ha d'exis
 ### Extensió opcional de tokenització útil
 
 Es pot ampliar el projecte amb tokens d'operació signats, codi `QR`, revocació manual, reutilització prohibida per finestra temporal o traçabilitat multi-pas d'una operació complexa.
+
+### Extensió opcional d'actius digitals tokenitzats
+
+Es pot modelar un actiu digital que represente un recurs inventariable, un certificat de propietat, una transferència verificada o una evidència de traçabilitat. El backend propi continua sent responsable de rols, operacions i historial; la tokenització avançada només és vàlida si hi ha contracte, mapping, simulació segura i comparació amb una alternativa no blockchain.
 
 ## 2. Sistema de reserves amb tokens de confirmació o cancel·lació
 
@@ -144,7 +149,7 @@ No és suficient un formulari que cree cites en una taula. Ha d'haver-hi validac
 - `R2`: autenticació, model d'usuari i primera reserva autenticada o provisional
 - `R3`: persistència de recursos, franges i reserves, amb regles anti-conflicte i proves
 - `R4`: API de disponibilitat, creació de reserves i confirmació/cancel·lació tokenitzada
-- `R5`: integració amb notificacions, calendari extern, recordatoris o automatitzacions de venciment
+- `R5`: integració amb notificacions, calendari extern, recordatoris, automatitzacions de venciment o actiu digital que represente un dret d'ús, abonament, entrada o reserva verificable
 
 ### Evidències autèntiques esperades
 
@@ -167,6 +172,10 @@ No és suficient un formulari que cree cites en una taula. Ha d'haver-hi validac
 ### Extensió opcional de tokenització útil
 
 Es pot ampliar amb tokens de reprogramació, check-in, recordatori, ampliació de termini o confirmació multiactor quan una reserva requerix més d'una validació.
+
+### Extensió opcional d'actius digitals tokenitzats
+
+Es pot modelar un actiu digital que represente un dret d'ús temporal, una entrada, una reserva verificable o un abonament. No substituïx la lògica de disponibilitat ni les validacions temporals: la proposta ha de demostrar contracte, mapping, prova segura i risc d'ús duplicat, revocació o pèrdua d'accés.
 
 ## 3. Gestor d'incidències amb invitació o seguiment extern tokenitzat
 
@@ -215,7 +224,7 @@ No és suficient un CRUD de tickets. Ha d'haver-hi estats, prioritats, traçabil
 - `R2`: autenticació, model de rols i primera incidència autenticada o assignable
 - `R3`: persistència del model d'incidències, estat, comentaris i historial, amb proves mínimes
 - `R4`: API de consulta, creació, assignació i seguiment extern tokenitzat
-- `R5`: integració amb notificacions, webhook, automatització de derivació o tancament assistit
+- `R5`: integració amb notificacions, webhook, automatització de derivació, tancament assistit o actiu digital que represente un certificat de resolució, evidència de servei o registre verificable d'una actuació
 
 ### Evidències autèntiques esperades
 
@@ -239,11 +248,16 @@ No és suficient un CRUD de tickets. Ha d'haver-hi estats, prioritats, traçabil
 
 Es pot ampliar amb tokens de satisfacció, confirmació de resolució, invitació temporal a proveïdors externs o reobertura controlada d'una incidència resolta.
 
+### Extensió opcional d'actius digitals tokenitzats
+
+Es pot modelar un actiu digital que represente una evidència de resolució, una certificació d'atenció, un comprovant de servei o una traça verificable d'una actuació. El valor formatiu està en justificar si eixe registre aporta confiança, interoperabilitat o auditoria, no en afegir una paraula cridanera al projecte.
+
 ## Criteris per decidir quin projecte oferir o assignar
 
 - oferix **gestor d'inventari** quan vulgues prioritzar traçabilitat, rols, consistència d'operacions i una tokenització funcional molt acotada i fàcil de defensar
 - oferix **sistema de reserves** quan vulgues reforçar validacions temporals, conflictes de negoci i tractament d'estats vinculats a disponibilitat
 - oferix **gestor d'incidències** quan vulgues prioritzar flux de treball, assignació, historial i comunicació amb tercers o seguiment extern
+- activa **actius digitals tokenitzats** com a via de `R5` només quan l'alumne puga justificar quin actiu, dret o evidència representa i per què no bastaria una base de dades normal
 - si el grup és heterogeni, convé oferir com a màxim `2` opcions reals i no obrir un catàleg massa ampli
 - si l'objectiu principal és comparabilitat forta entre alumnes, convé assignar un únic projecte base o una única parella de variants amb els mateixos casos d'ús obligatoris
 - si l'objectiu principal és diversificar contextos sense perdre comparabilitat, es pot repartir projecte segons perfil, però mantenint la mateixa exigència en auth, persistència, API, proves, integració i defensa
@@ -259,4 +273,5 @@ Este document es considera completat quan:
 - manté compatibilitat real amb `Laravel`, `Symfony` i `NestJS`
 - manté el criteri de treball per reptes, entorn professional realista i acreditació individual
 - tracta la tokenització com a mecanisme funcional útil del backend i no com a exigència aliena al mòdul
+- incorpora actius digitals tokenitzats com a opció avançada d'integració de projecte, no com a taller aïllat ni com a activitat especulativa
 - deixa el paquet docent més tancat, més executable i més defensable que la llista prèvia de dominis generals

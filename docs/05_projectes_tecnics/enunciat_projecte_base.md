@@ -90,6 +90,8 @@ El projecte base ha de cobrir, com a mínim, els objectius següents:
 - deixar preparat o implementat un punt d'integració amb servei extern, webhook o flux híbrid
 - mantindre traçabilitat de l'evolució del producte amb commits, issues o artefactes equivalents
 
+El punt d'integració externa pot resoldre's amb una API pública o privada, un servei de notificació, un calendari, un webhook, una automatització o, com a via avançada, una simulació segura d'actius digitals tokenitzats. Esta via només és vàlida si actua com a integració tècnica amb contracte, mapping de dades i prova d'error; no pot substituir el backend propi del projecte.
+
 Si el domini triat no permet arribar de manera creïble a estos objectius, no és apte com a projecte base del curs.
 
 ## Compatibilitat amb itineraris tecnològics
@@ -153,13 +155,15 @@ El projecte base es considerarà vàlid si complix tots els criteris següents:
 
 No es validarà com a projecte base una solució que només tinga aparença funcional però no aporte traçabilitat, proves o capacitat real de defensa tècnica. Tampoc es validarà un projecte que reduïsca els reptes a peces trivials o decoratives sense densitat funcional suficient.
 
-## Variant futura o extensió opcional
+## Variants futures o extensions opcionals
 
-Com a línia futura, el projecte pot obrir una extensió relacionada amb tokenització, sempre com a evolució opcional i no com a requisit del projecte base.
+Com a línia futura, el projecte pot obrir una extensió relacionada amb tokens funcionals del backend, sempre com a evolució opcional i no com a requisit del projecte base.
 
-Esta extensió pot orientar-se, per exemple, a tokens d'accés, invitació, confirmació, recuperació o traçabilitat, sempre que responga a una necessitat real del domini triat. La seua incorporació queda fora dels mínims obligatoris i només s'hauria d'abordar quan la base principal ja estiga consolidada.
+Esta extensió pot orientar-se, per exemple, a tokens d'accés puntual, invitació, confirmació, recuperació o traçabilitat, sempre que responga a una necessitat real del domini triat. La seua incorporació queda fora dels mínims obligatoris i només s'hauria d'abordar quan la base principal ja estiga consolidada.
 
-En la concretització operativa actual, la tokenització es manté dins d'este mateix sentit funcional útil del backend. No s'entén com a línia `web3` ni com a especialització aliena al curs, sinó com a mecanisme de confirmació, operació, invitació o seguiment quan el domini realment ho demana.
+En la concretització operativa actual, esta línia es manté dins d'este mateix sentit funcional útil del backend. No s'entén com a línia `web3`, Ethereum, NFT ni com a especialització aliena al curs, sinó com a mecanisme de confirmació, operació, invitació o seguiment quan el domini realment ho demana.
+
+També pot obrir-se una extensió sobre actius digitals tokenitzats dins del `Repte 5`, sempre que l'objectiu siga representar un actiu, dret, certificat o evidència del domini i comparar si una solució tokenitzada aporta valor respecte d'una base de dades o registre auditable normal. No es considera vàlid reduir esta via a especulació, criptomonedes, NFT decoratius o desplegaments amb diners reals.
 
 ## Definition of done del document
 
@@ -173,4 +177,5 @@ Este document es considera completat quan:
 - manté compatibilitat amb `Laravel`, `Symfony` i `NestJS`
 - connecta el projecte amb el treball per reptes i amb les evidències autèntiques del repositori
 - establix lliurables obligatoris, paper de la IA i criteris de validació
-- deixa oberta una extensió futura vinculada a tokenització sense convertir-la en obligatòria
+- deixa oberta una extensió futura vinculada a tokens funcionals sense convertir-la en obligatòria
+- deixa oberta una extensió d'actius digitals tokenitzats dins de `R5` sense convertir-la en substitut del backend ni en activitat especulativa
