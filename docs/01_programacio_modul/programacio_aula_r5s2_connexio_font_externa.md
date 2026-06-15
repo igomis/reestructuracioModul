@@ -123,3 +123,9 @@ Per a suport, usar una font pública sense autenticació o reduir la connexió a
 ## Connexió amb el microrepte posterior
 
 `R5M3` transformarà la resposta externa perquè tinga sentit dins del domini del projecte. Sense una resposta real i estable, el mapping serà fictici.
+## Microtaller associat
+
+- **Microtaller**: `MT13. Secrets, .env i claus`
+- **Presentació**: [MT13. Secrets, .env i claus](../07_presentacions/microtallers/mt13_secrets_env_claus.md)
+- **Moment recomanat**: abans de provar la connexió amb serveis externs o credencials.
+- **Evidència mínima**: `.env.example`, `.gitignore` revisat i prova de configuració sense secrets al repositori.

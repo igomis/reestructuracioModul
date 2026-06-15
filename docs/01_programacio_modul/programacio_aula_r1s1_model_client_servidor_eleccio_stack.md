@@ -178,3 +178,9 @@ Frase guia: "Primer explica el viatge d'una petició; després ja decidirem amb 
 ## Connexió amb el microrepte posterior
 
 `R1M2` parteix de la decisió tècnica de `R1M1` i la converteix en un repositori executable. Si la decisió no està clara, l'entorn posterior quedarà com una còpia sense criteri.
+## Microtaller associat
+
+- **Microtaller**: `MT01. Projecte no CRUD`
+- **Presentació**: [MT01. Projecte no CRUD](../07_presentacions/microtallers/mt01_projecte_no_crud.md)
+- **Moment recomanat**: abans de tancar la tria de domini i primera orientació del producte.
+- **Evidència mínima**: domini amb actors, regles i primer flux que no siga només CRUD.

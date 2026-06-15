@@ -119,3 +119,9 @@ Per a suport, documentar un endpoint crític complet. Com ampliació, millorar O
 ## Connexió amb el repte posterior
 
 `R5` reutilitzarà l'experiència d'interoperabilitat de `R4`, però canviarà el centre: ja no serà publicar una API pròpia, sinó integrar fonts externes o fluxos híbrids amb valor real.
+## Microtaller associat
+
+- **Microtaller**: `MT11. Provar i documentar una API`
+- **Presentació**: [MT11. Provar i documentar una API](../07_presentacions/microtallers/mt11_provar_documentar_api.md)
+- **Moment recomanat**: abans de tancar `R4` i passar a integració.
+- **Evidència mínima**: peticions reproduïbles, un cas d'error i documentació alineada amb el comportament real.

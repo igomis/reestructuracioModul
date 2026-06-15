@@ -64,3 +64,10 @@ Micro-presentació docent breu. Equival aproximadament a `10` diapositives i est
 - el curs demana construir, provar, explicar i defensar
 - Git/GitHub es tracta com a metodologia de treball
 - l'objectiu final és un producte backend usable i defensable abans de `FCT`
+
+## Annex. Microtallers
+
+- els microtallers són intervencions curtes dins dels reptes
+- no creen notes separades ni substituïxen el treball de projecte
+- reforcen decisions difícils: validació, auth, persistència, API, integració i defensa
+- la planificació completa està en [Planificació de microtallers dins dels reptes](../01_programacio_modul/planificacio_microtallers_reptes.md)

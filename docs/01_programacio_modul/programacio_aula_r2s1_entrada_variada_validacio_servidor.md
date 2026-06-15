@@ -289,3 +289,9 @@ L'ampliació no ha d'obrir encara autenticació, rols ni arquitectura completa.
 `R2M2` només té sentit si `R2M1` deixa almenys una dada correcta i validada de manera bàsica. La pregunta de pas és:
 
 Quines dades del teu formulari convé tornar a mostrar perquè l'usuari no haja de repetir-ho tot quan hi haja un error?
+## Microtaller associat
+
+- **Microtaller**: `MT03. Validació de servidor amb casos roïns`
+- **Presentació**: [MT03. Validació de servidor amb casos roïns](../07_presentacions/microtallers/mt03_validacio_servidor_casos_roins.md)
+- **Moment recomanat**: quan ja hi ha una primera entrada de dades i abans de donar-la per correcta.
+- **Evidència mínima**: taula de casos vàlids i invàlids, amb almenys una prova reproduïble.

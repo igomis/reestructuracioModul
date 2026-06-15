@@ -231,3 +231,9 @@ Reduir a cinc casos manuals: vàlid, invàlid, estat invalidat, no autenticat i 
 `R2M7` parteix d'un flux provat. La pregunta de pas és:
 
 Quina regla o comprovació del flux funciona ja i es podria provar millor si la convertim en una classe simple?
+## Microtaller associat
+
+- **Microtaller**: `MT06. Debugging i prova curta`
+- **Presentació**: [MT06. Debugging i prova curta](../07_presentacions/microtallers/mt06_debugging_prova_curta.md)
+- **Moment recomanat**: abans del checkpoint de tancament de `R2`.
+- **Evidència mínima**: una prova curta reproduïble i una correcció o limitació registrada.

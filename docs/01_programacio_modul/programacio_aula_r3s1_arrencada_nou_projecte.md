@@ -190,3 +190,9 @@ La IA pot ajudar amb errors d'instal·lacio, Docker, comparativa i passos d'arre
 ## Connexio amb el microrepte posterior
 
 `R3M2` necessita esta base per crear BBDD real, migracions o mecanisme equivalent, càrrega inicial reproduïble i primera lectura de dades. Si `R3M1` no arranca, la persistencia quedara desconnectada.
+## Microtaller associat
+
+- **Microtaller**: `MT07. Migrar un cas d'ús a framework`
+- **Presentació**: [MT07. Migrar un cas d'ús a framework](../07_presentacions/microtallers/mt07_migrar_cas_us_framework.md)
+- **Moment recomanat**: quan s'inicia el projecte en framework i cal decidir què continua de `R2`.
+- **Evidència mínima**: mapa entre flux antic en PHP base i flux nou en framework.

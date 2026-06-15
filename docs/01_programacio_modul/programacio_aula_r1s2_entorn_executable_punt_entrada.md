@@ -197,3 +197,9 @@ Frase guia: "No afegis funcionalitat fins que pugues arrancar, comprovar i expli
 ## Connexió amb el microrepte posterior
 
 `R2M1` partirà d'esta base per introduir entrada de dades i validació bàsica en servidor. Per això `R1M2` ha de tancar un entorn executable i un punt d'entrada comprensible, sense avançar encara formularis, sessions, login ni persistència funcional.
+## Microtaller associat
+
+- **Microtaller**: `MT02. README executable i commit defensable`
+- **Presentació**: [MT02. README executable i commit defensable](../07_presentacions/microtallers/mt02_readme_commit_defensable.md)
+- **Moment recomanat**: després de comprovar que l'entorn arranca i abans del commit de tancament de `R1`.
+- **Evidència mínima**: README amb arrencada real, primer punt funcional verificat i commit explicable.

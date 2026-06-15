@@ -240,3 +240,9 @@ Reduir-ho a tres peces: pas actual en sessio, preferencia visual en cookie i `RE
 `R2M5` aprofitarà la idea d'estat per construir autenticacio funcional i protegir una operacio real. La pregunta de pas és:
 
 Quina operacio del teu projecte necessita saber qui està actuant o si pot continuar?
+## Microtaller associat
+
+- **Microtaller**: `MT04. Sessió, cookies i estat`
+- **Presentació**: [MT04. Sessió, cookies i estat](../07_presentacions/microtallers/mt04_sessions_cookies_estat.md)
+- **Moment recomanat**: abans de decidir què queda en sessió, cookie o persistència.
+- **Evidència mínima**: decisió documentada sobre què es guarda, on es guarda i durant quant de temps.

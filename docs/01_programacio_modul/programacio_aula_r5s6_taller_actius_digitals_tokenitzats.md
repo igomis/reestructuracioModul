@@ -171,3 +171,9 @@ Per a suport, fer una simulació local sense blockchain real: taula d'actius, re
 ## Connexió amb la defensa final
 
 Este taller pot aparéixer en la defensa final com a ampliació avançada. La defensa ha de centrar-se en model, contracte, integració, riscos i decisió tècnica, no en valor econòmic ni especulació.
+## Microtaller associat
+
+- **Microtaller**: `MT18. Actius digitals tokenitzats`
+- **Presentació**: [MT18. Actius digitals tokenitzats](../07_presentacions/microtallers/mt18_actius_digitals_tokenitzats.md)
+- **Moment recomanat**: com a obertura del taller, abans de decidir si l'actiu realment mereix ser tokenitzat.
+- **Evidència mínima**: actiu o dret definit, frontera backend/token i comparació amb una alternativa no blockchain.

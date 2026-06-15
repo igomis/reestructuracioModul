@@ -23,6 +23,7 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - [Curs executable DWES en 2 avaluacions](curs_executable_dwes_2_avaluacions.md): vista unificada del curs.
 - [Guia sessio a sessio del curs en 20 setmanes](guia_sessio_a_sessio_20_setmanes.md): detall operatiu per setmanes.
 - [Programacio d'aula per repte](programacio_aula_per_repte.md): lectura docent per `R1-R5`.
+- [Planificació de microtallers dins dels reptes](planificacio_microtallers_reptes.md): mapa de microtallers de `45-75` minuts i presentacions associades.
 - [R1S0. Marc comú del curs i criteri d'evidències](programacio_aula_r1s0_marc_comu_curs_evidencies.md): sessió d'arrancada sense microrepte propi per fixar model de curs, evidències i ús d'IA.
 - [R1. Programació d'aula — Kickoff backend](programacio_aula_repte_01.md): baixada operativa de `R1` a sessions, checkpoints i tancament.
 - [R1S1. Model client/servidor i elecció guiada de stack](programacio_aula_r1s1_model_client_servidor_eleccio_stack.md): fitxa d'aula executable per a la primera sessió de `R1`, associada al microrepte `R1M1`.

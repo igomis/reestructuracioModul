@@ -188,3 +188,9 @@ La IA pot ajudar a comparar noms i convencions entre frameworks, però l'alumnat
 ## Connexio amb el microrepte posterior
 
 `R3M3` ha d'usar esta auditoria per construir el primer cas d'us complet. Si el taller detecta que la persistencia o les responsabilitats no són defensables, cal corregir-ho abans d'afegir més funcionalitat.
+## Microtaller associat
+
+- **Microtaller**: `MT16. Portabilitat entre frameworks`
+- **Presentació**: [MT16. Portabilitat entre frameworks](../07_presentacions/microtallers/mt16_portabilitat_frameworks.md)
+- **Moment recomanat**: durant el taller de portabilitat, abans de comparar implementacions concretes.
+- **Evidència mínima**: taula d'equivalències entre peces de framework i responsabilitats del mateix flux.

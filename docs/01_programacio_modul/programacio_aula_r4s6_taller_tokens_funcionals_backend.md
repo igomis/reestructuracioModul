@@ -168,3 +168,9 @@ Per a suport, documentar el flux i validar manualment un token simple. Com ampli
 ## Connexió amb el Repte 5
 
 En `R5`, este flux pot alimentar una integració externa: confirmacions enviades per correu, webhooks, consulta externa d'estat, invitacions o automatitzacions. Si el token no té valor per al producte, no s'ha d'arrossegar artificialment al tancament.
+## Microtaller associat
+
+- **Microtaller**: `MT17. Tokens funcionals del backend`
+- **Presentació**: [MT17. Tokens funcionals del backend](../07_presentacions/microtallers/mt17_tokens_funcionals_backend.md)
+- **Moment recomanat**: com a obertura del taller, abans de dissenyar el cicle de vida del token.
+- **Evidència mínima**: flux tokenitzat amb cas vàlid, cas invàlid i límits del token.

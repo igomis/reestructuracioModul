@@ -122,3 +122,9 @@ Per a suport, limitar la integració a una font pública senzilla amb resposta l
 ## Connexió amb el microrepte posterior
 
 `R5M2` implementarà la connexió real amb la font triada. Si la font no està validada o el flux és ambigu, la implementació quedarà reduïda a una prova aïllada sense valor de producte.
+## Microtaller associat
+
+- **Microtaller**: `MT12. Triar una integració amb valor`
+- **Presentació**: [MT12. Triar una integració amb valor](../07_presentacions/microtallers/mt12_integracio_amb_valor.md)
+- **Moment recomanat**: abans de validar la font externa o automatització triada.
+- **Evidència mínima**: mapa de valor, frontera entre sistemes i primer risc identificat.
