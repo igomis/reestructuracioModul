@@ -210,3 +210,9 @@ Acceptar un token molt simple i temporal, sempre que:
 ## Connexio amb DWEC i R4
 
 DWEC pot començar a practicar consum autenticat amb `fetch` sense esperar a `R4`. En `R4` esta porta mínima es convertirà en una API més formal: contracte, endpoints, protecció més sòlida, documentació i consum complet del servei.
+## Microtaller associat
+
+- **Microtaller**: `MT05. Auth mínima defensable`
+- **Presentació**: [MT05. Auth mínima defensable](../07_presentacions/microtallers/mt05_auth_minima_defensable.md)
+- **Moment recomanat**: quan la mini API d'autenticació ja retorna token o resposta equivalent i cal demostrar accés correcte i denegat.
+- **Evidència mínima**: endpoint d'autenticació o ruta protegida amb cas permés, cas denegat i dades demo documentades.
