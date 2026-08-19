@@ -23,7 +23,7 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - [Curs executable DWES en 2 avaluacions](curs_executable_dwes_2_avaluacions.md): vista unificada del curs.
 - [Guia sessio a sessio del curs en 20 setmanes](guia_sessio_a_sessio_20_setmanes.md): detall operatiu per setmanes.
 - [Programacio d'aula per repte](programacio_aula_per_repte.md): lectura docent per `R1-R5`.
-- [Planificació de microtallers dins dels reptes](planificacio_microtallers_reptes.md): mapa de microtallers de `45-75` minuts i presentacions associades.
+- [Planificació de microtallers dins dels reptes](planificacio_microtallers_reptes.md): mapa operatiu amb sessió, franja d'aula, temps calibrat, teoria/materials i presentació associada.
 - [R1S0. Marc comú del curs i criteri d'evidències](programacio_aula_r1s0_marc_comu_curs_evidencies.md): sessió d'arrancada sense microrepte propi per fixar model de curs, evidències i ús d'IA.
 - [R1. Programació d'aula — Kickoff backend](programacio_aula_repte_01.md): baixada operativa de `R1` a sessions, checkpoints i tancament.
 - [R1S1. Model client/servidor i elecció guiada de stack](programacio_aula_r1s1_model_client_servidor_eleccio_stack.md): fitxa d'aula executable per a la primera sessió de `R1`, associada al microrepte `R1M1`.
@@ -44,7 +44,7 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - [R3S0. Transició al Repte 3](programacio_aula_r3s0_transicio_repte_3.md): sessió sense microrepte propi per passar de `PHP` base a framework, capes i persistència.
 - [R3S1. Arrencada del nou projecte](programacio_aula_r3s1_arrencada_nou_projecte.md): fitxa d'aula executable per a la primera sessió de `R3`, associada al microrepte `R3M1`.
 - [R3S2. Persistència mínima amb migracions, fixtures/seeders o equivalent](programacio_aula_r3s2_persistencia_minima_migrations_seeders.md): fitxa d'aula executable per a la segona sessió de `R3`, associada al microrepte `R3M2`.
-- [R3S2B. Taller de portabilitat entre frameworks](programacio_aula_r3s2b_taller_portabilitat_frameworks.md): taller formatiu sense microrepte propi per consolidar equivalències entre `Laravel`, `Symfony` i `NestJS` abans del primer flux complet.
+- [R3S2B. Taller de portabilitat entre frameworks](programacio_aula_r3s2b_taller_portabilitat_frameworks.md): variant ampliada del taller `MT16`; si no hi ha sessió extra, s'integra com a franja curta després de `R3S2`.
 - [R3S3. Primer cas d'ús complet](programacio_aula_r3s3_primer_cas_us_complet.md): fitxa d'aula executable per al primer flux end-to-end de `R3`, associada al microrepte `R3M3`.
 - [R3S4. Segon cas d'ús o ampliació funcional](programacio_aula_r3s4_segon_cas_us_ampliacio_funcional.md): fitxa d'aula executable per al segon flux de `R3`, associada al microrepte `R3M4`.
 - [R3S5. Autenticació, autorització i middleware](programacio_aula_r3s5_autenticacio_autoritzacio_middleware.md): fitxa d'aula executable per a protegir una acció real amb eines del framework, associada al microrepte `R3M5`.
@@ -57,7 +57,7 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - [R4S3. Autenticació i control d'accés de l'API](programacio_aula_r4s3_proteccio_api.md): fitxa d'aula executable per a protegir el servei i provar cas autoritzat i denegat, associada al microrepte `R4M3`.
 - [R4S4. Consum real del servei](programacio_aula_r4s4_consum_servei.md): fitxa d'aula executable per a consumir l'API amb eina, script o client mínim, associada al microrepte `R4M4`.
 - [R4S5. Documentació i prova del servei](programacio_aula_r4s5_documentacio_prova_servei.md): fitxa d'aula executable per a tancar documentació, proves i pas a `R5`, associada al microrepte `R4M5`.
-- [R4S6. Taller de tokens funcionals del backend](programacio_aula_r4s6_taller_tokens_funcionals_backend.md): taller de reforç per a dissenyar, provar i documentar tokens funcionals del domini, sense microrepte propi.
+- [R4S6. Taller de tokens funcionals del backend](programacio_aula_r4s6_taller_tokens_funcionals_backend.md): variant ampliada del taller `MT17`; si no hi ha sessió extra, s'integra com a franja opcional en `R4S3`.
 - [R4SX. Microdefenses tècniques de criteris](programacio_aula_r4sx_microdefenses_tecniques_criteris.md): verificació de contracte, protecció, consum i documentació de servei al tancament de `R4`.
 - [R5S0. Transició al Repte 5](programacio_aula_r5s0_transicio_repte_5.md): sessió sense microrepte propi per passar de servei consumible a integració híbrida.
 - [R5S1. Selecció de font externa i disseny de la integració](programacio_aula_r5s1_font_externa_i_disseny_integracio.md): fitxa d'aula executable per a triar font externa, justificar valor i dissenyar el flux híbrid, associada al microrepte `R5M1`.
@@ -65,7 +65,7 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - [R5S3. Transformació, mapping i valor afegit](programacio_aula_r5s3_mapping_transformacio_valor.md): fitxa d'aula executable per a transformar dades externes i adaptar-les al domini, associada al microrepte `R5M3`.
 - [R5S4. Integració de la funcionalitat híbrida en el producte](programacio_aula_r5s4_funcionalitat_hibrida_producte.md): fitxa d'aula executable per a portar la integració a un flux real del producte, associada al microrepte `R5M4`.
 - [R5S5. Prova, documentació i defensa de la integració](programacio_aula_r5s5_prova_documentacio_defensa_integracio.md): fitxa d'aula executable per a tancar proves, documentació i mini defensa, associada al microrepte `R5M5`.
-- [R5S6. Taller d'actius digitals tokenitzats](programacio_aula_r5s6_taller_actius_digitals_tokenitzats.md): taller d'ampliació per a explorar actius digitals, tokenització avançada i integració segura, sense microrepte propi.
+- [R5S6. Taller d'actius digitals tokenitzats](programacio_aula_r5s6_taller_actius_digitals_tokenitzats.md): variant ampliada del taller `MT18`; si no hi ha sessió extra, s'integra com a franja opcional en `R5S4`.
 - [R5SX. Microdefenses tècniques de criteris](programacio_aula_r5sx_microdefenses_tecniques_criteris.md): predefensa de la integració final, proves, interoperabilitat i traçabilitat al tancament de `R5`.
 
 ## Pilotatge i preparacio

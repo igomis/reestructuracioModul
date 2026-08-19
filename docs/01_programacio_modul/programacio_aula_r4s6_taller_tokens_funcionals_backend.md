@@ -1,21 +1,29 @@
-# R4S6. Taller de tokens funcionals del backend
+# R4S6. Variant ampliada del taller de tokens funcionals del backend
 
 ## Finalitat de la sessió
 
-Esta sessió és un taller de reforç del `Repte 4`. No crea un microrepte nou: dona forma operativa a la línia futura de tokens funcionals prevista en el projecte base i la connecta amb una necessitat real del domini.
+Esta peça és un taller de reforç del `Repte 4`. No crea un microrepte nou: dona forma operativa a la línia futura de tokens funcionals prevista en el projecte base i la connecta amb una necessitat real del domini.
 
 El focus no és implantar `JWT`, `OAuth`, `Ethereum`, `NFT`, `blockchain` o una arquitectura professional completa d'identitat. El focus és entendre i documentar un token funcional limitat: confirmació, cancel·lació, invitació, recuperació, accés puntual o traçabilitat d'una operació concreta.
 
-Al final de la sessió, cada equip ha de poder explicar quin token existix en el seu producte, qui el crea, què permet fer, quan caduca, com es valida i què queda registrat.
+El format base és el microtaller `MT17`, de `60` minuts, integrat preferentment en `R4S3` després de definir la protecció de l'API. Esta fitxa descriu la variant ampliada de `3` hores si el centre disposa de marge o si el projecte necessita prototipar el flux tokenitzat.
 
 ## Encaix dins del Repte 4
 
 - **Repte**: `R4. API i serveis reutilitzables`
 - **Microrepte**: cap de nou; taller de reforç associat a `R4M3`, `R4M4` i `R4M5`
-- **Sessió**: `R4S6`
-- **Duració orientativa**: `3 hores`
+- **Sessió preferent**: franja final de `R4S3`; variant ampliada `R4S6`
+- **Duració base del microtaller**: `60 min`
+- **Duració de la variant ampliada**: `3 hores`
 - **Focus**: token funcional del domini, abast limitat, caducitat, ús únic si correspon, validació, resposta d'error i traçabilitat
 - **No entra encara**: `web3`, Ethereum, NFT, pagaments, `OAuth` complet, `refresh tokens`, permisos corporatius avançats o substitució del sistema d'autenticació del projecte
+
+## Encaix temporal recomanat
+
+| Format | Moment | Ús recomanat |
+|---|---|---|
+| Microtaller base | `R4S3`, `2:00-3:00` | si només cal dissenyar cicle de vida, cas vàlid i cas denegat |
+| Variant ampliada | `R4S6`, sessió de `3 hores` | si el projecte necessita implementar o prototipar el token funcional |
 
 ## Relació amb RA i criteris de treball
 

@@ -1,21 +1,29 @@
-# R5S6. Taller d'actius digitals tokenitzats
+# R5S6. Variant ampliada del taller d'actius digitals tokenitzats
 
 ## Finalitat de la sessió
 
-Esta sessió és un taller d'ampliació del `Repte 5`. No crea un microrepte nou: obri una via avançada per entendre què significa tokenitzar un actiu digital o representar drets sobre un recurs mitjançant un token.
+Esta peça és un taller d'ampliació del `Repte 5`. No crea un microrepte nou: obri una via avançada per entendre què significa tokenitzar un actiu digital o representar drets sobre un recurs mitjançant un token.
 
 El focus no és especular, comprar criptomonedes ni desplegar en xarxes amb diners reals. El focus de `DWES` és entendre el model backend que hi ha darrere: actiu, titularitat, identificador, traçabilitat, contracte, API, evidències i límits.
 
-Al final de la sessió, cada equip ha de poder explicar quin actiu es representa, quin valor aporta tokenitzar-lo, quines dades queden dins del backend, quines quedarien en una xarxa o simulació, i quins riscos o límits té la proposta.
+El format base és el microtaller `MT18`, de `50` minuts, integrat preferentment en `R5S4` quan la integració híbrida ja té forma. Esta fitxa descriu la variant ampliada de `3` hores si el centre disposa de marge o si el grup pot prototipar una simulació sense convertir-la en el centre del repte.
 
 ## Encaix dins del Repte 5
 
 - **Repte**: `R5. Integració híbrida i tancament`
 - **Microrepte**: cap de nou; taller d'ampliació associat a `R5M1`, `R5M2`, `R5M3`, `R5M4` i `R5M5`
-- **Sessió**: `R5S6`
-- **Duració orientativa**: `3 hores`
+- **Sessió preferent**: franja final de `R5S4`; variant ampliada `R5S6`
+- **Duració base del microtaller**: `50 min`
+- **Duració de la variant ampliada**: `3 hores`
 - **Focus**: actiu digital, token, propietat o dret representat, traçabilitat, API, simulació o testnet, riscos i justificació tècnica
 - **No entra encara**: diners reals, inversió, especulació, custòdia professional, seguretat blockchain de producció o desplegament en mainnet
+
+## Encaix temporal recomanat
+
+| Format | Moment | Ús recomanat |
+|---|---|---|
+| Microtaller base | `R5S4`, `2:10-3:00` | si només cal decidir si tokenitzar aporta valor i deixar mapa tècnic |
+| Variant ampliada | `R5S6`, sessió de `3 hores` | si el grup pot prototipar una simulació o prova controlada sense diners reals |
 
 ## Relació amb RA i criteris de treball
 

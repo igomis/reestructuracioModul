@@ -144,6 +144,32 @@ Lectura operativa:
 - els materials per repte s'activen segons necessitat de producte
 - els itineraris entren de manera visible en Fase 3
 
+## Encaix temporal de tallers, teoria i presentacions
+
+La planificació detallada està en [Planificació de microtallers dins dels reptes](planificacio_microtallers_reptes.md). Esta taula només situa cada taller dins del calendari general perquè no aparega com una càrrega afegida fora de la sessió.
+
+| Fase | Sessió preferent | Taller | Temps dins de la sessió | Teoria/material que s'activa | Presentació |
+|---|---|---|---:|---|---|
+| Fase 0 | `R1S0` | `MT19. IA responsable aplicada al repte` | `25 min` inicials + recordatoris de `10 min` | [Guia d'ús verificable de la IA](../04_materials/materials_comuns/guia_ús_verificable_ia.md) | [MT19](../07_presentacions/microtallers/mt19_ia_responsable_repte.md) |
+| Fase 1 | `R1S1` | `MT01. Projecte no CRUD` | `35 min` | [Apunts R1](../04_materials/apunts_reals/repte_01_kickoff_backend.md) | [MT01](../07_presentacions/microtallers/mt01_projecte_no_crud.md) |
+| Fase 1 | `R1S2` | `MT02. README executable i commit defensable` | `30 min` | [Guia README i ADR](../04_materials/materials_comuns/guia_readme_i_adr.md) | [MT02](../07_presentacions/microtallers/mt02_readme_commit_defensable.md) |
+| Fase 2 | `R2S1-R2S2` | `MT03. Validació de servidor amb casos roïns` | `45 min` + `10 min` | [Guia de validació i errors](../04_materials/repte_02/guia_validacio_i_errors_servidor.md) | [MT03](../07_presentacions/microtallers/mt03_validacio_servidor_casos_roins.md) |
+| Fase 2 | `R2S4` | `MT04. Sessió, cookies i estat` | `35 min` | [Guia de flux d'usuari i sessions](../04_materials/repte_02/guia_flux_usuari_i_sessions.md) | [MT04](../07_presentacions/microtallers/mt04_sessions_cookies_estat.md) |
+| Fase 2 | `R2S5-R2S6` | `MT05. Auth mínima defensable` | `50 min` + `10 min` | [Apunts R2](../04_materials/apunts_reals/repte_02_sessions_i_autenticacio.md) | [MT05](../07_presentacions/microtallers/mt05_auth_minima_defensable.md) |
+| Fase 2 | `R2S7` | `MT06. Debugging i prova curta` | `35 min` | [Guia testing i debugging](../04_materials/materials_comuns/guia_testing_i_debugging.md) | [MT06](../07_presentacions/microtallers/mt06_debugging_prova_curta.md) |
+| Fase 3 | `R3S1` | `MT07. Migrar un cas d'ús a framework` | `40 min` | [Apunts R3](../04_materials/apunts_reals/repte_03_mvc_i_persistencia.md) | [MT07](../07_presentacions/microtallers/mt07_migrar_cas_us_framework.md) |
+| Fase 3 | `R3S2` | `MT08. Migracions, seeders i dades de prova` | `50 min` | [Guia de persistència i modelat](../04_materials/repte_03/guia_persistencia_i_modelat_dades.md) | [MT08](../07_presentacions/microtallers/mt08_migracions_seeders_dades_prova.md) |
+| Fase 3 | `R3S2` o `R3S2B` | `MT16. Portabilitat entre frameworks` | `50 min` opcional | [Model d'itineraris tecnològics](model_itineraris_tecnologics.md) | [MT16](../07_presentacions/microtallers/mt16_portabilitat_frameworks.md) |
+| Fase 3 | `R3S3-R3S4` | `MT09. On pose la lògica` | `35 min` + `10 min` | [Guia de refactorització MVC o equivalent](../04_materials/repte_03/guia_refactoritzacio_mvc_o_equivalent.md) | [MT09](../07_presentacions/microtallers/mt09_on_pose_la_logica.md) |
+| Fase 4 | `R4S1` | `MT10. Dissenyar endpoint abans de programar` | `35 min` | [Guia de contracte i disseny API](../04_materials/repte_04/guia_contracte_i_disseny_api.md) | [MT10](../07_presentacions/microtallers/mt10_dissenyar_endpoint_abans_programar.md) |
+| Fase 4 | `R4S5` | `MT11. Provar i documentar una API` | `45 min` | [Guia de proves i documentació API](../04_materials/repte_04/guia_proves_i_documentacio_api.md) | [MT11](../07_presentacions/microtallers/mt11_provar_documentar_api.md) |
+| Fase 4 | `R4S3` o `R4S6` | `MT17. Tokens funcionals del backend` | `60 min` opcional | [Guia de contracte i disseny API](../04_materials/repte_04/guia_contracte_i_disseny_api.md) | [MT17](../07_presentacions/microtallers/mt17_tokens_funcionals_backend.md) |
+| Fase 5 | `R5S1` | `MT12. Triar una integració amb valor` | `30 min` | [Guia d'integració externa i flux híbrid](../04_materials/repte_05/guia_integracio_externa_i_flux_hibrid.md) | [MT12](../07_presentacions/microtallers/mt12_integracio_amb_valor.md) |
+| Fase 5 | `R5S2` | `MT13. Secrets, .env i claus` | `35 min` | [Guia d'integració externa i flux híbrid](../04_materials/repte_05/guia_integracio_externa_i_flux_hibrid.md) | [MT13](../07_presentacions/microtallers/mt13_secrets_env_claus.md) |
+| Fase 5 | `R5S3` | `MT14. Mapping de resposta externa` | `45 min` | [Guia d'integració externa i flux híbrid](../04_materials/repte_05/guia_integracio_externa_i_flux_hibrid.md) | [MT14](../07_presentacions/microtallers/mt14_mapping_resposta_externa.md) |
+| Fase 5 | `R5S5` | `MT15. Defensa tècnica curta` | `35 min` | [Guió de defensa individual](../08_materials_compartibles/guio_defensa_individual_breu.md) | [MT15](../07_presentacions/microtallers/mt15_defensa_tecnica_curta.md) |
+| Fase 5 | `R5S4` o `R5S6` | `MT18. Actius digitals tokenitzats` | `50 min` opcional | [Guia d'orquestració i automatització](../04_materials/repte_05/guia_orquestracio_i_automatitzacio.md) | [MT18](../07_presentacions/microtallers/mt18_actius_digitals_tokenitzats.md) |
+
 ## Evidències clau per moment
 
 | Moment | Evidències clau |

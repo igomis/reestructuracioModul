@@ -1,19 +1,27 @@
-# R3S2B. Taller de portabilitat entre frameworks
+# R3S2B. Variant ampliada del taller de portabilitat entre frameworks
 
 ## Finalitat de la sessio
 
-Esta sessio fa de pont entre `R3M2` i `R3M3`. L'alumnat ja hauria de tindre un projecte en framework arrancable i una persistencia minima. Abans de construir el primer flux fort, cal comprovar que entén les equivalencies entre stacks i que no està seguint una recepta concreta de `Laravel`, `Symfony` o `NestJS` sense poder defensar-la.
+Esta peça fa de pont entre `R3M2` i `R3M3`. L'alumnat ja hauria de tindre un projecte en framework arrancable i una persistencia minima. Abans de construir el primer flux fort, cal comprovar que entén les equivalencies entre stacks i que no està seguint una recepta concreta de `Laravel`, `Symfony` o `NestJS` sense poder defensar-la.
 
-No és un microrepte nou. És un taller de consolidacio i verificacio formativa.
+No és un microrepte nou ni una sessio obligatoria de més. El format base és el microtaller `MT16`, de `50` minuts, integrat preferentment al final de `R3S2`. Esta fitxa descriu la variant ampliada de `3` hores si el centre disposa de marge o si el grup necessita consolidar la portabilitat abans de passar a `R3S3`.
 
 ## Encaix dins del Repte 3
 
 - **Repte**: `R3. Reconstruccio en framework, persistencia real i primers fluxos funcionals`
 - **Microrepte associat**: reforç de `R3M1` i `R3M2`, preparacio de `R3M3`
-- **Sessio**: `R3S2B`
-- **Duracio orientativa**: `3 hores`
+- **Sessio preferent**: franja final de `R3S2`; variant ampliada `R3S2B`
+- **Duracio base del microtaller**: `50 min`
+- **Duracio de la variant ampliada**: `3 hores`
 - **Focus**: equivalencies entre frameworks, reconstruccio de dades, recorregut peticio -> resposta i qualitat de l'evidencia
 - **No entra encara**: implementar funcionalitat nova gran, obrir API, canviar de framework sense justificacio o reescriure el projecte
+
+## Encaix temporal recomanat
+
+| Format | Moment | Ús recomanat |
+|---|---|---|
+| Microtaller base | `R3S2`, `2:10-3:00` | si només cal auditar equivalències i deixar una microtasca abans de `R3S3` |
+| Variant ampliada | `R3S2B`, sessió de `3 hores` | si el grup necessita contrast profund entre stacks, mini defenses o reconstrucció guiada |
 
 ## Relacio amb RA i criteris de treball
 
