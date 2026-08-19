@@ -23,60 +23,72 @@ nav:
   - Visió del model:
       - Document marc: visio-model-dwes.md
       - Ús assistit per IA: us-ia-professorat-i-alumnat.md
+  - Programació d'aula:
+      - Inici: 01_programacio_modul/index.md
+      - Calendarització:
+          - Calendarització per avaluacions: 01_programacio_modul/calendaritzacio_per_avaluacions.md
+          - Guia sessió a sessió 20 setmanes: 01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md
+          - Seqüenciació de sessions: 01_programacio_modul/seqüenciacio_sessions_2_avaluacions.md
+      - Programació per reptes:
+          - R1. Kickoff backend: 01_programacio_modul/programacio_aula_repte_01.md
+          - R2. Processament, estat i autenticació: 01_programacio_modul/programacio_aula_repte_02.md
+          - R3. MVC i persistència: 01_programacio_modul/planificacio_aula_r3_mvc_i_persistencia.md
+          - Vista global per repte: 01_programacio_modul/programacio_aula_per_repte.md
+      - Sessions R1:
+          - R1S0. Marc comú del curs i criteri d'evidències: 01_programacio_modul/programacio_aula_r1s0_marc_comu_curs_evidencies.md
+          - R1S1. Model client/servidor i elecció guiada de stack: 01_programacio_modul/programacio_aula_r1s1_model_client_servidor_eleccio_stack.md
+          - R1S2. Entorn executable, punt d'entrada i tancament de R1: 01_programacio_modul/programacio_aula_r1s2_entorn_executable_punt_entrada.md
+      - Sessions R2:
+          - R2S0. Transició al Repte 2: 01_programacio_modul/programacio_aula_r2s0_transicio_repte_2.md
+          - R2S1. Entrada variada i validació de servidor: 01_programacio_modul/programacio_aula_r2s1_entrada_variada_validacio_servidor.md
+          - R2S2. Processament, reintent i guardat funcional: 01_programacio_modul/programacio_aula_r2s2_processament_reintent_conservacio_dades.md
+          - R2S3. Lògica del flux i regles del projecte: 01_programacio_modul/programacio_aula_r2s3_logica_flux_regles_projecte.md
+          - R2S4. Estat, sessió i cookies: 01_programacio_modul/programacio_aula_r2s4_estat_sessio_cookies.md
+          - R2S5. Autenticació i funcionalitat protegida: 01_programacio_modul/programacio_aula_r2s5_autenticacio_funcionalitat_protegida.md
+          - R2S6. Mini API d'autenticació per a client: 01_programacio_modul/programacio_aula_r2s6_mini_api_autenticacio_client.md
+          - R2S7. Proves, depuració i checkpoint tècnic: 01_programacio_modul/programacio_aula_r2s7_proves_depuracio_checkpoint.md
+          - R2S8. Primera peça testable amb POO i Composer: 01_programacio_modul/programacio_aula_r2s8_primera_peca_testable_poo_composer.md
+          - R2S9. Persistència mínima amb BBDD en PHP: 01_programacio_modul/programacio_aula_r2s9_persistencia_minima_bbdd_php.md
+          - R2S10. Taller de contracte d'autenticació per a DWEC: 01_programacio_modul/programacio_aula_r2s10_taller_contracte_autenticacio_dwec.md
+          - R2SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r2sx_microdefenses_tecniques_criteris.md
+      - Sessions R3:
+          - R3S0. Transició al Repte 3: 01_programacio_modul/programacio_aula_r3s0_transicio_repte_3.md
+          - R3S1. Arrencada del nou projecte: 01_programacio_modul/programacio_aula_r3s1_arrencada_nou_projecte.md
+          - R3S2. Persistència mínima amb migracions, fixtures/seeders o equivalent: 01_programacio_modul/programacio_aula_r3s2_persistencia_minima_migrations_seeders.md
+          - R3S2B. Taller de portabilitat entre frameworks: 01_programacio_modul/programacio_aula_r3s2b_taller_portabilitat_frameworks.md
+          - R3S3. Primer cas d'ús complet: 01_programacio_modul/programacio_aula_r3s3_primer_cas_us_complet.md
+          - R3S4. Segon cas d'ús o ampliació funcional: 01_programacio_modul/programacio_aula_r3s4_segon_cas_us_ampliacio_funcional.md
+          - R3S5. Autenticació, autorització i middleware: 01_programacio_modul/programacio_aula_r3s5_autenticacio_autoritzacio_middleware.md
+          - R3S6. Qualitat i estabilització: 01_programacio_modul/programacio_aula_r3s6_qualitat_estabilitzacio.md
+          - R3S7. Tancament tècnic: 01_programacio_modul/programacio_aula_r3s7_tancament_tecnic.md
+          - R3SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r3sx_microdefenses_tecniques_criteris.md
+      - Sessions R4:
+          - R4S0. Transició al Repte 4: 01_programacio_modul/programacio_aula_r4s0_transicio_repte_4.md
+          - R4S1. Disseny del contracte del servei: 01_programacio_modul/programacio_aula_r4s1_contracte_servei_api.md
+          - R4S2. Implementació del primer endpoint funcional: 01_programacio_modul/programacio_aula_r4s2_primer_endpoint_funcional.md
+          - R4S3. Autenticació i control d'accés de l'API: 01_programacio_modul/programacio_aula_r4s3_proteccio_api.md
+          - R4S4. Consum real del servei: 01_programacio_modul/programacio_aula_r4s4_consum_servei.md
+          - R4S5. Documentació i prova del servei: 01_programacio_modul/programacio_aula_r4s5_documentacio_prova_servei.md
+          - R4S6. Taller de tokens funcionals del backend: 01_programacio_modul/programacio_aula_r4s6_taller_tokens_funcionals_backend.md
+          - R4SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r4sx_microdefenses_tecniques_criteris.md
+      - Sessions R5:
+          - R5S0. Transició al Repte 5: 01_programacio_modul/programacio_aula_r5s0_transicio_repte_5.md
+          - R5S1. Selecció de font externa i disseny de la integració: 01_programacio_modul/programacio_aula_r5s1_font_externa_i_disseny_integracio.md
+          - R5S2. Connexió amb la font externa i recuperació real: 01_programacio_modul/programacio_aula_r5s2_connexio_font_externa.md
+          - R5S3. Transformació, mapping i valor afegit: 01_programacio_modul/programacio_aula_r5s3_mapping_transformacio_valor.md
+          - R5S4. Integració de la funcionalitat híbrida en el producte: 01_programacio_modul/programacio_aula_r5s4_funcionalitat_hibrida_producte.md
+          - R5S5. Prova, documentació i defensa de la integració: 01_programacio_modul/programacio_aula_r5s5_prova_documentacio_defensa_integracio.md
+          - R5S6. Taller d'actius digitals tokenitzats: 01_programacio_modul/programacio_aula_r5s6_taller_actius_digitals_tokenitzats.md
+          - R5SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r5sx_microdefenses_tecniques_criteris.md
+      - Documents docents:
+          - Pla d'implantació docent: 01_programacio_modul/pla_implantacio_docent.md
+          - Annex de ritmes: 01_programacio_modul/annex_suport_i_ampliacio_ritmes.md
+          - Preparació docent directa: 01_programacio_modul/preparacio_docent_directa_curs_que_ve.md
+          - Ajustos finals abans d'inici: 01_programacio_modul/ajustos_finals_abans_inici_curs.md
   - Curs executable:
       - Centre del curs: curs-executable.md
       - Ampliacions 9 a 10 per repte: ampliacions-9-a-10-per-repte.md
       - Ajust fi de reptes i instruments: fase-4-ajust-fi-reptes-i-instruments.md
-      - Annexos de planificació:
-          - Programació d'aula per reptes:
-              - Inici: 01_programacio_modul/index.md
-              - R1S0. Marc comú del curs i criteri d'evidències: 01_programacio_modul/programacio_aula_r1s0_marc_comu_curs_evidencies.md
-              - R1. Programació d'aula — Kickoff backend: 01_programacio_modul/programacio_aula_repte_01.md
-              - R1S1. Model client/servidor i elecció guiada de stack: 01_programacio_modul/programacio_aula_r1s1_model_client_servidor_eleccio_stack.md
-              - R1S2. Entorn executable, punt d'entrada i tancament de R1: 01_programacio_modul/programacio_aula_r1s2_entorn_executable_punt_entrada.md
-              - R2S0. Transició al Repte 2: 01_programacio_modul/programacio_aula_r2s0_transicio_repte_2.md
-              - R2. Programació d'aula — Processament, estat i autenticació: 01_programacio_modul/programacio_aula_repte_02.md
-              - R2S1. Entrada variada i validació de servidor: 01_programacio_modul/programacio_aula_r2s1_entrada_variada_validacio_servidor.md
-              - R2S2. Processament, reintent i guardat funcional: 01_programacio_modul/programacio_aula_r2s2_processament_reintent_conservacio_dades.md
-              - R2S3. Lògica del flux i regles del projecte: 01_programacio_modul/programacio_aula_r2s3_logica_flux_regles_projecte.md
-              - R2S4. Estat, sessió i cookies: 01_programacio_modul/programacio_aula_r2s4_estat_sessio_cookies.md
-              - R2S5. Autenticació i funcionalitat protegida: 01_programacio_modul/programacio_aula_r2s5_autenticacio_funcionalitat_protegida.md
-              - R2S6. Mini API d'autenticació per a client: 01_programacio_modul/programacio_aula_r2s6_mini_api_autenticacio_client.md
-              - R2S10. Taller de contracte d'autenticació per a DWEC: 01_programacio_modul/programacio_aula_r2s10_taller_contracte_autenticacio_dwec.md
-              - R2S7. Proves, depuració i checkpoint tècnic: 01_programacio_modul/programacio_aula_r2s7_proves_depuracio_checkpoint.md
-              - R2S8. Primera peça testable amb POO i Composer: 01_programacio_modul/programacio_aula_r2s8_primera_peca_testable_poo_composer.md
-              - R2S9. Persistència mínima amb BBDD en PHP: 01_programacio_modul/programacio_aula_r2s9_persistencia_minima_bbdd_php.md
-              - R2SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r2sx_microdefenses_tecniques_criteris.md
-              - R3S0. Transició al Repte 3: 01_programacio_modul/programacio_aula_r3s0_transicio_repte_3.md
-              - R3S1. Arrencada del nou projecte: 01_programacio_modul/programacio_aula_r3s1_arrencada_nou_projecte.md
-              - R3S2. Persistència mínima amb migracions, fixtures/seeders o equivalent: 01_programacio_modul/programacio_aula_r3s2_persistencia_minima_migrations_seeders.md
-              - R3S2B. Taller de portabilitat entre frameworks: 01_programacio_modul/programacio_aula_r3s2b_taller_portabilitat_frameworks.md
-              - R3S3. Primer cas d'ús complet: 01_programacio_modul/programacio_aula_r3s3_primer_cas_us_complet.md
-              - R3S4. Segon cas d'ús o ampliació funcional: 01_programacio_modul/programacio_aula_r3s4_segon_cas_us_ampliacio_funcional.md
-              - R3S5. Autenticació, autorització i middleware: 01_programacio_modul/programacio_aula_r3s5_autenticacio_autoritzacio_middleware.md
-              - R3S6. Qualitat i estabilització: 01_programacio_modul/programacio_aula_r3s6_qualitat_estabilitzacio.md
-              - R3S7. Tancament tècnic: 01_programacio_modul/programacio_aula_r3s7_tancament_tecnic.md
-              - R3SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r3sx_microdefenses_tecniques_criteris.md
-              - R4S0. Transició al Repte 4: 01_programacio_modul/programacio_aula_r4s0_transicio_repte_4.md
-              - R4S1. Disseny del contracte del servei: 01_programacio_modul/programacio_aula_r4s1_contracte_servei_api.md
-              - R4S2. Implementació del primer endpoint funcional: 01_programacio_modul/programacio_aula_r4s2_primer_endpoint_funcional.md
-              - R4S3. Autenticació i control d'accés de l'API: 01_programacio_modul/programacio_aula_r4s3_proteccio_api.md
-              - R4S4. Consum real del servei: 01_programacio_modul/programacio_aula_r4s4_consum_servei.md
-              - R4S5. Documentació i prova del servei: 01_programacio_modul/programacio_aula_r4s5_documentacio_prova_servei.md
-              - R4SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r4sx_microdefenses_tecniques_criteris.md
-              - R5S0. Transició al Repte 5: 01_programacio_modul/programacio_aula_r5s0_transicio_repte_5.md
-              - R5S1. Selecció de font externa i disseny de la integració: 01_programacio_modul/programacio_aula_r5s1_font_externa_i_disseny_integracio.md
-              - R5S2. Connexió amb la font externa i recuperació real: 01_programacio_modul/programacio_aula_r5s2_connexio_font_externa.md
-              - R5S3. Transformació, mapping i valor afegit: 01_programacio_modul/programacio_aula_r5s3_mapping_transformacio_valor.md
-              - R5S4. Integració de la funcionalitat híbrida en el producte: 01_programacio_modul/programacio_aula_r5s4_funcionalitat_hibrida_producte.md
-              - R5S5. Prova, documentació i defensa de la integració: 01_programacio_modul/programacio_aula_r5s5_prova_documentacio_defensa_integracio.md
-              - R5SX. Microdefenses tècniques de criteris: 01_programacio_modul/programacio_aula_r5sx_microdefenses_tecniques_criteris.md
-          - Pla d'implantació docent: 01_programacio_modul/pla_implantacio_docent.md
-          - Calendarització per avaluacions: 01_programacio_modul/calendaritzacio_per_avaluacions.md
-          - Guia 20 setmanes: 01_programacio_modul/guia_sessio_a_sessio_20_setmanes.md
-          - Annex de ritmes: 01_programacio_modul/annex_suport_i_ampliacio_ritmes.md
-          - Preparació docent directa: 01_programacio_modul/preparacio_docent_directa_curs_que_ve.md
-          - Ajustos finals abans d'inici: 01_programacio_modul/ajustos_finals_abans_inici_curs.md
   - Projecte i reptes:
       - Projecte base:
           - Enunciat base: 05_projectes_tecnics/enunciat_projecte_base.md
