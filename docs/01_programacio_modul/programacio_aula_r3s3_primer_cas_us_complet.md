@@ -188,6 +188,7 @@ La IA pot ajudar amb esquelets de ruta, controlador, servei, vista o validacio. 
 
 - **Microtaller**: `MT09. On pose la lògica`
 - **Presentació**: [MT09. On pose la lògica](../07_presentacions/microtallers/mt09_on_pose_la_logica.md)
+- **Teoria associada**: [Rutes, controladors, vistes i flux end-to-end](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R3-Rutes-controladors-vistes-i-flux-end-to-end.pdf)
 - **Moment recomanat**: quan el primer cas d'ús comença a acumular regles en controlador, servei o model.
 - **Evidència mínima**: decisió documentada sobre on queda una regla de negoci i prova del flux.
 

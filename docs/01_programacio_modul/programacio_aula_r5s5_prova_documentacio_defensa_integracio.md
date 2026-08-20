@@ -128,5 +128,6 @@ Després de `R5M5`, la integració híbrida passa a formar part de la defensa fi
 
 - **Microtaller**: `MT15. Defensa tècnica curta`
 - **Presentació**: [MT15. Defensa tècnica curta](../07_presentacions/microtallers/mt15_defensa_tecnica_curta.md)
+- **Teoria associada**: [Mapping, proves i defensa d'una integració](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R5-Mapping-proves-i-defensa-duna-integracio.pdf)
 - **Moment recomanat**: abans de la mini defensa i del tancament final de `R5`.
 - **Evidència mínima**: guió de defensa, prova reproduïble i una pregunta crítica preparada.

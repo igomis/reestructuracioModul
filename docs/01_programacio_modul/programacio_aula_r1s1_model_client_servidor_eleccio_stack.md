@@ -182,5 +182,6 @@ Frase guia: "Primer explica el viatge d'una petició; després ja decidirem amb 
 
 - **Microtaller**: `MT01. Projecte no CRUD`
 - **Presentació**: [MT01. Projecte no CRUD](../07_presentacions/microtallers/mt01_projecte_no_crud.md)
+- **Teoria associada**: [Backend, client-servidor i arquitectura web](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R1-Backend-client-servidor-i-arquitectura-web.pdf)
 - **Moment recomanat**: abans de tancar la tria de domini i primera orientació del producte.
 - **Evidència mínima**: domini amb actors, regles i primer flux que no siga només CRUD.

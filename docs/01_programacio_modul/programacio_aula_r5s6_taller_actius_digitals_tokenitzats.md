@@ -183,5 +183,6 @@ Este taller pot aparéixer en la defensa final com a ampliació avançada. La de
 
 - **Microtaller**: `MT18. Actius digitals tokenitzats`
 - **Presentació**: [MT18. Actius digitals tokenitzats](../07_presentacions/microtallers/mt18_actius_digitals_tokenitzats.md)
+- **Teoria associada**: [Integració externa i flux híbrid](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R5-Integracio-externa-i-flux-hibrid.pdf) i [Mapping, proves i defensa d'una integració](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R5-Mapping-proves-i-defensa-duna-integracio.pdf)
 - **Moment recomanat**: com a obertura del taller, abans de decidir si l'actiu realment mereix ser tokenitzat.
 - **Evidència mínima**: actiu o dret definit, frontera backend/token i comparació amb una alternativa no blockchain.

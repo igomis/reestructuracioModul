@@ -194,5 +194,6 @@ La IA pot ajudar amb errors d'instal·lacio, Docker, comparativa i passos d'arre
 
 - **Microtaller**: `MT07. Migrar un cas d'ús a framework`
 - **Presentació**: [MT07. Migrar un cas d'ús a framework](../07_presentacions/microtallers/mt07_migrar_cas_us_framework.md)
+- **Teoria associada**: [Docker, entorn i arrencada reproduïble](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R3-Docker-entorn-i-arrencada-reproduible.pdf) i [Framework MVC i responsabilitats](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R3-Framework-MVC-i-responsabilitats.pdf)
 - **Moment recomanat**: quan s'inicia el projecte en framework i cal decidir què continua de `R2`.
 - **Evidència mínima**: mapa entre flux antic en PHP base i flux nou en framework.

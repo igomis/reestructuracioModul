@@ -214,5 +214,6 @@ DWEC pot començar a practicar consum autenticat amb `fetch` sense esperar a `R4
 
 - **Microtaller**: `MT05. Auth mínima defensable`
 - **Presentació**: [MT05. Auth mínima defensable](../07_presentacions/microtallers/mt05_auth_minima_defensable.md)
+- **Teoria associada**: [JSON, codis HTTP i autenticació mínima per a client](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R2-JSON-codis-HTTP-i-autenticacio-minima-per-a-client.pdf)
 - **Moment recomanat**: quan la mini API d'autenticació ja retorna token o resposta equivalent i cal demostrar accés correcte i denegat.
 - **Evidència mínima**: endpoint d'autenticació o ruta protegida amb cas permés, cas denegat i dades demo documentades.

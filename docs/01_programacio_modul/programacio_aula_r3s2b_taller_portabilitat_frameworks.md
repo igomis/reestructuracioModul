@@ -200,5 +200,6 @@ La IA pot ajudar a comparar noms i convencions entre frameworks, però l'alumnat
 
 - **Microtaller**: `MT16. Portabilitat entre frameworks`
 - **Presentació**: [MT16. Portabilitat entre frameworks](../07_presentacions/microtallers/mt16_portabilitat_frameworks.md)
+- **Teoria associada**: [Framework MVC i responsabilitats](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R3-Framework-MVC-i-responsabilitats.pdf) i [Persistència, migracions i seeders](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R3-Persistencia-migracions-i-seeders.pdf)
 - **Moment recomanat**: durant el taller de portabilitat, abans de comparar implementacions concretes.
 - **Evidència mínima**: taula d'equivalències entre peces de framework i responsabilitats del mateix flux.

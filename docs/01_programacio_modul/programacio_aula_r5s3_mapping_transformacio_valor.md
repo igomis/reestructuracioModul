@@ -125,5 +125,6 @@ Per a suport, limitar el mapping a cinc camps essencials. Com ampliació, afegir
 
 - **Microtaller**: `MT14. Mapping de resposta externa`
 - **Presentació**: [MT14. Mapping de resposta externa](../07_presentacions/microtallers/mt14_mapping_resposta_externa.md)
+- **Teoria associada**: [Mapping, proves i defensa d'una integració](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R5-Mapping-proves-i-defensa-duna-integracio.pdf)
 - **Moment recomanat**: quan ja hi ha resposta externa i abans d'integrar-la en el flux final.
 - **Evidència mínima**: taula de mapping, transformació i cas amb dada incompleta o inesperada.

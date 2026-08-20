@@ -201,5 +201,6 @@ Frase guia: "No afegis funcionalitat fins que pugues arrancar, comprovar i expli
 
 - **Microtaller**: `MT02. README executable i commit defensable`
 - **Presentació**: [MT02. README executable i commit defensable](../07_presentacions/microtallers/mt02_readme_commit_defensable.md)
+- **Teoria associada**: [Stack servidor i entorn executable](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R1-Stack-servidor-i-entorn-executable.pdf)
 - **Moment recomanat**: després de comprovar que l'entorn arranca i abans del commit de tancament de `R1`.
 - **Evidència mínima**: README amb arrencada real, primer punt funcional verificat i commit explicable.

@@ -293,5 +293,6 @@ Quines dades del teu formulari convé tornar a mostrar perquè l'usuari no haja 
 
 - **Microtaller**: `MT03. Validació de servidor amb casos roïns`
 - **Presentació**: [MT03. Validació de servidor amb casos roïns](../07_presentacions/microtallers/mt03_validacio_servidor_casos_roins.md)
+- **Teoria associada**: [Formularis, petició POST i validació de servidor](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R2-Formularis-peticio-POST-i-validacio-de-servidor.pdf)
 - **Moment recomanat**: quan ja hi ha una primera entrada de dades i abans de donar-la per correcta.
 - **Evidència mínima**: taula de casos vàlids i invàlids, amb almenys una prova reproduïble.

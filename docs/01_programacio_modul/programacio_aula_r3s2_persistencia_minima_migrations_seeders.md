@@ -181,5 +181,6 @@ La IA pot ajudar amb camps, migracions, fixtures/seeders, scripts de càrrega i 
 
 - **Microtaller**: `MT08. Migracions, seeders i dades de prova`
 - **Presentació**: [MT08. Migracions, seeders i dades de prova](../07_presentacions/microtallers/mt08_migracions_seeders_dades_prova.md)
+- **Teoria associada**: [Persistència, migracions i seeders](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R3-Persistencia-migracions-i-seeders.pdf)
 - **Moment recomanat**: abans de donar per tancada la primera persistència real.
 - **Evidència mínima**: migracions executables de zero, dades inicials i instrucció de reproducció.

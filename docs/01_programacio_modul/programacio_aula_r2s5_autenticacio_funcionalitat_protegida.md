@@ -233,5 +233,6 @@ Quins casos demostren que el flux no és una demo puntual?
 
 - **Microtaller**: `MT05. Auth mínima defensable`
 - **Presentació**: [MT05. Auth mínima defensable](../07_presentacions/microtallers/mt05_auth_minima_defensable.md)
+- **Teoria associada**: [Autenticació, autorització i operació protegida](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R2-Autenticacio-autoritzacio-i-operacio-protegida.pdf)
 - **Moment recomanat**: quan ja existeix login o identificació i cal protegir una operació real.
 - **Evidència mínima**: cas permés, cas denegat i punt del codi on es comprova l'accés.

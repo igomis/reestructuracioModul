@@ -180,5 +180,6 @@ En `R5`, este flux pot alimentar una integració externa: confirmacions enviades
 
 - **Microtaller**: `MT17. Tokens funcionals del backend`
 - **Presentació**: [MT17. Tokens funcionals del backend](../07_presentacions/microtallers/mt17_tokens_funcionals_backend.md)
+- **Teoria associada**: [Protecció, consum i documentació d'API](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R4-Proteccio-consum-i-documentacio-dAPI.pdf)
 - **Moment recomanat**: com a obertura del taller, abans de dissenyar el cicle de vida del token.
 - **Evidència mínima**: flux tokenitzat amb cas vàlid, cas invàlid i límits del token.

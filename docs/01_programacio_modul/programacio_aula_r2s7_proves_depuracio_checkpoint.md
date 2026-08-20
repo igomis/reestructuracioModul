@@ -235,5 +235,6 @@ Quina regla o comprovació del flux funciona ja i es podria provar millor si la 
 
 - **Microtaller**: `MT06. Debugging i prova curta`
 - **Presentació**: [MT06. Debugging i prova curta](../07_presentacions/microtallers/mt06_debugging_prova_curta.md)
+- **Teoria associada**: [Proves, depuració i checkpoint](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R2-Proves-depuracio-i-checkpoint.pdf)
 - **Moment recomanat**: abans del checkpoint de tancament de `R2`.
 - **Evidència mínima**: una prova curta reproduïble i una correcció o limitació registrada.

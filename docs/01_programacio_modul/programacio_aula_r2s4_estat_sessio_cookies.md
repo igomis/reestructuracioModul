@@ -244,5 +244,6 @@ Quina operacio del teu projecte necessita saber qui està actuant o si pot conti
 
 - **Microtaller**: `MT04. Sessió, cookies i estat`
 - **Presentació**: [MT04. Sessió, cookies i estat](../07_presentacions/microtallers/mt04_sessions_cookies_estat.md)
+- **Teoria associada**: [Estat, sessió i cookies](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R2-Estat-sessio-i-cookies.pdf)
 - **Moment recomanat**: abans de decidir què queda en sessió, cookie o persistència.
 - **Evidència mínima**: decisió documentada sobre què es guarda, on es guarda i durant quant de temps.

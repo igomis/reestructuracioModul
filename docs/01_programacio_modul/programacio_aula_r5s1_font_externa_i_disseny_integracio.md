@@ -126,5 +126,6 @@ Per a suport, limitar la integració a una font pública senzilla amb resposta l
 
 - **Microtaller**: `MT12. Triar una integració amb valor`
 - **Presentació**: [MT12. Triar una integració amb valor](../07_presentacions/microtallers/mt12_integracio_amb_valor.md)
+- **Teoria associada**: [Integració externa i flux híbrid](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R5-Integracio-externa-i-flux-hibrid.pdf)
 - **Moment recomanat**: abans de validar la font externa o automatització triada.
 - **Evidència mínima**: mapa de valor, frontera entre sistemes i primer risc identificat.
