@@ -184,11 +184,15 @@ La IA pot ajudar amb esquelets de ruta, controlador, servei, vista o validacio. 
 ## Connexio amb el microrepte posterior
 
 `R3M4` afegira un segon flux o ampliacio funcional. El primer flux ha de quedar estable perquè el segon no siga una duplicacio buida ni trenque la base.
+
+## Materials associats per a portar a l'aula
+
+- **Presentació associada**: [MT09. On pose la lògica](https://cipfpbatoi.github.io/dwes2627/recursos/Tallers/MT09-On-pose-la-logica.pdf)
+- **Teoria o material associat**: [Rutes, controladors, vistes i flux end-to-end](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R3-Rutes-controladors-vistes-i-flux-end-to-end.pdf)
+
 ## Microtaller associat
 
 - **Microtaller**: `MT09. On pose la lògica`
-- **Presentació**: [MT09. On pose la lògica](../07_presentacions/microtallers/mt09_on_pose_la_logica.md)
-- **Teoria associada**: [Rutes, controladors, vistes i flux end-to-end](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R3-Rutes-controladors-vistes-i-flux-end-to-end.pdf)
 - **Moment recomanat**: quan el primer cas d'ús comença a acumular regles en controlador, servei o model.
 - **Evidència mínima**: decisió documentada sobre on queda una regla de negoci i prova del flux.
 

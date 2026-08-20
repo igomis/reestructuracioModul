@@ -179,10 +179,14 @@ Per a suport, fer una simulació local sense blockchain real: taula d'actius, re
 ## Connexió amb la defensa final
 
 Este taller pot aparéixer en la defensa final com a ampliació avançada. La defensa ha de centrar-se en model, contracte, integració, riscos i decisió tècnica, no en valor econòmic ni especulació.
+
+## Materials associats per a portar a l'aula
+
+- **Presentació associada**: [MT18. Actius digitals tokenitzats](https://cipfpbatoi.github.io/dwes2627/recursos/Tallers/MT18-Actius-digitals-tokenitzats.pdf)
+- **Teoria o material associat**: [Integració externa i flux híbrid](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R5-Integracio-externa-i-flux-hibrid.pdf) i [Mapping, proves i defensa d'una integració](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R5-Mapping-proves-i-defensa-duna-integracio.pdf)
+
 ## Microtaller associat
 
 - **Microtaller**: `MT18. Actius digitals tokenitzats`
-- **Presentació**: [MT18. Actius digitals tokenitzats](../07_presentacions/microtallers/mt18_actius_digitals_tokenitzats.md)
-- **Teoria associada**: [Integració externa i flux híbrid](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R5-Integracio-externa-i-flux-hibrid.pdf) i [Mapping, proves i defensa d'una integració](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R5-Mapping-proves-i-defensa-duna-integracio.pdf)
 - **Moment recomanat**: com a obertura del taller, abans de decidir si l'actiu realment mereix ser tokenitzat.
 - **Evidència mínima**: actiu o dret definit, frontera backend/token i comparació amb una alternativa no blockchain.

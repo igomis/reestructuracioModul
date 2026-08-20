@@ -177,10 +177,14 @@ La IA pot ajudar amb camps, migracions, fixtures/seeders, scripts de càrrega i 
 ## Connexio amb el microrepte posterior
 
 `R3M3` utilitzara esta persistencia per reconstruir un primer cas d'us complet heretat de `R2`. Sense dades reals, el flux quedara com una pantalla o demo ficticia.
+
+## Materials associats per a portar a l'aula
+
+- **Presentació associada**: [MT08. Migracions, seeders i dades de prova](https://cipfpbatoi.github.io/dwes2627/recursos/Tallers/MT08-Migracions-seeders-i-dades-de-prova.pdf)
+- **Teoria o material associat**: [Persistència, migracions i seeders](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R3-Persistencia-migracions-i-seeders.pdf)
+
 ## Microtaller associat
 
 - **Microtaller**: `MT08. Migracions, seeders i dades de prova`
-- **Presentació**: [MT08. Migracions, seeders i dades de prova](../07_presentacions/microtallers/mt08_migracions_seeders_dades_prova.md)
-- **Teoria associada**: [Persistència, migracions i seeders](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R3-Persistencia-migracions-i-seeders.pdf)
 - **Moment recomanat**: abans de donar per tancada la primera persistència real.
 - **Evidència mínima**: migracions executables de zero, dades inicials i instrucció de reproducció.

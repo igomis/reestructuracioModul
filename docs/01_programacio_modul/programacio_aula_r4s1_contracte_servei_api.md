@@ -122,10 +122,14 @@ Per a suport, reduir el contracte a `1` recurs i `2` endpoints. Com ampliació, 
 ## Connexió amb el microrepte posterior
 
 `R4M2` implementarà el primer endpoint funcional del contracte. Si el contracte és ambigu, la implementació quedarà desconnectada del valor de servei.
+
+## Materials associats per a portar a l'aula
+
+- **Presentació associada**: [MT10. Dissenyar endpoint abans de programar](https://cipfpbatoi.github.io/dwes2627/recursos/Tallers/MT10-Dissenyar-endpoint-abans-de-programar.pdf)
+- **Teoria o material associat**: [Contracte d'API, HTTP i respostes](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R4-Contracte-dAPI-HTTP-i-respostes.pdf)
+
 ## Microtaller associat
 
 - **Microtaller**: `MT10. Dissenyar endpoint abans de programar`
-- **Presentació**: [MT10. Dissenyar endpoint abans de programar](../07_presentacions/microtallers/mt10_dissenyar_endpoint_abans_programar.md)
-- **Teoria associada**: [Contracte d'API, HTTP i respostes](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R4-Contracte-dAPI-HTTP-i-respostes.pdf)
 - **Moment recomanat**: abans d'implementar el primer endpoint del repte.
 - **Evidència mínima**: contracte d'endpoint amb mètode, URL, request, response i errors previstos.

@@ -121,10 +121,14 @@ Per a suport, limitar el mapping a cinc camps essencials. Com ampliació, afegir
 ## Connexió amb el microrepte posterior
 
 `R5M4` integrarà el resultat transformat dins d'una funcionalitat real del producte. Si el mapping no està clar, la funcionalitat híbrida serà fràgil i difícil de defensar.
+
+## Materials associats per a portar a l'aula
+
+- **Presentació associada**: [MT14. Mapping de resposta externa](https://cipfpbatoi.github.io/dwes2627/recursos/Tallers/MT14-Mapping-de-resposta-externa.pdf)
+- **Teoria o material associat**: [Mapping, proves i defensa d'una integració](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R5-Mapping-proves-i-defensa-duna-integracio.pdf)
+
 ## Microtaller associat
 
 - **Microtaller**: `MT14. Mapping de resposta externa`
-- **Presentació**: [MT14. Mapping de resposta externa](../07_presentacions/microtallers/mt14_mapping_resposta_externa.md)
-- **Teoria associada**: [Mapping, proves i defensa d'una integració](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R5-Mapping-proves-i-defensa-duna-integracio.pdf)
 - **Moment recomanat**: quan ja hi ha resposta externa i abans d'integrar-la en el flux final.
 - **Evidència mínima**: taula de mapping, transformació i cas amb dada incompleta o inesperada.

@@ -124,10 +124,14 @@ Per a suport, reduir la defensa a una integració mínima però completa. Com am
 ## Connexió amb la defensa final
 
 Després de `R5M5`, la integració híbrida passa a formar part de la defensa final del producte. La defensa no ha de repetir tots els detalls, però sí demostrar autoria, criteri i comprensió del flux complet.
+
+## Materials associats per a portar a l'aula
+
+- **Presentació associada**: [MT15. Defensa tècnica curta](https://cipfpbatoi.github.io/dwes2627/recursos/Tallers/MT15-Defensa-tecnica-curta.pdf)
+- **Teoria o material associat**: [Mapping, proves i defensa d'una integració](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R5-Mapping-proves-i-defensa-duna-integracio.pdf)
+
 ## Microtaller associat
 
 - **Microtaller**: `MT15. Defensa tècnica curta`
-- **Presentació**: [MT15. Defensa tècnica curta](../07_presentacions/microtallers/mt15_defensa_tecnica_curta.md)
-- **Teoria associada**: [Mapping, proves i defensa d'una integració](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R5-Mapping-proves-i-defensa-duna-integracio.pdf)
 - **Moment recomanat**: abans de la mini defensa i del tancament final de `R5`.
 - **Evidència mínima**: guió de defensa, prova reproduïble i una pregunta crítica preparada.

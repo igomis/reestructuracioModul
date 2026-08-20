@@ -178,10 +178,14 @@ Frase guia: "Primer explica el viatge d'una petició; després ja decidirem amb 
 ## Connexió amb el microrepte posterior
 
 `R1M2` parteix de la decisió tècnica de `R1M1` i la converteix en un repositori executable. Si la decisió no està clara, l'entorn posterior quedarà com una còpia sense criteri.
+
+## Materials associats per a portar a l'aula
+
+- **Presentació associada**: [MT01. Projecte no CRUD](https://cipfpbatoi.github.io/dwes2627/recursos/Tallers/MT01-Projecte-no-CRUD.pdf)
+- **Teoria o material associat**: [Backend, client-servidor i arquitectura web](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R1-Backend-client-servidor-i-arquitectura-web.pdf)
+
 ## Microtaller associat
 
 - **Microtaller**: `MT01. Projecte no CRUD`
-- **Presentació**: [MT01. Projecte no CRUD](../07_presentacions/microtallers/mt01_projecte_no_crud.md)
-- **Teoria associada**: [Backend, client-servidor i arquitectura web](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R1-Backend-client-servidor-i-arquitectura-web.pdf)
 - **Moment recomanat**: abans de tancar la tria de domini i primera orientació del producte.
 - **Evidència mínima**: domini amb actors, regles i primer flux que no siga només CRUD.

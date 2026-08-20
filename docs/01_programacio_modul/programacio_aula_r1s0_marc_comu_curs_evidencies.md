@@ -51,10 +51,14 @@ Comprovar que cada alumne o equip sap què ha de preparar per a `R1S1`.
 - [ ] Criteri d'evidències entés.
 - [ ] Ús d'IA explicat.
 - [ ] Domini inicial registrat.
+
+## Materials associats per a portar a l'aula
+
+- **Presentació associada**: [MT19. IA responsable aplicada al repte](https://cipfpbatoi.github.io/dwes2627/recursos/Tallers/MT19-IA-responsable-aplicada-al-repte.pdf)
+- **Material de consulta associat**: [Ús verificable de la IA](https://cipfpbatoi.github.io/dwes2627/04_materials/guia_us_verificable_ia.html)
+
 ## Microtaller associat
 
 - **Microtaller**: `MT19. IA responsable aplicada al repte`
-- **Presentació**: [MT19. IA responsable aplicada al repte](../07_presentacions/microtallers/mt19_ia_responsable_repte.md)
-- **Teoria associada**: [Ús verificable de la IA](https://cipfpbatoi.github.io/dwes2627/04_materials/guia_us_verificable_ia.html)
 - **Moment recomanat**: en l'obertura del curs i de manera recurrent abans dels checkpoints quan aparega ús intensiu d'IA.
 - **Evidència mínima**: primera pauta d'AI log i criteri clar sobre què ha de poder defensar l'alumnat.

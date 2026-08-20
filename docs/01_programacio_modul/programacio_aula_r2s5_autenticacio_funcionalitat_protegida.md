@@ -229,10 +229,14 @@ Usar un únic usuari de prova guardat en un array amb hash i una única operacio
 `R2M6` convertirà el flux complet en una bateria mínima de proves. La pregunta de pas és:
 
 Quins casos demostren que el flux no és una demo puntual?
+
+## Materials associats per a portar a l'aula
+
+- **Presentació associada**: [MT05. Auth mínima defensable](https://cipfpbatoi.github.io/dwes2627/recursos/Tallers/MT05-Auth-minima-defensable.pdf)
+- **Teoria o material associat**: [Autenticació, autorització i operació protegida](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R2-Autenticacio-autoritzacio-i-operacio-protegida.pdf)
+
 ## Microtaller associat
 
 - **Microtaller**: `MT05. Auth mínima defensable`
-- **Presentació**: [MT05. Auth mínima defensable](../07_presentacions/microtallers/mt05_auth_minima_defensable.md)
-- **Teoria associada**: [Autenticació, autorització i operació protegida](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R2-Autenticacio-autoritzacio-i-operacio-protegida.pdf)
 - **Moment recomanat**: quan ja existeix login o identificació i cal protegir una operació real.
 - **Evidència mínima**: cas permés, cas denegat i punt del codi on es comprova l'accés.

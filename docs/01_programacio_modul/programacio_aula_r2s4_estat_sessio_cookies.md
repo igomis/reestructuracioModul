@@ -240,10 +240,14 @@ Reduir-ho a tres peces: pas actual en sessio, preferencia visual en cookie i `RE
 `R2M5` aprofitarà la idea d'estat per construir autenticacio funcional i protegir una operacio real. La pregunta de pas és:
 
 Quina operacio del teu projecte necessita saber qui està actuant o si pot continuar?
+
+## Materials associats per a portar a l'aula
+
+- **Presentació associada**: [MT04. Sessió, cookies i estat](https://cipfpbatoi.github.io/dwes2627/recursos/Tallers/MT04-Sessio-cookies-i-estat.pdf)
+- **Teoria o material associat**: [Estat, sessió i cookies](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R2-Estat-sessio-i-cookies.pdf)
+
 ## Microtaller associat
 
 - **Microtaller**: `MT04. Sessió, cookies i estat`
-- **Presentació**: [MT04. Sessió, cookies i estat](../07_presentacions/microtallers/mt04_sessions_cookies_estat.md)
-- **Teoria associada**: [Estat, sessió i cookies](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R2-Estat-sessio-i-cookies.pdf)
 - **Moment recomanat**: abans de decidir què queda en sessió, cookie o persistència.
 - **Evidència mínima**: decisió documentada sobre què es guarda, on es guarda i durant quant de temps.

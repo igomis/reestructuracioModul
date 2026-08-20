@@ -119,10 +119,14 @@ Per a suport, documentar un endpoint crític complet. Com ampliació, millorar O
 ## Connexió amb el repte posterior
 
 `R5` reutilitzarà l'experiència d'interoperabilitat de `R4`, però canviarà el centre: ja no serà publicar una API pròpia, sinó integrar fonts externes o fluxos híbrids amb valor real.
+
+## Materials associats per a portar a l'aula
+
+- **Presentació associada**: [MT11. Provar i documentar una API](https://cipfpbatoi.github.io/dwes2627/recursos/Tallers/MT11-Documentar-i-comprovar-una-API.pdf)
+- **Teoria o material associat**: [Protecció, consum i documentació d'API](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R4-Proteccio-consum-i-documentacio-dAPI.pdf)
+
 ## Microtaller associat
 
 - **Microtaller**: `MT11. Provar i documentar una API`
-- **Presentació**: [MT11. Provar i documentar una API](../07_presentacions/microtallers/mt11_provar_documentar_api.md)
-- **Teoria associada**: [Protecció, consum i documentació d'API](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R4-Proteccio-consum-i-documentacio-dAPI.pdf)
 - **Moment recomanat**: abans de tancar `R4` i passar a integració.
 - **Evidència mínima**: peticions reproduïbles, un cas d'error i documentació alineada amb el comportament real.

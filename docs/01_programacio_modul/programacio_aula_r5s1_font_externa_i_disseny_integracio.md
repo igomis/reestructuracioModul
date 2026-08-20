@@ -122,10 +122,14 @@ Per a suport, limitar la integració a una font pública senzilla amb resposta l
 ## Connexió amb el microrepte posterior
 
 `R5M2` implementarà la connexió real amb la font triada. Si la font no està validada o el flux és ambigu, la implementació quedarà reduïda a una prova aïllada sense valor de producte.
+
+## Materials associats per a portar a l'aula
+
+- **Presentació associada**: [MT12. Triar una integració amb valor](https://cipfpbatoi.github.io/dwes2627/recursos/Tallers/MT12-Triar-una-integracio-amb-valor.pdf)
+- **Teoria o material associat**: [Integració externa i flux híbrid](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R5-Integracio-externa-i-flux-hibrid.pdf)
+
 ## Microtaller associat
 
 - **Microtaller**: `MT12. Triar una integració amb valor`
-- **Presentació**: [MT12. Triar una integració amb valor](../07_presentacions/microtallers/mt12_integracio_amb_valor.md)
-- **Teoria associada**: [Integració externa i flux híbrid](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R5-Integracio-externa-i-flux-hibrid.pdf)
 - **Moment recomanat**: abans de validar la font externa o automatització triada.
 - **Evidència mínima**: mapa de valor, frontera entre sistemes i primer risc identificat.

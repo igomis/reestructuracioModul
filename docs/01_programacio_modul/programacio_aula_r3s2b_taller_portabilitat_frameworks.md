@@ -196,10 +196,14 @@ La IA pot ajudar a comparar noms i convencions entre frameworks, però l'alumnat
 ## Connexio amb el microrepte posterior
 
 `R3M3` ha d'usar esta auditoria per construir el primer cas d'us complet. Si el taller detecta que la persistencia o les responsabilitats no són defensables, cal corregir-ho abans d'afegir més funcionalitat.
+
+## Materials associats per a portar a l'aula
+
+- **Presentació associada**: [MT16. Portabilitat entre frameworks](https://cipfpbatoi.github.io/dwes2627/recursos/Tallers/MT16-Portabilitat-entre-frameworks.pdf)
+- **Teoria o material associat**: [Framework MVC i responsabilitats](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R3-Framework-MVC-i-responsabilitats.pdf) i [Persistència, migracions i seeders](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R3-Persistencia-migracions-i-seeders.pdf)
+
 ## Microtaller associat
 
 - **Microtaller**: `MT16. Portabilitat entre frameworks`
-- **Presentació**: [MT16. Portabilitat entre frameworks](../07_presentacions/microtallers/mt16_portabilitat_frameworks.md)
-- **Teoria associada**: [Framework MVC i responsabilitats](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R3-Framework-MVC-i-responsabilitats.pdf) i [Persistència, migracions i seeders](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R3-Persistencia-migracions-i-seeders.pdf)
 - **Moment recomanat**: durant el taller de portabilitat, abans de comparar implementacions concretes.
 - **Evidència mínima**: taula d'equivalències entre peces de framework i responsabilitats del mateix flux.

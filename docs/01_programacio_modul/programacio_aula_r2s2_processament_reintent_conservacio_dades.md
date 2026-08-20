@@ -266,10 +266,14 @@ L'ampliació no ha d'obrir encara sessió, autenticació ni arquitectura complet
 `R2M3` només té sentit si `R2M2` deixa clar com el servidor tracta dades, reconstrueix respostes i conserva funcionalment les entrades correctes. La pregunta de pas és:
 
 Quina regla del teu projecte podrà aplicar el backend quan el flux d'entrada i reintent ja és comprensible?
+
+## Materials associats per a portar a l'aula
+
+- **Presentació associada**: [MT03. Validació de servidor amb casos roïns](https://cipfpbatoi.github.io/dwes2627/recursos/Tallers/MT03-Validacio-de-servidor-amb-casos-roins.pdf)
+- **Teoria o material associat**: [Reintent, conservació de dades i guardat funcional](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R2-Reintent-conservacio-de-dades-i-guardat-funcional.pdf)
+
 ## Microtaller associat
 
 - **Microtaller**: `MT03. Validació de servidor amb casos roïns`
-- **Presentació**: [MT03. Validació de servidor amb casos roïns](../07_presentacions/microtallers/mt03_validacio_servidor_casos_roins.md)
-- **Teoria associada**: [Reintent, conservació de dades i guardat funcional](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R2-Reintent-conservacio-de-dades-i-guardat-funcional.pdf)
 - **Moment recomanat**: quan el reintent i la conservació de dades ja mostren què passa amb entrades incorrectes.
 - **Evidència mínima**: taula de casos vàlids i invàlids, amb tractament de reintent i dada conservada o rebutjada.

@@ -174,10 +174,14 @@ La IA pot suggerir idees de segon flux i casos de prova. L'alumnat ha de justifi
 ## Connexio amb el microrepte posterior
 
 `R3M5` protegira una accio significativa amb autenticacio, autoritzacio i middleware o equivalent. Per això el segon flux ha de quedar funcional i prou clar per poder decidir què té sentit protegir.
+
+## Materials associats per a portar a l'aula
+
+- **Presentació associada**: [MT09. On pose la lògica](https://cipfpbatoi.github.io/dwes2627/recursos/Tallers/MT09-On-pose-la-logica.pdf)
+- **Teoria o material associat**: [Rutes, controladors, vistes i flux end-to-end](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R3-Rutes-controladors-vistes-i-flux-end-to-end.pdf)
+
 ## Microtaller associat
 
 - **Microtaller**: `MT09. On pose la lògica`
-- **Presentació**: [MT09. On pose la lògica](../07_presentacions/microtallers/mt09_on_pose_la_logica.md)
-- **Teoria associada**: [Rutes, controladors, vistes i flux end-to-end](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R3-Rutes-controladors-vistes-i-flux-end-to-end.pdf)
 - **Moment recomanat**: quan el segon cas d'ús confirma si l'estructura aguanta noves regles sense duplicar codi.
 - **Evidència mínima**: una regla nova situada en la capa adequada i comparada amb el primer cas d'ús.
