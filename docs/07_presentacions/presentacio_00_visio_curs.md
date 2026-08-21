@@ -59,7 +59,19 @@ Micro-presentació docent breu. Equival aproximadament a `10` diapositives i est
 - una tècnica aïllada no equival a repte superat
 - una bona presentació no compensa manca de proves o autoria feble
 
-## Diapositiva 10. Idees de tancament
+## Diapositiva 10. Primer mapa del producte
+
+- abans de programar cal acotar una primera hipòtesi de producte
+- no és un document llarg ni un disseny tancat
+- ha de respondre: producte, usuari, necessitat, primera acció útil, dades mínimes i risc inicial
+
+## Diapositiva 11. Checkpoint inicial
+
+- no es revisa encara codi
+- es comprova que el repositori, el `README` i el criteri d'evidències estan ubicats
+- cada alumne ha de poder explicar el producte, la primera acció real i què portarà a `R1S1`
+
+## Diapositiva 12. Idees de tancament
 
 - el curs demana construir, provar, explicar i defensar
 - Git/GitHub es tracta com a metodologia de treball
