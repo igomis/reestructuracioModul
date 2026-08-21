@@ -30,9 +30,10 @@ Micro-presentació docent breu. Equival aproximadament a `10` diapositives i est
 
 ## Diapositiva 5. Projectes admesos
 
-- gestor d'inventari amb rols i token d'operació
-- sistema de reserves amb tokens de confirmació o cancel·lació
-- gestor d'incidències amb seguiment extern tokenitzat
+- opció més equilibrada: gestor d'incidències amb seguiment i estats
+- opció més motivadora i visual: sistema de reserves, activitats, cites o material
+- opció més professional: gestor d'inventari o préstec de recursos amb traçabilitat
+- variants possibles només si mantenen rols, dades, regles, `API`, integració i defensa comparables
 
 ## Diapositiva 6. Dues avaluacions lectives
 

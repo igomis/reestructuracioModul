@@ -39,6 +39,15 @@ Modelar què és un `AI log` útil, què és delegació excessiva i com es contr
 
 El primer mapa del producte no és un disseny final ni un document llarg d'anàlisi. És una fitxa inicial de decisions per evitar començar amb una idea massa genèrica.
 
+Abans d'escriure la fitxa, orientar la tria de projecte:
+
+| Opció | Quan convé proposar-la | Vigilància docent |
+|---|---|---|
+| Gestor d'incidències | Opció més equilibrada per a estats, rols, seguiment, API i integració. | Concretar un context proper perquè no siga només administració genèrica. |
+| Sistema de reserves | Opció més motivadora i visual si es vincula a activitats, espais, cites o material. | Evitar que quede en calendari superficial sense regles ni estat. |
+| Gestor d'inventari | Opció més professional per a traçabilitat, operacions i permisos. | Vincular-lo a recursos reals del centre o del projecte, no a una llista buida. |
+| Variant controlada | Activitats, préstecs, cites/torns o tasques d'equip. | Acceptar-la només si manté dades, regles, permisos, API, integració i defensa comparables. |
+
 Cada alumne o equip deixa escrit en el `README.md` inicial:
 
 | Decisió | Pregunta guia | Exemple de resposta curta |
