@@ -6,6 +6,8 @@ Esta sessió obri el `Repte 1` i treballa el microrepte `R1M1` amb una primera c
 
 Al final de la sessió, cada alumne o parella ha de poder explicar el paper del backend en el seu producte, representar un flux mínim client/servidor i justificar una primera decisió tècnica amb una alternativa descartada.
 
+També ha de quedar resolt el punt operatiu inicial: cada alumne ha d'haver acceptat l'enllaç de GitHub Classroom, clonat el seu repositori individual i fet un primer `push`. Eixe repositori serà el repositori de treball de tot el curs.
+
 ## Encaix dins del Repte 1
 
 - **Repte**: `R1. Kickoff backend`
@@ -23,12 +25,12 @@ Al final de la sessió, cada alumne o parella ha de poder explicar el paper del 
 | `RA1b` | diferenciació entre execució en client i execució en servidor |
 | `RA1c` | reconeixement del servidor d'aplicacions, runtime i tecnologia backend |
 | `RA1g` | justificació inicial de la tecnologia triada i dels seus límits |
-| Evidència central | fitxa d'exploració tècnica inicial aplicada al producte |
+| Evidència central | repositori Classroom clonat, primer `push` i fitxa d'exploració tècnica inicial aplicada al producte |
 | Verificació docent | pregunta oral curta sobre què passa al client, què passa al servidor i per què s'ha triat el stack |
 
 ## Producte esperat
 
-Una fitxa breu d'exploració tècnica inicial amb:
+Un repositori individual de GitHub Classroom ja creat, clonat i pujat amb un primer canvi en `README.md`, més una fitxa breu d'exploració tècnica inicial amb:
 
 - esquema client/servidor aplicat al producte propi;
 - exemples de què fa el client i què fa el servidor;
@@ -39,6 +41,8 @@ Una fitxa breu d'exploració tècnica inicial amb:
 ## Preparació prèvia del professorat
 
 - Tindre localitzats els materials d'arquitectura web, client/servidor, backend i llenguatges/frameworks.
+- Tindre preparada la presentació inicial del curs per explicar repositori, evidències, avaluació i forma de treball.
+- Tindre preparat l'enllaç de GitHub Classroom i comprovar que el repositori base de l'alumnat és el correcte.
 - Preparar un exemple docent de producte senzill per modelar la fitxa.
 - Preparar una pregunta oral curta per comprovar comprensió individual.
 - Tindre clara la frontera de la sessió: encara no es construeix l'entorn executable.
@@ -49,29 +53,44 @@ Una fitxa breu d'exploració tècnica inicial amb:
 - Diferència entre codi que s'executa en client i codi que s'executa en servidor.
 - Paper del servidor web, runtime de servidor i backend.
 - Diferència entre triar una tecnologia amb criteri i triar-la per moda.
+- Flux bàsic de treball: acceptar Classroom, clonar repositori, modificar `README.md`, commit i `push`.
 - Ús acceptable de la IA per explorar opcions, sempre amb reformulació pròpia.
 
 ## Seqüència d'aula de 3 hores
 
-### 0:00-0:15. Entrada al repte i producte esperat
+### 0:00-0:15. Presentació del curs, repositori i producte esperat
 
-El professorat presenta el `Repte 1`, el sentit del kickoff backend i la relació amb els reptes posteriors.
+El professorat presenta el funcionament del curs, el `Repte 1`, el sentit del kickoff backend i la relació amb els reptes posteriors.
 
-Resultat del tram: l'alumnat sap que la sessió acaba amb una fitxa tècnica breu, no amb un projecte ja implementat.
+També explica que el repositori de GitHub Classroom serà el repositori individual de treball durant tot el curs.
 
-### 0:15-0:35. Model client/servidor amb un exemple concret
+Resultat del tram: l'alumnat sap que la sessió acaba amb repositori creat, clonat i pujat, més una fitxa tècnica breu; no amb un projecte ja implementat.
+
+### 0:15-0:35. Acceptació i clonatge del repositori Classroom
+
+Tasques:
+
+- acceptar l'enllaç de GitHub Classroom;
+- obrir el repositori individual creat per Classroom;
+- copiar la URL de clonatge;
+- clonar el repositori localment;
+- executar `git status`.
+
+Resultat del tram: cada alumne té el seu repositori individual en local i sap que no ha de clonar el repositori base directament.
+
+### 0:35-0:55. Model client/servidor amb un exemple concret
 
 El professorat explica el flux bàsic d'una petició web: navegador, servidor, codi de servidor i resposta.
 
 Resultat del tram: l'alumnat pot separar, en un cas senzill, què fa el client i què fa el servidor.
 
-### 0:35-0:55. Modelatge docent de la fitxa
+### 0:55-1:15. Modelatge docent de la fitxa i del `README.md` inicial
 
-El professorat mostra una fitxa d'exploració tècnica mínima amb un producte exemple.
+El professorat mostra una fitxa d'exploració tècnica mínima amb un producte exemple i com deixar en `README.md` el microrepte actual, el producte triat i la primera decisió de treball.
 
 Resultat del tram: l'alumnat veu el nivell de concreció esperat i evita llistes genèriques de frameworks.
 
-### 0:55-1:35. Treball individual o per parelles
+### 1:15-1:55. Treball individual o per parelles
 
 Tasques:
 
@@ -82,43 +101,53 @@ Tasques:
 
 Resultat del tram: cada equip té una primera fitxa amb producte, flux i opcions tècniques.
 
-### 1:35-2:00. Contrast per parelles
+### 1:55-2:20. Contrast per parelles
 
 Una altra persona revisa si la fitxa diferencia realment client, servidor i dades.
 
 Resultat del tram: cada equip detecta una confusió, omissió o decisió massa genèrica.
 
-### 2:00-2:30. Decisió inicial de stack
+### 2:20-2:40. Decisió inicial de stack
 
 L'alumnat tanca una decisió tècnica inicial i una alternativa descartada.
 
 Resultat del tram: la decisió queda escrita amb un motiu relacionat amb el producte i amb el marc del curs.
 
-### 2:30-2:50. Posada en comú curta
+### 2:40-2:55. Commit i `push` inicial
 
-El professorat recull confusions habituals: backend no és base de dades, framework no és producte i stack no és només preferència.
+Tasques:
 
-Resultat del tram: el grup comparteix criteris mínims per passar a l'entorn executable.
+- actualitzar `README.md` amb `R1M1`, projecte base, flux client/servidor i decisió inicial;
+- guardar la fitxa o evidència equivalent en `docs/`;
+- fer commit amb un missatge comprensible;
+- fer `push` a `main`.
 
-### 2:50-3:00. Checkpoint docent
+Resultat del tram: GitHub mostra el primer canvi i el professorat pot comprovar que el repositori queda operatiu.
 
-Cada equip mostra la fitxa i respon una pregunta breu.
+### 2:55-3:00. Checkpoint docent
+
+Cada equip mostra el repositori en GitHub, la fitxa i respon una pregunta breu.
 
 Pregunta de tancament: què passa exactament al navegador i què passa al servidor en una acció bàsica del teu producte?
 
 ## Tasques concretes de l'alumnat
 
 - Escriure quin producte vol iniciar i quin paper tindrà el backend.
+- Acceptar l'enllaç de GitHub Classroom i clonar el repositori individual.
+- Identificar `README.md`, `ENTREGA.md`, `docs/` i `evidence/`.
 - Dibuixar o descriure el flux client/servidor.
 - Escriure tres exemples del projecte: acció del client, acció del servidor i resposta.
 - Comparar de manera breu dues o tres opcions tècniques del marc docent.
 - Tancar una decisió inicial i una alternativa descartada.
 - Registrar un dubte tècnic real.
+- Fer un primer commit i `push` a `main`.
 
 ## Evidències mínimes
 
 | Evidència | Mínim acceptable |
 |---|---|
+| Repositori Classroom | acceptat, clonat i amb primer `push` visible |
+| `README.md` inicial | indica `R1M1`, projecte base, flux client/servidor i decisió inicial |
 | Fitxa d'exploració | parla del producte concret i no només de tecnologies genèriques |
 | Esquema client/servidor | diferencia navegador, servidor i resposta |
 | Exemples del producte | inclou acció de client, acció de servidor i resposta |
@@ -129,6 +158,7 @@ Pregunta de tancament: què passa exactament al navegador i què passa al servid
 
 El microrepte està aconseguit si:
 
+- el repositori individual està creat, clonat i pujat a GitHub;
 - la fitxa parla del producte concret;
 - l'alumnat pot explicar què passa al navegador i què passa al servidor;
 - la decisió tècnica és coherent amb el curs i amb el pas a `R1M2`;
@@ -170,6 +200,9 @@ Frase guia: "Primer explica el viatge d'una petició; després ja decidirem amb 
 ## Checklist de tancament
 
 - [ ] La fitxa està completa.
+- [ ] El repositori Classroom està acceptat i clonat.
+- [ ] Hi ha un primer `push` visible en GitHub.
+- [ ] El `README.md` identifica `R1M1` i el projecte base.
 - [ ] Hi ha esquema client/servidor.
 - [ ] Hi ha decisió tècnica i alternativa descartada.
 - [ ] Hi ha dubte tècnic registrat.
@@ -182,7 +215,9 @@ Frase guia: "Primer explica el viatge d'una petició; després ja decidirem amb 
 ## Materials associats per a portar a l'aula
 
 - **Presentació associada**: [MT01. Projecte no CRUD](https://cipfpbatoi.github.io/dwes2627/recursos/Tallers/MT01-Projecte-no-CRUD.pdf)
+- **Presentació inicial del curs**: [Benvinguda al curs](https://cipfpbatoi.github.io/dwes2627/recursos/Presentacions/Benvinguda-al-curs.pdf)
 - **Teoria o material associat**: [Backend, client-servidor i arquitectura web](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R1-Backend-client-servidor-i-arquitectura-web.pdf)
+- **Guia operativa**: [Com pujar el treball per a l'autocorrecció](https://cipfpbatoi.github.io/dwes2627/04_materials/guia_pujar_treball_autocorreccio/)
 
 ## Microtaller associat
 
