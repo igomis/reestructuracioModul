@@ -16,7 +16,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 ### Finalitat docent
 
-- obrir el projecte del curs amb una base clara sobre `PHP`, un entorn executable i un primer punt d'entrada funcional del backend
+- obrir el projecte del curs amb una base clara sobre `PHP`, un entorn executable i una landing inicial servida pel backend
 
 ### Duració base recomanada
 
@@ -34,13 +34,14 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 - repositori inicial usable i base comuna en `PHP` clarament assumida
 - entorn executable amb `Docker`, `PHP` i servidor web
-- una ruta, vista, `endpoint` o `healthcheck` funcional d'entrada al backend
+- una landing inicial servida pel backend
+- un `healthcheck` només com a comprovació tècnica auxiliar, si cal
 - `README` executable i verificació bàsica del que ja funciona
 
 ### Què diferencia una resolució superficial d'una professional
 
 - superficial: infraestructura arrencada, però encara no hi ha producte recognoscible
-- professional: la base tècnica ja arranca, es pot explicar i deixa un primer punt d'entrada funcional, verificable i documentat
+- professional: la base tècnica ja arranca, es pot explicar i deixa una landing inicial verificable i documentada
 
 ### Què sap ja l'alumnat
 
@@ -65,7 +66,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - posada en marxa inicial del repositori amb estructura recognoscible
 - exemple curt de `README` inicial i d'una primera decisió tècnica registrada
 - arranque mínim d'un backend amb `Docker`, `PHP` i servidor web
-- primer punt d'entrada funcional simple del backend
+- landing inicial simple servida pel backend
 
 ### Què treballa l'alumnat amb autonomia
 
@@ -73,7 +74,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - arranque de l'entorn tècnic
 - primera decisió tècnica del producte
 - organització inicial del repositori
-- primer punt d'entrada funcional del backend
+- landing inicial servida pel backend
 - documentació i verificació bàsica del que ja funciona
 
 ### Materials que s'activen
@@ -90,7 +91,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - entorn funcional
 - decisió de domini i base comuna assumida
 - primera traça tècnica del procés
-- punt d'entrada funcional del backend
+- landing inicial servida pel backend
 
 ### Errors habituals a anticipar
 
@@ -101,7 +102,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 ### Checkpoint docent
 
-- el grup només pot donar el repte per superat si té entorn executable, primer `README`, decisió tècnica, punt d'entrada funcional i traçabilitat mínima del procés
+- el grup només pot donar el repte per superat si té entorn executable, primer `README`, decisió tècnica, landing inicial servida pel backend i traçabilitat mínima del procés
 
 ## Repte 2. Processament, estat, autenticació i primera funcionalitat de negoci
 

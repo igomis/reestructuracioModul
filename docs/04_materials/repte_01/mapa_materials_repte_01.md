@@ -65,7 +65,7 @@ Este mapa indica quines peces convé obrir per conduir `R1` en aula i en quin es
 
 - [Presentació 01 del Repte 1](../../07_presentacions/presentacio_01_repte_1.md): `refosa` per explicar els `2` microreptes i les `2` sessions principals.
 - [Full de treball del Repte 1](../../08_materials_compartibles/full_treball_repte_01.md): `refós` per orientar alumnat sense carregar `R1` amb tasques de `R2`.
-- [Checkpoint inicial `R1 -> R2`](../../08_materials_compartibles/checkpoint_inicial_r1_r2.md): `refós` per comprovar arrencada, punt d'entrada i pas al repte següent.
+- [Checkpoint inicial `R1 -> R2`](../../08_materials_compartibles/checkpoint_inicial_r1_r2.md): `refós` per comprovar arrencada, landing inicial i pas al repte següent.
 
 ## Materials que s'han refós o creat en esta passada
 

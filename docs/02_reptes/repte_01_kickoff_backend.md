@@ -3,12 +3,12 @@
 ## Fitxa canònica del repte
 
 - **Funció didàctica principal**: iniciació / arranque.
-- **Objectiu**: deixar arrencat el projecte base amb entorn executable, traçabilitat, punt d'entrada funcional i decisió tècnica inicial.
+- **Objectiu**: deixar arrencat el projecte base amb entorn executable, traçabilitat, landing inicial servida pel backend i decisió tècnica inicial.
 - **Producte esperat**: backend inicial funcional, executable en local, amb Docker, README, documentació en repositori i primera peça real del producte.
 - **Evidències**: repositori traçable, README executable, documentació del repte enllaçada, issue mare, commit rellevant comentat, execució real, ADR o justificació tècnica breu i mini defensa de kickoff.
 - **Paper de la IA**: ús assistit per IA permés per configuració, comparativa i depuració inicial; els límits i la delegació excessiva depenen de [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md).
 - **Relació amb el projecte base**: este repte obri el projecte base i fixa la seua base metodològica, tècnica i documental.
-- **Checkpoint de control**: arrencada reproduïble amb lectura del `README`, justificació del stack triat i microcanvi tècnic simple sobre l'entorn.
+- **Checkpoint de control**: arrencada reproduïble amb lectura del `README`, justificació de la decisió tècnica inicial i microcanvi tècnic simple sobre l'entorn.
 - **Instrument dominant**: checklist d'arrencada i repositori executable.
 - **Instrument de comprensió**: mini defensa tècnica de kickoff.
 - **Instrument de control de delegació excessiva**: revisió de commit rellevant comentat, contrast amb `AI log` i prova en directe.
@@ -16,7 +16,7 @@
 
 ## Justificació docent
 
-- **Evidència principal**: repositori executable amb `README`, punt d'entrada funcional i justificació tècnica breu.
+- **Evidència principal**: repositori executable amb `README`, landing inicial servida pel backend i justificació tècnica breu.
 - **Evidències secundàries**: fitxa d'exploració, issue mare, commit rellevant comentat, incidència o dubte registrat i mini defensa.
 - **Mínim suficient**: el projecte arranca des del `README`, mostra un backend mínim real i l'alumnat explica client/servidor, serveis i decisió tècnica.
 - **Feedback previst**: checkpoint de kickoff amb prova d'arrencada, revisió ràpida del repositori i pregunta de transferència.
@@ -40,7 +40,7 @@ Una primera versió funcional i verificable del servei backend, amb:
 - projecte executable en local de manera reproductible
 - ús de Docker
 - servidor web, servei de base de dades i phpMyAdmin incorporats en l'entorn inicial
-- punt d’entrada funcional simple
+- landing inicial funcional
 - README tècnic executable
 - documentació del repte dins del repositori i enllaçada des d'un índex o pàgina visible
 - justificació tècnica breu
@@ -99,7 +99,7 @@ L’alumnat ha de:
 - verificar que el projecte arranca realment
 - entendre què fa Docker i què posa en marxa
 - explicar l’estructura creada
-- demostrar que existix un punt d’entrada funcional del producte
+- demostrar que existix una landing inicial del producte servida pel backend
 
 **Risc principal d’ús inadequat de la IA**
 
@@ -154,7 +154,7 @@ Backend inicial funcional amb:
 - commits significatius
 - un commit rellevant comentat o referenciat pel mateix alumne
 - demo d’arrancada i execució
-- evidència d’un punt d’entrada funcional
+- evidència d’una landing inicial funcional
 - ADR o justificació tècnica breu
 - mini defensa tècnica al checkpoint de tancament
 - AI log quan corresponga
@@ -267,7 +267,7 @@ Rúbrica d’investigació aplicada.
 
 25%
 
-### Microrepte R1M2 — Entorn executable, punt d'entrada i tancament de R1
+### Microrepte R1M2 — Entorn executable, landing inicial i tancament de R1
 
 Este microrepte integra l'entorn executable, la primera resposta funcional del backend i la documentació de tancament. No es divideix en més microreptes: eixos blocs són parts internes de la segona sessió.
 
@@ -370,7 +370,7 @@ Checklist tècnica de repositori + revisió docent de README.
 
 75%
 
-#### Bloc intern de R1M2 — Primer punt d'entrada funcional del backend
+#### Bloc intern de R1M2 — Landing inicial servida pel backend
 
 **Tipus**
 
@@ -439,7 +439,7 @@ Rúbrica de microprojecte funcional.
 
 **Verificació del treball real**
 
-- prova en directe del punt d’entrada funcional
+- prova en directe de la landing inicial
 - canvi menor en viu sobre ruta, missatge o resposta
 - pregunta tècnica sobre què passa en servidor quan s’accedix a este punt d’entrada
 
@@ -535,7 +535,7 @@ Rúbrica de defensa tècnica + checklist de documentació.
 | Microrepte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
 |---|---|---|---|---|---|---|
 | R1M1 | Investigació / decisió tècnica | Fitxa breu d'exploració tècnica + model d'execució client/servidor + decisió orientativa | RA1a, RA1b, RA1c, RA1g | Fitxa, model d'execució, dubtes detectats, posada en comú | Rúbrica | 25% |
-| R1M2 | Procedimental / tancament | Repositori executable amb Docker, primer punt d'entrada funcional, README, documentació i checkpoint | RA1b, RA1c, RA1d, RA1e, RA1f, RA1g | Repo, Docker, punt d'entrada, README, documentació, issues, commits, prova d'arrancada i defensa | Checklist + rúbrica | 75% |
+| R1M2 | Procedimental / tancament | Repositori executable amb Docker, landing inicial servida pel backend, README, documentació i checkpoint | RA1b, RA1c, RA1d, RA1e, RA1f, RA1g | Repo, Docker, landing inicial, README, documentació, issues, commits, prova d'arrancada i defensa | Checklist + rúbrica | 75% |
 
 ### 6.1 Coordinació docent amb sessions de `3` hores
 
@@ -544,7 +544,7 @@ El Repte 1 es compon de `2` microreptes, un per cada sessió ordinària de `3` h
 | Sessió | Duració | Microreptes | Focus docent | Producte o evidència clau |
 |---|---:|---|---|---|
 | `1` | `3h` | R1M1 | model client/servidor i decisió inicial | fitxa breu + decisió orientativa |
-| `2` | `3h` | R1M2 | entorn complet, primer punt d'entrada funcional i documentació | projecte arrancant + punt funcional + README + documentació en repositori |
+| `2` | `3h` | R1M2 | entorn complet, landing inicial i documentació | projecte arrancant + landing funcional + README + documentació en repositori |
 
 ---
 
@@ -596,7 +596,7 @@ El Repte 1 es compon de `2` microreptes, un per cada sessió ordinària de `3` h
 
 - prova d’arrancada seguint només el README
 - execució real amb Docker
-- demo del punt d’entrada funcional
+- demo de la landing inicial
 - preguntes tècniques sobre alternatives descartades
 - revisió d’issues i commits
 - microcanvi en viu
@@ -671,7 +671,7 @@ La decisió guiada de stack en este repte afecta sobretot com s’explica, s’o
 - README
 - justificació tècnica breu
 - Docker funcional
-- primer punt d’entrada simple
+- landing inicial simple
 - defensa breu
 
 **Ampliacions realistes**
@@ -704,7 +704,7 @@ El repte es considera superat quan:
 - el servei arranca en local seguint el README
 - el projecte és executable de manera reproductible amb Docker
 - hi ha una primera peça funcional real del producte
-- existix un punt d’entrada funcional simple
+- existix una landing inicial funcional simple
 - la decisió tecnològica està justificada dins d’un marc docent acotat
 - hi ha traçabilitat real de treball
 - l’alumnat pot defensar què ha fet, per què i com prepara el pas al repte següent

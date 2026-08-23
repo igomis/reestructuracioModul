@@ -41,8 +41,8 @@ Quan la IA haja intervingut de manera rellevant, el professorat no ha de reobrir
 
 ## Checkpoints mínims
 
-- `CP0`: repositori usable, `README` inicial i criteri de traçabilitat
-- `CP1`: domini, base comuna en `PHP`, entorn funcional i primera decisió tècnica
+- `CP0`: primer mapa provisional del producte, criteri de traçabilitat i preparació per acceptar GitHub Classroom
+- `CP1`: repositori Classroom usable, `README` inicial, domini, base comuna en `PHP`, entorn funcional i primera decisió tècnica
 - `CP2`: operació protegida o equivalent, validacions i errors mínims sobre la base comuna en `PHP`
 - `CP3`: persistència coherent i arquitectura explicable
 - `CP4`: `API` publicada, documentada i provada

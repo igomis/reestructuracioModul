@@ -36,7 +36,7 @@ La guia està calibrada sobre l'escenari següent:
 
 | Bloc | Setmanes | Tancament verificable | Imprescindible | Recuperable | Ampliació |
 |---|---:|---|---|---|---|
-| Arrancada i `R1` | `1-4` | checkpoint `R1 -> R2` | repo, base en `PHP`, primer punt d'entrada i `README` executable | documentació, incidències i defensa curta | millora d'onboarding o scripts |
+| Arrancada i `R1` | `1-4` | checkpoint `R1 -> R2` | repo, base en `PHP`, landing inicial servida pel backend i `README` executable | documentació, incidències i defensa curta | millora d'onboarding o scripts |
 | `R2` | `5-8` | [R2SX. Microdefenses tècniques](programacio_aula_r2sx_microdefenses_tecniques_criteris.md) | formulari variat, validació de servidor, estat inicial, funcionalitat protegida i traçabilitat | prova unitària mínima, proves de flux i `AI log` incomplet | llibreria externa menuda, millor tractament d'errors o proves negatives |
 | `R3` | `9-12` | [R3SX. Microdefenses tècniques](programacio_aula_r3sx_microdefenses_tecniques_criteris.md) | framework arrancable, separació de responsabilitats, persistència inicial i flux end-to-end | segon flux reduït, documentació de migracions o proves | relació de dades, serveis o validació reforçada |
 | `R4` | `13-16` | [R4SX. Microdefenses tècniques](programacio_aula_r4sx_microdefenses_tecniques_criteris.md) | contracte d'API, endpoints, protecció o control d'accés, consum/prova i documentació | col·lecció de proves, cas denegat o documentació incompleta | permisos més fins, consumidor més complet o millor contracte |
@@ -113,13 +113,13 @@ Regla pràctica:
 
 #### Setmana 4
 
-- Focus o repte: `R1` com a microreptes `3-4`: primer punt d'entrada funcional, documentació i checkpoint
-- Què fa el professorat: modela una ruta, vista, `endpoint` o `healthcheck` simple i exemplifica com deixar rastre real al `README`
-- Què fa l'alumnat: completa el primer punt d'entrada funcional del backend, revisa documentació i prepara el checkpoint `R1 -> R2`
+- Focus o repte: `R1` com a microreptes `3-4`: landing inicial servida pel backend, documentació i checkpoint
+- Què fa el professorat: modela una landing inicial servida pel backend i exemplifica com deixar rastre real al `README`; el `healthcheck` queda només com a comprovació tècnica
+- Què fa l'alumnat: completa la landing inicial del producte, revisa documentació i prepara el checkpoint `R1 -> R2`
 - Materials per a l'alumnat: apunt real del Repte 1, guia de testing i debugging
-- Evidència mínima del bloc: `R1` reproduïble amb punt d'entrada funcional i `README` executable
+- Evidència mínima del bloc: `R1` reproduïble amb landing inicial servida pel backend i `README` executable
 - Checkpoint docent: tancament de `R1` només si no és un esquelet buit
-- Pla per a alumnat endarrerit: un únic punt d'entrada funcional i una única prova d'arrencada reproduïble
+- Pla per a alumnat endarrerit: landing molt simple i una única prova d'arrencada reproduïble
 - Pla per a alumnat avançat: reforçar onboarding o documentació tècnica del bloc
 
 #### Setmana 5

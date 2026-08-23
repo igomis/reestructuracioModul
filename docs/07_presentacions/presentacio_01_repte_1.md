@@ -12,7 +12,7 @@ Micro-presentació docent breu. Equival aproximadament a `8-9` diapositives i es
 
 - repositori usable i `README` inicial
 - entorn executable amb `Docker`, `PHP` i servidor web
-- primer punt d'entrada funcional del backend
+- landing inicial servida pel backend
 - verificació real de l'arrencada i del punt d'entrada
 
 ## Diapositiva 3. Com es treballarà en aula
@@ -25,7 +25,7 @@ Micro-presentació docent breu. Equival aproximadament a `8-9` diapositives i es
 ## Diapositiva 4. Microreptes del repte
 
 - `R1M1`: model client/servidor i stack guiat
-- `R1M2`: entorn executable amb `Docker`, `PHP` i servidor web, primer punt d'entrada funcional, documentació i checkpoint
+- `R1M2`: entorn executable amb `Docker`, `PHP` i servidor web, landing inicial servida pel backend, documentació i checkpoint
 
 ## Diapositiva 5. Què no és suficient
 
@@ -39,7 +39,7 @@ Micro-presentació docent breu. Equival aproximadament a `8-9` diapositives i es
 - repositori recognoscible
 - `README` amb com arranca i què fa el backend ara mateix
 - entorn executable reproduïble
-- primer punt d'entrada funcional servit pel backend
+- landing inicial servida pel backend
 - justificació tècnica breu i traçabilitat mínima
 
 ## Diapositiva 7. Què es comprovarà
@@ -47,7 +47,7 @@ Micro-presentació docent breu. Equival aproximadament a `8-9` diapositives i es
 - que el projecte arranca de veritat
 - que s'entén el model client/servidor del producte
 - que `Docker`, `PHP` i servidor web tenen un paper recognoscible
-- que el backend respon amb un primer punt d'entrada funcional
+- que el backend respon amb una landing inicial funcional
 - que l'alumne pot explicar què ha fet i com ho ha provat
 
 ## Diapositiva 8. Errors habituals
@@ -63,5 +63,5 @@ Micro-presentació docent breu. Equival aproximadament a `8-9` diapositives i es
 - repositori usable
 - `README` curt però executable
 - entorn executable amb `Docker`, `PHP` i servidor web
-- primer punt d'entrada funcional del backend
+- landing inicial servida pel backend
 - idea clara de quin flux es protegirà després en `R2`

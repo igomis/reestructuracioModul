@@ -8,23 +8,25 @@ La seqüència no és una llista de tecnologies. Cada repte resol un pas real de
 
 ### Què resol
 
-Obrir el projecte amb domini triat, repositori usable, `README` mínim i una primera interacció funcional del producte.
+Obrir el projecte amb domini triat, repositori usable, `README` mínim, decisió tècnica inicial i una landing inicial servida pel backend.
 
 ### Què modela el professorat
 
 - criteri de kickoff funcional, no d'esquelet buit
-- primer flux d'entrada amb validació i registre mínim
+- landing inicial del producte servida pel backend
+- decisió inicial de stack orientada a `R1S2`, sense convertir-la en instal·lació prematura de framework
 - traçabilitat inicial de repositori, `README` i decisions tècniques
 
 ### Què no és suficient
 
 - triar stack sense cas d'ús visible
-- tindre només rutes de prova o plantilla estàtica
-- infraestructura sense dada validada o registrada
+- triar framework definitiu abans d'entendre el flux client/servidor i la base executable
+- tindre només rutes de prova, `healthcheck` o plantilla estàtica oberta fora del servidor
+- infraestructura sense resposta del backend connectada amb el producte
 
 ### Pas a `R2`
 
-Només convé passar a `R2` si ja hi ha una acció real del producte sobre la qual puga tindre sentit protegir accés o estat.
+Només convé passar a `R2` si ja hi ha una base executable, una landing inicial servida pel backend i una decisió tècnica suficientment clara per començar una acció real del producte amb entrada de dades, validació o estat.
 
 ## `R2`. Primera funcionalitat de negoci protegida
 

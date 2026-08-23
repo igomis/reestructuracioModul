@@ -4,7 +4,7 @@
 
 Convertir el Repte 1 en un apunt de treball real, curt i executable, pensat perquè professorat i alumnat tinguen clara la seqüència mínima per arrancar el producte amb una primera peça funcional visible, verificable i documentada.
 
-Este repte no consistix a triar tecnologia ni a crear un esquelet buit. El que s'espera és posar en marxa una base tècnica curta i defensable: model client/servidor comprensible, entorn executable amb `Docker`, `PHP` i servidor web, primer punt d'entrada funcional del backend i documentació tècnica usable.
+Este repte no consistix a triar tecnologia ni a crear un esquelet buit. El que s'espera és posar en marxa una base tècnica curta i defensable: model client/servidor comprensible, entorn executable amb `Docker`, `PHP` i servidor web, landing inicial servida pel backend i documentació tècnica usable.
 
 ## Calibratge d'aula
 
@@ -38,7 +38,8 @@ Este repte no consistix a triar tecnologia ni a crear un esquelet buit. El que s
 - una posada en marxa mínima del repositori i de l'estructura del projecte
 - una decisió tècnica inicial breu registrada al `README` o a un `ADR`
 - una arrencada real amb `Docker`, `PHP` i servidor web
-- una ruta, vista, `endpoint` o `healthcheck` simple servit pel backend
+- una landing inicial del producte servida pel backend
+- un `healthcheck` només com a comprovació tècnica auxiliar, si cal
 - una revisió del `README` perquè una altra persona puga repetir la prova
 
 ## Què treballa l'alumnat amb autonomia
@@ -58,7 +59,7 @@ Exemple orientatiu de recorregut mínim:
 2. Fixar una decisió tècnica inicial coherent amb la base del curs.
 3. Preparar l'entorn amb `Docker`, `PHP` i servidor web.
 4. Arrancar el projecte i demostrar que la base és executable.
-5. Implementar una ruta, vista, `endpoint` o `healthcheck` simple però funcional.
+5. Implementar una landing inicial del producte servida pel backend, amb HTML i CSS senzill.
 6. Deixar constància al `README` de com reproduir l'arrencada i la prova funcional.
 
 Criteri docent:
@@ -80,7 +81,7 @@ Criteri docent:
 Per donar el repte per verificat, cal poder demostrar com a mínim:
 
 - que el projecte arranca seguint el `README`
-- que existix un punt d'entrada funcional del backend
+- que existix una landing inicial servida pel backend
 - que es pot explicar el paper de `Docker`, `PHP` i del servidor web
 - que la resposta del sistema és real i reproduïble
 - que el repositori mostra traçabilitat recognoscible del treball
@@ -98,7 +99,7 @@ Formats de verificació acceptables:
 - `README` de posada en marxa i comprovació del Repte 1
 - justificació breu del domini i de la decisió tècnica inicial
 - entorn executable amb `Docker`, `PHP` i servidor web
-- evidència del primer punt d'entrada funcional del backend
+- evidència de la landing inicial servida pel backend
 - traçabilitat mínima del procés amb commits i, si aplica, issues
 - `AI log` si s'ha utilitzat IA per a configuració, esquelets o documentació
 
@@ -107,7 +108,8 @@ Formats de verificació acceptables:
 - [ ] existix repositori usable i estructura inicial coherent
 - [ ] la decisió tecnològica està justificada de manera breu i defensable
 - [ ] el projecte arranca amb `Docker`, `PHP` i servidor web
-- [ ] existix ruta, vista, `endpoint` o `healthcheck` funcional d'entrada al backend
+- [ ] existix landing inicial servida pel backend
+- [ ] el `healthcheck`, si existeix, és només comprovació tècnica
 - [ ] el `README` explica com arrancar i provar el repte
 - [ ] hi ha traçabilitat mínima del procés de treball
 - [ ] l'ús de la IA, si existix, està registrat i contrastat

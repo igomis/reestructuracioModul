@@ -26,7 +26,7 @@ Els documents de planificació continuen existint com a annexos o arxiu, però l
 | Moment | Hito operatiu | Checkpoint o entregable mínim |
 |---|---|---|
 | Inici | activació del curs i del projecte base | repositori inicial, README, domini triat i criteri de treball |
-| Repte 1 | arrencada funcional del backend | entorn executable, Docker, punt d'entrada i primera decisió tècnica |
+| Repte 1 | arrencada funcional del backend | entorn executable, Docker, landing inicial i primera decisió tècnica |
 | Repte 2 | primera funcionalitat protegida | checkpoint `R1 -> R2`, flux autenticat, validacions i proves bàsiques |
 | Repte 3 | reconstrucció en framework i persistència | dos fluxos end-to-end, model de dades, migracions, seeders i proves mínimes |
 | Repte 4 | publicació i consum d'API | contracte, endpoints, consum verificat i documentació d'API |
@@ -48,7 +48,7 @@ Els documents de planificació continuen existint com a annexos o arxiu, però l
 | Moment | Verificació tècnica mínima | Contrast de comprensió | Traçabilitat de la IA | Decisió docent que habilita |
 |---|---|---|---|---|
 | Inici de curs | repositori, `README` i criteri de treball actius | el grup sap explicar domini, eines i flux de treball | només si hi ha ús assistit inicial | obertura de `R1` |
-| Tancament de `R1` | arrencada reproduïble i punt d'entrada funcional | justificació del stack i microcanvi simple | revisió d'`AI log` si n'hi ha | pas real a `R2` |
+| Tancament de `R1` | arrencada reproduïble i landing inicial servida pel backend | justificació de la decisió tècnica i microcanvi simple | revisió d'`AI log` si n'hi ha | pas real a `R2` |
 | Tancament de `R2` | flux complet amb cas autoritzat i denegat | explicació de dades, estat i autenticació | contrast entre solució inicial, ajuda d'IA i solució final quan corresponga | pas real a `R3` |
 | `CP-R3A` | framework + Docker + BBDD + `migrations`/`seeders` + primer flux **server-rendered** | defensa del circuit petició -> controlador -> dades -> resposta | revisió d'evidències d'ús assistit sobre estructura i modelat | continuïtat de `R3` |
 | `CP-R3B` | segon flux, proves mínimes, `README` i backlog curt | justificació de decisions d'arquitectura i de què queda fora | contrast entre codi, `AI log` i demo | obertura de `R4` |

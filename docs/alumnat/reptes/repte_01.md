@@ -12,7 +12,7 @@ El repte té `4` microreptes com a passos lògics:
 
 - `Microrepte 1`: entendre client/servidor, diferenciar execució en client i servidor, i prendre una primera decisió tècnica
 - `Microrepte 2`: muntar l'entorn executable
-- `Microrepte 3`: construir el primer punt d'entrada funcional
+- `Microrepte 3`: construir la landing inicial servida pel backend
 - `Microrepte 4`: documentar, verificar i preparar el checkpoint
 
 En classe es treballa en `2` sessions principals:
@@ -43,7 +43,7 @@ Pot haver-hi una sessió `3` opcional si cal fer defensa, checkpoint formal o re
 - repositori usable
 - `docker-compose.yml` o equivalent funcional
 - entorn que arranca
-- primer punt d'entrada funcional del backend
+- landing inicial servida pel backend
 - `README` executable
 - documentació del repte organitzada dins del repositori
 - justificació tècnica curta

@@ -26,8 +26,8 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - [Planificació de microtallers dins dels reptes](planificacio_microtallers_reptes.md): mapa operatiu amb sessió, franja d'aula, temps calibrat, teoria/materials i presentació associada.
 - [R1S0. Marc comú del curs i criteri d'evidències](programacio_aula_r1s0_marc_comu_curs_evidencies.md): sessió d'arrancada sense microrepte propi per fixar model de curs, evidències i ús d'IA.
 - [R1. Programació d'aula — Kickoff backend](programacio_aula_repte_01.md): baixada operativa de `R1` a sessions, checkpoints i tancament.
-- [R1S1. Model client/servidor i elecció guiada de stack](programacio_aula_r1s1_model_client_servidor_eleccio_stack.md): fitxa d'aula executable per a la primera sessió de `R1`, associada al microrepte `R1M1`.
-- [R1S2. Entorn executable, punt d'entrada i tancament de R1](programacio_aula_r1s2_entorn_executable_punt_entrada.md): fitxa d'aula executable per a la segona sessió de `R1`, associada al microrepte `R1M2`.
+- [R1S1. Model client/servidor i decisió tècnica inicial](programacio_aula_r1s1_model_client_servidor_eleccio_stack.md): fitxa d'aula executable per a la primera sessió de `R1`, associada al microrepte `R1M1`.
+- [R1S2. Entorn executable, landing inicial i tancament de R1](programacio_aula_r1s2_entorn_executable_punt_entrada.md): fitxa d'aula executable per a la segona sessió de `R1`, associada al microrepte `R1M2`.
 - [R2S0. Transició al Repte 2](programacio_aula_r2s0_transicio_repte_2.md): sessió sense microrepte propi per passar de `R1` a flux funcional amb dades.
 - [R2. Programació d'aula — Processament, estat i autenticació](programacio_aula_repte_02.md): baixada operativa de `R2` a sessions, microprojectes, checkpoints i pas cap a `R3`.
 - [R2S1. Entrada variada i validació de servidor](programacio_aula_r2s1_entrada_variada_validacio_servidor.md): fitxa d'aula executable per a la primera sessió de `R2`, associada al microrepte `R2M1`.

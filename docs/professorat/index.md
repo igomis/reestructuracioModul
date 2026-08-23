@@ -42,6 +42,7 @@ Si ja tens el curs en marxa, entra directament en:
 
 - [Com conduir els reptes](com_conduir_els_reptes.md)
 - [Projectes base concretats](../05_projectes_tecnics/projectes_base_concretats.md)
+- [R1S0. Marc comú del curs i criteri d'evidències](../01_programacio_modul/programacio_aula_r1s0_marc_comu_curs_evidencies.md)
 - [Programació d'aula del Repte 1](../01_programacio_modul/programacio_aula_repte_01.md)
 - [Materials de sessió de `R1`](../04_materials/materials_aula/repte_01_materials_sessio.md)
 - [Mapa de materials del Repte 1](../04_materials/repte_01/mapa_materials_repte_01.md)

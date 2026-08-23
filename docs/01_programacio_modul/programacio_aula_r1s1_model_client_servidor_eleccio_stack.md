@@ -1,4 +1,4 @@
-# R1S1. Model client/servidor i elecció guiada de stack
+# R1S1. Model client/servidor i decisió tècnica inicial
 
 ## Finalitat de la sessió
 
@@ -37,6 +37,42 @@ Un repositori individual de GitHub Classroom ja creat, clonat i pujat amb un pri
 - comparació curta de dues o tres opcions tècniques;
 - decisió inicial de stack i alternativa descartada;
 - dubtes o límits que encara queden oberts.
+
+## Procediment de tria de stack
+
+La tria de stack en `R1S1` és **orientativa i guiada**. No és encara una elecció definitiva de framework per a tot el curs ni una instal·lació completa de `Laravel`, `Symfony` o `NestJS`.
+
+El procés que s'espera de l'alumnat és este:
+
+1. Partir del producte definit en `R1S0`: usuari principal, primera acció útil, dades mínimes i risc inicial.
+2. Separar el flux en client i servidor: què fa el navegador, què rep el servidor, què processa el backend i quina resposta torna.
+3. Identificar les peces mínimes de la base tècnica de `R1S2`: `Docker` o equivalent, `PHP`, servidor web, possible base de dades i landing inicial servida pel backend.
+4. Explorar dues o tres opcions tècniques del marc docent. En `R1` poden aparéixer com a referència `PHP` base, `Laravel`, `Symfony` o `NestJS`, però només per entendre avantatges, límits i moment d'entrada.
+5. Tancar una decisió inicial assumible per a `R1S2`: amb què es començarà l'entorn executable i per què.
+6. Escriure una alternativa descartada amb motiu concret.
+7. Registrar un dubte o risc tècnic que es revisarà més avant, especialment abans de l'entrada real a framework en `R3`.
+
+El criteri docent és que `R1S2` ha de poder arrancar amb una base clara i explicable. Si la comparació de frameworks retarda l'entorn executable, cal tallar-la i tornar al mínim comú: `Docker + PHP + servidor web + primera resposta del backend`.
+
+### Preguntes guia per a la decisió
+
+| Pregunta | Resposta esperada |
+|---|---|
+| Quin problema tècnic resol esta opció en el teu producte? | Una necessitat concreta, no una preferència genèrica. |
+| Què et permet fer en `R1S2` sense complicar massa l'arrancada? | Una base executable i comprovable. |
+| Què queda ajornat fins a `R3`? | Framework complet, ORM, arquitectura avançada o itinerari definitiu. |
+| Quina alternativa descartes i per què? | Motiu relacionat amb complexitat, moment del curs, requisits o mantenibilitat. |
+| Quin dubte vols validar més avant? | Un risc real que puga afectar `R2` o l'entrada a framework. |
+
+### Exemple de decisió acceptable
+
+> Començarem en `R1S2` amb una base `Docker + PHP + servidor web`, perquè necessitem entendre i provar una primera resposta del backend abans d'entrar en un framework complet. Hem mirat `Laravel` com a opció futura perquè ens pot ajudar amb rutes, validació i autenticació, però l'ajornem fins que el flux bàsic estiga clar. Descartem començar directament amb `NestJS` en este moment perquè afegiria massa conceptes nous abans de tindre clara la part servidor.
+
+### Exemple de decisió insuficient
+
+> Usarem `Laravel` perquè és el més conegut.
+
+Esta resposta no és suficient perquè no connecta la decisió amb el producte, no explica què passarà en `R1S2`, no descarta cap alternativa amb criteri i no mostra comprensió del model client/servidor.
 
 ## Preparació prèvia del professorat
 
@@ -111,7 +147,7 @@ Resultat del tram: cada equip detecta una confusió, omissió o decisió massa g
 
 L'alumnat tanca una decisió tècnica inicial i una alternativa descartada.
 
-Resultat del tram: la decisió queda escrita amb un motiu relacionat amb el producte i amb el marc del curs.
+Resultat del tram: la decisió queda escrita amb un motiu relacionat amb el producte, amb el marc del curs i amb el que realment s'ha de construir en `R1S2`.
 
 ### 2:40-2:55. Commit i `push` inicial
 
@@ -140,6 +176,7 @@ Pregunta de tancament: què passa exactament al navegador i què passa al servid
 - Comparar de manera breu dues o tres opcions tècniques del marc docent.
 - Tancar una decisió inicial i una alternativa descartada.
 - Registrar un dubte tècnic real.
+- Indicar què queda ajornat fins a `R3` si la decisió parla de framework complet.
 - Fer un primer commit i `push` a `main`.
 
 ## Evidències mínimes
@@ -153,6 +190,7 @@ Pregunta de tancament: què passa exactament al navegador i què passa al servid
 | Exemples del producte | inclou acció de client, acció de servidor i resposta |
 | Decisió tècnica | indica stack inicial i alternativa descartada |
 | Dubte o límit | deixa registrat què encara no està clar |
+| Límit temporal | diferencia què es farà en `R1S2` i què queda per a `R3` |
 
 ## Criteris d'èxit
 
@@ -163,7 +201,8 @@ El microrepte està aconseguit si:
 - l'alumnat pot explicar què passa al navegador i què passa al servidor;
 - la decisió tècnica és coherent amb el curs i amb el pas a `R1M2`;
 - hi ha una alternativa descartada amb motiu;
-- hi ha un dubte tècnic real registrat.
+- hi ha un dubte tècnic real registrat;
+- queda clar que el framework complet, si apareix, no substitueix la base executable de `R1S2`.
 
 ## Què no és suficient
 

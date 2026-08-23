@@ -2,14 +2,14 @@
 
 ## Objectiu
 
-Deixar obert el projecte amb una base executable i un primer punt d'entrada funcional del backend.
+Deixar obert el projecte amb una base executable i una landing inicial servida pel backend.
 
 ## Seqüència base
 
-- `R1M1`: model client/servidor, model d'execució client vs servidor i elecció guiada de stack
-- `R1M2`: base executable amb Docker, PHP, servidor web, BBDD i phpMyAdmin, primer punt d'entrada funcional, documentació tècnica, verificació i checkpoint
+- `R1M1`: model client/servidor, model d'execució client vs servidor i decisió tècnica inicial orientativa
+- `R1M2`: base executable amb Docker, PHP, servidor web, BBDD i phpMyAdmin, landing inicial servida pel backend, documentació tècnica, verificació i checkpoint
 
-Cada microrepte equival a una sessió ordinària de `3` hores. `R1M1` té un pes del `25%` dins del repte i `R1M2` concentra el `75%` restant perquè tanca la base executable, la primera resposta funcional i el checkpoint de pas a `R2`.
+Cada microrepte equival a una sessió ordinària de `3` hores. `R1M1` té un pes del `25%` dins del repte i `R1M2` concentra el `75%` restant perquè tanca la base executable, la primera entrada visible del producte i el checkpoint de pas a `R2`.
 
 ## Has de fer
 
@@ -22,7 +22,8 @@ Cada microrepte equival a una sessió ordinària de `3` hores. `R1M1` té un pes
 - adaptar el model mínim del professorat al teu projecte
 - completar l'entorn amb servei de base de dades i phpMyAdmin
 - registrar una decisió tècnica menuda i una incidència, dubte o bloqueig real
-- crear una ruta, vista, `endpoint` o `healthcheck` simple però funcional
+- crear una landing inicial del producte servida pel backend, amb HTML i CSS senzill
+- usar un `healthcheck` només com a comprovació tècnica auxiliar, si cal
 - crear un directori de documentació dins del repositori
 - penjar les fitxes o documents del repte al repositori
 - crear un índex o pàgina visible que enllace eixa documentació
@@ -37,7 +38,7 @@ Cada microrepte equival a una sessió ordinària de `3` hores. `R1M1` té un pes
 - entorn executable amb `Docker`, `PHP`, servidor web, BBDD i phpMyAdmin
 - explicació de què fa cada servei i què has adaptat respecte del model inicial
 - decisió tècnica curta i incidència o dubte registrat
-- primer punt d'entrada funcional del backend
+- landing inicial servida pel backend
 - directori de documentació amb fitxes o documents del repte
 - índex o pàgina que enllaça la documentació
 - justificació tècnica breu i traçabilitat mínima
@@ -55,7 +56,7 @@ Cada microrepte equival a una sessió ordinària de `3` hores. `R1M1` té un pes
 - ensenya la fitxa i explica què has investigat, què has entés i amb què començaries
 - explica quina part del teu producte s'executa al client i quina al servidor
 - arranca el projecte davant del professorat
-- mostra el punt d'entrada funcional del backend
+- mostra la landing inicial servida pel backend
 - explica què fa `Docker`, què fa `PHP`, què fa el servidor web, què fa la base de dades i per a què uses phpMyAdmin
 - explica què has adaptat respecte del model del professorat
 - ensenya que el `README` permet repetir la prova
@@ -69,12 +70,13 @@ Cada microrepte equival a una sessió ordinària de `3` hores. `R1M1` té un pes
 - justificar tecnologia però no el producte
 - no saber què fa cada component tècnic
 - copiar una configuració completa sense adaptar-la ni comprovar-la
-- no tindre cap punt d'entrada funcional real
+- no tindre cap landing inicial servida pel backend
+- quedar-se només en un `healthcheck`
 - no actualitzar el `README`
 
 ## Si et bloqueges
 
-- reduïx el repte a un únic punt d'entrada funcional
+- reduïx el repte a una landing molt simple del producte
 - simplifica l'entorn fins al mínim que realment arranca
 - revisa la [consulta ràpida de PHP](../alumnat/consulta_tecnica/php_consulta_rapida.md)
 - torna a l'[apunt real de `R1`](../02_reptes/repte_01_kickoff_backend.md)
@@ -83,4 +85,4 @@ Cada microrepte equival a una sessió ordinària de `3` hores. `R1M1` té un pes
 
 - deixa més clar el `README`
 - millora l'onboarding tècnic
-- reforça el punt d'entrada funcional amb una segona resposta simple sense obrir encara el flux complet de `R2`
+- reforça la landing amb una pàgina `Sobre el projecte` o una comprovació tècnica millor, sense obrir encara el flux complet de `R2`

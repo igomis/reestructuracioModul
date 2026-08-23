@@ -11,7 +11,7 @@ Esta comprovació curta servix per decidir si la base inicial del curs ja és pr
 - entorn executable amb `Docker`, `PHP`, servidor web, BBDD i phpMyAdmin
 - adaptació pròpia respecte del model mínim del professorat
 - decisió tècnica curta i incidència, dubte o bloqueig real
-- primer punt d'entrada funcional del backend
+- landing inicial servida pel backend
 - directori de documentació amb les fitxes o documents del repte
 - pàgina o índex visible que enllaça la documentació
 - idea clara de quina operació del domini protegiràs en `R2`
@@ -20,7 +20,7 @@ Esta comprovació curta servix per decidir si la base inicial del curs ja és pr
 
 - obri el repositori i localitza el `README`
 - arranca el projecte
-- mostra el punt d'entrada funcional
+- mostra la landing inicial servida pel backend
 - explica què fa cada component tècnic principal
 - explica què has adaptat i com comproves BBDD i phpMyAdmin
 - mostra on està la documentació del repte dins del repositori
@@ -32,14 +32,14 @@ Esta comprovació curta servix per decidir si la base inicial del curs ja és pr
 - ningú sap explicar què aixeca `Docker` ni què executa `PHP`
 - la base de dades o phpMyAdmin apareixen al fitxer però no es poden comprovar
 - la configuració és una còpia de la demo i no s'ha adaptat al projecte
-- no hi ha cap punt d'entrada funcional real
+- no hi ha cap landing inicial servida pel backend
 - les fitxes del repte estan fora del repositori o no es poden localitzar des d'un índex
 - el grup no sap què passarà en `R2`
 
 ## Acció correctiva ràpida
 
 - congelar canvis de disseny o estructura
-- tancar una sola arrencada reproduïble i un únic punt d'entrada funcional
+- tancar una sola arrencada reproduïble i una landing inicial simple
 - actualitzar `README`
 - no obrir auth fins que `R1` deixe una base funcional de veritat
 

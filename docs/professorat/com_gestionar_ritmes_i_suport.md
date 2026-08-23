@@ -49,7 +49,7 @@ Resposta docent:
 
 ## Mínim funcional exigible per no perdre el fil
 
-- `R1`: repositori usable, `README`, primera peça funcional i primer registre de dades
+- `R1`: repositori usable, `README`, decisió tècnica inicial i landing inicial servida pel backend
 - `R2`: flux protegit o equivalent amb una operació de negoci real
 - `R3`: funcionalitat persistent i arquitectura explicable
 - `R4`: part rellevant del producte exposada com a `API` usable
