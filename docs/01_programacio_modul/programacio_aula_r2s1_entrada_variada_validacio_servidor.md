@@ -15,6 +15,14 @@ Al final de la sessió, cada alumne o parella ha de poder explicar quines dades 
 - **Focus**: formulari mínim amb text, llista/opció i checkbox; recuperació de dades en `PHP`; validació bàsica de servidor; error visible i reenviament corregit
 - **No entra encara**: login, rols, sessió persistent, base de dades com a centre del treball o arquitectura completa
 
+## Frontera amb `R2S2`
+
+`R2S1` ha de tancar una pregunta concreta:
+
+> El servidor rep dades reals del projecte i pot bloquejar un cas incorrecte amb una validació visible?
+
+No cal exigir encara que el formulari conserve tots els valors després de l'error ni que el cas correcte quede guardat funcionalment. Si apareix, pot quedar com a millora, però el criteri de tancament de `R2S1` és recepció, validació i reenviament corregit. La conservació de dades aprofitables i el guardat funcional són el centre de `R2S2`.
+
 ## Relació amb RA i criteris de treball
 
 | Element | Concreció en el microrepte |
@@ -57,10 +65,9 @@ Abans de la sessió convé tindre preparat:
 Exemples d'accions assumibles:
 
 - registrar una incidència amb títol, prioritat i acceptació de condicions;
-- sol·licitar una reserva amb nom, franja horària i confirmació;
-- afegir un producte provisional amb nom, categoria i opció de visibilitat;
-- demanar una cita amb dades de contacte, preferències i acceptació de condicions;
-- crear una proposta amb descripció, tipus i confirmació de requisits.
+- sol·licitar una reserva amb recurs, franja horària i acceptació de condicions;
+- registrar un recurs d'inventari o moviment amb nom, categoria i confirmació;
+- plantejar una acció equivalent d'un projecte propi validat, sempre vinculada al domini real.
 
 ## Controls mínims i ampliacions
 

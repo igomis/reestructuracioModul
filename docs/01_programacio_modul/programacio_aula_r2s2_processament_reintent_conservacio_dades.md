@@ -17,6 +17,17 @@ Al final de la sessió, cada alumne o parella ha de poder demostrar dos camins: 
 - **Focus**: recuperació de dades enviades, tractament en servidor, resposta generada amb valors conservats, error visible, reintent corregit i guardat funcional simple quan l'entrada és correcta
 - **No entra encara**: persistència formal com a centre del treball, base de dades obligatòria, sessió, cookies, login, rols, arquitectura MVC, arrays d'errors com a mínim, checkbox múltiple o fitxers
 
+## Frontera amb `R2S1`
+
+`R2S2` no és “fer un altre formulari”. Ha de partir del flux de `R2S1` i respondre una pregunta nova:
+
+> Què fa el servidor perquè l'usuari puga corregir l'error sense perdre dades útils, i què passa amb la informació quan el cas ja és correcte?
+
+Per tant, la sessió només està ben tancada si es poden demostrar els dos camins:
+
+- cas amb error: formulari regenerat amb dades aprofitables conservades;
+- cas correcte: informació processada i guardada funcionalment amb un mecanisme simple.
+
 ## Relació amb RA i criteris de treball
 
 | Element | Concreció en el microrepte |
