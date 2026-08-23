@@ -28,6 +28,8 @@ Per tant, la sessió només està ben tancada si es poden demostrar els dos cami
 - cas amb error: formulari regenerat amb dades aprofitables conservades;
 - cas correcte: informació processada i guardada funcionalment amb un mecanisme simple.
 
+La sessió també ha de mantindre la dada que farà possible `R2S3`: categoria, franja, prioritat, tipus, quantitat, estat inicial o equivalent. Si eixa dada desapareix en el reintent o se substitueix per un literal fix, el flux queda pobre per a la sessió següent.
+
 ## Relació amb RA i criteris de treball
 
 | Element | Concreció en el microrepte |
@@ -51,6 +53,7 @@ Una evolució del flux de `R2M1` que incloga, com a mínim:
 - processament de l'entrada correcta;
 - guardat funcional simple de la informació correcta;
 - reutilització mínima de la dada guardada, encara que siga en una llista, resum o pantalla posterior;
+- conservació o processament d'almenys una dada classificada que puga alimentar una regla en `R2S3`;
 - nota breu al `README`, issue o registre indicant com provar el cas amb error i el reintent.
 
 La conservació de dades en esta sessió té dos nivells diferents: conservar valors dins del formulari quan hi ha error, i guardar funcionalment la informació correcta quan el formulari ja passa la validació. Cap dels dos nivells obliga encara a una persistència formal o a una base de dades.
@@ -63,6 +66,7 @@ Abans de la sessió convé tindre preparat:
 - un exemple d'error de servidor que torne a mostrar el formulari;
 - una mostra curta de com omplir `value`, `selected` o `checked` amb dades rebudes;
 - una pauta sobre quines dades convé conservar i quines no;
+- una pauta per revisar que la dada candidata a decisió de `R2S3` continua arribant i conservant-se;
 - un mecanisme simple per guardar una entrada correcta;
 - un exemple d'escapament o eixida segura de text abans de tornar-lo a pintar.
 
@@ -78,6 +82,7 @@ Tasques:
 - localitzar on es genera l'error;
 - observar què passa amb les dades ja introduïdes;
 - decidir quines dades té sentit conservar en el reintent.
+- comprovar si la dada candidata per a `R2S3` continua existint en el flux.
 
 Resultat del tram: cada equip sap quin problema d'usabilitat resoldrà en el reintent.
 
@@ -175,6 +180,7 @@ Pregunta de tancament: quines dades conserva el servidor per ajudar l'usuari a c
 - Mostrar un error visible.
 - Corregir només la dada errònia i reenviar.
 - Processar i guardar funcionalment el cas correcte.
+- Mantindre visible o recuperable la dada que pot alimentar una regla posterior.
 - Reutilitzar o mostrar la dada guardada.
 - Documentar com provar el reintent.
 
@@ -189,6 +195,7 @@ Pregunta de tancament: quines dades conserva el servidor per ajudar l'usuari a c
 | Checkbox | es comprova i, si té sentit, es conserva el seu estat |
 | Reintent | l'usuari corregeix només la dada errònia i reenvia |
 | Guardat funcional | el cas correcte es conserva amb un mecanisme simple i explicable |
+| Preparació per a R2S3 | una dada classificada del flux queda disponible per a una regla posterior |
 | Documentació | el repositori explica com provar l'error i el reintent |
 
 ## Criteris d'èxit

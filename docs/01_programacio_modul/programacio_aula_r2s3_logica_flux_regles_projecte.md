@@ -10,6 +10,12 @@ Per evitar que el microrepte quede massa ambigu, `R2M3` demana una forma concret
 
 Al final de la sessio, cada alumne o parella ha de poder dir quina regla aplica el backend, quines dades utilitza, on està implementada i com es veu que el resultat canvia.
 
+## Punt de partida real
+
+`R2S3` no hauria de començar inventant un formulari nou. La decisio ha de nàixer del flux que ja es va orientar en `R2S1` i es va millorar en `R2S2`: una acció vinculada a la landing page i una dada classificada o guardada que ara permet decidir.
+
+Si un equip arriba amb un formulari massa genèric, el primer pas de la sessio és reconduir-lo: identificar l'acció real del producte, ajustar el formulari mínim si cal i només després escriure la regla. Sense eixe pont, la regla quedarà com un exercici d'`if`, arrays o funcions desconnectat del producte.
+
 ## Encaix dins del Repte 2
 
 - **Repte**: `R2. Processament bàsic, estat, autenticació i primera funcionalitat protegida`
@@ -36,6 +42,7 @@ Al final de la sessio, cada alumne o parella ha de poder dir quina regla aplica 
 Una evolucio del flux de `R2M2` que incloga, com a minim:
 
 - una regla escrita en llenguatge natural abans o junt amb el codi;
+- continuïtat amb l'acció triada des de la landing i treballada en `R2M1`;
 - una decisio significativa connectada a dades reals del formulari o del guardat funcional;
 - almenys dos casos de prova amb resultat diferent;
 - un array o estructura equivalent usada amb sentit, per exemple cataleg de valors permesos, llista d'elements, etiquetes, regles, prioritats o missatges;
@@ -97,6 +104,7 @@ El professorat demana executar el cas correcte de `R2M2` i observar quines dades
 
 Tasques:
 
+- comprovar que el flux no ha canviat d'acció respecte de la landing i `R2S1`;
 - identificar una dada del formulari que puga condicionar el comportament;
 - identificar una dada guardada o reutilitzada que puga participar en la decisio;
 - escriure una regla en una frase clara;
@@ -210,6 +218,7 @@ Pregunta de tancament: quina decisio pren ara el servidor que abans no prenia, i
 | Evidencia | Minim acceptable |
 |---|---|
 | Regla del projecte | està escrita en una frase clara i connectada al domini |
+| Continuïtat del flux | la regla ix de l'acció treballada en `R2S1` i `R2S2`, no d'un formulari nou |
 | Dades reals | la decisio usa dades del formulari, del flux o del guardat funcional |
 | Array o estructura | representa opcions, cataleg, llista, regles o elements del producte |
 | Llibreria pròpia | hi ha un fitxer separat de regles o funcions importat pel flux |

@@ -23,6 +23,21 @@ Al final de la sessió, cada alumne o parella ha de poder explicar quines dades 
 
 No cal exigir encara que el formulari conserve tots els valors després de l'error ni que el cas correcte quede guardat funcionalment. Si apareix, pot quedar com a millora, però el criteri de tancament de `R2S1` és recepció, validació i reenviament corregit. La conservació de dades aprofitables i el guardat funcional són el centre de `R2S2`.
 
+## De la landing al formulari
+
+Abans de programar el formulari, cal fer explícita la connexió amb la landing page de `R1`: quin botó, crida a l'acció o promesa del producte obri el flux de `R2`?
+
+La tria no és només estètica. El formulari de `R2S1` ha de deixar alguna dada que permeta prendre una decisió en `R2S3`. No cal implementar encara eixa decisió, però sí evitar formularis genèrics que després obliguen a inventar una regla artificial.
+
+| Projecte | Acció que pot vindre de la landing | Dades mínimes recomanables | Possible decisió futura |
+|---|---|---|---|
+| Gestor d'incidències | Comunicar una incidència | títol, tipus o prioritat, confirmació | prioritat, estat inicial o assignació |
+| Sistema de reserves | Sol·licitar una reserva | recurs, franja, acceptació | confirmable, pendent o rebutjada |
+| Gestor d'inventari | Registrar recurs o moviment | nom, categoria, estat, quantitat o confirmació | disponible, revisar, moviment permés o alerta |
+| Projecte propi validat | Primera acció real del producte | dada oberta, opció tancada i confirmació | classificar, acceptar, rebutjar, prioritzar o assignar |
+
+Si un equip proposa un formulari de contacte, enquesta o dades del client, el professorat hauria de demanar quin efecte tindrà dins del producte. Si no hi ha resposta clara, cal reconduir-lo cap a una acció més pròpia del domini.
+
 ## Relació amb RA i criteris de treball
 
 | Element | Concreció en el microrepte |
@@ -37,9 +52,11 @@ No cal exigir encara que el formulari conserve tots els valors després de l'err
 Un primer flux executable del producte amb un formulari o entrada equivalent que incloga, com a mínim:
 
 - una acció concreta del domini;
+- connexió amb una acció visible o esperable de la landing page;
 - un camp de text o àrea de text;
 - una llista desplegable o selecció equivalent;
 - un checkbox simple amb sentit dins del flux;
+- una dada tancada o classificada que puga alimentar una regla posterior;
 - una validació bàsica en servidor sobre una dada clau o sobre el conjunt mínim;
 - un missatge d'error clar quan el cas no és acceptable;
 - un reenviament corregit que deixe continuar el flux;
@@ -60,6 +77,7 @@ Abans de la sessió convé tindre preparat:
 - una variant curta amb `enctype="multipart/form-data"` només per mostrar fitxers si el grup va ràpid, sense exigir-ho al mínim;
 - un error controlat per a text buit o llista sense selecció;
 - una pauta curta per ajudar l'alumnat a triar una acció real del seu producte;
+- una pauta curta per comprovar que el formulari deixa una dada útil per a una decisió posterior;
 - el criteri de tancament: no es passa a processament ni guardat si no hi ha validació visible en servidor.
 
 Exemples d'accions assumibles:
@@ -88,11 +106,13 @@ El professorat recorda que `R2` no comença per autenticació. Primer cal una en
 Tasques:
 
 - recuperar el punt d'entrada creat en `R1`;
+- identificar quin botó, enllaç o promesa de la landing obri el flux;
 - triar una acció concreta del producte;
 - decidir els controls mínims: text, llista o opció tancada i checkbox;
+- assenyalar quina dada podria servir per a una decisió posterior en `R2S3`;
 - escriure quina dada aporta cada control al flux.
 
-Resultat del tram: cada equip té una acció i un conjunt mínim de controls identificats.
+Resultat del tram: cada equip té una acció vinculada a la landing, un conjunt mínim de controls i una dada candidata per a una regla futura.
 
 ### 0:15-0:45. Modelatge docent
 
@@ -187,6 +207,7 @@ Pregunta de tancament: què passa exactament quan falta la dada que has decidit 
 ## Tasques concretes de l'alumnat
 
 - Triar una acció real del seu producte.
+- Connectar-la amb la landing page i amb una decisió futura possible.
 - Crear o adaptar un formulari amb controls diversos.
 - Recuperar dades de text, llista i checkbox en `PHP`.
 - Validar en servidor almenys una dada clau amb una condició simple.
@@ -198,7 +219,9 @@ Pregunta de tancament: què passa exactament quan falta la dada que has decidit 
 
 | Evidència | Mínim acceptable |
 |---|---|
-| Formulari o entrada | envia una petició real amb controls diversos |
+| Formulari o entrada | envia una petició real amb controls diversos i naix d'una acció del producte |
+| Connexió amb landing | es pot explicar quin botó, enllaç o promesa obri el flux |
+| Dada per a decisió | hi ha una opció, categoria, prioritat, franja, estat o dada semblant que podrà alimentar R2S3 |
 | Recuperació de dades | el codi mostra on es llig text, select/radio i checkbox |
 | Validació | una dada clau té una regla simple en servidor |
 | Error visible | el cas incorrecte queda bloquejat amb missatge concret |
@@ -211,6 +234,7 @@ Pregunta de tancament: què passa exactament quan falta la dada que has decidit 
 El microrepte està aconseguit si:
 
 - el formulari no és decoratiu;
+- el formulari no és genèric ni desconnectat de la landing;
 - hi ha més d'un tipus de control treballat;
 - la validació no depén només del navegador;
 - hi ha almenys una condició de servidor que bloqueja un cas incorrecte;

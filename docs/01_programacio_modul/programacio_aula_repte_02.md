@@ -26,9 +26,9 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 
 | Sessió | Duració | Microprojecte | Focus principal | Evidència clau |
 |---|---:|---|---|---|
-| `1` | `3h` | `R2M1` | entrada variada i validació de servidor | dades recuperades de controls diversos, errors clars i reintent |
+| `1` | `3h` | `R2M1` | entrada variada i validació de servidor | formulari nascut de la landing, dades recuperades de controls diversos, errors clars i reintent |
 | `2` | `3h` | `R2M2` | processament, reintent i guardat funcional | formulari amb error que conserva dades i cas correcte guardat funcionalment |
-| `3` | `3h` | `R2M3` | lògica del flux i regles del projecte | decisió, estructura o funció amb efecte visible |
+| `3` | `3h` | `R2M3` | lògica del flux i regles del projecte | decisió sobre dades preparades en R2S1/R2S2, estructura o funció amb efecte visible |
 | `4` | `3h` | `R2M4` | estat, sessió i/o cookies | recuperació del flux i invalidació controlada |
 | `5` | `3h` | `R2M5` | autenticació i funcionalitat protegida | cas autoritzat i cas denegat d'una operació real |
 | `6` | `3h` | `R2M6` | mini API d'autenticació per a client | `POST /api/login`, ruta protegida, `JSON`, `200` i `401` |
@@ -44,9 +44,9 @@ Esta taula és el mapa mínim de traçabilitat docent del repte. No substituïx 
 
 | Sessió | RA avaluat | CA avaluats | RA de context | Què s'aprén | Evidència mínima | Verificació docent |
 |---|---|---|---|---|---|---|
-| `1` | `RA2` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d` | `RA3.e`, `RA3.f`, `RA3.g` | entrada de dades variades, recuperació en servidor i validació visible | formulari amb text, llista, checkbox i, si escau, fitxer, amb error i reintent corregit | execució en directe i pregunta sobre d'on ix cada dada, com arriba al servidor i com es valida |
+| `1` | `RA2` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d` | `RA3.e`, `RA3.f`, `RA3.g` | entrada de dades variades, recuperació en servidor i validació visible | formulari connectat amb la landing, amb text, llista, checkbox i una dada candidata per a decisió posterior | execució en directe i pregunta sobre d'on ix cada dada, com arriba al servidor, com es valida i quin paper podria tindre després |
 | `2` | `RA2` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d`, `RA2.e`, `RA2.f`, `RA2.g`, `RA2.h` | `RA3.e`, `RA3.f`, `RA3.g` | generació de resposta, variables, operadors, àmbits, reintent amb dades conservades i guardat funcional simple | formulari regenerat amb dades aprofitables després d'un error, reenviament corregit i cas correcte guardat | canvi menut en viu sobre un valor conservat o guardat i explicació d'on es rep, es tracta i es torna a usar |
-| `3` | `RA3` | `RA3.a`, `RA3.b`, `RA3.c`, `RA3.d` | - | decisions, arrays, funcions i regles de domini aplicades | regla amb dos resultats observables i funció o estructura útil | microcanvi en una condició o funció i explicació de per què no és ornamental |
+| `3` | `RA3` | `RA3.a`, `RA3.b`, `RA3.c`, `RA3.d` | - | decisions, arrays, funcions i regles de domini aplicades | regla amb dos resultats observables sobre dades del flux i funció o estructura útil | microcanvi en una condició o funció i explicació de per què no és ornamental |
 | `4` | `RA4` | `RA4.a`, `RA4.b`, `RA4.c` | - | estat temporal, sessió, cookies i invalidació | recuperació d'estat i neteja o caducitat demostrada | execució de recuperació i invalidació, més pregunta sobre què queda en client, servidor o flux funcional |
 | `5` | `RA4` | `RA4.d`, `RA4.e` | - | identificació, autenticació, autorització i protecció d'una operació real | cas autenticat permés i cas no permés sobre una acció del domini | demo dels dos casos i pregunta sobre el punt exacte on es comprova la restricció |
 | `6` | `RA4` | `RA4.d`, `RA4.e` | pont DWEC | mini API d'autenticació consumible des de client | login API, ruta protegida, `JSON`, `200`, `401` i prova externa | execució de `POST /api/login`, `GET /api/me` i cas `401` |
@@ -93,13 +93,14 @@ Obrir el punt d'entrada de dades del producte i deixar clar què arriba al servi
 Focus en `RA2` i `RA3`: recepció de dades de formulari o entrada equivalent amb text, llistes, checkbox i fitxers quan tinga sentit, validació de servidor, resposta amb errors visibles i reintent corregit.
 
 #### Producte o microresultat esperat
-Formulari funcional o entrada equivalent del domini, amb controls diversos, validació de servidor per tipus de dada, missatges d'error útils i un reenviament correcte.
+Formulari funcional o entrada equivalent del domini, nascut d'una acció esperable de la landing, amb controls diversos, validació de servidor per tipus de dada, missatges d'error útils i un reenviament correcte.
 
 #### Seqüència temporal orientativa dins de les 3 hores
 
 ##### 0:00-0:20 — Obertura del flux de `R2`
 - recordar la funcionalitat inicial prevista al final de `R1`
-- concretar quina acció real del domini entrarà per formulari
+- concretar quina acció real del domini entrarà per formulari i des de quin punt de la landing naix
+- identificar una dada tancada o classificada que podrà alimentar una decisió posterior
 - aclarir que esta sessió encara no comença per autenticació
 
 ##### 0:20-0:45 — Modelatge docent
@@ -138,6 +139,7 @@ Formulari funcional o entrada equivalent del domini, amb controls diversos, vali
 
 #### Tasques concretes de l'alumnat
 - concretar l'acció del domini que s'enviarà al servidor
+- relacionar-la amb la landing i amb una decisió futura possible
 - crear o adaptar el formulari
 - recuperar dades de text, llista i checkbox en `PHP`
 - validar cada tipus de dada en servidor
