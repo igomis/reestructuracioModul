@@ -67,7 +67,7 @@ Criteri pràctic:
 
 - enunciat base del projecte i criteri general del curs
 - fitxa del Repte `1` i materials de sessió de les primeres setmanes
-- guies comunes de Git/GitHub, `README`, `ADR` o equivalent i ús verificable de la IA
+- guies comunes de Git/GitHub, `README`, nota tècnica de decisió o equivalent i ús verificable de la IA
 - fulls de treball base, mini briefings i checkpoints curts d'aula
 - sistema d'evidències, rúbrica base i criteri de defensa individual
 - apunt real i materials contextualitzats del repte que s'obri en cada canvi de tram

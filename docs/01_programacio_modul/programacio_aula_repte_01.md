@@ -120,7 +120,7 @@ La IA pot ajudar a comparar opcions i aclarir conceptes, però la fitxa ha d'est
 
 ### Ampliació per a alumnat avançat
 
-- Afegir una mini ADR de decisió tècnica.
+- Afegir una nota tècnica breu de decisió.
 - Comparar la mateixa funcionalitat en `PHP` pla i en un framework.
 - Explicar què canviaria si el client fora una app mòbil.
 
@@ -205,7 +205,7 @@ Un repositori que permeta:
 - Landing inicial servida pel backend o error documentat amb pla de correcció.
 - Evidència de prova: URL, captura, log o demo.
 - Documentació localitzable dins del repositori.
-- Justificació tècnica curta o ADR inicial.
+- Justificació tècnica curta o nota tècnica de decisió inicial.
 - AI log quan hi haja ús rellevant d'IA.
 
 ### Criteris d'èxit
@@ -238,7 +238,7 @@ La IA pot ajudar a diagnosticar errors de configuració, explicar logs o revisar
 
 ### Ampliació per a alumnat avançat
 
-- Afegir una ADR inicial sobre l'estructura triada.
+- Afegir una nota tècnica de decisió inicial sobre l'estructura triada.
 - Incorporar una prova manual documentada més completa.
 - Afegir una pàgina `Sobre el projecte` o una navegació mínima entre dos pàgines.
 - Preparar un endpoint d'estat que mostre versió o configuració no sensible.
@@ -252,7 +252,7 @@ La IA pot ajudar a diagnosticar errors de configuració, explicar logs o revisar
 - [ ] El `healthcheck`, si existeix, no és l'única entrega.
 - [ ] El README permet arrancar, parar i comprovar.
 - [ ] La documentació de `R1` està dins del repositori.
-- [ ] Hi ha decisió tècnica o ADR curta.
+- [ ] Hi ha decisió tècnica o nota tècnica breu.
 - [ ] L'alumnat pot fer una defensa breu.
 
 ### Connexió amb el microrepte posterior
@@ -269,7 +269,7 @@ La IA pot ajudar a diagnosticar errors de configuració, explicar logs o revisar
 - README executable.
 - Landing inicial servida pel backend.
 - Documentació localitzable dins del repositori.
-- Justificació tècnica breu o ADR inicial.
+- Justificació tècnica breu o nota tècnica de decisió inicial.
 - AI log quan hi haja ús rellevant d'IA.
 - Defensa tècnica breu o checkpoint.
 

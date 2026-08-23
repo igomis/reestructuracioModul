@@ -45,20 +45,20 @@ Lectura docent:
 
 ## Duració recomanada
 
-El document del repte situa `R3` en una duració orientativa de `7` a `9` sessions.
+El document del repte situa `R3` en una duració orientativa de `10` sessions obligatòries si es compta la transició, el taller de portabilitat i la microdefensa.
 
 Opció docent preferent:
 
-- `9` sessions de `3` hores, incloent el taller `R3S2B`
-- `24` hores aproximades
+- `10` sessions de `3` hores, incloent `R3S0`, el taller `R3S2B` i la microdefensa `R3SX`
+- `30` hores aproximades
 - `4` setmanes de treball en el model de `6` hores setmanals
 - inici al final de l'avaluació 1
 - tancament a l'inici de l'avaluació 2
 
 Compactació possible:
 
-- `8` sessions si el grup arriba amb `R2` molt sòlid i l'stack no introdueix fricció significativa.
-- no convé compactar per davall de `8` sessions perquè desapareix la verificació real de Docker, BBDD, migracions o equivalent, càrrega inicial, dos fluxos, protecció d'accessos i proves.
+- no convé compactar eliminant `R3S2B`, perquè és la sessió que assegura portabilitat i comprensió real entre stacks.
+- si cal ajustar ritme, es reduïx l'abast dels fluxos o es concentra la microdefensa, però no s'elimina el contrast de frameworks.
 
 Si cal reduir abast, es redueix la mida dels fluxos, no els mínims: Docker, projecte arrancable, BBDD real, migracions o equivalent, dades inicials reproduïbles, `2` casos d'ús, autenticació/autorització mínima, validació, errors, proves i README.
 

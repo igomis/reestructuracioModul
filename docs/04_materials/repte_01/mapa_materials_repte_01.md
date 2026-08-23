@@ -13,7 +13,7 @@ Este mapa indica quines peces convé obrir per conduir `R1` en aula i en quin es
 ## Mapa curt per sessions
 
 - Sessió `1` / `R1M1`: [fitxa general del repte](../../02_reptes/repte_01_kickoff_backend.md), [presentació 01](../../07_presentacions/presentacio_01_repte_1.md), [orientacions docents](orientacions_docents_repte_01.md), [briefing inicial](../../08_materials_compartibles/briefing_inicial_curs.md) i [PHP consulta ràpida](../../alumnat/consulta_tecnica/php_consulta_rapida.md)
-- Sessió `2` / `R1M2`: [programació d'aula del Repte 1](../../01_programacio_modul/programacio_aula_repte_01.md), [materials de sessió](../materials_aula/repte_01_materials_sessio.md), [full de treball del Repte 1](../../08_materials_compartibles/full_treball_repte_01.md), [guia README i ADR](../materials_comuns/guia_readme_i_adr.md), [guia testing i debugging](../materials_comuns/guia_testing_i_debugging.md), [guió breu de defensa individual](../../08_materials_compartibles/guio_defensa_individual_breu.md) i [checkpoint inicial `R1 -> R2`](../../08_materials_compartibles/checkpoint_inicial_r1_r2.md)
+- Sessió `2` / `R1M2`: [programació d'aula del Repte 1](../../01_programacio_modul/programacio_aula_repte_01.md), [materials de sessió](../materials_aula/repte_01_materials_sessio.md), [full de treball del Repte 1](../../08_materials_compartibles/full_treball_repte_01.md), [guia README i nota tècnica de decisió](../materials_comuns/guia_readme_i_adr.md), [guia testing i debugging](../materials_comuns/guia_testing_i_debugging.md), [guió breu de defensa individual](../../08_materials_compartibles/guio_defensa_individual_breu.md) i [checkpoint inicial `R1 -> R2`](../../08_materials_compartibles/checkpoint_inicial_r1_r2.md)
 
 ## Materials imprescindibles
 
@@ -28,7 +28,7 @@ Este mapa indica quines peces convé obrir per conduir `R1` en aula i en quin es
 
 - [Briefing inicial del curs](../../08_materials_compartibles/briefing_inicial_curs.md): `ja existix` i convé reutilitzar-lo per obrir el marc del curs.
 - [Guia Git i flux de treball](../materials_comuns/guia_git_i_flux_treball.md): `ja existix` i es reutilitza com a suport de traçabilitat, no com a curs inicial de Git.
-- [Guia README i ADR](../materials_comuns/guia_readme_i_adr.md): `ja existix` i s'ha de reutilitzar perquè el `README` no quede com a apèndix final.
+- [Guia README i nota tècnica de decisió](../materials_comuns/guia_readme_i_adr.md): `ja existix` i s'ha de reutilitzar perquè el `README` no quede com a apèndix final.
 - [Guia d'ús verificable de la IA](../materials_comuns/guia_ús_verificable_ia.md): `ja existix` i reforça el criteri d'ús acceptable de la IA des del primer repte.
 - [Guia testing i debugging](../materials_comuns/guia_testing_i_debugging.md): `ja existix` i convé activar-la al tram final de `R1`.
 - [Apunt real del Repte 1](../apunts_reals/repte_01_kickoff_backend.md): `ja existix` i es reutilitza com a peça de consulta llarga o de preparació docent.

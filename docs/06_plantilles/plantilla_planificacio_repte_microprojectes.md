@@ -151,7 +151,7 @@ La idea no és fragmentar el repte en activitats desconnectades, sinó fer traç
 - [Codi]
 - [Document curt]
 - [Taula comparativa]
-- [ADR]
+- [nota tècnica de decisió]
 - [Casos de prova]
 - [Issue]
 - [Commits]
@@ -359,7 +359,7 @@ La idea no és fragmentar el repte en activitats desconnectades, sinó fer traç
 | Risc | Com es manifesta | Impacte | Mesura de control |
 |---|---|---|---|
 | Delegació excessiva | Codi no entés o no defensable | Alt | Defensa i modificació en directe |
-| Comparativa superficial | Decisions no justificades | Mitjà | ADR i preguntes de contrast |
+| Comparativa superficial | Decisions no justificades | Mitjà | nota tècnica de decisió i preguntes de contrast |
 | Proves fictícies | S’afirma que funciona però no es demostra | Alt | Execució real i casos de prova |
 | Documentació fabricada | README incoherent amb el producte | Mitjà | Revisió creuada amb demo |
 | Historial pobre | Sense traçabilitat del procés | Mitjà | Revisió de commits i issues |

@@ -24,7 +24,7 @@ Al final de la sessió, cada alumne o parella ha de poder ensenyar un entorn exe
 | `RA1d` | configuració mínima de l'entorn de desenvolupament |
 | `RA1e` | verificació del funcionament amb URL, log, captura o demo |
 | `RA1f` | documentació de passos reals d'arrencada i parada |
-| `RA1g` | justificació tècnica curta o ADR inicial |
+| `RA1g` | justificació tècnica curta o nota tècnica de decisió inicial |
 | Evidència central | repositori executable amb landing inicial servida pel backend i README reproduïble |
 | Verificació docent | demo curta, pregunta tècnica i revisió del README |
 
@@ -189,7 +189,7 @@ Frase guia: "No afegis funcionalitat de R2 fins que pugues arrancar, obrir i exp
 
 ## Ampliació per a alumnat avançat
 
-- Afegir una ADR inicial sobre l'estructura triada.
+- Afegir una nota tècnica de decisió inicial sobre l'estructura triada.
 - Incorporar una prova manual documentada més completa.
 - Afegir una pàgina `Sobre el projecte` o una navegació mínima entre dos pàgines.
 - Preparar un endpoint d'estat que mostre versió o configuració no sensible.
@@ -203,7 +203,7 @@ Frase guia: "No afegis funcionalitat de R2 fins que pugues arrancar, obrir i exp
 - [ ] El `healthcheck`, si existeix, és només comprovació tècnica.
 - [ ] El README permet arrancar, parar i comprovar.
 - [ ] La documentació de `R1` està dins del repositori.
-- [ ] Hi ha decisió tècnica o ADR curta.
+- [ ] Hi ha decisió tècnica o nota tècnica breu.
 - [ ] L'alumnat pot fer una defensa breu.
 
 ## Connexió amb el microrepte posterior

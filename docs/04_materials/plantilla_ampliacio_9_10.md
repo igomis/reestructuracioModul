@@ -48,7 +48,7 @@ La IA es pot usar com a suport de contrast, revisió o proposta, però l’alumn
 ## Evidències recomanades
 
 - commit rellevant comentat
-- ADR o justificació tècnica breu
+- nota tècnica de decisió o justificació tècnica breu
 - comparativa entre enfocaments o implementacions si aporta criteri
 - registre d'errors detectats i corregits
 - `README` tècnic centrat en decisions quan l'ampliació afecta l'operació del repte

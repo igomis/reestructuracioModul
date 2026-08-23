@@ -31,7 +31,7 @@ Este paquet agrupa les peces que el professorat necessita per obrir, conduir i t
 ## Què convé reservar com a suport de consulta
 
 - [Apunt real del Repte 1](../04_materials/apunts_reals/repte_01_kickoff_backend.md)
-- [Guia README i ADR](../04_materials/materials_comuns/guia_readme_i_adr.md)
+- [Guia README i nota tècnica de decisió](../04_materials/materials_comuns/guia_readme_i_adr.md)
 - [Guia Git i flux de treball](../04_materials/materials_comuns/guia_git_i_flux_treball.md)
 - [Guia d'ús verificable de la IA](../04_materials/materials_comuns/guia_ús_verificable_ia.md)
 - [Consulta ràpida de PHP](../alumnat/consulta_tecnica/php_consulta_rapida.md)
@@ -40,7 +40,7 @@ Este paquet agrupa les peces que el professorat necessita per obrir, conduir i t
 ## Seqüència recomanada d'ús
 
 1. Sessió `1`: obrir el repte amb el [briefing inicial](../08_materials_compartibles/briefing_inicial_curs.md), la [fitxa breu d'exploració tècnica inicial](../08_materials_compartibles/fitxa_exploracio_tecnica_inicial.md), la [presentació 01](../07_presentacions/presentacio_01_repte_1.md), les [orientacions docents](../04_materials/repte_01/orientacions_docents_repte_01.md) i l'inici de l'entorn executable.
-2. Sessió `2`: tancar l'entorn, construir la landing inicial servida pel backend i documentar el repte amb la [programació d'aula del Repte 1](../01_programacio_modul/programacio_aula_repte_01.md), els [materials de sessió](../04_materials/materials_aula/repte_01_materials_sessio.md), el [full de treball del Repte 1](../08_materials_compartibles/full_treball_repte_01.md), la [guia README i ADR](../04_materials/materials_comuns/guia_readme_i_adr.md) i el [checkpoint inicial `R1 -> R2`](../08_materials_compartibles/checkpoint_inicial_r1_r2.md).
+2. Sessió `2`: tancar l'entorn, construir la landing inicial servida pel backend i documentar el repte amb la [programació d'aula del Repte 1](../01_programacio_modul/programacio_aula_repte_01.md), els [materials de sessió](../04_materials/materials_aula/repte_01_materials_sessio.md), el [full de treball del Repte 1](../08_materials_compartibles/full_treball_repte_01.md), la [guia README i nota tècnica de decisió](../04_materials/materials_comuns/guia_readme_i_adr.md) i el [checkpoint inicial `R1 -> R2`](../08_materials_compartibles/checkpoint_inicial_r1_r2.md).
 3. Sessió `3` opcional: activar la [guia testing i debugging](../04_materials/materials_comuns/guia_testing_i_debugging.md) i el [guió breu de defensa individual](../08_materials_compartibles/guio_defensa_individual_breu.md) si cal una defensa formal, execució seguint README, revisió de traçabilitat o microcanvis en viu.
 
 ## Què s'usa per checkpoint i tancament

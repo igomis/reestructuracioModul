@@ -47,7 +47,7 @@ Repte o fase associada:
 Activitats d'aula:
 
 - presentar el projecte base del curs, els dominis admesos i la lògica del treball per reptes
-- revisar criteris de repositori, commits, `README`, `ADR`, proves i `AI log`
+- revisar criteris de repositori, commits, `README`, nota tècnica de decisió, proves i `AI log`
 - comprovar que cada equip partix d'una base prèvia usable en Git/GitHub i la reorienta a criteri professional
 
 Materials activats:
@@ -98,7 +98,7 @@ Evidències esperades:
 
 - entorn funcional
 - decisió de domini i base comuna assumida
-- ADR inicial o registre equivalent
+- nota tècnica de decisió inicial o registre equivalent
 - traça de primers artefactes tècnics estables
 
 Instrument principal:

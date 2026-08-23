@@ -16,7 +16,7 @@ Este document relaciona els resultats d’aprenentatge (RA) del mòdul DWES amb 
 
 | RA | Descripció resumida | Reptes on es treballa | Pes principal / transversal | Evidències principals | Instruments d’avaluació | Materials actuals associats |
 |---|---|---|---|---|---|---|
-| RA1 | Selecciona arquitectura i configura l’entorn de desenvolupament backend. | Repte 1 (principal) | Principal en R1 | ADR inicial, repositori base funcional, README tècnic de kickoff | Rúbrica de repte, checklist de repositori, defensa tècnica curta | Bloc 1 (arquitectures web) |
+| RA1 | Selecciona arquitectura i configura l’entorn de desenvolupament backend. | Repte 1 (principal) | Principal en R1 | nota tècnica de decisió inicial, repositori base funcional, README tècnic de kickoff | Rúbrica de repte, checklist de repositori, defensa tècnica curta | Bloc 1 (arquitectures web) |
 | RA2 | Desenvolupa lògica de servidor per a processar peticions i formularis. | Repte 2 (principal) | Principal en R2 | Codi servidor integrat amb marques, variables i operadors, formularis processats, resposta generada en servidor | Rúbrica de repte, revisió de codi, proves funcionals | Bloc 2 (PHP) |
 | RA3 | Implementa gestió d’estat, sessions i autenticació d’usuaris. | Repte 2 (principal) | Principal en R2 | Flux complet registre/login/logout, control de sessió, incidències resoltes | Rúbrica de repte, checklist de seguretat, defensa tècnica | Bloc 2 (PHP) |
 | RA4 | Construeix funcionalitat web dinàmica orientada a necessitats reals. | Repte 2 (principal) | Principal en R2 | Històries d’usuari operatives, evidències d’execució, documentació de comportament | Rúbrica de repte, validació en directe, seguiment d’issues | Bloc 2 (PHP) |

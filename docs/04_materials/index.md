@@ -62,7 +62,7 @@ Ja no hi ha tres entrades principals paral·leles per a materials. Si una peça 
 ## Materials comuns i IA
 
 - [Guia Git i flux de treball](materials_comuns/guia_git_i_flux_treball.md)
-- [Guia README i ADR](materials_comuns/guia_readme_i_adr.md)
+- [Guia README i nota tècnica de decisió](materials_comuns/guia_readme_i_adr.md)
 - [Guia testing i debugging](materials_comuns/guia_testing_i_debugging.md)
 - [Guia d'ús verificable de la IA](materials_comuns/guia_ús_verificable_ia.md)
 

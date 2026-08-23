@@ -17,7 +17,7 @@ Este repte no consistix a triar tecnologia ni a crear un esquelet buit. El que s
 - té base prèvia de treball amb Git/GitHub
 - coneix conceptes generals de desenvolupament web i estructura de projecte
 - pot seguir una guia de posada en marxa si l'objectiu funcional està ben acotat
-- ja entén que el curs treballa amb evidències, `README`, `ADR`, traçabilitat i `AI log`
+- ja entén que el curs treballa amb evidències, `README`, nota tècnica de decisió, traçabilitat i `AI log`
 
 ## Què s'ha de recordar breument
 
@@ -36,7 +36,7 @@ Este repte no consistix a triar tecnologia ni a crear un esquelet buit. El que s
 ## Què s'ha de modelar en directe
 
 - una posada en marxa mínima del repositori i de l'estructura del projecte
-- una decisió tècnica inicial breu registrada al `README` o a un `ADR`
+- una decisió tècnica inicial breu registrada al `README` o en una nota tècnica de decisió
 - una arrencada real amb `Docker`, `PHP` i servidor web
 - una landing inicial del producte servida pel backend
 - un `healthcheck` només com a comprovació tècnica auxiliar, si cal
@@ -49,7 +49,7 @@ Este repte no consistix a triar tecnologia ni a crear un esquelet buit. El que s
 - preparar repositori, estructura mínima i convencions bàsiques de treball
 - implementar la primera peça funcional d'entrada al producte
 - verificar l'arrencada i deixar evidències clares de funcionament
-- actualitzar `README`, `ADR` i `AI log` si hi ha ús d'IA
+- actualitzar `README`, nota tècnica de decisió i `AI log` si hi ha ús d'IA
 
 ## Exemple mínim orientatiu
 

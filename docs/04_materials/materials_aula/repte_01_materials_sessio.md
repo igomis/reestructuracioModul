@@ -57,7 +57,7 @@ Contextualitzar les plantilles d'aula del curs per al `R1` amb `2` microreptes, 
 - Tasca: concretar producte, paper del servidor i completar la [fitxa breu d'exploració tècnica inicial](../../08_materials_compartibles/fitxa_exploracio_tecnica_inicial.md) amb tecnologies identificades, opcions explorades, primera decisió orientativa i dubtes detectats.
 - Evidència a generar: fitxa breu d'exploració tècnica inicial.
 - Validació mínima: una altra persona entén què farà el backend, quines tecnologies heu identificat i per què la base triada és assumible.
-- Ajuda si et bloqueges: torna al briefing inicial i a la guia `README`/`ADR`.
+- Ajuda si et bloqueges: torna al briefing inicial i a la guia `README`/nota tècnica de decisió.
 - Ampliació si acabes prompte: documenta una alternativa descartada amb un trade-off curt.
 
 ### Full 2. R1M2. Entorn executable, landing inicial i tancament

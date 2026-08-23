@@ -21,7 +21,7 @@ Este document completa la calendarització orientativa d'aula. La calendaritzaci
 | Fase | Evidències principals | Instrument principal | Instrument secundari | Punt crític de verificació |
 |---|---|---|---|---|
 | **Fase 0. Arrancada i marc comú** | repositori creat, estructura mínima, primer `README`, criteri de commits, AI log assumit | `checklist_revisio_repo.md` | `sistema_evidencies.md`, `plantilla_ai_log.md` | verificar que el grup usa Git/GitHub com a traçabilitat professional i no com a simple còpia de seguretat |
-| **Fase 1. Kickoff tècnic** | entorn funcional, domini triat, ADR inicial, primera decisió tècnica, primers commits útils | `rubrica_base_reptes.md` | `checklist_revisio_repo.md`, `plantilla_ai_log.md` | evitar que el kickoff quede en infraestructura sense producte ni justificació tècnica |
+| **Fase 1. Kickoff tècnic** | entorn funcional, domini triat, nota tècnica de decisió inicial, primera decisió tècnica, primers commits útils | `rubrica_base_reptes.md` | `checklist_revisio_repo.md`, `plantilla_ai_log.md` | evitar que el kickoff quede en infraestructura sense producte ni justificació tècnica |
 | **Fase 2. Base funcional del producte** | registre/login/logout, accés protegit, validacions mínimes, errors controlats, proves bàsiques sobre base comuna en `PHP` | `rubrica_base_reptes.md` | checklist del Repte 2, `plantilla_ai_log.md` | comprovar que la funcionalitat és real, reproduïble i no una demo puntual |
 | **Fase 3. Arquitectura i persistència** | arquitectura per capes o equivalent, persistència coherent, model de dades, proves de regressió amb entrada de framework | `rubrica_base_reptes.md` | checklist del Repte 3, `plantilla_ai_log.md` | no obrir API sense base persistent i mantenible suficient |
 | **Fase 4. Publicació i consum d'API** | endpoints clau, contracte API, documentació d'endpoints, col·lecció de proves, consum verificat | `rubrica_base_reptes.md` | checklist del Repte 4, `checklist_revisio_repo.md` | assegurar coherència entre contracte, proves, errors i documentació real |
@@ -57,7 +57,7 @@ Evidències principals:
 
 - entorn funcional del backend
 - domini triat i primera decisió tècnica explicable
-- ADR inicial o registre equivalent
+- nota tècnica de decisió inicial o registre equivalent
 - primers artefactes de projecte alineats amb l'encàrrec base del curs
 
 Instrument principal:
@@ -167,7 +167,7 @@ Punt crític de verificació:
 Independentment de la fase, s'han de mantindre actives estes evidències:
 
 - repositori i historial de commits
-- documentació tècnica (`README`, ADR o equivalent)
+- documentació tècnica (`README`, nota tècnica de decisió o equivalent)
 - proves i registre de debugging o validació
 - AI log quan hi haja ús de la IA
 - defensa tècnica del treball realitzat
@@ -201,7 +201,7 @@ Esta matriu s'ha de llegir conjuntament amb `docs/01_programacio_modul/calendari
 |---|---|---|
 | avançar de fase sense evidència suficient | el calendari avança però el repositori i les proves no acompanyen | retardar la fase següent i exigir tancament mínim amb instrument principal i secundari |
 | revisar només demos finals | hi ha presentació però poca traça de procés | tornar al repositori, `README`, proves i AI log com a base de revisió |
-| infraavaluar la documentació | el codi avança però les instruccions no reflectixen l'estat real | revisar `README`, ADR i contractes API en el tancament de cada fase |
+| infraavaluar la documentació | el codi avança però les instruccions no reflectixen l'estat real | revisar `README`, nota tècnica de decisió i contractes API en el tancament de cada fase |
 | ús opac de la IA | el resultat sembla correcte però no es pot explicar ni justificar | exigir AI log, prova posterior i preguntes de contrast |
 | desigualtat entre itineraris | la stack triada canvia el nivell d'exigència percebut | aplicar la mateixa matriu d'evidències i instruments a `Laravel`, `Symfony` i `NestJS`, i només obrir `FastAPI` si hi ha marc docent clar |
 

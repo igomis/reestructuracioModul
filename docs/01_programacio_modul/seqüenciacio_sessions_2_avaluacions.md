@@ -41,8 +41,8 @@ La seqüència es calibra sobre un escenari d'unes `20` setmanes, `6` hores setm
 | Sessió | Objectiu | Activitats | Materials activats | Evidències esperades | Instrument de seguiment | Punt crític |
 |---|---|---|---|---|---|---|
 | **Sessió 1** | obrir el marc comú del curs | presentar el projecte base, dominis admesos, criteris de treball per reptes i sistema d'evidències | materials comuns, projecte base, sistema d'evidències | repositori creat, estructura mínima, criteris compartits | `checklist_revisio_repo.md` | evitar un inici només expositiu sense activació real del repositori |
-| **Sessió 2** | normalitzar traçabilitat i documentació base | revisar criteri de commits, `README`, `ADR`, proves i `AI log`; repàs de Git/GitHub com a metodologia | materials comuns | primer `README`, primers commits útils, criteri d'ús de IA explicitat | `checklist_revisio_repo.md` | comprovar que Git/GitHub no es tracta com a introducció bàsica ni com a simple còpia de seguretat |
-| **Sessió 3** | concretar domini i decisió tècnica inicial | triar domini, casos d'ús bàsics i primera decisió d'arquitectura | fitxa del Repte 1, enunciat base, model d'itineraris | domini triat, ADR inicial o equivalent, orientació tècnica clara | `rubrica_base_reptes.md` | evitar que el domini es trie sense impacte real en el producte |
+| **Sessió 2** | normalitzar traçabilitat i documentació base | revisar criteri de commits, `README`, nota tècnica de decisió, proves i `AI log`; repàs de Git/GitHub com a metodologia | materials comuns | primer `README`, primers commits útils, criteri d'ús de IA explicitat | `checklist_revisio_repo.md` | comprovar que Git/GitHub no es tracta com a introducció bàsica ni com a simple còpia de seguretat |
+| **Sessió 3** | concretar domini i decisió tècnica inicial | triar domini, casos d'ús bàsics i primera decisió d'arquitectura | fitxa del Repte 1, enunciat base, model d'itineraris | domini triat, nota tècnica de decisió inicial o equivalent, orientació tècnica clara | `rubrica_base_reptes.md` | evitar que el domini es trie sense impacte real en el producte |
 | **Sessió 4** | deixar una base tècnica executable | arrancar el backend, ordenar estructura inicial i verificar l'entorn de treball | Repte 1, materials comuns, base comuna del curs | esquelet executable, entorn funcional, primers artefactes estables | `rubrica_base_reptes.md` | no tancar el kickoff amb un esquelet buit o no executat |
 | **Sessió 5** | obrir el flux funcional d'usuari | implementar registre, login i accés inicial protegit o mecanisme equivalent sobre base comuna en `PHP` | materials del Repte 2, materials comuns | primera funcionalitat d'autenticació operativa | `rubrica_base_reptes.md` | comprovar que hi ha producte real i no només formularis o captures |
 | **Sessió 6** | consolidar validacions i errors mínims | reforçar validació de servidor, control d'accés, errors previsibles i primeres proves | Repte 2, guia de testing/debugging | validacions mínimes, errors controlats, proves bàsiques | checklist del Repte 2 | evitar fluxos aparentment funcionals però sense control d'errors |
@@ -81,7 +81,7 @@ Lectura dels checkpoints:
 
 ## Evidències acumulatives
 
-- **tram inicial**: repositori, primer `README`, ADR o registre equivalent, criteri de Git/GitHub i `AI log`
+- **tram inicial**: repositori, primer `README`, nota tècnica de decisió o registre equivalent, criteri de Git/GitHub i `AI log`
 - **tram funcional**: flux d'autenticació, validacions, errors mínims i proves bàsiques
 - **tram arquitectònic**: model de dades, persistència, capes o equivalent i regressió mínima
 - **tram API**: contracte, documentació, proves i consum verificat

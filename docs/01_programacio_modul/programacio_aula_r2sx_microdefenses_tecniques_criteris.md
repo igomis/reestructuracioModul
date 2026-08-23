@@ -1,16 +1,17 @@
-# R2SX. Microdefenses tècniques de criteris aplicats al projecte
+# R2SX. Microdefensa conjunta R1 + R2
 
 ## Finalitat de la sessió
 
-Verificar l'assoliment real dels criteris treballats en `R2` mitjançant una defensa breu basada en producte, codi, prova i justificació. La sessió tanca el bloc de formularis, processament d'entrada, estat inicial i primera funcionalitat protegida abans d'obrir el treball arquitectònic de `R3`.
+Verificar l'assoliment real dels criteris treballats en `R1` i `R2` mitjançant una defensa breu basada en producte, codi, prova i justificació. La sessió tanca la base tècnica inicial, el bloc de formularis, processament d'entrada, estat inicial i primera funcionalitat protegida abans d'obrir el treball arquitectònic de `R3`.
 
-No s'explica teoria sobre criteris. Cada alumne defensa una part real del projecte on un criteri s'ha posat en joc i mostra com ho sap comprovar.
+No s'explica teoria sobre criteris. Cada alumne defensa una part real del projecte on un criteri s'ha posat en joc i mostra com ho sap comprovar. `R1` no té una defensa pròpia separada: la seua base tècnica es contrasta ací, quan ja hi ha un primer flux funcional de `R2`.
 
 ## Relació amb resultats d'aprenentatge
 
 - `RA2`: codi servidor integrat amb resposta web, variables, operadors, àmbits, directives i processament elemental.
 - `RA3`: formularis, recuperació de dades, decisions, arrays, funcions i validació de servidor.
 - `RA4`: estat, sessió o cookies, autenticació inicial, control d'accés i prova o depuració del flux.
+- `RA1`: base tècnica executable, model client/servidor, decisió tècnica inicial, `README` i landing inicial servida pel backend com a context verificable.
 
 ## Criteris d'avaluació que es poden treballar
 
@@ -23,6 +24,7 @@ El docent no ha d'exigir tots els criteris en una sola defensa. Cada alumne tria
 ## Evidències obligatòries
 
 - `3-5` diapositives o guió equivalent.
+- Arrencada del projecte seguint `README` i demostració breu de la landing inicial de `R1`.
 - Formulari o entrada amb controls diversos: text, llista, checkbox i fitxer si escau.
 - Fragment de codi de recuperació, validació, estat o control d'accés.
 - Demo de cas correcte i cas amb error visible.

@@ -23,8 +23,8 @@ La implantació prevista es calibra sobre un escenari orientatiu d'unes `20` set
 
 | Fase | Propòsit docent | Reptes connectats | Materials activats | Evidències principals | Instrument principal |
 |---|---|---|---|---|---|
-| **Fase 0. Arrancada i marc comú** | establir criteris compartits de treball, evidència i ús de la IA abans d'entrar al producte | marc previ al Repte 1 | materials comuns de mòdul (`Git`, `README/ADR`, testing/debugging, IA verificable), sistema d'evidències, projecte base del curs | repositori inicial, criteris de treball assumits, primer `README`, traça mínima d'organització | `checklist_revisio_repo.md` |
-| **Fase 1. Kickoff tècnic** | preparar el servei backend base i fixar domini, entorn i primera decisió tècnica | Repte 1 | fitxa del Repte 1, enunciat base del projecte, materials comuns, model d'itineraris com a marc | repo funcional, decisió d'arquitectura, `README`, ADR inicial, AI log si cal | `rubrica_base_reptes.md` |
+| **Fase 0. Arrancada i marc comú** | establir criteris compartits de treball, evidència i ús de la IA abans d'entrar al producte | marc previ al Repte 1 | materials comuns de mòdul (`Git`, `README i nota tècnica de decisió`, testing/debugging, IA verificable), sistema d'evidències, projecte base del curs | repositori inicial, criteris de treball assumits, primer `README`, traça mínima d'organització | `checklist_revisio_repo.md` |
+| **Fase 1. Kickoff tècnic** | preparar el servei backend base i fixar domini, entorn i primera decisió tècnica | Repte 1 | fitxa del Repte 1, enunciat base del projecte, materials comuns, model d'itineraris com a marc | repo funcional, decisió d'arquitectura, `README`, nota tècnica de decisió inicial, AI log si cal | `rubrica_base_reptes.md` |
 | **Fase 2. Base funcional del producte** | construir un flux real de dades, lògica, estat, autenticació i primera funcionalitat protegida del producte | Repte 2 | materials del Repte 2, materials comuns, base comuna en `PHP` i suport controlat de l'itinerari triat quan faça falta | flux complet de `R2`, reutilització funcional de dades, acció protegida, primers casos de prova, documentació actualitzada | `rubrica_base_reptes.md` |
 | **Fase 3. Arquitectura i persistència** | convertir el backend funcional en una base mantenible, persistent i preparada per créixer | Repte 3 | materials del Repte 3, materials comuns, itineraris tecnològics com a suport principal de stack | refactorització per capes o equivalent, persistència funcional, proves de regressió, model de dades, AI log si hi ha suport de IA | `rubrica_base_reptes.md` |
 | **Fase 4. Publicació i consum d'API** | exposar el producte com a API usable i provar-ne el consum | Repte 4 | materials del Repte 4, materials comuns, reutilització dels itineraris per aplicar auth, estructura i proves al contracte API | endpoints principals, documentació d'API, col·lecció de proves, consum verificat, `README` actualitzat | `rubrica_base_reptes.md` |
@@ -34,8 +34,8 @@ La implantació prevista es calibra sobre un escenari orientatiu d'unes `20` set
 
 ### Fase 0. Arrancada i marc comú
 
-- s'activa la base comuna del mòdul: Git, `README/ADR`, testing/debugging i ús verificable de la IA
-- no es fa una introducció des de zero a GitHub; es fa una posada a punt metodològica amb repàs de traçabilitat, commits, `README`, `ADR` i AI log
+- s'activa la base comuna del mòdul: Git, `README i nota tècnica de decisió`, testing/debugging i ús verificable de la IA
+- no es fa una introducció des de zero a GitHub; es fa una posada a punt metodològica amb repàs de traçabilitat, commits, `README`, nota tècnica de decisió i AI log
 - s'introduïx el sistema d'evidències com a criteri transversal
 - es presenta el projecte base com a marc professional del curs
 
@@ -74,7 +74,7 @@ La implantació prevista es calibra sobre un escenari orientatiu d'unes `20` set
 | Fase | Evidències mínimes |
 |---|---|
 | **Fase 0** | repositori creat, estructura mínima, primer `README`, criteris de Git i AI log assumits |
-| **Fase 1** | entorn funcional, decisió tècnica inicial, ADR o registre equivalent, traça de primers commits |
+| **Fase 1** | entorn funcional, decisió tècnica inicial, nota tècnica de decisió o registre equivalent, traça de primers commits |
 | **Fase 2** | flux funcional d'usuaris i sessions, validacions mínimes, errors controlats, proves bàsiques |
 | **Fase 3** | arquitectura per capes o equivalent, persistència funcional, model de dades, regressió mínima documentada |
 | **Fase 4** | API publicada, contracte clar, documentació d'endpoints, col·lecció de proves i consum verificat |
@@ -109,7 +109,7 @@ La implantació prevista es calibra sobre un escenari orientatiu d'unes `20` set
 | sobrecàrrega de materials sense seqüència clara | dispersió d'aula i baix ús real dels documents | activar materials per fases i no com a catàleg complet des del primer dia |
 | ús de la IA sense verificació | pèrdua d'autoria i de defensa tècnica | exigir AI log, prova posterior i preguntes de contrast sobre el treball entregat |
 | pas massa ràpid a API o integració sense base estable | producte fràgil i regressions constants | no obrir Fase 4 o Fase 5 sense tancament mínim de Fase 3 i evidències de persistència funcional |
-| documentació desalineada amb el codi | dificultat de seguiment i defensa | revisar `README`, ADR i contractes API en el tancament de cada fase |
+| documentació desalineada amb el codi | dificultat de seguiment i defensa | revisar `README`, nota tècnica de decisió i contractes API en el tancament de cada fase |
 | repositoris amb poca traça real | dificultat per avaluar procés i evolució | usar checklist de repositori i revisió periòdica de commits, proves i issues |
 
 ## Resultat esperat al tancament del curs

@@ -18,7 +18,7 @@ Els materials nous s'han de prioritzar segons estos criteris:
 
 - **impacte immediat sobre els reptes actius**: primer allò que desbloqueja o millora directament els Reptes 2, 3, 4 i 5
 - **reutilització transversal**: primer els materials que poden usar tots els equips, dominis i itineraris
-- **valor d'entorn professional realista**: prioritat per a materials que generen artefactes com README, ADR, proves, col·leccions API, checklists o AI log
+- **valor d'entorn professional realista**: prioritat per a materials que generen artefactes com README, nota tècnica de decisió, proves, col·leccions API, checklists o AI log
 - **capacitat de generar evidències autèntiques**: prioritat per a materials que deixen rastre verificable al repositori
 - **dependència del projecte base**: prioritat per a materials que ajuden a cobrir autenticació, persistència, API, integració i manteniment
 - **compatibilitat entre itineraris**: prioritat per a bases comunes que després es puguen adaptar a Laravel, Symfony i NestJS
@@ -36,7 +36,7 @@ Són peces reutilitzables per a tot el curs, independentment del repte o de l'it
 Materials comuns mínims:
 
 - guia de Git i flux de treball professional mínim
-- plantilla i guia d'ús de README tècnic i ADR
+- plantilla i guia d'ús de README tècnic i nota tècnica de decisió
 - guia de testing, debugging i registre d'incidències
 - guia d'ús verificable de la IA amb AI log mínim
 
@@ -72,7 +72,7 @@ L'ordre recomanat de producció dels materials prioritaris és el següent:
 | Ordre | Material prioritari | Tipus | Valor principal |
 |---|---|---|---|
 | 1 | Guia comuna de Git, branques, issues i commits per treball per reptes | comú de mòdul | fixa entorn professional realista i traçabilitat mínima |
-| 2 | Plantilla operativa de README tècnic i ADR | comú de mòdul | homogenitza documentació i justificació de decisions |
+| 2 | Plantilla operativa de README tècnic i nota tècnica de decisió | comú de mòdul | homogenitza documentació i justificació de decisions |
 | 3 | Guia comuna de testing, debugging i registre d'incidències | comú de mòdul | convertix la qualitat en evidència observable |
 | 4 | Guia comuna d'ús verificable de la IA i AI log mínim | comú de mòdul | assegura assistència guiada i verificable |
 | 5 | Pack nuclear del Repte 2: sessions, autenticació i validació del servidor | per repte | consolida la primera funcionalitat real del producte |
@@ -90,7 +90,7 @@ Es proposen els paquets següents com a primera planificació operativa:
 
 | Paquet | Abast | Peces incloses | Resultat esperat |
 |---|---|---|---|
-| **P0. Base comuna de mòdul** | materials comuns | Git i workflow, README/ADR, testing/debugging, IA verificable | base única de treball professional i d'evidències autèntiques |
+| **P0. Base comuna de mòdul** | materials comuns | Git i workflow, README i nota tècnica de decisió, testing/debugging, IA verificable | base única de treball professional i d'evidències autèntiques |
 | **P1. R2 Sessions i autenticació** | materials per repte | flux d'usuari, validacions de servidor, control d'accés, casos de prova bàsics | desplegar autenticació funcional i verificable sobre el projecte base |
 | **P2. R3 Arquitectura i persistència** | materials per repte | guia de migració a MVC o equivalent, persistència segura, proves mínimes, troubleshooting | estabilitzar la base mantenible del producte |
 | **P3. R4 API i consum** | materials per repte | contracte API, documentació d'endpoints, col·lecció de proves, consum controlat | publicar i consumir una API coherent amb el model |
@@ -106,7 +106,7 @@ Per evitar materials enciclopèdics i afavorir ús directe en els reptes, es rec
 
 - guies operatives curtes en `Markdown`
 - checklists de lliurament i verificació
-- plantilles reutilitzables de README, ADR, AI log i registre d'incidències
+- plantilles reutilitzables de README, nota tècnica de decisió, AI log i registre d'incidències
 - fitxes de troubleshooting i debugging orientades a errors freqüents
 - col·leccions de proves API o equivalents
 - exemples mínims de projecte o estructura per itinerari
@@ -138,7 +138,7 @@ El pla de materials ha de donar servei directe al producte evolutiu del curs:
 | Àmbit | Connexió amb reptes | Connexió amb projecte base |
 |---|---|---|
 | Git i workflow | dona suport transversal a tots els reptes | assegura traçabilitat i entorn professional realista |
-| README i ADR | naix en Repte 1 i continua en R2-R5 | sosté documentació tècnica operativa i decisions del producte |
+| README i nota tècnica de decisió | naix en Repte 1 i continua en R2-R5 | sosté documentació tècnica operativa i decisions del producte |
 | Testing, debugging i incidències | reforç transversal amb pes especial en R3-R5 | dona suport a qualitat, regressió i manteniment evolutiu |
 | IA verificable i AI log | transversal a tots els reptes | manté la IA com a eina guiada i verificable |
 | Material nuclear de R2 | centra sessions, autenticació i validació | cobrix model d'usuaris i control d'accés bàsic |
@@ -152,7 +152,7 @@ El pla de materials ha de donar servei directe al producte evolutiu del curs:
 La seqüència recomanada de producció no és només temàtica, sinó també dependent del valor que aporta cada peça:
 
 1. **Produir la base comuna de mòdul**
-   Git, README/ADR, testing/debugging i IA verificable han d'estar disponibles abans de desplegar paquets més específics.
+   Git, README i nota tècnica de decisió, testing/debugging i IA verificable han d'estar disponibles abans de desplegar paquets més específics.
 
 2. **Produir el paquet nuclear del Repte 2**
    És el primer material de producte funcional i ajuda a connectar la base comuna amb la primera evidència real.
@@ -182,7 +182,7 @@ Este document es considera completat quan:
 - definix un pla de producció de materials i no només un mapa general
 - explicita criteris de priorització coherents amb el focus actual del repositori
 - distingix clarament materials comuns de mòdul, materials per repte i materials per itinerari
-- incorpora com a mínim Git, README/ADR, testing/debugging i ús verificable de la IA com a materials comuns
+- incorpora com a mínim Git, README i nota tècnica de decisió, testing/debugging i ús verificable de la IA com a materials comuns
 - incorpora materials nuclears per als Reptes 2, 3, 4 i 5
 - incorpora materials específics per Laravel, Symfony i NestJS, i deixa `FastAPI` com a via avançada
 - connecta els paquets de materials amb el projecte base i amb les evidències autèntiques del mòdul

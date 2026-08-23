@@ -5,7 +5,7 @@
 - **Funció didàctica principal**: iniciació / arranque.
 - **Objectiu**: deixar arrencat el projecte base amb entorn executable, traçabilitat, landing inicial servida pel backend i decisió tècnica inicial.
 - **Producte esperat**: backend inicial funcional, executable en local, amb Docker, README, documentació en repositori i primera peça real del producte.
-- **Evidències**: repositori traçable, README executable, documentació del repte enllaçada, issue mare, commit rellevant comentat, execució real, ADR o justificació tècnica breu i mini defensa de kickoff.
+- **Evidències**: repositori traçable, README executable, documentació del repte enllaçada, issue mare, commit rellevant comentat, execució real, nota tècnica de decisió o justificació tècnica breu i mini defensa de kickoff.
 - **Paper de la IA**: ús assistit per IA permés per configuració, comparativa i depuració inicial; els límits i la delegació excessiva depenen de [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md).
 - **Relació amb el projecte base**: este repte obri el projecte base i fixa la seua base metodològica, tècnica i documental.
 - **Checkpoint de control**: arrencada reproduïble amb lectura del `README`, justificació de la decisió tècnica inicial i microcanvi tècnic simple sobre l'entorn.
@@ -155,7 +155,7 @@ Backend inicial funcional amb:
 - un commit rellevant comentat o referenciat pel mateix alumne
 - demo d’arrancada i execució
 - evidència d’una landing inicial funcional
-- ADR o justificació tècnica breu
+- nota tècnica de decisió o justificació tècnica breu
 - mini defensa tècnica al checkpoint de tancament
 - AI log quan corresponga
 
@@ -462,7 +462,7 @@ Consolidar el repte amb evidència tècnica verificable i demostrar que el treba
 L’equip:
 
 - revisa README
-- completa la justificació tècnica o ADR curt
+- completa la justificació tècnica o nota tècnica de decisió breu
 - registra incidències inicials i com les ha resoltes
 - documenta l’arrancada i la validació mínima fetes
 - crea un directori de documentació dins del repositori
@@ -492,7 +492,7 @@ La IA pot ajudar a polir el text del README o de la justificació tècnica, per�
 **Evidències obligatòries**
 
 - README final
-- justificació tècnica final o ADR curt
+- justificació tècnica final o nota tècnica de decisió breu
 - registre d’incidències inicials i correccions
 - evidència de validació tècnica mínima
 - directori de documentació en el repositori
@@ -557,7 +557,7 @@ El Repte 1 es compon de `2` microreptes, un per cada sessió ordinària de `3` h
 - historial de commits significatiu
 - README executable per tercers
 - fitxa breu d’exploració tècnica inicial del `R1M1`
-- justificació tècnica breu o ADR curt
+- justificació tècnica breu o nota tècnica de decisió
 - projecte executable amb Docker
 - base de dades i phpMyAdmin incorporats a l'entorn inicial quan corresponga al `R1M2`
 - primera peça funcional simple del producte
@@ -732,7 +732,7 @@ El nucli obligatori del repte ha d'estar complet, funcional i validat.
 **Opcions d’ampliació**
 
 - reforçar l'entorn reproductible amb automatització bàsica d'arrancada, comprovació simple d'estat o millor contenidorització
-- convertir la justificació tècnica inicial en una ADR més sòlida, amb alternatives descartades i impacte sobre el projecte base
+- convertir la justificació tècnica inicial en una nota tècnica de decisió més sòlida, amb alternatives descartades i impacte sobre el projecte base
 
 **Ampliació proposada per l’alumne/a**
 
@@ -740,12 +740,12 @@ També es pot proposar una ampliació pròpia si està alineada amb el repte i e
 
 **Paper de la IA**
 
-La IA es pot usar per contrastar opcions de contenidorització, documentació d'entorn o estructura d'una ADR, però l'alumnat ha d'aportar decisió, validació i defensa pròpia.
+La IA es pot usar per contrastar opcions de contenidorització, documentació d'entorn o estructura d'una nota tècnica de decisió, però l'alumnat ha d'aportar decisió, validació i defensa pròpia.
 
 **Evidències**
 
 - commit o branca identificable
-- justificació tècnica breu o ADR
+- justificació tècnica breu o nota tècnica de decisió
 - prova funcional o demo d'arrancada millorada
 - rastre de l'ús de la IA, si n'hi ha hagut
 - mini defensa tècnica o preguntes de contrast

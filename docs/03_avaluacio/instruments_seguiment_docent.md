@@ -56,7 +56,7 @@ Regla comuna:
 - repositori actiu i amb traçabilitat real
 - rastre individual recognoscible dins del repositori, encara que hi haja context compartit
 - `README` actualitzat segons el moment del curs
-- decisions tècniques rellevants registrades amb `ADR` o equivalent
+- decisions tècniques rellevants registrades amb nota tècnica de decisió o equivalent
 - funcionalitat executable del producte en el repte o fase actual
 - part del producte que cada alumne pot explicar i defensar
 - proves bàsiques, comprovacions o col·leccions de peticions segons corresponga

@@ -138,7 +138,7 @@ Pregunta de checkpoint: què podria fer una persona amb eixe token i què no pod
 | Abast | queda clar què permet i què no permet |
 | Prova | cas vàlid i cas incorrecte o disseny defensat |
 | Documentació | `docs/token-flow.md` o equivalent |
-| Traçabilitat | decisió tècnica registrada en README, ADR o AI log si aplica |
+| Traçabilitat | decisió tècnica registrada en README, nota tècnica de decisió o AI log si aplica |
 
 ## Criteris d'èxit
 

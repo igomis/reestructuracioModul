@@ -57,7 +57,7 @@ El kit s'ha calibrat sobre l'escenari docent que ja assumix el paquet:
 - Evidència mínima a arreplegar: repositori creat, `README` inicial, domini provisional i primera traça de decisió tècnica
 - Checkpoint docent: comprovar que l'equip pot explicar quin producte començarà a construir i com ho documentarà
 - Intervenció per alumnat endarrerit: reduir el bloc a repositori usable, `README` curt i una sola descripció de cas d'ús inicial
-- Ampliació per alumnat avançat: comparar dues opcions de domini o dos enfocaments funcionals i justificar la triada amb un mini `ADR`
+- Ampliació per alumnat avançat: comparar dues opcions de domini o dos enfocaments funcionals i justificar la triada amb un mini nota tècnica de decisió
 - Què s'ha de registrar al pilotatge: dubtes recurrents sobre el model del curs, comprensió real d'evidències, bloquejos inicials amb `README` o traçabilitat i adequació del temps de la setmana
 
 ### Setmana 2
@@ -67,7 +67,7 @@ El kit s'ha calibrat sobre l'escenari docent que ja assumix el paquet:
 - Què explica el professorat: què no és suficient en `R1`, com acotar un primer flux funcional i per què encara no toca obrir itineraris ni debat de frameworks
 - Què modela en directe: decisió tècnica breu, cas d'ús inicial del producte i esquema del primer flux que s'hauria de poder ensenyar
 - Què fa l'alumnat: concreta el primer cas d'ús, descriu el flux d'entrada i prepara l'estructura mínima del projecte sobre la base comuna en `PHP`
-- Materials concrets que s'activen: [repte_01_materials_sessio.md](../04_materials/materials_aula/repte_01_materials_sessio.md), [fulls_treball_base.md](../04_materials/materials_aula/fulls_treball_base.md), base comuna del curs i guia `README`/`ADR`
+- Materials concrets que s'activen: [repte_01_materials_sessio.md](../04_materials/materials_aula/repte_01_materials_sessio.md), [fulls_treball_base.md](../04_materials/materials_aula/fulls_treball_base.md), base comuna del curs i guia `README`/nota tècnica de decisió
 - Evidència mínima a arreplegar: domini triat, base comuna en `PHP` arrancada, flux inicial descrit i estructura mínima del projecte recognoscible
 - Checkpoint docent: validar que hi ha producte i primer cas d'ús, no només infraestructura o projecte buit
 - Intervenció per alumnat endarrerit: forçar un únic cas d'ús d'entrada i bloquejar qualsevol ampliació lateral

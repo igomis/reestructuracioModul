@@ -44,7 +44,7 @@ Lectura operativa:
 - base comuna en `PHP` preparada per a `R2`
 - materials de `Laravel`, `Symfony` i `NestJS` disponibles per a `R3-R5`
 - instruments mínims localitzats abans de començar: control inicial de repositori, rúbrica base de reptes, checklist de repte i defensa tècnica
-- criteri compartit sobre ús verificable de la IA, `AI log`, `README`, `ADR`, proves i evidències de procés
+- criteri compartit sobre ús verificable de la IA, `AI log`, `README`, nota tècnica de decisió, proves i evidències de procés
 - decisió docent sobre parelles de contrast tècnic, seguiment i checkpoints dins de les dues primeres avaluacions
 
 ## Seqüència mínima obligatòria
@@ -58,7 +58,7 @@ Objectiu:
 Accions mínimes:
 
 - presentar el projecte base, els dominis i la seqüència per reptes
-- posar en marxa el repositori i revisar criteris de `README`, commits, `ADR`, proves i ús de la IA
+- posar en marxa el repositori i revisar criteris de `README`, commits, nota tècnica de decisió, proves i ús de la IA
 - comprovar que Git/GitHub es reorienta a metodologia de treball professional
 
 Resultat mínim exigible:
@@ -172,7 +172,7 @@ Resultat mínim exigible:
 
 - repositori actiu i traçable des del començament
 - `README` inicial, `README` tècnic i `README` final actualitzats segons el tram
-- decisions tècniques registrades amb `ADR` o equivalent quan hi haja impacte real
+- decisions tècniques registrades amb nota tècnica de decisió o equivalent quan hi haja impacte real
 - proves mínimes de flux funcional, persistència, `API` i integració
 - checklists de repte o comprovacions equivalents en punts de pas
 - evidències de procés sobre validació, debugging i correcció d'errors

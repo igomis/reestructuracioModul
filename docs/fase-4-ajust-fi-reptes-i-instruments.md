@@ -43,7 +43,7 @@ La seqüència queda reforçada així:
 S'han reforçat només evidències amb retorn docent clar:
 
 - commit rellevant comentat
-- ADR o justificació tècnica breu
+- nota tècnica de decisió o justificació tècnica breu
 - comparativa entre contracte previst i comportament observat
 - comparativa solució inicial / ús assistit per IA / solució final quan té sentit
 - registre breu d'errors detectats i corregits

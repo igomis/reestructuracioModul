@@ -64,7 +64,7 @@ Tanca el producte amb una mirada professional de manteniment, estabilització, p
 
 | Fase | Microprojecte o focus | RA principal | CA o bloc de CA | Evidència dominant | Instrument dominant | Risc de solapament | Judici de coherència | Observació docent |
 |---|---|---|---|---|---|---|---|---|
-| Repte 1 | Decisió tècnica inicial i ADR | RA1 | RA1b, RA1c, RA1g | comparativa, ADR, defensa | rúbrica breu | Baix | Coherent com a obertura del projecte | No convertir-ho en debat teòric desconnectat del producte |
+| Repte 1 | Decisió tècnica inicial i nota tècnica de decisió | RA1 | RA1b, RA1c, RA1g | comparativa, nota tècnica de decisió, defensa | rúbrica breu | Baix | Coherent com a obertura del projecte | No convertir-ho en debat teòric desconnectat del producte |
 | Repte 1 | Entorn executable i estructura base | RA1 | RA1c, RA1d, RA1e, RA1f | repositori, README, arrencada | checklist + revisió | Mitjà | Coherent si després no es torna a avaluar només l’arrencada | Açò prepara el treball posterior, però no substituïx RA5 |
 | Repte 1 | Primera funcionalitat mínima | RA1 | RA1b, RA1e, RA1f | landing o equivalent, formulari, validació, registre mínim | rúbrica funcional | Mitjà | Coherent perquè en Repte 2 escala a flux complet | És un primer flux, no encara el nucli funcional complet del domini |
 | Repte 2 | Entrada variada i recuperació de dades | RA3 | RA3.e, RA3.f, RA3.g | formulari amb controls diversos, recuperació, comentaris | checklist | Mitjà | Solapament bo amb Repte 1 | En Repte 1 és evidència mínima; ací és objecte d’avaluació explícit |

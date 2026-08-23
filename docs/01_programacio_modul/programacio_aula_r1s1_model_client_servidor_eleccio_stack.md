@@ -232,7 +232,7 @@ Frase guia: "Primer explica el viatge d'una petició; després ja decidirem amb 
 
 ## Ampliació per a alumnat avançat
 
-- Afegir una mini ADR de decisió tècnica.
+- Afegir una nota tècnica breu de decisió.
 - Comparar la mateixa funcionalitat en `PHP` pla i en un framework.
 - Explicar què canviaria si el client fora una app mòbil.
 

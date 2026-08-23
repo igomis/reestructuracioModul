@@ -16,6 +16,21 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - la cooperacio pot existir, pero la verificacio i la defensa continuen sent individuals
 - cada repte pot activar una ampliacio `9→10` una vegada el nucli ja esta validat
 
+## Còmput oficial de sessions
+
+La programació d'aula base es compta en sessions de `3` hores. Inclou les microdefenses de `R2`, `R3`, `R4` i `R5`, el taller intermodular `R2S10` i el taller de portabilitat `R3S2B`.
+
+| Bloc | Sessions obligatòries | Hores |
+|---|---:|---:|
+| `R1` | `3` | `9h` |
+| `R2` | `12` | `36h` |
+| `R3` | `10` | `30h` |
+| `R4` | `7` | `21h` |
+| `R5` | `7` | `21h` |
+| **Total base** | **`39`** | **`117h`** |
+
+Les sessions `R4S6` i `R5S6` són ampliacions opcionals. Si s'activen com a sessió completa, el còmput pot arribar a `41` sessions de `3` hores.
+
 ## Documents principals
 
 - [Pla d'implantacio docent del modul](pla_implantacio_docent.md): marc general del desplegament docent.
@@ -36,15 +51,15 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - [R2S4. Estat, sessió i cookies](programacio_aula_r2s4_estat_sessio_cookies.md): fitxa d'aula executable per a la quarta sessió de `R2`, associada al microrepte `R2M4`.
 - [R2S5. Autenticació i funcionalitat protegida](programacio_aula_r2s5_autenticacio_funcionalitat_protegida.md): fitxa d'aula executable per a la cinquena sessió de `R2`, associada al microrepte `R2M5`.
 - [R2S6. Mini API d'autenticació per a client](programacio_aula_r2s6_mini_api_autenticacio_client.md): fitxa d'aula executable per a la sisena sessió de `R2`, associada al microrepte `R2M6`.
-- [R2S10. Taller de contracte d'autenticació per a DWEC](programacio_aula_r2s10_taller_contracte_autenticacio_dwec.md): taller intermodular de reforç associat a `R2M6`, sense microrepte propi.
+- [R2S10. Taller de contracte d'autenticació per a DWEC](programacio_aula_r2s10_taller_contracte_autenticacio_dwec.md): sessió obligatòria intermodular associada a `R2M6`, sense microrepte propi.
 - [R2S7. Proves, depuració i checkpoint tècnic](programacio_aula_r2s7_proves_depuracio_checkpoint.md): fitxa d'aula executable per a la setena sessió de `R2`, associada al microrepte `R2M7`.
 - [R2S8. Primera peça testable amb POO i Composer](programacio_aula_r2s8_primera_peca_testable_poo_composer.md): fitxa d'aula executable per a la huitena sessió de `R2`, associada al microrepte `R2M8`.
 - [R2S9. Persistència mínima amb BBDD en PHP](programacio_aula_r2s9_persistencia_minima_bbdd_php.md): fitxa d'aula executable per a la novena sessió de `R2`, associada al microrepte `R2M9`.
-- [R2SX. Microdefenses tècniques de criteris](programacio_aula_r2sx_microdefenses_tecniques_criteris.md): verificació d'autoria, comprensió i ús d'IA al tancament de `R2`.
+- [R2SX. Microdefensa conjunta R1 + R2](programacio_aula_r2sx_microdefenses_tecniques_criteris.md): verificació d'autoria, comprensió, base tècnica de `R1`, flux funcional de `R2` i ús d'IA.
 - [R3S0. Transició al Repte 3](programacio_aula_r3s0_transicio_repte_3.md): sessió sense microrepte propi per passar de `PHP` base a framework, capes i persistència.
 - [R3S1. Arrencada del nou projecte](programacio_aula_r3s1_arrencada_nou_projecte.md): fitxa d'aula executable per a la primera sessió de `R3`, associada al microrepte `R3M1`.
 - [R3S2. Persistència mínima amb migracions, fixtures/seeders o equivalent](programacio_aula_r3s2_persistencia_minima_migrations_seeders.md): fitxa d'aula executable per a la segona sessió de `R3`, associada al microrepte `R3M2`.
-- [R3S2B. Taller de portabilitat entre frameworks](programacio_aula_r3s2b_taller_portabilitat_frameworks.md): variant ampliada del taller `MT16`; si no hi ha sessió extra, s'integra com a franja curta després de `R3S2`.
+- [R3S2B. Taller de portabilitat entre frameworks](programacio_aula_r3s2b_taller_portabilitat_frameworks.md): sessió obligatòria del taller `MT16` entre `R3S2` i `R3S3`, sense microrepte propi.
 - [R3S3. Primer cas d'ús complet](programacio_aula_r3s3_primer_cas_us_complet.md): fitxa d'aula executable per al primer flux end-to-end de `R3`, associada al microrepte `R3M3`.
 - [R3S4. Segon cas d'ús o ampliació funcional](programacio_aula_r3s4_segon_cas_us_ampliacio_funcional.md): fitxa d'aula executable per al segon flux de `R3`, associada al microrepte `R3M4`.
 - [R3S5. Autenticació, autorització i middleware](programacio_aula_r3s5_autenticacio_autoritzacio_middleware.md): fitxa d'aula executable per a protegir una acció real amb eines del framework, associada al microrepte `R3M5`.
@@ -92,8 +107,8 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 - per impartir la tercera sessió de `R2`: [R2S3. Lògica del flux i regles del projecte](programacio_aula_r2s3_logica_flux_regles_projecte.md)
 - per impartir les sessions finals de `R2`: [R2S4](programacio_aula_r2s4_estat_sessio_cookies.md), [R2S5](programacio_aula_r2s5_autenticacio_funcionalitat_protegida.md), [R2S6](programacio_aula_r2s6_mini_api_autenticacio_client.md), [R2S10](programacio_aula_r2s10_taller_contracte_autenticacio_dwec.md), [R2S7](programacio_aula_r2s7_proves_depuracio_checkpoint.md), [R2S8](programacio_aula_r2s8_primera_peca_testable_poo_composer.md) i [R2S9](programacio_aula_r2s9_persistencia_minima_bbdd_php.md)
 - per impartir `R3`: [R3S1](programacio_aula_r3s1_arrencada_nou_projecte.md), [R3S2](programacio_aula_r3s2_persistencia_minima_migrations_seeders.md), [R3S2B](programacio_aula_r3s2b_taller_portabilitat_frameworks.md), [R3S3](programacio_aula_r3s3_primer_cas_us_complet.md), [R3S4](programacio_aula_r3s4_segon_cas_us_ampliacio_funcional.md), [R3S5](programacio_aula_r3s5_autenticacio_autoritzacio_middleware.md), [R3S6](programacio_aula_r3s6_qualitat_estabilitzacio.md) i [R3S7](programacio_aula_r3s7_tancament_tecnic.md)
-- per impartir `R4`: [R4S1](programacio_aula_r4s1_contracte_servei_api.md), [R4S2](programacio_aula_r4s2_primer_endpoint_funcional.md), [R4S3](programacio_aula_r4s3_proteccio_api.md), [R4S4](programacio_aula_r4s4_consum_servei.md), [R4S5](programacio_aula_r4s5_documentacio_prova_servei.md) i [R4S6](programacio_aula_r4s6_taller_tokens_funcionals_backend.md)
-- per impartir `R5`: [R5S1](programacio_aula_r5s1_font_externa_i_disseny_integracio.md), [R5S2](programacio_aula_r5s2_connexio_font_externa.md), [R5S3](programacio_aula_r5s3_mapping_transformacio_valor.md), [R5S4](programacio_aula_r5s4_funcionalitat_hibrida_producte.md), [R5S5](programacio_aula_r5s5_prova_documentacio_defensa_integracio.md) i [R5S6](programacio_aula_r5s6_taller_actius_digitals_tokenitzats.md)
+- per impartir `R4`: [R4S1](programacio_aula_r4s1_contracte_servei_api.md), [R4S2](programacio_aula_r4s2_primer_endpoint_funcional.md), [R4S3](programacio_aula_r4s3_proteccio_api.md), [R4S4](programacio_aula_r4s4_consum_servei.md) i [R4S5](programacio_aula_r4s5_documentacio_prova_servei.md); [R4S6](programacio_aula_r4s6_taller_tokens_funcionals_backend.md) queda com a ampliació opcional
+- per impartir `R5`: [R5S1](programacio_aula_r5s1_font_externa_i_disseny_integracio.md), [R5S2](programacio_aula_r5s2_connexio_font_externa.md), [R5S3](programacio_aula_r5s3_mapping_transformacio_valor.md), [R5S4](programacio_aula_r5s4_funcionalitat_hibrida_producte.md) i [R5S5](programacio_aula_r5s5_prova_documentacio_defensa_integracio.md); [R5S6](programacio_aula_r5s6_taller_actius_digitals_tokenitzats.md) queda com a ampliació opcional
 - per verificar autoria després dels reptes: [R2SX](programacio_aula_r2sx_microdefenses_tecniques_criteris.md), [R3SX](programacio_aula_r3sx_microdefenses_tecniques_criteris.md), [R4SX](programacio_aula_r4sx_microdefenses_tecniques_criteris.md) i [R5SX](programacio_aula_r5sx_microdefenses_tecniques_criteris.md)
 - per activar una via d'excellencia sense improvisar: [ampliacions 9 a 10 per repte](../ampliacions-9-a-10-per-repte.md)
 - per obrir el curs sense improvisar: [preparacio docent directa](preparacio_docent_directa_curs_que_ve.md) i [ajustos finals](ajustos_finals_abans_inici_curs.md)

@@ -22,7 +22,7 @@ L'avaluació continua sent individual, encara que hi puga haver contextos de pro
 - `README` actualitzat segons el moment del curs
 - funcionalitat executable del repte actual
 - proves mínimes o passos reproduïbles
-- decisions tècniques registrades amb `ADR` o equivalent
+- decisions tècniques registrades amb nota tècnica de decisió o equivalent
 - `AI log` o rastre equivalent quan la IA haja tingut pes real
 
 ## Defensa tècnica

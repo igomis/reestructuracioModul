@@ -33,7 +33,7 @@ Este document ja no funciona com a llistat d'issues inicials de bootstrap. Ara r
 
 - `PB-01` queda consolidat amb l'enunciat base del projecte del curs ja usable i visible.
 - `MG-01` queda consolidat com a marc de priorització i seqüència de producció a `docs/04_materials/pla_materials_prioritaris.md`.
-- `MG-02` queda consolidat com a base comuna del mòdul amb guies de Git, README/ADR, testing/debugging i ús verificable de la IA.
+- `MG-02` queda consolidat com a base comuna del mòdul amb guies de Git, README i nota tècnica de decisió, testing/debugging i ús verificable de la IA.
 - `MG-03` queda consolidat com a paquet nuclear del Repte 2 amb materials sobre flux d'usuari, sessions, validació i errors de servidor.
 - `MG-04` queda consolidat com a paquet nuclear del Repte 3 amb materials sobre arquitectura per capes o equivalent, persistència i qualitat tècnica.
 - `ID-01` queda consolidat com a pla d'implantació docent base del mòdul.

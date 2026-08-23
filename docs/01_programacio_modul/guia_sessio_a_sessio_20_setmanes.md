@@ -92,9 +92,9 @@ Regla pràctica:
 #### Setmana 2
 
 - Focus o repte: domini, base comuna en `PHP` i decisió tècnica inicial
-- Què fa el professorat: modela una decisió tècnica breu, exemplifica un `ADR` curt i acota què no és suficient en `R1`
+- Què fa el professorat: modela una decisió tècnica breu, exemplifica una nota tècnica de decisió curta i acota què no és suficient en `R1`
 - Què fa l'alumnat: tria domini, assumix la base comuna en `PHP` i concreta el primer cas d'ús mínim del producte
-- Materials per a l'alumnat: fitxa del Repte 1, base comuna del curs, guia `README` i `ADR`
+- Materials per a l'alumnat: fitxa del Repte 1, base comuna del curs, guia `README` i nota tècnica de decisió
 - Evidència mínima del bloc: domini triat, decisió tècnica justificada i traçabilitat inicial
 - Checkpoint docent: validar que hi ha producte pensat, no només infraestructura preparada
 - Pla per a alumnat endarrerit: domini més acotat i un sol cas d'ús d'entrada
@@ -146,11 +146,11 @@ Regla pràctica:
 
 #### Setmana 7
 
-- Focus o repte: autenticació, funcionalitat protegida, prova mínima i checkpoint tècnic de `R2`
-- Què fa el professorat: modela una operació protegida amb valor real del domini, un cas denegat i una prova curta del flux complet
-- Què fa l'alumnat: implementa `R2M5` i `R2M6`, protegix una acció real, prova casos correctes i incorrectes i actualitza `README`
+- Focus o repte: autenticació, funcionalitat protegida, mini API i taller obligatori `R2S10` de contracte per a `DWEC`
+- Què fa el professorat: modela una operació protegida amb valor real del domini, un cas denegat, una mini API d'autenticació i el contracte mínim perquè `DWEC` puga consumir-la sense endevinar formats
+- Què fa l'alumnat: implementa `R2M5` i `R2M6`, protegix una acció real, prova casos correctes i incorrectes, documenta `docs/api-auth-contract.md` i actualitza `README`
 - Materials per a l'alumnat: guia de validació i errors del Repte 2, guia de testing i debugging, checklist del Repte 2
-- Evidència mínima del bloc: operació del domini protegida, cas autoritzat, cas denegat, prova mínima i documentació reproduïble
+- Evidència mínima del bloc: operació del domini protegida, cas autoritzat, cas denegat, mini API d'autenticació, contracte `DWEC`, prova mínima i documentació reproduïble
 - Checkpoint docent: no obrir les fases finals de `R2` sense evidència reproduïble del flux complet
 - Pla per a alumnat endarrerit: tancar només el cas d'ús principal i els errors crítics
 - Pla per a alumnat avançat: afegir proves més sistemàtiques o millor missatge d'error

@@ -42,7 +42,7 @@ El punt de partida ja és clar:
 ## Materials que han d'estar definitivament preparats
 
 - enunciat base del projecte i projecte base del curs
-- guies comunes de Git/GitHub, `README`, `ADR` o equivalent i ús verificable de la IA
+- guies comunes de Git/GitHub, `README`, nota tècnica de decisió o equivalent i ús verificable de la IA
 - materials de sessió de `R1` i paquet d'arrancada del primer tram
 - portals web d'alumnat i professorat, materials compartibles i paquets d'ús directe del tram inicial
 - mini briefings, checkpoints curts, plantilles de feedback ràpid i fulls de treball base

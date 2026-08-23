@@ -15,11 +15,12 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 
 ## Duració base
 
-- `27 hores` de nucli
+- `36 hores` obligatòries
 - `9` sessions de `3` hores, una per cada microprojecte docent concret
-- `3 hores` addicionals de taller intermodular associat a `R2M6`
+- `1` sessió obligatòria de taller intermodular associat a `R2M6`
+- `1` sessió de microdefensa conjunta `R1 + R2`
 
-`R2` queda fixat amb estes `9` sessions de nucli i un taller associat. La sessió `6` obri una mini API d'autenticació per a client, el taller `R2S10` estabilitza el contracte per a `DWEC`, la sessió `8` està dedicada a convertir una part del flux ja verificat en una primera peça testable amb POO, Composer i una prova unitària inicial, i la sessió `9` introdueix BBDD mínima en PHP.
+`R2` queda fixat amb estes `9` sessions de nucli, el taller obligatori `R2S10` i la microdefensa `R2SX`. La sessió `6` obri una mini API d'autenticació per a client, el taller `R2S10` estabilitza el contracte per a `DWEC`, la sessió `8` està dedicada a convertir una part del flux ja verificat en una primera peça testable amb POO, Composer i una prova unitària inicial, la sessió `9` introdueix BBDD mínima en PHP i `R2SX` verifica conjuntament la base de `R1` i el flux funcional de `R2`.
 
 ## Coordinació explícita entre sessions i microprojectes
 
@@ -35,6 +36,7 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 | `7` | `3h` | `R2M7` | prova, depuració, documentació mínima i checkpoint tècnic | checklist, README i demo reproduïble |
 | `8` | `3h` | `R2M8` | primera peça testable amb POO i Composer | classe mínima, autoload de Composer i prova unitària inicial |
 | `9` | `3h` | `R2M9` | persistència mínima amb BBDD en PHP | connexió, taula, alta, lectura i consulta preparada |
+| `SX` | `3h` | Microdefensa conjunta `R1 + R2` | autoria, comprensió, ús d'IA i pas cap a `R3` | demo del repositori, landing de `R1`, flux de `R2`, proves i preguntes de contrast |
 
 ## Correspondència curta sessió -> RA -> evidència -> verificació
 

@@ -23,7 +23,7 @@ L'ús assistit per IA és compatible amb el model quan ajuda a:
 - suggerir esquelets de codi, proves o documentació
 - detectar errors, punts cecs o regressions
 - comparar alternatives de disseny
-- millorar la claredat d'un README, una ADR o una explicació tècnica
+- millorar la claredat d'un README, una nota tècnica de decisió o una explicació tècnica
 
 ## Usos guiats
 
@@ -49,7 +49,7 @@ Quan la IA haja participat en una part rellevant del treball, l'alumnat ha de de
 
 - commits coherents amb l'evolució real del codi
 - issues, tasques o notes de treball quan ajuden a entendre el procés
-- README, ADR o documentació actualitzada quan hi haja decisions tècniques
+- README, nota tècnica de decisió o documentació actualitzada quan hi haja decisions tècniques
 - proves, execucions o verificacions sobre el comportament resultant
 - `AI log` o registre equivalent quan la intervenció de la IA afecte decisions, implementació o depuració no trivial
 

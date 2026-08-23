@@ -51,7 +51,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 ### Què cal recordar breument
 
-- criteris de traçabilitat, `README`, `ADR`, evidències i `AI log`
+- criteris de traçabilitat, `README`, nota tècnica de decisió, evidències i `AI log`
 - dominis admesos i lògica del projecte base
 - que el repte no consistix a "instal·lar un framework", sinó a arrancar un producte
 

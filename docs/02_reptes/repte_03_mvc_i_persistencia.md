@@ -5,7 +5,7 @@
 - **Funció didàctica principal**: consolidació.
 - **Objectiu**: reconstruir el projecte en framework i deixar persistència real amb fluxos end-to-end verificables.
 - **Producte esperat**: aplicació arrancable en framework amb Docker, base de dades real, migracions o mecanisme equivalent, fixtures/seeders o càrrega reproduïble, validació, proves mínimes i almenys dos fluxos funcionals, amb almenys un flux **server-rendered**.
-- **Evidències**: casos d'ús end-to-end, model de dades, migracions o mecanisme equivalent, fixtures/seeders o càrrega reproduïble, README d'arrencada, ADR breu de migració, commit rellevant comentat, proves, almenys una resposta HTML renderitzada en servidor i traçabilitat de decisions.
+- **Evidències**: casos d'ús end-to-end, model de dades, migracions o mecanisme equivalent, fixtures/seeders o càrrega reproduïble, README d'arrencada, nota tècnica de decisió breu de migració, commit rellevant comentat, proves, almenys una resposta HTML renderitzada en servidor i traçabilitat de decisions.
 - **Paper de la IA**: ús assistit per IA permés per modelat, migracions, proves i revisió d'estructura; els límits i la delegació excessiva depenen de [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md).
 - **Relació amb el projecte base**: professionalitza la base comuna de `R2` i obri el contrast d'itineraris sobre el mateix projecte base.
 - **Checkpoint de control**: `CP-R3A` per validar framework + Docker + BBDD + migracions/fixtures/seeders o script equivalent + primer flux **server-rendered**; `CP-R3B` per validar segon flux, proves mínimes, README i mini defensa.
@@ -17,7 +17,7 @@
 ## Justificació docent
 
 - **Evidència principal**: aplicació en framework amb persistència real i dos fluxos end-to-end, almenys un migrat de `R2`.
-- **Evidències secundàries**: Docker, `.env`, migracions o equivalent, fixtures/seeders o càrrega reproduïble, proves, README, ADR breu i defensa del circuit petició -> resposta.
+- **Evidències secundàries**: Docker, `.env`, migracions o equivalent, fixtures/seeders o càrrega reproduïble, proves, README, nota tècnica de decisió breu i defensa del circuit petició -> resposta.
 - **Mínim suficient**: no és migrar fitxers; ha d'arrancar des de zero, crear dades reproduïbles i executar dos fluxos verificables.
 - **Feedback previst**: `CP-R3A` sobre base tècnica i `CP-R3B` sobre segon flux, proves i explicació de responsabilitats.
 
@@ -209,7 +209,7 @@ Aplicació en framework que incloga:
 - almenys `1` cas d'ús migrat des de `R2`
 - evidència d'un cas d'ús server-rendered amb vista o plantilla que rep dades reals
 - proves mínimes executades
-- ADR o justificació breu de migració
+- nota tècnica de decisió o justificació breu de migració
 - README tècnic actualitzat i centrat en decisions
 - mini defensa tècnica als checkpoints `CP-R3A` i `CP-R3B`
 - AI log quan hi haja ús d'IA
@@ -1021,7 +1021,7 @@ La IA es pot usar per contrastar enfocaments d'arquitectura, proves o refactorit
 **Evidències**
 
 - commit o branca identificable
-- ADR o justificació tècnica breu
+- nota tècnica de decisió o justificació tècnica breu
 - prova funcional o demo
 - README tècnic actualitzat si l'ampliació afecta el flux
 - rastre de l'ús de la IA, si n'hi ha hagut

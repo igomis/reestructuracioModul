@@ -31,7 +31,7 @@ La planificació es calibra sobre un escenari orientatiu d'unes `20` setmanes am
 
 | Avaluació | Setmanes orientatives | Fases connectades | Reptes o focus | Materials activats | Evidències clau | Instrument principal | Producte o lliurament parcial |
 |---|---|---|---|---|---|---|---|
-| **Avaluació 1** | `setmanes lectives 1-10 (~60h)` | Fase 0, Fase 1, Fase 2 i inici de Fase 3 | marc comú, kickoff tècnic, base funcional i primera consolidació d'arquitectura | materials comuns, sistema d'evidències, projecte base, enunciat base, materials del Repte 2 i activació inicial del Repte 3, entrada controlada d'itineraris | repositori usable, `README` inicial, ADR inicial, autenticació funcional, validacions mínimes, primers passos de persistència | `rubrica_base_reptes.md` | base funcional real del producte i arquitectura inicial prou sòlida per completar persistència en la 2a avaluació |
+| **Avaluació 1** | `setmanes lectives 1-10 (~60h)` | Fase 0, Fase 1, Fase 2 i inici de Fase 3 | marc comú, kickoff tècnic, base funcional i primera consolidació d'arquitectura | materials comuns, sistema d'evidències, projecte base, enunciat base, materials del Repte 2 i activació inicial del Repte 3, entrada controlada d'itineraris | repositori usable, `README` inicial, nota tècnica de decisió inicial, autenticació funcional, validacions mínimes, primers passos de persistència | `rubrica_base_reptes.md` | base funcional real del producte i arquitectura inicial prou sòlida per completar persistència en la 2a avaluació |
 | **Avaluació 2** | `setmanes lectives 11-20 (~60h)` | tancament de Fase 3, Fase 4, Fase 5 i defensa final | persistència consolidada, API, integració híbrida i tancament del producte | materials del Repte 3, materials del Repte 4, materials del Repte 5, materials comuns, itineraris `Laravel`, `Symfony` i `NestJS` com a suport principal | model de dades complet, API documentada, proves, flux híbrid, documentació final, defensa tècnica i AI log si aplica | `rubrica_defensa_tecnica.md` | producte final del curs complet, publicat, integrat i defensable dins de la segona avaluació |
 | **Avaluació 3** | `període residual o de connexió amb empresa/FCT` | sense desenvolupament central del projecte | connexió amb context professional, seguiment puntual o tancament administratiu | reutilització puntual de documentació i evidències ja generades, si cal | seguiment residual, connexió amb empresa, ajustos menors o tancament puntual | instrument contextual del centre | no s'ha de situar ací el desenvolupament principal del projecte del mòdul |
 
@@ -59,7 +59,7 @@ Materials activats:
 Evidències clau:
 
 - repositori creat amb traça inicial coherent
-- primer `README` i ADR o registre equivalent
+- primer `README` i nota tècnica de decisió o registre equivalent
 - entorn funcional i decisió de domini documentada
 - fluxos d'usuari operatius
 - autenticació, sessions o estat equivalent funcionals
