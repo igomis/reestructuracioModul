@@ -296,9 +296,24 @@ Si el minim ja està tancat, l'alumnat pot:
 - usar recorreguts sobre una llista guardada funcionalment;
 - separar diverses funcions petites amb responsabilitats diferents;
 - organitzar una llibreria pròpia amb més d'una funcio relacionada;
-- acumular missatges o avisos en un array;
+- acumular errors, missatges o avisos en un array i mostrar-los en el reintent del formulari;
 - documentar una taula de casos amb entrada, resultat esperat i resultat real;
 - preparar quina dada temporal caldrà mantindre entre peticions en `R2M4`.
+
+### Ampliacio guiada: errors acumulats en array
+
+Quan la regla de `R2M3` ja funciona amb dos casos visibles, es pot recuperar el formulari de `R2M1/R2M2` i millorar la validacio acumulant errors en un array. Esta ampliacio és coherent amb `R2M3` perquè obliga a usar decisions, arrays i, si aporta claredat, funcions pròpies.
+
+Com a mínim, si es fa esta ampliacio:
+
+- crear un array d'errors, per exemple `$errors = []`;
+- afegir un missatge per cada comprovacio fallida;
+- mostrar tots els errors generats pel servidor;
+- conservar les dades aprofitables del formulari per al reintent;
+- executar el processament o guardat funcional només quan no hi haja errors;
+- documentar dos casos: un amb un error i un amb més d'un error acumulat.
+
+No cal convertir esta ampliacio en una validacio completa de framework ni revisar camps que no afecten el flux. El valor està en veure com una estructura de dades ajuda a retornar diversos errors interpretables sense perdre la simplicitat del microrepte.
 
 L'ampliacio no ha d'obrir encara autenticacio, autoritzacio ni refactoritzacio arquitectonica.
 

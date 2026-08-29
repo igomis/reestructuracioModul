@@ -65,7 +65,7 @@ Un primer flux executable del producte amb un formulari o entrada equivalent que
 Queden com a ampliació o modelatge docent:
 
 - checkbox múltiple amb catàleg de valors permesos;
-- acumulació d'errors en arrays o llistes;
+- acumulació d'errors en arrays o llistes, preferentment com a ampliació de `R2M3`;
 - conservació còmoda dels valors introduïts en el formulari;
 - fitxer opcional si el cas d'ús ho justifica, amb `enctype`, `$_FILES`, error de pujada, mida i tipus permés.
 

@@ -569,6 +569,10 @@ La IA pot suggerir exemples de decisions o funcions, però l’alumnat ha de jus
 - demo del comportament resultant
 - explicació breu de la lògica aplicada
 
+**Ampliació guiada possible**
+
+Quan el nucli de `R2M3` ja està tancat, es pot millorar la validació del formulari acumulant errors en un array i mostrant-los en el reintent. Esta ampliació no substituïx la regla de domini obligatòria: aprofita que el microrepte ja treballa decisions, arrays i funcions per introduir una validació acumulada simple i explicable.
+
 **Instrument d’avaluació**
 
 Rúbrica de lògica bàsica aplicada.
