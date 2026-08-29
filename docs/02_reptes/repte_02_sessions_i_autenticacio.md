@@ -454,7 +454,7 @@ L’equip implementa tractament bàsic de la petició, incloent:
 - processament i guardat funcional simple del cas correcte
 - reutilització mínima de la informació correcta
 - revisió del comportament del checkbox simple
-- persistència formal, base de dades obligatòria, sessió, cookies, login, arrays d'errors i fitxers només com a ampliació o per a microreptes posteriors
+- persistència formal, base de dades obligatòria, sessió, cookies, login, arrays d'errors i fitxers no són mínim de `R2M2`; poden aparéixer com a ampliació o en microreptes posteriors del mateix repte
 
 **Relació amb el producte principal**
 

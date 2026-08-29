@@ -17,6 +17,8 @@ Al final de la sessió, cada alumne o parella ha de poder demostrar dos camins: 
 - **Focus**: recuperació de dades enviades, tractament en servidor, resposta generada amb valors conservats, error visible, reintent corregit i guardat funcional simple quan l'entrada és correcta
 - **No entra encara**: persistència formal com a centre del treball, base de dades obligatòria, sessió, cookies, login, rols, arquitectura MVC, arrays d'errors com a mínim, checkbox múltiple o fitxers
 
+Esta frontera no expulsa els arrays d'errors ni la validació més completa del `Repte 2`; només indica que no són el mínim de `R2M2`. En esta sessió el criteri de tancament és demostrar el reintent amb dades conservades i el guardat funcional del cas correcte. La validació acumulada pot entrar com a ampliació o en una consolidació posterior del mateix repte.
+
 ## Frontera amb `R2S1`
 
 `R2S2` no és “fer un altre formulari”. Ha de partir del flux de `R2S1` i respondre una pregunta nova:
