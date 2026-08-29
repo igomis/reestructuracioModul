@@ -73,9 +73,11 @@ El canvi metodològic del curs es concreta així:
 
 La baixada operativa d’este repte es concreta en la [Programació d'aula del Repte 2](../01_programacio_modul/programacio_aula_repte_02.md).
 
-La base recomanada del repte és de `27` hores, organitzades en `9` sessions de `3` hores, una per cada microprojecte docent principal.
+La base recomanada del nucli amb microreptes és de `27` hores, organitzades en `9` sessions de `3` hores, una per cada microprojecte docent principal.
 
 La sessió `6` està dedicada a exposar una mini API d'autenticació perquè DWEC puga començar a consumir un backend autenticat sense esperar a `R4`.
+
+La sessió `10` és una sessió d'ampliació intermodular associada a `R2M6`: no crea un microrepte nou ni nota RA independent, però estabilitza el contracte d'autenticació perquè `DWEC` el puga consumir amb menys ambigüitat.
 
 La sessió `8` està dedicada específicament a convertir una regla o comprovació del flux ja provat en una classe simple carregada amb Composer i verificada amb una primera prova unitària.
 

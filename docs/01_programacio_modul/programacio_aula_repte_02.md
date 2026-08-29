@@ -15,12 +15,13 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 
 ## Duració base
 
-- `36 hores` obligatòries
+- `33 hores` obligatòries de nucli i tancament
 - `9` sessions de `3` hores, una per cada microprojecte docent concret
-- `1` sessió obligatòria de taller intermodular associat a `R2M6`
+- `1` sessió inicial de transició sense microrepte propi
 - `1` sessió de microdefensa conjunta `R1 + R2`
+- `1` sessió d'ampliació intermodular associada a `R2M6`, sense microrepte propi
 
-`R2` queda fixat amb estes `9` sessions de nucli, el taller obligatori `R2S10` i la microdefensa `R2SX`. La sessió `6` obri una mini API d'autenticació per a client, el taller `R2S10` estabilitza el contracte per a `DWEC`, la sessió `8` està dedicada a convertir una part del flux ja verificat en una primera peça testable amb POO, Composer i una prova unitària inicial, la sessió `9` introdueix BBDD mínima en PHP i `R2SX` verifica conjuntament la base de `R1` i el flux funcional de `R2`.
+`R2` queda fixat amb una transició inicial, `9` sessions de nucli amb microrepte i la microdefensa `R2SX`. A més, pot activar-se `R2S10` com a sessió d'ampliació intermodular: no crea un microrepte nou, però ajuda a estabilitzar el contracte d'autenticació per a `DWEC` a partir de `R2M6`. La sessió `6` obri una mini API d'autenticació per a client, la sessió `8` està dedicada a convertir una part del flux ja verificat en una primera peça testable amb POO, Composer i una prova unitària inicial, la sessió `9` introdueix BBDD mínima en PHP i `R2SX` verifica conjuntament la base de `R1` i el flux funcional de `R2`.
 
 ## Coordinació explícita entre sessions i microprojectes
 
@@ -32,7 +33,7 @@ Este document baixa `R2` a una seqüència operativa d'aula perquè el professor
 | `4` | `3h` | `R2M4` | estat, sessió i/o cookies | recuperació del flux i invalidació controlada |
 | `5` | `3h` | `R2M5` | autenticació i funcionalitat protegida | cas autoritzat i cas denegat d'una operació real |
 | `6` | `3h` | `R2M6` | mini API d'autenticació per a client | `POST /api/login`, ruta protegida, `JSON`, `200` i `401` |
-| `10` | `3h` | Taller associat a `R2M6` | contracte d'autenticació per a `DWEC` | `docs/api-auth-contract.md`, usuari demo i prova creuada |
+| `10` | `3h` | Ampliació associada a `R2M6` | contracte d'autenticació per a `DWEC` | `docs/api-auth-contract.md`, usuari demo i prova creuada |
 | `7` | `3h` | `R2M7` | prova, depuració, documentació mínima i checkpoint tècnic | checklist, README i demo reproduïble |
 | `8` | `3h` | `R2M8` | primera peça testable amb POO i Composer | classe mínima, autoload de Composer i prova unitària inicial |
 | `9` | `3h` | `R2M9` | persistència mínima amb BBDD en PHP | connexió, taula, alta, lectura i consulta preparada |
@@ -50,6 +51,7 @@ Esta taula és el mapa mínim de traçabilitat docent del repte. No substituïx 
 | `4` | `RA4` | `RA4.a`, `RA4.b`, `RA4.c` | - | estat temporal, sessió, cookies i invalidació | recuperació d'estat i neteja o caducitat demostrada | execució de recuperació i invalidació, més pregunta sobre què queda en client, servidor o flux funcional |
 | `5` | `RA4` | `RA4.d`, `RA4.e` | - | identificació, autenticació, autorització i protecció d'una operació real | cas autenticat permés i cas no permés sobre una acció del domini | demo dels dos casos i pregunta sobre el punt exacte on es comprova la restricció |
 | `6` | `RA4` | `RA4.d`, `RA4.e` | pont DWEC | mini API d'autenticació consumible des de client | login API, ruta protegida, `JSON`, `200`, `401` i prova externa | execució de `POST /api/login`, `GET /api/me` i cas `401` |
+| `10` | - | - | ampliació intermodular | contracte d'autenticació consumible per `DWEC` | `docs/api-auth-contract.md`, dades demo, headers i prova creuada | una altra persona pot consumir la mini API sense mirar el codi |
 | `7` | `RA4` | `RA4.f` | - | prova, depuració, documentació i reproduïbilitat | taula mínima de proves, incidències i README actualitzat | execució d'un cas triat pel professorat i contrast amb documentació, codi i AI log |
 | `8` | `RA3` | `RA3.d`, `RA3.g` | `RA4.f` | POO mínima, Composer, autoload i primera prova unitària | classe simple del domini o servei, `composer.json`, test unitari i prova de no regressió | execució del test, revisió de la classe i defensa de què queda ara més testable |
 | `9` | `RA6` | `RA6.a`, `RA6.b`, `RA6.c`, `RA6.d`, `RA6.f` | `RA3`, `RA4` | persistència mínima amb BBDD en PHP | connexió, taula, alta, lectura, consulta preparada i README de reproducció | demo d'inserció, consulta posterior i revisió de configuració sense secrets |

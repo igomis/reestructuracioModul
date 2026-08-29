@@ -1,8 +1,8 @@
-# R2S10. Taller de contracte d'autenticacio per a DWEC
+# R2S10. Taller d'ampliacio de contracte d'autenticacio per a DWEC
 
 ## Finalitat de la sessio
 
-Esta sessio és un taller intermodular associat a `R2M6`. No crea un microrepte nou: reforça que la mini API d'autenticació siga realment consumible pel mòdul de `Desenvolupament Web en Entorn Client`.
+Esta sessio és una ampliacio intermodular associada a `R2M6`. No crea un microrepte nou ni una nota RA independent: reforça que la mini API d'autenticació siga realment consumible pel mòdul de `Desenvolupament Web en Entorn Client`.
 
 El focus no és programar el client. El focus de `DWES` és publicar un contracte backend clar, estable i verificable perquè `DWEC` puga implementar el consum amb `fetch` sense haver d'endevinar formats, codis, headers o dades de prova.
 
@@ -10,7 +10,7 @@ El focus no és programar el client. El focus de `DWES` és publicar un contract
 
 - **Repte**: `R2. Processament bàsic, estat, autenticació i primera funcionalitat protegida`
 - **Sessio**: `R2S10`
-- **Tipus**: taller obligatori de reforç associat a `R2M6`
+- **Tipus**: sessio d'ampliacio intermodular associada a `R2M6`, sense microrepte propi
 - **Duracio orientativa**: `3 hores`
 - **Focus**: contracte d'autenticació consumible per DWEC, normalització de respostes, headers, dades demo i prova creuada mínima
 - **No entra encara**: construir la interfície de client, dissenyar pantalles, gestionar estat visual, fer una API completa, OpenAPI, OAuth, JWT professional o refresh tokens
@@ -25,7 +25,7 @@ Este taller respon a esta altra:
 
 > Una altra persona pot consumir eixa autenticació sense preguntar al grup com funciona?
 
-Per això, el taller es valora dins de `R2M6`, especialment en la dimensió de contracte per a `DWEC`.
+Per això, el taller pot aportar evidència de millora sobre `R2M6` i, si el nucli del repte ja està validat, pot formar part de l'ampliació `9→10`. No substitueix cap evidència mínima de `R2M6`.
 
 ## Producte esperat
 
@@ -176,11 +176,11 @@ Pregunta de checkpoint: si demà una persona de `DWEC` vol consumir la teua API,
 
 ## Valoracio
 
-El taller no té nota separada. Es valora dins de `R2M6`, especialment en la dimensió **contracte per a DWEC**.
+El taller no té nota separada ni microrepte propi. Pot reforçar l'evidència de contracte de `R2M6` i pot usar-se com a ampliació integrada del Repte 2 quan el nucli ja està complet.
 
 Regla docent recomanada:
 
-> Sense contracte mínim documentat per a `DWEC`, `R2M6` no pot superar el `8`.
+> Si s'activa `R2S10`, sense contracte mínim documentat per a `DWEC` l'ampliació no es considera validada.
 
 ## Connexio amb DWEC i R4
 

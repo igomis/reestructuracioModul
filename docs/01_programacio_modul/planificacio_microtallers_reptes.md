@@ -4,7 +4,7 @@
 
 Els microtallers són intervencions curtes dins de sessions de repte. No creen microreptes nous ni notes separades: reforcen punts tècnics que solen bloquejar l'alumnat i ajuden a convertir el repte en una evidència més defensable.
 
-La duració no ha de ser sempre la mateixa. Si el taller només introdueix criteri o dona una pauta de revisió, pot ocupar `15-30` minuts. Si exigeix posar en marxa codi, proves, configuració o una decisió tècnica amb evidència al repositori, ha d'ocupar `35-60` minuts. `R2S10` i `R3S2B` formen part de la programació base; les variants opcionals només s'activen si aporten valor al projecte real.
+La duració no ha de ser sempre la mateixa. Si el taller només introdueix criteri o dona una pauta de revisió, pot ocupar `15-30` minuts. Si exigeix posar en marxa codi, proves, configuració o una decisió tècnica amb evidència al repositori, ha d'ocupar `35-60` minuts. `R3S2B` forma part de la programació base; `R2S10` és una sessió d'ampliació intermodular sense microrepte propi, i les altres variants opcionals només s'activen si aporten valor al projecte real.
 
 ## Criteris d'ús
 
@@ -44,6 +44,7 @@ La duració no ha de ser sempre la mateixa. Si el taller només introdueix crite
 
 | Codi | Moment preferent | Quan activar-lo | Com encaixar-lo sense desquadrar |
 |---|---|---|---|
+| `R2S10` | després de `R2S6` | si cal deixar la mini API d'autenticació preparada per al consum de `DWEC` | sessió completa d'ampliació intermodular, sense microrepte propi |
 | `MT17` | després de definir protecció d'API en `R4S3` | si el projecte necessita confirmació, invitació, accés puntual o traçabilitat | `60 min` dins de `R4S3` o sessió ampliada `R4S6` si es prototipa |
 | `MT18` | després de tindre integració funcional en `R5S4` | si el grup pot treballar ampliació avançada sense especulació | `50 min` dins de `R5S4` o sessió ampliada `R5S6` si es prototipa |
 | `MT19` | `R1S0` i abans de checkpoints | quan aparega delegació excessiva en IA o evidències poc defensables | `25 min` inicials i recordatoris de `10 min`, sense sessió nova |

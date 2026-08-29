@@ -146,11 +146,11 @@ Regla pràctica:
 
 #### Setmana 7
 
-- Focus o repte: autenticació, funcionalitat protegida, mini API i taller obligatori `R2S10` de contracte per a `DWEC`
+- Focus o repte: autenticació, funcionalitat protegida, mini API i possible ampliació `R2S10` de contracte per a `DWEC`
 - Què fa el professorat: modela una operació protegida amb valor real del domini, un cas denegat, una mini API d'autenticació i el contracte mínim perquè `DWEC` puga consumir-la sense endevinar formats
-- Què fa l'alumnat: implementa `R2M5` i `R2M6`, protegix una acció real, prova casos correctes i incorrectes, documenta `docs/api-auth-contract.md` i actualitza `README`
+- Què fa l'alumnat: implementa `R2M5` i `R2M6`, protegix una acció real, prova casos correctes i incorrectes, actualitza `README` i, si s'activa `R2S10`, documenta `docs/api-auth-contract.md`
 - Materials per a l'alumnat: guia de validació i errors del Repte 2, guia de testing i debugging, checklist del Repte 2
-- Evidència mínima del bloc: operació del domini protegida, cas autoritzat, cas denegat, mini API d'autenticació, contracte `DWEC`, prova mínima i documentació reproduïble
+- Evidència mínima del bloc: operació del domini protegida, cas autoritzat, cas denegat, mini API d'autenticació, prova mínima i documentació reproduïble; el contracte `DWEC` queda com a ampliació `R2S10`
 - Checkpoint docent: no obrir les fases finals de `R2` sense evidència reproduïble del flux complet
 - Pla per a alumnat endarrerit: tancar només el cas d'ús principal i els errors crítics
 - Pla per a alumnat avançat: afegir proves més sistemàtiques o millor missatge d'error
