@@ -41,6 +41,7 @@ La franja `9→10` no s'ha de llegir com a punts extra. És la via per demostrar
 - [Microdefenses tècniques de criteris aplicats al projecte](microdefenses_tecniques_criteris.md)
 - [Instruments de seguiment docent](instruments_seguiment_docent.md)
 - [Criteris de ponderació dels reptes amb IA](criteris_ponderacio_reptes_amb_ia.md)
+- [Guia d'avaluació automàtica dels microreptes](guia_avaluacio_automatica_microreptes.md)
 - [Ús de la IA per a professorat i alumnat](../us-ia-professorat-i-alumnat.md)
 
 ## Instruments de suport
@@ -63,6 +64,7 @@ La franja `9→10` no s'ha de llegir com a punts extra. És la via per demostrar
 - per valorar producte i procés: [rúbrica base](rubrica_base_reptes.md)
 - per verificar autoria i defensa: [rúbrica de defensa tècnica](rubrica_defensa_tecnica.md) i [microdefenses tècniques de criteris](microdefenses_tecniques_criteris.md)
 - per controlar evidències i checkpoints: [sistema d'evidències](sistema_evidencies.md) i [instruments de seguiment](instruments_seguiment_docent.md)
+- per usar l'autocorrecció dels microreptes com a instrument docent: [guia d'avaluació automàtica dels microreptes](guia_avaluacio_automatica_microreptes.md)
 - per resoldre dubtes sobre ús assistit per IA, delegació excessiva i verificació docent: [document canònic d'IA](../us-ia-professorat-i-alumnat.md)
 - per revisar cobertura real dels resultats d'aprenentatge del mòdul: [matriu curricular](../matriu-coherencia-curricular-dwes.md)
 - per entendre l'ajust global de càrrega, reptes i instruments: [síntesi de la Fase 4](../fase-4-ajust-fi-reptes-i-instruments.md)

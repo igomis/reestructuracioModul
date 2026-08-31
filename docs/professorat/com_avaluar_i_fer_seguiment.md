@@ -50,10 +50,17 @@ Quan la IA haja intervingut de manera rellevant, el professorat no ha de reobrir
 
 ## Instruments que convé obrir
 
+- [Guia d'avaluació automàtica dels microreptes](../03_avaluacio/guia_avaluacio_automatica_microreptes.md)
 - [Rúbrica base dels reptes](../03_avaluacio/rubrica_base_reptes.md)
 - [Rúbrica de defensa tècnica](../03_avaluacio/rubrica_defensa_tecnica.md)
 - [Sistema d'evidències](../03_avaluacio/sistema_evidencies.md)
 - [Instruments de seguiment docent](../03_avaluacio/instruments_seguiment_docent.md)
+
+## Ús de l'autocorrecció dels microreptes
+
+L'autocorrecció és un instrument de triatge i feedback, no una substitució de la decisió docent. Abans d'acceptar una nota provisional cal revisar si el microrepte corregit és el correcte, si les evidències són localitzables i si hi ha flags de baixa confiança, autoria dubtosa o absència de proves.
+
+Per al flux complet de preparació, llançament, lectura de resultats i revisió manual, aplica la [Guia d'avaluació automàtica dels microreptes](../03_avaluacio/guia_avaluacio_automatica_microreptes.md).
 
 ## Criteri de seguiment
 

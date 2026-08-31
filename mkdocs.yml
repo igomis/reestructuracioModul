@@ -116,12 +116,21 @@ nav:
       - Microdefenses tècniques de criteris: 03_avaluacio/microdefenses_tecniques_criteris.md
       - Instruments de seguiment: 03_avaluacio/instruments_seguiment_docent.md
       - Criteris de ponderació amb IA: 03_avaluacio/criteris_ponderacio_reptes_amb_ia.md
+      - Guia d'avaluació automàtica dels microreptes: 03_avaluacio/guia_avaluacio_automatica_microreptes.md
       - Instruments i matrius:
           - Checklist de revisió de repo: 03_avaluacio/checklist_revisio_repo.md
           - Plantilla AI log: 03_avaluacio/plantilla_ai_log.md
           - Acta de checkpoint: 03_avaluacio/plantilla_acta_checkpoint.md
           - Registre de seguiment per equip: 03_avaluacio/plantilla_registre_seguiment_per_equip.md
           - Matriu evidències i instruments: 03_avaluacio/matriu_evidencies_i_instruments_per_fase.md
+  - Professorat:
+      - Inici professorat: professorat/index.md
+      - Com preparar el curs: professorat/com_preparar_el_curs.md
+      - Com conduir els reptes: professorat/com_conduir_els_reptes.md
+      - Com avaluar i fer seguiment: professorat/com_avaluar_i_fer_seguiment.md
+      - Guia d'avaluació automàtica dels microreptes: 03_avaluacio/guia_avaluacio_automatica_microreptes.md
+      - Com gestionar ritmes i suport: professorat/com_gestionar_ritmes_i_suport.md
+      - Com pilotar i ajustar: professorat/com_pilotar_i_ajustar.md
   - Recursos d'aula:
       - Biblioteca de recursos: 04_materials/index.md
       - Materials ràpids:
