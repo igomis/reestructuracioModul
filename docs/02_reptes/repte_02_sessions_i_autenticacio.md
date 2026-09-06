@@ -1423,7 +1423,7 @@ Aprofundir el repte amb una millora tècnica real sobre robustesa del flux, qual
 
 **Autocorrecció de candidatura**
 
-`r2-ampliacio-9-10`
+`r2-s09-persistencia-minima-bbdd-php` (proposta global separada, dins de R2M9)
 
 Esta autocorrecció no assigna directament la nota final. Filtra si l'ampliació pot optar a la franja `9→10`, si no pot optar o si necessita revisió docent.
 
@@ -1432,7 +1432,7 @@ Esta autocorrecció no assigna directament la nota final. Filtra si l'ampliació
 Les autocorreccions dels microreptes `R2M1` a `R2M9` valoren el nucli obligatori. La qualificació final del repte ha de separar nucli i via d'excel·lència:
 
 ```text
-nota_final_R2 = min(nota_nucli_R2, 9) + ampliacio_9_10
+nota_final_R2 = 0.9 * nota_nucli_R2 + ampliacio_9_10
 ```
 
 `nota_nucli_R2` és la nota ponderada dels microreptes obligatoris segons la taula de pesos del repte. Sense ampliació validada, la nota final del repte queda limitada a `9`, encara que la mitjana ponderada dels microreptes siga `10`. L'ampliació `9→10` pot sumar entre `0` i `1` punt segons valor tècnic, integració, verificació, traçabilitat i defensa.
