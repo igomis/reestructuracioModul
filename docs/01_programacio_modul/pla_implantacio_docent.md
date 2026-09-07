@@ -137,4 +137,8 @@ Este document es considera completat quan:
 
 Es recomana el flux `microrepte/r2m1 → repte/r2 → main`, amb una PR en cada pas i integració en `main` en cada microrepte. L’alumnat revisa i fa el merge de les seues PR; conserva les branques i etiqueta el commit de cada entrega. La correcció continua llegint `main`, sense afegir requisits de rúbrica ni punts per usar branques.
 
-Consulta el [procediment de l’alumnat](https://cipfpbatoi.github.io/dwes2627/04_materials/guia_branques_i_entregues/). Per a treball individual, comprovar permisos de merge, permetre merge commits i evitar regles que exigisquen una aprovació externa; convé desactivar l’eliminació automàtica de branques. No s’han modificat permisos ni regles dels repositoris existents.
+Consulta el [procediment de l’alumnat](https://cipfpbatoi.github.io/dwes2627/04_materials/guia_branques_i_entregues.html). Per a treball individual, comprovar permisos de merge, permetre merge commits i evitar regles que exigisquen una aprovació externa; convé desactivar l’eliminació automàtica de branques. No s’han modificat permisos ni regles dels repositoris existents.
+
+## Retorn i consolidació diària
+
+Les sessions ordinàries reserven 15 minuts de retorn, 15 de correcció, 5 de comprovació inicial i 10 de diagnòstic final dins de les tres hores. El treball nou s’ajusta al temps restant i a les necessitats del grup. Les dificultats tenen ajuda concreta per continuar. Els microreptes són treball d’aula i no tenen recuperació individual; només es recupera el repte complet. Consulta el [protocol comú](retorn_i_consolidacio_microreptes.md) i els horaris actualitzats de cada sessió.

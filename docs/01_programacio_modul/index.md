@@ -112,3 +112,7 @@ Les sessions `R2S10`, `R4S6` i `R5S6` són ampliacions opcionals. Si s'activen c
 - per verificar autoria després dels reptes: [R2SX](programacio_aula_r2sx_microdefenses_tecniques_criteris.md), [R3SX](programacio_aula_r3sx_microdefenses_tecniques_criteris.md), [R4SX](programacio_aula_r4sx_microdefenses_tecniques_criteris.md) i [R5SX](programacio_aula_r5sx_microdefenses_tecniques_criteris.md)
 - per activar una via d'excellencia sense improvisar: [ampliacions 9 a 10 per repte](../ampliacions-9-a-10-per-repte.md)
 - per obrir el curs sense improvisar: [preparacio docent directa](preparacio_docent_directa_curs_que_ve.md) i [ajustos finals](ajustos_finals_abans_inici_curs.md)
+
+## Retorn i consolidació diària
+
+Les sessions ordinàries reserven 15 minuts de retorn, 15 de correcció, 5 de comprovació inicial i 10 de diagnòstic final dins de les tres hores. El treball nou s’ajusta al temps restant i a les necessitats del grup. Les dificultats tenen ajuda concreta per continuar. Els microreptes són treball d’aula i no tenen recuperació individual; només es recupera el repte complet. Consulta el [protocol comú](retorn_i_consolidacio_microreptes.md) i els horaris actualitzats de cada sessió.

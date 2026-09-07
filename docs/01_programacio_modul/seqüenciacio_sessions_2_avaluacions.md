@@ -128,3 +128,7 @@ Este document es considera completat quan:
 - incorpora checkpoints, evidències acumulatives, intervencions docents i marges d'adaptació
 - deixa explícit que Git/GitHub és repàs metodològic i criteri de traçabilitat, no iniciació bàsica
 - deixa clar el paper no central de la tercera avaluació
+
+## Retorn i consolidació diària
+
+Les sessions ordinàries reserven 15 minuts de retorn, 15 de correcció, 5 de comprovació inicial i 10 de diagnòstic final dins de les tres hores. El treball nou s’ajusta al temps restant i a les necessitats del grup. Les dificultats tenen ajuda concreta per continuar. Els microreptes són treball d’aula i no tenen recuperació individual; només es recupera el repte complet. Consulta el [protocol comú](retorn_i_consolidacio_microreptes.md) i els horaris actualitzats de cada sessió.
