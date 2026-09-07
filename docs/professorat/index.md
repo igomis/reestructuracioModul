@@ -72,6 +72,8 @@ Lectura curta del tram:
 
 ### Per avaluar i fer seguiment
 
+- [Clonar i actualitzar els repositoris de l’alumnat](clonar_repositoris_alumnat.md)
+
 - [Com avaluar i fer seguiment](com_avaluar_i_fer_seguiment.md)
 - [Guia d'avaluació automàtica dels microreptes](../03_avaluacio/guia_avaluacio_automatica_microreptes.md)
 - [Sistema d'evidències](../03_avaluacio/sistema_evidencies.md)
