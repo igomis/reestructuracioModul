@@ -1,49 +1,68 @@
 # MT19. IA responsable aplicada al repte
 
-Micro-presentació docent breu transversal. Equival aproximadament a `6` diapositives.
+Guió docent actualitzat el 8 de setembre de 2026. Huit diapositives; taller de 45–60 minuts, sense microrepte ni nota independent.
 
-## Diapositiva 1. Idea central
+Referència: [norma comuna d’IA](../../us-ia-professorat-i-alumnat.md). Presentar els límits abans del treball assistit. No exigir ús d’IA per participar.
 
-- la IA pot ajudar, però no substituïx autoria
-- el repte s'aprova amb comprensió, proves i defensa
-- delegar-ho tot deixa una evidència feble
+## Diapositiva 1. Comprendre abans de delegar
 
-## Diapositiva 2. Usos acceptables
+La IA pot ajudar-te a comprendre; la implementació de servidor, la configuració avaluable i les proves del repte les fas tu. La norma s’aplica als microreptes, al repte complet i a les ampliacions.
 
-- idear alternatives
-- explicar errors
-- generar esborranys
-- proposar proves
-- revisar documentació
-- comparar decisions
+Entendre una solució després de copiar-la no autoritza a delegar el treball avaluable.
 
-## Diapositiva 3. Usos perillosos
+## Diapositiva 2. Què està permés i què no
 
-- copiar codi sense entendre'l
-- acceptar canvis sense executar proves
-- no registrar prompts rellevants
-- no saber localitzar una regla
-- defensar una arquitectura imposada per la IA
+Permés: explicacions de teoria, exemples menuts diferents del repte, pistes sobre intents propis, revisió del raonament i suggeriments de casos límit.
 
-## Diapositiva 4. AI log útil
+No permés: generar el backend o les proves, obtindre la solució per fragments, o deixar que un agent implemente, execute i corregisca fins a acabar. Acceptar automàticament cada canvi també és delegar.
 
-- què he demanat
-- què he acceptat
-- què he canviat
-- què he rebutjat
-- com ho he verificat
-- què he aprés o decidit
+La regla depén de l’ús, no de la marca: un xat tampoc pot resoldre el repte per tu. No presentar la prohibició com una simple recomanació o com un risc que desapareix si entens el resultat.
 
-## Diapositiva 5. Evidència del dia
+## Diapositiva 3. L’excepció d’HTML/CSS
 
-- una entrada breu d'AI log
-- una prova executada sobre codi assistit
-- una decisió pròpia
-- una limitació reconeguda
-- un commit coherent
+Pots generar HTML estàtic i CSS de presentació complets. Revisa’ls i registra els fitxers generats.
 
-## Diapositiva 6. Tancament
+Tu decidixes i entens els camps, `name`, `method` i `action` del formulari. L’excepció no inclou PHP incrustat, plantilles amb lògica, escapament, validació, sessions, autenticació, persistència, APIs ni JavaScript que resolga funcionalitat avaluable.
 
-- la IA pot accelerar el treball, però no pot defensar-lo per tu
-- si no pots modificar el codi, no és encara teu
-- pregunta final: quina part has verificat personalment?
+## Diapositiva 4. El procés de treball
+
+Teoria i enunciat → explicació pròpia del problema → primer intent → pregunta concreta → implementació i comprovació pròpies → registre de l’ajuda rellevant.
+
+Es pot preguntar teoria abans de programar. El primer intent pot ser codi incomplet, un esquema o una hipòtesi. Si continues bloquejat, demana ajuda al professorat.
+
+## Diapositiva 5. Com formular una pregunta
+
+Exemple conceptual: «Estic aprenent sessions en PHP. Sense resoldre el repte, explica’m la diferència entre sessió i cookie amb un exemple diferent del projecte. Després fes-me dues preguntes per comprovar si ho he entés.»
+
+Exemple de depuració: «Este és el meu intent […]. Espere […] però obtinc […]. Ja he provat […]. Dona’m una pista per identificar la causa, sense reescriure la funció.»
+
+Petició no permesa: «Ací tens l’enunciat: implementa tots els fitxers i corregix-los fins que passen les proves.»
+
+Si la IA et dona la solució malgrat haver demanat pistes, descarta-la i demana ajuda conceptual més limitada. La frase «sense donar-me la solució» no autoritza a incorporar-la.
+
+## Diapositiva 6. Un únic fitxer: docs/ai-log.md
+
+En el repositori de l’alumne, este fitxer reunix la guia i el report breu. Obri la guia per consultar i ompli només «El meu registre», conservant les entrades anteriors.
+
+Registra data i ferramenta, dubte, teoria i intent previs, pregunta literal, ajuda rebuda, decisió pròpia, evidència o fitxer, comprovació real i dubtes pendents. Inclou l’HTML/CSS generat. No copies tota la conversa ni inventes resultats. Els exemples de la plantilla no són consultes teues.
+
+## Diapositiva 7. Exemple de registre i alternativa sense IA
+
+Exemple il·lustratiu, no evidència real:
+
+- R2M1: he llegit els apunts i el meu intent accepta un nom format només per espais.
+- Pregunta: «Quina diferència hi ha entre que un camp existisca i que tinga contingut útil? Dona’m una pista sense escriure la validació.»
+- Ajuda: distingir presència, normalització i contingut.
+- Decisió pròpia: he revisat la condició del validador.
+- Comprovació: camp absent, buit, espais i nom vàlid; els tres primers mostren error.
+- Dubte pendent: límit de longitud.
+
+No és obligatori usar IA i no usar-la no penalitza. Si el registre es demana i no l’has usada: «No he utilitzat IA en R?M?», amb les fonts consultades si n’hi ha. No obligar a fer una consulta per completar el taller.
+
+## Diapositiva 8. Tancament i contrast docent
+
+L’AI log no prova autoria per si sol. El professorat pot contrastar-lo amb el treball real i demanar una explicació, una prova o una modificació menuda sense IA.
+
+Activitat: revisa una part pròpia del projecte i explica una decisió. Si has usat IA, relaciona-la amb una entrada real; si no, indica-ho. Una consulta només conceptual no necessita una prova sobre codi assistit ni un commit fictici.
+
+Checklist: he respectat els límits, puc explicar i modificar el meu codi, les comprovacions declarades són reals, l’ajuda rebuda està identificada i els dubtes pendents són honestos.
