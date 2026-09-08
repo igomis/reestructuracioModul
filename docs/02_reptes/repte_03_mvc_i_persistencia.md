@@ -451,7 +451,7 @@ Este microprojecte demostra que el pas al framework no ha trencat el projecte an
 
 **Paper de la IA**
 
-La IA pot ajudar a generar esquelets de ruta, controlador, servei, DTO, formulari o plantilla, però l'alumnat ha de comprovar que el flux correspon al cas d'ús real de `R2`.
+La IA pot revisar el raonament sobre responsabilitats i donar pistes sobre un intent propi. L’alumnat implementa i comprova el flux del cas d’ús de `R2` sense delegar-lo.
 
 **Evidències obligatòries**
 

@@ -23,7 +23,7 @@ Incorporar WordPress com a plataforma externa o complementària dins del project
 La IA pot ajudar a:
 
 - entendre l’estructura de la REST API i exemples de payload
-- generar esquelets de connectors o scripts d’integració
+- explicar conceptes de connectors i donar pistes sobre scripts d’integració propis
 - revisar payloads, mecanismes d’autenticació i gestió d’errors
 - redactar documentació operativa i casos de prova
 

@@ -107,7 +107,7 @@ Taula mínima recomanada:
 
 - [ ] existix AI log o registre equivalent si s'ha utilitzat assistència
 - [ ] l'ús de IA queda validat amb execució, prova o contrast tècnic
-- [ ] queda indicat si la IA s'ha usat per esquelets inicials, interpretació d'errors, millora de proves o documentació
+- [ ] queda indicat si la IA s’ha usat per conceptes, pistes, casos límit o redacció, sense delegar codi ni proves
 - [ ] l'equip pot explicar què ha acceptat, què ha descartat i què ha modificat del suggeriment de la IA
 
 ### Preparació per al Repte 3

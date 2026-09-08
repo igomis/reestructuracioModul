@@ -86,7 +86,7 @@ En este punt del curs, el repte reutilitza la base arquitectònica i de persist�
 La IA es pot usar per a:
 
 - proposar contractes inicials d’API
-- generar esquelets d’endpoints
+- explicar contractes i donar pistes sobre endpoints escrits per l’alumnat
 - suggerir estructures de request i response
 - ajudar a interpretar errors d’integració
 - proposar proves de servei
@@ -288,7 +288,7 @@ Este microprojecte és el pas en què el producte deixa de ser només backend in
 
 **Paper de la IA**
 
-La IA pot ajudar amb esquelets de codi, però l’alumnat ha de provar que el servei funciona realment.
+La IA pot donar pistes sobre errors del codi propi; l’alumnat implementa i prova el servei.
 
 **Evidències obligatòries**
 

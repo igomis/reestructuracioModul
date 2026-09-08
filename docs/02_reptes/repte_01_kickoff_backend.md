@@ -85,7 +85,7 @@ La IA es pot usar per a:
 
 - explorar opcions tecnològiques dins del marc docent establit
 - resumir documentació tècnica inicial
-- suggerir esquelets de projecte
+- explicar l’estructura del projecte sense generar la implementació
 - ajudar a preparar Docker i scripts d’arrancada
 - revisar la claredat del README
 - detectar errors de configuració inicial
@@ -410,7 +410,7 @@ La implementació ha de permetre demostrar que el backend ja respon de manera re
 
 **Paper de la IA**
 
-La IA pot ajudar a proposar esquelets de ruta, vista o endpoint, però l’alumnat ha de provar-los, adaptar-los i explicar-los.
+La IA pot explicar rutes, vistes i endpoints amb exemples diferents del repte i donar pistes sobre un intent propi; la implementació i les proves les fa l’alumnat.
 
 **Evidències obligatòries**
 

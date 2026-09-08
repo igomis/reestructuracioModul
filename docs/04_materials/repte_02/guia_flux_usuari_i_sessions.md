@@ -62,7 +62,7 @@ Per considerar el flux ben resolt, s'espera trobar:
 - prova o evidència de comprovació de sessió abans i després del logout
 - evidència que la funcionalitat protegida treballa amb dades que després continuen tenint sentit dins del projecte
 - documentació tècnica actualitzada del mòdul o del `README`
-- AI log si la IA s'ha utilitzat per generar esquelets, resoldre errors o proposar validacions
+- AI log amb les pistes conceptuals, de depuració o validació rebudes, sense delegar la implementació
 
 ### Transició al Repte 3
 

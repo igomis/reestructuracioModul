@@ -1,29 +1,27 @@
-# AI Log
+# AI log
 
-## Context
+Consulta primer la [norma d’ús de la IA](../us-ia-professorat-i-alumnat.md). Usa un únic registre en `docs/ai-log.md`.
 
-Quina tasca s’estava fent.
+No és obligatori usar IA. Si no l’has usada en el microrepte, substituïx l’entrada buida per: **«No he utilitzat IA en R?M?»**, amb les fonts consultades si n’hi ha. No inventes consultes ni proves.
 
-## Prompt
+Duplica este bloc només per a consultes reals rellevants. Inclou també la generació permesa d’HTML/CSS; no cal copiar tota la conversa.
 
-Text del prompt utilitzat.
+## Consulta — R?M? — Títol breu
 
-## Resposta resumida
+- Data i ferramenta:
+- Dubte o objectiu:
+- Teoria o apunts consultats:
+- Intent propi abans de preguntar (codi, esquema o hipòtesi):
+- Pregunta principal literal:
 
-Què ha proposat la IA.
+```text
+[Pregunta real enviada a la IA.]
+```
 
-## Decisió presa
-
-Què s’ha acceptat, modificat o rebutjat.
-
-## Verificació
-
-Com s’ha comprovat que era correcte.
-
-## Traçabilitat
-
-Fitxer, commit, prova, issue o evidència relacionada.
-
-## Defensa
-
-Què podria explicar o modificar l'alumne en directe per demostrar que entén el canvi.
+- Ajuda rebuda (indica qualsevol codi generat):
+- Què he acceptat i què he descartat:
+- Què he decidit i implementat jo:
+- Fitxer, commit o apunts relacionats, si correspon:
+- Com ho he comprovat (passos o ordre, dades i resultat real):
+- Què puc explicar o modificar sense IA:
+- Dubtes pendents:

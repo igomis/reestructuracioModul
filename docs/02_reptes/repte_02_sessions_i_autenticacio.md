@@ -137,7 +137,7 @@ Cada microprojecte té un únic **RA avaluat**. Els RA de context ajuden a enten
 
 La IA es pot usar per a:
 
-- generar esquelets inicials de formularis i processament
+- generar HTML estàtic de presentació i explicar conceptes de processament, sense implementar la lògica de servidor
 - suggerir validacions
 - proposar exemples de decisions, arrays i funcions
 - ajudar a interpretar errors
@@ -726,7 +726,7 @@ Este és el centre visible del repte: demostrar que el backend ja no sols rep i 
 
 **Paper de la IA**
 
-La IA pot suggerir esquelets o fluxos d’accés, però l’alumnat ha de validar-los i demostrar-los. L'equip ha de separar en la seua explicació identificació, autenticació i autorització, i mostrar què passa quan l'usuari no té sessió vàlida o quan no complix la restricció de l'operació.
+La IA pot explicar conceptes i revisar el raonament d’un flux d’accés, però l’alumnat ha d’implementar-lo, validar-lo i demostrar-lo. L'equip ha de separar en la seua explicació identificació, autenticació i autorització, i mostrar què passa quan l'usuari no té sessió vàlida o quan no complix la restricció de l'operació.
 
 **Evidències obligatòries**
 

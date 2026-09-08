@@ -1,39 +1,9 @@
-# Guió breu d'ús de la IA per a l'alumnat
+# Ús de la IA en el mòdul
 
-## La IA sí es pot usar per a
+La norma de referència és [Ús de la IA per a professorat i alumnat](../us-ia-professorat-i-alumnat.md).
 
-- explorar alternatives
-- desbloquejar errors o problemes tècnics
-- interpretar errors de configuració d'entorn i comparar opcions mínimes de serveis
-- proposar proves o casos límit
-- revisar contractes d'`API`, validacions o documentació
-- generar un primer esquelet que després contrastes i adaptes
+Primer comprén la teoria, fes un intent propi i demana pistes concretes. La implementació de servidor i les proves les fas tu. No es permet delegar el repte en un agent ni demanar la solució completa a un xat.
 
-## La IA no és acceptable per a
+Es permet generar HTML estàtic i CSS de presentació, amb registre i revisió. L’excepció no inclou la lògica de servidor ni les decisions sobre el processament del formulari.
 
-- copiar codi sense entendre'l
-- copiar una configuració completa de Docker, BBDD o serveis sense adaptar-la ni provar-la
-- donar per bona una resposta sense provar-la
-- inventar proves o resultats no executats
-- ocultar que l'has usada
-- entregar una solució que no pots modificar ni defensar
-
-## Si l'uses, deixa clar
-
-- quin problema volies resoldre
-- què et va proposar
-- què vas acceptar o rebutjar
-- com ho vas adaptar al teu projecte
-- com ho vas verificar després
-
-## Com evitar dependència superficial
-
-- pensa primer què necessites
-- pregunta amb un objectiu concret
-- prova la resposta en el teu repositori real
-- comprova casos normals i casos d'error
-- canvia alguna part tu mateix abans de donar-la per bona
-
-## Regla curta
-
-Si no ho pots explicar, tocar i provar, encara no està llest per entregar.
+Consulta la [guia de l’alumnat amb preguntes model i exemple d’AI log](https://cipfpbatoi.github.io/dwes2627/04_materials/guia_us_verificable_ia.html). No és obligatori usar IA; si no l’has usada, declara-ho sense inventar consultes.

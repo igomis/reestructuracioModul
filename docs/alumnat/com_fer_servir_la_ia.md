@@ -1,62 +1,9 @@
-# Com fer servir la IA
+# Ús de la IA en el mòdul
 
-## Classificació documental
+La norma de referència és [Ús de la IA per a professorat i alumnat](../us-ia-professorat-i-alumnat.md).
 
-Este és un **document derivat**. Depén del document canònic [us-ia-professorat-i-alumnat.md](../us-ia-professorat-i-alumnat.md) i només el traduïx a lectura ràpida per a alumnat.
+Primer comprén la teoria, fes un intent propi i demana pistes concretes. La implementació de servidor i les proves les fas tu. No es permet delegar el repte en un agent ni demanar la solució completa a un xat.
 
-## Per a què sí la pots usar
+Es permet generar HTML estàtic i CSS de presentació, amb registre i revisió. L’excepció no inclou la lògica de servidor ni les decisions sobre el processament del formulari.
 
-La IA es pot usar com a eina de suport per:
-
-- explorar alternatives de disseny
-- generar un primer esquelet o punt de partida
-- ajudar en debugging
-- proposar proves o casos límit
-- revisar documentació tècnica
-- aclarir contractes d'API, errors o validacions
-
-## Què no és acceptable
-
-- copiar codi o documentació sense entendre'ls
-- donar per bona una resposta sense provar-la
-- inventar proves o resultats no executats
-- ocultar que has usat IA
-- entregar una solució que no pots modificar ni explicar
-- usar la IA per evitar decisions que tu hauries de comprendre
-
-## Com justificar-ne l'ús
-
-Si uses IA en una part rellevant, hauria de quedar clar:
-
-- quin problema volies resoldre
-- què vas demanar
-- què vas acceptar o rebutjar
-- com ho vas adaptar al teu projecte
-- com ho vas provar o contrastar
-
-Un `AI log` mínim pot incloure:
-
-- tasca o dubte
-- resum del prompt o de la petició
-- proposta acceptada o descartada
-- prova o verificació feta
-- resultat final
-
-## Com evitar dependència superficial
-
-- defineix primer què necessites abans d'obrir el xat
-- llig la resposta de manera crítica
-- adapta-la al teu stack i al teu projecte real
-- prova el resultat amb casos normals i casos d'error
-- canvia alguna part tu mateix abans de donar-la per bona
-- comprova que la pots explicar sense llegir la resposta original
-
-## Regla curta
-
-Si no pots explicar-ho, provar-ho i tocar-ho sense dependre del text generat, encara no està llest per entregar.
-
-## Si vols el detall complet
-
-La referència canònica és [Ús de la IA per a professorat i alumnat](../us-ia-professorat-i-alumnat.md).
-
-La guia llarga de suport és [Guia d'ús verificable de la IA](../04_materials/materials_comuns/guia_ús_verificable_ia.md).
+Consulta la [guia de l’alumnat amb preguntes model i exemple d’AI log](https://cipfpbatoi.github.io/dwes2627/04_materials/guia_us_verificable_ia.html). No és obligatori usar IA; si no l’has usada, declara-ho sense inventar consultes.

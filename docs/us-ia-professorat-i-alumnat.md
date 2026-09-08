@@ -14,34 +14,25 @@ Este document afecta:
 - professorat que planifica activitats, checkpoints, revisió de repositori i defensa tècnica
 - reptes, projecte base, evidències i instruments d'avaluació
 
-## Usos permesos
+## Norma comuna per a l’alumnat
 
-L'ús assistit per IA és compatible amb el model quan ajuda a:
+La IA pot explicar teoria, aportar exemples menuts diferents del repte, revisar un intent propi, donar pistes de depuració i suggerir casos límit. L’alumnat ha de comprendre la teoria, fer un intent propi, formular un dubte concret, implementar i comprovar personalment el resultat. Es pot preguntar teoria abans del primer intent de codi.
 
-- explorar opcions tècniques
-- resumir documentació
-- suggerir esquelets de codi, proves o documentació
-- detectar errors, punts cecs o regressions
-- comparar alternatives de disseny
-- millorar la claredat d'un README, una nota tècnica de decisió o una explicació tècnica
+No està permés delegar la implementació de servidor, la configuració avaluable ni les proves del repte: ni amb una solució completa en un xat, ni amb fragments successius, ni amb agents que editen, executen i corregisquen fins a acabar. Acceptar automàticament canvis o entendre’ls a posteriori no convertix la delegació en ús permés. La regla depén de l’ús, no de la marca de la ferramenta.
 
-## Usos guiats
+Es permet generar HTML estàtic i CSS de presentació complets, registrant els fitxers i revisant-los. L’alumne decidix i comprén camps, `name`, `method` i `action`. L’excepció no inclou PHP incrustat, plantilles amb lògica, escapament, validació, sessions, autenticació, persistència, APIs ni JavaScript que resolga funcionalitat avaluable.
 
-L'ús assistit per IA exigix control reforçat quan afecta:
+Es pot millorar la redacció d’una explicació pròpia o del registre, però mai inventar decisions, converses, proves o resultats. Si la IA proporciona una solució no demanada, cal descartar-la i demanar una pista conceptual més limitada.
 
-- arquitectura del projecte
-- autenticació, autorització o control d'accés
-- persistència, migracions o model de dades
-- contractes API
-- integracions externes
-- proves que acrediten comportaments crítics
+La guia operativa per a l’alumnat, amb preguntes model, casos prohibits i exemple de registre, és [Ús de la IA: què pots fer i com demanar ajuda](https://cipfpbatoi.github.io/dwes2627/04_materials/guia_us_verificable_ia.html).
 
-En estos casos, l'alumnat ha de poder explicar:
+## Aplicació a l’aula
 
-- què va demanar
-- què va acceptar o descartar
-- què va modificar
-- com ho va verificar
+Presentar esta norma abans del treball assistit i recordar-la a l’inici de cada repte. Les referències de les sessions a «ajuda», «revisió» o «suggeriments» s’interpreten dins d’estos límits; no autoritzen generar la funcionalitat avaluable. Les mateixes regles afecten les ampliacions.
+
+El registre habitual és `docs/ai-log.md`. Ha d’incloure teoria i intent previs, pregunta literal, ajuda rebuda, decisió pròpia, comprovació i dubtes pendents. No cal duplicar-lo en un report.
+
+No és obligatori usar IA i no usar-la no penalitza. Quan es demane el registre, una declaració de no ús substituïx les consultes; no s’exigixen converses fictícies. La comprensió es contrasta amb una explicació o modificació breu sense IA. Cap estil de codi ni nom de ferramenta prova per si sol un incompliment: les incidències requerixen contrast docent, sense sancions automàtiques noves.
 
 ## Evidències que ha de deixar l'alumnat
 
