@@ -13,7 +13,7 @@ Esta sessió obri el curs abans d'entrar en els microreptes de `R1`. La seua fun
 - **Focus**: model de curs, repositori que s'activarà en `R1S1`, evidències, ús d'IA, criteri de defensa i primer mapa provisional del producte
 - **No entra encara**: implementació tècnica del backend
 
-Nota important: en `R1S0` l'alumnat encara no ha de tindre necessàriament el repositori assignat pel professorat clonat. Per tant, no es demana omplir `README.md` en esta sessió. El producte de `R1S0` és una fitxa provisional o notes guiades que es traslladaran al `README.md` en `R1S1`, després d'acceptar i clonar el repositori.
+Nota important: en `R1S0` l'alumnat encara no ha de tindre necessàriament el repositori assignat pel professorat clonat. Per tant, no es demana omplir `README.md` en esta sessió. El producte de `R1S0` és una fitxa provisional o notes guiades. En `R1S1`, després d'acceptar i clonar el repositori, cada alumne guardarà la fitxa completa com `docs/fitxa-r1s0-mapa-producte.md`, farà `commit` i `push`, i traslladarà les decisions necessàries al `README.md`. La fitxa queda com a punt de partida no avaluable: no té nota ni entra en l'autocorrecció de `R1M1`.
 
 ## Seqüència d'aula de 3 hores
 
@@ -95,7 +95,7 @@ Preguntes de comprovació:
 | Evidència | Mínim acceptable |
 |---|---|
 | Preparació de repositori | l'alumnat entén que acceptarà la invitació de col·laboració i clonarà el repositori en `R1S1` |
-| Fitxa provisional | conté el primer mapa del producte i es podrà traslladar al `README.md` en `R1S1` |
+| Fitxa provisional | conté el primer mapa del producte; en `R1S1` es guardarà completa com `docs/fitxa-r1s0-mapa-producte.md` i les decisions necessàries es traslladaran al `README.md` |
 | AI log | plantilla preparada o criteri clar sobre quan registrar ajuda d'IA |
 | Primer mapa del producte | producte, usuari, necessitat, primera acció, dades i risc inicial |
 | Checkpoint inicial | alumne capaç d'explicar producte, primera acció i pròxim pas cap a `R1S1` |
@@ -104,6 +104,7 @@ Preguntes de comprovació:
 
 - [ ] L'alumnat sap que el repositori individual es crearà i clonarà en `R1S1`.
 - [ ] Fitxa provisional amb primer mapa del producte.
+- [ ] L'alumnat sap que en `R1S1` pujarà la fitxa completa com `docs/fitxa-r1s0-mapa-producte.md` amb `commit` i `push`.
 - [ ] Criteri d'evidències entés.
 - [ ] Ús d'IA explicat.
 - [ ] Domini inicial registrat amb primera acció real.
