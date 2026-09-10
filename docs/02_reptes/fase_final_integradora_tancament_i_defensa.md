@@ -716,7 +716,9 @@ Rúbrica de defensa tècnica final.
 
 **Duració orientativa**
 
-5 a 7 sessions, segons l’estat real del producte en acabar el Repte 5.
+`2` sessions de `3` hores (`6` hores) després de `R5`: una sessió d'estabilització, documentació i preparació de la presentació, i una sessió de defensa tècnica i tancament del curs.
+
+Les correccions i proves prèvies es treballen també dins de `R5`; esta fase final no amplia el còmput més enllà de les `120` hores.
 
 **Moment del curs**
 

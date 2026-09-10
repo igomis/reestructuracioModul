@@ -352,3 +352,9 @@ El repte es considera superat quan:
 - hi ha prova positiva i prova d'error;
 - la documentació permet entendre la font, la configuració i el flux;
 - l'alumnat pot defensar què ve de fora, què transforma el sistema i quin valor nou aporta.
+
+## 6. Duració i organització
+
+La programació reserva `7` sessions de `3` hores (`21` hores): `R5S0`, `5` sessions associades a `R5M1-R5M5` i la microdefensa `R5SX`.
+
+`R5S6` és una ampliació opcional i no se suma a les `120` hores de base.

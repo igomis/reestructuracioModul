@@ -642,7 +642,7 @@ El Repte 1 es compon de `2` microreptes, un per cada sessió ordinària de `3` h
 
 **Duració orientativa**
 
-`6` hores de base, organitzades en `2` sessions principals de `3` hores.
+`9` hores, organitzades en `3` sessions de `3` hores: `R1S0` de marc comú i `2` sessions principals associades als microreptes `R1M1-R1M2`.
 
 **Moment del curs**
 

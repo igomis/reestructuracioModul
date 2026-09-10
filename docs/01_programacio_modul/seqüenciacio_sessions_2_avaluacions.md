@@ -1,17 +1,17 @@
-# Seqüenciació de sessions en 2 avaluacions
+# Seqüenciació de macroblocs en 2 avaluacions
 
 ## Finalitat del document
 
-Baixar la programació d'aula operativa del mòdul a una seqüència fina de sessions o blocs curts, de manera que el professorat dispose d'una guia executable per distribuir activitats, materials, evidències i seguiment al llarg de les dues primeres avaluacions lectives.
+Baixar la programació d'aula operativa del mòdul a una seqüència de macroblocs, de manera que el professorat dispose d'una guia per distribuir activitats, materials, evidències i seguiment al llarg de les dues primeres avaluacions lectives.
 
 Este document es llig conjuntament amb [pla_implantacio_docent.md](pla_implantacio_docent.md), [calendaritzacio_orientativa_aula.md](calendaritzacio_orientativa_aula.md), [calendaritzacio_per_avaluacions.md](calendaritzacio_per_avaluacions.md), [programacio_aula_operativa_2_avaluacions.md](programacio_aula_operativa_2_avaluacions.md) i [matriu_evidencies_i_instruments_per_fase.md](../03_avaluacio/matriu_evidencies_i_instruments_per_fase.md). La diferència és de gra: aquells documents fixen el marc, esta peça proposa el ritme concret de desplegament del curs.
 
-La seqüència es calibra sobre un escenari d'unes `20` setmanes, `6` hores setmanals i unes `120` hores lectives aproximades distribuïdes en les dues primeres avaluacions.
+La seqüència es calibra sobre `20` setmanes, `6` hores setmanals i `120` hores distribuïdes en `40` sessions reals de `3` hores. Els `16` elements numerats d'este document són macroblocs de planificació i no sessions computables.
 
 ## Criteris d'ús
 
 - està pensat per a contextos on el projecte del mòdul s'ha de completar dins de les dues primeres avaluacions lectives
-- la unitat real és la sessió o bloc curt de treball; no equival `1:1` a una hora lectiva, sinó a un macrotram que es pot correspondre amb una classe o amb una agrupació de sessions segons la càrrega horària del centre
+- la unitat d'este document és el macrobloc; el còmput oficial usa sempre sessions reals de `3` hores segons la taula canònica de [calendarització per avaluacions](calendaritzacio_per_avaluacions.md#còmput-canònic-de-les-120-hores)
 - Git/GitHub es tracta com a repàs metodològic, traçabilitat i criteri professional, no com a alfabetització inicial
 - `R2` es resol sobre una base comuna en `PHP`
 - el contrast de frameworks s'obri des de `R3` dins de la mateixa seqüència, sense generar calendaris paral·lels
@@ -22,23 +22,23 @@ La seqüència es calibra sobre un escenari d'unes `20` setmanes, `6` hores setm
 
 | Tronc temporal | Sessions orientatives | Equivalència orientativa | Fases i reptes | Producte acumulat |
 |---|---|---|---|---|
-| **Avaluació 1** | `Sessions 1-8` | `setmanes 1-10 / ~60h` | `Fase 0`, `Fase 1`, `Fase 2` i inici de `Fase 3` | base funcional real del producte i entrada efectiva a arquitectura i persistència |
-| **Avaluació 2** | `Sessions 9-16` | `setmanes 11-20 / ~60h` | tancament de `Fase 3`, `Fase 4`, `Fase 5` i defensa final | producte persistent, publicat com a API, integrat i defensable |
+| **Avaluació 1** | `Macroblocs 1-8` | `setmanes 1-10 / 60h` | `Fase 0`, `Fase 1`, `Fase 2` i inici de `Fase 3` | base funcional real del producte i entrada efectiva a arquitectura i persistència |
+| **Avaluació 2** | `Macroblocs 9-16` | `setmanes 11-20 / 60h` | tancament de `Fase 3`, `Fase 4`, `Fase 5` i defensa final | producte persistent, publicat com a API, integrat i defensable |
 | **Avaluació 3** | període residual | fora de les `120h` nuclears del projecte | sense desenvolupament central del projecte | seguiment puntual, connexió amb empresa o `FCT`, ajustos menors si cal |
 
 ## Lectura ràpida de la seqüència
 
-- `Sessions 1-4`: `setmanes 1-5 (~30h)` per al marc comú, el criteri metodològic i el kickoff tècnic del producte
-- `Sessions 5-8`: `setmanes 6-10 (~30h)` per a la resolució del nucli funcional de `R2` i l'entrada efectiva a `R3`
-- `Sessions 9-10`: `setmanes 11-13 (~18h)` per al tancament de persistència i mantenibilitat
-- `Sessions 11-13`: `setmanes 14-17 (~24h)` per a la publicació, documentació i prova de l'`API`
-- `Sessions 14-16`: `setmanes 18-20 (~18h)` per a la integració híbrida, el tancament i la defensa final
+- `Macroblocs 1-4`: `setmanes 1-5 (~30h)` per al marc comú, el criteri metodològic i el kickoff tècnic del producte
+- `Macroblocs 5-8`: `setmanes 6-10 (~30h)` per a la resolució del nucli funcional de `R2` i l'entrada efectiva a `R3`
+- `Macroblocs 9-10`: `setmanes 11-13 (~18h)` per al tancament de persistència i mantenibilitat
+- `Macroblocs 11-13`: `setmanes 14-17 (~24h)` per a la publicació, documentació i prova de l'`API`
+- `Macroblocs 14-16`: `setmanes 18-20 (~18h)` per a la integració híbrida, el tancament i la defensa final
 
-## Seqüenciació detallada per sessions o blocs curts
+## Seqüenciació detallada per macroblocs
 
 ### Avaluació 1
 
-| Sessió | Objectiu | Activitats | Materials activats | Evidències esperades | Instrument de seguiment | Punt crític |
+| Macrobloc | Objectiu | Activitats | Materials activats | Evidències esperades | Instrument de seguiment | Punt crític |
 |---|---|---|---|---|---|---|
 | **Sessió 1** | obrir el marc comú del curs | presentar el projecte base, dominis admesos, criteris de treball per reptes i sistema d'evidències | materials comuns, projecte base, sistema d'evidències | repositori creat, estructura mínima, criteris compartits | `checklist_revisio_repo.md` | evitar un inici només expositiu sense activació real del repositori |
 | **Sessió 2** | normalitzar traçabilitat i documentació base | revisar criteri de commits, `README`, nota tècnica de decisió, proves i `AI log`; repàs de Git/GitHub com a metodologia | materials comuns | primer `README`, primers commits útils, criteri d'ús de IA explicitat | `checklist_revisio_repo.md` | comprovar que Git/GitHub no es tracta com a introducció bàsica ni com a simple còpia de seguretat |
@@ -51,7 +51,7 @@ La seqüència es calibra sobre un escenari d'unes `20` setmanes, `6` hores setm
 
 ### Avaluació 2
 
-| Sessió | Objectiu | Activitats | Materials activats | Evidències esperades | Instrument de seguiment | Punt crític |
+| Macrobloc | Objectiu | Activitats | Materials activats | Evidències esperades | Instrument de seguiment | Punt crític |
 |---|---|---|---|---|---|---|
 | **Sessió 9** | consolidar persistència del domini | completar entitats, relacions i persistència funcional | materials del Repte 3, itineraris com a suport principal | model de dades coherent i persistència operativa | checklist del Repte 3 | evitar models inconsistents o persistència parcial només per a demo |
 | **Sessió 10** | consolidar mantenibilitat i regressió mínima | reforçar capes, serveis o equivalents, revisar regressions i ajustar documentació tècnica | Repte 3, materials comuns | arquitectura explicable, proves mínimes, `README` tècnic actualitzat | `rubrica_base_reptes.md` | no obrir `R4` sense base persistent i mantenible suficient |
@@ -71,7 +71,7 @@ La seqüència es calibra sobre un escenari d'unes `20` setmanes, `6` hores setm
 | **CP3** | després de la sessió 7 | `R2` complet com a base funcional real |
 | **CP4** | després de la sessió 10 | `R3` consolidat amb persistència i mantenibilitat mínimes |
 | **CP5** | després de la sessió 13 | API documentada i provada |
-| **CP6** | després de la sessió 16 | producte final integrat, documentat i defensable |
+| **CP6** | després del macrobloc 16 | producte final integrat, documentat i defensable |
 
 Lectura dels checkpoints:
 
@@ -114,7 +114,7 @@ Lectura acumulativa:
 
 La tercera avaluació no s'ha de reservar per al desenvolupament nuclear del projecte del mòdul. En este model:
 
-- el producte base ha d'haver quedat completat al final de la sessió `16`
+- el producte base ha d'haver quedat completat al final del macrobloc `16`, que correspon al tancament de les `40` sessions reals
 - la tercera avaluació només pot assumir seguiment residual, connexió amb empresa o `FCT`, transferència d'aprenentatge o ajustos puntuals si el centre els necessita
 - no s'han de traslladar a este període ni `R4`, ni `R5`, ni la defensa final
 

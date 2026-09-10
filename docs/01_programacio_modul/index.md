@@ -27,9 +27,10 @@ La programació d'aula base es compta en sessions de `3` hores. Inclou les micro
 | `R3` | `10` | `30h` |
 | `R4` | `7` | `21h` |
 | `R5` | `7` | `21h` |
-| **Total base** | **`38`** | **`114h`** |
+| Tancament i defensa final | `2` | `6h` |
+| **Total base** | **`40`** | **`120h`** |
 
-Les sessions `R2S10`, `R4S6` i `R5S6` són ampliacions opcionals. Si s'activen com a sessió completa, el còmput pot arribar a `41` sessions de `3` hores.
+Les sessions `R2S10`, `R4S6` i `R5S6` són ampliacions opcionals i queden fora de les `120h` de base. Si s'activen, han de substituir o compactar treball d'una sessió ordinària, o impartir-se només quan el calendari real dispose d'hores addicionals.
 
 ## Documents principals
 

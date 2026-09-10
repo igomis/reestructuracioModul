@@ -10,6 +10,22 @@ En este model, el projecte base del mòdul s'ha de desenvolupar i tancar dins de
 
 La planificació es calibra sobre un escenari orientatiu d'unes `20` setmanes amb `6` hores setmanals, és a dir, unes `120` hores lectives aproximades concentrades en les dues primeres avaluacions.
 
+## Còmput canònic de les 120 hores
+
+La unitat de còmput és sempre una sessió de `3` hores. Les `40` sessions obligatòries es distribuïxen així:
+
+| Bloc | Sessions | Hores |
+|---|---:|---:|
+| `R1`: `R1S0` + `2` microreptes | `3` | `9h` |
+| `R2`: `R2S0` + `9` microreptes + `R2SX` | `11` | `33h` |
+| `R3`: `R3S0` + `7` microreptes + `R3S2B` + `R3SX` | `10` | `30h` |
+| `R4`: `R4S0` + `5` microreptes + `R4SX` | `7` | `21h` |
+| `R5`: `R5S0` + `5` microreptes + `R5SX` | `7` | `21h` |
+| Tancament, presentació i defensa final | `2` | `6h` |
+| **Total** | **`40`** | **`120h`** |
+
+Els `28` microreptes són els publicats en l'autocorrecció. Les sessions `R2S10`, `R4S6` i `R5S6` són ampliacions opcionals i no incrementen este còmput base.
+
 ## Criteris d'ús
 
 - està pensat com a model orientatiu per a un curs on el desenvolupament lectiu principal del projecte es resol dins de les dues primeres avaluacions

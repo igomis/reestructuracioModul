@@ -17,7 +17,7 @@ Micro-presentació docent breu. Equival aproximadament a `8-9` diapositives i es
 
 ## Diapositiva 3. Com es treballarà en aula
 
-- `6` hores de base
+- `9` hores en `3` sessions: `R1S0` i els microreptes `R1M1-R1M2`
 - `2` sessions de `3` hores
 - `1` microrepte per sessió ordinària
 - seqüència curta i tancada perquè `R1` no quede inflat

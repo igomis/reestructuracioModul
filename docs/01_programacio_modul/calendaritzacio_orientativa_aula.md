@@ -12,6 +12,8 @@ En contextos on la 3a avaluació queda absorbida per empresa o `FCT`, esta seqü
 
 La hipòtesi de treball usada en esta planificació és un curs d'unes `20` setmanes aproximades amb `6` hores setmanals, és a dir, unes `120` hores lectives concentrades principalment en les dues primeres avaluacions.
 
+El còmput base tancat és de `40` sessions de `3` hores: `R1 = 3`, `R2 = 11`, `R3 = 10`, `R4 = 7`, `R5 = 7` i `2` sessions finals de presentació, defensa i tancament. Inclou sessions `S0`, microdefenses i el taller obligatori `R3S2B`; exclou les ampliacions opcionals `R2S10`, `R4S6` i `R5S6`.
+
 ## Criteris d'ús de la calendarització
 
 - està pensada com a seqüència orientativa d'un bloc lectiu d'unes `20` setmanes amb unes `6` hores setmanals, ampliable o comprimible segons hores reals del centre

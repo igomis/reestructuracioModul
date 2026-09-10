@@ -1325,11 +1325,13 @@ No es demana:
 
 **Duració orientativa**
 
-- base recomanada: `27` hores
-- organització base: `9` sessions de `3` hores
+- duració total programada: `33` hores
+- organització base: `11` sessions de `3` hores: `R2S0`, `9` sessions associades a `R2M1-R2M9` i `R2SX` de microdefensa conjunta de `R1-R2`
+- el nucli autocorregible ocupa `27` hores en `9` sessions
 - la sessió `6` obri una mini API d'autenticació per a client
 - la sessió `8` es reserva a crear una primera peça testable amb POO, Composer i prova unitària
 - la sessió `9` introdueix persistència mínima amb BBDD
+- `R2S10` és una ampliació intermodular opcional i no se suma a les `120` hores de base
 
 **Moment del curs**
 

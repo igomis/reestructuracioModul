@@ -6,7 +6,7 @@ Este paquet agrupa les peces que el professorat necessita per obrir, conduir i t
 
 ## Calibratge del paquet
 
-- `6` hores de base
+- `9` hores en `3` sessions: `R1S0` i els microreptes `R1M1-R1M2`
 - `2` sessions principals de `3` hores
 - `1` sessió opcional de defensa o checkpoint formal
 - `4` microreptes com a passos lògics del repte

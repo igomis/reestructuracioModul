@@ -664,7 +664,9 @@ Rúbrica de documentació i verificació del servei.
 
 **Duració orientativa**
 
-5 a 7 sessions, segons l’stack triat, el punt de partida del Repte 3 i el nivell del grup en prova de serveis.
+`7` sessions de `3` hores (`21` hores): `R4S0`, `5` sessions associades a `R4M1-R4M5` i la microdefensa `R4SX`.
+
+`R4S6` és una ampliació opcional i no se suma a les `120` hores de base.
 
 **Moment del curs**
 

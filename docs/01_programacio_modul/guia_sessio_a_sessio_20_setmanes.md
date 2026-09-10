@@ -28,6 +28,8 @@ La guia està calibrada sobre l'escenari següent:
 
 ## Estructura general del curs
 
+El còmput operatiu és de `40` sessions de `3` hores: `38` sessions distribuïdes entre `R1-R5` i `2` sessions finals de presentació, defensa i tancament. La distribució canònica és `R1 = 9h`, `R2 = 33h`, `R3 = 30h`, `R4 = 21h`, `R5 = 21h` i fase final = `6h`.
+
 - `Avaluació 1` (`setmanes 1-10 / ~60h`): marc comú, `R1`, `R2`, microdefensa de `R2` i entrada real a `R3`
 - `Avaluació 2` (`setmanes 11-20 / ~60h`): tancament de `R3`, microdefenses de `R3`, `R4` i `R5`, i defensa final
 - `Avaluació 3`: sense desenvolupament central del projecte; només seguiment residual, connexió amb empresa o `FCT`

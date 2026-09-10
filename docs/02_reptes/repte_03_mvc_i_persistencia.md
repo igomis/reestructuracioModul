@@ -902,21 +902,23 @@ Rúbrica de documentació i defensa tècnica.
 
 Duració orientativa:
 
-- `8` a `10` sessions
-- recomanació preferent: `10` sessions de `3` hores, incloent el taller de portabilitat entre frameworks
+- `10` sessions obligatòries de `3` hores (`30` hores)
+- còmput: `R3S0`, `7` sessions associades a `R3M1-R3M7`, el taller obligatori `R3S2B` i la microdefensa `R3SX`
 
 Seqüència recomanada:
 
 | Tram | Sessions | Microprojectes principals | Sentit docent |
 |---|---:|---|---|
-| Arrencada | `1` | `R3M1` | triar stack, Docker, projecte base i rutes mínimes |
-| Persistència inicial | `2` | `R3M2` | model de dades, migracions/fixtures/seeders o mecanisme equivalent i BBDD real |
-| Taller de portabilitat | `2B` | reforç `R3M1-R3M2` | equivalències entre frameworks i auditoria abans del primer flux |
-| Primer flux | `3-4` | `R3M3` | migrar el primer cas d'ús heretat de `R2` |
-| Segon flux | `5` | `R3M4` | completar un segon flux o ampliació funcional útil |
-| Seguretat de framework | `6` | `R3M5` | autenticació, autorització i middleware |
-| Qualitat | `7-8` | `R3M6` | validació, errors, proves i neteja d'estructura |
-| Tancament | `9` | `R3M7` | README, demo, decisions i backlog de migració |
+| Transició | `R3S0` | sense microrepte | passar de PHP base a framework, capes i persistència |
+| Arrencada | `R3S1` | `R3M1` | triar stack, Docker, projecte base i rutes mínimes |
+| Persistència inicial | `R3S2` | `R3M2` | model de dades, migracions/fixtures/seeders o mecanisme equivalent i BBDD real |
+| Taller de portabilitat | `R3S2B` | reforç `R3M1-R3M2` | equivalències entre frameworks i auditoria abans del primer flux |
+| Primer flux | `R3S3` | `R3M3` | migrar el primer cas d'ús heretat de `R2` |
+| Segon flux | `R3S4` | `R3M4` | completar un segon flux o ampliació funcional útil |
+| Seguretat de framework | `R3S5` | `R3M5` | autenticació, autorització i middleware |
+| Qualitat | `R3S6` | `R3M6` | validació, errors, proves i neteja d'estructura |
+| Tancament | `R3S7` | `R3M7` | README, demo, decisions i backlog de migració |
+| Microdefensa | `R3SX` | verificació transversal | autoria, arquitectura, persistència i flux end-to-end |
 
 Si el calendari obliga a compactar, no s'ha de retallar l'exigència dels `2` fluxos, Docker, BBDD, migracions o equivalent i dades inicials reproduïbles. El que es pot reduir és l'abast funcional de cada flux.
 
