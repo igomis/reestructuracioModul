@@ -70,7 +70,11 @@ El resultat s'ha de llegir en este ordre:
 
 ## Criteri de qualificació
 
-La nota generada és provisional. Es pot acceptar directament només quan es complixen estes condicions:
+La nota generada és provisional, correspon exclusivament al microrepte actiu i queda vinculada al seu únic RA avaluat. No es calculen notes globals de repte ni s’hi incorporen la defensa oral, el projecte intermodular o la formació en empresa.
+
+Cada repte pot mostrar també una proposta d’ampliació 9→10 entre 0 i 1. És un indicador separat perquè el professorat el contraste i el tinga en compte en la defensa; no modifica la nota del microrepte ni se suma automàticament al RA.
+
+La nota del microrepte es pot acceptar directament només quan es complixen estes condicions:
 
 - el microrepte corregit és el que tocava;
 - el repositori és el de l'alumne correcte;

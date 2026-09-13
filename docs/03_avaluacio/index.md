@@ -23,7 +23,7 @@ Els documents canònics dels `R1-R5` ja deixen estes quatre funcions explicitade
 
 En `R5`, esta lectura s'aplica explícitament a `RA9`: el repte ha de fer visible quina font externa o repositori heterogeni s'integra, quin valor genera, quin instrument n'avalua el resultat i com es comprova que l'alumnat entén el flux híbrid construït.
 
-La franja `9→10` no s'ha de llegir com a punts extra. És la via per demostrar excel·lència tècnica una vegada el nucli del repte ja està acreditat. Perquè compute, l'ampliació ha d'aportar valor real, integrar-se dins del repte i poder-se defensar amb evidències verificables.
+La franja `9→10` és una evidència d’excel·lència per a la defensa oral. L’autocorrecció en proposa una valoració separada entre 0 i 1; el professorat la valida durant la defensa. No modifica les notes dels microreptes, no se suma automàticament als RA i no genera una nota global del repte.
 
 ## Regla comuna d'acreditació
 

@@ -263,9 +263,6 @@ Rúbrica d’investigació aplicada.
 - pregunta oral: “per què esta opció és assumible per al curs i quina has descartat?”
 - pregunta oral: “què fa el runtime o servidor triat dins del flux d’execució?”
 
-**Pes orientatiu dins del repte**
-
-25%
 
 ### Microrepte R1M2 — Entorn executable, landing inicial i tancament de R1
 
@@ -366,9 +363,6 @@ Checklist tècnica de repositori + revisió docent de README.
 - explicació de què s'ha adaptat respecte del model del professorat
 - revisió d'una decisió tècnica menuda i d'una incidència o dubte real
 
-**Pes orientatiu dins del repte**
-
-75%
 
 #### Bloc intern de R1M2 — Landing inicial servida pel backend
 
@@ -443,9 +437,6 @@ Rúbrica de microprojecte funcional.
 - canvi menor en viu sobre ruta, missatge o resposta
 - pregunta tècnica sobre què passa en servidor quan s’accedix a este punt d’entrada
 
-**Pes orientatiu dins del repte**
-
-25%
 
 #### Bloc intern de R1M2 — Documentació tècnica, verificació i checkpoint
 
@@ -524,18 +515,15 @@ Rúbrica de defensa tècnica + checklist de documentació.
 - contrast entre justificació, commits i resultat final
 - preguntes de transferència sobre com escala esta base al Repte 2
 
-**Pes orientatiu dins del repte**
-
-20%
 
 ---
 
 ## 6. Taula resum de microreptes i criteris d’avaluació
 
-| Microrepte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument | Pes orientatiu |
-|---|---|---|---|---|---|---|
-| R1M1 | Investigació / decisió tècnica | Fitxa breu d'exploració tècnica + model d'execució client/servidor + decisió orientativa | RA1a, RA1b, RA1c, RA1g | Fitxa, model d'execució, dubtes detectats, posada en comú | Rúbrica | 25% |
-| R1M2 | Procedimental / tancament | Repositori executable amb Docker, landing inicial servida pel backend, README, documentació i checkpoint | RA1b, RA1c, RA1d, RA1e, RA1f, RA1g | Repo, Docker, landing inicial, README, documentació, issues, commits, prova d'arrancada i defensa | Checklist + rúbrica | 75% |
+| Microrepte | Tipus | Producte o lliurable | CA coberts | Evidències principals | Instrument |
+|---|---|---|---|---|---|
+| R1M1 | Investigació / decisió tècnica | Fitxa breu d'exploració tècnica + model d'execució client/servidor + decisió orientativa | RA1a, RA1b, RA1c, RA1g | Fitxa, model d'execució, dubtes detectats, posada en comú | Rúbrica |
+| R1M2 | Procedimental / tancament | Repositori executable amb Docker, landing inicial servida pel backend, README, documentació i checkpoint | RA1b, RA1c, RA1d, RA1e, RA1f, RA1g | Repo, Docker, landing inicial, README, documentació, issues, commits, prova d'arrancada i defensa | Checklist + rúbrica |
 
 ### 6.1 Coordinació docent amb sessions de `3` hores
 

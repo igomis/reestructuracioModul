@@ -311,9 +311,6 @@ Checklist d'arrencada tècnica i revisió de repositori.
 - execució en directe de l'arrencada
 - pregunta oral sobre serveis de Docker i punt d'entrada del framework
 
-**Pes orientatiu dins del repte**
-
-12%
 
 ---
 
@@ -399,9 +396,6 @@ Rúbrica de persistència mínima i dades reproduïbles.
 - esborrar o reiniciar BBDD i tornar a executar migracions i càrrega inicial reproduïble
 - mostrar una lectura real des de l'aplicació i el seu ús dins d'un flux
 
-**Pes orientatiu dins del repte**
-
-18%
 
 ---
 
@@ -492,9 +486,6 @@ Rúbrica de flux end-to-end migrat.
 - execució en directe del flux
 - pregunta oral sobre el recorregut de la petició pel framework
 
-**Pes orientatiu dins del repte**
-
-18%
 
 ---
 
@@ -580,9 +571,6 @@ Checklist de segon flux funcional i revisió de valor.
 - execució en directe dels dos fluxos
 - pregunta oral sobre què ha fet més fàcil o més ordenat el framework
 
-**Pes orientatiu dins del repte**
-
-12%
 
 ---
 
@@ -673,9 +661,6 @@ Rúbrica d'autenticació, autorització i middleware.
 - provar denegació amb usuari sense permís o estat no vàlid
 - fer logout i repetir l'accés
 
-**Pes orientatiu dins del repte**
-
-15%
 
 ---
 
@@ -755,9 +740,6 @@ Checklist de qualitat mínima i proves.
 - execució en directe de proves o checklist verificable
 - provocació d'un error i revisió de la resposta del sistema
 
-**Pes orientatiu dins del repte**
-
-12%
 
 ---
 
@@ -839,23 +821,20 @@ Rúbrica de documentació i defensa tècnica.
 - seguir el README per arrancar el projecte
 - defensa curta sobre els `2` fluxos, la BBDD i el backlog
 
-**Pes orientatiu dins del repte**
-
-13%
 
 ---
 
 ## 7. Taula resum de microprojectes i criteris d'avaluació
 
-| Microprojecte | Tipus | Producte o lliurable | RA avaluat | CA avaluats | RA de context | Evidències principals | Instrument | Pes orientatiu |
-|---|---|---|---|---|---|---|---|---:|
-| R3M1 | Infraestructura / decisió tècnica | Projecte en framework arrancable amb Docker | RA5 | RA5.a, RA5.b, RA5.c, RA5.d, RA5.e | RA8.c | comparativa de stack, esquema abans/després, Docker, `.env`, ruta inicial, resposta generada, issue i abast de 2 fluxos | checklist | 12% |
-| R3M2 | Persistència mínima | Model de dades inicial amb migracions/fixtures/seeders o mecanisme equivalent i conjunt de dades usable | RA6 | RA6.a, RA6.b, RA6.c, RA6.d, RA6.e | RA5.f | BBDD creada, dades carregades, consulta de conjunt de dades i ús en flux | rúbrica | 18% |
-| R3M3 | Migració funcional | Primer cas d'ús complet heretat de R2 | RA8 | RA8.d, RA8.e, RA8.g | RA5.e, RA5.f, RA5.g, RA6.c, RA6.d, RA6.f | ruta, controlador, model/servei, vista/plantilla server-rendered, formulari o interacció, prova | rúbrica | 18% |
-| R3M4 | Ampliació funcional | Segon flux end-to-end o ampliació útil | RA8 | RA8.f, RA8.g | RA5.e, RA5.f, RA5.g, RA5.h, RA6.c, RA6.d, RA6.f | segon flux, BBDD, canvi dinàmic de resposta, validació/error i demo | checklist | 12% |
-| R3M5 | Seguretat de framework | Autenticació, autorització i middleware | RA5 | RA5.f, RA5.g, RA5.h | RA6.f, RA8.g | login, acció protegida, cas autoritzat i denegat | rúbrica | 15% |
-| R3M6 | Qualitat | Estabilització, validació, errors i proves | RA5 | RA5.g, RA5.h | RA6.f, RA6.g | proves, cas positiu/negatiu, errors, neteja i protecció intacta | checklist | 12% |
-| R3M7 | Tancament | README, decisions, demo i backlog de migració | RA5 | RA5.f, RA5.g | RA6.g | documentació, demo, mapa del que queda i acció protegida | rúbrica | 13% |
+| Microprojecte | Tipus | Producte o lliurable | RA avaluat | CA avaluats | RA de context | Evidències principals | Instrument |
+|---|---|---|---|---|---|---|---|
+| R3M1 | Infraestructura / decisió tècnica | Projecte en framework arrancable amb Docker | RA5 | RA5.a, RA5.b, RA5.c, RA5.d, RA5.e | RA8.c | comparativa de stack, esquema abans/després, Docker, `.env`, ruta inicial, resposta generada, issue i abast de 2 fluxos | checklist |
+| R3M2 | Persistència mínima | Model de dades inicial amb migracions/fixtures/seeders o mecanisme equivalent i conjunt de dades usable | RA6 | RA6.a, RA6.b, RA6.c, RA6.d, RA6.e | RA5.f | BBDD creada, dades carregades, consulta de conjunt de dades i ús en flux | rúbrica |
+| R3M3 | Migració funcional | Primer cas d'ús complet heretat de R2 | RA8 | RA8.d, RA8.e, RA8.g | RA5.e, RA5.f, RA5.g, RA6.c, RA6.d, RA6.f | ruta, controlador, model/servei, vista/plantilla server-rendered, formulari o interacció, prova | rúbrica |
+| R3M4 | Ampliació funcional | Segon flux end-to-end o ampliació útil | RA8 | RA8.f, RA8.g | RA5.e, RA5.f, RA5.g, RA5.h, RA6.c, RA6.d, RA6.f | segon flux, BBDD, canvi dinàmic de resposta, validació/error i demo | checklist |
+| R3M5 | Seguretat de framework | Autenticació, autorització i middleware | RA5 | RA5.f, RA5.g, RA5.h | RA6.f, RA8.g | login, acció protegida, cas autoritzat i denegat | rúbrica |
+| R3M6 | Qualitat | Estabilització, validació, errors i proves | RA5 | RA5.g, RA5.h | RA6.f, RA6.g | proves, cas positiu/negatiu, errors, neteja i protecció intacta | checklist |
+| R3M7 | Tancament | README, decisions, demo i backlog de migració | RA5 | RA5.f, RA5.g | RA6.g | documentació, demo, mapa del que queda i acció protegida | rúbrica |
 
 ---
 

@@ -22,7 +22,7 @@ Per això, en este mòdul:
 - esta rúbrica és el marc comú per als reptes `1-5`
 - totes les dimensions s'han d'avaluar amb evidències observables del producte, del repositori i de la defensa
 - l'avaluació és individual, encara que puguen existir parelles de contrast tècnic, checkpoints comuns o un mateix projecte funcional de referència
-- el pes pot ajustar-se lleugerament segons el repte, però la lògica general s'ha de mantindre
+- la rúbrica orienta la revisió tècnica de cada microrepte, sense generar una nota global del repte
 - una bona presentació no pot compensar l'absència de funcionalitat, proves o traçabilitat
 - un codi formalment correcte no pot compensar manca de verificació, manca de comprensió o ús opac de la IA
 - una tècnica aïllada no pot puntuar com a repte resolt si no materialitza un cas d'ús professional mínim

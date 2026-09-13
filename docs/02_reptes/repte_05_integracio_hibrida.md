@@ -131,9 +131,6 @@ L'equip concreta:
 
 Checklist de selecció i viabilitat.
 
-**Pes orientatiu dins del repte**
-
-15%
 
 ### Microrepte R5M2 — Connexió amb la font externa i recuperació real
 
@@ -179,9 +176,6 @@ L'equip implementa:
 
 Rúbrica de connexió i robustesa mínima.
 
-**Pes orientatiu dins del repte**
-
-20%
 
 ### Microrepte R5M3 — Transformació, mapping i valor afegit
 
@@ -227,9 +221,6 @@ L'equip defineix i implementa:
 
 Rúbrica de transformació i valor funcional.
 
-**Pes orientatiu dins del repte**
-
-20%
 
 ### Microrepte R5M4 — Integració de la funcionalitat híbrida en el producte
 
@@ -274,11 +265,8 @@ L'equip connecta la integració amb:
 
 Rúbrica d'integració híbrida.
 
-**Pes orientatiu dins del repte**
 
-25%
-
-### Microrepte R5M5 — Prova, documentació i defensa de la integració
+### Microrepte R5M5 — Prova i documentació de la integració
 
 **Tipus**
 
@@ -323,21 +311,18 @@ L'equip prepara:
 
 Checklist de tancament i defensa.
 
-**Pes orientatiu dins del repte**
-
-20%
 
 ---
 
 ## 4. Taula resum de microprojectes i criteris d'avaluació
 
-| Microprojecte | Tipus | Producte o lliurable | RA avaluat | CA avaluats | RA de context | Evidències principals | Instrument | Pes orientatiu |
-|---|---|---|---|---|---|---|---|---:|
-| R5M1 | Investigació / decisió | Font externa triada i mapa d'integració | RA9 | RA9.a, RA9.b | RA7.a | comparativa, justificació, mapa inicial, riscos | checklist | 15% |
-| R5M2 | Procedimental | Connexió funcional amb font externa | RA9 | RA9.c, RA9.f | RA7.d, RA7.e | connector, resposta real, cas d'error | rúbrica | 20% |
-| R5M3 | Procedimental | Mapping i transformació útil | RA9 | RA9.d, RA9.e | RA6.c, RA6.d | esquema de mapping, transformació, comparativa | rúbrica | 20% |
-| R5M4 | Integració | Funcionalitat híbrida integrada | RA9 | RA9.e, RA9.f | RA8.f, RA7.f | demo completa, abans/després, commit comentat | rúbrica | 25% |
-| R5M5 | Tancament / verificació | Proves, documentació i defensa | RA9 | RA9.g, RA9.h | RA7.h | registre de proves, documentació, mapa final, defensa | checklist | 20% |
+| Microprojecte | Tipus | Producte o lliurable | RA avaluat | CA avaluats | RA de context | Evidències principals | Instrument |
+|---|---|---|---|---|---|---|---|
+| R5M1 | Investigació / decisió | Font externa triada i mapa d'integració | RA9 | RA9.a, RA9.b | RA7.a | comparativa, justificació, mapa inicial, riscos | checklist |
+| R5M2 | Procedimental | Connexió funcional amb font externa | RA9 | RA9.c, RA9.f | RA7.d, RA7.e | connector, resposta real, cas d'error | rúbrica |
+| R5M3 | Procedimental | Mapping i transformació útil | RA9 | RA9.d, RA9.e | RA6.c, RA6.d | esquema de mapping, transformació, comparativa | rúbrica |
+| R5M4 | Integració | Funcionalitat híbrida integrada | RA9 | RA9.e, RA9.f | RA8.f, RA7.f | demo completa, abans/després, commit comentat | rúbrica |
+| R5M5 | Tancament / verificació | Proves, documentació i defensa | RA9 | RA9.g, RA9.h | RA7.h | registre de proves, documentació, mapa final, defensa | checklist |
 
 ---
 

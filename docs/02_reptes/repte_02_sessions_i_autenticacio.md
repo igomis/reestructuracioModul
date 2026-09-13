@@ -421,9 +421,6 @@ Checklist de formulari i recuperació de dades.
 - execució en directe del formulari
 - pregunta oral sobre d’on ix cada dada i com arriba al servidor
 
-**Pes orientatiu dins del repte**
-
-12%
 
 ---
 
@@ -515,9 +512,6 @@ Rúbrica breu de processament bàsic en servidor.
 - pregunta oral sobre variables i àmbits
 - canvi menut en viu sobre una operació o una directiva
 
-**Pes orientatiu dins del repte**
-
-12%
 
 ---
 
@@ -595,9 +589,6 @@ Rúbrica de lògica bàsica aplicada.
 - pregunta oral sobre per què la decisió, l’array o la funció són necessaris
 - microcanvi en viu sobre una condició o una funció
 
-**Pes orientatiu dins del repte**
-
-12%
 
 ---
 
@@ -679,9 +670,6 @@ Checklist de manteniment d’estat.
 - execució en directe del canvi d’estat
 - pregunta oral sobre què es guarda, on i per què
 
-**Pes orientatiu dins del repte**
-
-12%
 
 ---
 
@@ -765,9 +753,6 @@ Rúbrica de funcionalitat autenticada i protegida.
 - execució en directe del cas denegat
 - pregunta oral sobre en quin punt es bloqueja l’acció
 
-**Pes orientatiu dins del repte**
-
-16%
 
 ---
 
@@ -857,10 +842,6 @@ Rúbrica curta de mini API d'autenticació.
 - execució de ruta protegida amb token vàlid
 - pregunta oral sobre què ha de fer el client quan rep `401`
 
-**Pes orientatiu dins del repte**
-
-10%
-
 ---
 
 ### Microrepte R2M7 — Prova, depuració, documentació mínima i checkpoint tècnic
@@ -943,9 +924,6 @@ Checklist de verificació + defensa tècnica.
 - contrast entre documentació, repositori i demo
 - pregunta oral sobre què caldria reorganitzar en el Repte 3
 
-**Pes orientatiu dins del repte**
-
-8%
 
 ---
 
@@ -1032,9 +1010,6 @@ Rúbrica curta de POO, Composer i prova unitària inicial.
 - execució breu del flux després del canvi
 - pregunta oral sobre què fa la classe, com la carrega Composer, què comprova el test i què encara es reserva per a `R3`
 
-**Pes orientatiu dins del repte**
-
-8%
 
 ---
 
@@ -1126,27 +1101,24 @@ Rúbrica curta de persistència mínima amb BBDD.
 - revisió de configuració sense secrets
 - pregunta oral sobre consulta preparada i diferència entre sessió i BBDD
 
-**Pes orientatiu dins del repte**
-
-10%
 
 ---
 
 ## 6. Taula resum de microprojectes i criteris d’avaluació
 
-Estos pesos calculen la `nota_nucli_R2`. No són una mitjana plana: responen al pes curricular dels CA treballats i al paper de cada microrepte dins del flux complet. `R2M5` continua tenint més pes perquè concentra autenticació i protecció d'una operació real. `R2M6` té pes propi com a pont intermodular amb DWEC. `R2M9` introdueix persistència real, però queda acotat com a pont cap a `R3`, no com a repte complet de BBDD.
+Cada microrepte genera una nota pròpia vinculada al seu RA avaluat. La taula no definix una nota global de R2 ni pesos interns entre microreptes.
 
-| Microprojecte | Tipus | Producte o lliurable | RA avaluat | CA avaluats | RA de context | Evidències principals | Instrument | Pes orientatiu |
-|---|---|---|---|---|---|---|---|---|
-| R2M1 | Procedimental | Entrada variada, codi servidor integrat i recuperació de dades | RA2 | RA2.a, RA2.b, RA2.c, RA2.d | RA3.e, RA3.f, RA3.g | formulari amb text, llista i checkbox, codi embegut, variables simples, validació bàsica, error visible i demo | checklist | 12% |
-| R2M2 | Procedimental | Processament, reintent i guardat funcional | RA2 | RA2.a, RA2.b, RA2.c, RA2.d, RA2.e, RA2.f, RA2.g, RA2.h | RA3.e, RA3.f, RA3.g | formulari amb error, dades conservades, reenviament corregit, cas correcte guardat funcionalment, codi embegut, variables i demo | rúbrica breu | 12% |
-| R2M3 | Procedimental | Decisions, arrays i funcions aplicades | RA3 | RA3.a, RA3.b, RA3.c, RA3.d | - | lògica observable, funcions, demo | rúbrica | 12% |
-| R2M4 | Procedimental | Estat, sessió i/o cookies | RA4 | RA4.a, RA4.b, RA4.c | - | demo d’estat, recuperació i invalidació | checklist | 12% |
-| R2M5 | Procedimental | Autenticació i operació protegida | RA4 | RA4.d, RA4.e | - | login, operació protegida, cas autoritzat i denegat | rúbrica | 16% |
-| R2M6 | Intermodular | Mini API d'autenticació per a client | RA4 | RA4.d, RA4.e | pont DWEC | login API, ruta protegida, `JSON`, `200`, `401` i prova externa | rúbrica curta | 10% |
-| R2M7 | Tancament / verificació | Proves, documentació mínima i checkpoint tècnic | RA4 | RA4.f | - | proves, incidències, documentació, defensa | checklist + defensa | 8% |
-| R2M8 | Integrador | Primera peça testable amb POO i Composer | RA3 | RA3.d, RA3.g | RA4.f | composer.json/autoload, classe simple, prova unitària i comprovació final | rúbrica curta | 8% |
-| R2M9 | Integrador | Persistència mínima amb BBDD en PHP | RA6 | RA6.a, RA6.b, RA6.c, RA6.d, RA6.f | RA3, RA4 | connexió, taula, alta, lectura, consulta preparada i README de reproducció | rúbrica curta | 10% |
+| Microprojecte | Tipus | Producte o lliurable | RA avaluat | CA avaluats | RA de context | Evidències principals | Instrument |
+|---|---|---|---|---|---|---|---|
+| R2M1 | Procedimental | Entrada variada, codi servidor integrat i recuperació de dades | RA2 | RA2.a, RA2.b, RA2.c, RA2.d | RA3.e, RA3.f, RA3.g | formulari amb text, llista i checkbox, codi embegut, variables simples, validació bàsica, error visible i demo | checklist |
+| R2M2 | Procedimental | Processament, reintent i guardat funcional | RA2 | RA2.a, RA2.b, RA2.c, RA2.d, RA2.e, RA2.f, RA2.g, RA2.h | RA3.e, RA3.f, RA3.g | formulari amb error, dades conservades, reenviament corregit, cas correcte guardat funcionalment, codi embegut, variables i demo | rúbrica breu |
+| R2M3 | Procedimental | Decisions, arrays i funcions aplicades | RA3 | RA3.a, RA3.b, RA3.c, RA3.d | - | lògica observable, funcions, demo | rúbrica |
+| R2M4 | Procedimental | Estat, sessió i/o cookies | RA4 | RA4.a, RA4.b, RA4.c | - | demo d’estat, recuperació i invalidació | checklist |
+| R2M5 | Procedimental | Autenticació i operació protegida | RA4 | RA4.d, RA4.e | - | login, operació protegida, cas autoritzat i denegat | rúbrica |
+| R2M6 | Intermodular | Mini API d'autenticació per a client | RA4 | RA4.d, RA4.e | pont DWEC | login API, ruta protegida, `JSON`, `200`, `401` i prova externa | rúbrica curta |
+| R2M7 | Tancament / verificació | Proves, documentació mínima i checkpoint tècnic | RA4 | RA4.f | - | proves, incidències, documentació, defensa | checklist + defensa |
+| R2M8 | Integrador | Primera peça testable amb POO i Composer | RA3 | RA3.d, RA3.g | RA4.f | composer.json/autoload, classe simple, prova unitària i comprovació final | rúbrica curta |
+| R2M9 | Integrador | Persistència mínima amb BBDD en PHP | RA6 | RA6.a, RA6.b, RA6.c, RA6.d, RA6.f | RA3, RA4 | connexió, taula, alta, lectura, consulta preparada i README de reproducció | rúbrica curta |
 
 ---
 
@@ -1427,17 +1399,7 @@ Aprofundir el repte amb una millora tècnica real sobre robustesa del flux, qual
 
 `r2-s09-persistencia-minima-bbdd-php` (proposta global separada, dins de R2M9)
 
-Esta autocorrecció no assigna directament la nota final. Filtra si l'ampliació pot optar a la franja `9→10`, si no pot optar o si necessita revisió docent.
-
-**Criteri de nota final**
-
-Les autocorreccions dels microreptes `R2M1` a `R2M9` valoren el nucli obligatori. La qualificació final del repte ha de separar nucli i via d'excel·lència:
-
-```text
-nota_final_R2 = 0.9 * nota_nucli_R2 + ampliacio_9_10
-```
-
-`nota_nucli_R2` és la nota ponderada dels microreptes obligatoris segons la taula de pesos del repte. Sense ampliació validada, la nota final del repte queda limitada a `9`, encara que la mitjana ponderada dels microreptes siga `10`. L'ampliació `9→10` pot sumar entre `0` i `1` punt segons valor tècnic, integració, verificació, traçabilitat i defensa.
+Esta autocorrecció genera una proposta independent entre `0` i `1`. El professorat la valida durant la defensa oral i la té en compte dins d’eixe instrument. No modifica les notes dels microreptes, no se suma automàticament als RA i no genera una nota final de R2.
 
 **Condició prèvia**
 

@@ -9,7 +9,7 @@ Deixar obert el projecte amb una base executable i una landing inicial servida p
 - `R1M1`: model client/servidor, model d'execució client vs servidor i decisió tècnica inicial orientativa
 - `R1M2`: base executable amb Docker, PHP, servidor web, BBDD i phpMyAdmin, landing inicial servida pel backend, documentació tècnica, verificació i checkpoint
 
-Cada microrepte equival a una sessió ordinària de `3` hores. `R1M1` té un pes del `25%` dins del repte i `R1M2` concentra el `75%` restant perquè tanca la base executable, la primera entrada visible del producte i el checkpoint de pas a `R2`.
+Cada microrepte equival a una sessió ordinària de `3` hores i genera una nota pròpia. `R1M2` tanca la base executable, la primera entrada visible del producte i el checkpoint de pas a `R2`, però no es calcula una nota conjunta del repte.
 
 ## Has de fer
 
