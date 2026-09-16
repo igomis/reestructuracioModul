@@ -230,6 +230,7 @@ Frase guia: "No afegis funcionalitat de R2 fins que pugues arrancar, obrir i exp
 
 ## Materials associats per a portar a l'aula
 
+- **Guia docent de preparació i modelatge**: [R1S2. Model d'entorn amb Docker Compose](guia_docent_r1s2_docker_compose.md).
 - **Presentació associada**: [MT02. README executable i commit defensable](https://cipfpbatoi.github.io/dwes2627/recursos/Tallers/MT02-README-executable-i-commit-defensable.pdf)
 - **Teoria o material associat**: [Stack servidor i entorn executable](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R1-Stack-servidor-i-entorn-executable.pdf)
 
