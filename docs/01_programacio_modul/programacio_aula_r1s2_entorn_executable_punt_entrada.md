@@ -34,8 +34,8 @@ Un repositori que permeta:
 
 - continuar sobre el repositori individual creat pel professorat clonat en `R1S1`;
 - arrancar un entorn amb `Docker` o equivalent;
-- executar `PHP` darrere d'un servidor web;
-- disposar de base de dades i phpMyAdmin quan corresponga al model docent;
+- executar un backend en `PHP` o `Python` darrere d'un servidor web;
+- disposar de base de dades i phpMyAdmin o eina equivalent quan corresponga al model docent;
 - obrir una landing inicial del producte servida pel backend;
 - usar una ruta tècnica com `/health` només com a comprovació auxiliar, si cal;
 - seguir un `README` executable;
@@ -52,7 +52,7 @@ Un repositori que permeta:
 ## Continguts a explicar
 
 - Estructura mínima d'un repositori backend.
-- Paper de `docker-compose.yml`, servidor web, `PHP`, base de dades i phpMyAdmin.
+- Paper de `docker-compose.yml`, servidor web, backend `PHP` o `Python`, base de dades i phpMyAdmin o eina equivalent.
 - Diferència entre infraestructura i funcionalitat.
 - Landing inicial del producte servida pel backend.
 - Diferència entre una landing de producte i un `healthcheck` tècnic.

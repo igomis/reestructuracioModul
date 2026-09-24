@@ -46,13 +46,13 @@ El procés que s'espera de l'alumnat és este:
 
 1. Partir del producte definit en `R1S0`: usuari principal, primera acció útil, dades mínimes i risc inicial.
 2. Separar el flux en client i servidor: què fa el navegador, què rep el servidor, què processa el backend i quina resposta torna.
-3. Identificar les peces mínimes de la base tècnica de `R1S2`: `Docker` o equivalent, `PHP`, servidor web, possible base de dades i landing inicial servida pel backend.
-4. Explorar dues o tres opcions tècniques del marc docent. En `R1` poden aparéixer com a referència `PHP` base, `Laravel`, `Symfony` o `NestJS`, però només per entendre avantatges, límits i moment d'entrada.
+3. Identificar les peces mínimes de la base tècnica de `R1S2`: `Docker` o equivalent, backend en `PHP` o `Python`, servidor web, possible base de dades i landing inicial servida pel backend.
+4. Explorar dues o tres opcions tècniques del marc docent. En `R1` poden aparéixer com a referència `PHP` amb `Laravel` o `Symfony`, `Python` amb `Flask` o `FastAPI`, o altres alternatives com `NestJS`, però només per entendre avantatges, límits i moment d'entrada.
 5. Tancar una decisió inicial assumible per a `R1S2`: amb què es començarà l'entorn executable i per què.
 6. Escriure una alternativa descartada amb motiu concret.
 7. Registrar un dubte o risc tècnic que es revisarà més avant, especialment abans de l'entrada real a framework en `R3`.
 
-El criteri docent és que `R1S2` ha de poder arrancar amb una base clara i explicable. Si la comparació de frameworks retarda l'entorn executable, cal tallar-la i tornar al mínim comú: `Docker + PHP + servidor web + primera resposta del backend`.
+El criteri docent és que `R1S2` ha de poder arrancar amb una base clara i explicable. Si la comparació de frameworks retarda l'entorn executable, cal tallar-la i tornar al mínim comú: `Docker + backend PHP o Python + servidor web + primera resposta del backend`.
 
 ### Preguntes guia per a la decisió
 

@@ -36,10 +36,10 @@ No es considera suficient triar tecnologia o generar un esquelet buit. Tampoc es
 Una primera versió funcional i verificable del servei backend, amb:
 
 - repositori inicial funcional
-- base comuna en `PHP` assumida dins d’un marc docent acotat
+- base comuna en `PHP` o `Python` assumida dins d’un marc docent acotat
 - projecte executable en local de manera reproductible
 - ús de Docker
-- servidor web, servei de base de dades i phpMyAdmin incorporats en l'entorn inicial
+- servidor web, servei de base de dades i phpMyAdmin o eina equivalent incorporats en l'entorn inicial quan corresponga
 - landing inicial funcional
 - README tècnic executable
 - documentació del repte dins del repositori i enllaçada des d'un índex o pàgina visible
@@ -323,7 +323,7 @@ La IA pot suggerir fitxers inicials, estructura base, configuracions de Docker o
 - repositori creat
 - arrencada amb Docker funcional
 - `docker-compose.yml` o equivalent adaptat al projecte
-- serveis mínims de `PHP`, servidor web, base de dades i phpMyAdmin definits i arrancables
+- serveis mínims de backend `PHP` o `Python`, servidor web, base de dades i phpMyAdmin o eina equivalent definits i arrancables quan corresponga
 - issue mare de kickoff
 - primers commits significatius
 - README curt i executable
