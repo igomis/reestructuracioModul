@@ -248,4 +248,4 @@ Una alta i un llistat són suficients si estan connectats al flux real.
 
 ## Registre de l’ampliació global al final de R2
 
-En R2M9 es recull una única proposta d’ampliació 9→10 del repte (0–1), amb declaració `docs/r2-ampliacio.md`. L’autocorrecció la mostra separada de la nota del microrepte. En la defensa, el professorat comprova l’evidència, la demo i la comprensió, valida o ajusta la valoració i deixa una observació. No es calcula cap nota global del repte ni se suma automàticament a cap RA.
+En R2M9 es recull una única proposta d’ampliació 9→10 del repte (0–1). Si l'alumne vol presentar-la, ha de crear obligatòriament `docs/r2-ampliacio.md` amb justificació i enllaços a implementació i proves; sense este fitxer es considera no presentada. L’autocorrecció la mostra separada de la nota del microrepte. En la defensa, el professorat comprova l’evidència, la demo i la comprensió, valida o ajusta la valoració i deixa una observació. No es calcula cap nota global del repte ni se suma automàticament a cap RA.
