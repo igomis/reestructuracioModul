@@ -120,7 +120,7 @@ Cada microprojecte té un únic **RA avaluat**. Els RA de context ajuden a enten
 | Microprojecte | RA avaluat | CA avaluats | RA de context | Evidència mínima | Verificació d'aprenentatge real |
 |---|---|---|---|---|---|
 | `R2M1` | `RA2` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d` | `RA3.e`, `RA3.f`, `RA3.g` | formulari o entrada equivalent amb text, llista i checkbox, recuperació de dades, una validació bàsica, error visible i reenviament corregit | execució en directe i explicació del recorregut de cada dada mínima |
-| `R2M2` | `RA2` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d`, `RA2.e`, `RA2.f`, `RA2.g`, `RA2.h` | `RA3.e`, `RA3.f`, `RA3.g` | resposta generada en servidor amb variables, operadors, formulari regenerat després d'un error i guardat funcional del cas correcte | canvi menut en viu sobre un valor conservat o guardat i explicació de com es rep, es tracta i es torna a usar |
+| `R2M2` | `RA2` | `RA2.a`, `RA2.b`, `RA2.c`, `RA2.d`, `RA2.e`, `RA2.f`, `RA2.g`, `RA2.h` | `RA3.e`, `RA3.f`, `RA3.g` | resposta generada en servidor amb variables, operadors, formulari regenerat després d'un error i confirmació del cas correcte | canvi menut en viu sobre un valor conservat o processat i explicació de com es rep, es tracta i es mostra |
 | `R2M3` | `RA3` | `RA3.a`, `RA3.b`, `RA3.c`, `RA3.d` | - | regla de domini amb decisió, array o funció útil | microcanvi sobre una condició o funció i defensa del seu sentit dins del producte |
 | `R2M4` | `RA4` | `RA4.a`, `RA4.b`, `RA4.c` | - | estat, sessió o cookies amb recuperació i invalidació | demo de recuperació i neteja, més pregunta sobre què es guarda i on |
 | `R2M5` | `RA4` | `RA4.d`, `RA4.e` | - | autenticació funcional i operació de domini protegida | demo de cas permés i cas denegat amb explicació del punt de control |
@@ -424,7 +424,7 @@ Checklist de formulari i recuperació de dades.
 
 ---
 
-### Microrepte R2M2 — Processament, reintent i guardat funcional
+### Microrepte R2M2 — Processament, reintent i confirmació
 
 **Tipus**
 
@@ -432,7 +432,7 @@ Microprojecte procedimental.
 
 **Objectiu**
 
-Fer visible el treball elemental de programació en servidor que permet recuperar dades enviades, tractar-les, tornar a generar el formulari amb dades aprofitables quan hi ha un error i guardar funcionalment la informació quan l'entrada ja és correcta.
+Fer visible el treball elemental de programació en servidor que permet recuperar dades enviades, tractar-les, tornar a generar el formulari amb dades aprofitables quan hi ha un error i mostrar una confirmació o resum quan l'entrada ja és correcta.
 
 **Tasca**
 
@@ -450,15 +450,14 @@ L’equip implementa tractament bàsic de la petició, incloent:
 - error visible generat en servidor
 - formulari recarregat amb dades aprofitables conservades
 - correcció només de la dada errònia i reenviament correcte
-- processament i guardat funcional simple del cas correcte
-- reutilització mínima de la informació correcta
+- processament i confirmació o resum del cas correcte
 - revisió del comportament del checkbox simple
-- persistència formal, base de dades obligatòria, sessió, cookies, login, arrays d'errors i fitxers no són mínim de `R2M2`; poden aparéixer com a ampliació o en microreptes posteriors del mateix repte
+- guardat entre peticions, persistència formal, base de dades obligatòria, sessió, cookies, login, arrays d'errors i fitxers no són mínim de `R2M2`; poden aparéixer com a ampliació o en microreptes posteriors del mateix repte
 
 **Relació amb el producte principal**
 
-Este microprojecte dona la base de processament necessari perquè el sistema puga ajudar l'usuari a corregir errors sense repetir tot el formulari i, quan l'entrada és correcta, conservar la informació amb sentit funcional.
-També ha de deixar clar que conservar dades dins del reintent i guardar funcionalment un cas correcte són dues decisions diferents, cap de les quals obliga encara a una arquitectura de persistència.
+Este microprojecte dona la base de processament necessària perquè el sistema puga ajudar l'usuari a corregir errors sense repetir tot el formulari i, quan l'entrada és correcta, mostrar una confirmació amb sentit funcional.
+També ha de deixar clar que conservar dades dins del reintent, confirmar un cas correcte i guardar-lo entre peticions són decisions diferents. El guardat entre peticions queda com a ampliació.
 
 **RA avaluat, CA avaluats i RA de context**
 
@@ -1111,7 +1110,7 @@ Cada microrepte genera una nota pròpia vinculada al seu RA avaluat. La taula no
 | Microprojecte | Tipus | Producte o lliurable | RA avaluat | CA avaluats | RA de context | Evidències principals | Instrument |
 |---|---|---|---|---|---|---|---|
 | R2M1 | Procedimental | Entrada variada, codi servidor integrat i recuperació de dades | RA2 | RA2.a, RA2.b, RA2.c, RA2.d | RA3.e, RA3.f, RA3.g | formulari amb text, llista i checkbox, codi embegut, variables simples, validació bàsica, error visible i demo | checklist |
-| R2M2 | Procedimental | Processament, reintent i guardat funcional | RA2 | RA2.a, RA2.b, RA2.c, RA2.d, RA2.e, RA2.f, RA2.g, RA2.h | RA3.e, RA3.f, RA3.g | formulari amb error, dades conservades, reenviament corregit, cas correcte guardat funcionalment, codi embegut, variables i demo | rúbrica breu |
+| R2M2 | Procedimental | Processament, reintent i confirmació | RA2 | RA2.a, RA2.b, RA2.c, RA2.d, RA2.e, RA2.f, RA2.g, RA2.h | RA3.e, RA3.f, RA3.g | formulari amb error, dades conservades, reenviament corregit, confirmació del cas correcte, codi embegut, variables i demo | rúbrica breu |
 | R2M3 | Procedimental | Decisions, arrays i funcions aplicades | RA3 | RA3.a, RA3.b, RA3.c, RA3.d | - | lògica observable, funcions, demo | rúbrica |
 | R2M4 | Procedimental | Estat, sessió i/o cookies | RA4 | RA4.a, RA4.b, RA4.c | - | demo d’estat, recuperació i invalidació | checklist |
 | R2M5 | Procedimental | Autenticació i operació protegida | RA4 | RA4.d, RA4.e | - | login, operació protegida, cas autoritzat i denegat | rúbrica |
