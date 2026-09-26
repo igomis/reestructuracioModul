@@ -113,7 +113,7 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 - Evidència a generar: error visible, dada correcta guardada i reutilització posterior.
 - Validació mínima: un cas incorrecte i un cas correcte complet.
 - Ajuda si et bloqueges: torna a l'apunt real de `R2` i simplifica el nombre de camps o de pantalles.
-- Ampliació si acabes prompte: afegeix fitxer o imatge amb control bàsic, si el flux ho demana.
+- Requisit de pes reduït: afegeix un fitxer o imatge relacionat amb el domini, amb recepció al servidor, control bàsic de tipus i grandària, intent de guardat i proves d'acceptació i rebuig.
 
 ### Full 2. Regla, estat i acció protegida
 

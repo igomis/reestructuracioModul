@@ -452,7 +452,7 @@ L’equip implementa tractament bàsic de la petició, incloent:
 - correcció només de la dada errònia i reenviament correcte
 - processament i confirmació o resum del cas correcte
 - revisió del comportament del checkbox simple
-- guardat entre peticions, persistència formal, base de dades obligatòria, sessió, cookies, login, arrays d'errors i fitxers no són mínim de `R2M2`; poden aparéixer com a ampliació o en microreptes posteriors del mateix repte
+- guardat entre peticions, persistència formal, base de dades obligatòria, sessió, cookies, login i arrays d'errors no són mínim de `R2M2`; poden aparéixer com a ampliació o en microreptes posteriors del mateix repte
 
 **Relació amb el producte principal**
 
