@@ -335,6 +335,20 @@ No cal convertir esta ampliacio en una validacio completa de framework ni revisa
 
 L'ampliacio no ha d'obrir encara autenticacio, autoritzacio ni refactoritzacio arquitectonica.
 
+### Ampliacio guiada: taula de decisions configurable
+
+Com a alternativa a l'array d'errors, qui ja tinga el nucli de `R2M3` pot transformar una regla curta en una taula de decisions del domini. L'objectiu és distingir dades de configuració, funció i controlador, sense introduir un patró o motor complex.
+
+Com a mínim, si es fa esta ampliació:
+
+- definir una llista, array o diccionari curt d'opcions del domini amb estat, missatge o acció associada;
+- crear una funció pròpia en la llibreria que consulte eixa taula a partir d'una dada ja validada;
+- importar la funció i usar el resultat en el flux principal;
+- mostrar la decisió i el seu motiu en la resposta;
+- documentar tres casos: dos resultats vàlids diferents i una dada desconeguda o no permesa.
+
+La taula no ha de ser un llistat decoratiu ni substituir la validació del flux. Pot conviure amb errors acumulats, però no requerix acumular-los ni introduir BBDD, sessió o arquitectura nova.
+
 ## Checklist de tancament
 
 - [ ] He recuperat el flux funcional de `R2M2`.
