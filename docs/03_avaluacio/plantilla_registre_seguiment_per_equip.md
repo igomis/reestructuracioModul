@@ -17,7 +17,7 @@ Pot haver-hi moments de treball sincronitzat, checkpoints comuns o un mateix pro
 - Data:
 - Alumne:
 - Parella de contrast o context compartit, si aplica:
-- Itinerari tecnològic: `base comuna PHP` / `Laravel` / `Symfony` / `NestJS` / `FastAPI avançat`
+- Itinerari tecnològic: `PHP` / `Python` / `Java` / `Laravel` / `Symfony` / `NestJS` / `FastAPI` / `Spring` / un altre itinerari acordat
 - Repte o fase actual:
 - Setmana o tram del curs:
 

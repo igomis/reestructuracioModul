@@ -62,6 +62,6 @@ Però mai substituïx:
 
 ## Lectura metodològica per fases
 
-- en `R2` la base comuna en `PHP` facilita control de mínims sobre dades, lògica, estat i autenticació
+- en `R2` la base de servidor acordada facilita el control de mínims sobre dades, lògica, estat i autenticació; una via Java autoritzada aporta evidències equivalents i no es penalitza pel llenguatge
 - des de `R3` el mateix projecte pot continuar amb frameworks diferents
 - el canvi de framework no altera el tipus d'evidència exigida

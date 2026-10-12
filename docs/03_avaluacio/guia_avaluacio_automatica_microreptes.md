@@ -28,6 +28,14 @@ El professorat ha d'usar-la per respondre quatre preguntes:
 
 La regla de coherència és estricta: l'autocorrecció no pot penalitzar res que no s'haja demanat a l'alumnat ni estiga previst en la programació d'aula.
 
+### Projectes en Java o una altra via acordada
+
+Quan l'alumnat té acordada una via Java, l'autocorrecció ha d'avaluar les mateixes responsabilitats funcionals, evidències i criteris que en les vies PHP o Python. El llenguatge o el framework no generen cap descompte per si mateixos.
+
+Cal reconéixer els equivalents de l'ecosistema: Maven o Gradle per a dependències i construcció, JUnit per a proves, JDBC/JPA per a persistència, i servlets, plantilles Java o Spring per a peticions, sessions, autenticació i API. No s'ha d'aplicar una regla dura perquè falte un artefacte específic de PHP o Python si la responsabilitat equivalent està resolta i provada en Java.
+
+Si el recollidor d'evidències o el prompt no identifica l'estructura Java amb prou confiança, el resultat s'ha de marcar per a revisió docent. Eixa limitació de l'autocorrecció no es convertix en una penalització automàtica.
+
 ## Flux ordinari de treball
 
 ### 1. Abans de llançar la correcció

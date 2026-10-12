@@ -100,7 +100,7 @@ La IA és una eina admesa i habitual, però no és un criteri positiu per si sol
 ## Criteris d'adaptació a cada repte
 
 - **Repte 1:** augmentar lleugerament pes de traçabilitat, comprensió i documentació; el codi no ha de dominar l'avaluació.
-- **Repte 2:** reforçar resolució funcional i verificació tècnica de fluxos autenticats de negoci, validacions i errors sobre la base comuna en `PHP`.
+- **Repte 2:** reforçar resolució funcional i verificació tècnica de fluxos autenticats de negoci, validacions i errors sobre la base de servidor acordada; una via Java autoritzada s'avalua amb els mateixos criteris.
 - **Repte 3:** reforçar verificació, defensa i qualitat tècnica bàsica del pas a arquitectura i persistència sobre un cas d'ús real, ja amb entrada de framework, sense convertir el codi en criteri principal.
 - **Repte 4:** reforçar funcionalitat, proves i documentació d'`API` sobre casos d'ús publicables del producte.
 - **Repte 5:** reforçar defensa tècnica, ús verificable de la IA, traçabilitat i prova de punta a punta sobre una integració amb valor real.

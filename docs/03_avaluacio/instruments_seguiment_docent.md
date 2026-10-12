@@ -41,7 +41,7 @@ Marc estable d'ús:
 | Repte | Focus de seguiment | Instruments mínims |
 |---|---|---|
 | **Repte 1** | domini, stack, entorn funcional i decisió tècnica inicial | `rubrica_base_reptes.md`, `checklist_revisio_repo.md`, `plantilla_registre_seguiment_per_equip.md` |
-| **Repte 2** | flux funcional, auth o estat equivalent, validacions i errors mínims sobre base comuna en `PHP` | `rubrica_base_reptes.md`, checklist del Repte 2, `plantilla_registre_seguiment_per_equip.md` |
+| **Repte 2** | flux funcional, auth o estat equivalent, validacions i errors mínims sobre la base de servidor acordada, inclosa una via Java autoritzada | `rubrica_base_reptes.md`, checklist del Repte 2, `plantilla_registre_seguiment_per_equip.md` |
 | **Repte 3** | arquitectura per capes o equivalent, persistència i mantenibilitat amb entrada de framework | `rubrica_base_reptes.md`, checklist del Repte 3, `plantilla_acta_checkpoint.md` |
 | **Repte 4** | contracte d'`API`, documentació, proves i coherència de respostes | `rubrica_base_reptes.md`, checklist del Repte 4, `plantilla_registre_seguiment_per_equip.md` |
 | **Repte 5** | integració híbrida, prova de punta a punta, tancament i defensa | `rubrica_defensa_tecnica.md`, checklist del Repte 5, `plantilla_acta_checkpoint.md` |
