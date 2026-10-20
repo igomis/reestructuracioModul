@@ -82,6 +82,23 @@ La nota generada és provisional, correspon exclusivament al microrepte actiu i 
 
 Cada repte pot mostrar també una proposta d’ampliació 9→10 entre 0 i 1. És un indicador separat perquè el professorat el contraste i el tinga en compte en la defensa; no modifica la nota del microrepte ni se suma automàticament al RA.
 
+### Evidència automàtica de treball d'aula
+
+Els microreptes són treball d'aula. Per fer visible el procés sense convertir el nombre de commits o les línies modificades en una nota, el dashboard captura el `SHA` de `main` a l'inici i al final de la sessió i el compara amb l'entrega definitiva. Els tres commits es corregixen amb la mateixa rúbrica, però la proporció d'aula es calcula només sobre dimensions tècniques de rendiment, com resolució funcional, qualitat de codi o tractament de fitxers. La documentació, la traçabilitat i el registre d'IA poden completar-se després sense ocultar que la implementació ja existia al checkpoint de classe.
+
+La classificació ordinària i el seu topall són automàtics:
+
+| Progrés tècnic observable produït a classe | Nivell | Nota màxima aplicable |
+|---:|---|---:|
+| `70–100%` | Alta | `10` |
+| `35–69%` | Mitjana | `9` |
+| `1–34%` | Baixa | `7,5` |
+| `0%` | Sense evidència | `6` |
+
+La nota global original no s'esborra: la nota aplicable és el mínim entre aquella nota i el topall. També es conserva separada la puntuació tècnica usada per calcular la proporció. Les dates declarades dins dels commits no són la prova principal; compten els `SHA` remots capturats. Si falla la captura, GitHub o l'autocorrecció —inclòs que el professorat oblide iniciar o tancar la captura—, el cas queda pendent i no s'aplica automàticament el topall de `6`.
+
+Una branca remota no fusionada, una incidència acreditada o una demostració posterior poden justificar una correcció docent del nivell. L'excepció ha de conservar el resultat automàtic, indicar el nou nivell i registrar el motiu. Una branca que només existia en local no es pot acreditar retroactivament només amb Git i requerix comprovació o defensa docent.
+
 La nota del microrepte es pot acceptar directament només quan es complixen estes condicions:
 
 - el microrepte corregit és el que tocava;
