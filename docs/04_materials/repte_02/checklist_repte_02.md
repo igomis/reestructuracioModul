@@ -37,7 +37,7 @@ El repte no es considera prou verificat si l'equip usa estos termes com a sinòn
 
 ### Prova de flux R2M7
 
-- [ ] `tests/flux-r2.sh` o l'equivalent executa accés inicial denegat, login incorrecte i correcte, operació protegida, logout i denegació final
+- [ ] `tests/flux-r2.php` o l'equivalent executa accés inicial denegat, login incorrecte i correcte, operació protegida, logout i denegació final
 - [ ] la sessió o el token es conserva entre peticions i s'invalida al final
 - [ ] cada resultat té una asserció i qualsevol discrepància retorna un codi diferent de `0`
 - [ ] hi ha una ordre documentada i una eixida real en `evidence/r2m7/`

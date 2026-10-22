@@ -125,7 +125,7 @@ Cada microprojecte té un únic **RA avaluat**. Els RA de context ajuden a enten
 | `R2M4` | `RA4` | `RA4.a`, `RA4.b`, `RA4.c` | - | estat, sessió o cookies amb recuperació i invalidació | demo de recuperació i neteja, més pregunta sobre què es guarda i on |
 | `R2M5` | `RA4` | `RA4.d`, `RA4.e` | - | autenticació funcional i operació de domini protegida | demo de cas permés i cas denegat amb explicació del punt de control |
 | `R2M6` | `RA4` | `RA4.d`, `RA4.e` | pont DWEC | login API, resposta `JSON`, token simple i ruta protegida | execució de `POST /api/login`, `GET /api/me` i cas `401` |
-| `R2M7` | `RA4` | `RA4.f` | - | `tests/flux-r2.sh` o equivalent amb sis passos HTTP, assercions i eixida real | execució completa, error provocat i contrast amb `README`, repositori i AI log |
+| `R2M7` | `RA4` | `RA4.f` | - | `tests/flux-r2.php` o equivalent amb sis passos HTTP, assercions i eixida real | execució completa, error provocat i contrast amb `README`, repositori i AI log |
 | `R2M8` | `RA3` | `RA3.d`, `RA3.g` | `RA4.f` | Composer/autoload, classe simple, prova unitària inicial i prova de no regressió | execució del test, revisió de la classe, execució del flux i defensa de què queda ara més testable |
 | `R2M9` | `RA6` | `RA6.a`, `RA6.b`, `RA6.c`, `RA6.d`, `RA6.f` | `RA3`, `RA4` | BBDD mínima amb connexió, taula, alta, lectura i consultes preparades | demo d'inserció, consulta posterior i revisió de configuració sense secrets |
 
@@ -855,7 +855,7 @@ Convertir les comprovacions manuals de `R2M4`-`R2M6` en una prova de caixa negra
 
 **Tasca**
 
-L’equip crea `tests/flux-r2.sh`, o una prova HTTP equivalent en Python o Java, que:
+L’equip crea `tests/flux-r2.php`, o una prova HTTP equivalent en Bash, Python o Java, que:
 
 - comprova accés protegit sense autenticar i login incorrecte, tots dos denegats
 - fa login correcte i conserva cookies o token
@@ -890,7 +890,7 @@ La IA pot ajudar a generar casos de prova, interpretar errors o redactar text do
 
 **Evidències obligatòries**
 
-- `tests/flux-r2.sh` o prova HTTP equivalent executable
+- `tests/flux-r2.php` o prova HTTP equivalent executable
 - denegació inicial, login incorrecte, login correcte, operació protegida, logout i denegació final
 - assercions automàtiques i codi d'eixida no zero quan fallen
 - cookies temporals o token reutilitzat sense secrets reals

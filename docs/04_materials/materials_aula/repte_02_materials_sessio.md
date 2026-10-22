@@ -127,7 +127,7 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 ### Full 3. Prova de flux HTTP
 
 - Objectiu: convertir les comprovacions manuals en un recorregut executable que decidix si passa o falla.
-- Tasca: crear `tests/flux-r2.sh` o equivalent amb denegació inicial, login incorrecte i correcte, operació protegida, logout i denegació final.
+- Tasca: crear `tests/flux-r2.php` o equivalent amb denegació inicial, login incorrecte i correcte, operació protegida, logout i denegació final.
 - Evidència a generar: script, una ordre documentada i `evidence/r2m7/verificacio.txt`.
 - Validació mínima: manté cookies o token, conté assercions i retorna error davant una expectativa incomplida.
 - Ajuda si et bloqueges: comença per una petició i una asserció abans d'encadenar la resta.

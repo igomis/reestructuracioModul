@@ -30,7 +30,7 @@ La base del repte queda en `9` sessions de `3` hores. La sessió `7` automatitza
 - una regla de rol o restricció de negoci
 - tractament d'imatge o fitxer si el cas d'ús ho demana
 - errors coherents d'autenticació, autorització i validació
-- `tests/flux-r2.sh` o una prova HTTP equivalent que comprove login, accés protegit i logout amb assercions
+- `tests/flux-r2.php` o una prova HTTP equivalent que comprove login, accés protegit i logout amb assercions
 - primera classe simple carregada amb Composer i provada amb una prova unitària mínima
 
 La base de dades pot aparéixer de manera controlada, però en `R2` encara no és el centre del repte. El focus continua sent el flux funcional complet i la seua defensa tècnica.

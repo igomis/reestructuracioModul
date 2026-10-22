@@ -18,7 +18,7 @@ Convertir la primera peça funcional del producte en una operació de negoci pro
 - provar accés autoritzat i accés denegat
 - controlar almenys un error de validació o credencial
 - actualitzar `README` amb com reproduir el flux
-- crear `tests/flux-r2.sh` o una prova HTTP equivalent amb assercions i codi d'eixida fiable
+- crear `tests/flux-r2.php` o una prova HTTP equivalent amb assercions i codi d'eixida fiable
 - crear o ajustar `composer.json`
 - configurar autoload per a classes pròpies
 - crear una classe simple del domini o servei
@@ -80,7 +80,7 @@ Si apareixen més classes, una llibreria externa o una API, han de quedar com a 
 - torna a provar-la sense accés o amb estat invalidat
 - mostra almenys un error rellevant
 - ensenya com reproduir-ho des del `README`
-- executa `tests/flux-r2.sh` o l'equivalent i comprova que detecta una expectativa provocada incorrectament
+- executa `tests/flux-r2.php` o l'equivalent i comprova que detecta una expectativa provocada incorrectament
 - comprova que el flux continua funcionant després de la sessió `8`
 
 ## Errors habituals

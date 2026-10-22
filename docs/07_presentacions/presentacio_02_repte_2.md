@@ -46,7 +46,7 @@ Micro-presentació docent breu. Equival aproximadament a `8` diapositives.
 
 - demostració de login o accés equivalent
 - prova d'un cas permés i un cas denegat
-- `tests/flux-r2.sh` o equivalent amb assercions i error automàtic
+- `tests/flux-r2.php` o equivalent amb assercions i error automàtic
 - commits i `README` actualitzats
 - verificació de validacions i errors
 - `composer.json` o equivalent amb autoload
