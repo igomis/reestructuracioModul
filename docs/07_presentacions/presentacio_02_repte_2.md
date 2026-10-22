@@ -39,13 +39,14 @@ Micro-presentació docent breu. Equival aproximadament a `8` diapositives.
 - operació real del domini protegida
 - conservació funcional simple o controlada
 - una restricció de negoci o de rol
-- documentació i verificació del flux
+- prova HTTP automatitzada del flux complet
 - primera peça testable amb Composer, classe simple i prova unitària
 
 ## Diapositiva 6. Evidència mínima
 
 - demostració de login o accés equivalent
 - prova d'un cas permés i un cas denegat
+- `tests/flux-r2.sh` o equivalent amb assercions i error automàtic
 - commits i `README` actualitzats
 - verificació de validacions i errors
 - `composer.json` o equivalent amb autoload
@@ -58,7 +59,8 @@ Micro-presentació docent breu. Equival aproximadament a `8` diapositives.
 - no distingir auth i autorització
 - no provar credencials incorrectes o accessos sense permís
 - voler obrir massa funcionalitats sense tancar el nucli
-- reduir la sessió `7` a neteja cosmètica o, a l'altre extrem, convertir-la en una reescriptura completa
+- acceptar en la sessió `7` peticions impreses sense assercions
+- convertir la sessió `8` en una reescriptura completa
 
 ## Diapositiva 8. Connexió amb `R3`
 

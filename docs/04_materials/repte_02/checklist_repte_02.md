@@ -15,7 +15,7 @@ Transició al Repte 3:
 - també ha de deixar visible una primera regla o comprovació encapsulada en una classe simple i provada automàticament
 - la persistència pot aparéixer ja com a suport funcional, però encara no és el focus principal d'avaluació
 
-La sessió `7` ha de servir per introduir POO mínima, Composer/autoload i una prova unitària inicial sobre una regla real del flux, no per reconstruir `R2` amb l'arquitectura completa de `R3`.
+La sessió `7` ha d'automatitzar el recorregut HTTP i la sessió `8` ha d'introduir POO mínima, Composer/autoload i una prova unitària inicial, sense reconstruir `R2` amb l'arquitectura completa de `R3`.
 
 ## Conceptes mínims que s'han de poder defensar
 
@@ -35,7 +35,15 @@ El repte no es considera prou verificat si l'equip usa estos termes com a sinòn
 - [ ] la informació correcta queda conservada amb un mecanisme simple o controlat
 - [ ] el projecte pot tornar a mostrar, recuperar o llistar eixa informació
 
-### Primera peça testable
+### Prova de flux R2M7
+
+- [ ] `tests/flux-r2.sh` o l'equivalent executa accés inicial denegat, login incorrecte i correcte, operació protegida, logout i denegació final
+- [ ] la sessió o el token es conserva entre peticions i s'invalida al final
+- [ ] cada resultat té una asserció i qualsevol discrepància retorna un codi diferent de `0`
+- [ ] hi ha una ordre documentada i una eixida real en `evidence/r2m7/`
+- [ ] no es presenta un `curl` passiu ni una prova unitària com a substitut del flux
+
+### Primera peça testable R2M8
 
 - [ ] existeix `composer.json` o alternativa equivalent amb autoload
 - [ ] existeix una classe simple del domini o servei
@@ -81,6 +89,8 @@ El repte no es considera prou verificat si l'equip usa estos termes com a sinòn
 
 ### Proves mínimes executades
 
+- [ ] una única ordre executa el flux HTTP complet sense inspecció manual
+- [ ] l'script falla si es provoca una expectativa incorrecta
 - [ ] s'ha executat almenys un cas correcte complet del flux
 - [ ] s'ha executat un cas invàlid per validació, amb error interpretable i possibilitat de correcció
 - [ ] s'ha executat un cas no autenticat contra una operació protegida
@@ -112,7 +122,7 @@ Taula mínima recomanada:
 
 ### Preparació per al Repte 3
 
-- [ ] la sessió `7` deixa clar què s'ha pogut provar unitàriament en `R2` i què encara queda reservat per a `R3`
+- [ ] la sessió `7` deixa el flux HTTP automatitzat i la sessió `8` deixa clar què s'ha pogut provar unitàriament en `R2`
 - [ ] estan identificats punts a reorganitzar en MVC o arquitectura equivalent
 - [ ] estan identificades validacions o errors que convindrà encapsular millor
 - [ ] el resultat actual es pot refactoritzar sense reconstruir la funcionalitat des de zero

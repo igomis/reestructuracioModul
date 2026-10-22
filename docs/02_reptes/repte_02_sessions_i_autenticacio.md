@@ -125,7 +125,7 @@ Cada microprojecte té un únic **RA avaluat**. Els RA de context ajuden a enten
 | `R2M4` | `RA4` | `RA4.a`, `RA4.b`, `RA4.c` | - | estat, sessió o cookies amb recuperació i invalidació | demo de recuperació i neteja, més pregunta sobre què es guarda i on |
 | `R2M5` | `RA4` | `RA4.d`, `RA4.e` | - | autenticació funcional i operació de domini protegida | demo de cas permés i cas denegat amb explicació del punt de control |
 | `R2M6` | `RA4` | `RA4.d`, `RA4.e` | pont DWEC | login API, resposta `JSON`, token simple i ruta protegida | execució de `POST /api/login`, `GET /api/me` i cas `401` |
-| `R2M7` | `RA4` | `RA4.f` | - | bateria mínima de proves, incidències i documentació reproduïble | execució d'un cas triat pel professorat i contrast amb `README`, repositori i AI log |
+| `R2M7` | `RA4` | `RA4.f` | - | `tests/flux-r2.sh` o equivalent amb sis passos HTTP, assercions i eixida real | execució completa, error provocat i contrast amb `README`, repositori i AI log |
 | `R2M8` | `RA3` | `RA3.d`, `RA3.g` | `RA4.f` | Composer/autoload, classe simple, prova unitària inicial i prova de no regressió | execució del test, revisió de la classe, execució del flux i defensa de què queda ara més testable |
 | `R2M9` | `RA6` | `RA6.a`, `RA6.b`, `RA6.c`, `RA6.d`, `RA6.f` | `RA3`, `RA4` | BBDD mínima amb connexió, taula, alta, lectura i consultes preparades | demo d'inserció, consulta posterior i revisió de configuració sense secrets |
 
@@ -843,7 +843,7 @@ Rúbrica curta de mini API d'autenticació.
 
 ---
 
-### Microrepte R2M7 — Prova, depuració, documentació mínima i checkpoint tècnic
+### Microrepte R2M7 — Automatització del flux HTTP, depuració i checkpoint tècnic
 
 **Tipus**
 
@@ -851,26 +851,26 @@ Microprojecte de tancament i verificació.
 
 **Objectiu**
 
-Comprovar que el flux complet funciona, que els errors són observables i que l’equip deixa una base tècnica verificable abans d’entrar en la peça testable de `R2M8`.
+Convertir les comprovacions manuals de `R2M4`-`R2M6` en una prova de caixa negra executable que demostre autenticació, accés protegit i invalidació abans d’entrar en la peça unitària de `R2M8`.
 
 **Tasca**
 
-L’equip:
+L’equip crea `tests/flux-r2.sh`, o una prova HTTP equivalent en Python o Java, que:
 
-- revisa casos positius i negatius
-- prova validacions i errors
-- comprova que la informació correcta es pot recuperar o reutilitzar
-- usa alguna eina o entorn simple de prova i depuració
-- documenta instruccions de prova
-- registra incidències detectades
-- actualitza la documentació tècnica
-- deixa identificats punts de deute tècnic o necessitat de reorganització que es treballaran a la sessió `8`
+- comprova accés protegit sense autenticar i login incorrecte, tots dos denegats
+- fa login correcte i conserva cookies o token
+- executa una operació protegida i comprova que queda permesa
+- fa logout o invalida l'estat i comprova una nova denegació
+- usa una URL configurable, credencials demo i fitxers temporals nets
+- fa assercions sobre codis, redireccions o textos estables
+- retorna un codi diferent de `0` davant qualsevol expectativa incomplida
+- documenta una ordre i guarda l'eixida en `evidence/r2m7/verificacio.txt`
 
 **Relació amb el producte principal**
 
 Sense esta capa, el repte podria funcionar aparentment, però no quedaria prou verificat ni orientat al pas següent.
 
-Este microprojecte consolida i documenta comprovacions que han d’haver anat apareixent des dels microprojectes anteriors.
+Este microprojecte consolida comprovacions que han aparegut en microprojectes anteriors i les fa repetibles sense inspecció humana. Una prova unitària de `R2M8` comprovarà una peça interna i no substituïx este recorregut HTTP.
 
 **RA avaluat, CA avaluats i RA de context**
 
@@ -890,36 +890,40 @@ La IA pot ajudar a generar casos de prova, interpretar errors o redactar text do
 
 **Evidències obligatòries**
 
-- registre de proves mínimes
-- casos positius i negatius
-- bateria mínima amb cas vàlid, cas invàlid per validació, cas no autenticat, cas amb sessió caducada o estat invàlid i cas d'accés a operació protegida
+- `tests/flux-r2.sh` o prova HTTP equivalent executable
+- denegació inicial, login incorrecte, login correcte, operació protegida, logout i denegació final
+- assercions automàtiques i codi d'eixida no zero quan fallen
+- cookies temporals o token reutilitzat sense secrets reals
+- ordre documentada i eixida real en `evidence/r2m7/verificacio.txt`
 - incidències detectades
 - rastre de l’eina o entorn utilitzat per provar o depurar
 - evidència breu de reutilització de dades
 - documentació tècnica actualitzada
-- llista de millores o refactoritzacions futures
+- regla candidata a convertir-se en prova unitària en `R2M8`
 - defensa tècnica breu
 
 **Instrument d’avaluació**
 
-Checklist de verificació + defensa tècnica.
+Execució de la prova de flux + checklist de verificació + defensa tècnica.
 
 **Indicadors d’assoliment**
 
-- les proves són reals
+- la prova recorre els sis passos i falla automàticament quan toca
 - la documentació correspon al comportament observat
 - l’equip sap explicar què caldrà millorar en el Repte 3
 
 **Riscos habituals**
 
 - proves fictícies
+- peticions `curl` impreses o col·leccions sense assercions
+- confondre una prova unitària amb el flux HTTP complet
 - documentació embellida
 - no saber justificar el pas següent del projecte
 
 **Verificació del treball real**
 
-- execució dels casos documentats
-- execució d'un cas triat pel professorat, no només del cas preparat per l'equip
+- execució completa de l'ordre documentada
+- canvi temporal d'una expectativa o ruta per comprovar que el procés falla
 - contrast entre documentació, repositori i demo
 - pregunta oral sobre què caldria reorganitzar en el Repte 3
 
@@ -1115,7 +1119,7 @@ Cada microrepte genera una nota pròpia vinculada al seu RA avaluat. La taula no
 | R2M4 | Procedimental | Estat, sessió i/o cookies | RA4 | RA4.a, RA4.b, RA4.c | - | demo d’estat, recuperació i invalidació | checklist |
 | R2M5 | Procedimental | Autenticació i operació protegida | RA4 | RA4.d, RA4.e | - | login, operació protegida, cas autoritzat i denegat | rúbrica |
 | R2M6 | Intermodular | Mini API d'autenticació per a client | RA4 | RA4.d, RA4.e | pont DWEC | login API, ruta protegida, `JSON`, `200`, `401` i prova externa | rúbrica curta |
-| R2M7 | Tancament / verificació | Proves, documentació mínima i checkpoint tècnic | RA4 | RA4.f | - | proves, incidències, documentació, defensa | checklist + defensa |
+| R2M7 | Tancament / verificació | Prova de flux HTTP automatitzada | RA4 | RA4.f | - | script o equivalent, sis passos, assercions, eixida real i defensa | execució + checklist + defensa |
 | R2M8 | Integrador | Primera peça testable amb POO i Composer | RA3 | RA3.d, RA3.g | RA4.f | composer.json/autoload, classe simple, prova unitària i comprovació final | rúbrica curta |
 | R2M9 | Integrador | Persistència mínima amb BBDD en PHP | RA6 | RA6.a, RA6.b, RA6.c, RA6.d, RA6.f | RA3, RA4 | connexió, taula, alta, lectura, consulta preparada i README de reproducció | rúbrica curta |
 

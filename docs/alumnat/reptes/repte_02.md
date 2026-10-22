@@ -8,7 +8,7 @@ El repte no es queda en formulari, login i error. El flux ha d’incloure entrad
 
 Este repte es resol sobre una **base comuna en `PHP`**. El contrast fort de frameworks encara no és l'objectiu del repte.
 
-La base del repte queda en `7` sessions de `3` hores. La sessió `7` està dedicada a crear una primera peça testable amb POO, Composer i prova unitària sobre el codi que ja funciona.
+La base del repte queda en `9` sessions de `3` hores. La sessió `7` automatitza el flux HTTP; la sessió `8` crea una primera peça testable amb POO, Composer i prova unitària; la sessió `9` introduïx persistència mínima amb BBDD.
 
 ## Què no és suficient
 
@@ -30,11 +30,12 @@ La base del repte queda en `7` sessions de `3` hores. La sessió `7` està dedic
 - una regla de rol o restricció de negoci
 - tractament d'imatge o fitxer si el cas d'ús ho demana
 - errors coherents d'autenticació, autorització i validació
+- `tests/flux-r2.sh` o una prova HTTP equivalent que comprove login, accés protegit i logout amb assercions
 - primera classe simple carregada amb Composer i provada amb una prova unitària mínima
 
 La base de dades pot aparéixer de manera controlada, però en `R2` encara no és el centre del repte. El focus continua sent el flux funcional complet i la seua defensa tècnica.
 
-La sessió `7` no equival a passar tot el projecte a POO ni a obrir una arquitectura gran. És una sessió per fer una primera peça testable i comprovar que el flux continua funcionant.
+La sessió `7` convertix les comprovacions manuals en un recorregut executable que falla davant resultats inesperats. La sessió `8` no equival a passar tot el projecte a POO: crea una sola peça unitària i torna a executar el flux.
 
 ## Evidència mínima
 
@@ -42,6 +43,7 @@ La sessió `7` no equival a passar tot el projecte a POO ni a obrir una arquitec
 - prova d'un cas permés i un cas denegat
 - commits i documentació actualitzada
 - verificació de validacions i errors
+- prova HTTP automatitzada amb denegació inicial, login incorrecte i correcte, operació protegida, logout i denegació final
 - `composer.json` o equivalent, classe simple i prova unitària mínima
 - `AI log` si la IA ha participat en una part rellevant
 
@@ -57,7 +59,7 @@ La sessió `7` no equival a passar tot el projecte a POO ni a obrir una arquitec
 
 En `R3` esta funcionalitat s'ha de mantindre viva, però ja amb entrada de framework, arquitectura o equivalent i persistència més explicable i segura. És ahí on comença el contrast de `Laravel`, `Symfony` o `NestJS`.
 
-La sessió `7` ha de servir per introduir una primera peça testable, no per consumir abans d’hora tot el treball metodològic propi de `R3`.
+La sessió `7` comprova el flux des de fora; la sessió `8` prova una peça interna. Cap de les dos ha de consumir abans d’hora tot el treball metodològic propi de `R3`.
 
 ## Si vols el detall complet
 

@@ -85,10 +85,10 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
   - Senyal d'alerta: hi ha auth, però no hi ha valor funcional del producte.
   - Acció correctiva ràpida: connectar la protecció a una única acció central del domini.
 - `CP-R2.5`
-  - Què hauria d'estar fet: prova mínima, documentació i checkpoint tècnic preparats.
-  - Com es verifica en `2-3` minuts: seguir la demo breu i la guia de reproducció.
-  - Senyal d'alerta: el grup ensenya una demo memòria però no una prova repetible.
-  - Acció correctiva ràpida: documentar només tres casos clau abans d'obrir la sessió `7`.
+  - Què hauria d'estar fet: prova HTTP automatitzada, documentació i checkpoint tècnic preparats.
+  - Com es verifica en `2-3` minuts: executar l'ordre documentada i provocar una expectativa incorrecta.
+  - Senyal d'alerta: el grup mostra peticions o una demo, però el programa no comprova el resultat.
+  - Acció correctiva ràpida: completar primer denegació inicial, login correcte, operació protegida, logout i denegació final amb assercions.
 - `CP-R2.6`
   - Què hauria d'estar fet: Composer/autoload, classe simple, prova unitària mínima i flux encara viu.
   - Com es verifica en `2-3` minuts: executar el test i repetir una prova curta del flux.
@@ -101,7 +101,7 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 - Cal corregir abans de seguir: `No pots obrir R3 si encara no hi ha una operació de negoci protegida i reproduïble.`
 - Tens funcionalitat però falta coherència: `La sessió funciona, però encara no queda clara la diferència entre estat temporal i informació del domini.`
 - Tens solució massa superficial: `El login funciona, però el producte encara no resol res rellevant amb eixa auth.`
-- Tens la base preparada per a la sessió 7: Ara que el flux ja passa la prova mínima, toca triar una regla, fer-ne una classe simple, carregar-la amb Composer i provar-la sense navegador.
+- Tens la base preparada per a la sessió 8: Ara que el flux HTTP ja passa la prova automatitzada, toca triar una regla, fer-ne una classe simple, carregar-la amb Composer i provar-la sense navegador.
 - Tens marge per ampliar: `Si el flux principal ja està tancat, pots afegir una segona regla del projecte o millorar el tractament d'errors.`
 
 ## Fulls de treball base contextualitzats
@@ -124,7 +124,15 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 - Ajuda si et bloqueges: tanca només una operació central i elimina funcionalitat lateral.
 - Ampliació si acabes prompte: afegeix una segona restricció o una prova més sistemàtica del mateix flux.
 
-### Full 3. Primera peça testable
+### Full 3. Prova de flux HTTP
+
+- Objectiu: convertir les comprovacions manuals en un recorregut executable que decidix si passa o falla.
+- Tasca: crear `tests/flux-r2.sh` o equivalent amb denegació inicial, login incorrecte i correcte, operació protegida, logout i denegació final.
+- Evidència a generar: script, una ordre documentada i `evidence/r2m7/verificacio.txt`.
+- Validació mínima: manté cookies o token, conté assercions i retorna error davant una expectativa incomplida.
+- Ajuda si et bloqueges: comença per una petició i una asserció abans d'encadenar la resta.
+
+### Full 4. Primera peça testable
 
 - Objectiu: convertir una regla del flux ja tancat en una peça que es puga provar automàticament.
 - Tasca: configurar Composer/autoload, crear una classe simple i escriure una prova unitària mínima.
@@ -153,11 +161,11 @@ Contextualitzar les plantilles d'aula del curs per al `R2`, de manera que el pro
 - Tram inicial: entrada de dades, validació visible i processament bàsic
 - Tram funcional: reutilització de la informació correcta, regla del projecte i estat temporal
 - Tram protegit: autenticació funcional i operació de negoci protegida
-- Tram de checkpoint tècnic: errors mínims controlats, prova reproduïble i `README` actualitzat
+- Tram de checkpoint tècnic: flux HTTP complet automatitzat, eixida real i `README` actualitzat
 - Tram final testable: Composer/autoload, classe simple, prova unitària mínima i prova de no regressió del flux
 
 ## Connexió amb el repte següent
 
 El `R2` ha de deixar un flux prou real per justificar `R3`. Si només hi ha auth aparent, o si la dada correcta encara no es reutilitza dins del producte, la refactorització i la persistència no tindran una base funcional seriosa sobre la qual treballar.
 
-La sessió `7` ha de servir per crear una primera peça testable amb POO, Composer i prova unitària, no per avançar tota l'arquitectura del repte següent.
+La sessió `7` ha d'automatitzar el flux HTTP; la sessió `8` ha de crear una primera peça testable amb POO, Composer i prova unitària, no avançar tota l'arquitectura del repte següent.

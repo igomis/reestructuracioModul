@@ -35,4 +35,4 @@ El mateix paquet també ha de permetre tancar `R2` en `9` sessions amb mini API 
 
 Encara no és un paquet de tancament, però convé començar a recordar el [Guió breu de defensa individual](../08_materials_compartibles/guio_defensa_individual_breu.md) per reforçar autoria, proves i explicació del flux.
 
-El [Full de treball del Repte 2](../08_materials_compartibles/full_treball_repte_02.md) també servix per orientar la sessió `7` de Composer, classe simple i prova unitària mínima.
+El [Full de treball del Repte 2](../08_materials_compartibles/full_treball_repte_02.md) també servix per orientar la prova de flux de la sessió `7` i la peça unitària de la sessió `8`.

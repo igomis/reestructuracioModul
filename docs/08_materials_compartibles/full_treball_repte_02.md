@@ -18,6 +18,7 @@ Convertir la primera peça funcional del producte en una operació de negoci pro
 - provar accés autoritzat i accés denegat
 - controlar almenys un error de validació o credencial
 - actualitzar `README` amb com reproduir el flux
+- crear `tests/flux-r2.sh` o una prova HTTP equivalent amb assercions i codi d'eixida fiable
 - crear o ajustar `composer.json`
 - configurar autoload per a classes pròpies
 - crear una classe simple del domini o servei
@@ -27,7 +28,16 @@ Convertir la primera peça funcional del producte en una operació de negoci pro
 
 En `R2` la persistència pot ser simple o, si cal, amb base de dades. El punt principal no és la sofisticació tècnica d'eixa persistència, sinó que el flux complet tinga sentit funcional.
 
-## Sessió 7. Primera peça testable
+## Sessió 7. Automatització del flux HTTP
+
+- executa accés protegit sense autenticar, login incorrecte, login correcte, operació protegida, logout i nova denegació
+- mantín la sessió amb cookies temporals o reutilitza el token obtingut pel login
+- comprova codis, redireccions o textos estables i acaba amb error si una expectativa falla
+- documenta una ordre i guarda l'eixida en `evidence/r2m7/verificacio.txt`
+
+Una ordre `curl` que només mostra la resposta, una col·lecció sense assercions o una prova unitària aïllada no substituïxen este flux.
+
+## Sessió 8. Primera peça testable
 
 - tria una regla, comprovació o càlcul del flux ja provat
 - crea una classe simple en `src/` o carpeta equivalent
@@ -47,6 +57,7 @@ Si apareixen més classes, una llibreria externa o una API, han de quedar com a 
 - una dada correcta conservada i reutilitzable
 - prova del cas correcte
 - prova del cas denegat o incorrecte
+- prova HTTP executable del recorregut complet
 - resposta d'error interpretable
 - `README` actualitzat
 - `composer.json` o equivalent amb autoload
@@ -69,7 +80,8 @@ Si apareixen més classes, una llibreria externa o una API, han de quedar com a 
 - torna a provar-la sense accés o amb estat invalidat
 - mostra almenys un error rellevant
 - ensenya com reproduir-ho des del `README`
-- comprova que el flux continua funcionant després de la sessió `7`
+- executa `tests/flux-r2.sh` o l'equivalent i comprova que detecta una expectativa provocada incorrectament
+- comprova que el flux continua funcionant després de la sessió `8`
 
 ## Errors habituals
 
@@ -80,7 +92,7 @@ Si apareixen més classes, una llibreria externa o una API, han de quedar com a 
 - provar només el cas feliç
 - complicar massa la persistència abans de tancar el flux principal
 - no saber què passa després del logout
-- convertir la sessió `7` en una reescriptura completa fora d'escala o en un “ara tot a objectes”
+- convertir la sessió `8` en una reescriptura completa fora d'escala o en un “ara tot a objectes”
 
 ## Si et bloqueges
 
