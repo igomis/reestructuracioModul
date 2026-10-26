@@ -86,16 +86,16 @@ Cada repte pot mostrar també una proposta d’ampliació 9→10 entre 0 i 1. É
 
 Els microreptes són treball d'aula. Per fer visible el procés sense convertir el nombre de commits o les línies modificades en una nota, el dashboard captura el `SHA` de `main` a l'inici i al final de la sessió i el compara amb l'entrega definitiva. Els tres commits es corregixen amb la mateixa rúbrica, però la proporció d'aula es calcula només sobre dimensions tècniques de rendiment, com resolució funcional, qualitat de codi o tractament de fitxers. La documentació, la traçabilitat i el registre d'IA poden completar-se després sense ocultar que la implementació ja existia al checkpoint de classe.
 
-La classificació ordinària i el seu topall són automàtics:
+La nota del producte pesa un `70%` i la classificació ordinària de treball d'aula aporta automàticament el `30%` restant:
 
-| Progrés tècnic observable produït a classe | Nivell | Nota màxima aplicable |
+| Progrés tècnic observable produït a classe | Nivell | Punts d'aula |
 |---:|---|---:|
-| `70–100%` | Alta | `10` |
-| `35–69%` | Mitjana | `9` |
-| `1–34%` | Baixa | `7,5` |
-| `0%` | Sense evidència | `6` |
+| `70–100%` | Alta | `3` |
+| `35–69%` | Mitjana | `2` |
+| `1–34%` | Baixa | `1` |
+| `0%` | Sense evidència | `0` |
 
-La nota global original no s'esborra: la nota aplicable és el mínim entre aquella nota i el topall. També es conserva separada la puntuació tècnica usada per calcular la proporció. Les dates declarades dins dels commits no són la prova principal; compten els `SHA` remots capturats. Si falla la captura, GitHub o l'autocorrecció —inclòs que el professorat oblide iniciar o tancar la captura—, el cas queda pendent i no s'aplica automàticament el topall de `6`.
+La fórmula és `nota final = nota del producte × 0,7 + punts d'aula`. D'esta manera, la qualitat del producte manté la seua gradació i dos productes amb notes diferents no queden igualats per un topall. La nota global original no s'esborra i també es conserva separada la puntuació tècnica usada per calcular la proporció. Les dates declarades dins dels commits no són la prova principal; compten els `SHA` remots capturats. Si falla la captura, GitHub o l'autocorrecció —inclòs que el professorat oblide iniciar o tancar la captura—, el cas queda pendent i la ponderació no s'aplica automàticament.
 
 Una branca remota no fusionada, una incidència acreditada o una demostració posterior poden justificar una correcció docent del nivell. L'excepció ha de conservar el resultat automàtic, indicar el nou nivell i registrar el motiu. Una branca que només existia en local no es pot acreditar retroactivament només amb Git i requerix comprovació o defensa docent.
 
