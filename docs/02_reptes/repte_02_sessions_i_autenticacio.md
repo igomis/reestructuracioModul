@@ -1415,7 +1415,9 @@ La via `9→10` tampoc és requisit d'autocorrecció ni de superació del repte.
 **Opcions d’ampliació**
 
 - reforçar la validació, el tractament d'errors i els missatges de retorn perquè el flux siga més robust i defensable
-- fer una refactorització guiada amb justificació tècnica clara o afegir proves dels casos crítics d'autenticació, autorització o processament
+- fer `R2S10`: deixar un contracte d’autenticació consumible per `DWEC`, amb endpoints, headers, respostes, dades demo i prova creuada
+- refactoritzar amb POO una part significativa del flux, més enllà de la classe mínima de `R2M8`: classes cohesionades, autoload, proves unitàries i comprovació de no regressió; sense avançar encara la migració completa a MVC o framework pròpia de `R3`
+- afegir proves dels casos crítics d'autenticació, autorització o processament
 
 **Ampliació proposada per l’alumne/a**
 
