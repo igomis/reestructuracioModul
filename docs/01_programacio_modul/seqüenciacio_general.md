@@ -22,7 +22,7 @@
 |---|---|---|---|
 | 1 | Definir i deixar operativa la base tècnica del curs. | RA1, inici de RA5 | Repositori inicial, entorn funcional, README tècnic i nota tècnica de decisió. |
 | 2 | Construir funcionalitat de negoci amb dades, sessions i autenticació sobre base comuna en PHP. | RA2, RA3, RA4 | Mòdul d’usuaris/sessions amb funcionalitat protegida, validacions i proves bàsiques. |
-| 3 | Obrir el contrast de frameworks i consolidar persistència i qualitat. | RA5, RA6, RA8 | Backend modular amb `Laravel`, `Symfony`, `NestJS` o `Express` sobre `Node.js`, accés segur a dades i testing de regressió. |
+| 3 | Obrir el contrast de frameworks i consolidar persistència i qualitat. | RA5, RA6, RA8 | Backend modular amb `Laravel`, `Symfony`, `Django` o `NestJS`, accés segur a dades i testing de regressió. |
 | 4 | Publicar serveis i consumir APIs amb contractes clars. | RA7, reforç RA6 | API documentada i client de consum integrat. |
 | 5 | Integrar automatització i serveis externs per tancar el producte. | RA9, reforç RA7 i RA8 | Solució híbrida amb n8n/serveis externs i pla de manteniment. |
 

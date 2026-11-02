@@ -31,7 +31,7 @@ No es demana migrar tota l'aplicació heretada de `R2`. Sí es demana construir 
 
 El repte no és una reflexió abstracta sobre `MVC`, ni una simple separació de presentació i lògica, ni moure fitxers des del projecte antic. El que ha de quedar és una aplicació arrancable, amb Docker, configuració, rutes, controladors, vistes o plantilles, models o capa equivalent de dades, base de dades real, migracions o mecanisme equivalent, fixtures/seeders o càrrega reproduïble, validació, errors mínims, proves bàsiques i documentació d'ús.
 
-És també el punt on s'obri el contrast de frameworks del curs. El mateix problema de producte que en `R2` s'ha treballat sobre base comuna en `PHP` continua ara amb `Laravel`, `Symfony` o `NestJS`. `FastAPI` només s'hauria d'obrir com a via avançada o excepcional quan hi haja marc docent clar per sostenir-la.
+És també el punt on s'obri el contrast de frameworks del curs. El mateix problema de producte que en `R2` s'ha treballat sobre base comuna en `PHP` continua ara amb `Laravel`, `Symfony`, `Django` o `NestJS`. `FastAPI` només s'hauria d'obrir com a via avançada o excepcional quan hi haja marc docent clar per sostenir-la.
 
 **Idea central**
 
@@ -106,16 +106,16 @@ L'objectiu no és dominar tot el framework. L'objectiu és entendre com el frame
 
 La nomenclatura concreta depén de l'stack. En este repte es valoren criteris comuns, no noms Laravel:
 
-| Criteri comú | Laravel | Symfony | NestJS |
-|---|---|---|---|
-| Ruta | route | route | controller route |
-| Controlador | controller | controller | controller |
-| Vista/resposta | Blade/view | Twig/Response | template/response o resposta server-rendered equivalent |
-| Model/capa de dades | Eloquent model | Doctrine entity/repository | Prisma/TypeORM entity, schema o service |
-| Migració d'esquema | migration | Doctrine migration | Prisma/TypeORM migration o equivalent |
-| Dades inicials | seeder | fixture | seed script o seeder |
-| Validació | Form Request/validator | Validator/Form | DTO + class-validator o equivalent |
-| Configuració | `.env` | `.env` | `.env` |
+| Criteri comú | Laravel | Symfony | Django | NestJS |
+|---|---|---|---|---|
+| Ruta | route | route | URLconf | controller route |
+| Controlador | controller | controller | view | controller |
+| Vista/resposta | Blade/view | Twig/Response | plantilles Django/Response | template/response o resposta server-rendered equivalent |
+| Model/capa de dades | Eloquent model | Doctrine entity/repository | model Django ORM | Prisma/TypeORM entity, schema o service |
+| Migració d'esquema | migration | Doctrine migration | Django migrations | Prisma/TypeORM migration o equivalent |
+| Dades inicials | seeder | fixture | fixtures o management command | seed script o seeder |
+| Validació | Form Request/validator | Validator/Form | Forms i validators | DTO + class-validator o equivalent |
+| Configuració | `.env` | `.env` | `settings.py` i variables d'entorn | `.env` |
 
 No es considera suficient:
 
@@ -143,7 +143,7 @@ Si apareix tensió de calendari, no s'ha de retallar la base tècnica ni el prim
 
 La IA es pot usar per a:
 
-- comparar convencions bàsiques de `Laravel`, `Symfony`, `NestJS` o una via excepcional autoritzada
+- comparar convencions bàsiques de `Laravel`, `Symfony`, `Django`, `NestJS` o una via excepcional autoritzada
 - suggerir passos d'arrencada del projecte
 - ajudar a dissenyar un model de dades inicial
 - proposar migracions, fixtures/seeders o scripts equivalents, DTO, formularis, validacions o proves segons l'stack
@@ -240,7 +240,7 @@ Triar l'stack, crear el projecte base en framework, preparar Docker i demostrar 
 
 L'equip ha de:
 
-- triar `Laravel`, `Symfony`, `NestJS` o via excepcional autoritzada
+- triar `Laravel`, `Symfony`, `Django`, `NestJS` o via excepcional autoritzada
 - comparar el framework triat amb almenys una altra opció viable per a este repte
 - justificar per què el framework triat ajuda a separar millor ruta, controlador, vista o resposta i model o equivalents
 - identificar quins avantatges aporta eixa separació respecte a la base funcional heretada de `R2`

@@ -183,7 +183,7 @@ Regla pràctica:
 #### Setmana 10
 
 - Focus o repte: model de dades, migracions o equivalent, dades inicials reproduïbles i taller de portabilitat entre frameworks
-- Què fa el professorat: modela una migració o equivalent, una càrrega inicial reproduïble, una consulta que retorna un conjunt de dades i la comprovació que eixes dades alimenten una vista, llistat o resposta; després guia el taller `R3S2B` de comparació `Laravel`/`Symfony`/`NestJS`
+- Què fa el professorat: modela una migració o equivalent, una càrrega inicial reproduïble, una consulta que retorna un conjunt de dades i la comprovació que eixes dades alimenten una vista, llistat o resposta; després guia el taller `R3S2B` de comparació `Laravel`/`Symfony`/`Django`/`NestJS`
 - Què fa l'alumnat: defineix l'esquema mínim de dades, executa migracions o equivalent, carrega dades inicials, recupera un conjunt de dades real, documenta com reconstruir la BBDD i completa una auditoria d'equivalències abans del primer flux complet
 - Materials per a l'alumnat: checklist del Repte 3, programació per repte, [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
 - Evidència mínima del bloc: BBDD real creada amb migracions o equivalent, dades de demostració carregades amb fixtures/seeders o script equivalent, consulta de conjunt de dades, ús verificable en un flux i taula d'equivalències del taller `R3S2B`

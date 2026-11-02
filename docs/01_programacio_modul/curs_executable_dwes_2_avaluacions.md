@@ -16,7 +16,7 @@ Este document no substituïx [pla_implantacio_docent.md](pla_implantacio_docent.
 - els dominis admesos continuen sent gestor d'incidències o tickets, sistema de reserves o cites i gestor intern de recursos o inventari
 - `R2` es resol sobre una base comuna en `PHP`
 - el contrast de frameworks s'obri a partir de `R3`
-- `Laravel`, `Symfony` i `NestJS` són les vies base del tram de contrast
+- `Laravel`, `Symfony`, `Django` i `NestJS` són les vies base del tram de contrast
 - `FastAPI` només s'obri com a via avançada o excepcional
 - la IA es tracta com a eina guiada i verificable; si s'usa en parts nuclears, cal deixar evidència i validació humana explícites
 
@@ -42,7 +42,7 @@ Lectura operativa:
 - materials comuns accessibles des del primer dia
 - materials dels Reptes `2`, `3`, `4` i `5` preparats per a activació progressiva
 - base comuna en `PHP` preparada per a `R2`
-- materials de `Laravel`, `Symfony` i `NestJS` disponibles per a `R3-R5`
+- materials de `Laravel`, `Symfony`, `Django` i `NestJS` disponibles per a `R3-R5`
 - instruments mínims localitzats abans de començar: control inicial de repositori, rúbrica base de reptes, checklist de repte i defensa tècnica
 - criteri compartit sobre ús verificable de la IA, `AI log`, `README`, nota tècnica de decisió, proves i evidències de procés
 - decisió docent sobre parelles de contrast tècnic, seguiment i checkpoints dins de les dues primeres avaluacions
@@ -164,7 +164,7 @@ Resultat mínim exigible:
 | **Inici de curs** | materials comuns, enunciat base del projecte, projecte base, sistema d'evidències |
 | **Kickoff tècnic** | criteris metodològics, model d'itineraris, base comuna de curs |
 | **Repte 2** | [materials del Repte 2](../04_materials/repte_02/), materials comuns, base comuna en `PHP` |
-| **Repte 3** | [materials del Repte 3](../04_materials/repte_03/), materials comuns, suport directe de `Laravel`, `Symfony` o `NestJS` |
+| **Repte 3** | [materials del Repte 3](../04_materials/repte_03/), materials comuns, suport directe de `Laravel`, `Symfony`, `Django` o `NestJS` |
 | **Repte 4** | [materials del Repte 4](../04_materials/repte_04/), materials comuns, reutilització de l'itinerari en context d'`API` |
 | **Repte 5** | [materials del Repte 5](../04_materials/repte_05/), materials comuns, suport final d'itinerari per integració i tancament |
 

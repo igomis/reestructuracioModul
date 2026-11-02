@@ -228,7 +228,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 - `R2` manté una base comuna més controlada
 - `R2` incorpora mini API d'autenticació per a client, POO/Composer i persistència mínima amb BBDD
 - la sessió `8` ha d'introduir una classe simple testable sense convertir-se en un bloc de POO completa
-- el contrast de `Laravel`, `Symfony` i `NestJS` entra després
+- el contrast de `Laravel`, `Symfony`, `Django` i `NestJS` entra després
 - la prova i la depuració no es deixen només per al final, sinó que s'arrepleguen al llarg dels microprojectes
 - la sessió `9` no substituïx el treball d’arquitectura, persistència i frameworks propi de `R3`
 
@@ -275,7 +275,7 @@ Baixar el model global d'implantació docent a una lectura operativa per repte, 
 
 - criteris mínims d'una base real en framework
 - ús d'eines pròpies del framework: rutes, controladors, ORM o equivalent, migracions o equivalent, càrrega inicial reproduïble, validació i proves
-- equivalències entre `Laravel`, `Symfony` i `NestJS` abans del primer flux complet
+- equivalències entre `Laravel`, `Symfony`, `Django` i `NestJS` abans del primer flux complet
 - relació entre persistència reproduïble, dos fluxos i entrada posterior a `R4`
 
 ### Què ha de modelar en directe

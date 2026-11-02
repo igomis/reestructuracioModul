@@ -31,7 +31,7 @@ Un mapa de transició breu que identifique un flux funcional de `R2` per a migra
 ## Preparació prèvia del professorat
 
 - Tindre disponible un projecte funcional de `R2` o un exemple equivalent per a llegir-ne el recorregut i detectar acoblaments.
-- Preparar una ruta mínima en Laravel per a mostrar el pas de petició a resposta i una comparació breu amb Express.
+- Preparar una ruta mínima en Laravel per a mostrar el pas de petició a resposta i una comparació breu amb NestJS.
 - Preparar un mapa de ruta, controlador, model/servei i vista/resposta que no pressupose que tots els frameworks tenen les mateixes carpetes o convencions.
 - Tindre exemples senzills de migracions i càrrega inicial de dades, sense avançar la implementació de la persistència de `R3M2`.
 - Revisar el [protocol de retorn i consolidació](retorn_i_consolidacio_microreptes.md) i identificar com comprovar el punt de partida sense treball previ de `R3`.
@@ -43,7 +43,7 @@ Un mapa de transició breu que identifique un flux funcional de `R2` per a migra
 - Diferència entre ruta, controlador, model, vista/resposta i servei, sense exigir una estructura idèntica entre stacks.
 - Què significa persistència reproduïble: migracions o equivalents, fixtures/seeders o càrrega inicial i configuració amb `.env`.
 - Com triar un flux de `R2` que siga representatiu i acotat per a migrar primer.
-- Diferència entre `Node.js` (entorn d'execució) i `Express` (framework web); demo principal amb Laravel i comparació breu amb Express.
+- Diferència entre `Node.js` (entorn d'execució) i `NestJS` (framework web); demo principal amb Laravel i comparació breu amb NestJS.
 
 ## Seqüència d'aula de 3 hores
 
@@ -55,7 +55,7 @@ Revisar un flux funcional de `R2`. L'alumnat identifica què funciona, quines re
 
 ### 0:35-1:15. Mapa d'arquitectura
 
-El professorat modela el recorregut petició -> ruta -> controlador -> model/servei -> vista/resposta amb una ruta mínima en Laravel. Mostra com s'instal·len les dependències i com s'arranca la demo; després identifica la mateixa idea en Express sense exigir que les carpetes ni les convencions coincidisquen. L'alumnat consulta els miniapunts «Què aporta un framework?» en els materials de suport de `R3`.
+El professorat modela el recorregut petició -> ruta -> controlador -> model/servei -> vista/resposta amb una ruta mínima en Laravel. Mostra com s'instal·len les dependències i com s'arranca la demo; després identifica la mateixa idea en NestJS sense exigir que les carpetes ni les convencions coincidisquen. L'alumnat consulta els miniapunts «Què aporta un framework?» en els materials de suport de `R3`.
 
 ### 1:15-1:55. Decisió de stack i flux inicial
 
@@ -101,7 +101,7 @@ Cada equip explica el flux triat, el mapa de capes, la decisió provisional de s
 - Dir que es migrarà tota l'aplicació sense seleccionar un primer flux.
 - Enumerar capes sense poder situar-hi una petició i la resposta corresponent.
 - Triar un framework només per preferència, sense cap raó vinculada al projecte.
-- Confondre `Node.js` amb `Express` o presentar una única estructura de carpetes com a universal.
+- Confondre `Node.js` amb `NestJS` o presentar una única estructura de carpetes com a universal.
 - Proposar persistència sense identificar quines dades caldrà reconstruir.
 - Presentar captures o una demo del professorat com si foren evidència de treball propi.
 
@@ -118,7 +118,7 @@ La IA pot ajudar a comparar frameworks, resumir responsabilitats o proposar preg
 
 ## Ampliació per a l'alumnat més avançat
 
-- Comparar com es resol el mateix recorregut en Laravel i Express, distingint concepte i convenció.
+- Comparar com es resol el mateix recorregut en Laravel i NestJS, distingint concepte i convenció.
 - Identificar un segon flux candidat i explicar per què convindria ajornar-lo.
 - Proposar com separar dades de prova i secrets de configuració, sense avançar la implementació de migracions.
 

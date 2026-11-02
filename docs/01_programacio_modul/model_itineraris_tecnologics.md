@@ -121,7 +121,7 @@ Este model es considera preparat quan:
 
 - queda documentat el nucli comú obligatori i els límits de variació per stack
 - queda fixat explícitament que `R2` és base comuna en `PHP`
-- consten explícitament `Laravel`, `Symfony` i `NestJS` com a frameworks base
+- consten explícitament `Laravel`, `Symfony`, `Django` i `NestJS` com a frameworks base
 - `FastAPI` queda identificat com a via avançada o excepcional
 - queda fixat que el desplegament principal dels itineraris es farà en Reptes `3`, `4` i `5`
 - el paper de la IA queda definit com a assistència verificable, no substitutòria

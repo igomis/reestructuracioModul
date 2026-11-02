@@ -19,7 +19,7 @@ En la seqüència de `20` setmanes del repositori, això correspon a:
 - `Setmana 11`: primer cas d'ús complet migrat de `R2`.
 - `Setmana 12`: segon cas d'ús o ampliació funcional, estabilització i tancament tècnic.
 
-`R2` queda tancat com a base comuna en `PHP`: formulari, validació, processament, estat, autenticació i una funcionalitat protegida han d'existir com a referència funcional. `R3` no torna a fer eixe flux de la mateixa manera ni el migra tot: reconstrueix una base real en `Laravel`, `Symfony`, `NestJS` o `Express` sobre `Node.js` i selecciona fluxos troncals verificables.
+`R2` queda tancat com a base comuna en `PHP`: formulari, validació, processament, estat, autenticació i una funcionalitat protegida han d'existir com a referència funcional. `R3` no torna a fer eixe flux de la mateixa manera ni el migra tot: reconstrueix una base real en `Laravel`, `Symfony`, `Django` o `NestJS` i selecciona fluxos troncals verificables.
 
 Els itineraris tecnològics funcionen com a suport de stack:
 
@@ -108,7 +108,7 @@ Triar l'stack, comparar-lo amb una alternativa, preparar Docker, crear el projec
 
 **Tasques**
 
-- triar `Laravel`, `Symfony`, `NestJS`, `Express` sobre `Node.js` o via excepcional autoritzada
+- triar `Laravel`, `Symfony`, `Django`, `NestJS` o via excepcional autoritzada
 - comparar l'stack triat amb almenys una altra opció viable
 - justificar els avantatges de separar responsabilitats respecte a `R2`
 - crear o estabilitzar el projecte base
@@ -229,7 +229,7 @@ Les dades han de poder aparéixer després d'un reset i alimentar un flux real. 
 
 **Objectiu**
 
-Comprovar que l'alumnat entén les equivalències entre `Laravel`, `Symfony`, `NestJS` i `Express` abans de construir el primer flux complet.
+Comprovar que l'alumnat entén les equivalències entre `Laravel`, `Symfony`, `Django` i `NestJS` abans de construir el primer flux complet.
 
 **Tasques**
 

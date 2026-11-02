@@ -77,7 +77,7 @@ Ja no hi ha tres entrades principals paral·leles per a materials. Si una peça 
 
 - `R2` s'atén amb base comuna en `PHP`.
 - Els materials d'itinerari entren a partir de `R3`.
-- `Laravel`, `Symfony` i `NestJS` són les vies base del contrast; `Express` sobre `Node.js` també és una opció per a `R3`.
+- `Laravel`, `Symfony`, `Django` i `NestJS` són les vies base del contrast per a `R3`.
 - `FastAPI` es manté com a via avançada o excepcional.
 
 ## Presentacions

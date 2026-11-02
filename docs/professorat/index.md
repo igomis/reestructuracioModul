@@ -66,7 +66,7 @@ Lectura curta del tram:
 
 Lectura curta del tram:
 
-- el mateix projecte continua amb `Laravel`, `Symfony`, `NestJS` o `Express` sobre `Node.js`
+- el mateix projecte continua amb `Laravel`, `Symfony`, `Django` o `NestJS`
 - les parelles de contrast tècnic són la modalitat base
 - els trios avançats només s'obrin de manera puntual
 

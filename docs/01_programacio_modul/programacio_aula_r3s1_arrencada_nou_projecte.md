@@ -29,7 +29,7 @@ Al final de la sessio, cada equip ha de tindre stack triat, comparativa curta, D
 
 ## Producte esperat
 
-- Projecte base en `Laravel`, `Symfony`, `NestJS` o `Express` sobre `Node.js`, o via excepcional autoritzada.
+- Projecte base en `Laravel`, `Symfony`, `Django` o `NestJS`, o via excepcional autoritzada.
 - Docker, `compose.yaml` o mecanisme equivalent documentat.
 - `.env.example` o instruccions de configuracio.
 - Ruta inicial, vista minima o `healthcheck`.
@@ -42,7 +42,7 @@ Al final de la sessio, cada equip ha de tindre stack triat, comparativa curta, D
 
 - Tindre una demo curta d'arrencada de l'stack majoritari.
 - Portar un exemple de `.env.example` sense secrets.
-- Preparar una comparativa curta entre l'opció triada i una alternativa; recordar que `Node.js` és l'entorn d'execució i `Express` el framework web.
+- Preparar una comparativa curta entre l'opció triada i una alternativa; recordar que `Node.js` és l'entorn d'execució de `NestJS`.
 - Tindre una plantilla d'issue de `R3`.
 - Preparar exemples de casos d'us massa grans i com retallar-los.
 - Definir criteri de bloqueig: sense projecte arrancable no es valida `R3M1`.

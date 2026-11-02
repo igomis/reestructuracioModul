@@ -18,7 +18,7 @@ Els documents de planificació continuen existint com a annexos o arxiu, però l
 - Git/GitHub funciona com a metodologia de treball i traçabilitat
 - `R2` es resol sobre base comuna en `PHP`
 - el contrast d'itineraris s'obri a partir de `R3`
-- `Laravel`, `Symfony` i `NestJS` són les vies base del contrast; `Express` sobre `Node.js` també és una opció per a `R3`
+- `Laravel`, `Symfony`, `Django` i `NestJS` són les vies base del contrast per a `R3`
 - `FastAPI` queda com a via avançada o excepcional
 
 ## Seqüència executable del curs

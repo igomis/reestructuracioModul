@@ -16,7 +16,7 @@ Esta implantació s'ha calibrat sobre un escenari orientatiu d'unes `20` setmane
 - cada bloc d'aula ha de produir evidències observables de producte i de procés
 - els materials comuns continuen actius durant tot el recorregut, encara que s'activen amb més intensitat al començament
 - `R2` es resol sobre una base comuna en `PHP`
-- els itineraris `Laravel`, `Symfony` i `NestJS` no definixen blocs diferents; s'utilitzen com a suport de stack a partir de `R3`
+- els itineraris `Laravel`, `Symfony`, `Django` i `NestJS` no definixen blocs diferents; s'utilitzen com a suport de stack a partir de `R3`
 - el pas d'un bloc a un altre ha de dependre d'evidències mínimes verificables, no només del calendari
 - `API`, integració i defensa final han de quedar resoltes dins de la segona avaluació lectiva ordinària
 
@@ -223,7 +223,7 @@ Materials activats:
 - materials del Repte 3
 - [planificació d'aula del Repte 3](planificacio_aula_r3_mvc_i_persistencia.md)
 - materials comuns
-- itineraris `Laravel`, `Symfony` i `NestJS` com a suport principal de stack
+- itineraris `Laravel`, `Symfony`, `Django` i `NestJS` com a suport principal de stack
 
 Evidències esperades:
 

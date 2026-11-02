@@ -25,6 +25,6 @@ El lloc queda organitzat en poques entrades canòniques: entendre el model, exec
 
 - `R2` és una base comuna en `PHP`.
 - El contrast de frameworks entra a partir de `R3`.
-- El mateix projecte continua després amb `Laravel`, `Symfony`, `NestJS` o `Express` sobre `Node.js`.
+- El mateix projecte continua després amb `Laravel`, `Symfony`, `Django` o `NestJS`.
 - `FastAPI` queda com a via avançada o excepcional.
 - Autoria, traçabilitat, evidències i defensa continuen sent individuals.

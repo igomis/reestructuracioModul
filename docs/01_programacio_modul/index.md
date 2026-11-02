@@ -12,7 +12,7 @@ Este bloc reuneix la capa de planificacio docent del modul: implantacio general,
 
 - `R2` es programa sobre una base comuna en `PHP`
 - el contrast de frameworks s'obri des de `R3`
-- el mateix projecte continua amb `Laravel`, `Symfony` o `NestJS`
+- el mateix projecte continua amb `Laravel`, `Symfony`, `Django` o `NestJS`
 - la cooperacio pot existir, pero la verificacio i la defensa continuen sent individuals
 - cada repte pot activar una ampliacio `9→10` una vegada el nucli ja esta validat
 
