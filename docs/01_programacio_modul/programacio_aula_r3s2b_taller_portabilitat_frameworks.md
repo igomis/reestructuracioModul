@@ -2,7 +2,7 @@
 
 ## Finalitat de la sessio
 
-Esta peça fa de pont entre `R3M2` i `R3M3`. L'alumnat ja hauria de tindre un projecte en framework arrancable i una persistencia minima. Abans de construir el primer flux fort, cal comprovar que entén les equivalencies entre stacks i que no està seguint una recepta concreta de `Laravel`, `Symfony` o `NestJS` sense poder defensar-la.
+Esta peça fa de pont entre `R3M2` i `R3M3`. L'alumnat ja hauria de tindre un projecte en framework arrancable i una persistencia minima. Abans de construir el primer flux fort, cal comprovar que entén les equivalencies entre stacks i que no està seguint una recepta concreta de `Laravel`, `Symfony`, `NestJS` o `Express` sense poder defensar-la.
 
 No és un microrepte nou ni genera una nota separada, però sí que forma part de la programació d'aula base. Es programa com una sessió de `3` hores entre `R3S2` i `R3S3` perquè l'alumnat consolide la portabilitat abans de construir el primer flux fort en framework.
 
@@ -43,7 +43,7 @@ No és un microrepte nou ni genera una nota separada, però sí que forma part d
 
 - Portar una taula buida d'equivalencies.
 - Preparar un exemple molt simple de flux comu: llistat o detall d'un recurs.
-- Tindre una comparativa mínima entre `Laravel`, `Symfony` i `NestJS`.
+- Tindre una comparativa mínima entre `Laravel`, `Symfony`, `NestJS` i `Express`.
 - Preparar preguntes de defensa curta.
 - Decidir si la mini defensa es fa en grup o individualment.
 
@@ -161,7 +161,7 @@ Cada grup deixa una microtasca concreta:
 
 ## Que no és suficient
 
-- Dir “això ho fa Laravel/Symfony/NestJS” sense localitzar fitxers o comandes.
+- Dir “això ho fa Laravel/Symfony/NestJS/Express” sense localitzar fitxers o comandes.
 - Fer una taula copiada d'internet sense evidència al projecte.
 - Mostrar captures sense reconstruccio.
 - Canviar de framework durant el taller sense criteri.
