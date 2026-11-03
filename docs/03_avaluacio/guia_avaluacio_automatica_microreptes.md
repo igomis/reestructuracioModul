@@ -84,7 +84,7 @@ Cada repte pot mostrar també una proposta d’ampliació 9→10 entre 0 i 1. É
 
 ### Evidència automàtica de treball d'aula
 
-Els microreptes són treball d'aula. Per fer visible el procés sense convertir el nombre de commits o les línies modificades en una nota, el dashboard captura el `SHA` de `main` a l'inici i al final de la sessió i el compara amb l'entrega definitiva. Els tres commits es corregixen amb la mateixa rúbrica, però la proporció d'aula es calcula només sobre dimensions tècniques de rendiment, com resolució funcional, qualitat de codi o tractament de fitxers. La documentació, la traçabilitat i el registre d'IA poden completar-se després sense ocultar que la implementació ja existia al checkpoint de classe.
+Els microreptes són treball d'aula. Per fer visible el procés sense convertir el nombre de commits o les línies modificades en una nota, el dashboard captura el `SHA` de `main` i una instantània de totes les branques remotes a l'inici i al final de la sessió. Quan arriba l'entrega definitiva, selecciona el checkpoint final acreditat: prioritza una branca creada o modificada durant la classe que s'identifique amb el microrepte i comprova que el seu `SHA` o els seus canvis equivalents han quedat integrats en `main`. Si no hi ha una branca inequívoca i integrada, conserva `main` com a alternativa segura. Els tres estats seleccionats es corregixen amb la mateixa rúbrica, però la proporció d'aula es calcula només sobre dimensions tècniques de rendiment, com resolució funcional, qualitat de codi o tractament de fitxers. La documentació, la traçabilitat i el registre d'IA poden completar-se després sense ocultar que la implementació ja existia al checkpoint de classe.
 
 La nota del producte pesa un `70%` i la classificació ordinària de treball d'aula aporta automàticament el `30%` restant:
 
@@ -97,13 +97,13 @@ La nota del producte pesa un `70%` i la classificació ordinària de treball d'a
 
 La fórmula és `nota final = nota del producte × 0,7 + punts d'aula`. D'esta manera, la qualitat del producte manté la seua gradació i dos productes amb notes diferents no queden igualats per un topall. La nota global original no s'esborra i també es conserva separada la puntuació tècnica usada per calcular la proporció. Les dates declarades dins dels commits no són la prova principal; compten els `SHA` remots capturats. Si falla la captura, GitHub o l'autocorrecció —inclòs que el professorat oblide iniciar o tancar la captura—, el cas queda pendent i la ponderació no s'aplica automàticament.
 
-Una branca remota no fusionada, una incidència acreditada o una demostració posterior poden justificar una correcció docent del nivell. L'excepció ha de conservar el resultat automàtic, indicar el nou nivell i registrar el motiu. Una branca que només existia en local no es pot acreditar retroactivament només amb Git i requerix comprovació o defensa docent.
+Una branca remota no integrada, una incidència acreditada o una demostració posterior poden justificar una correcció docent del nivell, però no generen automàticament evidència d'aula. L'excepció ha de conservar el resultat automàtic, indicar el nou nivell i registrar el motiu. Una branca que només existia en local, que es va pujar després del tancament o el `SHA` de la qual ja no és recuperable no es pot acreditar retroactivament només amb Git i requerix comprovació o defensa docent.
 
 La nota del microrepte es pot acceptar directament només quan es complixen estes condicions:
 
 - el microrepte corregit és el que tocava;
 - el repositori és el de l'alumne correcte;
-- la branca corregida és `main` o una excepció registrada;
+- la branca corregida és `main` o un checkpoint remot capturat i acreditat com a integrat, o bé hi ha una excepció registrada;
 - no hi ha flags greus;
 - les evidències mínimes són localitzables;
 - el feedback és coherent amb el que el professorat veu al repositori.
