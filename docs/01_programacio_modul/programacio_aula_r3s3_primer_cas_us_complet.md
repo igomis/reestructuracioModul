@@ -34,9 +34,9 @@ Esta sessio migra o reconstrueix en el framework un primer flux real heretat de 
 - Model, servei o capa de dades.
 - Vista, plantilla o resposta generada.
 - Dades reals de BBDD.
-- Interaccio o formulari processat quan escau.
+- Entrada real processada. Si el flux crea o modifica dades: formulari server-rendered, recorregut GET/POST, CSRF, reintent amb valors previs i redireccio després de guardar.
 - Validacio minima i error controlat.
-- Prova del cas positiu.
+- Prova del cas positiu i d'una entrada invàlida sense efectes parcials.
 
 ## Preparacio previa del professorat
 
@@ -50,7 +50,11 @@ Esta sessio migra o reconstrueix en el framework un primer flux real heretat de 
 - Que significa end-to-end en framework.
 - Diferencia entre pantalla estatica i flux funcional.
 - Com passen les dades de BBDD a controlador i vista.
-- Com validar minimament i controlar un error.
+- Com separar GET de formulari i POST de processament en un flux d'escriptura.
+- Com usar CSRF, conservar valors previs, mostrar errors i aplicar validacio real en servidor.
+- Com separar validacio d'entrada, regla de negoci, coordinacio, persistencia i presentacio.
+- Com tancar l'escriptura amb Post/Redirect/Get i resultat llegit de la BBDD.
+- Com validar minimament i controlar un error sense insercio o canvi parcial.
 - Com comprovar que el flux ve realment de `R2`.
 
 ## Sequencia d'aula de 3 hores
@@ -82,30 +86,35 @@ Tasques:
 
 El professorat mostra:
 
-- ruta;
-- controlador;
-- consulta o servei;
-- vista amb dades;
-- cas positiu i error simple.
+- ruta GET i ruta POST;
+- formulari server-rendered amb CSRF, valors previs i errors;
+- validador o peça equivalent del framework;
+- controlador coordinador;
+- consulta, regla o servei;
+- persistencia i redireccio;
+- cas positiu i entrada invàlida sense canvi en BBDD.
 
 ### 1:15-1:55. Implementacio del recorregut
 
 Tasques:
 
-- crear ruta;
+- crear ruta GET i POST si el flux escriu;
 - crear controlador o equivalent;
 - connectar model/servei;
 - recuperar dades reals;
-- passar dades a la resposta.
+- passar dades a la resposta;
+- persistir només dades validades.
 
 ### 1:55-2:25. Vista, interaccio i error
 
 Tasques:
 
 - crear vista/plantilla o resposta HTML;
-- processar formulari o parametre si aplica;
+- crear un formulari amb CSRF, valors previs i errors si el flux crea o modifica dades;
+- processar formulari, paràmetre o interaccio;
 - afegir validacio minima;
-- controlar un error observable.
+- controlar un error observable sense efectes parcials;
+- redirigir després d'una escriptura correcta i mostrar el resultat persistent.
 
 ### 2:25-2:45. Prova i traçabilitat
 
@@ -139,8 +148,10 @@ Amb les evidències observades durant la sessió, comprovar què funciona i què
 - Connectar model/servei/capa de dades.
 - Llegir dades reals.
 - Generar resposta visible.
-- Afegir validacio minima si hi ha entrada.
-- Provar cas positiu i error.
+- Implementar formulari GET/POST amb CSRF, reintent i errors si el flux crea o modifica dades.
+- Afegir validacio de servidor i una regla del projecte.
+- Persistir només el cas vàlid i redirigir després de l'escriptura.
+- Provar cas positiu i entrada invàlida sense efectes parcials.
 - Documentar recorregut.
 
 ## Evidencies minimes
@@ -152,13 +163,16 @@ Amb les evidències observades durant la sessió, comprovar què funciona i què
 | Controlador | coordina sense concentrar-ho tot |
 | Dades | provenen de BBDD |
 | Resposta | vista/plantilla o HTML generat |
-| Verificacio | cas positiu i error minim |
+| Entrada | formulari/interaccio real; si escriu, GET/POST, CSRF, validacio, reintent i redireccio |
+| Verificacio | cas positiu i entrada invàlida sense canvi parcial |
 | Traçabilitat | commits i registre de temps aproximat |
 
 ## Criteris d'exit
 
 - El flux funciona de punta a punta.
 - Les dades no són simulades.
+- Una entrada correcta provoca el canvi persistent esperat.
+- Una entrada invàlida mostra error i no modifica la BBDD.
 - Les responsabilitats són recognoscibles.
 - L'alumnat pot explicar el recorregut de la peticio.
 - El flux manté relacio clara amb `R2`.
@@ -166,6 +180,9 @@ Amb les evidències observades durant la sessió, comprovar què funciona i què
 ## Que no és suficient
 
 - Fer una pantalla nova sense relacio amb `R2`.
+- Crear un formulari que no processa ni guarda dades reals.
+- Confiar només en atributs HTML i no validar en servidor.
+- Mostrar confirmacio abans de comprovar que la BBDD ha canviat.
 - Mostrar dades fixes.
 - Posar tota la logica en una ruta.
 - No provar error.
@@ -195,8 +212,9 @@ La IA pot explicar responsabilitats i donar pistes sobre un intent propi, sense 
 - [ ] Controlador o equivalent.
 - [ ] Dades reals de BBDD.
 - [ ] Resposta generada.
-- [ ] Cas positiu comprovat.
-- [ ] Error controlat.
+- [ ] Formulari o interaccio processada; si escriu, GET/POST, CSRF i valors previs.
+- [ ] Cas positiu comprovat en resposta i BBDD.
+- [ ] Entrada invàlida amb error i sense efectes parcials.
 - [ ] Commits i temps aproximat.
 
 ## Connexio amb el microrepte posterior
