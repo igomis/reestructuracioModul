@@ -62,7 +62,7 @@ Les sessions `R2S10`, `R4S6` i `R5S6` són ampliacions opcionals i queden fora d
 - [R3S2. Persistència mínima amb migracions, fixtures/seeders o equivalent](programacio_aula_r3s2_persistencia_minima_migrations_seeders.md): fitxa d'aula executable per a la segona sessió de `R3`, associada al microrepte `R3M2`.
 - [R3S2B. Taller de portabilitat entre frameworks](programacio_aula_r3s2b_taller_portabilitat_frameworks.md): sessió obligatòria del taller `MT16` entre `R3S2` i `R3S3`, sense microrepte propi.
 - [R3S3. Primer cas d'ús complet](programacio_aula_r3s3_primer_cas_us_complet.md): fitxa d'aula executable per al primer flux end-to-end de `R3`, associada al microrepte `R3M3`.
-- [R3S4. Segon cas d'ús o ampliació funcional](programacio_aula_r3s4_segon_cas_us_ampliacio_funcional.md): fitxa d'aula executable per al segon flux de `R3`, associada al microrepte `R3M4`.
+- [R3S4. Components de vista i manteniment d'un recurs](programacio_aula_r3s4_segon_cas_us_ampliacio_funcional.md): fitxa d'aula executable per a components, `PUT/PATCH` i `DELETE`, associada al microrepte `R3M4`.
 - [R3S5. Autenticació, autorització i middleware](programacio_aula_r3s5_autenticacio_autoritzacio_middleware.md): fitxa d'aula executable per a protegir una acció real amb eines del framework, associada al microrepte `R3M5`.
 - [R3S6. Qualitat i estabilització](programacio_aula_r3s6_qualitat_estabilitzacio.md): fitxa d'aula executable per a proves, errors i estabilització de `R3`, associada al microrepte `R3M6`.
 - [R3S7. Tancament tècnic](programacio_aula_r3s7_tancament_tecnic.md): fitxa d'aula executable per al tancament de `R3`, associada al microrepte `R3M7`.

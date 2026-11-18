@@ -489,34 +489,33 @@ Rúbrica de flux end-to-end migrat.
 
 ---
 
-### Microrepte R3M4 — Segon cas d'ús o ampliació funcional
+### Microrepte R3M4 — Components de vista i manteniment d'un recurs
 
 **Tipus**
 
-Microprojecte procedimental d'ampliació controlada.
+Microprojecte procedimental de manteniment server-rendered.
 
 **Objectiu**
 
-Construir un segon flux end-to-end que complete el mínim funcional del repte i faça visible el valor del framework.
+Mantindre un recurs existent amb presentació reutilitzable, semàntica HTTP explícita i persistència coherent.
 
 **Tasca**
 
-L'equip ha de implementar una de les dues opcions:
+L'equip ha d'ampliar el primer flux amb totes estes peces:
 
-- segon cas d'ús migrat des de `R2`
-- ampliació funcional xicoteta i útil sobre el primer flux
+- component, parcial, macro, *include* o equivalent amb entrada explícita i almenys dos usos reals
+- actualització amb `PUT/PATCH` o equivalent server-rendered documentat
+- eliminació amb `DELETE` o equivalent server-rendered documentat
+- validació en servidor, CSRF i resolució de recurs inexistent amb `404` o equivalent
+- regla que impedisca almenys una actualització o eliminació no vàlida
+- transacció quan una operació modifica diversos registres relacionats
+- regressió del primer flux d'R3M3
 
-En qualsevol cas, ha de ser un flux real, amb recorregut end-to-end, i no un canvi cosmètic. Pot incloure, segons el domini:
-
-- alta, edició, canvi d'estat o filtratge d'un recurs
-- vista de detall amb dades relacionades
-- operació protegida del domini
-- validació més significativa
-- ús d'una relació simple entre entitats
+El formulari server-rendered pot usar *method override* o la convenció nativa del framework. Cal explicar la correspondència amb els mètodes HTTP i no canviar dades mitjançant `GET`.
 
 **Relació amb el producte principal**
 
-El segon flux evita que `R3` quede reduït a una demo única. Obliga a comprovar que la base del framework suporta creixement mínim.
+El manteniment evita que `R3` quede reduït a una alta demostrativa. Obliga a comprovar que la base del framework suporta reutilització de vistes, actualització, eliminació i errors reals.
 
 **RA avaluat, CA avaluats i RA de context**
 
@@ -527,43 +526,42 @@ El segon flux evita que `R3` quede reduït a una demo única. Obliga a comprovar
 
 **Descripció dels CA en llenguatge docent**
 
-- L'alumnat reutilitza l'estructura del framework per afegir o migrar funcionalitat.
-- L'alumnat comprova que la persistència i les capes creades no serveixen només per a un cas aïllat.
-- L'alumnat modifica dinàmicament el contingut generat segons dades, paràmetres, estat, filtre o formulari.
-- L'alumnat diferencia ampliació funcional real de canvi visual.
+- L'alumnat reutilitza presentació amb el mecanisme de component o parcial del framework.
+- L'alumnat aplica semàntica `PUT/PATCH/DELETE` mitjançant el mecanisme natiu o equivalent documentat.
+- L'alumnat comprova que persistència, validació i errors mantenen la BBDD coherent.
+- L'alumnat diferencia eliminació de transició d'estat i actualització parcial de substitució completa.
 
 **Paper de la IA**
 
-La IA pot suggerir una ampliació viable i proves associades, però l'alumnat ha de justificar per què aporta valor al producte i al framework triat.
+La IA pot suggerir l'extracció del component, les rutes i proves associades, però l'alumnat ha de justificar la semàntica HTTP i verificar l'adaptació al framework triat.
 
 **Evidències obligatòries**
 
-- descripció del segon flux
-- justificació de si és migració o ampliació
-- ruta i controlador o equivalents
-- interacció amb BBDD
-- canvi visible en el contingut generat segons dades, paràmetres, estat, filtre o formulari
-- vista, plantilla o resposta HTML si este és el flux triat com a server-rendered
-- validació o error mínim
-- prova o verificació mínima
-- demo end-to-end
+- component de vista amb entrada explícita i dos usos reals
+- ruta i manejador d'actualització `PUT/PATCH` o equivalent documentat
+- ruta i manejador d'eliminació `DELETE` o equivalent documentat
+- interacció amb BBDD i resposta basada en l'estat persistent
+- validació, CSRF, `404` o equivalent i eliminació denegada
+- transacció quan canvien diversos registres
+- prova d'actualització, error, eliminació i regressió
 
 **Instrument d'avaluació**
 
-Checklist de segon flux funcional i revisió de valor.
+Rúbrica de manteniment funcional, reutilització de vista i coherència persistent.
 
 **Indicadors d'assoliment**
 
-- el segon flux és executable
-- no és només una vista nova o canvi d'estil
-- aprofita estructura, validació, dades o convencions del framework
-- amplia la base sense duplicar codi sense criteri
+- el component evita duplicació de presentació i es reutilitza realment
+- actualització i eliminació són executables amb les convencions del framework
+- errors i operacions múltiples no deixen la BBDD incoherent
+- el primer flux continua funcionant
 
 **Riscos habituals**
 
-- afegir una pàgina estàtica
-- duplicar el primer flux canviant noms
-- obrir una funcionalitat massa gran
+- comptar el *layout* com a component nou
+- canviar dades amb `GET` o sense CSRF
+- usar `DELETE` per a una transició d'estat
+- simular el canvi sense verificar BBDD
 - perdre estabilitat del primer cas d'ús
 
 **Verificació del treball real**
@@ -831,7 +829,7 @@ Rúbrica de documentació i defensa tècnica.
 | R3M1 | Infraestructura / decisió tècnica | Projecte en framework arrancable amb Docker | RA5 | RA5.a, RA5.b, RA5.c, RA5.d, RA5.e | RA8.c | comparativa de stack, esquema abans/després, Docker, `.env`, ruta inicial, resposta generada, issue i abast de 2 fluxos | checklist |
 | R3M2 | Persistència mínima | Model de dades inicial amb migracions/fixtures/seeders o mecanisme equivalent i conjunt de dades usable | RA6 | RA6.a, RA6.b, RA6.c, RA6.d, RA6.e | RA5.f | BBDD creada, dades carregades, consulta de conjunt de dades i ús en flux | rúbrica |
 | R3M3 | Migració funcional | Primer cas d'ús complet heretat de R2 | RA8 | RA8.d, RA8.e, RA8.g | RA5.e, RA5.f, RA5.g, RA6.c, RA6.d, RA6.f | ruta, controlador, model/servei, vista/plantilla server-rendered, formulari o interacció, prova | rúbrica |
-| R3M4 | Ampliació funcional | Segon flux end-to-end o ampliació útil | RA8 | RA8.f, RA8.g | RA5.e, RA5.f, RA5.g, RA5.h, RA6.c, RA6.d, RA6.f | segon flux, BBDD, canvi dinàmic de resposta, validació/error i demo | checklist |
+| R3M4 | Manteniment en framework | Components de vista, actualització i eliminació d'un recurs | RA8 | RA8.f, RA8.g | RA5.e, RA5.f, RA5.g, RA5.h, RA6.c, RA6.d, RA6.f | component reutilitzat, `PUT/PATCH`, `DELETE`, BBDD, error i regressió | rúbrica |
 | R3M5 | Seguretat de framework | Autenticació, autorització i middleware | RA5 | RA5.f, RA5.g, RA5.h | RA6.f, RA8.g | login, acció protegida, cas autoritzat i denegat | rúbrica |
 | R3M6 | Qualitat | Estabilització, validació, errors i proves | RA5 | RA5.g, RA5.h | RA6.f, RA6.g | proves, cas positiu/negatiu, errors, neteja i protecció intacta | checklist |
 | R3M7 | Tancament | README, decisions, demo i backlog de migració | RA5 | RA5.f, RA5.g | RA6.g | documentació, demo, mapa del que queda i acció protegida | rúbrica |
@@ -893,7 +891,7 @@ Seqüència recomanada:
 | Persistència inicial | `R3S2` | `R3M2` | model de dades, migracions/fixtures/seeders o mecanisme equivalent i BBDD real |
 | Taller de portabilitat | `R3S2B` | reforç `R3M1-R3M2` | equivalències entre frameworks i auditoria abans del primer flux |
 | Primer flux | `R3S3` | `R3M3` | migrar el primer cas d'ús heretat de `R2` |
-| Segon flux | `R3S4` | `R3M4` | completar un segon flux o ampliació funcional útil |
+| Manteniment | `R3S4` | `R3M4` | reutilitzar vista i completar actualització i eliminació d'un recurs |
 | Seguretat de framework | `R3S5` | `R3M5` | autenticació, autorització i middleware |
 | Qualitat | `R3S6` | `R3M6` | validació, errors, proves i neteja d'estructura |
 | Tancament | `R3S7` | `R3M7` | README, demo, decisions i backlog de migració |

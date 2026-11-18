@@ -58,7 +58,7 @@ nav:
           - R3S2. Persistència mínima amb migracions, fixtures/seeders o equivalent: 01_programacio_modul/programacio_aula_r3s2_persistencia_minima_migrations_seeders.md
           - R3S2B. Taller de portabilitat entre frameworks: 01_programacio_modul/programacio_aula_r3s2b_taller_portabilitat_frameworks.md
           - R3S3. Primer cas d'ús complet: 01_programacio_modul/programacio_aula_r3s3_primer_cas_us_complet.md
-          - R3S4. Segon cas d'ús o ampliació funcional: 01_programacio_modul/programacio_aula_r3s4_segon_cas_us_ampliacio_funcional.md
+          - R3S4. Components de vista i manteniment d'un recurs: 01_programacio_modul/programacio_aula_r3s4_segon_cas_us_ampliacio_funcional.md
           - R3S5. Autenticació, autorització i middleware: 01_programacio_modul/programacio_aula_r3s5_autenticacio_autoritzacio_middleware.md
           - R3S6. Qualitat i estabilització: 01_programacio_modul/programacio_aula_r3s6_qualitat_estabilitzacio.md
           - R3S7. Tancament tècnic: 01_programacio_modul/programacio_aula_r3s7_tancament_tecnic.md

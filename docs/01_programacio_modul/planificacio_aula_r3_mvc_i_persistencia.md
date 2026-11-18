@@ -69,7 +69,7 @@ Si cal reduir abast, es redueix la mida dels fluxos, no els mínims: Docker, pro
 | `R3M1` Arrencada del nou projecte | `1` | `RA5` | `RA5.a`, `RA5.b`, `RA5.c`, `RA5.d`, `RA5.e` | `RA8.c` | stack triat, Docker, projecte base, `.env` i rutes mínimes | projecte arrancable, ruta o vista inicial, issue de `R3` i declaració dels `2` fluxos | no és només esquelet: arranca i té abast funcional definit |
 | `R3M2` Model de dades i persistència mínima | `2-3` | `RA6` | `RA6.a`, `RA6.b`, `RA6.c`, `RA6.d`, `RA6.e` | `RA5.f` | BBDD real amb esquema inicial i dades de prova | migracions o equivalent, càrrega inicial, connexió i lectura real | la BBDD es pot reconstruir sense càrrega manual |
 | `R3M3` Primer cas d'ús complet | `3-4` | `RA8` | `RA8.d`, `RA8.e`, `RA8.g` | `RA5.e`, `RA5.f`, `RA5.g`, `RA6.c`, `RA6.d`, `RA6.f` | primer flux end-to-end migrat de `R2` | ruta, controlador, model/servei, vista o plantilla, BBDD, resposta `HTML` si és el flux server-rendered i validació mínima | el flux ve de `R2` i funciona amb dades reals |
-| `R3M4` Segon cas d'ús o ampliació funcional | `5-6` | `RA8` | `RA8.f`, `RA8.g` | `RA5.e`, `RA5.f`, `RA5.g`, `RA5.h`, `RA6.c`, `RA6.d`, `RA6.f` | segon flux end-to-end o ampliació útil | recorregut funcional, BBDD, validació/error, canvi dinàmic de resposta i demo | no és canvi cosmètic ni duplicació buida |
+| `R3M4` Components de vista i manteniment d'un recurs | `5-6` | `RA8` | `RA8.f`, `RA8.g` | `RA5.e`, `RA5.f`, `RA5.g`, `RA5.h`, `RA6.c`, `RA6.d`, `RA6.f` | manteniment d'un recurs existent | component reutilitzat, `PUT/PATCH`, `DELETE`, BBDD, error, `404` i regressió | usa convencions del framework sense duplicar presentació |
 | `R3M5` Autenticació, autorització i middleware | `6` | `RA5` | `RA5.f`, `RA5.g`, `RA5.h` | `RA6.f`, `RA8.g` | acció significativa protegida | login, middleware/guard/voter/policy o equivalent, cas autoritzat i denegat | la protecció està en servidor i no només en la vista |
 | `R3M6` Qualitat i estabilització | `7-8` | `RA5` | `RA5.g`, `RA5.h` | `RA6.f`, `RA6.g` | validació, errors, proves i neteja d'estructura | proves mínimes, cas positiu/negatiu, revisió de responsabilitats i protecció intacta | els fluxos continuen funcionant després de la neteja |
 | `R3M7` Tancament tècnic | `9` | `RA5` | `RA5.f`, `RA5.g` | `RA6.g` | README, decisions, demo i backlog de migració | instruccions d'arrencada, fluxos documentats, acció protegida i mapa del que queda | només s'obri `R4` si la base és reproduïble i defensable |
@@ -291,47 +291,49 @@ Portar al framework un cas d'ús real heretat de `R2` amb recorregut complet.
 
 El cas d'ús ha de ser funcional de punta a punta. Una pantalla que només mostra dades estàtiques no tanca `R3M3`.
 
-### Sessió 5. Segon flux o ampliació funcional
+### Sessió 5. Components de vista i manteniment d'un recurs
 
 **Microprojecte principal**
 
-- `R3M4 — Segon cas d'ús o ampliació funcional`
+- `R3M4 — Components de vista i manteniment d'un recurs`
 
 **Objectiu**
 
-Construir un segon recorregut end-to-end que demostre que la base del framework pot créixer.
+Fer evolucionar el primer flux de creació cap a l'actualització i l'eliminació d'un recurs existent, reutilitzant presentació i convencions del framework.
 
 **Què explica el professorat**
 
-- diferència entre ampliació funcional i canvi cosmètic
-- com reutilitzar estructura sense duplicar codi sense criteri
-- com escollir un segon flux viable
+- diferència entre `POST`, `PUT`, `PATCH` i `DELETE`
+- limitació dels formularis HTML i mecanismes de *method override* o equivalents
+- components de vista amb entrada explícita i reutilització real
+- CSRF, `404`, validació, eliminació denegada i transacció quan cal
 
 **Què modela el professorat**
 
-- una operació xicoteta però real: alta, edició, canvi d'estat, detall o filtratge
-- validació i error associats
-- ús d'una relació simple si el domini ho demana
+- component reutilitzat en dos contextos
+- actualització parcial o completa d'un recurs existent
+- eliminació permesa i denegada
+- `rollback` si l'operació afecta diversos registres
 
 **Tasques**
 
-- decidir si el segon flux és migrat o ampliació
-- implementar ruta i controlador o equivalents
-- connectar-lo amb BBDD
-- fer que el contingut generat canvie segons dades, paràmetres, estat, filtre o formulari
-- afegir validació o error mínim
-- verificar demo end-to-end
+- extraure un component, parcial, macro o equivalent i reutilitzar-lo
+- implementar `PUT/PATCH` i `DELETE` o equivalents server-rendered documentats
+- validar en servidor i aplicar CSRF
+- controlar identificador inexistent i eliminació no permesa
+- connectar les operacions amb BBDD i transacció quan cal
+- verificar actualització, eliminació i regressió d'R3M3
 
 **Evidència mínima**
 
-- segon flux executable
-- justificació del seu valor
-- canvi dinàmic visible en la resposta generada
-- prova o verificació mínima
+- component amb dos usos reals
+- actualització i eliminació executables
+- error controlat i BBDD coherent
+- prova de regressió del primer flux
 
 **Checkpoint docent**
 
-No compta com a segon flux una pàgina estàtica, una còpia del primer canviant noms o una millora només visual.
+No compta el *layout* general com a component nou ni una actualització o eliminació simulada sense canvi real en BBDD.
 
 ### Sessió 6. Autenticació, autorització i middleware
 
@@ -507,7 +509,7 @@ Només s'obri `R4` si el projecte arranca, la BBDD es reconstrueix, les dades es
 | Després de `R3M1` | El projecte en framework arranca de veritat? | Docker, `.env`, ruta mínima i issue amb `2` fluxos |
 | Després de `R3M2` | La persistència es pot reconstruir de zero? | migracions o equivalent, càrrega inicial, BBDD i lectura real |
 | Després de `R3M3` | Hi ha un flux de `R2` migrat i funcional? | ruta, controlador, dades reals, vista/resposta i validació |
-| Després de `R3M4` | Hi ha un segon flux real? | segon recorregut end-to-end, no cosmètic |
+| Després de `R3M4` | Es pot mantindre un recurs amb convencions del framework? | component reutilitzat, `PUT/PATCH`, `DELETE`, error controlat i regressió |
 | Després de `R3M5` | Hi ha una acció protegida real? | login, logout, cas autoritzat, cas denegat i middleware/guard/voter/policy o equivalent |
 | Després de `R3M6` | El projecte aguanta errors i proves mínimes? | cas positiu, cas negatiu, errors, acció protegida i neteja |
 | Després de `R3M7` | Una altra persona podria arrancar i entendre el projecte? | README, demo, decisions i backlog |
