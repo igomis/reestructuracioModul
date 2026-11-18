@@ -503,7 +503,7 @@ Mantindre un recurs existent amb presentació reutilitzable, semàntica HTTP exp
 
 L'equip ha d'ampliar el primer flux amb totes estes peces:
 
-- component, parcial, macro, *include* o equivalent amb entrada explícita i almenys dos usos reals
+- component, parcial, macro, *include* o equivalent amb entrada explícita i almenys dos usos reals; en Django s'accepten *template partials*, `include ... only` o `inclusion_tag`
 - actualització amb `PUT/PATCH` o equivalent server-rendered documentat
 - eliminació amb `DELETE` o equivalent server-rendered documentat
 - validació en servidor, CSRF i resolució de recurs inexistent amb `404` o equivalent

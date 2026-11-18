@@ -305,7 +305,7 @@ Fer evolucionar el primer flux de creació cap a l'actualització i l'eliminaci�
 
 - diferència entre `POST`, `PUT`, `PATCH` i `DELETE`
 - limitació dels formularis HTML i mecanismes de *method override* o equivalents
-- components de vista amb entrada explícita i reutilització real
+- components de vista amb entrada explícita i reutilització real; en Django, *template partial*, `include ... only` o `inclusion_tag`
 - CSRF, `404`, validació, eliminació denegada i transacció quan cal
 
 **Què modela el professorat**
