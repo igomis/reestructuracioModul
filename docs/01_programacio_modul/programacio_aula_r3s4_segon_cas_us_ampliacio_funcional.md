@@ -200,7 +200,9 @@ La IA pot suggerir l'extraccio del component, les rutes i casos de prova. L'alum
 ## Materials associats per a portar a l'aula
 
 - **Presentació associada**: [MT09. On pose la lògica](https://cipfpbatoi.github.io/dwes2627/recursos/Tallers/MT09-On-pose-la-logica.pdf)
-- **Teoria o material associat**: [Rutes, controladors, vistes i flux end-to-end](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R3-Rutes-controladors-vistes-i-flux-end-to-end.pdf)
+- **Pauta docent específica**: [teoria, modelatge i comprovació d'R3M4](../04_materials/materials_aula/repte_03_materials_sessio.md#pauta-teorica-docent-per-a-r3m4)
+- **Teoria visible per a l'alumnat**: [Components de vista i manteniment d'un recurs](https://cipfpbatoi.github.io/dwes2627/04_materials/repte_03/manteniment_components/)
+- **Coneixement previ d'R3M3**: [Rutes, controladors, vistes i flux end-to-end](https://cipfpbatoi.github.io/dwes2627/recursos/Teoria/Teoria-R3-Rutes-controladors-vistes-i-flux-end-to-end.pdf)
 
 ## Microtaller associat
 

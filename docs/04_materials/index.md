@@ -56,6 +56,7 @@ Ja no hi ha tres entrades principals paral·leles per a materials. Si una peça 
 - [Apunts del Repte 5](apunts_reals/repte_05_integracio_hibrida.md)
 - [Guies i checklist del Repte 2](repte_02/checklist_repte_02.md)
 - [Guies i checklist del Repte 3](repte_03/checklist_repte_03.md)
+- [Pauta teòrica docent d'R3M4: components i manteniment](materials_aula/repte_03_materials_sessio.md#pauta-teorica-docent-per-a-r3m4)
 - [Guies i checklist del Repte 4](repte_04/checklist_repte_04.md)
 - [Guies i checklist del Repte 5](repte_05/checklist_repte_05.md)
 

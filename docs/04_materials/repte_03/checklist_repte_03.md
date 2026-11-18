@@ -42,6 +42,15 @@ Transició al Repte 4:
 - [ ] es diferencien almenys errors de validació, de negoci i de dades quan toque
 - [ ] el comportament d'error és coherent i reproduïble
 
+### Components i manteniment d'R3M4
+
+- [ ] una peça de vista amb dades explícites es reutilitza almenys en dos llocs
+- [ ] l'actualització usa `PUT/PATCH` o un equivalent server-rendered documentat
+- [ ] l'eliminació usa `DELETE` o un equivalent documentat, amb CSRF i una regla del domini
+- [ ] un identificador inexistent produïx `404` o una resposta equivalent controlada
+- [ ] si una operació modifica diversos registres, una transacció evita canvis parcials
+- [ ] les proves cobreixen actualització correcta i invàlida, eliminació permesa i denegada, i regressió d'`R3M3`
+
 ### Proves mínimes
 
 - [ ] existix almenys una prova o verificació del flux principal després de la refactorització
